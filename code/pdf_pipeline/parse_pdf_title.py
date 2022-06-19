@@ -28,9 +28,10 @@ def format_title(title):
     for c1, c2 in replace_by_default:
         title = title.replace(c1, c2)
 
-    # m = language_info.findall(title)
-    # if m:
-    title = re.sub(language_info, '', title)
+    m = language_info.findall(title)
+    if m:
+        lang = m[0]
+        title = re.sub(language_info, '', title) + '(%s)' % lang
 
     # m = edition_info.findall(title)
     # if m:
