@@ -4,6 +4,10 @@ DC?=docker-compose
 
 CODE_ROOT?=code
 
+
+dvc-add:
+	dvc add pdfs/*.pdf
+
 setup:
 	bash $(CODE_ROOT)/scripts/set-env-mac.sh
 
@@ -13,4 +17,5 @@ flake8:
 test:
 	PYTHONPATH=$(CODE_ROOT) pytest --cov $(CODE_ROOT) --cov-report term-missing:skip-covered --capture=no -p no:cacheprovider
 
+.PHONY: dvc-add
 .PHONY: setup flake8 ut
