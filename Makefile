@@ -4,6 +4,8 @@ DC?=docker-compose
 
 CODE_ROOT?=code
 
+run_pipeline:
+	cd code && python manage.py
 
 dvc-add:
 	dvc add pdfs/*.pdf
@@ -17,5 +19,6 @@ flake8:
 test:
 	PYTHONPATH=$(CODE_ROOT) pytest --cov $(CODE_ROOT) --cov-report term-missing:skip-covered --capture=no -p no:cacheprovider
 
+.PHONY: pdf_pipeline
 .PHONY: dvc-add
 .PHONY: setup flake8 ut
