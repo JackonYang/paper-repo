@@ -36,6 +36,7 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 | [Selectivesearch(2013)](pdfs/2013-selectiveSearch.pdf) |
 | [Wordnet(2013)](pdfs/2013-wordnet.pdf) |
 | [Glove(2014)](pdfs/2014-GloVe.pdf) |
+| [Reinforcement Learning-An Introduction(2014)](pdfs/2014-Reinforcement%20Learning-An%20Introduction.pdf) |
 | [Vggnet(2014)](pdfs/2014-VggNet.pdf) |
 | [a survey on motion prediction and risk assessment(2014)](pdfs/2014-a%20survey%20on%20motion%20prediction%20and%20risk%20assessment.pdf) |
 | [A Review of Motion Planning Techniques for Automated Vehicles(2015)](pdfs/2015-A%20Review%20of%20Motion%20Planning%20Techniques%20for%20Automated%20Vehicles.pdf) |
@@ -128,6 +129,7 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 | [Single-Stage Multi-Person Pose Machines](pdfs/Single-Stage%20Multi-Person%20Pose%20Machines.pdf) |
 | [Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition](pdfs/Spatial%20Temporal%20Graph%20Convolutional%20Networks%20for%20Skeleton-Based%20Action%20Recognition.pdf) |
 | [Speed accuracy trade-offs for modern convolutional object detectors](pdfs/Speed%20accuracy%20trade-offs%20for%20modern%20convolutional%20object%20detectors.pdf) |
+| [Synthetic Data for Text Localisation in Natural Images](pdfs/Synthetic%20Data%20for%20Text%20Localisation%20in%20Natural%20Images.pdf) |
 | [T4 Product Brief](pdfs/T4%20Product%20Brief.pdf) |
 | [TEXT CLASSIFICATION TECHNIQUES- A LITERATURE REVIEW](pdfs/TEXT%20CLASSIFICATION%20TECHNIQUES-%20A%20LITERATURE%20REVIEW.pdf) |
 | [Tesla P4 Product Brief](pdfs/Tesla-P4-Product-Brief.pdf) |

@@ -9,6 +9,7 @@ run_pipeline:
 
 dvc-add:
 	dvc add pdfs/*.pdf
+	make run_pipeline
 
 setup:
 	bash $(CODE_ROOT)/scripts/set-env-mac.sh
