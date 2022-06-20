@@ -21,7 +21,7 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
-total count: 176
+total count: 188
 
 | Paper Title | links | file size |
 | --- | --- | --- |
@@ -65,7 +65,9 @@ total count: 176
 | review-Planning and Decision-Making for Autonomous Vehicles(2018) | [info](metas/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) | 598.1 KB |
 | Human Motion Trajectory Prediction-A Survey(2019) | [info](metas/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.yaml), [pdf(local)](pdfs/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.pdf) | 3.2 MB |
 | Self-Driving Cars-A Survey(2019) | [info](metas/2019-Self-Driving%20Cars-A%20Survey.yaml), [pdf(local)](pdfs/2019-Self-Driving%20Cars-A%20Survey.pdf) | 3.5 MB |
+| Improving Machine Reading Comprehension with Extra Labels and Label Smoothing(2021) | [info](metas/2021-Improving%20Machine%20Reading%20Comprehension%20with%20Extra%20Labels%20and%20Label%20Smoothing.yaml), [pdf(local)](pdfs/2021-Improving%20Machine%20Reading%20Comprehension%20with%20Extra%20Labels%20and%20Label%20Smoothing.pdf) | 283.1 KB |
 | Real-time safety assessment of trajectories(2021) | [info](metas/2021-Real-time%20safety%20assessment%20of%20trajectories.yaml), [pdf(local)](pdfs/2021-Real-time%20safety%20assessment%20of%20trajectories.pdf) | 2.9 MB |
+| A New Golden Age for Computer Architecture-keynote | [info](metas/A%20New%20Golden%20Age%20for%20Computer%20Architecture-keynote.yaml), [pdf(local)](pdfs/A%20New%20Golden%20Age%20for%20Computer%20Architecture-keynote.pdf) | 1.9 MB |
 | A New Golden Age for Computer Architecture | [info](metas/A%20New%20Golden%20Age%20for%20Computer%20Architecture.yaml), [pdf(local)](pdfs/A%20New%20Golden%20Age%20for%20Computer%20Architecture.pdf) | 4.4 MB |
 | A Quantization-Friendly Separable Convolution for MobileNets | [info](metas/A%20Quantization-Friendly%20Separable%20Convolution%20for%20MobileNets.yaml), [pdf(local)](pdfs/A%20Quantization-Friendly%20Separable%20Convolution%20for%20MobileNets.pdf) | 1.2 MB |
 | A Survey on Dialogue Systems- Recent Advances and New Frontiers | [info](metas/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.yaml), [pdf(local)](pdfs/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.pdf) | 302.9 KB |
@@ -75,8 +77,8 @@ total count: 176
 | Black Hat Python | [info](metas/Black%20Hat%20Python.yaml), [pdf(local)](pdfs/Black%20Hat%20Python.pdf) | 10.0 MB |
 | Brendan Gregg-The Flame Graph | [info](metas/Brendan%20Gregg-The%20Flame%20Graph.yaml), [pdf(local)](pdfs/Brendan%20Gregg-The%20Flame%20Graph.pdf) | 1.2 MB |
 | C++Primer | [info](metas/C%2B%2BPrimer-4th-cn.yaml), [pdf(local)](pdfs/C%2B%2BPrimer-4th-cn.pdf) | 2.8 MB |
+| CAPTCHA Recognition Using Deep Learning with Attached Binary Images | [info](metas/CAPTCHA%20Recognition%20Using%20Deep%20Learning%20with%20Attached%20Binary%20Images.yaml), [pdf(local)](pdfs/CAPTCHA%20Recognition%20Using%20Deep%20Learning%20with%20Attached%20Binary%20Images.pdf) | 3.4 MB |
 | CNN- Single-label to Multi-label | [info](metas/CNN-%20Single-label%20to%20Multi-label.yaml), [pdf(local)](pdfs/CNN-%20Single-label%20to%20Multi-label.pdf) | 4.0 MB |
-| Cnsv 1806 Patterson | [info](metas/CNSV-1806-Patterson.yaml), [pdf(local)](pdfs/CNSV-1806-Patterson.pdf) | 1.9 MB |
 | CUDA Application Design and Development | [info](metas/CUDA_Application_Design_and_Development.yaml), [pdf(local)](pdfs/CUDA_Application_Design_and_Development.pdf) | 6.9 MB |
 | CUDA C Programming Guide 11 6 | [info](metas/CUDA_C_Programming_Guide_11_6.yaml), [pdf(local)](pdfs/CUDA_C_Programming_Guide_11_6.pdf) | 3.3 MB |
 | CUDA by Example | [info](metas/CUDA_by_Example.yaml), [pdf(local)](pdfs/CUDA_by_Example.pdf) | 2.0 MB |
@@ -88,6 +90,7 @@ total count: 176
 | Debug Hacks(cn) | [info](metas/Debug%20Hacks-cn.yaml), [pdf(local)](pdfs/Debug%20Hacks-cn.pdf) | 13.1 MB |
 | Deep Learning based Recommender System - A Survey and New Perspectives | [info](metas/Deep%20Learning%20based%20Recommender%20System%20-%20A%20Survey%20and%20New%20Perspectives.yaml), [pdf(local)](pdfs/Deep%20Learning%20based%20Recommender%20System%20-%20A%20Survey%20and%20New%20Perspectives.pdf) | 1.7 MB |
 | Deep Neural Networks for YouTube Recommendations | [info](metas/Deep%20Neural%20Networks%20for%20YouTube%20Recommendations.yaml), [pdf(local)](pdfs/Deep%20Neural%20Networks%20for%20YouTube%20Recommendations.pdf) | 877.4 KB |
+| DeepDialogue Tutorial-keynote | [info](metas/DeepDialogue_Tutorial-keynote.yaml), [pdf(local)](pdfs/DeepDialogue_Tutorial-keynote.pdf) | 7.2 MB |
 | Demographic Prediction Based on User-s Mobile Behaviors | [info](metas/Demographic%20Prediction%20Based%20on%20User-s%20Mobile%20Behaviors.yaml), [pdf(local)](pdfs/Demographic%20Prediction%20Based%20on%20User-s%20Mobile%20Behaviors.pdf) | 210.7 KB |
 | Detecting Privacy-Sensitive Events in Medical Text | [info](metas/Detecting%20Privacy-Sensitive%20Events%20in%20Medical%20Text.yaml), [pdf(local)](pdfs/Detecting%20Privacy-Sensitive%20Events%20in%20Medical%20Text.pdf) | 244.9 KB |
 | Detection of Malicious URLs using Machine Learning Techniques | [info](metas/Detection%20of%20Malicious%20URLs%20using%20Machine%20Learning%20Techniques.yaml), [pdf(local)](pdfs/Detection%20of%20Malicious%20URLs%20using%20Machine%20Learning%20Techniques.pdf) | 462.2 KB |
@@ -104,7 +107,10 @@ total count: 176
 | Guide to Y86 Processor Simulators | [info](metas/Guide%20to%20Y86%20Processor%20Simulators.yaml), [pdf(local)](pdfs/Guide%20to%20Y86%20Processor%20Simulators.pdf) | 672.6 KB |
 | HBase Schema Design-hbasecon2012 | [info](metas/HBase%20Schema%20Design-hbasecon2012.yaml), [pdf(local)](pdfs/HBase%20Schema%20Design-hbasecon2012.pdf) | 1.3 MB |
 | Handbook Of Face Recognition | [info](metas/Handbook-of-Face-Recognition-2nd.yaml), [pdf(local)](pdfs/Handbook-of-Face-Recognition-2nd.pdf) | 423.3 KB |
+| Hardware-Centric AutoML for Mixed-Precision Quantization | [info](metas/Hardware-Centric%20AutoML%20for%20Mixed-Precision%20Quantization.yaml), [pdf(local)](pdfs/Hardware-Centric%20AutoML%20for%20Mixed-Precision%20Quantization.pdf) | 2.1 MB |
+| HiSVP 开发指南 | [info](metas/HiSVP%20%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97.yaml), [pdf(local)](pdfs/HiSVP%20%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97.pdf) | 9.4 MB |
 | Improving BERT-Based Text Classification With Auxiliary Sentence and Domain Knowledge | [info](metas/Improving%20BERT-Based%20Text%20Classification%20With%20Auxiliary%20Sentence%20and%20Domain%20Knowledge.yaml), [pdf(local)](pdfs/Improving%20BERT-Based%20Text%20Classification%20With%20Auxiliary%20Sentence%20and%20Domain%20Knowledge.pdf) | 7.3 MB |
+| Inference in Deep Learning - A Bottom-up Survey | [info](metas/Inference%20in%20Deep%20Learning%20-%20A%20Bottom-up%20Survey.yaml), [pdf(local)](pdfs/Inference%20in%20Deep%20Learning%20-%20A%20Bottom-up%20Survey.pdf) | 336.9 KB |
 | Introduction to HBase Schema Design | [info](metas/Introduction%20to%20HBase%20Schema%20Design.yaml), [pdf(local)](pdfs/Introduction%20to%20HBase%20Schema%20Design.pdf) | 676.5 KB |
 | Introduction to Optimization | [info](metas/Introduction%20to%20Optimization%2C%204th%20Edition.yaml), [pdf(local)](pdfs/Introduction%20to%20Optimization%2C%204th%20Edition.pdf) | 20.0 MB |
 | Kali Linux Cookbook | [info](metas/Kali%20Linux%20Cookbook.yaml), [pdf(local)](pdfs/Kali%20Linux%20Cookbook.pdf) | 10.7 MB |
@@ -113,11 +119,14 @@ total count: 176
 | MODEL COMPRESSION VIA DISTILLATION AND QUANTIZATION | [info](metas/MODEL%20COMPRESSION%20VIA%20DISTILLATION%20AND%20QUANTIZATION.yaml), [pdf(local)](pdfs/MODEL%20COMPRESSION%20VIA%20DISTILLATION%20AND%20QUANTIZATION.pdf) | 402.0 KB |
 | Mpi与Openmp并行程序设计：C语言版 | [info](metas/MPI%E4%B8%8EOpenMP%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%9AC%E8%AF%AD%E8%A8%80%E7%89%88.yaml), [pdf(local)](pdfs/MPI%E4%B8%8EOpenMP%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%9AC%E8%AF%AD%E8%A8%80%E7%89%88.pdf) | 57.4 MB |
 | Mastering the game of Go with deep neural networks and tree search | [info](metas/Mastering%20the%20game%20of%20Go%20with%20deep%20neural%20networks%20and%20tree%20search.yaml), [pdf(local)](pdfs/Mastering%20the%20game%20of%20Go%20with%20deep%20neural%20networks%20and%20tree%20search.pdf) | 2.6 MB |
+| Mastering the game of Go without human knowledge | [info](metas/Mastering%20the%20game%20of%20Go%20without%20human%20knowledge.yaml), [pdf(local)](pdfs/Mastering%20the%20game%20of%20Go%20without%20human%20knowledge.pdf) | 3.8 MB |
+| Model Compression and Hardware Acceleration for Neural Networks - A Comprehensive Survey | [info](metas/Model%20Compression%20and%20Hardware%20Acceleration%20for%20Neural%20Networks%20-%20A%20Comprehensive%20Survey.yaml), [pdf(local)](pdfs/Model%20Compression%20and%20Hardware%20Acceleration%20for%20Neural%20Networks%20-%20A%20Comprehensive%20Survey.pdf) | 12.7 MB |
 | NVIDIA Docker  GPU Server Application Deployment Made Easy   NVIDIA Developer Blog | [info](metas/NVIDIA%20Docker_%20GPU%20Server%20Application%20Deployment%20Made%20Easy%20_%20NVIDIA%20Developer%20Blog.yaml), [pdf(local)](pdfs/NVIDIA%20Docker_%20GPU%20Server%20Application%20Deployment%20Made%20Easy%20_%20NVIDIA%20Developer%20Blog.pdf) | 1.7 MB |
 | NVIDIA Fermi Compute Architecture Whitepaper | [info](metas/NVIDIA_Fermi_Compute_Architecture_Whitepaper.yaml), [pdf(local)](pdfs/NVIDIA_Fermi_Compute_Architecture_Whitepaper.pdf) | 855.8 KB |
 | Natural Language Processing (Almost) from Scratch | [info](metas/Natural%20Language%20Processing%20%28Almost%29%20from%20Scratch.yaml), [pdf(local)](pdfs/Natural%20Language%20Processing%20%28Almost%29%20from%20Scratch.pdf) | 414.8 KB |
 | OSX Mavericks Core Technology Overview | [info](metas/OSX_Mavericks_Core_Technology_Overview.yaml), [pdf(local)](pdfs/OSX_Mavericks_Core_Technology_Overview.pdf) | 4.4 MB |
 | Object Detection in 20 Years A Survey | [info](metas/Object%20Detection%20in%2020%20Years%20A%20Survey.yaml), [pdf(local)](pdfs/Object%20Detection%20in%2020%20Years%20A%20Survey.pdf) | 7.4 MB |
+| Optimizing Batched Winograd Convolution on GPUs | [info](metas/Optimizing%20Batched%20Winograd%20Convolution%20on%20GPUs.yaml), [pdf(local)](pdfs/Optimizing%20Batched%20Winograd%20Convolution%20on%20GPUs.pdf) | 2.5 MB |
 | PCI Express Technology 3.0 | [info](metas/PCI%20Express%20Technology%203.0.yaml), [pdf(local)](pdfs/PCI%20Express%20Technology%203.0.pdf) | 17.7 MB |
 | Planning trajectories constrained by predictions | [info](metas/Planning%20trajectories%20constrained%20by%20predictions.yaml), [pdf(local)](pdfs/Planning%20trajectories%20constrained%20by%20predictions.pdf) | 2.4 MB |
 | PyTorch under the hood | [info](metas/PyTorch%20under%20the%20hood.yaml), [pdf(local)](pdfs/PyTorch%20under%20the%20hood.pdf) | 1.3 MB |
@@ -126,6 +135,8 @@ total count: 176
 | Residual Networks Behave Like Ensembles of Relatively Shallow Networks | [info](metas/Residual%20Networks%20Behave%20Like%20Ensembles%20of%20Relatively%20Shallow%20Networks.yaml), [pdf(local)](pdfs/Residual%20Networks%20Behave%20Like%20Ensembles%20of%20Relatively%20Shallow%20Networks.pdf) | 597.0 KB |
 | S4158 Cuda Streams Best Practices Common Pitfalls | [info](metas/S4158-cuda-streams-best-practices-common-pitfalls.yaml), [pdf(local)](pdfs/S4158-cuda-streams-best-practices-common-pitfalls.pdf) | 1.9 MB |
 | SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL NETWORKS | [info](metas/SKELETON-BASED%20ACTION%20RECOGNITION%20WITH%20CONVOLUTIONAL%20NEURAL%20NETWORKS.yaml), [pdf(local)](pdfs/SKELETON-BASED%20ACTION%20RECOGNITION%20WITH%20CONVOLUTIONAL%20NEURAL%20NETWORKS.pdf) | 501.0 KB |
+| Scalable Top-K Retrieval with Sparta | [info](metas/Scalable%20Top-K%20Retrieval%20with%20Sparta.yaml), [pdf(local)](pdfs/Scalable%20Top-K%20Retrieval%20with%20Sparta.pdf) | 1.6 MB |
+| Self Supervised Learning at Google | [info](metas/Self%20Supervised%20Learning%20at%20Google.yaml), [pdf(local)](pdfs/Self%20Supervised%20Learning%20at%20Google.pdf) | 9.1 MB |
 | Sequential Y86-64 Implementation | [info](metas/Sequential%20Y86-64%20Implementation.yaml), [pdf(local)](pdfs/Sequential%20Y86-64%20Implementation.pdf) | 734.3 KB |
 | Single-Stage Multi-Person Pose Machines | [info](metas/Single-Stage%20Multi-Person%20Pose%20Machines.yaml), [pdf(local)](pdfs/Single-Stage%20Multi-Person%20Pose%20Machines.pdf) | 8.7 MB |
 | Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition | [info](metas/Spatial%20Temporal%20Graph%20Convolutional%20Networks%20for%20Skeleton-Based%20Action%20Recognition.yaml), [pdf(local)](pdfs/Spatial%20Temporal%20Graph%20Convolutional%20Networks%20for%20Skeleton-Based%20Action%20Recognition.pdf) | 1.5 MB |
@@ -135,6 +146,7 @@ total count: 176
 | TEXT CLASSIFICATION TECHNIQUES- A LITERATURE REVIEW | [info](metas/TEXT%20CLASSIFICATION%20TECHNIQUES-%20A%20LITERATURE%20REVIEW.yaml), [pdf(local)](pdfs/TEXT%20CLASSIFICATION%20TECHNIQUES-%20A%20LITERATURE%20REVIEW.pdf) | 635.4 KB |
 | Tesla P4 Product Brief | [info](metas/Tesla-P4-Product-Brief.yaml), [pdf(local)](pdfs/Tesla-P4-Product-Brief.pdf) | 1.2 MB |
 | Text Classification Algorithms- A Survey | [info](metas/Text%20Classification%20Algorithms-%20A%20Survey.yaml), [pdf(local)](pdfs/Text%20Classification%20Algorithms-%20A%20Survey.pdf) | 7.9 MB |
+| The 2017 IARPA Face Recognition Prize Challenge (FRPC) | [info](metas/The%202017%20IARPA%20Face%20Recognition%20Prize%20Challenge%20%28FRPC%29.yaml), [pdf(local)](pdfs/The%202017%20IARPA%20Face%20Recognition%20Prize%20Challenge%20%28FRPC%29.pdf) | 27.2 MB |
 | The C Programming Language(cn) | [info](metas/The%20C%20Programming%20Language-cn.yaml), [pdf(local)](pdfs/The%20C%20Programming%20Language-cn.pdf) | 5.9 MB |
 | The Decline of Computers as a General PurposeTechnology | [info](metas/The%20Decline%20of%20Computers%20as%20a%20General%20PurposeTechnology.yaml), [pdf(local)](pdfs/The%20Decline%20of%20Computers%20as%20a%20General%20PurposeTechnology.pdf) | 1.6 MB |
 | The Eight Pillars of Causal Wisdom | [info](metas/The%20Eight%20Pillars%20of%20Causal%20Wisdom.yaml), [pdf(local)](pdfs/The%20Eight%20Pillars%20of%20Causal%20Wisdom.pdf) | 1.0 MB |
