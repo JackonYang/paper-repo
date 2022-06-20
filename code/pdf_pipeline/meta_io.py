@@ -32,6 +32,11 @@ def save_meta(meta_key, content):
         yaml.dump(content, fw)
 
 
+def remove(meta_key):
+    meta_path = key2meta_path(meta_key)
+    os.remove(meta_path)
+
+
 def update_meta(meta_key, content):
     meta_path = key2meta_path(meta_key)
     if os.path.exists(meta_path):

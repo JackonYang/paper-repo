@@ -2,6 +2,7 @@ import os
 from urllib.parse import quote
 
 from .configs import (
+    META_DIR,
     PDF_DIR,
     PROJ_DIR,
 )
@@ -56,7 +57,18 @@ def gen_meta(pdf_path):
     guess_from_filename(meta_key)
 
 
+def clean_extra_meta():
+    pdf_files = utils.get_filename_list(PDF_DIR, '.pdf')
+    meta_files = utils.get_filename_list(META_DIR, '.yaml')
+
+    extra = set(meta_files) - set(pdf_files)
+    for meta_key in extra:
+        meta_io.remove(meta_key)
+
+
 def main():
+    clean_extra_meta()
+
     pdf_files = utils.get_file_list(PDF_DIR, '.pdf')
 
     for pdf_path in pdf_files:

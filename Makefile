@@ -12,9 +12,11 @@ gen-meta:
 
 dvc-add:
 	dvc add pdfs/*.pdf
-	make run_pipeline
+	make gen-meta
+	make check-dup
 
 push-all:
+	make flake8
 	dvc push
 	git push
 
