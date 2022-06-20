@@ -15,6 +15,8 @@ dvc push
 make run_pipeline
 ```
 
+更多用法见：[详细使用说明](docs/how-to-use.md)
+
 ## PDF List
 
 | Paper Title |
