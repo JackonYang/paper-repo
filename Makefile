@@ -11,6 +11,10 @@ dvc-add:
 	dvc add pdfs/*.pdf
 	make run_pipeline
 
+push-all:
+	dvc push
+	git push
+
 setup:
 	bash $(CODE_ROOT)/scripts/set-env-mac.sh
 
