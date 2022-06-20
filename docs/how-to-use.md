@@ -7,11 +7,14 @@
 执行如下命令：
 
 ```bash
-# dvc add, gen meta, & check dup
+# 新 pdf 由 dvc 管理
+# 步骤包括: dvc add, gen meta, & check dup
 # 如果发现重复的 pdf 文件，需要手动删除
 make dvc-add
 
 # review Readme.md 的改动 & git commit 后运行
+
+# push to cloud
 # 功能包括 flake8 check, dvc push, git push
 make push-all
 

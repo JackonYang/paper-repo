@@ -16,9 +16,14 @@ def run_gen_meta():
     return render_readme.main()
 
 
+def update_readme():
+    return render_readme.main()
+
+
 pipelines = {
     'check-dup': run_check_dup,
     'gen-meta': run_gen_meta,
+    'update-readme': update_readme,
 }
 
 pipeline_choices = ', '.join(pipelines.keys())

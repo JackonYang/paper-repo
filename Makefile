@@ -10,6 +10,9 @@ check-dup:
 gen-meta:
 	cd code && python manage.py gen-meta
 
+update-readme:
+	cd code && python manage.py update-readme
+
 dvc-add:
 	dvc add pdfs/*.pdf
 	make gen-meta
@@ -29,6 +32,6 @@ flake8:
 test:
 	PYTHONPATH=$(CODE_ROOT) pytest --cov $(CODE_ROOT) --cov-report term-missing:skip-covered --capture=no -p no:cacheprovider
 
-.PHONY: check-dup gen-meta
+.PHONY: check-dup gen-meta update-readme
 .PHONY: dvc-add
 .PHONY: setup flake8 ut
