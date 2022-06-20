@@ -13,8 +13,7 @@ from pdf_pipeline.configs import PDF_DIR, PROJ_DIR
 
 
 def run_check_dup():
-    pdf_files = utils.get_file_list(PDF_DIR, '.pdf')
-    return check_duplicate_pdf.main(pdf_files)
+    return check_duplicate_pdf.main()
 
 
 def run_gen_meta():

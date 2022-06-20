@@ -26,10 +26,9 @@ def check_by_md5(pdf_files):
 
 def main():
     pdf_files = utils.get_file_list(PDF_DIR, '.pdf')
-
     has_dup = check_by_md5(pdf_files)
-    if has_dup:
-        return
+
+    return has_dup
 
 
 if __name__ == '__main__':
