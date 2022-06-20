@@ -21,6 +21,8 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
+total count: 176
+
 | Paper Title | links | file size |
 | --- | --- | --- |
 | Lenet5(1998) | [info](metas/1998-LeNet5.yaml), [pdf(local)](pdfs/1998-LeNet5.pdf) | 960.4 KB |
