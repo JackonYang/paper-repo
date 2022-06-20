@@ -7,16 +7,19 @@
 执行如下命令：
 
 ```bash
-# 检查是否有重复的 pdf 文件，需要手动删除
-make check-dup
+# dvc add, gen meta, & check dup
+# 如果发现重复的 pdf 文件，需要手动删除
+make dvc-add
+
+# review Readme.md 的改动 & git commit 后运行
+# 功能包括 flake8 check, dvc push, git push
+make push-all
+
 # 删除本地的 pvc & 对应的 pdf 文件
 # https://dvc.org/doc/command-reference/remove
 dvc remove *.dvc --outs
 # 待验证。删 remove cloud 里的用不上的
+# remote 存储不爆炸，就不要搞这个命令
 # https://dvc.org/doc/command-reference/gc
 dvc gc --workspace -c
-
-make dvc-add
-# review Readme.md 的改动 & git commit
-make push-all
 ```
