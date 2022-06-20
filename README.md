@@ -21,181 +21,181 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
-| Paper Title |
-| --- |
-| [Lenet5(1998)](pdfs/1998-LeNet5.pdf) |
-| [Pagerank Algorithm(1999)](pdfs/1999-PageRank-algorithm.pdf) |
-| [Face Detection A Survey(2001)](pdfs/2001-Face-Detection-A-Survey.pdf) |
-| [Rapid Object Detection Boosted Cascade(2001)](pdfs/2001-Rapid-Object-Detection-Boosted-Cascade.pdf) |
-| [An Adaptive Peer-to-Peer Collision Warning System(2002)](pdfs/2002-An%20Adaptive%20Peer-to-Peer%20Collision%20Warning%20System.pdf) |
-| [Bengio Neural Network Lm(2003)](pdfs/2003-bengio-neural-network-LM.pdf) |
-| [Robust Multipose Face Detection in Images(2004)](pdfs/2004-Robust%20Multipose%20Face%20Detection%20in%20Images.pdf) |
-| [Frenet(2010)](pdfs/2010-frenet.pdf) |
-| [Alexnet(2012)](pdfs/2012-AlexNet.pdf) |
-| [Rcnn(2013)](pdfs/2013-rcnn.pdf) |
-| [Selectivesearch(2013)](pdfs/2013-selectiveSearch.pdf) |
-| [Wordnet(2013)](pdfs/2013-wordnet.pdf) |
-| [Glove(2014)](pdfs/2014-GloVe.pdf) |
-| [Reinforcement Learning-An Introduction(2014)](pdfs/2014-Reinforcement%20Learning-An%20Introduction.pdf) |
-| [Vggnet(2014)](pdfs/2014-VggNet.pdf) |
-| [a survey on motion prediction and risk assessment(2014)](pdfs/2014-a%20survey%20on%20motion%20prediction%20and%20risk%20assessment.pdf) |
-| [A Review of Motion Planning Techniques for Automated Vehicles(2015)](pdfs/2015-A%20Review%20of%20Motion%20Planning%20Techniques%20for%20Automated%20Vehicles.pdf) |
-| [Multi View Face Detection(2015)](pdfs/2015-Multi-view-Face-Detection.pdf) |
-| [Resnet(2015)](pdfs/2015-ResNet.pdf) |
-| [Fast Rcnn(2015)](pdfs/2015-fast-rcnn.pdf) |
-| [Faster Rcnn(2015)](pdfs/2015-faster-rcnn.pdf) |
-| [Sppnet(2015)](pdfs/2015-sppnet.pdf) |
-| [A Survey of Motion Planning and Control(2016)](pdfs/2016-A%20Survey%20of%20Motion%20Planning%20and%20Control.pdf) |
-| [FPN-Feature Pyramid Networks(2016)](pdfs/2016-FPN-Feature%20Pyramid%20Networks.pdf) |
-| [Lane Change Scheduling for Autonomous Vehicles(2016)](pdfs/2016-Lane%20Change%20Scheduling%20for%20Autonomous%20Vehicles.pdf) |
-| [Mtcnn(2016)](pdfs/2016-mtcnn.pdf) |
-| [Ssd(2016)](pdfs/2016-ssd.pdf) |
-| [20160319 Dengli Interspeech Tutorial](pdfs/20160319-Dengli-Interspeech-tutorial.pdf) |
-| [20160319 邓力 Ieee Icassp Plenary](pdfs/20160319-%E9%82%93%E5%8A%9B-IEEE-ICASSP-plenary.pdf) |
-| [Fpn(2017)](pdfs/2017-FPN.pdf) |
-| [Lane-Change Social Behavior Generator(2017)](pdfs/2017-Lane-Change%20Social%20Behavior%20Generator.pdf) |
-| [Malicious URL Detection using Machine Learning-a survey(2017)](pdfs/2017-Malicious%20URL%20Detection%20using%20Machine%20Learning-a%20survey.pdf) |
-| [On a Formal Model of Safe and Scalable Self-driving Cars(2017)](pdfs/2017-On%20a%20Formal%20Model%20of%20Safe%20and%20Scalable%20Self-driving%20Cars.pdf) |
-| [Safe Autonomous Lane Changes in Dense Traffic(2017)](pdfs/2017-Safe%20Autonomous%20Lane%20Changes%20in%20Dense%20Traffic.pdf) |
-| [Mask Rcnn(2017)](pdfs/2017-mask-rcnn.pdf) |
-| [Lane Change Strategy for  Autonomous Vehicle(2018)](pdfs/2018-Lane%20Change%20Strategy%20for%20%20Autonomous%20Vehicle.pdf) |
-| [Planning and Decision-Making for Autonomous Vehicles(2018)](pdfs/2018-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) |
-| [review-Planning and Decision-Making for Autonomous Vehicles(2018)](pdfs/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) |
-| [Human Motion Trajectory Prediction-A Survey(2019)](pdfs/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.pdf) |
-| [Self-Driving Cars-A Survey(2019)](pdfs/2019-Self-Driving%20Cars-A%20Survey.pdf) |
-| [Real-time safety assessment of trajectories(2021)](pdfs/2021-Real-time%20safety%20assessment%20of%20trajectories.pdf) |
-| [A New Golden Age for Computer Architecture](pdfs/A%20New%20Golden%20Age%20for%20Computer%20Architecture.pdf) |
-| [A Quantization-Friendly Separable Convolution for MobileNets](pdfs/A%20Quantization-Friendly%20Separable%20Convolution%20for%20MobileNets.pdf) |
-| [A Survey on Dialogue Systems- Recent Advances and New Frontiers](pdfs/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.pdf) |
-| [A guide to convolution arithmetic for deep learning](pdfs/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.pdf) |
-| [A Tour Of C++](pdfs/A-Tour-of-C%2B%2B.pdf) |
-| [Attribute-Driven Feature Disentangling and Temporal Aggregation for Video Person Re-Identification](pdfs/Attribute-Driven%20Feature%20Disentangling%20and%20Temporal%20Aggregation%20for%20Video%20Person%20Re-Identification.pdf) |
-| [Black Hat Python](pdfs/Black%20Hat%20Python.pdf) |
-| [Brendan Gregg-The Flame Graph](pdfs/Brendan%20Gregg-The%20Flame%20Graph.pdf) |
-| [C++Primer](pdfs/C%2B%2BPrimer-4th-cn.pdf) |
-| [CNN- Single-label to Multi-label](pdfs/CNN-%20Single-label%20to%20Multi-label.pdf) |
-| [Cnsv 1806 Patterson](pdfs/CNSV-1806-Patterson.pdf) |
-| [CUDA Application Design and Development](pdfs/CUDA_Application_Design_and_Development.pdf) |
-| [CUDA C Programming Guide 11 6](pdfs/CUDA_C_Programming_Guide_11_6.pdf) |
-| [CUDA by Example](pdfs/CUDA_by_Example.pdf) |
-| [Ceph - A Scalable High-Performance Distributed File System](pdfs/Ceph%20-%20A%20Scalable%20High-Performance%20Distributed%20File%20System.pdf) |
-| [Co-occurrence Feature Learning from Skeleton Data for Action Recognition and Detection with Hierarchical Aggregation](pdfs/Co-occurrence%20Feature%20Learning%20from%20Skeleton%20Data%20for%20Action%20Recognition%20and%20Detection%20with%20Hierarchical%20Aggregation.pdf) |
-| [Connectionist Temporal Classification - Labelling Unsegmented Sequence Data with Recurrent Neural Networks](pdfs/Connectionist%20Temporal%20Classification%20-%20Labelling%20Unsegmented%20Sequence%20Data%20with%20Recurrent%20Neural%20Networks.pdf) |
-| [Convolutional Neural Networks for Sentence Classification 2014](pdfs/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification_2014.pdf) |
-| [Cross Entropy Vs Squared Error Training A Theoretical And Experimental Comparison](pdfs/Cross-Entropy-vs-Squared-Error-Training-a-Theoretical-and-Experimental-Comparison.pdf) |
-| [Debug Hacks(cn)](pdfs/Debug%20Hacks-cn.pdf) |
-| [Deep Learning based Recommender System - A Survey and New Perspectives](pdfs/Deep%20Learning%20based%20Recommender%20System%20-%20A%20Survey%20and%20New%20Perspectives.pdf) |
-| [Deep Neural Networks for YouTube Recommendations](pdfs/Deep%20Neural%20Networks%20for%20YouTube%20Recommendations.pdf) |
-| [Demographic Prediction Based on User-s Mobile Behaviors](pdfs/Demographic%20Prediction%20Based%20on%20User-s%20Mobile%20Behaviors.pdf) |
-| [Detecting Privacy-Sensitive Events in Medical Text](pdfs/Detecting%20Privacy-Sensitive%20Events%20in%20Medical%20Text.pdf) |
-| [Detection of Malicious URLs using Machine Learning Techniques](pdfs/Detection%20of%20Malicious%20URLs%20using%20Machine%20Learning%20Techniques.pdf) |
-| [Dragon Book Compilers](pdfs/Dragon%20Book%20Compilers-en-2nd.pdf) |
-| [Drop an Octave](pdfs/Drop%20an%20Octave.pdf) |
-| [Enabling GPUs in the Container Runtime Ecosystem   NVIDIA Developer Blog](pdfs/Enabling%20GPUs%20in%20the%20Container%20Runtime%20Ecosystem%20_%20NVIDIA%20Developer%20Blog.pdf) |
-| [Essentials of Programming Languages 3e (MIT, 2008)](pdfs/Essentials%20of%20Programming%20Languages%203e%20%28MIT%2C%202008%29.pdf) |
-| [Fast Algorithm For Detecting Community Structure In Networks](pdfs/Fast-algorithm-for-detecting-community-structure-in-networks.pdf) |
-| [Finding And Evaluating Community Structure In Networks](pdfs/Finding-and-evaluating-community-structure-in-networks.pdf) |
-| [Formal Verification of Pipelined Y86-64 Microprocessors with UCLID5](pdfs/Formal%20Verification%20of%20Pipelined%20Y86-64%20Microprocessors%20with%20UCLID5.pdf) |
-| [Gender Prediction Using Browsing History](pdfs/Gender%20Prediction%20Using%20Browsing%20History.pdf) |
-| [Gray Python(cn)](pdfs/Gray%20Python-cn.pdf) |
-| [Grover Model](pdfs/Grover-model.pdf) |
-| [Guide to Y86 Processor Simulators](pdfs/Guide%20to%20Y86%20Processor%20Simulators.pdf) |
-| [HBase Schema Design-hbasecon2012](pdfs/HBase%20Schema%20Design-hbasecon2012.pdf) |
-| [Handbook Of Face Recognition](pdfs/Handbook-of-Face-Recognition-2nd.pdf) |
-| [Improving BERT-Based Text Classification With Auxiliary Sentence and Domain Knowledge](pdfs/Improving%20BERT-Based%20Text%20Classification%20With%20Auxiliary%20Sentence%20and%20Domain%20Knowledge.pdf) |
-| [Introduction to HBase Schema Design](pdfs/Introduction%20to%20HBase%20Schema%20Design.pdf) |
-| [Introduction to Optimization](pdfs/Introduction%20to%20Optimization%2C%204th%20Edition.pdf) |
-| [Kali Linux Cookbook](pdfs/Kali%20Linux%20Cookbook.pdf) |
-| [LLVM Cookbook](pdfs/LLVM%20Cookbook.pdf) |
-| [Language Models are Unsupervised Multitask Learners](pdfs/Language%20Models%20are%20Unsupervised%20Multitask%20Learners.pdf) |
-| [MODEL COMPRESSION VIA DISTILLATION AND QUANTIZATION](pdfs/MODEL%20COMPRESSION%20VIA%20DISTILLATION%20AND%20QUANTIZATION.pdf) |
-| [Mpi与Openmp并行程序设计：C语言版](pdfs/MPI%E4%B8%8EOpenMP%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%9AC%E8%AF%AD%E8%A8%80%E7%89%88.pdf) |
-| [Mastering the game of Go with deep neural networks and tree search](pdfs/Mastering%20the%20game%20of%20Go%20with%20deep%20neural%20networks%20and%20tree%20search.pdf) |
-| [NVIDIA Docker  GPU Server Application Deployment Made Easy   NVIDIA Developer Blog](pdfs/NVIDIA%20Docker_%20GPU%20Server%20Application%20Deployment%20Made%20Easy%20_%20NVIDIA%20Developer%20Blog.pdf) |
-| [NVIDIA Fermi Compute Architecture Whitepaper](pdfs/NVIDIA_Fermi_Compute_Architecture_Whitepaper.pdf) |
-| [Natural Language Processing (Almost) from Scratch](pdfs/Natural%20Language%20Processing%20%28Almost%29%20from%20Scratch.pdf) |
-| [OSX Mavericks Core Technology Overview](pdfs/OSX_Mavericks_Core_Technology_Overview.pdf) |
-| [Object Detection in 20 Years A Survey](pdfs/Object%20Detection%20in%2020%20Years%20A%20Survey.pdf) |
-| [PCI Express Technology 3.0](pdfs/PCI%20Express%20Technology%203.0.pdf) |
-| [Planning trajectories constrained by predictions](pdfs/Planning%20trajectories%20constrained%20by%20predictions.pdf) |
-| [PyTorch under the hood](pdfs/PyTorch%20under%20the%20hood.pdf) |
-| [Pyramidal Implementation of the Lucas Kanade Feature Tracker](pdfs/Pyramidal%20Implementation%20of%20the%20Lucas%20Kanade%20Feature%20Tracker.pdf) |
-| [Quantizing Deep Convolutional Networks for Efficient Inference-keynote](pdfs/Quantizing%20Deep%20Convolutional%20Networks%20for%20Efficient%20Inference-keynote.pdf) |
-| [Residual Networks Behave Like Ensembles of Relatively Shallow Networks](pdfs/Residual%20Networks%20Behave%20Like%20Ensembles%20of%20Relatively%20Shallow%20Networks.pdf) |
-| [S4158 Cuda Streams Best Practices Common Pitfalls](pdfs/S4158-cuda-streams-best-practices-common-pitfalls.pdf) |
-| [SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL NETWORKS](pdfs/SKELETON-BASED%20ACTION%20RECOGNITION%20WITH%20CONVOLUTIONAL%20NEURAL%20NETWORKS.pdf) |
-| [Sequential Y86-64 Implementation](pdfs/Sequential%20Y86-64%20Implementation.pdf) |
-| [Single-Stage Multi-Person Pose Machines](pdfs/Single-Stage%20Multi-Person%20Pose%20Machines.pdf) |
-| [Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition](pdfs/Spatial%20Temporal%20Graph%20Convolutional%20Networks%20for%20Skeleton-Based%20Action%20Recognition.pdf) |
-| [Speed accuracy trade-offs for modern convolutional object detectors](pdfs/Speed%20accuracy%20trade-offs%20for%20modern%20convolutional%20object%20detectors.pdf) |
-| [Synthetic Data for Text Localisation in Natural Images](pdfs/Synthetic%20Data%20for%20Text%20Localisation%20in%20Natural%20Images.pdf) |
-| [T4 Product Brief](pdfs/T4%20Product%20Brief.pdf) |
-| [TEXT CLASSIFICATION TECHNIQUES- A LITERATURE REVIEW](pdfs/TEXT%20CLASSIFICATION%20TECHNIQUES-%20A%20LITERATURE%20REVIEW.pdf) |
-| [Tesla P4 Product Brief](pdfs/Tesla-P4-Product-Brief.pdf) |
-| [Text Classification Algorithms- A Survey](pdfs/Text%20Classification%20Algorithms-%20A%20Survey.pdf) |
-| [The C Programming Language(cn)](pdfs/The%20C%20Programming%20Language-cn.pdf) |
-| [The Decline of Computers as a General PurposeTechnology](pdfs/The%20Decline%20of%20Computers%20as%20a%20General%20PurposeTechnology.pdf) |
-| [The Eight Pillars of Causal Wisdom](pdfs/The%20Eight%20Pillars%20of%20Causal%20Wisdom.pdf) |
-| [The Google File System](pdfs/The%20Google%20File%20System.pdf) |
-| [The Lottery Ticket Hypothesis Finding Sparse, Trainable Neural Networks](pdfs/The%20Lottery%20Ticket%20Hypothesis%20Finding%20Sparse%2C%20Trainable%20Neural%20Networks.pdf) |
-| [The Lottery Ticket Hypothesis at Scale](pdfs/The%20Lottery%20Ticket%20Hypothesis%20at%20Scale.pdf) |
-| [The Three Layer Causal Hierarchy](pdfs/The%20Three%20Layer%20Causal%20Hierarchy.pdf) |
-| [The Part Time Parliament](pdfs/The-Part-Time-Parliament.pdf) |
-| [Thrift-The Missing Guide](pdfs/Thrift-The%20Missing%20Guide.pdf) |
-| [Toward Efficient Trajectory Planning - The Path-Velocity Decomposition](pdfs/Toward%20Efficient%20Trajectory%20Planning%20-%20The%20Path-Velocity%20Decomposition.pdf) |
-| [Towards Causal Representation Learning](pdfs/Towards%20Causal%20Representation%20Learning.pdf) |
-| [Verifying the Safety of Lane Change Maneuvers of Self-driving Vehicles Based on Formalized Traffic Rules](pdfs/Verifying%20the%20Safety%20of%20Lane%20Change%20Maneuvers%20of%20Self-driving%20Vehicles%20Based%20on%20Formalized%20Traffic%20Rules.pdf) |
-| [Y86 Isa](pdfs/Y86-ISA.pdf) |
-| [You Are What Apps You Use- Demographic Prediction Based on User’s Apps](pdfs/You%20Are%20What%20Apps%20You%20Use-%20Demographic%20Prediction%20Based%20on%20User%E2%80%99s%20Apps.pdf) |
-| [A Closer Look At Skip Gram Modelling](pdfs/a-closer-look-at-skip-gram-modelling.pdf) |
-| [A Learning Based Tune Free Control Framework For Large Scale Autonomous Driving System Deployment](pdfs/a-learning-based-tune-free-control-framework-for-large-scale-autonomous-driving-system-deployment.pdf) |
-| [A Statistical Approach To Machine Translation](pdfs/a-statistical-approach-to-machine-translation.pdf) |
-| [A Stochastic Parts Program And Noun Phrase Parser For Unrestricted Text](pdfs/a-stochastic-parts-program-and-noun-phrase-parser-for-unrestricted-text.pdf) |
-| [An Automated Learning Based Procedure For Large Scale Vehicle Dvnamics Moding On Baidu Apollo Platform](pdfs/an-automated-learning-based-procedure-for-large-scale-vehicle-dvnamics-moding-on-baidu-apollo-platform.pdf) |
-| [Base An Acid Alternative](pdfs/base-an-acid-alternative.pdf) |
-| [Bigtable Osdi06](pdfs/bigtable-osdi06.pdf) |
-| [Bitcask Intro](pdfs/bitcask-intro.pdf) |
-| [Brewers Conjecture Sigact](pdfs/brewers-conjecture-sigact.pdf) |
-| [Ccks2018](pdfs/ccks2018.pdf) |
-| [Cgroups Intro](pdfs/cgroups-intro.pdf) |
-| [Charikar Estim](pdfs/charikar-estim.pdf) |
-| [Chubby Osdi06](pdfs/chubby-osdi06.pdf) |
-| [Conditional Random Fields Probabilistic Models For Segmenting And Labeling Sequence Data](pdfs/conditional-random-fields-probabilistic-models-for-segmenting-and-labeling-sequence-data.pdf) |
-| [Conflict Free Replicated Data Types](pdfs/conflict-free-replicated-data-types.pdf) |
-| [Cpp Primer Plus](pdfs/cpp-primer-plus-6th-edition-en.pdf.pdf) |
-| [Crftut Fnt](pdfs/crftut-fnt.pdf) |
-| [Csapp Talk 3E](pdfs/csapp-talk-3e.pdf) |
-| [Dragon Book Compiles](pdfs/dragon-book-compiles.pdf) |
-| [end-to-end arguments in system design](pdfs/end-to-end%20arguments%20in%20system%20design.pdf) |
-| [Eventually Consistent](pdfs/eventually-consistent.pdf) |
-| [Generic Programming And The Stl](pdfs/generic-programming-and-the-stl.pdf) |
-| [Googlecluster Ieee](pdfs/googlecluster-ieee.pdf) |
-| [Jsconf2018 Design Mistakes In Node](pdfs/jsconf2018-design-mistakes-in-node.pdf) |
-| [Lamport82](pdfs/lamport82.pdf) |
-| [Linux Performance Analysis And Tools](pdfs/linux-performance-analysis-and-tools.pdf) |
-| [Mapreduce Simplified Data Processing On Large Clusters](pdfs/mapreduce-simplified-data-processing-on-large-clusters.pdf) |
-| [Mobilenetv1](pdfs/mobileNetV1.pdf) |
-| [Mobilenetv2](pdfs/mobileNetV2.pdf) |
-| [Mobilenetv3](pdfs/mobileNetV3.pdf) |
-| [Moore 2003](pdfs/moore-2003.pdf) |
-| [moore 1975](pdfs/moore_1975.pdf) |
-| [Multi Digit Recognition Google](pdfs/multi-digit-recognition-google.pdf) |
-| [N Gram Similarity And Distance](pdfs/n-gram-similarity-and-distance.pdf) |
-| [neural reading comprehension and beyond 2018](pdfs/neural%20reading%20comprehension%20and%20beyond_2018.pdf) |
-| [On Discriminative Vs Generative Classifiers A Comparison Of Logistic Regression And Naive Bayes](pdfs/on-discriminative-vs-generative-classifiers-a-comparison-of-logistic-regression-and-naive-bayes.pdf) |
-| [Optimal And Efficient Path Planning For Partially Known Environments](pdfs/optimal-and-efficient-path-planning-for-partially-known-environments.pdf) |
-| [Patterson 19](pdfs/patterson-19.pdf) |
-| [Paxos Simple](pdfs/paxos-simple.pdf) |
-| [rss on nhtsa](pdfs/rss_on_nhtsa.pdf) |
-| [S7310 8 Bit Inference With Tensorrt](pdfs/s7310-8-bit-inference-with-tensorrt.pdf) |
-| [Simhash Detecting Near Duplicates For Web Crawling](pdfs/simhash-detecting-near-duplicates-for-web-crawling.pdf) |
-| [Solve It With Inf](pdfs/solve-it-with-inf.pdf) |
-| [Spam Filtering With Naive Bayes Which Naive Bayes](pdfs/spam-filtering-with-naive-bayes-which-naive-bayes.pdf) |
-| [Speech And Language Processing](pdfs/speech-and-language-processing-ed3.pdf) |
-| [The Art Of Software Testing(Cn)](pdfs/the-art-of-software-testing-cn.pdf) |
-| [The Art Of Software Testing](pdfs/the-art-of-software-testing-en-3rd-edition.pdf) |
-| [Toward A Comfortable Driving Experience For A Self Driving Shuttle Bus](pdfs/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.pdf) |
-| [Why Systolic Architecture 1982](pdfs/why-systolic-architecture-1982.pdf) |
-| [word2vec Parameter Learning Explained](pdfs/word2vec%20Parameter%20Learning%20Explained.pdf) |
-| [多处理器编程的艺术](pdfs/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.pdf) |
-| [视觉Slam十四讲(高翔第二版)](pdfs/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.pdf) |
+| Paper Title | links | file size |
+| --- | --- | --- |
+| Lenet5(1998) | [info](metas/1998-LeNet5.yaml), [pdf(local)](pdfs/1998-LeNet5.pdf) | 960.4 KB |
+| Pagerank Algorithm(1999) | [info](metas/1999-PageRank-algorithm.yaml), [pdf(local)](pdfs/1999-PageRank-algorithm.pdf) | 299.7 KB |
+| Face Detection A Survey(2001) | [info](metas/2001-Face-Detection-A-Survey.yaml), [pdf(local)](pdfs/2001-Face-Detection-A-Survey.pdf) | 434.1 KB |
+| Rapid Object Detection Boosted Cascade(2001) | [info](metas/2001-Rapid-Object-Detection-Boosted-Cascade.yaml), [pdf(local)](pdfs/2001-Rapid-Object-Detection-Boosted-Cascade.pdf) | 194.4 KB |
+| An Adaptive Peer-to-Peer Collision Warning System(2002) | [info](metas/2002-An%20Adaptive%20Peer-to-Peer%20Collision%20Warning%20System.yaml), [pdf(local)](pdfs/2002-An%20Adaptive%20Peer-to-Peer%20Collision%20Warning%20System.pdf) | 115.1 KB |
+| Bengio Neural Network Lm(2003) | [info](metas/2003-bengio-neural-network-LM.yaml), [pdf(local)](pdfs/2003-bengio-neural-network-LM.pdf) | 170.3 KB |
+| Robust Multipose Face Detection in Images(2004) | [info](metas/2004-Robust%20Multipose%20Face%20Detection%20in%20Images.yaml), [pdf(local)](pdfs/2004-Robust%20Multipose%20Face%20Detection%20in%20Images.pdf) | 911.3 KB |
+| Frenet(2010) | [info](metas/2010-frenet.yaml), [pdf(local)](pdfs/2010-frenet.pdf) | 1.9 MB |
+| Alexnet(2012) | [info](metas/2012-AlexNet.yaml), [pdf(local)](pdfs/2012-AlexNet.pdf) | 1.4 MB |
+| Rcnn(2013) | [info](metas/2013-rcnn.yaml), [pdf(local)](pdfs/2013-rcnn.pdf) | 6.3 MB |
+| Selectivesearch(2013) | [info](metas/2013-selectiveSearch.yaml), [pdf(local)](pdfs/2013-selectiveSearch.pdf) | 1.4 MB |
+| Wordnet(2013) | [info](metas/2013-wordnet.yaml), [pdf(local)](pdfs/2013-wordnet.pdf) | 336.9 KB |
+| Glove(2014) | [info](metas/2014-GloVe.yaml), [pdf(local)](pdfs/2014-GloVe.pdf) | 2.5 MB |
+| Reinforcement Learning-An Introduction(2014) | [info](metas/2014-Reinforcement%20Learning-An%20Introduction.yaml), [pdf(local)](pdfs/2014-Reinforcement%20Learning-An%20Introduction.pdf) | 4.0 MB |
+| Vggnet(2014) | [info](metas/2014-VggNet.yaml), [pdf(local)](pdfs/2014-VggNet.pdf) | 258.4 KB |
+| a survey on motion prediction and risk assessment(2014) | [info](metas/2014-a%20survey%20on%20motion%20prediction%20and%20risk%20assessment.yaml), [pdf(local)](pdfs/2014-a%20survey%20on%20motion%20prediction%20and%20risk%20assessment.pdf) | 2.3 MB |
+| A Review of Motion Planning Techniques for Automated Vehicles(2015) | [info](metas/2015-A%20Review%20of%20Motion%20Planning%20Techniques%20for%20Automated%20Vehicles.yaml), [pdf(local)](pdfs/2015-A%20Review%20of%20Motion%20Planning%20Techniques%20for%20Automated%20Vehicles.pdf) | 5.0 MB |
+| Multi View Face Detection(2015) | [info](metas/2015-Multi-view-Face-Detection.yaml), [pdf(local)](pdfs/2015-Multi-view-Face-Detection.pdf) | 4.3 MB |
+| Resnet(2015) | [info](metas/2015-ResNet.yaml), [pdf(local)](pdfs/2015-ResNet.pdf) | 848.0 KB |
+| Fast Rcnn(2015) | [info](metas/2015-fast-rcnn.yaml), [pdf(local)](pdfs/2015-fast-rcnn.pdf) | 760.8 KB |
+| Faster Rcnn(2015) | [info](metas/2015-faster-rcnn.yaml), [pdf(local)](pdfs/2015-faster-rcnn.pdf) | 6.6 MB |
+| Sppnet(2015) | [info](metas/2015-sppnet.yaml), [pdf(local)](pdfs/2015-sppnet.pdf) | 4.0 MB |
+| A Survey of Motion Planning and Control(2016) | [info](metas/2016-A%20Survey%20of%20Motion%20Planning%20and%20Control.yaml), [pdf(local)](pdfs/2016-A%20Survey%20of%20Motion%20Planning%20and%20Control.pdf) | 6.3 MB |
+| FPN-Feature Pyramid Networks(2016) | [info](metas/2016-FPN-Feature%20Pyramid%20Networks.yaml), [pdf(local)](pdfs/2016-FPN-Feature%20Pyramid%20Networks.pdf) | 768.4 KB |
+| Lane Change Scheduling for Autonomous Vehicles(2016) | [info](metas/2016-Lane%20Change%20Scheduling%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2016-Lane%20Change%20Scheduling%20for%20Autonomous%20Vehicles.pdf) | 1.3 MB |
+| Mtcnn(2016) | [info](metas/2016-mtcnn.yaml), [pdf(local)](pdfs/2016-mtcnn.pdf) | 831.5 KB |
+| Ssd(2016) | [info](metas/2016-ssd.yaml), [pdf(local)](pdfs/2016-ssd.pdf) | 2.4 MB |
+| 20160319 Dengli Interspeech Tutorial | [info](metas/20160319-Dengli-Interspeech-tutorial.yaml), [pdf(local)](pdfs/20160319-Dengli-Interspeech-tutorial.pdf) | 14.7 MB |
+| 20160319 邓力 Ieee Icassp Plenary | [info](metas/20160319-%E9%82%93%E5%8A%9B-IEEE-ICASSP-plenary.yaml), [pdf(local)](pdfs/20160319-%E9%82%93%E5%8A%9B-IEEE-ICASSP-plenary.pdf) | 6.7 MB |
+| Fpn(2017) | [info](metas/2017-FPN.yaml), [pdf(local)](pdfs/2017-FPN.pdf) | 770.6 KB |
+| Lane-Change Social Behavior Generator(2017) | [info](metas/2017-Lane-Change%20Social%20Behavior%20Generator.yaml), [pdf(local)](pdfs/2017-Lane-Change%20Social%20Behavior%20Generator.pdf) | 790.7 KB |
+| Malicious URL Detection using Machine Learning-a survey(2017) | [info](metas/2017-Malicious%20URL%20Detection%20using%20Machine%20Learning-a%20survey.yaml), [pdf(local)](pdfs/2017-Malicious%20URL%20Detection%20using%20Machine%20Learning-a%20survey.pdf) | 841.3 KB |
+| On a Formal Model of Safe and Scalable Self-driving Cars(2017) | [info](metas/2017-On%20a%20Formal%20Model%20of%20Safe%20and%20Scalable%20Self-driving%20Cars.yaml), [pdf(local)](pdfs/2017-On%20a%20Formal%20Model%20of%20Safe%20and%20Scalable%20Self-driving%20Cars.pdf) | 1.3 MB |
+| Safe Autonomous Lane Changes in Dense Traffic(2017) | [info](metas/2017-Safe%20Autonomous%20Lane%20Changes%20in%20Dense%20Traffic.yaml), [pdf(local)](pdfs/2017-Safe%20Autonomous%20Lane%20Changes%20in%20Dense%20Traffic.pdf) | 641.1 KB |
+| Mask Rcnn(2017) | [info](metas/2017-mask-rcnn.yaml), [pdf(local)](pdfs/2017-mask-rcnn.pdf) | 7.4 MB |
+| Lane Change Strategy for  Autonomous Vehicle(2018) | [info](metas/2018-Lane%20Change%20Strategy%20for%20%20Autonomous%20Vehicle.yaml), [pdf(local)](pdfs/2018-Lane%20Change%20Strategy%20for%20%20Autonomous%20Vehicle.pdf) | 2.3 MB |
+| Planning and Decision-Making for Autonomous Vehicles(2018) | [info](metas/2018-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2018-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) | 323.1 KB |
+| review-Planning and Decision-Making for Autonomous Vehicles(2018) | [info](metas/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) | 598.1 KB |
+| Human Motion Trajectory Prediction-A Survey(2019) | [info](metas/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.yaml), [pdf(local)](pdfs/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.pdf) | 3.2 MB |
+| Self-Driving Cars-A Survey(2019) | [info](metas/2019-Self-Driving%20Cars-A%20Survey.yaml), [pdf(local)](pdfs/2019-Self-Driving%20Cars-A%20Survey.pdf) | 3.5 MB |
+| Real-time safety assessment of trajectories(2021) | [info](metas/2021-Real-time%20safety%20assessment%20of%20trajectories.yaml), [pdf(local)](pdfs/2021-Real-time%20safety%20assessment%20of%20trajectories.pdf) | 2.9 MB |
+| A New Golden Age for Computer Architecture | [info](metas/A%20New%20Golden%20Age%20for%20Computer%20Architecture.yaml), [pdf(local)](pdfs/A%20New%20Golden%20Age%20for%20Computer%20Architecture.pdf) | 4.4 MB |
+| A Quantization-Friendly Separable Convolution for MobileNets | [info](metas/A%20Quantization-Friendly%20Separable%20Convolution%20for%20MobileNets.yaml), [pdf(local)](pdfs/A%20Quantization-Friendly%20Separable%20Convolution%20for%20MobileNets.pdf) | 1.2 MB |
+| A Survey on Dialogue Systems- Recent Advances and New Frontiers | [info](metas/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.yaml), [pdf(local)](pdfs/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.pdf) | 302.9 KB |
+| A guide to convolution arithmetic for deep learning | [info](metas/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.yaml), [pdf(local)](pdfs/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.pdf) | 892.3 KB |
+| A Tour Of C++ | [info](metas/A-Tour-of-C%2B%2B.yaml), [pdf(local)](pdfs/A-Tour-of-C%2B%2B.pdf) | 853.0 KB |
+| Attribute-Driven Feature Disentangling and Temporal Aggregation for Video Person Re-Identification | [info](metas/Attribute-Driven%20Feature%20Disentangling%20and%20Temporal%20Aggregation%20for%20Video%20Person%20Re-Identification.yaml), [pdf(local)](pdfs/Attribute-Driven%20Feature%20Disentangling%20and%20Temporal%20Aggregation%20for%20Video%20Person%20Re-Identification.pdf) | 1000.1 KB |
+| Black Hat Python | [info](metas/Black%20Hat%20Python.yaml), [pdf(local)](pdfs/Black%20Hat%20Python.pdf) | 10.0 MB |
+| Brendan Gregg-The Flame Graph | [info](metas/Brendan%20Gregg-The%20Flame%20Graph.yaml), [pdf(local)](pdfs/Brendan%20Gregg-The%20Flame%20Graph.pdf) | 1.2 MB |
+| C++Primer | [info](metas/C%2B%2BPrimer-4th-cn.yaml), [pdf(local)](pdfs/C%2B%2BPrimer-4th-cn.pdf) | 2.8 MB |
+| CNN- Single-label to Multi-label | [info](metas/CNN-%20Single-label%20to%20Multi-label.yaml), [pdf(local)](pdfs/CNN-%20Single-label%20to%20Multi-label.pdf) | 4.0 MB |
+| Cnsv 1806 Patterson | [info](metas/CNSV-1806-Patterson.yaml), [pdf(local)](pdfs/CNSV-1806-Patterson.pdf) | 1.9 MB |
+| CUDA Application Design and Development | [info](metas/CUDA_Application_Design_and_Development.yaml), [pdf(local)](pdfs/CUDA_Application_Design_and_Development.pdf) | 6.9 MB |
+| CUDA C Programming Guide 11 6 | [info](metas/CUDA_C_Programming_Guide_11_6.yaml), [pdf(local)](pdfs/CUDA_C_Programming_Guide_11_6.pdf) | 3.3 MB |
+| CUDA by Example | [info](metas/CUDA_by_Example.yaml), [pdf(local)](pdfs/CUDA_by_Example.pdf) | 2.0 MB |
+| Ceph - A Scalable High-Performance Distributed File System | [info](metas/Ceph%20-%20A%20Scalable%20High-Performance%20Distributed%20File%20System.yaml), [pdf(local)](pdfs/Ceph%20-%20A%20Scalable%20High-Performance%20Distributed%20File%20System.pdf) | 305.0 KB |
+| Co-occurrence Feature Learning from Skeleton Data for Action Recognition and Detection with Hierarchical Aggregation | [info](metas/Co-occurrence%20Feature%20Learning%20from%20Skeleton%20Data%20for%20Action%20Recognition%20and%20Detection%20with%20Hierarchical%20Aggregation.yaml), [pdf(local)](pdfs/Co-occurrence%20Feature%20Learning%20from%20Skeleton%20Data%20for%20Action%20Recognition%20and%20Detection%20with%20Hierarchical%20Aggregation.pdf) | 1.2 MB |
+| Connectionist Temporal Classification - Labelling Unsegmented Sequence Data with Recurrent Neural Networks | [info](metas/Connectionist%20Temporal%20Classification%20-%20Labelling%20Unsegmented%20Sequence%20Data%20with%20Recurrent%20Neural%20Networks.yaml), [pdf(local)](pdfs/Connectionist%20Temporal%20Classification%20-%20Labelling%20Unsegmented%20Sequence%20Data%20with%20Recurrent%20Neural%20Networks.pdf) | 260.9 KB |
+| Convolutional Neural Networks for Sentence Classification 2014 | [info](metas/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification_2014.yaml), [pdf(local)](pdfs/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification_2014.pdf) | 236.0 KB |
+| Cross Entropy Vs Squared Error Training A Theoretical And Experimental Comparison | [info](metas/Cross-Entropy-vs-Squared-Error-Training-a-Theoretical-and-Experimental-Comparison.yaml), [pdf(local)](pdfs/Cross-Entropy-vs-Squared-Error-Training-a-Theoretical-and-Experimental-Comparison.pdf) | 770.5 KB |
+| Debug Hacks(cn) | [info](metas/Debug%20Hacks-cn.yaml), [pdf(local)](pdfs/Debug%20Hacks-cn.pdf) | 13.1 MB |
+| Deep Learning based Recommender System - A Survey and New Perspectives | [info](metas/Deep%20Learning%20based%20Recommender%20System%20-%20A%20Survey%20and%20New%20Perspectives.yaml), [pdf(local)](pdfs/Deep%20Learning%20based%20Recommender%20System%20-%20A%20Survey%20and%20New%20Perspectives.pdf) | 1.7 MB |
+| Deep Neural Networks for YouTube Recommendations | [info](metas/Deep%20Neural%20Networks%20for%20YouTube%20Recommendations.yaml), [pdf(local)](pdfs/Deep%20Neural%20Networks%20for%20YouTube%20Recommendations.pdf) | 877.4 KB |
+| Demographic Prediction Based on User-s Mobile Behaviors | [info](metas/Demographic%20Prediction%20Based%20on%20User-s%20Mobile%20Behaviors.yaml), [pdf(local)](pdfs/Demographic%20Prediction%20Based%20on%20User-s%20Mobile%20Behaviors.pdf) | 210.7 KB |
+| Detecting Privacy-Sensitive Events in Medical Text | [info](metas/Detecting%20Privacy-Sensitive%20Events%20in%20Medical%20Text.yaml), [pdf(local)](pdfs/Detecting%20Privacy-Sensitive%20Events%20in%20Medical%20Text.pdf) | 244.9 KB |
+| Detection of Malicious URLs using Machine Learning Techniques | [info](metas/Detection%20of%20Malicious%20URLs%20using%20Machine%20Learning%20Techniques.yaml), [pdf(local)](pdfs/Detection%20of%20Malicious%20URLs%20using%20Machine%20Learning%20Techniques.pdf) | 462.2 KB |
+| Dragon Book Compilers | [info](metas/Dragon%20Book%20Compilers-en-2nd.yaml), [pdf(local)](pdfs/Dragon%20Book%20Compilers-en-2nd.pdf) | 4.9 MB |
+| Drop an Octave | [info](metas/Drop%20an%20Octave.yaml), [pdf(local)](pdfs/Drop%20an%20Octave.pdf) | 378.2 KB |
+| Enabling GPUs in the Container Runtime Ecosystem   NVIDIA Developer Blog | [info](metas/Enabling%20GPUs%20in%20the%20Container%20Runtime%20Ecosystem%20_%20NVIDIA%20Developer%20Blog.yaml), [pdf(local)](pdfs/Enabling%20GPUs%20in%20the%20Container%20Runtime%20Ecosystem%20_%20NVIDIA%20Developer%20Blog.pdf) | 1.2 MB |
+| Essentials of Programming Languages 3e (MIT, 2008) | [info](metas/Essentials%20of%20Programming%20Languages%203e%20%28MIT%2C%202008%29.yaml), [pdf(local)](pdfs/Essentials%20of%20Programming%20Languages%203e%20%28MIT%2C%202008%29.pdf) | 3.4 MB |
+| Fast Algorithm For Detecting Community Structure In Networks | [info](metas/Fast-algorithm-for-detecting-community-structure-in-networks.yaml), [pdf(local)](pdfs/Fast-algorithm-for-detecting-community-structure-in-networks.pdf) | 158.9 KB |
+| Finding And Evaluating Community Structure In Networks | [info](metas/Finding-and-evaluating-community-structure-in-networks.yaml), [pdf(local)](pdfs/Finding-and-evaluating-community-structure-in-networks.pdf) | 368.6 KB |
+| Formal Verification of Pipelined Y86-64 Microprocessors with UCLID5 | [info](metas/Formal%20Verification%20of%20Pipelined%20Y86-64%20Microprocessors%20with%20UCLID5.yaml), [pdf(local)](pdfs/Formal%20Verification%20of%20Pipelined%20Y86-64%20Microprocessors%20with%20UCLID5.pdf) | 631.4 KB |
+| Gender Prediction Using Browsing History | [info](metas/Gender%20Prediction%20Using%20Browsing%20History.yaml), [pdf(local)](pdfs/Gender%20Prediction%20Using%20Browsing%20History.pdf) | 248.2 KB |
+| Gray Python(cn) | [info](metas/Gray%20Python-cn.yaml), [pdf(local)](pdfs/Gray%20Python-cn.pdf) | 1.6 MB |
+| Grover Model | [info](metas/Grover-model.yaml), [pdf(local)](pdfs/Grover-model.pdf) | 639.4 KB |
+| Guide to Y86 Processor Simulators | [info](metas/Guide%20to%20Y86%20Processor%20Simulators.yaml), [pdf(local)](pdfs/Guide%20to%20Y86%20Processor%20Simulators.pdf) | 672.6 KB |
+| HBase Schema Design-hbasecon2012 | [info](metas/HBase%20Schema%20Design-hbasecon2012.yaml), [pdf(local)](pdfs/HBase%20Schema%20Design-hbasecon2012.pdf) | 1.3 MB |
+| Handbook Of Face Recognition | [info](metas/Handbook-of-Face-Recognition-2nd.yaml), [pdf(local)](pdfs/Handbook-of-Face-Recognition-2nd.pdf) | 423.3 KB |
+| Improving BERT-Based Text Classification With Auxiliary Sentence and Domain Knowledge | [info](metas/Improving%20BERT-Based%20Text%20Classification%20With%20Auxiliary%20Sentence%20and%20Domain%20Knowledge.yaml), [pdf(local)](pdfs/Improving%20BERT-Based%20Text%20Classification%20With%20Auxiliary%20Sentence%20and%20Domain%20Knowledge.pdf) | 7.3 MB |
+| Introduction to HBase Schema Design | [info](metas/Introduction%20to%20HBase%20Schema%20Design.yaml), [pdf(local)](pdfs/Introduction%20to%20HBase%20Schema%20Design.pdf) | 676.5 KB |
+| Introduction to Optimization | [info](metas/Introduction%20to%20Optimization%2C%204th%20Edition.yaml), [pdf(local)](pdfs/Introduction%20to%20Optimization%2C%204th%20Edition.pdf) | 20.0 MB |
+| Kali Linux Cookbook | [info](metas/Kali%20Linux%20Cookbook.yaml), [pdf(local)](pdfs/Kali%20Linux%20Cookbook.pdf) | 10.7 MB |
+| LLVM Cookbook | [info](metas/LLVM%20Cookbook.yaml), [pdf(local)](pdfs/LLVM%20Cookbook.pdf) | 2.9 MB |
+| Language Models are Unsupervised Multitask Learners | [info](metas/Language%20Models%20are%20Unsupervised%20Multitask%20Learners.yaml), [pdf(local)](pdfs/Language%20Models%20are%20Unsupervised%20Multitask%20Learners.pdf) | 569.1 KB |
+| MODEL COMPRESSION VIA DISTILLATION AND QUANTIZATION | [info](metas/MODEL%20COMPRESSION%20VIA%20DISTILLATION%20AND%20QUANTIZATION.yaml), [pdf(local)](pdfs/MODEL%20COMPRESSION%20VIA%20DISTILLATION%20AND%20QUANTIZATION.pdf) | 402.0 KB |
+| Mpi与Openmp并行程序设计：C语言版 | [info](metas/MPI%E4%B8%8EOpenMP%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%9AC%E8%AF%AD%E8%A8%80%E7%89%88.yaml), [pdf(local)](pdfs/MPI%E4%B8%8EOpenMP%E5%B9%B6%E8%A1%8C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%EF%BC%9AC%E8%AF%AD%E8%A8%80%E7%89%88.pdf) | 57.4 MB |
+| Mastering the game of Go with deep neural networks and tree search | [info](metas/Mastering%20the%20game%20of%20Go%20with%20deep%20neural%20networks%20and%20tree%20search.yaml), [pdf(local)](pdfs/Mastering%20the%20game%20of%20Go%20with%20deep%20neural%20networks%20and%20tree%20search.pdf) | 2.6 MB |
+| NVIDIA Docker  GPU Server Application Deployment Made Easy   NVIDIA Developer Blog | [info](metas/NVIDIA%20Docker_%20GPU%20Server%20Application%20Deployment%20Made%20Easy%20_%20NVIDIA%20Developer%20Blog.yaml), [pdf(local)](pdfs/NVIDIA%20Docker_%20GPU%20Server%20Application%20Deployment%20Made%20Easy%20_%20NVIDIA%20Developer%20Blog.pdf) | 1.7 MB |
+| NVIDIA Fermi Compute Architecture Whitepaper | [info](metas/NVIDIA_Fermi_Compute_Architecture_Whitepaper.yaml), [pdf(local)](pdfs/NVIDIA_Fermi_Compute_Architecture_Whitepaper.pdf) | 855.8 KB |
+| Natural Language Processing (Almost) from Scratch | [info](metas/Natural%20Language%20Processing%20%28Almost%29%20from%20Scratch.yaml), [pdf(local)](pdfs/Natural%20Language%20Processing%20%28Almost%29%20from%20Scratch.pdf) | 414.8 KB |
+| OSX Mavericks Core Technology Overview | [info](metas/OSX_Mavericks_Core_Technology_Overview.yaml), [pdf(local)](pdfs/OSX_Mavericks_Core_Technology_Overview.pdf) | 4.4 MB |
+| Object Detection in 20 Years A Survey | [info](metas/Object%20Detection%20in%2020%20Years%20A%20Survey.yaml), [pdf(local)](pdfs/Object%20Detection%20in%2020%20Years%20A%20Survey.pdf) | 7.4 MB |
+| PCI Express Technology 3.0 | [info](metas/PCI%20Express%20Technology%203.0.yaml), [pdf(local)](pdfs/PCI%20Express%20Technology%203.0.pdf) | 17.7 MB |
+| Planning trajectories constrained by predictions | [info](metas/Planning%20trajectories%20constrained%20by%20predictions.yaml), [pdf(local)](pdfs/Planning%20trajectories%20constrained%20by%20predictions.pdf) | 2.4 MB |
+| PyTorch under the hood | [info](metas/PyTorch%20under%20the%20hood.yaml), [pdf(local)](pdfs/PyTorch%20under%20the%20hood.pdf) | 1.3 MB |
+| Pyramidal Implementation of the Lucas Kanade Feature Tracker | [info](metas/Pyramidal%20Implementation%20of%20the%20Lucas%20Kanade%20Feature%20Tracker.yaml), [pdf(local)](pdfs/Pyramidal%20Implementation%20of%20the%20Lucas%20Kanade%20Feature%20Tracker.pdf) | 187.7 KB |
+| Quantizing Deep Convolutional Networks for Efficient Inference-keynote | [info](metas/Quantizing%20Deep%20Convolutional%20Networks%20for%20Efficient%20Inference-keynote.yaml), [pdf(local)](pdfs/Quantizing%20Deep%20Convolutional%20Networks%20for%20Efficient%20Inference-keynote.pdf) | 1.9 MB |
+| Residual Networks Behave Like Ensembles of Relatively Shallow Networks | [info](metas/Residual%20Networks%20Behave%20Like%20Ensembles%20of%20Relatively%20Shallow%20Networks.yaml), [pdf(local)](pdfs/Residual%20Networks%20Behave%20Like%20Ensembles%20of%20Relatively%20Shallow%20Networks.pdf) | 597.0 KB |
+| S4158 Cuda Streams Best Practices Common Pitfalls | [info](metas/S4158-cuda-streams-best-practices-common-pitfalls.yaml), [pdf(local)](pdfs/S4158-cuda-streams-best-practices-common-pitfalls.pdf) | 1.9 MB |
+| SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL NETWORKS | [info](metas/SKELETON-BASED%20ACTION%20RECOGNITION%20WITH%20CONVOLUTIONAL%20NEURAL%20NETWORKS.yaml), [pdf(local)](pdfs/SKELETON-BASED%20ACTION%20RECOGNITION%20WITH%20CONVOLUTIONAL%20NEURAL%20NETWORKS.pdf) | 501.0 KB |
+| Sequential Y86-64 Implementation | [info](metas/Sequential%20Y86-64%20Implementation.yaml), [pdf(local)](pdfs/Sequential%20Y86-64%20Implementation.pdf) | 734.3 KB |
+| Single-Stage Multi-Person Pose Machines | [info](metas/Single-Stage%20Multi-Person%20Pose%20Machines.yaml), [pdf(local)](pdfs/Single-Stage%20Multi-Person%20Pose%20Machines.pdf) | 8.7 MB |
+| Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition | [info](metas/Spatial%20Temporal%20Graph%20Convolutional%20Networks%20for%20Skeleton-Based%20Action%20Recognition.yaml), [pdf(local)](pdfs/Spatial%20Temporal%20Graph%20Convolutional%20Networks%20for%20Skeleton-Based%20Action%20Recognition.pdf) | 1.5 MB |
+| Speed accuracy trade-offs for modern convolutional object detectors | [info](metas/Speed%20accuracy%20trade-offs%20for%20modern%20convolutional%20object%20detectors.yaml), [pdf(local)](pdfs/Speed%20accuracy%20trade-offs%20for%20modern%20convolutional%20object%20detectors.pdf) | 7.9 MB |
+| Synthetic Data for Text Localisation in Natural Images | [info](metas/Synthetic%20Data%20for%20Text%20Localisation%20in%20Natural%20Images.yaml), [pdf(local)](pdfs/Synthetic%20Data%20for%20Text%20Localisation%20in%20Natural%20Images.pdf) | 799.1 KB |
+| T4 Product Brief | [info](metas/T4%20Product%20Brief.yaml), [pdf(local)](pdfs/T4%20Product%20Brief.pdf) | 1.2 MB |
+| TEXT CLASSIFICATION TECHNIQUES- A LITERATURE REVIEW | [info](metas/TEXT%20CLASSIFICATION%20TECHNIQUES-%20A%20LITERATURE%20REVIEW.yaml), [pdf(local)](pdfs/TEXT%20CLASSIFICATION%20TECHNIQUES-%20A%20LITERATURE%20REVIEW.pdf) | 635.4 KB |
+| Tesla P4 Product Brief | [info](metas/Tesla-P4-Product-Brief.yaml), [pdf(local)](pdfs/Tesla-P4-Product-Brief.pdf) | 1.2 MB |
+| Text Classification Algorithms- A Survey | [info](metas/Text%20Classification%20Algorithms-%20A%20Survey.yaml), [pdf(local)](pdfs/Text%20Classification%20Algorithms-%20A%20Survey.pdf) | 7.9 MB |
+| The C Programming Language(cn) | [info](metas/The%20C%20Programming%20Language-cn.yaml), [pdf(local)](pdfs/The%20C%20Programming%20Language-cn.pdf) | 5.9 MB |
+| The Decline of Computers as a General PurposeTechnology | [info](metas/The%20Decline%20of%20Computers%20as%20a%20General%20PurposeTechnology.yaml), [pdf(local)](pdfs/The%20Decline%20of%20Computers%20as%20a%20General%20PurposeTechnology.pdf) | 1.6 MB |
+| The Eight Pillars of Causal Wisdom | [info](metas/The%20Eight%20Pillars%20of%20Causal%20Wisdom.yaml), [pdf(local)](pdfs/The%20Eight%20Pillars%20of%20Causal%20Wisdom.pdf) | 1.0 MB |
+| The Google File System | [info](metas/The%20Google%20File%20System.yaml), [pdf(local)](pdfs/The%20Google%20File%20System.pdf) | 269.5 KB |
+| The Lottery Ticket Hypothesis Finding Sparse, Trainable Neural Networks | [info](metas/The%20Lottery%20Ticket%20Hypothesis%20Finding%20Sparse%2C%20Trainable%20Neural%20Networks.yaml), [pdf(local)](pdfs/The%20Lottery%20Ticket%20Hypothesis%20Finding%20Sparse%2C%20Trainable%20Neural%20Networks.pdf) | 3.8 MB |
+| The Lottery Ticket Hypothesis at Scale | [info](metas/The%20Lottery%20Ticket%20Hypothesis%20at%20Scale.yaml), [pdf(local)](pdfs/The%20Lottery%20Ticket%20Hypothesis%20at%20Scale.pdf) | 3.7 MB |
+| The Three Layer Causal Hierarchy | [info](metas/The%20Three%20Layer%20Causal%20Hierarchy.yaml), [pdf(local)](pdfs/The%20Three%20Layer%20Causal%20Hierarchy.pdf) | 82.6 KB |
+| The Part Time Parliament | [info](metas/The-Part-Time-Parliament.yaml), [pdf(local)](pdfs/The-Part-Time-Parliament.pdf) | 535.7 KB |
+| Thrift-The Missing Guide | [info](metas/Thrift-The%20Missing%20Guide.yaml), [pdf(local)](pdfs/Thrift-The%20Missing%20Guide.pdf) | 88.9 KB |
+| Toward Efficient Trajectory Planning - The Path-Velocity Decomposition | [info](metas/Toward%20Efficient%20Trajectory%20Planning%20-%20The%20Path-Velocity%20Decomposition.yaml), [pdf(local)](pdfs/Toward%20Efficient%20Trajectory%20Planning%20-%20The%20Path-Velocity%20Decomposition.pdf) | 2.1 MB |
+| Towards Causal Representation Learning | [info](metas/Towards%20Causal%20Representation%20Learning.yaml), [pdf(local)](pdfs/Towards%20Causal%20Representation%20Learning.pdf) | 1.4 MB |
+| Verifying the Safety of Lane Change Maneuvers of Self-driving Vehicles Based on Formalized Traffic Rules | [info](metas/Verifying%20the%20Safety%20of%20Lane%20Change%20Maneuvers%20of%20Self-driving%20Vehicles%20Based%20on%20Formalized%20Traffic%20Rules.yaml), [pdf(local)](pdfs/Verifying%20the%20Safety%20of%20Lane%20Change%20Maneuvers%20of%20Self-driving%20Vehicles%20Based%20on%20Formalized%20Traffic%20Rules.pdf) | 1.1 MB |
+| Y86 Isa | [info](metas/Y86-ISA.yaml), [pdf(local)](pdfs/Y86-ISA.pdf) | 86.8 KB |
+| You Are What Apps You Use- Demographic Prediction Based on User’s Apps | [info](metas/You%20Are%20What%20Apps%20You%20Use-%20Demographic%20Prediction%20Based%20on%20User%E2%80%99s%20Apps.yaml), [pdf(local)](pdfs/You%20Are%20What%20Apps%20You%20Use-%20Demographic%20Prediction%20Based%20on%20User%E2%80%99s%20Apps.pdf) | 184.0 KB |
+| A Closer Look At Skip Gram Modelling | [info](metas/a-closer-look-at-skip-gram-modelling.yaml), [pdf(local)](pdfs/a-closer-look-at-skip-gram-modelling.pdf) | 296.5 KB |
+| A Learning Based Tune Free Control Framework For Large Scale Autonomous Driving System Deployment | [info](metas/a-learning-based-tune-free-control-framework-for-large-scale-autonomous-driving-system-deployment.yaml), [pdf(local)](pdfs/a-learning-based-tune-free-control-framework-for-large-scale-autonomous-driving-system-deployment.pdf) | 2.7 MB |
+| A Statistical Approach To Machine Translation | [info](metas/a-statistical-approach-to-machine-translation.yaml), [pdf(local)](pdfs/a-statistical-approach-to-machine-translation.pdf) | 658.2 KB |
+| A Stochastic Parts Program And Noun Phrase Parser For Unrestricted Text | [info](metas/a-stochastic-parts-program-and-noun-phrase-parser-for-unrestricted-text.yaml), [pdf(local)](pdfs/a-stochastic-parts-program-and-noun-phrase-parser-for-unrestricted-text.pdf) | 644.4 KB |
+| An Automated Learning Based Procedure For Large Scale Vehicle Dvnamics Moding On Baidu Apollo Platform | [info](metas/an-automated-learning-based-procedure-for-large-scale-vehicle-dvnamics-moding-on-baidu-apollo-platform.yaml), [pdf(local)](pdfs/an-automated-learning-based-procedure-for-large-scale-vehicle-dvnamics-moding-on-baidu-apollo-platform.pdf) | 4.1 MB |
+| Base An Acid Alternative | [info](metas/base-an-acid-alternative.yaml), [pdf(local)](pdfs/base-an-acid-alternative.pdf) | 413.7 KB |
+| Bigtable Osdi06 | [info](metas/bigtable-osdi06.yaml), [pdf(local)](pdfs/bigtable-osdi06.pdf) | 216.0 KB |
+| Bitcask Intro | [info](metas/bitcask-intro.yaml), [pdf(local)](pdfs/bitcask-intro.pdf) | 317.0 KB |
+| Brewers Conjecture Sigact | [info](metas/brewers-conjecture-sigact.yaml), [pdf(local)](pdfs/brewers-conjecture-sigact.pdf) | 130.7 KB |
+| Ccks2018 | [info](metas/ccks2018.yaml), [pdf(local)](pdfs/ccks2018.pdf) | 2.4 MB |
+| Cgroups Intro | [info](metas/cgroups-intro.yaml), [pdf(local)](pdfs/cgroups-intro.pdf) | 638.9 KB |
+| Charikar Estim | [info](metas/charikar-estim.yaml), [pdf(local)](pdfs/charikar-estim.pdf) | 155.1 KB |
+| Chubby Osdi06 | [info](metas/chubby-osdi06.yaml), [pdf(local)](pdfs/chubby-osdi06.pdf) | 114.9 KB |
+| Conditional Random Fields Probabilistic Models For Segmenting And Labeling Sequence Data | [info](metas/conditional-random-fields-probabilistic-models-for-segmenting-and-labeling-sequence-data.yaml), [pdf(local)](pdfs/conditional-random-fields-probabilistic-models-for-segmenting-and-labeling-sequence-data.pdf) | 254.0 KB |
+| Conflict Free Replicated Data Types | [info](metas/conflict-free-replicated-data-types.yaml), [pdf(local)](pdfs/conflict-free-replicated-data-types.pdf) | 573.4 KB |
+| Cpp Primer Plus | [info](metas/cpp-primer-plus-6th-edition-en.pdf.yaml), [pdf(local)](pdfs/cpp-primer-plus-6th-edition-en.pdf.pdf) | 7.7 MB |
+| Crftut Fnt | [info](metas/crftut-fnt.yaml), [pdf(local)](pdfs/crftut-fnt.pdf) | 661.5 KB |
+| Csapp Talk 3E | [info](metas/csapp-talk-3e.yaml), [pdf(local)](pdfs/csapp-talk-3e.pdf) | 7.7 MB |
+| Dragon Book Compiles | [info](metas/dragon-book-compiles.yaml), [pdf(local)](pdfs/dragon-book-compiles.pdf) | 24.3 MB |
+| end-to-end arguments in system design | [info](metas/end-to-end%20arguments%20in%20system%20design.yaml), [pdf(local)](pdfs/end-to-end%20arguments%20in%20system%20design.pdf) | 183.3 KB |
+| Eventually Consistent | [info](metas/eventually-consistent.yaml), [pdf(local)](pdfs/eventually-consistent.pdf) | 5.3 MB |
+| Generic Programming And The Stl | [info](metas/generic-programming-and-the-stl.yaml), [pdf(local)](pdfs/generic-programming-and-the-stl.pdf) | 17.4 MB |
+| Googlecluster Ieee | [info](metas/googlecluster-ieee.yaml), [pdf(local)](pdfs/googlecluster-ieee.pdf) | 237.2 KB |
+| Jsconf2018 Design Mistakes In Node | [info](metas/jsconf2018-design-mistakes-in-node.yaml), [pdf(local)](pdfs/jsconf2018-design-mistakes-in-node.pdf) | 189.1 KB |
+| Lamport82 | [info](metas/lamport82.yaml), [pdf(local)](pdfs/lamport82.pdf) | 1.2 MB |
+| Linux Performance Analysis And Tools | [info](metas/linux-performance-analysis-and-tools.yaml), [pdf(local)](pdfs/linux-performance-analysis-and-tools.pdf) | 2.6 MB |
+| Mapreduce Simplified Data Processing On Large Clusters | [info](metas/mapreduce-simplified-data-processing-on-large-clusters.yaml), [pdf(local)](pdfs/mapreduce-simplified-data-processing-on-large-clusters.pdf) | 545.3 KB |
+| Mobilenetv1 | [info](metas/mobileNetV1.yaml), [pdf(local)](pdfs/mobileNetV1.pdf) | 919.2 KB |
+| Mobilenetv2 | [info](metas/mobileNetV2.yaml), [pdf(local)](pdfs/mobileNetV2.pdf) | 1.5 MB |
+| Mobilenetv3 | [info](metas/mobileNetV3.yaml), [pdf(local)](pdfs/mobileNetV3.pdf) | 525.7 KB |
+| Moore 2003 | [info](metas/moore-2003.yaml), [pdf(local)](pdfs/moore-2003.pdf) | 694.6 KB |
+| moore 1975 | [info](metas/moore_1975.yaml), [pdf(local)](pdfs/moore_1975.pdf) | 247.2 KB |
+| Multi Digit Recognition Google | [info](metas/multi-digit-recognition-google.yaml), [pdf(local)](pdfs/multi-digit-recognition-google.pdf) | 4.6 MB |
+| N Gram Similarity And Distance | [info](metas/n-gram-similarity-and-distance.yaml), [pdf(local)](pdfs/n-gram-similarity-and-distance.pdf) | 148.4 KB |
+| neural reading comprehension and beyond 2018 | [info](metas/neural%20reading%20comprehension%20and%20beyond_2018.yaml), [pdf(local)](pdfs/neural%20reading%20comprehension%20and%20beyond_2018.pdf) | 5.5 MB |
+| On Discriminative Vs Generative Classifiers A Comparison Of Logistic Regression And Naive Bayes | [info](metas/on-discriminative-vs-generative-classifiers-a-comparison-of-logistic-regression-and-naive-bayes.yaml), [pdf(local)](pdfs/on-discriminative-vs-generative-classifiers-a-comparison-of-logistic-regression-and-naive-bayes.pdf) | 1.5 MB |
+| Optimal And Efficient Path Planning For Partially Known Environments | [info](metas/optimal-and-efficient-path-planning-for-partially-known-environments.yaml), [pdf(local)](pdfs/optimal-and-efficient-path-planning-for-partially-known-environments.pdf) | 233.8 KB |
+| Patterson 19 | [info](metas/patterson-19.yaml), [pdf(local)](pdfs/patterson-19.pdf) | 10.3 MB |
+| Paxos Simple | [info](metas/paxos-simple.yaml), [pdf(local)](pdfs/paxos-simple.pdf) | 88.1 KB |
+| rss on nhtsa | [info](metas/rss_on_nhtsa.yaml), [pdf(local)](pdfs/rss_on_nhtsa.pdf) | 1.7 MB |
+| S7310 8 Bit Inference With Tensorrt | [info](metas/s7310-8-bit-inference-with-tensorrt.yaml), [pdf(local)](pdfs/s7310-8-bit-inference-with-tensorrt.pdf) | 1.7 MB |
+| Simhash Detecting Near Duplicates For Web Crawling | [info](metas/simhash-detecting-near-duplicates-for-web-crawling.yaml), [pdf(local)](pdfs/simhash-detecting-near-duplicates-for-web-crawling.pdf) | 153.9 KB |
+| Solve It With Inf | [info](metas/solve-it-with-inf.yaml), [pdf(local)](pdfs/solve-it-with-inf.pdf) | 18.6 MB |
+| Spam Filtering With Naive Bayes Which Naive Bayes | [info](metas/spam-filtering-with-naive-bayes-which-naive-bayes.yaml), [pdf(local)](pdfs/spam-filtering-with-naive-bayes-which-naive-bayes.pdf) | 1.2 MB |
+| Speech And Language Processing | [info](metas/speech-and-language-processing-ed3.yaml), [pdf(local)](pdfs/speech-and-language-processing-ed3.pdf) | 18.1 MB |
+| The Art Of Software Testing(Cn) | [info](metas/the-art-of-software-testing-cn.yaml), [pdf(local)](pdfs/the-art-of-software-testing-cn.pdf) | 5.1 MB |
+| The Art Of Software Testing | [info](metas/the-art-of-software-testing-en-3rd-edition.yaml), [pdf(local)](pdfs/the-art-of-software-testing-en-3rd-edition.pdf) | 5.4 MB |
+| Toward A Comfortable Driving Experience For A Self Driving Shuttle Bus | [info](metas/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.yaml), [pdf(local)](pdfs/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.pdf) | 3.8 MB |
+| Why Systolic Architecture 1982 | [info](metas/why-systolic-architecture-1982.yaml), [pdf(local)](pdfs/why-systolic-architecture-1982.pdf) | 2.4 MB |
+| word2vec Parameter Learning Explained | [info](metas/word2vec%20Parameter%20Learning%20Explained.yaml), [pdf(local)](pdfs/word2vec%20Parameter%20Learning%20Explained.pdf) | 797.7 KB |
+| 多处理器编程的艺术 | [info](metas/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.yaml), [pdf(local)](pdfs/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.pdf) | 43.8 MB |
+| 视觉Slam十四讲(高翔第二版) | [info](metas/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.yaml), [pdf(local)](pdfs/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.pdf) | 29.5 MB |

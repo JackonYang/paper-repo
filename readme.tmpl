@@ -21,8 +21,8 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
-| Paper Title |
-| --- |
+| Paper Title | links | file size |
+| --- | --- | --- |
 {%- for meta in meta_list %}
-| [{{ meta.title }}]({{ meta.pdf_relpath|safe }}) |
+| {{ meta.title }} | [info]({{ meta.meta_relpath|safe }}), [pdf(local)]({{ meta.pdf_relpath|safe }}) | {{ meta.filesize_readable }} |
 {%- endfor %}
