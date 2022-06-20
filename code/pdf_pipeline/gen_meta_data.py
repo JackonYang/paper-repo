@@ -12,6 +12,7 @@ from .parsers import parse_pdf_title
 
 def update_file_facts(pdf_path):
     meta_key = meta_io.filepath2key(pdf_path)
+    meta_path = meta_io.key2meta_path(meta_key)
 
     basename = os.path.basename(pdf_path)
     raw_filename, ext = os.path.splitext(basename)
@@ -27,6 +28,7 @@ def update_file_facts(pdf_path):
         'content_md5': utils.md5_for_file(pdf_path),
         'url_slug': quote(raw_filename),
         'pdf_relpath': quote(os.path.relpath(pdf_path, PROJ_DIR)),
+        'meta_relpath': quote(os.path.relpath(meta_path, PROJ_DIR)),
     }
 
     meta_io.update_meta(meta_key, context)
