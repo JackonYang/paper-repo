@@ -116,7 +116,6 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 | [Natural Language Processing (Almost) from Scratch](pdfs/Natural%20Language%20Processing%20%28Almost%29%20from%20Scratch.pdf) |
 | [OSX Mavericks Core Technology Overview](pdfs/OSX_Mavericks_Core_Technology_Overview.pdf) |
 | [Object Detection in 20 Years A Survey](pdfs/Object%20Detection%20in%2020%20Years%20A%20Survey.pdf) |
-| [On a Formal Model of Safe and Scalable Self-driving Cars](pdfs/On%20a%20Formal%20Model%20of%20Safe%20and%20Scalable%20Self-driving%20Cars.pdf) |
 | [PCI Express Technology 3.0](pdfs/PCI%20Express%20Technology%203.0.pdf) |
 | [Planning trajectories constrained by predictions](pdfs/Planning%20trajectories%20constrained%20by%20predictions.pdf) |
 | [PyTorch under the hood](pdfs/PyTorch%20under%20the%20hood.pdf) |
@@ -189,7 +188,6 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 | [Paxos Simple](pdfs/paxos-simple.pdf) |
 | [rss on nhtsa](pdfs/rss_on_nhtsa.pdf) |
 | [S7310 8 Bit Inference With Tensorrt](pdfs/s7310-8-bit-inference-with-tensorrt.pdf) |
-| [Scalelinuxperformance 130224171331 Phpapp01](pdfs/scalelinuxperformance-130224171331-phpapp01.pdf) |
 | [Simhash Detecting Near Duplicates For Web Crawling](pdfs/simhash-detecting-near-duplicates-for-web-crawling.pdf) |
 | [Solve It With Inf](pdfs/solve-it-with-inf.pdf) |
 | [Spam Filtering With Naive Bayes Which Naive Bayes](pdfs/spam-filtering-with-naive-bayes-which-naive-bayes.pdf) |

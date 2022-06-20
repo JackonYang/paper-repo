@@ -30,6 +30,5 @@ def main():
         'meta_list': meta_list,
     }
 
-    print(meta_list[0])
-
-    render_md(TEMPLATE_DIR, TEMPLATE_NAME, data, OUT_FILENAME)
+    # print(meta_list[0])
+    return render_md(TEMPLATE_DIR, TEMPLATE_NAME, data, OUT_FILENAME)
