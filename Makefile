@@ -4,8 +4,11 @@ DC?=docker-compose
 
 CODE_ROOT?=code
 
-run_pipeline:
-	cd code && python manage.py
+check-dup:
+	cd code && python manage.py check-dup
+
+gen-meta:
+	cd code && python manage.py gen-meta
 
 dvc-add:
 	dvc add pdfs/*.pdf
@@ -24,6 +27,6 @@ flake8:
 test:
 	PYTHONPATH=$(CODE_ROOT) pytest --cov $(CODE_ROOT) --cov-report term-missing:skip-covered --capture=no -p no:cacheprovider
 
-.PHONY: pdf_pipeline
+.PHONY: check-dup gen-meta
 .PHONY: dvc-add
 .PHONY: setup flake8 ut
