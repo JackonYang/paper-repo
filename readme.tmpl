@@ -23,6 +23,6 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 | Paper Title |
 | --- |
-{%- for pdf_info in pdf_list %}
-| [{{ pdf_info.title }}]({{ pdf_info.pdf_path|safe }}) |
+{%- for meta in meta_list %}
+| [{{ meta.title }}]({{ meta.pdf_relpath|safe }}) |
 {%- endfor %}
