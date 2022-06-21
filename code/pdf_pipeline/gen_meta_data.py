@@ -11,6 +11,10 @@ from . import utils
 from .parsers import parse_pdf_title
 
 
+# read default tag from env
+default_tag = os.environ.get('DEFAULT_TAG', 'other-default')
+
+
 def update_file_facts(pdf_path):
     meta_key = meta_io.filepath2key(pdf_path)
     meta_path = meta_io.key2meta_path(meta_key)
@@ -50,11 +54,20 @@ def guess_from_filename(meta_key):
     meta_io.update_meta(meta_key, context)
 
 
+def add_default_tags(meta_key):
+    meta = meta_io.read_meta(meta_key)
+
+    if 'tags' not in meta:
+        meta['tags'] = [default_tag]
+        meta_io.update_meta(meta_key, meta)
+
+
 def gen_meta(pdf_path):
     update_file_facts(pdf_path)
 
     meta_key = meta_io.filepath2key(pdf_path)
     guess_from_filename(meta_key)
+    add_default_tags(meta_key)
 
 
 def clean_extra_meta():

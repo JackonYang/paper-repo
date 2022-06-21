@@ -2,11 +2,18 @@ import os
 import re
 import codecs
 import yaml
+import copy
 
 from jinja2 import Environment, FileSystemLoader
 
 
 META_BOUNDARY = re.compile(r'^-{3,}\s*$', re.MULTILINE)
+
+
+default_data = {
+    'meta': {},
+    'content': '',
+}
 
 
 def render_md(template_dir, template_name, data, out_filename):
@@ -45,7 +52,7 @@ def load_md(filepath):
 
 
 def load_md_if_exists(filepath):
-    data = {}
+    data = copy.deepcopy(default_data)
     if os.path.exists(filepath):
         data = load_md(filepath)
 

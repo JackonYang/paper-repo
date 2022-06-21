@@ -18,6 +18,9 @@ markdown_link_re = re.compile(r'\[(.*?)\]\((.*?)\)')
 
 
 def clean_content(content):
+    if not content or not isinstance(content, str):
+        return ''
+
     content = content.lstrip()
 
     pdf_link, new_content = content.split('\n', 1)
@@ -63,10 +66,7 @@ def main():
         else:
             data['meta'] = meta
 
-        if 'tags' not in data['meta']:
-            data['meta']['tags'] = 'other-default'
-
-        for t in data['meta']['tags'].split(','):
+        for t in data['meta']['tags']:
             if t not in tag_list:
                 tag_list.append(t)
 

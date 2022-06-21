@@ -1,6 +1,9 @@
 ---
 title: {{ meta.title }}
-tags: {{ meta.tags }}
+tags:
+{% for t in meta.tags -%}
+  - {{ t }}
+{% endfor %}
 ---
 
 [local pdf]({{ common_path }}/{{ meta.pdf_relpath|safe }})
