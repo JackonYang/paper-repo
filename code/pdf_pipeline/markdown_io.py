@@ -11,7 +11,9 @@ markdown_link_re = re.compile(r'\[(.*?)\]\((.*?)\)')
 
 
 def render_md(template_dir, template_name, data, out_filename):
-    env = Environment(loader=FileSystemLoader(template_dir))
+    env = Environment(
+        loader=FileSystemLoader(template_dir),
+        keep_trailing_newline=True)
     template = env.get_template(template_name)
 
     content = template.render(data)
