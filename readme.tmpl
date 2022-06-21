@@ -18,7 +18,11 @@ make push-all
 
 # 更新 readme
 # 手动改过 meta data，或 readme 模版以后执行
-make update-readme
+make gen-readme
+
+# 生成 notes 文件. 输出目录:
+# https://github.com/JackonYang/paper-reading/tree/master/01-zettelkasten/02-References
+make gen-notes-md
 ```
 
 更多用法见：[详细使用说明](docs/how-to-use.md)
