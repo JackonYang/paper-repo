@@ -3,3 +3,8 @@ title: {{ meta.title }}
 ---
 
 [local pdf]({{ common_path }}/{{ meta.pdf_relpath|safe }})
+
+# {{ meta.title }}
+{% if content %}
+{{ content }}
+{% endif -%}
