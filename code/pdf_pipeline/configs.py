@@ -9,6 +9,8 @@ META_DIR = os.path.join(PROJ_DIR, 'metas')
 MD_NOTES_DIR = os.path.join(PROJ_DIR, '../01-zettelkasten/02-References')
 MD_NOTES_PDF_REL_ROOT = '../../..'
 
+TAG_MAP_DIR = os.path.join(PROJ_DIR, '../01-zettelkasten/06-Content Maps')
+
 
 if __name__ == '__main__':
     print(PROJ_DIR)
