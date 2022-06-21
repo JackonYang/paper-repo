@@ -1,4 +1,5 @@
 import os
+import re
 
 from . import meta_io
 from . import markdown_io
@@ -11,6 +12,25 @@ from .configs import (
 
 TEMPLATE_DIR = os.path.join(PROJ_DIR)
 TEMPLATE_NAME = 'md-notes.tmpl'
+
+markdown_link_re = re.compile(r'\[(.*?)\]\((.*?)\)')
+
+
+def clean_content(content):
+    content = content.lstrip()
+
+    pdf_link, new_content = content.split('\n', 1)
+    if markdown_link_re.match(pdf_link):
+        content = new_content.lstrip()
+
+    if content.startswith('#'):
+        groups = content.split('\n', 1)
+        if len(groups) == 1:
+            content = ''
+        else:
+            content = groups[1].lstrip()
+
+    return content
 
 
 def main():
@@ -27,7 +47,11 @@ def main():
         else:
             data['meta'] = meta
 
+        # if 'tags' not in data['meta']:
+        #     data['meta']['tags'] = 'other-default'
+
         data['common_path'] = MD_NOTES_PDF_REL_ROOT
+        data['content'] = clean_content(data['content'])
 
         markdown_io.render_md(TEMPLATE_DIR, TEMPLATE_NAME, data, out_filename)
 

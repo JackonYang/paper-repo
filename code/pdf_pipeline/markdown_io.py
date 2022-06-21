@@ -7,7 +7,6 @@ from jinja2 import Environment, FileSystemLoader
 
 
 META_BOUNDARY = re.compile(r'^-{3,}\s*$', re.MULTILINE)
-markdown_link_re = re.compile(r'\[(.*?)\]\((.*?)\)')
 
 
 def render_md(template_dir, template_name, data, out_filename):
@@ -29,19 +28,6 @@ def split_meta(content):
     if META_BOUNDARY.match(content):
         _, fm, content = META_BOUNDARY.split(content, 2)
         meta = yaml.safe_load(fm.strip()) or {}
-
-    content = content.lstrip()
-
-    pdf_link, new_content = content.split('\n', 1)
-    if markdown_link_re.match(pdf_link):
-        content = new_content.lstrip()
-
-    if content.startswith('#'):
-        groups = content.split('\n', 1)
-        if len(groups) == 1:
-            content = ''
-        else:
-            content = groups[1].lstrip()
 
     data = {
         'meta': meta,
