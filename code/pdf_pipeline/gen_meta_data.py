@@ -21,7 +21,7 @@ def update_file_facts(pdf_path):
     filesize = os.path.getsize(pdf_path)
 
     context = {
-        'mata_key': meta_key,
+        'meta_key': meta_key,
         'raw_filename': raw_filename,
         'raw_ext': ext,
         'filesize': filesize,
