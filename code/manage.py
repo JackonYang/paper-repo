@@ -29,7 +29,7 @@ pipelines = {
     'check-dup': run_check_dup,
     'gen-meta': run_gen_meta,
     'update-readme': run_update_readme,
-    'gen-md-notes': run_gen_md_notes,
+    'gen-notes-md': run_gen_md_notes,
 }
 
 pipeline_choices = ', '.join(pipelines.keys())
