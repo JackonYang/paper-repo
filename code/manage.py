@@ -4,6 +4,7 @@ from pdf_pipeline import (
     check_duplicate_pdf,
     gen_meta_data,
     render_readme,
+    gen_md_notes,
 )
 
 
@@ -20,10 +21,15 @@ def update_readme():
     return render_readme.main()
 
 
+def run_gen_md_notes():
+    return gen_md_notes.main()
+
+
 pipelines = {
     'check-dup': run_check_dup,
     'gen-meta': run_gen_meta,
     'update-readme': update_readme,
+    'gen-md-notes': run_gen_md_notes,
 }
 
 pipeline_choices = ', '.join(pipelines.keys())
