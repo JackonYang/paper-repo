@@ -58,7 +58,7 @@ def add_default_tags(meta_key):
     meta = meta_io.read_meta(meta_key)
 
     if 'tags' not in meta:
-        meta['tags'] = [default_tag]
+        meta['tags'] = [default_tag, 'paper']
         meta_io.update_meta(meta_key, meta)
 
 
