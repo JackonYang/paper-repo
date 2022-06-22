@@ -45,7 +45,7 @@ def add_missing_tag_map(tag_list):
         if t == TYPE_DEFAULT_TAG:
             continue
 
-        map_file = os.path.join(TAG_MAP_DIR, '%s Paper Map.md' % t)
+        map_file = os.path.join(TAG_MAP_DIR, '%s Paper Map.md' % t.replace('/', ' - '))
         if os.path.exists(map_file):
             print("skip %s: " % map_file)
             continue
