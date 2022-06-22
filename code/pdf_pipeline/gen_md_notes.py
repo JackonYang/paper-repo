@@ -91,7 +91,7 @@ def main():
         heading_meta.pop('title')
         heading_meta.setdefault('status', default_status)
 
-        data['meta_str'] = yaml.dump(heading_meta)
+        data['meta_str'] = yaml.dump(heading_meta).strip()
         data['content'] = clean_content(data['content'])
 
         markdown_io.render_md(TEMPLATE_DIR, TEMPLATE_NAME, data, out_filename)
