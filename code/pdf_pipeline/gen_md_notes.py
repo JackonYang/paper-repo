@@ -69,6 +69,9 @@ def main():
         heading_meta.update(data['meta'])
         data['meta'].update(meta)
 
+        # ad-hoc changes for data migration
+        # heading_meta['tags'].append('paper')
+
         for t in data['meta']['tags']:
             if t not in tag_list:
                 tag_list.append(t)
