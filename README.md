@@ -46,7 +46,7 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
-total count: 234
+total count: 233
 
 | Paper Title | links | file size |
 | --- | --- | --- |
@@ -97,7 +97,6 @@ total count: 234
 | Planning and Decision-Making for Autonomous Vehicles(2018) | [info](metas/2018-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2018-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) | 323.1 KB |
 | review-Planning and Decision-Making for Autonomous Vehicles(2018) | [info](metas/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) | 598.1 KB |
 | Craft Character Region Awareness(2019) | [info](metas/2019-CRAFT-character-region-awareness.yaml), [pdf(local)](pdfs/2019-CRAFT-character-region-awareness.pdf) | 4.5 MB |
-| Dataset and Model Analysis(2019) | [info](metas/2019-Dataset%20and%20Model%20Analysis.yaml), [pdf(local)](pdfs/2019-Dataset%20and%20Model%20Analysis.pdf) | 1.4 MB |
 | Dividemix(2019) | [info](metas/2019-DivideMix.yaml), [pdf(local)](pdfs/2019-DivideMix.pdf) | 858.7 KB |
 | How does Disagreement Help Generalization against Label Corruption(2019) | [info](metas/2019-How%20does%20Disagreement%20Help%20Generalization%20against%20Label%20Corruption.yaml), [pdf(local)](pdfs/2019-How%20does%20Disagreement%20Help%20Generalization%20against%20Label%20Corruption.pdf) | 1008.5 KB |
 | Human Motion Trajectory Prediction-A Survey(2019) | [info](metas/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.yaml), [pdf(local)](pdfs/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.pdf) | 3.2 MB |
