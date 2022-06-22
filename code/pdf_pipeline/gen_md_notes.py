@@ -80,7 +80,7 @@ def main():
         # ad-hoc changes for data migration
         # heading_meta['tags'].append('paper')
 
-        for t in data['meta']['tags']:
+        for t in heading_meta['tags']:
             if t not in tag_list:
                 tag_list.append(t)
 
