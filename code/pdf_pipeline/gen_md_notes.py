@@ -18,6 +18,8 @@ TEMPLATE_NAME = 'md-notes.tmpl'
 
 markdown_link_re = re.compile(r'\[(.*?)\]\((.*?)\)')
 
+default_status = 'todo'
+
 
 meta_keys_from_yaml = [
     'title',
@@ -84,7 +86,11 @@ def main():
 
         data['common_path'] = MD_NOTES_PDF_REL_ROOT
 
+        # ad-hoc fields fix for rendering template
+        data['meta'].update(heading_meta)
         heading_meta.pop('title')
+        heading_meta.setdefault('status', default_status)
+
         data['meta_str'] = yaml.dump(heading_meta)
         data['content'] = clean_content(data['content'])
 
