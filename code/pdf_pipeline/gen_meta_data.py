@@ -5,6 +5,7 @@ from .configs import (
     META_DIR,
     PDF_DIR,
     PROJ_DIR,
+    TYPE_DEFAULT_TAG,
 )
 from . import meta_io
 from . import utils
@@ -58,7 +59,7 @@ def add_default_tags(meta_key):
     meta = meta_io.read_meta(meta_key)
 
     if 'tags' not in meta:
-        meta['tags'] = [default_tag, 'paper']
+        meta['tags'] = [default_tag, TYPE_DEFAULT_TAG]
         meta_io.update_meta(meta_key, meta)
 
 

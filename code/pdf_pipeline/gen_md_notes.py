@@ -10,6 +10,7 @@ from .configs import (
     PROJ_DIR,
     MD_NOTES_DIR,
     TAG_MAP_DIR,
+    TYPE_DEFAULT_TAG,
 )
 
 TEMPLATE_DIR = os.path.join(PROJ_DIR)
@@ -39,12 +40,17 @@ def clean_content(content):
 
 def add_missing_tag_map(tag_list):
     for t in tag_list:
+        if t == TYPE_DEFAULT_TAG:
+            continue
+
         map_file = os.path.join(TAG_MAP_DIR, '%s Paper Map.md' % t)
         if os.path.exists(map_file):
+            print("skip %s: " % map_file)
             continue
 
         data = {
             'tag': t,
+            'type_tag': TYPE_DEFAULT_TAG,
         }
 
         markdown_io.render_md(TEMPLATE_DIR, 'tag-map.tmpl', data, map_file)
