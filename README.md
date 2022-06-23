@@ -46,7 +46,7 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
-total count: 231
+total count: 249
 
 | Paper Title | links | file size |
 | --- | --- | --- |
@@ -59,11 +59,13 @@ total count: 231
 | An Adaptive Peer-to-Peer Collision Warning System(2002) | [info](metas/2002-An%20Adaptive%20Peer-to-Peer%20Collision%20Warning%20System.yaml), [pdf(local)](pdfs/2002-An%20Adaptive%20Peer-to-Peer%20Collision%20Warning%20System.pdf) | 115.1 KB |
 | Bengio Neural Network Lm(2003) | [info](metas/2003-bengio-neural-network-LM.yaml), [pdf(local)](pdfs/2003-bengio-neural-network-LM.pdf) | 170.3 KB |
 | Robust Multipose Face Detection in Images(2004) | [info](metas/2004-Robust%20Multipose%20Face%20Detection%20in%20Images.yaml), [pdf(local)](pdfs/2004-Robust%20Multipose%20Face%20Detection%20in%20Images.pdf) | 911.3 KB |
+| Convexity, Classification, and Risk Bounds(2006) | [info](metas/2006-Convexity%2C%20Classification%2C%20and%20Risk%20Bounds.yaml), [pdf(local)](pdfs/2006-Convexity%2C%20Classification%2C%20and%20Risk%20Bounds.pdf) | 287.2 KB |
+| 2009 curriculum icml | [info](metas/2009_curriculum_icml.yaml), [pdf(local)](pdfs/2009_curriculum_icml.pdf) | 1.4 MB |
 | Semi-Supervised Novelty Detection(2010) | [info](metas/2010-Semi-Supervised%20Novelty%20Detection.yaml), [pdf(local)](pdfs/2010-Semi-Supervised%20Novelty%20Detection.pdf) | 284.7 KB |
 | Frenet(2010) | [info](metas/2010-frenet.yaml), [pdf(local)](pdfs/2010-frenet.pdf) | 1.9 MB |
 | Alexnet(2012) | [info](metas/2012-AlexNet.yaml), [pdf(local)](pdfs/2012-AlexNet.pdf) | 1.4 MB |
 | Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks(2013) | [info](metas/2013-Multi-digit%20Number%20Recognition%20from%20Street%20View%20Imagery%20using%20Deep%20Convolutional%20Neural%20Networks.yaml), [pdf(local)](pdfs/2013-Multi-digit%20Number%20Recognition%20from%20Street%20View%20Imagery%20using%20Deep%20Convolutional%20Neural%20Networks.pdf) | 5.0 MB |
-| Rcnn(2013) | [info](metas/2013-rcnn.yaml), [pdf(local)](pdfs/2013-rcnn.pdf) | 6.3 MB |
+| Rcnn(2013) | [info](metas/2013-rcnn.yaml), [pdf(local)](pdfs/2013-rcnn.pdf) | 6.2 MB |
 | Selectivesearch(2013) | [info](metas/2013-selectiveSearch.yaml), [pdf(local)](pdfs/2013-selectiveSearch.pdf) | 1.4 MB |
 | Wordnet(2013) | [info](metas/2013-wordnet.yaml), [pdf(local)](pdfs/2013-wordnet.pdf) | 336.9 KB |
 | Glove(2014) | [info](metas/2014-GloVe.yaml), [pdf(local)](pdfs/2014-GloVe.pdf) | 2.5 MB |
@@ -74,7 +76,7 @@ total count: 231
 | Multi View Face Detection(2015) | [info](metas/2015-Multi-view-Face-Detection.yaml), [pdf(local)](pdfs/2015-Multi-view-Face-Detection.pdf) | 4.3 MB |
 | Resnet(2015) | [info](metas/2015-ResNet.yaml), [pdf(local)](pdfs/2015-ResNet.pdf) | 848.0 KB |
 | Crnn(2015) | [info](metas/2015-crnn.yaml), [pdf(local)](pdfs/2015-crnn.pdf) | 1.0 MB |
-| Fast Rcnn(2015) | [info](metas/2015-fast-rcnn.yaml), [pdf(local)](pdfs/2015-fast-rcnn.pdf) | 760.8 KB |
+| Fast Rcnn(2015) | [info](metas/2015-fast-rcnn.yaml), [pdf(local)](pdfs/2015-fast-rcnn.pdf) | 714.0 KB |
 | Faster Rcnn(2015) | [info](metas/2015-faster-rcnn.yaml), [pdf(local)](pdfs/2015-faster-rcnn.pdf) | 6.6 MB |
 | Sppnet(2015) | [info](metas/2015-sppnet.yaml), [pdf(local)](pdfs/2015-sppnet.pdf) | 4.0 MB |
 | A Survey of Motion Planning and Control(2016) | [info](metas/2016-A%20Survey%20of%20Motion%20Planning%20and%20Control.yaml), [pdf(local)](pdfs/2016-A%20Survey%20of%20Motion%20Planning%20and%20Control.pdf) | 6.3 MB |
@@ -85,20 +87,25 @@ total count: 231
 | 20160319 邓力 Ieee Icassp Plenary | [info](metas/20160319-%E9%82%93%E5%8A%9B-IEEE-ICASSP-plenary.yaml), [pdf(local)](pdfs/20160319-%E9%82%93%E5%8A%9B-IEEE-ICASSP-plenary.pdf) | 6.7 MB |
 | Fpn(2017) | [info](metas/2017-FPN.yaml), [pdf(local)](pdfs/2017-FPN.pdf) | 770.6 KB |
 | Lane-Change Social Behavior Generator(2017) | [info](metas/2017-Lane-Change%20Social%20Behavior%20Generator.yaml), [pdf(local)](pdfs/2017-Lane-Change%20Social%20Behavior%20Generator.pdf) | 790.7 KB |
+| Making Deep Neural Networks Robust to Label Noise - a loss correction approach(2017) | [info](metas/2017-Making%20Deep%20Neural%20Networks%20Robust%20to%20Label%20Noise%20-%20a%20loss%20correction%20approach.yaml), [pdf(local)](pdfs/2017-Making%20Deep%20Neural%20Networks%20Robust%20to%20Label%20Noise%20-%20a%20loss%20correction%20approach.pdf) | 745.7 KB |
 | Malicious URL Detection using Machine Learning-a survey(2017) | [info](metas/2017-Malicious%20URL%20Detection%20using%20Machine%20Learning-a%20survey.yaml), [pdf(local)](pdfs/2017-Malicious%20URL%20Detection%20using%20Machine%20Learning-a%20survey.pdf) | 841.3 KB |
+| Mentornet(2017) | [info](metas/2017-MentorNet.yaml), [pdf(local)](pdfs/2017-MentorNet.pdf) | 807.7 KB |
 | On a Formal Model of Safe and Scalable Self-driving Cars(2017) | [info](metas/2017-On%20a%20Formal%20Model%20of%20Safe%20and%20Scalable%20Self-driving%20Cars.yaml), [pdf(local)](pdfs/2017-On%20a%20Formal%20Model%20of%20Safe%20and%20Scalable%20Self-driving%20Cars.pdf) | 1.3 MB |
 | Safe Autonomous Lane Changes in Dense Traffic(2017) | [info](metas/2017-Safe%20Autonomous%20Lane%20Changes%20in%20Dense%20Traffic.yaml), [pdf(local)](pdfs/2017-Safe%20Autonomous%20Lane%20Changes%20in%20Dense%20Traffic.pdf) | 641.1 KB |
+| UNDERSTANDING DEEP LEARNING REQUIRES RETHINKING GENERALIZATION(2017) | [info](metas/2017-UNDERSTANDING%20DEEP%20LEARNING%20REQUIRES%20RETHINKING%20GENERALIZATION.yaml), [pdf(local)](pdfs/2017-UNDERSTANDING%20DEEP%20LEARNING%20REQUIRES%20RETHINKING%20GENERALIZATION.pdf) | 394.1 KB |
 | Mask Rcnn(2017) | [info](metas/2017-mask-rcnn.yaml), [pdf(local)](pdfs/2017-mask-rcnn.pdf) | 7.4 MB |
+| training deep neural networks using a noise adaptation layer(2017) | [info](metas/2017-training_deep_neural_networks_using_a_noise_adaptation_layer.yaml), [pdf(local)](pdfs/2017-training_deep_neural_networks_using_a_noise_adaptation_layer.pdf) | 560.6 KB |
 | Co-teaching-Robust Training(2018) | [info](metas/2018-Co-teaching-Robust%20Training.yaml), [pdf(local)](pdfs/2018-Co-teaching-Robust%20Training.pdf) | 1.9 MB |
 | Lane Change Strategy for  Autonomous Vehicle(2018) | [info](metas/2018-Lane%20Change%20Strategy%20for%20%20Autonomous%20Vehicle.yaml), [pdf(local)](pdfs/2018-Lane%20Change%20Strategy%20for%20%20Autonomous%20Vehicle.pdf) | 2.3 MB |
 | Learning from Large-scale Noisy Web(2018) | [info](metas/2018-Learning%20from%20Large-scale%20Noisy%20Web.yaml), [pdf(local)](pdfs/2018-Learning%20from%20Large-scale%20Noisy%20Web.pdf) | 3.4 MB |
 | Learning to Reweight Examples for Robust Deep Learning(2018) | [info](metas/2018-Learning%20to%20Reweight%20Examples%20for%20Robust%20Deep%20Learning.yaml), [pdf(local)](pdfs/2018-Learning%20to%20Reweight%20Examples%20for%20Robust%20Deep%20Learning.pdf) | 2.9 MB |
 | Learning with Bad Training Data via Iterative Trimmed Loss(2018) | [info](metas/2018-Learning%20with%20Bad%20Training%20Data%20via%20Iterative%20Trimmed%20Loss.yaml), [pdf(local)](pdfs/2018-Learning%20with%20Bad%20Training%20Data%20via%20Iterative%20Trimmed%20Loss.pdf) | 2.7 MB |
 | Planning and Decision-Making for Autonomous Vehicles(2018) | [info](metas/2018-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2018-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) | 323.1 KB |
+| Face Recog Overview(2018) | [info](metas/2018-face-recog-overview.yaml), [pdf(local)](pdfs/2018-face-recog-overview.pdf) | 1.6 MB |
 | review-Planning and Decision-Making for Autonomous Vehicles(2018) | [info](metas/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2018-review-Planning%20and%20Decision-Making%20for%20Autonomous%20Vehicles.pdf) | 598.1 KB |
 | Craft Character Region Awareness(2019) | [info](metas/2019-CRAFT-character-region-awareness.yaml), [pdf(local)](pdfs/2019-CRAFT-character-region-awareness.pdf) | 4.5 MB |
-| Dividemix(2019) | [info](metas/2019-DivideMix.yaml), [pdf(local)](pdfs/2019-DivideMix.pdf) | 858.7 KB |
-| How does Disagreement Help Generalization against Label Corruption(2019) | [info](metas/2019-How%20does%20Disagreement%20Help%20Generalization%20against%20Label%20Corruption.yaml), [pdf(local)](pdfs/2019-How%20does%20Disagreement%20Help%20Generalization%20against%20Label%20Corruption.pdf) | 1008.5 KB |
+| Dividemix(2019) | [info](metas/2019-DivideMix.yaml), [pdf(local)](pdfs/2019-DivideMix.pdf) | 753.7 KB |
+| How does Disagreement Help Generalization against Label Corruption(2019) | [info](metas/2019-How%20does%20Disagreement%20Help%20Generalization%20against%20Label%20Corruption.yaml), [pdf(local)](pdfs/2019-How%20does%20Disagreement%20Help%20Generalization%20against%20Label%20Corruption.pdf) | 999.3 KB |
 | Human Motion Trajectory Prediction-A Survey(2019) | [info](metas/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.yaml), [pdf(local)](pdfs/2019-Human%20Motion%20Trajectory%20Prediction-A%20Survey.pdf) | 3.2 MB |
 | Self-Driving Cars-A Survey(2019) | [info](metas/2019-Self-Driving%20Cars-A%20Survey.yaml), [pdf(local)](pdfs/2019-Self-Driving%20Cars-A%20Survey.pdf) | 3.5 MB |
 | Understanding and Utilizing Deep Neural Networks(2019) | [info](metas/2019-Understanding%20and%20Utilizing%20Deep%20Neural%20Networks.yaml), [pdf(local)](pdfs/2019-Understanding%20and%20Utilizing%20Deep%20Neural%20Networks.pdf) | 4.7 MB |
@@ -112,6 +119,7 @@ total count: 231
 | A Survey on Dialogue Systems- Recent Advances and New Frontiers | [info](metas/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.yaml), [pdf(local)](pdfs/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.pdf) | 302.9 KB |
 | A guide to convolution arithmetic for deep learning | [info](metas/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.yaml), [pdf(local)](pdfs/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.pdf) | 892.3 KB |
 | A Tour Of C++ | [info](metas/A-Tour-of-C%2B%2B.yaml), [pdf(local)](pdfs/A-Tour-of-C%2B%2B.pdf) | 853.0 KB |
+| Attention Is All You Need | [info](metas/Attention%20Is%20All%20You%20Need.yaml), [pdf(local)](pdfs/Attention%20Is%20All%20You%20Need.pdf) | 2.1 MB |
 | Attribute-Driven Feature Disentangling and Temporal Aggregation for Video Person Re-Identification | [info](metas/Attribute-Driven%20Feature%20Disentangling%20and%20Temporal%20Aggregation%20for%20Video%20Person%20Re-Identification.yaml), [pdf(local)](pdfs/Attribute-Driven%20Feature%20Disentangling%20and%20Temporal%20Aggregation%20for%20Video%20Person%20Re-Identification.pdf) | 1000.1 KB |
 | Bidirectional Scene Text Recognition with a Single Decoder | [info](metas/Bidirectional%20Scene%20Text%20Recognition%20with%20a%20Single%20Decoder.yaml), [pdf(local)](pdfs/Bidirectional%20Scene%20Text%20Recognition%20with%20a%20Single%20Decoder.pdf) | 1.6 MB |
 | Black Hat Python | [info](metas/Black%20Hat%20Python.yaml), [pdf(local)](pdfs/Black%20Hat%20Python.pdf) | 10.0 MB |
@@ -135,6 +143,7 @@ total count: 231
 | Demographic Prediction Based on User-s Mobile Behaviors | [info](metas/Demographic%20Prediction%20Based%20on%20User-s%20Mobile%20Behaviors.yaml), [pdf(local)](pdfs/Demographic%20Prediction%20Based%20on%20User-s%20Mobile%20Behaviors.pdf) | 210.7 KB |
 | Detecting Privacy-Sensitive Events in Medical Text | [info](metas/Detecting%20Privacy-Sensitive%20Events%20in%20Medical%20Text.yaml), [pdf(local)](pdfs/Detecting%20Privacy-Sensitive%20Events%20in%20Medical%20Text.pdf) | 244.9 KB |
 | Detection of Malicious URLs using Machine Learning Techniques | [info](metas/Detection%20of%20Malicious%20URLs%20using%20Machine%20Learning%20Techniques.yaml), [pdf(local)](pdfs/Detection%20of%20Malicious%20URLs%20using%20Machine%20Learning%20Techniques.pdf) | 462.2 KB |
+| Doersch Unsupervised Visual Representation ICCV 2015 paper | [info](metas/Doersch_Unsupervised_Visual_Representation_ICCV_2015_paper.yaml), [pdf(local)](pdfs/Doersch_Unsupervised_Visual_Representation_ICCV_2015_paper.pdf) | 3.6 MB |
 | Dragon Book Compilers | [info](metas/Dragon%20Book%20Compilers-en-2nd.yaml), [pdf(local)](pdfs/Dragon%20Book%20Compilers-en-2nd.pdf) | 4.9 MB |
 | Drop an Octave | [info](metas/Drop%20an%20Octave.yaml), [pdf(local)](pdfs/Drop%20an%20Octave.pdf) | 378.2 KB |
 | Em 2014 Sukhbaatar Noise Layer | [info](metas/EM-2014-Sukhbaatar-noise-layer.yaml), [pdf(local)](pdfs/EM-2014-Sukhbaatar-noise-layer.pdf) | 1.1 MB |
@@ -145,6 +154,7 @@ total count: 231
 | EM-2017-noise adaptation layer | [info](metas/EM-2017-noise_adaptation_layer.yaml), [pdf(local)](pdfs/EM-2017-noise_adaptation_layer.pdf) | 779.4 KB |
 | Enabling GPUs in the Container Runtime Ecosystem   NVIDIA Developer Blog | [info](metas/Enabling%20GPUs%20in%20the%20Container%20Runtime%20Ecosystem%20_%20NVIDIA%20Developer%20Blog.yaml), [pdf(local)](pdfs/Enabling%20GPUs%20in%20the%20Container%20Runtime%20Ecosystem%20_%20NVIDIA%20Developer%20Blog.pdf) | 1.2 MB |
 | Essentials of Programming Languages 3e (MIT, 2008) | [info](metas/Essentials%20of%20Programming%20Languages%203e%20%28MIT%2C%202008%29.yaml), [pdf(local)](pdfs/Essentials%20of%20Programming%20Languages%203e%20%28MIT%2C%202008%29.pdf) | 3.4 MB |
+| Face Recognition Using Laplacianfaces | [info](metas/Face%20Recognition%20Using%20Laplacianfaces.yaml), [pdf(local)](pdfs/Face%20Recognition%20Using%20Laplacianfaces.pdf) | 3.2 MB |
 | Fast Algorithm For Detecting Community Structure In Networks | [info](metas/Fast-algorithm-for-detecting-community-structure-in-networks.yaml), [pdf(local)](pdfs/Fast-algorithm-for-detecting-community-structure-in-networks.pdf) | 158.9 KB |
 | Finding And Evaluating Community Structure In Networks | [info](metas/Finding-and-evaluating-community-structure-in-networks.yaml), [pdf(local)](pdfs/Finding-and-evaluating-community-structure-in-networks.pdf) | 368.6 KB |
 | Formal Verification of Pipelined Y86-64 Microprocessors with UCLID5 | [info](metas/Formal%20Verification%20of%20Pipelined%20Y86-64%20Microprocessors%20with%20UCLID5.yaml), [pdf(local)](pdfs/Formal%20Verification%20of%20Pipelined%20Y86-64%20Microprocessors%20with%20UCLID5.pdf) | 631.4 KB |
@@ -160,9 +170,11 @@ total count: 231
 | HiSVP 开发指南 | [info](metas/HiSVP%20%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97.yaml), [pdf(local)](pdfs/HiSVP%20%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%97.pdf) | 9.4 MB |
 | Improving BERT-Based Text Classification With Auxiliary Sentence and Domain Knowledge | [info](metas/Improving%20BERT-Based%20Text%20Classification%20With%20Auxiliary%20Sentence%20and%20Domain%20Knowledge.yaml), [pdf(local)](pdfs/Improving%20BERT-Based%20Text%20Classification%20With%20Auxiliary%20Sentence%20and%20Domain%20Knowledge.pdf) | 7.3 MB |
 | Inference in Deep Learning - A Bottom-up Survey | [info](metas/Inference%20in%20Deep%20Learning%20-%20A%20Bottom-up%20Survey.yaml), [pdf(local)](pdfs/Inference%20in%20Deep%20Learning%20-%20A%20Bottom-up%20Survey.pdf) | 336.9 KB |
+| Introduction to GPU Computing | [info](metas/Introduction%20to%20GPU%20Computing.yaml), [pdf(local)](pdfs/Introduction%20to%20GPU%20Computing.pdf) | 5.0 MB |
 | Introduction to HBase Schema Design | [info](metas/Introduction%20to%20HBase%20Schema%20Design.yaml), [pdf(local)](pdfs/Introduction%20to%20HBase%20Schema%20Design.pdf) | 676.5 KB |
 | Introduction to Optimization | [info](metas/Introduction%20to%20Optimization%2C%204th%20Edition.yaml), [pdf(local)](pdfs/Introduction%20to%20Optimization%2C%204th%20Edition.pdf) | 20.0 MB |
 | Kali Linux Cookbook | [info](metas/Kali%20Linux%20Cookbook.yaml), [pdf(local)](pdfs/Kali%20Linux%20Cookbook.pdf) | 10.7 MB |
+| Kolesnikov Revisiting Self-Supervised Visual Representation Learning CVPR 2019 paper | [info](metas/Kolesnikov_Revisiting_Self-Supervised_Visual_Representation_Learning_CVPR_2019_paper.yaml), [pdf(local)](pdfs/Kolesnikov_Revisiting_Self-Supervised_Visual_Representation_Learning_CVPR_2019_paper.pdf) | 515.2 KB |
 | LLVM Cookbook | [info](metas/LLVM%20Cookbook.yaml), [pdf(local)](pdfs/LLVM%20Cookbook.pdf) | 2.9 MB |
 | Language Models are Unsupervised Multitask Learners | [info](metas/Language%20Models%20are%20Unsupervised%20Multitask%20Learners.yaml), [pdf(local)](pdfs/Language%20Models%20are%20Unsupervised%20Multitask%20Learners.pdf) | 569.1 KB |
 | MODEL COMPRESSION VIA DISTILLATION AND QUANTIZATION | [info](metas/MODEL%20COMPRESSION%20VIA%20DISTILLATION%20AND%20QUANTIZATION.yaml), [pdf(local)](pdfs/MODEL%20COMPRESSION%20VIA%20DISTILLATION%20AND%20QUANTIZATION.pdf) | 402.0 KB |
@@ -181,12 +193,15 @@ total count: 231
 | PyTorch under the hood | [info](metas/PyTorch%20under%20the%20hood.yaml), [pdf(local)](pdfs/PyTorch%20under%20the%20hood.pdf) | 1.3 MB |
 | Pyramidal Implementation of the Lucas Kanade Feature Tracker | [info](metas/Pyramidal%20Implementation%20of%20the%20Lucas%20Kanade%20Feature%20Tracker.yaml), [pdf(local)](pdfs/Pyramidal%20Implementation%20of%20the%20Lucas%20Kanade%20Feature%20Tracker.pdf) | 187.7 KB |
 | Quantizing Deep Convolutional Networks for Efficient Inference-keynote | [info](metas/Quantizing%20Deep%20Convolutional%20Networks%20for%20Efficient%20Inference-keynote.yaml), [pdf(local)](pdfs/Quantizing%20Deep%20Convolutional%20Networks%20for%20Efficient%20Inference-keynote.pdf) | 1.9 MB |
+| Representation Learning with | [info](metas/Representation%20Learning%20with.yaml), [pdf(local)](pdfs/Representation%20Learning%20with.pdf) | 3.0 MB |
 | Residual Networks Behave Like Ensembles of Relatively Shallow Networks | [info](metas/Residual%20Networks%20Behave%20Like%20Ensembles%20of%20Relatively%20Shallow%20Networks.yaml), [pdf(local)](pdfs/Residual%20Networks%20Behave%20Like%20Ensembles%20of%20Relatively%20Shallow%20Networks.pdf) | 597.0 KB |
+| Rethinking Data Augmentation | [info](metas/Rethinking%20Data%20Augmentation.yaml), [pdf(local)](pdfs/Rethinking%20Data%20Augmentation.pdf) | 1.8 MB |
 | S4158 Cuda Streams Best Practices Common Pitfalls | [info](metas/S4158-cuda-streams-best-practices-common-pitfalls.yaml), [pdf(local)](pdfs/S4158-cuda-streams-best-practices-common-pitfalls.pdf) | 1.9 MB |
 | SKELETON-BASED ACTION RECOGNITION WITH CONVOLUTIONAL NEURAL NETWORKS | [info](metas/SKELETON-BASED%20ACTION%20RECOGNITION%20WITH%20CONVOLUTIONAL%20NEURAL%20NETWORKS.yaml), [pdf(local)](pdfs/SKELETON-BASED%20ACTION%20RECOGNITION%20WITH%20CONVOLUTIONAL%20NEURAL%20NETWORKS.pdf) | 501.0 KB |
 | Scalable Top-K Retrieval with Sparta | [info](metas/Scalable%20Top-K%20Retrieval%20with%20Sparta.yaml), [pdf(local)](pdfs/Scalable%20Top-K%20Retrieval%20with%20Sparta.pdf) | 1.6 MB |
 | Scene Text Detection and Recognition-The Deep Learning Era | [info](metas/Scene%20Text%20Detection%20and%20Recognition-The%20Deep%20Learning%20Era.yaml), [pdf(local)](pdfs/Scene%20Text%20Detection%20and%20Recognition-The%20Deep%20Learning%20Era.pdf) | 7.0 MB |
 | Self Supervised Learning at Google | [info](metas/Self%20Supervised%20Learning%20at%20Google.yaml), [pdf(local)](pdfs/Self%20Supervised%20Learning%20at%20Google.pdf) | 9.1 MB |
+| Self-training with Noisy Student improves ImageNet classification | [info](metas/Self-training%20with%20Noisy%20Student%20improves%20ImageNet%20classification.yaml), [pdf(local)](pdfs/Self-training%20with%20Noisy%20Student%20improves%20ImageNet%20classification.pdf) | 2.6 MB |
 | Sequential Y86-64 Implementation | [info](metas/Sequential%20Y86-64%20Implementation.yaml), [pdf(local)](pdfs/Sequential%20Y86-64%20Implementation.pdf) | 734.3 KB |
 | Single-Stage Multi-Person Pose Machines | [info](metas/Single-Stage%20Multi-Person%20Pose%20Machines.yaml), [pdf(local)](pdfs/Single-Stage%20Multi-Person%20Pose%20Machines.pdf) | 8.7 MB |
 | Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition | [info](metas/Spatial%20Temporal%20Graph%20Convolutional%20Networks%20for%20Skeleton-Based%20Action%20Recognition.yaml), [pdf(local)](pdfs/Spatial%20Temporal%20Graph%20Convolutional%20Networks%20for%20Skeleton-Based%20Action%20Recognition.pdf) | 1.5 MB |
@@ -210,14 +225,17 @@ total count: 231
 | Toward Efficient Trajectory Planning - The Path-Velocity Decomposition | [info](metas/Toward%20Efficient%20Trajectory%20Planning%20-%20The%20Path-Velocity%20Decomposition.yaml), [pdf(local)](pdfs/Toward%20Efficient%20Trajectory%20Planning%20-%20The%20Path-Velocity%20Decomposition.pdf) | 2.1 MB |
 | Towards Causal Representation Learning | [info](metas/Towards%20Causal%20Representation%20Learning.yaml), [pdf(local)](pdfs/Towards%20Causal%20Representation%20Learning.pdf) | 1.4 MB |
 | Verifying the Safety of Lane Change Maneuvers of Self-driving Vehicles Based on Formalized Traffic Rules | [info](metas/Verifying%20the%20Safety%20of%20Lane%20Change%20Maneuvers%20of%20Self-driving%20Vehicles%20Based%20on%20Formalized%20Traffic%20Rules.yaml), [pdf(local)](pdfs/Verifying%20the%20Safety%20of%20Lane%20Change%20Maneuvers%20of%20Self-driving%20Vehicles%20Based%20on%20Formalized%20Traffic%20Rules.pdf) | 1.1 MB |
+| Visual Object Recognition | [info](metas/Visual%20Object%20Recognition.yaml), [pdf(local)](pdfs/Visual%20Object%20Recognition.pdf) | 6.0 MB |
 | What Is Wrong With Scene Text Recognition Model Comparisons | [info](metas/What%20Is%20Wrong%20With%20Scene%20Text%20Recognition%20Model%20Comparisons.yaml), [pdf(local)](pdfs/What%20Is%20Wrong%20With%20Scene%20Text%20Recognition%20Model%20Comparisons.pdf) | 1.3 MB |
 | Y86 Isa | [info](metas/Y86-ISA.yaml), [pdf(local)](pdfs/Y86-ISA.pdf) | 86.8 KB |
 | You Are What Apps You Use- Demographic Prediction Based on User’s Apps | [info](metas/You%20Are%20What%20Apps%20You%20Use-%20Demographic%20Prediction%20Based%20on%20User%E2%80%99s%20Apps.yaml), [pdf(local)](pdfs/You%20Are%20What%20Apps%20You%20Use-%20Demographic%20Prediction%20Based%20on%20User%E2%80%99s%20Apps.pdf) | 184.0 KB |
+| Zhai S4L Self-Supervised Semi-Supervised Learning ICCV 2019 paper | [info](metas/Zhai_S4L_Self-Supervised_Semi-Supervised_Learning_ICCV_2019_paper.yaml), [pdf(local)](pdfs/Zhai_S4L_Self-Supervised_Semi-Supervised_Learning_ICCV_2019_paper.pdf) | 979.5 KB |
 | A Closer Look At Skip Gram Modelling | [info](metas/a-closer-look-at-skip-gram-modelling.yaml), [pdf(local)](pdfs/a-closer-look-at-skip-gram-modelling.pdf) | 296.5 KB |
 | A Learning Based Tune Free Control Framework For Large Scale Autonomous Driving System Deployment | [info](metas/a-learning-based-tune-free-control-framework-for-large-scale-autonomous-driving-system-deployment.yaml), [pdf(local)](pdfs/a-learning-based-tune-free-control-framework-for-large-scale-autonomous-driving-system-deployment.pdf) | 2.7 MB |
 | A Statistical Approach To Machine Translation | [info](metas/a-statistical-approach-to-machine-translation.yaml), [pdf(local)](pdfs/a-statistical-approach-to-machine-translation.pdf) | 658.2 KB |
 | A Stochastic Parts Program And Noun Phrase Parser For Unrestricted Text | [info](metas/a-stochastic-parts-program-and-noun-phrase-parser-for-unrestricted-text.yaml), [pdf(local)](pdfs/a-stochastic-parts-program-and-noun-phrase-parser-for-unrestricted-text.pdf) | 644.4 KB |
 | An Automated Learning Based Procedure For Large Scale Vehicle Dvnamics Moding On Baidu Apollo Platform | [info](metas/an-automated-learning-based-procedure-for-large-scale-vehicle-dvnamics-moding-on-baidu-apollo-platform.yaml), [pdf(local)](pdfs/an-automated-learning-based-procedure-for-large-scale-vehicle-dvnamics-moding-on-baidu-apollo-platform.pdf) | 4.1 MB |
+| Asm2 | [info](metas/asm2.yaml), [pdf(local)](pdfs/asm2.pdf) | 462.4 KB |
 | Base An Acid Alternative | [info](metas/base-an-acid-alternative.yaml), [pdf(local)](pdfs/base-an-acid-alternative.pdf) | 413.7 KB |
 | Bigtable Osdi06 | [info](metas/bigtable-osdi06.yaml), [pdf(local)](pdfs/bigtable-osdi06.pdf) | 216.0 KB |
 | Bitcask Intro | [info](metas/bitcask-intro.yaml), [pdf(local)](pdfs/bitcask-intro.pdf) | 317.0 KB |
@@ -237,6 +255,7 @@ total count: 231
 | Curr 2017 Curriculumnet | [info](metas/curr-2017-CurriculumNet.yaml), [pdf(local)](pdfs/curr-2017-CurriculumNet.pdf) | 3.3 MB |
 | Curr 2018 Mentornet | [info](metas/curr-2018-MentorNet.yaml), [pdf(local)](pdfs/curr-2018-MentorNet.pdf) | 939.3 KB |
 | Dragon Book Compiles | [info](metas/dragon-book-compiles.yaml), [pdf(local)](pdfs/dragon-book-compiles.pdf) | 24.3 MB |
+| em-2018-Explicit Removal of Biases and Var | [info](metas/em-2018-Explicit%20Removal%20of%20Biases%20and%20Var.yaml), [pdf(local)](pdfs/em-2018-Explicit%20Removal%20of%20Biases%20and%20Var.pdf) | 7.4 MB |
 | end-to-end arguments in system design | [info](metas/end-to-end%20arguments%20in%20system%20design.yaml), [pdf(local)](pdfs/end-to-end%20arguments%20in%20system%20design.pdf) | 183.3 KB |
 | Eventually Consistent | [info](metas/eventually-consistent.yaml), [pdf(local)](pdfs/eventually-consistent.pdf) | 5.3 MB |
 | Generic Programming And The Stl | [info](metas/generic-programming-and-the-stl.yaml), [pdf(local)](pdfs/generic-programming-and-the-stl.pdf) | 17.4 MB |
@@ -273,11 +292,10 @@ total count: 231
 | The Art Of Software Testing(Cn) | [info](metas/the-art-of-software-testing-cn.yaml), [pdf(local)](pdfs/the-art-of-software-testing-cn.pdf) | 5.1 MB |
 | The Art Of Software Testing | [info](metas/the-art-of-software-testing-en-3rd-edition.yaml), [pdf(local)](pdfs/the-art-of-software-testing-en-3rd-edition.pdf) | 5.4 MB |
 | theory-2004-Class Noise vs Attribute Noise | [info](metas/theory-2004-Class%20Noise%20vs%20Attribute%20Noise.yaml), [pdf(local)](pdfs/theory-2004-Class%20Noise%20vs%20Attribute%20Noise.pdf) | 707.0 KB |
-| theory-2006-Convexity, Classification, and Risk Bounds | [info](metas/theory-2006-Convexity%2C%20Classification%2C%20and%20Risk%20Bounds.yaml), [pdf(local)](pdfs/theory-2006-Convexity%2C%20Classification%2C%20and%20Risk%20Bounds.pdf) | 287.2 KB |
 | theory-2017-Closer Look at Memorization | [info](metas/theory-2017-Closer%20Look%20at%20Memorization.yaml), [pdf(local)](pdfs/theory-2017-Closer%20Look%20at%20Memorization.pdf) | 3.2 MB |
 | theory-2017-rethinking generalization | [info](metas/theory-2017-rethinking%20generalization.yaml), [pdf(local)](pdfs/theory-2017-rethinking%20generalization.pdf) | 447.3 KB |
-| theory-2018-Explicit Removal Bias and Var | [info](metas/theory-2018-Explicit%20Removal%20Bias%20and%20Var.yaml), [pdf(local)](pdfs/theory-2018-Explicit%20Removal%20Bias%20and%20Var.pdf) | 7.4 MB |
 | Toward A Comfortable Driving Experience For A Self Driving Shuttle Bus | [info](metas/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.yaml), [pdf(local)](pdfs/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.pdf) | 3.8 MB |
+| unsupervised representation learning by predicting image rotations | [info](metas/unsupervised_representation_learning_by_predicting_image_rotations.yaml), [pdf(local)](pdfs/unsupervised_representation_learning_by_predicting_image_rotations.pdf) | 6.3 MB |
 | word2vec Parameter Learning Explained | [info](metas/word2vec%20Parameter%20Learning%20Explained.yaml), [pdf(local)](pdfs/word2vec%20Parameter%20Learning%20Explained.pdf) | 797.7 KB |
 | 多处理器编程的艺术 | [info](metas/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.yaml), [pdf(local)](pdfs/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.pdf) | 43.8 MB |
 | 视觉Slam十四讲(高翔第二版) | [info](metas/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.yaml), [pdf(local)](pdfs/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.pdf) | 29.5 MB |
