@@ -46,10 +46,11 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
-total count: 233
+total count: 231
 
 | Paper Title | links | file size |
 | --- | --- | --- |
+| Why Systolic Architecture(1982) | [info](metas/1982-why-systolic-architecture.yaml), [pdf(local)](pdfs/1982-why-systolic-architecture.pdf) | 2.4 MB |
 | Learning From Noisy Examples(1988) | [info](metas/1988-Learning%20From%20Noisy%20Examples.yaml), [pdf(local)](pdfs/1988-Learning%20From%20Noisy%20Examples.pdf) | 1.6 MB |
 | Lenet5(1998) | [info](metas/1998-LeNet5.yaml), [pdf(local)](pdfs/1998-LeNet5.pdf) | 960.4 KB |
 | Pagerank Algorithm(1999) | [info](metas/1999-PageRank-algorithm.yaml), [pdf(local)](pdfs/1999-PageRank-algorithm.pdf) | 299.7 KB |
@@ -77,7 +78,6 @@ total count: 233
 | Faster Rcnn(2015) | [info](metas/2015-faster-rcnn.yaml), [pdf(local)](pdfs/2015-faster-rcnn.pdf) | 6.6 MB |
 | Sppnet(2015) | [info](metas/2015-sppnet.yaml), [pdf(local)](pdfs/2015-sppnet.pdf) | 4.0 MB |
 | A Survey of Motion Planning and Control(2016) | [info](metas/2016-A%20Survey%20of%20Motion%20Planning%20and%20Control.yaml), [pdf(local)](pdfs/2016-A%20Survey%20of%20Motion%20Planning%20and%20Control.pdf) | 6.3 MB |
-| FPN-Feature Pyramid Networks(2016) | [info](metas/2016-FPN-Feature%20Pyramid%20Networks.yaml), [pdf(local)](pdfs/2016-FPN-Feature%20Pyramid%20Networks.pdf) | 768.4 KB |
 | Lane Change Scheduling for Autonomous Vehicles(2016) | [info](metas/2016-Lane%20Change%20Scheduling%20for%20Autonomous%20Vehicles.yaml), [pdf(local)](pdfs/2016-Lane%20Change%20Scheduling%20for%20Autonomous%20Vehicles.pdf) | 1.3 MB |
 | Mtcnn(2016) | [info](metas/2016-mtcnn.yaml), [pdf(local)](pdfs/2016-mtcnn.pdf) | 831.5 KB |
 | Ssd(2016) | [info](metas/2016-ssd.yaml), [pdf(local)](pdfs/2016-ssd.pdf) | 2.4 MB |
@@ -107,7 +107,7 @@ total count: 233
 | Improving Machine Reading Comprehension with Extra Labels and Label Smoothing(2021) | [info](metas/2021-Improving%20Machine%20Reading%20Comprehension%20with%20Extra%20Labels%20and%20Label%20Smoothing.yaml), [pdf(local)](pdfs/2021-Improving%20Machine%20Reading%20Comprehension%20with%20Extra%20Labels%20and%20Label%20Smoothing.pdf) | 283.1 KB |
 | Real-time safety assessment of trajectories(2021) | [info](metas/2021-Real-time%20safety%20assessment%20of%20trajectories.yaml), [pdf(local)](pdfs/2021-Real-time%20safety%20assessment%20of%20trajectories.pdf) | 2.9 MB |
 | A New Golden Age for Computer Architecture-keynote | [info](metas/A%20New%20Golden%20Age%20for%20Computer%20Architecture-keynote.yaml), [pdf(local)](pdfs/A%20New%20Golden%20Age%20for%20Computer%20Architecture-keynote.pdf) | 1.9 MB |
-| A New Golden Age for Computer Architecture | [info](metas/A%20New%20Golden%20Age%20for%20Computer%20Architecture.yaml), [pdf(local)](pdfs/A%20New%20Golden%20Age%20for%20Computer%20Architecture.pdf) | 4.4 MB |
+| A New Golden Age for Computer Architecture | [info](metas/A%20New%20Golden%20Age%20for%20Computer%20Architecture.yaml), [pdf(local)](pdfs/A%20New%20Golden%20Age%20for%20Computer%20Architecture.pdf) | 4.3 MB |
 | A Quantization-Friendly Separable Convolution for MobileNets | [info](metas/A%20Quantization-Friendly%20Separable%20Convolution%20for%20MobileNets.yaml), [pdf(local)](pdfs/A%20Quantization-Friendly%20Separable%20Convolution%20for%20MobileNets.pdf) | 1.2 MB |
 | A Survey on Dialogue Systems- Recent Advances and New Frontiers | [info](metas/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.yaml), [pdf(local)](pdfs/A%20Survey%20on%20Dialogue%20Systems-%20Recent%20Advances%20and%20New%20Frontiers.pdf) | 302.9 KB |
 | A guide to convolution arithmetic for deep learning | [info](metas/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.yaml), [pdf(local)](pdfs/A%20guide%20to%20convolution%20arithmetic%20for%20deep%20learning.pdf) | 892.3 KB |
@@ -149,6 +149,8 @@ total count: 233
 | Finding And Evaluating Community Structure In Networks | [info](metas/Finding-and-evaluating-community-structure-in-networks.yaml), [pdf(local)](pdfs/Finding-and-evaluating-community-structure-in-networks.pdf) | 368.6 KB |
 | Formal Verification of Pipelined Y86-64 Microprocessors with UCLID5 | [info](metas/Formal%20Verification%20of%20Pipelined%20Y86-64%20Microprocessors%20with%20UCLID5.yaml), [pdf(local)](pdfs/Formal%20Verification%20of%20Pipelined%20Y86-64%20Microprocessors%20with%20UCLID5.pdf) | 631.4 KB |
 | Gender Prediction Using Browsing History | [info](metas/Gender%20Prediction%20Using%20Browsing%20History.yaml), [pdf(local)](pdfs/Gender%20Prediction%20Using%20Browsing%20History.pdf) | 248.2 KB |
+| Gordon Moore-ISSCC-2003 | [info](metas/Gordon_Moore-ISSCC-2003.yaml), [pdf(local)](pdfs/Gordon_Moore-ISSCC-2003.pdf) | 666.8 KB |
+| Gordon Moore 1975 Speech | [info](metas/Gordon_Moore_1975_Speech.yaml), [pdf(local)](pdfs/Gordon_Moore_1975_Speech.pdf) | 165.4 KB |
 | Gray Python(cn) | [info](metas/Gray%20Python-cn.yaml), [pdf(local)](pdfs/Gray%20Python-cn.pdf) | 1.6 MB |
 | Grover Model | [info](metas/Grover-model.yaml), [pdf(local)](pdfs/Grover-model.pdf) | 639.4 KB |
 | Guide to Y86 Processor Simulators | [info](metas/Guide%20to%20Y86%20Processor%20Simulators.yaml), [pdf(local)](pdfs/Guide%20to%20Y86%20Processor%20Simulators.pdf) | 672.6 KB |
@@ -246,8 +248,6 @@ total count: 233
 | Mobilenetv1 | [info](metas/mobileNetV1.yaml), [pdf(local)](pdfs/mobileNetV1.pdf) | 919.2 KB |
 | Mobilenetv2 | [info](metas/mobileNetV2.yaml), [pdf(local)](pdfs/mobileNetV2.pdf) | 1.5 MB |
 | Mobilenetv3 | [info](metas/mobileNetV3.yaml), [pdf(local)](pdfs/mobileNetV3.pdf) | 525.7 KB |
-| Moore 2003 | [info](metas/moore-2003.yaml), [pdf(local)](pdfs/moore-2003.pdf) | 694.6 KB |
-| moore 1975 | [info](metas/moore_1975.yaml), [pdf(local)](pdfs/moore_1975.pdf) | 247.2 KB |
 | Multi Digit Recognition Google | [info](metas/multi-digit-recognition-google.yaml), [pdf(local)](pdfs/multi-digit-recognition-google.pdf) | 4.6 MB |
 | N Gram Similarity And Distance | [info](metas/n-gram-similarity-and-distance.yaml), [pdf(local)](pdfs/n-gram-similarity-and-distance.pdf) | 148.4 KB |
 | neural reading comprehension and beyond 2018 | [info](metas/neural%20reading%20comprehension%20and%20beyond_2018.yaml), [pdf(local)](pdfs/neural%20reading%20comprehension%20and%20beyond_2018.pdf) | 5.5 MB |
@@ -256,7 +256,6 @@ total count: 233
 | overview-2014-a survey | [info](metas/overview-2014-a%20survey.yaml), [pdf(local)](pdfs/overview-2014-a%20survey.pdf) | 1.8 MB |
 | overview-2014-comprehensive introduction | [info](metas/overview-2014-comprehensive%20introduction.yaml), [pdf(local)](pdfs/overview-2014-comprehensive%20introduction.pdf) | 1.3 MB |
 | overview-2019-a survey | [info](metas/overview-2019-a%20survey.yaml), [pdf(local)](pdfs/overview-2019-a%20survey.pdf) | 409.8 KB |
-| Patterson 19 | [info](metas/patterson-19.yaml), [pdf(local)](pdfs/patterson-19.pdf) | 10.3 MB |
 | Paxos Simple | [info](metas/paxos-simple.yaml), [pdf(local)](pdfs/paxos-simple.pdf) | 88.1 KB |
 | rss on nhtsa | [info](metas/rss_on_nhtsa.yaml), [pdf(local)](pdfs/rss_on_nhtsa.pdf) | 1.7 MB |
 | S7310 8 Bit Inference With Tensorrt | [info](metas/s7310-8-bit-inference-with-tensorrt.yaml), [pdf(local)](pdfs/s7310-8-bit-inference-with-tensorrt.pdf) | 1.7 MB |
@@ -279,7 +278,6 @@ total count: 233
 | theory-2017-rethinking generalization | [info](metas/theory-2017-rethinking%20generalization.yaml), [pdf(local)](pdfs/theory-2017-rethinking%20generalization.pdf) | 447.3 KB |
 | theory-2018-Explicit Removal Bias and Var | [info](metas/theory-2018-Explicit%20Removal%20Bias%20and%20Var.yaml), [pdf(local)](pdfs/theory-2018-Explicit%20Removal%20Bias%20and%20Var.pdf) | 7.4 MB |
 | Toward A Comfortable Driving Experience For A Self Driving Shuttle Bus | [info](metas/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.yaml), [pdf(local)](pdfs/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.pdf) | 3.8 MB |
-| Why Systolic Architecture 1982 | [info](metas/why-systolic-architecture-1982.yaml), [pdf(local)](pdfs/why-systolic-architecture-1982.pdf) | 2.4 MB |
 | word2vec Parameter Learning Explained | [info](metas/word2vec%20Parameter%20Learning%20Explained.yaml), [pdf(local)](pdfs/word2vec%20Parameter%20Learning%20Explained.pdf) | 797.7 KB |
 | 多处理器编程的艺术 | [info](metas/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.yaml), [pdf(local)](pdfs/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.pdf) | 43.8 MB |
 | 视觉Slam十四讲(高翔第二版) | [info](metas/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.yaml), [pdf(local)](pdfs/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.pdf) | 29.5 MB |
