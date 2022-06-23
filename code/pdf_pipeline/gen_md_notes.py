@@ -40,21 +40,43 @@ def clean_content(content):
     return content
 
 
-def add_missing_tag_map(tag_list):
-    for t in tag_list:
-        if t == TYPE_DEFAULT_TAG:
-            continue
+def iter_tag_map_filename(tag):
+    subfix = '_paper-map.md'
+    splitter = '/'
+    parts = tag.split(splitter)
+    for i in range(len(parts)):
+        slug = '-'.join(parts[:i+1])
+        new_tag = splitter.join(parts[:i+1])
 
-        map_file = os.path.join(TAG_MAP_DIR, '%s Paper Map.md' % t.replace('/', ' - '))
+        map_file = os.path.join(TAG_MAP_DIR, '%s%s' % (slug, subfix))
         if os.path.exists(map_file):
-            print("skip %s: " % map_file)
+            break
+
+        yield new_tag, map_file
+
+    slug = tag.replace('/', '-')
+    map_file = os.path.join(TAG_MAP_DIR, '%s%s' % (slug, subfix))
+    if not os.path.exists(map_file):
+        return tag, map_file
+
+
+def add_missing_tag_map(tag_list):
+    tasks = []
+    for tag in tag_list:
+        if tag == TYPE_DEFAULT_TAG:
             continue
 
-        data = {
-            'tag': t,
-            'type_tag': TYPE_DEFAULT_TAG,
-        }
+        for new_tag, map_file in iter_tag_map_filename(tag):
+            if not map_file:
+                continue
 
+            data = {
+                'tag': new_tag,
+                'type_tag': TYPE_DEFAULT_TAG,
+            }
+            tasks.append([data, map_file])
+
+    for data, map_file in tasks:
         markdown_io.render_md(TEMPLATE_DIR, 'tag-map.tmpl', data, map_file)
 
 
