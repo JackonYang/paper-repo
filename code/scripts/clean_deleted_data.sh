@@ -13,7 +13,7 @@ popd >> /dev/null
 
 pushd $PROJ_ROOT >> /dev/null
 
-echo $meta_keys | xargs -I{} dvc remove pdf/{}.pdf.dvc --outs
+echo $meta_keys | xargs -I{} dvc remove pdfs/{}.pdf.dvc --outs
 echo $meta_keys | xargs -I{} rm metas/{}.yaml
 
 popd >> /dev/null
