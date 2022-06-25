@@ -46,7 +46,7 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
-total count: 248
+total count: 251
 
 | Paper Title | links | file size |
 | --- | --- | --- |
@@ -275,6 +275,7 @@ total count: 248
 | overview-2014-comprehensive introduction | [info](metas/overview-2014-comprehensive%20introduction.yaml), [pdf(local)](pdfs/overview-2014-comprehensive%20introduction.pdf) | 1.3 MB |
 | overview-2019-a survey | [info](metas/overview-2019-a%20survey.yaml), [pdf(local)](pdfs/overview-2019-a%20survey.pdf) | 409.8 KB |
 | Paxos Simple | [info](metas/paxos-simple.yaml), [pdf(local)](pdfs/paxos-simple.pdf) | 88.1 KB |
+| Protect Your Online Business From Credential Stuffing | [info](metas/protect-your-online-business-from-credential-stuffing.yaml), [pdf(local)](pdfs/protect-your-online-business-from-credential-stuffing.pdf) | 8.6 MB |
 | rss on nhtsa | [info](metas/rss_on_nhtsa.yaml), [pdf(local)](pdfs/rss_on_nhtsa.pdf) | 1.7 MB |
 | S7310 8 Bit Inference With Tensorrt | [info](metas/s7310-8-bit-inference-with-tensorrt.yaml), [pdf(local)](pdfs/s7310-8-bit-inference-with-tensorrt.pdf) | 1.7 MB |
 | self-2019-Self-Learning with Multi-Prototypes | [info](metas/self-2019-Self-Learning%20with%20Multi-Prototypes.yaml), [pdf(local)](pdfs/self-2019-Self-Learning%20with%20Multi-Prototypes.pdf) | 822.1 KB |
@@ -293,8 +294,10 @@ total count: 248
 | theory-2004-Class Noise vs Attribute Noise | [info](metas/theory-2004-Class%20Noise%20vs%20Attribute%20Noise.yaml), [pdf(local)](pdfs/theory-2004-Class%20Noise%20vs%20Attribute%20Noise.pdf) | 707.0 KB |
 | theory-2017-Closer Look at Memorization | [info](metas/theory-2017-Closer%20Look%20at%20Memorization.yaml), [pdf(local)](pdfs/theory-2017-Closer%20Look%20at%20Memorization.pdf) | 3.2 MB |
 | theory-2017-rethinking generalization | [info](metas/theory-2017-rethinking%20generalization.yaml), [pdf(local)](pdfs/theory-2017-rethinking%20generalization.pdf) | 447.3 KB |
+| Top 10 Considerations For Bot Management Ebook | [info](metas/top-10-considerations-for-bot-management-ebook.yaml), [pdf(local)](pdfs/top-10-considerations-for-bot-management-ebook.pdf) | 4.8 MB |
 | Toward A Comfortable Driving Experience For A Self Driving Shuttle Bus | [info](metas/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.yaml), [pdf(local)](pdfs/toward-a-comfortable-driving-experience-for-a-self-driving-shuttle-bus.pdf) | 3.8 MB |
 | unsupervised representation learning by predicting image rotations | [info](metas/unsupervised_representation_learning_by_predicting_image_rotations.yaml), [pdf(local)](pdfs/unsupervised_representation_learning_by_predicting_image_rotations.pdf) | 6.3 MB |
 | word2vec Parameter Learning Explained | [info](metas/word2vec%20Parameter%20Learning%20Explained.yaml), [pdf(local)](pdfs/word2vec%20Parameter%20Learning%20Explained.pdf) | 797.7 KB |
+| You Could Be Competing With Bots To Buy Gifts | [info](metas/you-could-be-competing-with-bots-to-buy-gifts.yaml), [pdf(local)](pdfs/you-could-be-competing-with-bots-to-buy-gifts.pdf) | 1.5 MB |
 | 多处理器编程的艺术 | [info](metas/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.yaml), [pdf(local)](pdfs/%E5%A4%9A%E5%A4%84%E7%90%86%E5%99%A8%E7%BC%96%E7%A8%8B%E7%9A%84%E8%89%BA%E6%9C%AF.pdf) | 43.8 MB |
 | 视觉Slam十四讲(高翔第二版) | [info](metas/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.yaml), [pdf(local)](pdfs/%E8%A7%86%E8%A7%89SLAM%E5%8D%81%E5%9B%9B%E8%AE%B2%28%E9%AB%98%E7%BF%94%E7%AC%AC%E4%BA%8C%E7%89%88%29.pdf) | 29.5 MB |
