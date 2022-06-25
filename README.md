@@ -46,7 +46,7 @@ workflow 设计: [paper repo - workflow desig](docs/paper-repo-workflow-design.m
 
 ## PDF List
 
-total count: 249
+total count: 248
 
 | Paper Title | links | file size |
 | --- | --- | --- |
@@ -267,7 +267,6 @@ total count: 249
 | Mobilenetv1 | [info](metas/mobileNetV1.yaml), [pdf(local)](pdfs/mobileNetV1.pdf) | 919.2 KB |
 | Mobilenetv2 | [info](metas/mobileNetV2.yaml), [pdf(local)](pdfs/mobileNetV2.pdf) | 1.5 MB |
 | Mobilenetv3 | [info](metas/mobileNetV3.yaml), [pdf(local)](pdfs/mobileNetV3.pdf) | 525.7 KB |
-| Multi Digit Recognition Google | [info](metas/multi-digit-recognition-google.yaml), [pdf(local)](pdfs/multi-digit-recognition-google.pdf) | 4.6 MB |
 | N Gram Similarity And Distance | [info](metas/n-gram-similarity-and-distance.yaml), [pdf(local)](pdfs/n-gram-similarity-and-distance.pdf) | 148.4 KB |
 | neural reading comprehension and beyond 2018 | [info](metas/neural%20reading%20comprehension%20and%20beyond_2018.yaml), [pdf(local)](pdfs/neural%20reading%20comprehension%20and%20beyond_2018.pdf) | 5.5 MB |
 | On Discriminative Vs Generative Classifiers A Comparison Of Logistic Regression And Naive Bayes | [info](metas/on-discriminative-vs-generative-classifiers-a-comparison-of-logistic-regression-and-naive-bayes.yaml), [pdf(local)](pdfs/on-discriminative-vs-generative-classifiers-a-comparison-of-logistic-regression-and-naive-bayes.pdf) | 1.5 MB |
