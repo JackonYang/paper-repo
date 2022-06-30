@@ -12,7 +12,6 @@ logger = logging.getLogger(__name__)
 
 @jcache
 def send_request(url):
-    print('xxxxxx')
     response = requests.get(
         url=url,
         headers={
@@ -30,6 +29,7 @@ def send_request(url):
 
 @jcache
 def send_refs(pid, offset, referer):
+    print('xxxxxx')
     response = requests.get(
         url="https://www.semanticscholar.org/api/1/paper/%s/citations" % pid,
         params={
@@ -58,6 +58,13 @@ def download_ref_links(page_url):
     pid = base_url.split('/')[-1]
 
     meta_info = send_refs(pid, 0, page_url)
+    if 'citations' not in meta_info:
+        print(meta_info)
+        return {
+            'links': [],
+            'meta_info': {},
+            'pape_url': page_url,
+        }
     links.extend(meta_info.pop('citations'))
     total_links = meta_info['totalCitations']
 
