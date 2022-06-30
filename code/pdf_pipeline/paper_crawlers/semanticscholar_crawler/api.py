@@ -1,11 +1,7 @@
-from configs import (
-    REFERENCE_INFO_DIR,
-)
 from lib_cache import jcache
 import logging
 import requests
 import json
-import os
 
 logger = logging.getLogger(__name__)
 
@@ -50,12 +46,9 @@ def send_refs(pid, offset, referer):
     return response.json()
 
 
-def download_ref_links(page_url):
+def download_ref_links(pid, page_url, outfile):
 
     links = []
-
-    base_url = page_url.split('?', 1)[0]
-    pid = base_url.split('/')[-1]
 
     meta_info = send_refs(pid, 0, page_url)
     if 'citations' not in meta_info:
@@ -78,12 +71,7 @@ def download_ref_links(page_url):
         'page_url': page_url,
     }
 
-    if not os.path.exists(REFERENCE_INFO_DIR):
-        os.makedirs(REFERENCE_INFO_DIR)
-
-    fpath = os.path.join(REFERENCE_INFO_DIR, 'ref-info-%s.json' % pid)
-
-    with open(fpath, 'w') as f:
+    with open(outfile, 'w') as f:
         json.dump(data, f, indent=4, sort_keys=True)
 
     return data

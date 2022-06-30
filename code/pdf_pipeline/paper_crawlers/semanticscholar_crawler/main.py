@@ -10,10 +10,24 @@ CUR_DIR = os.path.abspath(os.path.dirname(__file__))
 url_ptn = 'https://www.semanticscholar.org/paper/%s/%s?sort=total-citations'
 
 
+def append_url(urls, url):
+    base_url = url.split('?', 1)[0]
+    pid = base_url.split('/')[-1]
+
+    outfile = os.path.join(REFERENCE_INFO_DIR, 'ref-info-%s.json' % pid)
+    urls.append([pid, url, outfile])
+
+    return urls
+
+
 def read_urls_from_file(file_path):
     with open(file_path, 'r') as f:
         data = f.readlines()
-    return [i.strip() for i in data if i.strip()]
+
+    urls = []
+    for url in data:
+        append_url(urls, url)
+    return urls
 
 
 def read_urls_from_refs(dir_path):
@@ -27,30 +41,53 @@ def read_urls_from_refs(dir_path):
             if 'id' not in ref or 'slug' not in ref:
                 continue
 
-            urls.append(url_ptn % (ref['slug'], ref['id']))
+            pid = ref['id']
+            url = url_ptn % (ref['slug'], pid)
+            outfile = os.path.join(REFERENCE_INFO_DIR, 'ref-info-%s.json' % pid)
+
+            urls.append([pid, url, outfile])
 
     return urls
 
 
 def download_urls(urls):
-    for idx, url in enumerate(urls):
-        data = download_ref_links(url)
+
+    if not os.path.exists(REFERENCE_INFO_DIR):
+        os.makedirs(REFERENCE_INFO_DIR)
+
+    ref_urls = []
+
+    for idx, task in enumerate(urls):
+        pid, url, outfile = task
+
+        if os.path.exists(outfile):
+            continue
+
+        data = download_ref_links(pid, url, outfile)
+        new_ref_links = data['links']
+        ref_urls.extend(new_ref_links)
         print('(%s/%s)%s refs downloaded. url: %s' % (
-            idx + 1, len(urls), len(data['links']), url))
+            idx + 1, len(urls), len(new_ref_links), url))
+
+    return ref_urls
 
 
-def filter_valuable_urls(urls):
+def filter_valuable_urls(urls, min_count=5):
     # count occurence of each url
     url_count = {}
-    for url in urls:
+    for task in urls:
+        if isinstance(task, str):
+            url = task
+        else:
+            url = task[1]
+
         if url not in url_count:
             url_count[url] = 0
         url_count[url] += 1
-    min_count = 5
     new_urls = []
     for url in url_count:
         if url_count[url] > min_count:
-            new_urls.append(url)
+            append_url(new_urls, url)
     return new_urls
 
 
