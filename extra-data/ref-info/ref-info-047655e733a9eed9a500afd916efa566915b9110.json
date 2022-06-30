@@ -1,0 +1,2484 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2088368"
+                        ],
+                        "name": "F. Gers",
+                        "slug": "F.-Gers",
+                        "structuredName": {
+                            "firstName": "Felix",
+                            "lastName": "Gers",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Gers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1780235"
+                        ],
+                        "name": "Fred Cummins",
+                        "slug": "Fred-Cummins",
+                        "structuredName": {
+                            "firstName": "Fred",
+                            "lastName": "Cummins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fred Cummins"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 59
+                            }
+                        ],
+                        "text": "Traditional LSTM We are building on LSTM with forget gates (Gers et al., 2000), simply called \u201cLSTM\u201d in what follows."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 29
+                            }
+                        ],
+                        "text": "Following previous notation (Gers et al., 2000), we minimize the obje tive fun tion E bygradient des ent (subje t to error trun ation), hanging the weights wlm (from unit m to unit l)by an amount wlm given by the learning rate times the negative gradient of E."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 83,
+                                "start": 66
+                            }
+                        ],
+                        "text": "We will, however, point out the di eren es to previous equations (Gers et al., 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 153
+                            }
+                        ],
+                        "text": "This prevents the cell state from growing to infinity, and enables the memory block to store fresh data without undue interference from prior operations (Gers et al., 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 47,
+                                "start": 28
+                            }
+                        ],
+                        "text": "Following previous notation (Gers et al., 2000), we minimize the objective function E by gradient descent (subject to error truncation), changing the weights wlm (from unit m to unit l) by an amount \u2206wlm given by the learning rate \u03b1 times the negative gradient of E."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 235,
+                                "start": 218
+                            }
+                        ],
+                        "text": "Se tions 3 and 4 des ribe the modi edforward and ba kward pass for \\peephole LSTM.\" Se tion 5 des ribes our new timing experiments.2 Extending LSTM with \\Peephole Conne tions\"We are building on LSTM with forget gates (Gers et al., 2000), simply alled \\LSTM\" in whatfollows."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11598600,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "11540131eae85b2e11d53df7f1360eeb6476e7f4",
+            "isKey": false,
+            "numCitedBy": 3203,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Long short-term memory (LSTM; Hochreiter & Schmidhuber, 1997) can solve numerous tasks not solvable by previous learning algorithms for recurrent neural networks (RNNs). We identify a weakness of LSTM networks processing continual input streams that are not a priori segmented into subsequences with explicitly marked ends at which the network's internal state could be reset. Without resets, the state may grow indefinitely and eventually cause the network to break down. Our remedy is a novel, adaptive forget gate that enables an LSTM cell to learn to reset itself at appropriate times, thus releasing internal resources. We review illustrative benchmark problems on which standard LSTM outperforms other RNN algorithms. All algorithms (including LSTM) fail to solve continual versions of these problems. LSTM with forget gates, however, easily solves them, and in an elegant way."
+            },
+            "slug": "Learning-to-Forget:-Continual-Prediction-with-LSTM-Gers-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "Learning to Forget: Continual Prediction with LSTM"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 56,
+                "text": "This work identifies a weakness of LSTM networks processing continual input streams that are not a priori segmented into subsequences with explicitly marked ends at which the network's internal state could be reset, and proposes a novel, adaptive forget gate that enables an LSTm cell to learn to reset itself at appropriate times, thus releasing internal resources."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3308557"
+                        ],
+                        "name": "S. Hochreiter",
+                        "slug": "S.-Hochreiter",
+                        "structuredName": {
+                            "firstName": "Sepp",
+                            "lastName": "Hochreiter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Hochreiter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 63
+                            }
+                        ],
+                        "text": "Although an HMM ould deal with a nite set of intervals between given events bydevoting a separate internal state for ea h interval, this would be umbersome and ine\u00c6 ient, andwould not use the very strength of HMMs to be invariant to non-linear temporal stret hing."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1915014,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "44d2abe2175df8153f465f6c39b68b76a0d40ab9",
+            "isKey": false,
+            "numCitedBy": 51648,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms."
+            },
+            "slug": "Long-Short-Term-Memory-Hochreiter-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "Long Short-Term Memory"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A novel, efficient, gradient based method called long short-term memory (LSTM) is introduced, which can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2812486"
+                        ],
+                        "name": "P. Simard",
+                        "slug": "P.-Simard",
+                        "structuredName": {
+                            "firstName": "Patrice",
+                            "lastName": "Simard",
+                            "middleNames": [
+                                "Y."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Simard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688235"
+                        ],
+                        "name": "P. Frasconi",
+                        "slug": "P.-Frasconi",
+                        "structuredName": {
+                            "firstName": "Paolo",
+                            "lastName": "Frasconi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Frasconi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 233,
+                                "start": 214
+                            }
+                        ],
+                        "text": "In fa t, while HMMs and traditional dis rete symboli grammar learningdevi es are limited to dis rete state spa es, RNNs are in prin iple suited for all sequen e learningtasks be ause they have Turing apabilities (Siegelmann & Sontag, 1991)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206457500,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d0be39ee052d246ae99c082a565aba25b811be2d",
+            "isKey": false,
+            "numCitedBy": 6141,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recurrent neural networks can be used to map input sequences to output sequences, such as for recognition, production or prediction problems. However, practical difficulties have been reported in training recurrent neural networks to perform tasks in which the temporal contingencies present in the input/output sequences span long intervals. We show why gradient based learning algorithms face an increasingly difficult problem as the duration of the dependencies to be captured increases. These results expose a trade-off between efficient learning by gradient descent and latching on information for long periods. Based on an understanding of this problem, alternatives to standard gradient descent are considered."
+            },
+            "slug": "Learning-long-term-dependencies-with-gradient-is-Bengio-Simard",
+            "title": {
+                "fragments": [],
+                "text": "Learning long-term dependencies with gradient descent is difficult"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work shows why gradient based learning algorithms face an increasingly difficult problem as the duration of the dependencies to be captured increases, and exposes a trade-off between efficient learning by gradient descent and latching on information for long periods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2586725"
+                        ],
+                        "name": "M. Forcada",
+                        "slug": "M.-Forcada",
+                        "structuredName": {
+                            "firstName": "Mikel",
+                            "lastName": "Forcada",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Forcada"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1798578"
+                        ],
+                        "name": "Rafael C. Carrasco",
+                        "slug": "Rafael-C.-Carrasco",
+                        "structuredName": {
+                            "firstName": "Rafael",
+                            "lastName": "Carrasco",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rafael C. Carrasco"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 16946201,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f6cde498cfaf7b862da3fa358caee9749e65ed3d",
+            "isKey": false,
+            "numCitedBy": 51,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recent work has shown that second-order recurrent neural networks (2ORNNs) may be used to infer regular languages. This paper presents a modified version of the real-time recurrent learning (RTRL) algorithm used to train 2ORNNs, that learns the initial state in addition to the weights. The results of this modification, which adds extra flexibility at a negligible cost in time complexity, suggest that it may be used to improve the learning of regular languages when the size of the network is small."
+            },
+            "slug": "Learning-the-Initial-State-of-a-Second-Order-Neural-Forcada-Carrasco",
+            "title": {
+                "fragments": [],
+                "text": "Learning the Initial State of a Second-Order Recurrent Neural Network during Regular-Language Inference"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "A modified version of the real-time recurrent learning (RTRL) algorithm used to train 2ORNNs is presented, that learns the initial state in addition to the weights, suggesting that it may be used to improve the learning of regular languages when the size of the network is small."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2088368"
+                        ],
+                        "name": "F. Gers",
+                        "slug": "F.-Gers",
+                        "structuredName": {
+                            "firstName": "Felix",
+                            "lastName": "Gers",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Gers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 28
+                            }
+                        ],
+                        "text": "Typi al RNN learningalgorithms (Pearlmutter, 1995) perform gradient des ent in a very general spa e of potentially noise-resistant algorithms using distributed, ontinuous-valued internal states to map real-valued inputsequen es to real-valued output sequen es."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10192330,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f828b401c86e0f8fddd8e77774e332dfd226cb05",
+            "isKey": false,
+            "numCitedBy": 585,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Previous work on learning regular languages from exemplary training sequences showed that long short-term memory (LSTM) outperforms traditional recurrent neural networks (RNNs). We demonstrate LSTMs superior performance on context-free language benchmarks for RNNs, and show that it works even better than previous hardwired or highly specialized architectures. To the best of our knowledge, LSTM variants are also the first RNNs to learn a simple context-sensitive language, namely a(n)b(n)c(n)."
+            },
+            "slug": "LSTM-recurrent-networks-learn-simple-context-free-Gers-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "LSTM recurrent networks learn simple context-free and context-sensitive languages"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 37,
+                "text": "Long short-term memory (LSTM) variants are also the first RNNs to learn a simple context-sensitive language, namely a(n)b( n)c(n)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2396681"
+                        ],
+                        "name": "D. Eck",
+                        "slug": "D.-Eck",
+                        "structuredName": {
+                            "firstName": "Douglas",
+                            "lastName": "Eck",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Eck"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 80,
+                                "start": 53
+                            }
+                        ],
+                        "text": ", 1999), and to detect and generate rhythm and music (Eck and Schmidhuber, 2002)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7541174,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "850e994c086e95c8d8c2ba3c90e53104a0fa709e",
+            "isKey": false,
+            "numCitedBy": 82,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In general music composed by recurrent neural networks (RNNs) suffers from a lack of global structure. Though networks can learn note-by-note transition probabilities and even reproduce phrases, they have been unable to learn an entire musical form and use that knowledge to guide composition. In this study, we describe model details and present experimental results showing that LSTM successfully learns a form of blues music and is able to compose novel (and some listeners believe pleasing) melodies in that style. Remarkably, once the network has found the relevant structure it does not drift from it: LSTM is able to play the blues with good timing and proper structure as long as one is willing to listen."
+            },
+            "slug": "Learning-the-Long-Term-Structure-of-the-Blues-Eck-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "Learning the Long-Term Structure of the Blues"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "LSTM is able to play the blues with good timing and proper structure as long as one is willing to listen and once the network has found the relevant structure it does not drift from it."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICANN"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700974"
+                        ],
+                        "name": "Barak A. Pearlmutter",
+                        "slug": "Barak-A.-Pearlmutter",
+                        "structuredName": {
+                            "firstName": "Barak",
+                            "lastName": "Pearlmutter",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Barak A. Pearlmutter"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1400872,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "32e97eef94beacace020e79322cef0e1e5a76ee0",
+            "isKey": false,
+            "numCitedBy": 608,
+            "numCiting": 302,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Surveys learning algorithms for recurrent neural networks with hidden units and puts the various techniques into a common framework. The authors discuss fixed point learning algorithms, namely recurrent backpropagation and deterministic Boltzmann machines, and nonfixed point algorithms, namely backpropagation through time, Elman's history cutoff, and Jordan's output feedback architecture. Forward propagation, an on-line technique that uses adjoint equations, and variations thereof, are also discussed. In many cases, the unified presentation leads to generalizations of various sorts. The author discusses advantages and disadvantages of temporally continuous neural networks in contrast to clocked ones continues with some \"tricks of the trade\" for training, using, and simulating continuous time and recurrent neural networks. The author presents some simulations, and at the end, addresses issues of computational complexity and learning speed."
+            },
+            "slug": "Gradient-calculations-for-dynamic-recurrent-neural-Pearlmutter",
+            "title": {
+                "fragments": [],
+                "text": "Gradient calculations for dynamic recurrent neural networks: a survey"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "The author discusses advantages and disadvantages of temporally continuous neural networks in contrast to clocked ones and presents some \"tricks of the trade\" for training, using, and simulating continuous time and recurrent neural networks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2116648700"
+                        ],
+                        "name": "Ronald J. Williams",
+                        "slug": "Ronald-J.-Williams",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Williams",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronald J. Williams"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1895771"
+                        ],
+                        "name": "D. Zipser",
+                        "slug": "D.-Zipser",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Zipser",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Zipser"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 67,
+                                "start": 44
+                            }
+                        ],
+                        "text": "In ontrast to previously\nstudied PFG tasks (Williams & Zipser, 1989; Doya & Yoshizawa, 1989; Tsung & Cottrell, 1995),GTS is highly nonlinear and involves long time lags between signi ant output hanges, whi h annot be learned by onventional RNNs. Previous work also did not fo us on stability issues."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 217,
+                                "start": 195
+                            }
+                        ],
+                        "text": "The lassi examplesare smoothly os illating outputs su h as sine waves, whi h are learnable by fully onne ted tea her-for ed RNNs whose units are all output units with tea her-de ned a tivations (Williams & Zipser,1989)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14711886,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ce9a21b93ba29d4145a8ef6bf401e77f261848de",
+            "isKey": false,
+            "numCitedBy": 3832,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The exact form of a gradient-following learning algorithm for completely recurrent networks running in continually sampled time is derived and used as the basis for practical algorithms for temporal supervised learning tasks. These algorithms have (1) the advantage that they do not require a precisely defined training interval, operating while the network runs; and (2) the disadvantage that they require nonlocal communication in the network being trained and are computationally expensive. These algorithms allow networks having recurrent connections to learn complex tasks that require the retention of information over time periods having either fixed or indefinite length."
+            },
+            "slug": "A-Learning-Algorithm-for-Continually-Running-Fully-Williams-Zipser",
+            "title": {
+                "fragments": [],
+                "text": "A Learning Algorithm for Continually Running Fully Recurrent Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "The exact form of a gradient-following learning algorithm for completely recurrent networks running in continually sampled time is derived and used as the basis for practical algorithms for temporal supervised learning tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39671808"
+                        ],
+                        "name": "Fu-Sheng Tsung",
+                        "slug": "Fu-Sheng-Tsung",
+                        "structuredName": {
+                            "firstName": "Fu-Sheng",
+                            "lastName": "Tsung",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fu-Sheng Tsung"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48524582"
+                        ],
+                        "name": "G. Cottrell",
+                        "slug": "G.-Cottrell",
+                        "structuredName": {
+                            "firstName": "G.",
+                            "lastName": "Cottrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Cottrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 661135,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bec62424fdb3633f3478216638671a2c78f6d833",
+            "isKey": false,
+            "numCitedBy": 31,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Existing recurrent net learning algorithms are inadequate. We introduce the conceptual framework of viewing recurrent training as matching vector fields of dynamical systems in phase space. Phase-space reconstruction techniques make the hidden states explicit, reducing temporal learning to a feed-forward problem. In short, we propose viewing iterated prediction [LF88] as the best way of training recurrent networks on deterministic signals. Using this framework, we can train multiple trajectories, insure their stability, and design arbitrary dynamical systems."
+            },
+            "slug": "Phase-Space-Learning-Tsung-Cottrell",
+            "title": {
+                "fragments": [],
+                "text": "Phase-Space Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work proposes viewing iterated prediction [LF88] as the best way of training recurrent networks on deterministic signals on phase space, and uses this framework to train multiple trajectories, insure their stability, and design arbitrary dynamical systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144446010"
+                        ],
+                        "name": "M. Wei\u00df",
+                        "slug": "M.-Wei\u00df",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Wei\u00df",
+                            "middleNames": [
+                                "Georg"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Wei\u00df"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 212,
+                                "start": 201
+                            }
+                        ],
+                        "text": "An alternative approa h trains an RNN to predi t the next input; after training outputsare fed ba k dire tly to the input so as to generate the waveform (Doya & Yoshizawa, 1989; Tsung& Cottrell, 1995; Weiss, 1999; Townley, Il hmann, Weiss, M Clements, Ruiz, Owens, & Praetzel-Wolters, 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17695966,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2f865dc99f8d85e9317c4024d8341ab6b3d3feca",
+            "isKey": false,
+            "numCitedBy": 7,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study a model for learning periodic signals in recurrent neural networks proposed by Doya and Yoshizawa 7] that can be considered as a model for temporal pattern memory in animal motoric systems. A network receives an external oscillatory input and adjusts its weights so that this signal can be reproduced approximately as the network output after some time. We use tools from adaptive control theory to derive an algorithm for weight matrices with special structure. If the input is generated by a network of the same structure the algorithm converges globally and does not exhibit the deeciencies of the back-propagation based approach of Doya and Yoshizawa under a persistency of excitation condition. This simple algorithm can also be used for open loop identiication under quite restrictive assumptions. The persistency of excitation condition cannot be proven even for the matrices with special structure but for a 3d system. For higher dimensional systems we give connections to the theory of linear time-varying systems where this condition is generically tue (under assumptions which are also needed in the time-invariant case). However we cannot show that the linearized system related to the nonlinear neural network fullls these generic assumptions."
+            },
+            "slug": "Learning-Oscillations-Using-Adaptive-Control-Wei\u00df",
+            "title": {
+                "fragments": [],
+                "text": "Learning Oscillations Using Adaptive Control"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "An algorithm for weight matrices with special structure for recurrent neural networks that converges globally and does not exhibit the deeciencies of the back-propagation based approach of Doya and Yoshizawa under a persistency of excitation condition is derived."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICANN"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714997"
+                        ],
+                        "name": "K. Doya",
+                        "slug": "K.-Doya",
+                        "structuredName": {
+                            "firstName": "Kenji",
+                            "lastName": "Doya",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Doya"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143921528"
+                        ],
+                        "name": "S. Yoshizawa",
+                        "slug": "S.-Yoshizawa",
+                        "structuredName": {
+                            "firstName": "Shuji",
+                            "lastName": "Yoshizawa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Yoshizawa"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 91,
+                                "start": 69
+                            }
+                        ],
+                        "text": "In ontrast to previously\nstudied PFG tasks (Williams & Zipser, 1989; Doya & Yoshizawa, 1989; Tsung & Cottrell, 1995),GTS is highly nonlinear and involves long time lags between signi ant output hanges, whi h annot be learned by onventional RNNs. Previous work also did not fo us on stability issues."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 176,
+                                "start": 154
+                            }
+                        ],
+                        "text": "An alternative approa h trains an RNN to predi t the next input; after training outputsare fed ba k dire tly to the input so as to generate the waveform (Doya & Yoshizawa, 1989; Tsung& Cottrell, 1995; Weiss, 1999; Townley, Il hmann, Weiss, M Clements, Ruiz, Owens, & Praetzel-Wolters, 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 27248882,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fd0da2f1d2b95e5b62221a00ff132219d0c853b7",
+            "isKey": false,
+            "numCitedBy": 147,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Adaptive-neural-oscillator-using-continuous-time-Doya-Yoshizawa",
+            "title": {
+                "fragments": [],
+                "text": "Adaptive neural oscillator using continuous-time back-propagation learning"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32372075"
+                        ],
+                        "name": "M. Weis",
+                        "slug": "M.-Weis",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Weis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Weis"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 208925892,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c4a7de190b2ea769083f858362ad242c6673df40",
+            "isKey": false,
+            "numCitedBy": 6,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study a model for learning periodic signals in continouus time Hopfield networks proposed by Doya and Yoshizawa ([3]) that can be considered as a model for temporal pattern memory in animal motor systems. A network receives an external oscillatory input and adjusts its weights so that this signal can be reproduced approximately as the network output after some time. We use tools from adaptive control theory to derive an algorithm for weight matrices with special structure. If the input is generated by a network of the same structure the algorithm converges globally and does not exhibit the deficiencies of the back-propagation based approach of Doya and Yoshizawa."
+            },
+            "slug": "Learning-Oscillations-Using-Adaptive-Control-Weis",
+            "title": {
+                "fragments": [],
+                "text": "Learning Oscillations Using Adaptive Control"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 37,
+                "text": "Using tools from adaptive control theory to derive an algorithm for weight matrices with special structure if the input is generated by a network of the same structure the algorithm converges globally and does not exhibit the deficiencies of the back-propagation based approach of Doya and Yoshizawa."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2546518"
+                        ],
+                        "name": "D. Plaut",
+                        "slug": "D.-Plaut",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Plaut",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Plaut"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1802785"
+                        ],
+                        "name": "S. Nowlan",
+                        "slug": "S.-Nowlan",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Nowlan",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Nowlan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 66
+                            }
+                        ],
+                        "text": "The learning rate \u03b1 is set to 10\u22125; we use the momentum algorithm (Plaut et al., 1986) with momentum parameter 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15150815,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4a42b2104ca8ff891ae77c40a915d4c94c8f8428",
+            "isKey": false,
+            "numCitedBy": 390,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract : Rumelhart, Hinton and Williams (Rumelhart 86) describe a learning procedure for layered networks of deterministic, neuron-like units. This paper describes further research on the learning procedure. We start by describing the units, the way they are connected, the learning procedure, and the extension to iterative nets. We then give an example in which a network learns a set of filters that enable it to discriminate formant-like patterns in the presence of noise. The speed of learning is strongly dependent on the shape of the surface formed by the error measure in weight space . We give examples of the shape of the error surface for a typical task and illustrate how an acceleration method speeds up descent in weight space. The main drawback of the learning procedure is the way it scales as the size of the task and the network increases. We give some preliminary results on scaling and show how the magnitude of the optimal weight changes depends on the fan-in of the units. Additional results illustrate the effects on learning speed of the amount of interaction between the weights. A variation of the learning procedure that back-propagates desired state information rather than error gradients is developed and compared with the standard procedure. Finally, we discuss the relationship between our iterative networks and the analog networks described by Hopefield and Tank (Hopfield 85). The learning procedure can discover appropriate weights in their kind of network, as well as determine an optimal schedule for varying the nonlinearity of the units during a search."
+            },
+            "slug": "Experiments-on-Learning-by-Back-Propagation.-Plaut-Nowlan",
+            "title": {
+                "fragments": [],
+                "text": "Experiments on Learning by Back Propagation."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "The learning procedure can discover appropriate weights in their kind of network, as well as determine an optimal schedule for varying the nonlinearity of the units during a search."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1986
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1803988"
+                        ],
+                        "name": "A. Bulsari",
+                        "slug": "A.-Bulsari",
+                        "structuredName": {
+                            "firstName": "Abhay",
+                            "lastName": "Bulsari",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Bulsari"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34611293"
+                        ],
+                        "name": "H. Sax\u00e9n",
+                        "slug": "H.-Sax\u00e9n",
+                        "structuredName": {
+                            "firstName": "Henrik",
+                            "lastName": "Sax\u00e9n",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Sax\u00e9n"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 13121992,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e14228c6df67c61f869d1de5b9de4f74b860f77b",
+            "isKey": false,
+            "numCitedBy": 18,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "A-recurrent-network-for-modeling-noisy-temporal-Bulsari-Sax\u00e9n",
+            "title": {
+                "fragments": [],
+                "text": "A recurrent network for modeling noisy temporal sequences"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neurocomputing"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1780235"
+                        ],
+                        "name": "Fred Cummins",
+                        "slug": "Fred-Cummins",
+                        "structuredName": {
+                            "firstName": "Fred",
+                            "lastName": "Cummins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fred Cummins"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2088368"
+                        ],
+                        "name": "F. Gers",
+                        "slug": "F.-Gers",
+                        "structuredName": {
+                            "firstName": "Felix",
+                            "lastName": "Gers",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Gers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 119,
+                                "start": 97
+                            }
+                        ],
+                        "text": "We have encountered this limitation when trying to extract prosodic information from speech data (Cummins et al., 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 81,
+                                "start": 59
+                            }
+                        ],
+                        "text": "We are using it to find prosody information in speech data (Cummins et al., 1999), and to detect and generate rhythm and music (Eck and Schmidhuber, 2002)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2763470,
+            "fieldsOfStudy": [
+                "Linguistics"
+            ],
+            "id": "2a9ce6eeada970ec7a494a3efc2b333e3b943ab2",
+            "isKey": false,
+            "numCitedBy": 31,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Most current language identi cation (LID) systems make little or no use of prosodic information, despite the importance of prosody in LID by humans. The greatest obstacle has been that of nding an appropriate feature set which captures linguistically relevant prosodic information. The only system to attempt LID entirely on the basis of prosodic variables uses a set of over 200 features which are selected and combined in a task-speci c manner [12]. We apply a novel recurrent neural network model to the task of pairwise discrimination among languages. Network inputs are limited to delta-F0 and the rst di erence of the band limited amplitude envelope. Initial results are based on all pairwise combinations of English, German, Japanese, Mandarin and Spanish, with 90 speakers per language."
+            },
+            "slug": "Language-identification-from-prosody-without-Cummins-Gers",
+            "title": {
+                "fragments": [],
+                "text": "Language identification from prosody without explicit features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work applies a novel recurrent neural network model to the task of pairwise discrimination among languages, based on all pairwise combinations of English, German, Japanese, Mandarin and Spanish, with 90 speakers per language."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EUROSPEECH"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2116648700"
+                        ],
+                        "name": "Ronald J. Williams",
+                        "slug": "Ronald-J.-Williams",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Williams",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronald J. Williams"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47918185"
+                        ],
+                        "name": "Jing Peng",
+                        "slug": "Jing-Peng",
+                        "structuredName": {
+                            "firstName": "Jing",
+                            "lastName": "Peng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jing Peng"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 111,
+                                "start": 88
+                            }
+                        ],
+                        "text": "Re urrent neural networks (RNNs) hold more promise for re ognizing patterns that are de nedby temporal distan e."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 149,
+                                "start": 128
+                            }
+                        ],
+                        "text": "Essentially, LSTM's ba kward pass is an e\u00c6 ient fusion of slightly modi ed, trun ated ba kpropagation through time (BPTT | e.g., Williams & Peng, 1990) and a ustomized version of real-time re urrent learning (RTRL | e.g., Robinson & Fallside, 1987) ."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12979634,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "26bc0449360d7016f684eafae5b5d2feded32041",
+            "isKey": false,
+            "numCitedBy": 634,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A novel variant of the familiar backpropagation-through-time approach to training recurrent networks is described. This algorithm is intended to be used on arbitrary recurrent networks that run continually without ever being reset to an initial state, and it is specifically designed for computationally efficient computer implementation. This algorithm can be viewed as a cross between epochwise backpropagation through time, which is not appropriate for continually running networks, and the widely used on-line gradient approximation technique of truncated backpropagation through time."
+            },
+            "slug": "An-Efficient-Gradient-Based-Algorithm-for-On-Line-Williams-Peng",
+            "title": {
+                "fragments": [],
+                "text": "An Efficient Gradient-Based Algorithm for On-Line Training of Recurrent Network Trajectories"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 92,
+                "text": "A novel variant of the familiar backpropagation-through-time approach to training recurrent networks is described, intended to be used on arbitrary recurrent networks that run continually without ever being reset to an initial state."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2116599"
+                        ],
+                        "name": "S. Townley",
+                        "slug": "S.-Townley",
+                        "structuredName": {
+                            "firstName": "Stuart",
+                            "lastName": "Townley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Townley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695678"
+                        ],
+                        "name": "A. Ilchmann",
+                        "slug": "A.-Ilchmann",
+                        "structuredName": {
+                            "firstName": "Achim",
+                            "lastName": "Ilchmann",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ilchmann"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144446010"
+                        ],
+                        "name": "M. Wei\u00df",
+                        "slug": "M.-Wei\u00df",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Wei\u00df",
+                            "middleNames": [
+                                "Georg"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Wei\u00df"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1408942523"
+                        ],
+                        "name": "Warren McClements",
+                        "slug": "Warren-McClements",
+                        "structuredName": {
+                            "firstName": "Warren",
+                            "lastName": "McClements",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Warren McClements"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2079787570"
+                        ],
+                        "name": "A. Ruiz",
+                        "slug": "A.-Ruiz",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Ruiz",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ruiz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1785860"
+                        ],
+                        "name": "D. Owens",
+                        "slug": "D.-Owens",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Owens",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Owens"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1405700795"
+                        ],
+                        "name": "D. Pr\u00e4tzel-Wolters",
+                        "slug": "D.-Pr\u00e4tzel-Wolters",
+                        "structuredName": {
+                            "firstName": "Dieter",
+                            "lastName": "Pr\u00e4tzel-Wolters",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Pr\u00e4tzel-Wolters"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2139254,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "5995dd9289695fcae68353de0ee83cb887ea836e",
+            "isKey": false,
+            "numCitedBy": 108,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we study a particular class of -node recurrent neural networks (RNN's). In the 3-node case we use monotone dynamical systems theory to show, for a well-defined set of parameters, that, generically, every orbit of the RNN is asymptotic to a periodic orbit. Then we investigate whether RNN's of this class can adapt their internal parameters so as to \"learn\" and then replicate autonomously (in feedback) certain external periodic signals. Our learning algorithm is similar to identification algorithms in adaptive control theory. The main feature of the algorithm is that global exponential convergence of parameters is guaranteed. We also obtain partial convergence results in the -node case."
+            },
+            "slug": "Existence-and-learning-of-oscillations-in-recurrent-Townley-Ilchmann",
+            "title": {
+                "fragments": [],
+                "text": "Existence and learning of oscillations in recurrent neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 58,
+                "text": "This paper uses monotone dynamical systems theory to show that, generically, every orbit of the RNN is asymptotic to a periodic orbit, and investigates whether RNN's of this class can adapt their internal parameters so as to \"learn\" and then replicate autonomously (in feedback) certain external periodic signals."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks Learn. Syst."
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11761172,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "89b9a181801f32bf62c4237c4265ba036a79f9dc",
+            "isKey": false,
+            "numCitedBy": 136,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The real-time recurrent learning (RTRL) algorithm (Robinson and Fallside 1987; Williams and Zipser 1989) requires O(n4) computations per time step, where n is the number of noninput units. I describe a method suited for on-line learning that computes exactly the same gradient and requires fixed-size storage of the same order but has an average time complexity per time step of O(n3)."
+            },
+            "slug": "A-Fixed-Size-Storage-O(n3)-Time-Complexity-Learning-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "A Fixed Size Storage O(n3) Time Complexity Learning Algorithm for Fully Recurrent Continually Running Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A method suited for on-line learning that computes exactly the same gradient and requires fixed-size storage of the same order but has an average time complexity per time step of O(n3)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3308557"
+                        ],
+                        "name": "S. Hochreiter",
+                        "slug": "S.-Hochreiter",
+                        "structuredName": {
+                            "firstName": "Sepp",
+                            "lastName": "Hochreiter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Hochreiter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 17278462,
+            "fieldsOfStudy": [
+                "Chemistry"
+            ],
+            "id": "aed054834e2c696807cc8b227ac7a4197196e211",
+            "isKey": false,
+            "numCitedBy": 1566,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "D3EGF(FIH)J KMLONPEGQSRPETN UCV.WYX(Z R.[ V R6\\M[ X N@]_^O\\`JaNcb V RcQ W d EGKeL(^(QgfhKeLOE?i)^(QSj ETNPfPQkRl[ V R)m\"[ X ^(KeLOEG^ npo qarpo m\"[ X ^(KeLOEG^tsAu EGNPb V ^ v wyx zlwO{(|(}<~O\u007fC}\u0081\u0080(\u0082(xp{a\u0083y\u0084.~A}\u0086\u0085\u0088\u0087_~ \u0089C\u008al\u00833\u0089#|<\u0080Az\u0086w#|l\u00806\u0087 \u008b(| \u008c JpfhL X\u008dV\u008f\u008e EG^O\u0090 QgJ \u0091 ETFOR\u0086\u0092\u0093] ^O\\\u0094J\u0095NPb V RcQ\u0097\u0096 X E)ETR \u00986EGKeLOETNcKMLOE\u009a\u0099 F\u0088\u009b ETN V RcQgJp^(^OE ZgZ E i ^(Qkj EGNPfhQSRO\u009b E \u009cOE2m1Jp^ RcNY\u009b E V\u0095Z sO\u009d\u009f\u009e! \u008d\u00a1 q.n sCD X KGKa\u00928\u009d\u00a2EG^ RPNhE\u00a4\u00a3 \u00a5\u00a6Q ZgZ E\u0095s m\u00a7J\u0095^ RPNO\u009b E V\u0095Z s( \u0308 X \u009b EG\u00a9#E\u0081Kas#\u009d V ^ V \u009c V s(H a \u009d\u00aba\u0095\u00ac3\u00ad \u00ae#|.\u0080Y \u0304y} xa\u00b0O\u007fC}l{\u008dx\u0093\u0087 \u0089 \u0083yxl\u0080Y~3{\u008d| \u0084 \u00b12\u0087Pz \u0084 \u009e V J Z J U N V fhKTJp^(Q \u0091 ETFOR\u0086\u0092 J\u0095\\ D vYf3RPEGb \u0301f V ^(\u009c\u00a7\u009d\u0088Jpb\u008fF X RPETN@D KTQ\u0097EG^(KTE i ^(QSjpEGNPfhQSR4v\u03bcJ\u0095\\ U\u00b6Z JaNPEG^(K\u00b7E jYQ V \u009c(Q \u0327D V ^ R V m V N3R V aOs#1 o \u00a1Ga r U Q\u0097NhE\u0081^OoTE1\u20444\u00bb,] R V\u0095Z vC1\u20442 3\u20444 \u0084 x \u00b1 x \u007f \u008b#\u00bf }\u00c0\u0087 \u00893\u0080t}l\u0082C}2\u0087P}<~ \u00act[ X NP\u0090\u0095E\u0081^\u00a7D KeL(b \u0301Qg\u009c(L X \u00a9yETN ] \u0091 DY]_\u00c1 \u009d\u0088J\u0095NPfhJ\u00c3\u00c2 Z j ETo\u0081Q V a\u0095 rpopo2\u00c4 X \u0090 V ^(J(sCD \u00c5)QSRPoTEGN ZgV ^(\u009c \u00c6 \u0089#|\u0095{3 \u0304\u008d|.\u0080(\u007fC}.\u008bC\u00bfY}p\u0084 \u0087Pz\u0086w"
+            },
+            "slug": "Gradient-Flow-in-Recurrent-Nets:-the-Difficulty-of-Hochreiter-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Gradient Flow in Recurrent Nets: the Difficulty of Learning Long-Term Dependencies"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688235"
+                        ],
+                        "name": "P. Frasconi",
+                        "slug": "P.-Frasconi",
+                        "structuredName": {
+                            "firstName": "Paolo",
+                            "lastName": "Frasconi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Frasconi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 63
+                            }
+                        ],
+                        "text": "They are su essful in spee h re ognition pre isely be ause they donot are for the di eren e between slow and fast versions of a given spoken word."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8658,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "29085cdffb3277c1c8fd10ac09e0d89452c8db83",
+            "isKey": false,
+            "numCitedBy": 357,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a recurrent architecture having a modular structure and we formulate a training procedure based on the EM algorithm. The resulting model has similarities to hidden Markov models, but supports recurrent networks processing style and allows to exploit the supervised learning paradigm while using maximum likelihood estimation."
+            },
+            "slug": "An-Input-Output-HMM-Architecture-Bengio-Frasconi",
+            "title": {
+                "fragments": [],
+                "text": "An Input Output HMM Architecture"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "A recurrent architecture having a modular structure that has similarities to hidden Markov models, but supports recurrent networks processing style and allows to exploit the supervised learning paradigm while using maximum likelihood estimation is introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2797623"
+                        ],
+                        "name": "H. Siegelmann",
+                        "slug": "H.-Siegelmann",
+                        "structuredName": {
+                            "firstName": "Hava",
+                            "lastName": "Siegelmann",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Siegelmann"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1790264"
+                        ],
+                        "name": "Eduardo Sontag",
+                        "slug": "Eduardo-Sontag",
+                        "structuredName": {
+                            "firstName": "Eduardo",
+                            "lastName": "Sontag",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Eduardo Sontag"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 238,
+                                "start": 213
+                            }
+                        ],
+                        "text": "In fa t, while HMMs and traditional dis rete symboli grammar learningdevi es are limited to dis rete state spa es, RNNs are in prin iple suited for all sequen e learningtasks be ause they have Turing apabilities (Siegelmann & Sontag, 1991)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 48,
+                                "start": 21
+                            }
+                        ],
+                        "text": "This motivates the study of arti ialsystems that learn to separate or generate patterns that onvey information through the length ofintervals between events."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5909565,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7509b472cbe7b1fe71a8fccf60f34cc873d1ab63",
+            "isKey": false,
+            "numCitedBy": 365,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Turing-computability-with-neural-nets-Siegelmann-Sontag",
+            "title": {
+                "fragments": [],
+                "text": "Turing computability with neural nets"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47378595"
+                        ],
+                        "name": "G. Miller",
+                        "slug": "G.-Miller",
+                        "structuredName": {
+                            "firstName": "Greg",
+                            "lastName": "Miller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Miller"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 142281124,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "fd68c2e9e69822f2f4b12acaab6f9269a1a61d74",
+            "isKey": false,
+            "numCitedBy": 139,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "FORGETTING AND REMEMBERINGWhen remembering runs amok, past pain can disrupt someone's present. New drugs, psychotherapeutic approaches, and other strategies might temper traumatic memories."
+            },
+            "slug": "Learning-to-Forget-Miller",
+            "title": {
+                "fragments": [],
+                "text": "Learning to Forget"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Science"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 40
+                            }
+                        ],
+                        "text": "Like standard LSTM, but unlike BPTT and RTRL, LSTM with forget gates and peephole onne tions is lo al in spa e and time."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 201,
+                                "start": 197
+                            }
+                        ],
+                        "text": "The CECs permit LSTM to bridge huge time lagsbetween relevant events (1000 steps and more (Ho hreiter & S hmidhuber, 1997)), while traditionalRNNs with more ostly update algorithms su h as BPTT or RTRL (Robinson & Fallside, 1987;Williams & Zipser, 1992), or ombinations thereof (S hmidhuber, 1992; Williams & Zipser, 1992),already fail to learn in the presen e of 10-step time lags."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 167,
+                                "start": 142
+                            }
+                        ],
+                        "text": "\u2026events (1000 steps and more (Ho hreiter & S hmidhuber, 1997)), while traditionalRNNs with more ostly update algorithms su h as BPTT or RTRL (Robinson & Fallside, 1987;Williams & Zipser, 1992), or ombinations thereof (S hmidhuber, 1992; Williams & Zipser, 1992),already fail to learn in the\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 325,
+                                "start": 321
+                            }
+                        ],
+                        "text": "Output units use BP; output\ngates use slightly modi ed, trun ated BPTT. Output gates use slightly modi ed, trun ated BPTT.(In the urrent version the trun ation o urs before the rst re urren e, so that the algorithmredu es to ordinary BP.)Weights to ells, input gates and forget gates, however, use a trun ated version of RTRL.Trun ation means that errors arriving at net inputs of memory blo ks and their gates do not getpropagated ba k further in time, although they do serve to hange the in oming weights, in ludingthe weights of peephole onne tions."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 7
+                            }
+                        ],
+                        "text": "In fa t, while HMMs and traditional dis rete symboli grammar learningdevi es are limited to dis rete state spa es, RNNs are in prin iple suited for all sequen e learningtasks be ause they have Turing apabilities (Siegelmann & Sontag, 1991)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 246,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Essentially, LSTM's ba kward pass is an e\u00c6 ient fusion of slightly modi ed, trun ated ba kpropagation through time (BPTT | e.g., Williams & Peng, 1990) and a ustomized version of real-time re urrent learning (RTRL | e.g., Robinson & Fallside, 1987) ."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "The utility driven dynamic error propagation network"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The utility driven dynamic error propagation network"
+            },
+            "year": 1987
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2066667188"
+                        ],
+                        "name": "Sepp Hochreiter",
+                        "slug": "Sepp-Hochreiter",
+                        "structuredName": {
+                            "firstName": "Sepp",
+                            "lastName": "Hochreiter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sepp Hochreiter"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 212,
+                                "start": 196
+                            }
+                        ],
+                        "text": "In fa t, while HMMs and traditional dis rete symboli grammar learningdevi es are limited to dis rete state spa es, RNNs are in prin iple suited for all sequen e learningtasks be ause they have Turing apabilities (Siegelmann & Sontag, 1991)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Turing omputability with neural nets."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 60091947,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3f3d13e95c25a8f6a753e38dfce88885097cbd43",
+            "isKey": false,
+            "numCitedBy": 603,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Untersuchungen-zu-dynamischen-neuronalen-Netzen-Hochreiter",
+            "title": {
+                "fragments": [],
+                "text": "Untersuchungen zu dynamischen neuronalen Netzen"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2116648700"
+                        ],
+                        "name": "Ronald J. Williams",
+                        "slug": "Ronald-J.-Williams",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Williams",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronald J. Williams"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1895771"
+                        ],
+                        "name": "D. Zipser",
+                        "slug": "D.-Zipser",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Zipser",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Zipser"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 36
+                            }
+                        ],
+                        "text": "In fa t, while HMMs and traditional dis rete symboli grammar learningdevi es are limited to dis rete state spa es, RNNs are in prin iple suited for all sequen e learningtasks be ause they have Turing apabilities (Siegelmann & Sontag, 1991)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 237,
+                                "start": 214
+                            }
+                        ],
+                        "text": "\u2026more (Ho hreiter & S hmidhuber, 1997)), while traditionalRNNs with more ostly update algorithms su h as BPTT or RTRL (Robinson & Fallside, 1987;Williams & Zipser, 1992), or ombinations thereof (S hmidhuber, 1992; Williams & Zipser, 1992),already fail to learn in the presen e of 10-step time lags."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 149
+                            }
+                        ],
+                        "text": "\u2026and more (Ho hreiter & S hmidhuber, 1997)), while traditionalRNNs with more ostly update algorithms su h as BPTT or RTRL (Robinson & Fallside, 1987;Williams & Zipser, 1992), or ombinations thereof (S hmidhuber, 1992; Williams & Zipser, 1992),already fail to learn in the presen e of 10-step time\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14792754,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "10dae7fca6b65b61d155a622f0c6ca2bc3922251",
+            "isKey": false,
+            "numCitedBy": 567,
+            "numCiting": 57,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Gradient-based-learning-algorithms-for-recurrent-Williams-Zipser",
+            "title": {
+                "fragments": [],
+                "text": "Gradient-based learning algorithms for recurrent networks and their computational complexity"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 67,
+                                "start": 44
+                            }
+                        ],
+                        "text": "In ontrast to previously\nstudied PFG tasks (Williams & Zipser, 1989; Doya & Yoshizawa, 1989; Tsung & Cottrell, 1995),GTS is highly nonlinear and involves long time lags between signi ant output hanges, whi h annot be learned by onventional RNNs. Previous work also did not fo us on stability issues."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 226,
+                                "start": 199
+                            }
+                        ],
+                        "text": "The classic examples are smoothly oscillating outputs such as sine waves, which are learnable by fully connected teacher-forced RNNs whose units are all output units with teacher-defined activations (Williams and Zipser, 1989)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 217,
+                                "start": 195
+                            }
+                        ],
+                        "text": "The lassi examplesare smoothly os illating outputs su h as sine waves, whi h are learnable by fully onne ted tea her-for ed RNNs whose units are all output units with tea her-de ned a tivations (Williams & Zipser,1989)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A learning algorithm for continually running fully recurrent net works"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Experiments on learning back propagation Learning Precise Timing with LSTM Recurrent Networks"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Experiments on learning back propagation Learning Precise Timing with LSTM Recurrent Networks"
+            },
+            "year": 1986
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 13,
+            "methodology": 10,
+            "result": 1
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 27,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Learning-Precise-Timing-with-LSTM-Recurrent-Gers-Schraudolph/047655e733a9eed9a500afd916efa566915b9110?sort=total-citations"
+}

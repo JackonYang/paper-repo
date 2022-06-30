@@ -1,0 +1,3982 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3093886"
+                        ],
+                        "name": "Max Jaderberg",
+                        "slug": "Max-Jaderberg",
+                        "structuredName": {
+                            "firstName": "Max",
+                            "lastName": "Jaderberg",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Max Jaderberg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34838386"
+                        ],
+                        "name": "K. Simonyan",
+                        "slug": "K.-Simonyan",
+                        "structuredName": {
+                            "firstName": "Karen",
+                            "lastName": "Simonyan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Simonyan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1687524"
+                        ],
+                        "name": "A. Vedaldi",
+                        "slug": "A.-Vedaldi",
+                        "structuredName": {
+                            "firstName": "Andrea",
+                            "lastName": "Vedaldi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Vedaldi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 80
+                            }
+                        ],
+                        "text": "We now review the component CNN models, originally presented in our tech report Jaderberg et al. (2014a), that form the basis of our joint model in Section 4."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 145,
+                                "start": 121
+                            }
+                        ],
+                        "text": "Previous methods using CNNs for word recognition (discussed in more detail in section Section 2) has either constrained (Jaderberg et al. (2014b)) or heavily weighted (Bissacco et al. (2013)) the recognition results to be from a dictionary of known words."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 183,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Traditional text recognition methods are based on sequential character classification, finding characters by sliding window methods (Wang et al. (2011; 2012); Jaderberg et al. (2014c), after which a word prediction is made by integrating character classifier predictions in a left-to-right manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 126
+                            }
+                        ],
+                        "text": "The character classifiers include random ferns (Ozuysal et al. (2007)) in Wang et al. (2011), and CNNs in Wang et al. (2012); Jaderberg et al. (2014c)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 136,
+                                "start": 112
+                            }
+                        ],
+                        "text": "C\nV ]\n2 3\nD ec\n2 01\n4\nThe CRF model builds on our previous work where we explored dictionary-based recognition (Jaderberg et al. (2014a)) for two scenarios: the first was to train a different CNN character classifier for each position in the word being recognised, using the whole image of the word\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Jaderberg et al. (2014c) uses the convolutional nature of CNNs to generate response maps for characters and bigrams which are integrated to score lexicon words."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11072772,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c0b8aad30d8dfd08535f361864f064b2fbbc9a75",
+            "isKey": false,
+            "numCitedBy": 683,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this work we present a framework for the recognition of natural scene text. Our framework does not require any human-labelled data, and performs word recognition on the whole image holistically, departing from the character based recognition systems of the past. The deep neural network models at the centre of this framework are trained solely on data produced by a synthetic text generation engine -- synthetic data that is highly realistic and sufficient to replace real data, giving us infinite amounts of training data. This excess of data exposes new possibilities for word recognition models, and here we consider three models, each one \"reading\" words in a different way: via 90k-way dictionary encoding, character sequence encoding, and bag-of-N-grams encoding. In the scenarios of language based and completely unconstrained text recognition we greatly improve upon state-of-the-art performance on standard datasets, using our fast, simple machinery and requiring zero data-acquisition costs."
+            },
+            "slug": "Synthetic-Data-and-Artificial-Neural-Networks-for-Jaderberg-Simonyan",
+            "title": {
+                "fragments": [],
+                "text": "Synthetic Data and Artificial Neural Networks for Natural Scene Text Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 93,
+                "text": "This work presents a framework for the recognition of natural scene text that does not require any human-labelled data, and performs word recognition on the whole image holistically, departing from the character based recognition systems of the past."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3093886"
+                        ],
+                        "name": "Max Jaderberg",
+                        "slug": "Max-Jaderberg",
+                        "structuredName": {
+                            "firstName": "Max",
+                            "lastName": "Jaderberg",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Max Jaderberg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34838386"
+                        ],
+                        "name": "K. Simonyan",
+                        "slug": "K.-Simonyan",
+                        "structuredName": {
+                            "firstName": "Karen",
+                            "lastName": "Simonyan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Simonyan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1687524"
+                        ],
+                        "name": "A. Vedaldi",
+                        "slug": "A.-Vedaldi",
+                        "structuredName": {
+                            "firstName": "Andrea",
+                            "lastName": "Vedaldi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Vedaldi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 80
+                            }
+                        ],
+                        "text": "We now review the component CNN models, originally presented in our tech report Jaderberg et al. (2014a), that form the basis of our joint model in Section 4."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 145,
+                                "start": 121
+                            }
+                        ],
+                        "text": "Previous methods using CNNs for word recognition (discussed in more detail in section Section 2) has either constrained (Jaderberg et al. (2014b)) or heavily weighted (Bissacco et al. (2013)) the recognition results to be from a dictionary of known words."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 183,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Traditional text recognition methods are based on sequential character classification, finding characters by sliding window methods (Wang et al. (2011; 2012); Jaderberg et al. (2014c), after which a word prediction is made by integrating character classifier predictions in a left-to-right manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 126
+                            }
+                        ],
+                        "text": "The character classifiers include random ferns (Ozuysal et al. (2007)) in Wang et al. (2011), and CNNs in Wang et al. (2012); Jaderberg et al. (2014c)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 136,
+                                "start": 112
+                            }
+                        ],
+                        "text": "C\nV ]\n2 3\nD ec\n2 01\n4\nThe CRF model builds on our previous work where we explored dictionary-based recognition (Jaderberg et al. (2014a)) for two scenarios: the first was to train a different CNN character classifier for each position in the word being recognised, using the whole image of the word\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Jaderberg et al. (2014c) uses the convolutional nature of CNNs to generate response maps for characters and bigrams which are integrated to score lexicon words."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207252329,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a5ae7436b5946bd37d17fc1ed26374389a86deff",
+            "isKey": false,
+            "numCitedBy": 886,
+            "numCiting": 78,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this work we present an end-to-end system for text spotting\u2014localising and recognising text in natural scene images\u2014and text based image retrieval. This system is based on a region proposal mechanism for detection and deep convolutional neural networks for recognition. Our pipeline uses a novel combination of complementary proposal generation techniques to ensure high recall, and a fast subsequent filtering stage for improving precision. For the recognition and ranking of proposals, we train very large convolutional neural networks to perform word recognition on the whole proposal region at the same time, departing from the character classifier based systems of the past. These networks are trained solely on data produced by a synthetic text generation engine, requiring no human labelled data. Analysing the stages of our pipeline, we show state-of-the-art performance throughout. We perform rigorous experiments across a number of standard end-to-end text spotting benchmarks and text-based image retrieval datasets, showing a large improvement over all previous methods. Finally, we demonstrate a real-world application of our text spotting system to allow thousands of hours of news footage to be instantly searchable via a text query."
+            },
+            "slug": "Reading-Text-in-the-Wild-with-Convolutional-Neural-Jaderberg-Simonyan",
+            "title": {
+                "fragments": [],
+                "text": "Reading Text in the Wild with Convolutional Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 66,
+                "text": "An end-to-end system for text spotting\u2014localising and recognising text in natural scene images\u2014and text based image retrieval and a real-world application to allow thousands of hours of news footage to be instantly searchable via a text query is demonstrated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3093886"
+                        ],
+                        "name": "Max Jaderberg",
+                        "slug": "Max-Jaderberg",
+                        "structuredName": {
+                            "firstName": "Max",
+                            "lastName": "Jaderberg",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Max Jaderberg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1687524"
+                        ],
+                        "name": "A. Vedaldi",
+                        "slug": "A.-Vedaldi",
+                        "structuredName": {
+                            "firstName": "Andrea",
+                            "lastName": "Vedaldi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Vedaldi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 80
+                            }
+                        ],
+                        "text": "We now review the component CNN models, originally presented in our tech report Jaderberg et al. (2014a), that form the basis of our joint model in Section 4."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 145,
+                                "start": 121
+                            }
+                        ],
+                        "text": "Previous methods using CNNs for word recognition (discussed in more detail in section Section 2) has either constrained (Jaderberg et al. (2014b)) or heavily weighted (Bissacco et al. (2013)) the recognition results to be from a dictionary of known words."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 183,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Traditional text recognition methods are based on sequential character classification, finding characters by sliding window methods (Wang et al. (2011; 2012); Jaderberg et al. (2014c), after which a word prediction is made by integrating character classifier predictions in a left-to-right manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 126
+                            }
+                        ],
+                        "text": "The character classifiers include random ferns (Ozuysal et al. (2007)) in Wang et al. (2011), and CNNs in Wang et al. (2012); Jaderberg et al. (2014c)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 194,
+                                "start": 189
+                            }
+                        ],
+                        "text": "To this end we propose a convolutional neural network (CNN) based architecture which incorporates a Conditional Random Field (CRF) graphical model, taking the whole word image as a single input."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 136,
+                                "start": 112
+                            }
+                        ],
+                        "text": "C\nV ]\n2 3\nD ec\n2 01\n4\nThe CRF model builds on our previous work where we explored dictionary-based recognition (Jaderberg et al. (2014a)) for two scenarios: the first was to train a different CNN character classifier for each position in the word being recognised, using the whole image of the word\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Jaderberg et al. (2014c) uses the convolutional nature of CNNs to generate response maps for characters and bigrams which are integrated to score lexicon words."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13072702,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4b4738809317259d2b49017203da512b21ea51ed",
+            "isKey": false,
+            "numCitedBy": 562,
+            "numCiting": 58,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The goal of this work is text spotting in natural images. This is divided into two sequential tasks: detecting words regions in the image, and recognizing the words within these regions. We make the following contributions: first, we develop a Convolutional Neural Network (CNN) classifier that can be used for both tasks. The CNN has a novel architecture that enables efficient feature sharing (by using a number of layers in common) for text detection, character case-sensitive and insensitive classification, and bigram classification. It exceeds the state-of-the-art performance for all of these. Second, we make a number of technical changes over the traditional CNN architectures, including no downsampling for a per-pixel sliding window, and multi-mode learning with a mixture of linear models (maxout). Third, we have a method of automated data mining of Flickr, that generates word and character level annotations. Finally, these components are used together to form an end-to-end, state-of-the-art text spotting system. We evaluate the text-spotting system on two standard benchmarks, the ICDAR Robust Reading data set and the Street View Text data set, and demonstrate improvements over the state-of-the-art on multiple measures."
+            },
+            "slug": "Deep-Features-for-Text-Spotting-Jaderberg-Vedaldi",
+            "title": {
+                "fragments": [],
+                "text": "Deep Features for Text Spotting"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "A Convolutional Neural Network classifier is developed that can be used for text spotting in natural images and a method of automated data mining of Flickr, that generates word and character level annotations is used to form an end-to-end, state-of-the-art text spotting system."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2156632012"
+                        ],
+                        "name": "Tao Wang",
+                        "slug": "Tao-Wang",
+                        "structuredName": {
+                            "firstName": "Tao",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tao Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "25629078"
+                        ],
+                        "name": "David J. Wu",
+                        "slug": "David-J.-Wu",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Wu",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David J. Wu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144638694"
+                        ],
+                        "name": "Adam Coates",
+                        "slug": "Adam-Coates",
+                        "structuredName": {
+                            "firstName": "Adam",
+                            "lastName": "Coates",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Adam Coates"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 157,
+                                "start": 133
+                            }
+                        ],
+                        "text": "Traditional text recognition methods are based on sequential character classification, finding characters by sliding window methods (Wang et al. (2011; 2012); Jaderberg et al. (2014c), after which a word prediction is made by integrating character classifier predictions in a left-to-right manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 124,
+                                "start": 106
+                            }
+                        ],
+                        "text": "The character classifiers include random ferns (Ozuysal et al. (2007)) in Wang et al. (2011), and CNNs in Wang et al. (2012); Jaderberg et al. (2014c)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 180,
+                                "start": 156
+                            }
+                        ],
+                        "text": "The lexicon of all test words is SVTFull (4282 words), and the smaller per-image 50 word lexicons defined by Wang et al. (2011) and used in previous works (Wang et al. (2011; 2012); Alsharif & Pineau (2014); Bissacco et al. (2013)) are referred to as SVT-50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 28
+                            }
+                        ],
+                        "text": "Both Wang et al. (2011) and Wang et al. (2012) use a small fixed lexicon as a language model to constrain word recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 176,
+                                "start": 152
+                            }
+                        ],
+                        "text": "The lexicon of all test words is IC03-Full (563 words), and the per-image 50 word lexicons defined by Wang et al. (2011) and used in a number of works (Wang et al. (2011; 2012); Alsharif & Pineau (2014)) are referred to as IC03-50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3126988,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "26cb14c9d22cf946314d685fe3541ef9f641e429",
+            "isKey": true,
+            "numCitedBy": 792,
+            "numCiting": 49,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Full end-to-end text recognition in natural images is a challenging problem that has received much attention recently. Traditional systems in this area have relied on elaborate models incorporating carefully hand-engineered features or large amounts of prior knowledge. In this paper, we take a different route and combine the representational power of large, multilayer neural networks together with recent developments in unsupervised feature learning, which allows us to use a common framework to train highly-accurate text detector and character recognizer modules. Then, using only simple off-the-shelf methods, we integrate these two modules into a full end-to-end, lexicon-driven, scene text recognition system that achieves state-of-the-art performance on standard benchmarks, namely Street View Text and ICDAR 2003."
+            },
+            "slug": "End-to-end-text-recognition-with-convolutional-Wang-Wu",
+            "title": {
+                "fragments": [],
+                "text": "End-to-end text recognition with convolutional neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper combines the representational power of large, multilayer neural networks together with recent developments in unsupervised feature learning, which allows them to use a common framework to train highly-accurate text detector and character recognizer modules."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 21st International Conference on Pattern Recognition (ICPR2012)"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39719398"
+                        ],
+                        "name": "Anand Mishra",
+                        "slug": "Anand-Mishra",
+                        "structuredName": {
+                            "firstName": "Anand",
+                            "lastName": "Mishra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anand Mishra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "72492981"
+                        ],
+                        "name": "Alahari Karteek",
+                        "slug": "Alahari-Karteek",
+                        "structuredName": {
+                            "firstName": "Alahari",
+                            "lastName": "Karteek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alahari Karteek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694502"
+                        ],
+                        "name": "C. Jawahar",
+                        "slug": "C.-Jawahar",
+                        "structuredName": {
+                            "firstName": "C.",
+                            "lastName": "Jawahar",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Jawahar"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 14
+                            }
+                        ],
+                        "text": "IIIT 5k-word (Mishra et al. (2012)) test dataset contains 3000 cropped word images of scene text downloaded from Google image search."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Mishra et al. (2012); Novikova et al. (2012) still rely on explicit character classifiers, but construct a graph to infer the word, pooling together the full word evidence."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 213,
+                                "start": 193
+                            }
+                        ],
+                        "text": "In contrast to these approaches based on character classification, the work by Almaza\u0301n et al. (2014); Gordo (2014); Goel et al. (2013); Rodriguez-Serrano et al. (2013); Novikova et al. (2012); Mishra et al. (2012) instead uses the notion of holistic word recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9695967,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bb5b2df137a4d54c3a9145fa363e66531b491580",
+            "isKey": true,
+            "numCitedBy": 548,
+            "numCiting": 56,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The problem of recognizing text in images taken in the wild has gained significant attention from the computer vision community in recent years. Contrary to recognition of printed documents, recognizing scene text is a challenging problem. We focus on the problem of recognizing text extracted from natural scene images and the web. Significant attempts have been made to address this problem in the recent past. However, many of these works benefit from the availability of strong context, which naturally limits their applicability. In this work we present a framework that uses a higher order prior computed from an English dictionary to recognize a word, which may or may not be a part of the dictionary. We show experimental results on publicly available datasets. Furthermore, we introduce a large challenging word dataset with five thousand words to evaluate various steps of our method exhaustively. The main contributions of this work are: (1) We present a framework, which incorporates higher order statistical language models to recognize words in an unconstrained manner (i.e. we overcome the need for restricted word lists, and instead use an English dictionary to compute the priors). (2) We achieve significant improvement (more than 20%) in word recognition accuracies without using a restricted word list. (3) We introduce a large word recognition dataset (atleast 5 times larger than other public datasets) with character level annotation and benchmark it."
+            },
+            "slug": "Scene-Text-Recognition-using-Higher-Order-Language-Mishra-Karteek",
+            "title": {
+                "fragments": [],
+                "text": "Scene Text Recognition using Higher Order Language Priors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A framework is presented that uses a higher order prior computed from an English dictionary to recognize a word, which may or may not be a part of the dictionary, and achieves significant improvement in word recognition accuracies without using a restricted word list."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1821267"
+                        ],
+                        "name": "Albert Gordo",
+                        "slug": "Albert-Gordo",
+                        "structuredName": {
+                            "firstName": "Albert",
+                            "lastName": "Gordo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Albert Gordo"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 40
+                            }
+                        ],
+                        "text": "Almaza\u0301n et al. (2014) and more recently Gordo (2014) also formluate joint embedding spaces, achieving impressive results with minimal training data."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 102
+                            }
+                        ],
+                        "text": "In contrast to these approaches based on character classification, the work by Almaza\u0301n et al. (2014); Gordo (2014); Goel et al. (2013); Rodriguez-Serrano et al. (2013); Novikova et al. (2012); Mishra et al. (2012) instead uses the notion of holistic word recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14980039,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "384c841250a2689fc66fc93216d208b5e48edf1c",
+            "isKey": false,
+            "numCitedBy": 90,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper addresses the problem of learning word image representations: given the cropped image of a word, we are interested in finding a descriptive, robust, and compact fixed-length representation. Machine learning techniques can then be supplied with these representations to produce models useful for word retrieval or recognition tasks. Although many works have focused on the machine learning aspect once a global representation has been produced, little work has been devoted to the construction of those base image representations: most works use standard coding and aggregation techniques directly on top of standard computer vision features such as SIFT or HOG. We propose to learn local mid-level features suitable for building word image representations. These features are learnt by leveraging character bounding box annotations on a small set of training images. However, contrary to other approaches that use character bounding box information, our approach does not rely on detecting the individual characters explicitly at testing time. Our local midlevel features can then be aggregated to produce a global word image signature. When pairing these features with the recent word attributes framework of [4], we obtain results comparable with or better than the state-of-the-art on matching and recognition tasks using global descriptors of only 96 dimensions."
+            },
+            "slug": "Supervised-mid-level-features-for-word-image-Gordo",
+            "title": {
+                "fragments": [],
+                "text": "Supervised mid-level features for word image representation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "This paper proposes to learn local mid-level features suitable for building word image representations by leveraging character bounding box annotations on a small set of training images, and achieves results comparable with or better than the state-of-the-art on matching and recognition tasks using global descriptors of only 96 dimensions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2061483996"
+                        ],
+                        "name": "Tatiana G. Novikova",
+                        "slug": "Tatiana-G.-Novikova",
+                        "structuredName": {
+                            "firstName": "Tatiana",
+                            "lastName": "Novikova",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tatiana G. Novikova"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144649144"
+                        ],
+                        "name": "O. Barinova",
+                        "slug": "O.-Barinova",
+                        "structuredName": {
+                            "firstName": "Olga",
+                            "lastName": "Barinova",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "O. Barinova"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143967473"
+                        ],
+                        "name": "Pushmeet Kohli",
+                        "slug": "Pushmeet-Kohli",
+                        "structuredName": {
+                            "firstName": "Pushmeet",
+                            "lastName": "Kohli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pushmeet Kohli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740145"
+                        ],
+                        "name": "V. Lempitsky",
+                        "slug": "V.-Lempitsky",
+                        "structuredName": {
+                            "firstName": "Victor",
+                            "lastName": "Lempitsky",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Lempitsky"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 22
+                            }
+                        ],
+                        "text": "Mishra et al. (2012); Novikova et al. (2012) still rely on explicit character classifiers, but construct a graph to infer the word, pooling together the full word evidence."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 191,
+                                "start": 169
+                            }
+                        ],
+                        "text": "In contrast to these approaches based on character classification, the work by Almaza\u0301n et al. (2014); Gordo (2014); Goel et al. (2013); Rodriguez-Serrano et al. (2013); Novikova et al. (2012); Mishra et al. (2012) instead uses the notion of holistic word recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6699564,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fef57f42188519899a3653872803445210cac857",
+            "isKey": false,
+            "numCitedBy": 122,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper proposes a new model for the task of word recognition in natural images that simultaneously models visual and lexicon consistency of words in a single probabilistic model. Our approach combines local likelihood and pairwise positional consistency priors with higher order priors that enforce consistency of characters (lexicon) and their attributes (font and colour). Unlike traditional stage-based methods, word recognition in our framework is performed by estimating the maximum a posteriori (MAP) solution under the joint posterior distribution of the model. MAP inference in our model is performed through the use of weighted finite-state transducers (WFSTs). We show how the efficiency of certain operations on WFSTs can be utilized to find the most likely word under the model in an efficient manner. We evaluate our method on a range of challenging datasets (ICDAR'03, SVT, ICDAR'11). Experimental results demonstrate that our method outperforms state-of-the-art methods for cropped word recognition."
+            },
+            "slug": "Large-Lexicon-Attribute-Consistent-Text-Recognition-Novikova-Barinova",
+            "title": {
+                "fragments": [],
+                "text": "Large-Lexicon Attribute-Consistent Text Recognition in Natural Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "A new model for the task of word recognition in natural images that simultaneously models visual and lexicon consistency of words in a single probabilistic model is proposed and outperforms state-of-the-art methods for cropped word recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1399142941"
+                        ],
+                        "name": "Jos\u00e9 A. Rodr\u00edguez-Serrano",
+                        "slug": "Jos\u00e9-A.-Rodr\u00edguez-Serrano",
+                        "structuredName": {
+                            "firstName": "Jos\u00e9",
+                            "lastName": "Rodr\u00edguez-Serrano",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jos\u00e9 A. Rodr\u00edguez-Serrano"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1723883"
+                        ],
+                        "name": "F. Perronnin",
+                        "slug": "F.-Perronnin",
+                        "structuredName": {
+                            "firstName": "Florent",
+                            "lastName": "Perronnin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Perronnin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 167,
+                                "start": 136
+                            }
+                        ],
+                        "text": "In contrast to these approaches based on character classification, the work by Almaza\u0301n et al. (2014); Gordo (2014); Goel et al. (2013); Rodriguez-Serrano et al. (2013); Novikova et al. (2012); Mishra et al. (2012) instead uses the notion of holistic word recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Rodriguez-Serrano et al. (2013) use aggregated Fisher Vectors (Perronnin et al. (2010)) and a Structured SVM framework to create a joint word-image and text embedding."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1187241,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "16358e79921964be7607f6371f88e8a06d97432c",
+            "isKey": false,
+            "numCitedBy": 57,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The standard approach to recognizing text in images consists in first classifying local image regions into candidate characters and then combining them with high-level word models such as conditional random fields (CRF). This paper explores a new paradigm that departs from this bottom-up view. We propose to embed word labels and word images into a common Euclidean space. Given a word image to be recognized, the text recognition problem is cast as one of retrieval: find the closest word label in this space. This common space is learned using the Structured SVM (SSVM) framework by enforcing matching label-image pairs to be closer than non-matching pairs. This method presents the following advantages: it does not require costly preor post-processing operations, it allows for the recognition of never-seen-before words and the recognition process is efficient. Experiments are performed on two challenging datasets (one of license plates and one of scene text) and show that the proposed method is competitive with standard bottom-up approaches to text recognition."
+            },
+            "slug": "Label-embedding-for-text-recognition-Rodr\u00edguez-Serrano-Perronnin",
+            "title": {
+                "fragments": [],
+                "text": "Label embedding for text recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper proposes to embed word labels and word images into a common Euclidean space and presents the following advantages: it does not require costly preor post-processing operations, it allows for the recognition of never-seen-before words and the recognition process is efficient."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153440022"
+                        ],
+                        "name": "Ian J. Goodfellow",
+                        "slug": "Ian-J.-Goodfellow",
+                        "structuredName": {
+                            "firstName": "Ian",
+                            "lastName": "Goodfellow",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ian J. Goodfellow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2751422"
+                        ],
+                        "name": "Yaroslav Bulatov",
+                        "slug": "Yaroslav-Bulatov",
+                        "structuredName": {
+                            "firstName": "Yaroslav",
+                            "lastName": "Bulatov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yaroslav Bulatov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46920727"
+                        ],
+                        "name": "Julian Ibarz",
+                        "slug": "Julian-Ibarz",
+                        "structuredName": {
+                            "firstName": "Julian",
+                            "lastName": "Ibarz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Julian Ibarz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1911894"
+                        ],
+                        "name": "Sacha Arnoud",
+                        "slug": "Sacha-Arnoud",
+                        "structuredName": {
+                            "firstName": "Sacha",
+                            "lastName": "Arnoud",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sacha Arnoud"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1961864"
+                        ],
+                        "name": "V. Shet",
+                        "slug": "V.-Shet",
+                        "structuredName": {
+                            "firstName": "Vinay",
+                            "lastName": "Shet",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Shet"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Goodfellow et al. (2013) had great success using a CNN with multiple position-sensitive character classifier outputs (closely related to the character sequence model in Section 3.1) to perform street number recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 171,
+                                "start": 147
+                            }
+                        ],
+                        "text": "\u2026classifier for each position in the word being recognised, using the whole image of the word as input to each classifier (an idea also expored by Goodfellow et al. (2013)); the second was to construct a CNN predictor to detect the N-grams contained in the word, effectively encoding the text as\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17991431,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b3d8dffb73bc93de239998548386c84177caa2ad",
+            "isKey": true,
+            "numCitedBy": 582,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract: Recognizing arbitrary multi-character text in unconstrained natural photographs is a hard problem. In this paper, we address an equally hard sub-problem in this domain viz. recognizing arbitrary multi-digit numbers from Street View imagery. Traditional approaches to solve this problem typically separate out the localization, segmentation, and recognition steps. In this paper we propose a unified approach that integrates these three steps via the use of a deep convolutional neural network that operates directly on the image pixels. We employ the DistBelief implementation of deep neural networks in order to train large, distributed neural networks on high quality images. We find that the performance of this approach increases with the depth of the convolutional network, with the best performance occurring in the deepest architecture we trained, with eleven hidden layers. We evaluate this approach on the publicly available SVHN dataset and achieve over $96\\%$ accuracy in recognizing complete street numbers. We show that on a per-digit recognition task, we improve upon the state-of-the-art, achieving $97.84\\%$ accuracy. We also evaluate this approach on an even more challenging dataset generated from Street View imagery containing several tens of millions of street number annotations and achieve over $90\\%$ accuracy. To further explore the applicability of the proposed system to broader text recognition tasks, we apply it to synthetic distorted text from reCAPTCHA. reCAPTCHA is one of the most secure reverse turing tests that uses distorted text to distinguish humans from bots. We report a $99.8\\%$ accuracy on the hardest category of reCAPTCHA. Our evaluations on both tasks indicate that at specific operating thresholds, the performance of the proposed system is comparable to, and in some cases exceeds, that of human operators."
+            },
+            "slug": "Multi-digit-Number-Recognition-from-Street-View-Goodfellow-Bulatov",
+            "title": {
+                "fragments": [],
+                "text": "Multi-digit Number Recognition from Street View Imagery using Deep Convolutional Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This paper employs the DistBelief implementation of deep neural networks in order to train large, distributed neural networks on high quality images and finds that the performance of this approach increases with the depth of the convolutional network."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145467588"
+                        ],
+                        "name": "Jon Almaz\u00e1n",
+                        "slug": "Jon-Almaz\u00e1n",
+                        "structuredName": {
+                            "firstName": "Jon",
+                            "lastName": "Almaz\u00e1n",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jon Almaz\u00e1n"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1821267"
+                        ],
+                        "name": "Albert Gordo",
+                        "slug": "Albert-Gordo",
+                        "structuredName": {
+                            "firstName": "Albert",
+                            "lastName": "Gordo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Albert Gordo"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1686569"
+                        ],
+                        "name": "A. Forn\u00e9s",
+                        "slug": "A.-Forn\u00e9s",
+                        "structuredName": {
+                            "firstName": "Alicia",
+                            "lastName": "Forn\u00e9s",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Forn\u00e9s"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2864362"
+                        ],
+                        "name": "Ernest Valveny",
+                        "slug": "Ernest-Valveny",
+                        "structuredName": {
+                            "firstName": "Ernest",
+                            "lastName": "Valveny",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ernest Valveny"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Almaza\u0301n et al. (2014) and more recently Gordo (2014) also formluate joint embedding spaces, achieving impressive results with minimal training data."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 79
+                            }
+                        ],
+                        "text": "In contrast to these approaches based on character classification, the work by Almaza\u0301n et al. (2014); Gordo (2014); Goel et al. (2013); Rodriguez-Serrano et al. (2013); Novikova et al. (2012); Mishra et al. (2012) instead uses the notion of holistic word recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10057476,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e61061b2ddd5e789a071e0681f4eb405bf811339",
+            "isKey": false,
+            "numCitedBy": 385,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper addresses the problems of word spotting and word recognition on images. In word spotting, the goal is to find all instances of a query word in a dataset of images. In recognition, the goal is to recognize the content of the word image, usually aided by a dictionary or lexicon. We describe an approach in which both word images and text strings are embedded in a common vectorial subspace. This is achieved by a combination of label embedding and attributes learning, and a common subspace regression. In this subspace, images and strings that represent the same word are close together, allowing one to cast recognition and retrieval tasks as a nearest neighbor problem. Contrary to most other existing methods, our representation has a fixed length, is low dimensional, and is very fast to compute and, especially, to compare. We test our approach on four public datasets of both handwritten documents and natural images showing results comparable or better than the state-of-the-art on spotting and recognition tasks."
+            },
+            "slug": "Word-Spotting-and-Recognition-with-Embedded-Almaz\u00e1n-Gordo",
+            "title": {
+                "fragments": [],
+                "text": "Word Spotting and Recognition with Embedded Attributes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "An approach in which both word images and text strings are embedded in a common vectorial subspace, allowing one to cast recognition and retrieval tasks as a nearest neighbor problem and is very fast to compute and, especially, to compare."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2148896777"
+                        ],
+                        "name": "Kai Wang",
+                        "slug": "Kai-Wang",
+                        "structuredName": {
+                            "firstName": "Kai",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kai Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2490700"
+                        ],
+                        "name": "Boris Babenko",
+                        "slug": "Boris-Babenko",
+                        "structuredName": {
+                            "firstName": "Boris",
+                            "lastName": "Babenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Boris Babenko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50172592"
+                        ],
+                        "name": "Serge J. Belongie",
+                        "slug": "Serge-J.-Belongie",
+                        "structuredName": {
+                            "firstName": "Serge",
+                            "lastName": "Belongie",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Serge J. Belongie"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 96,
+                                "start": 87
+                            }
+                        ],
+                        "text": "We evaluate our models on a number of standard datasets \u2013 ICDAR 2003, ICDAR 2013, Street View Text, and IIIT5k, whereas for training, as well as testing across a larger vocabulary, we turn to the synthetic Synth90k and SynthRand datasets."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 54
+                            }
+                        ],
+                        "text": "We follow the standard evaluation protocol defined by Wang et al. (2011) and perform recognition on the words containing only alphanumeric characters and at least three characters."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 157,
+                                "start": 133
+                            }
+                        ],
+                        "text": "Traditional text recognition methods are based on sequential character classification, finding characters by sliding window methods (Wang et al. (2011; 2012); Jaderberg et al. (2014c), after which a word prediction is made by integrating character classifier predictions in a left-to-right manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 18
+                            }
+                        ],
+                        "text": "Street View Text (Wang et al. (2011)) is a more challenging scene text dataset than the ICDAR datasets."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 74
+                            }
+                        ],
+                        "text": "The character classifiers include random ferns (Ozuysal et al. (2007)) in Wang et al. (2011), and CNNs in Wang et al. (2012); Jaderberg et al. (2014c)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 180,
+                                "start": 163
+                            }
+                        ],
+                        "text": "To this end we propose a convolutional neural network (CNN) based architecture which incorporates a Conditional Random Field (CRF) graphical model, taking the whole word image as a single input."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 127,
+                                "start": 109
+                            }
+                        ],
+                        "text": "The lexicon of all test words is SVTFull (4282 words), and the smaller per-image 50 word lexicons defined by Wang et al. (2011) and used in previous works (Wang et al. (2011; 2012); Alsharif & Pineau (2014); Bissacco et al. (2013)) are referred to as SVT-50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 23,
+                                "start": 5
+                            }
+                        ],
+                        "text": "Both Wang et al. (2011) and Wang et al. (2012) use a small fixed lexicon as a language model to constrain word recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 120,
+                                "start": 102
+                            }
+                        ],
+                        "text": "The lexicon of all test words is IC03-Full (563 words), and the per-image 50 word lexicons defined by Wang et al. (2011) and used in a number of works (Wang et al. (2011; 2012); Alsharif & Pineau (2014)) are referred to as IC03-50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14136313,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "32b8f58a038df83138435b12a499c8bf0de13811",
+            "isKey": true,
+            "numCitedBy": 908,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper focuses on the problem of word detection and recognition in natural images. The problem is significantly more challenging than reading text in scanned documents, and has only recently gained attention from the computer vision community. Sub-components of the problem, such as text detection and cropped image word recognition, have been studied in isolation [7, 4, 20]. However, what is unclear is how these recent approaches contribute to solving the end-to-end problem of word recognition. We fill this gap by constructing and evaluating two systems. The first, representing the de facto state-of-the-art, is a two stage pipeline consisting of text detection followed by a leading OCR engine. The second is a system rooted in generic object recognition, an extension of our previous work in [20]. We show that the latter approach achieves superior performance. While scene text recognition has generally been treated with highly domain-specific methods, our results demonstrate the suitability of applying generic computer vision methods. Adopting this approach opens the door for real world scene text recognition to benefit from the rapid advances that have been taking place in object recognition."
+            },
+            "slug": "End-to-end-scene-text-recognition-Wang-Babenko",
+            "title": {
+                "fragments": [],
+                "text": "End-to-end scene text recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "While scene text recognition has generally been treated with highly domain-specific methods, the results demonstrate the suitability of applying generic computer vision methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2011 International Conference on Computer Vision"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1726358"
+                        ],
+                        "name": "A. Bissacco",
+                        "slug": "A.-Bissacco",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Bissacco",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Bissacco"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152710625"
+                        ],
+                        "name": "M. Cummins",
+                        "slug": "M.-Cummins",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Cummins",
+                            "middleNames": [
+                                "Joseph"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Cummins"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34180232"
+                        ],
+                        "name": "Yuval Netzer",
+                        "slug": "Yuval-Netzer",
+                        "structuredName": {
+                            "firstName": "Yuval",
+                            "lastName": "Netzer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yuval Netzer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2665814"
+                        ],
+                        "name": "H. Neven",
+                        "slug": "H.-Neven",
+                        "structuredName": {
+                            "firstName": "Hartmut",
+                            "lastName": "Neven",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Neven"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 30
+                            }
+                        ],
+                        "text": "In addition, our model achieves state-of-the-art accuracy in lexicon-constrained scenarios, without being specifically modelled for constrained recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 190,
+                                "start": 168
+                            }
+                        ],
+                        "text": "Previous methods using CNNs for word recognition (discussed in more detail in section Section 2) has either constrained (Jaderberg et al. (2014b)) or heavily weighted (Bissacco et al. (2013)) the recognition results to be from a dictionary of known words."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 23
+                            }
+                        ],
+                        "text": "For example, PhotoOCR (Bissacco et al. (2013)) uses binarization and a sliding window classifier to generate candidate character regions, with words recognised through a beam search driven by classifier scores and static N-gram language model, followed by a re-ranking using a dictionary of 100k\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 208
+                            }
+                        ],
+                        "text": "The lexicon of all test words is SVTFull (4282 words), and the smaller per-image 50 word lexicons defined by Wang et al. (2011) and used in previous works (Wang et al. (2011; 2012); Alsharif & Pineau (2014); Bissacco et al. (2013)) are referred to as SVT-50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, PhotoOCR (Bissacco et al. (2013)) uses binarization and a sliding window classifier to generate candidate character regions, with words recognised through a beam search driven by classifier scores and static N-gram language model, followed by a re-ranking using a dictionary of 100k words."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 48,
+                                "start": 26
+                            }
+                        ],
+                        "text": "More recent works such as Bissacco et al. (2013); Alsharif & Pineau (2014) make use of oversegmentation methods, guided by a supervised classifier, to generate candidate character proposals in a single-word image, which are subsequently classified as true or false positives."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3149088,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "31a8803d7e2618bfa44c472d003055bb5961b9de",
+            "isKey": true,
+            "numCitedBy": 402,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe Photo OCR, a system for text extraction from images. Our particular focus is reliable text extraction from smartphone imagery, with the goal of text recognition as a user input modality similar to speech recognition. Commercially available OCR performs poorly on this task. Recent progress in machine learning has substantially improved isolated character classification, we build on this progress by demonstrating a complete OCR system using these techniques. We also incorporate modern data center-scale distributed language modelling. Our approach is capable of recognizing text in a variety of challenging imaging conditions where traditional OCR systems fail, notably in the presence of substantial blur, low resolution, low contrast, high image noise and other distortions. It also operates with low latency, mean processing time is 600 ms per image. We evaluate our system on public benchmark datasets for text extraction and outperform all previously reported results, more than halving the error rate on multiple benchmarks. The system is currently in use in many applications at Google, and is available as a user input modality in Google Translate for Android."
+            },
+            "slug": "PhotoOCR:-Reading-Text-in-Uncontrolled-Conditions-Bissacco-Cummins",
+            "title": {
+                "fragments": [],
+                "text": "PhotoOCR: Reading Text in Uncontrolled Conditions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 54,
+                "text": "This work describes Photo OCR, a system for text extraction from images that is capable of recognizing text in a variety of challenging imaging conditions where traditional OCR systems fail, notably in the presence of substantial blur, low resolution, low contrast, high image noise and other distortions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE International Conference on Computer Vision"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721248"
+                        ],
+                        "name": "P. Haffner",
+                        "slug": "P.-Haffner",
+                        "structuredName": {
+                            "firstName": "Patrick",
+                            "lastName": "Haffner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Haffner"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 169,
+                                "start": 150
+                            }
+                        ],
+                        "text": "There have been previous uses of graphical models with back-propagated loss functions for neural networks, such as the early text recognition work of LeCun et al. (1998) to combine character classifier results on image segmentations."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 140,
+                                "start": 121
+                            }
+                        ],
+                        "text": "This paper focuses on the text recognition stage, developing a model based on deep convolutional neural networks (CNNs) (LeCun et al. (1998))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 143,
+                                "start": 124
+                            }
+                        ],
+                        "text": "The structured output loss described in this section bares resemblance to the discriminative Viterbi training introduced by LeCun et al. (1998)."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14542261,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "isKey": true,
+            "numCitedBy": 35236,
+            "numCiting": 248,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day."
+            },
+            "slug": "Gradient-based-learning-applied-to-document-LeCun-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Gradient-based learning applied to document recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task, and Convolutional neural networks are shown to outperform all other techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proc. IEEE"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "20790397"
+                        ],
+                        "name": "Vibhor Goel",
+                        "slug": "Vibhor-Goel",
+                        "structuredName": {
+                            "firstName": "Vibhor",
+                            "lastName": "Goel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Vibhor Goel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39719398"
+                        ],
+                        "name": "Anand Mishra",
+                        "slug": "Anand-Mishra",
+                        "structuredName": {
+                            "firstName": "Anand",
+                            "lastName": "Mishra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anand Mishra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "72492981"
+                        ],
+                        "name": "Alahari Karteek",
+                        "slug": "Alahari-Karteek",
+                        "structuredName": {
+                            "firstName": "Alahari",
+                            "lastName": "Karteek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alahari Karteek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694502"
+                        ],
+                        "name": "C. Jawahar",
+                        "slug": "C.-Jawahar",
+                        "structuredName": {
+                            "firstName": "C.",
+                            "lastName": "Jawahar",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Jawahar"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 18,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Goel et al. (2013) use whole word-image features to recognize words by comparing to simple black-and-white font-renderings of lexicon words."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 134,
+                                "start": 116
+                            }
+                        ],
+                        "text": "In contrast to these approaches based on character classification, the work by Almaza\u0301n et al. (2014); Gordo (2014); Goel et al. (2013); Rodriguez-Serrano et al. (2013); Novikova et al. (2012); Mishra et al. (2012) instead uses the notion of holistic word recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13960775,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "817f83b13229f603d5a241812e81059d01e71c7a",
+            "isKey": false,
+            "numCitedBy": 88,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recognizing text in images taken in the wild is a challenging problem that has received great attention in recent years. Previous methods addressed this problem by first detecting individual characters, and then forming them into words. Such approaches often suffer from weak character detections, due to large intra-class variations, even more so than characters from scanned documents. We take a different view of the problem and present a holistic word recognition framework. In this, we first represent the scene text image and synthetic images generated from lexicon words using gradient-based features. We then recognize the text in the image by matching the scene and synthetic image features with our novel weighted Dynamic Time Warping (wDTW) approach. We perform experimental analysis on challenging public datasets, such as Street View Text and ICDAR 2003. Our proposed method significantly outperforms our earlier work in Mishra et al. (CVPR 2012), as well as many other recent works, such as Novikova et al. (ECCV 2012), Wang et al. al.(ICPR 2012), Wang et al.(ICCV 2011)."
+            },
+            "slug": "Whole-is-Greater-than-Sum-of-Parts:-Recognizing-Goel-Mishra",
+            "title": {
+                "fragments": [],
+                "text": "Whole is Greater than Sum of Parts: Recognizing Scene Text Words"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work presents a holistic word recognition framework that represents the scene text image and synthetic images generated from lexicon words using gradient-based features, and recognizes the text in the image by matching the scene and synthetic image features with the novel weighted Dynamic Time Warping (wDTW) approach."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 12th International Conference on Document Analysis and Recognition"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2511744"
+                        ],
+                        "name": "O. Alsharif",
+                        "slug": "O.-Alsharif",
+                        "structuredName": {
+                            "firstName": "Ouais",
+                            "lastName": "Alsharif",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "O. Alsharif"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145134886"
+                        ],
+                        "name": "Joelle Pineau",
+                        "slug": "Joelle-Pineau",
+                        "structuredName": {
+                            "firstName": "Joelle",
+                            "lastName": "Pineau",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Joelle Pineau"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 202,
+                                "start": 178
+                            }
+                        ],
+                        "text": "The lexicon of all test words is IC03-Full (563 words), and the per-image 50 word lexicons defined by Wang et al. (2011) and used in a number of works (Wang et al. (2011; 2012); Alsharif & Pineau (2014)) are referred to as IC03-50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 74,
+                                "start": 50
+                            }
+                        ],
+                        "text": "More recent works such as Bissacco et al. (2013); Alsharif & Pineau (2014) make use of oversegmentation methods, guided by a supervised classifier, to generate candidate character proposals in a single-word image, which are subsequently classified as true or false positives."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 206,
+                                "start": 182
+                            }
+                        ],
+                        "text": "The lexicon of all test words is SVTFull (4282 words), and the smaller per-image 50 word lexicons defined by Wang et al. (2011) and used in previous works (Wang et al. (2011; 2012); Alsharif & Pineau (2014); Bissacco et al. (2013)) are referred to as SVT-50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17140888,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b1fa02bc9d34fa827694a6bf79253db37ec928eb",
+            "isKey": false,
+            "numCitedBy": 101,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The problem of detecting and recognizing text in natural scenes has proved to be more challenging than its counterpart in documents, with most of the previous work focusing on a single part of the problem. In this work, we propose new solutions to the character and word recognition problems and then show how to combine these solutions in an end-to-end text-recognition system. We do so by leveraging the recently introduced Maxout networks along with hybrid HMM models that have proven useful for voice recognition. Using these elements, we build a tunable and highly accurate recognition system that beats state-of-the-art results on all the sub-problems for both the ICDAR 2003 and SVT benchmark datasets."
+            },
+            "slug": "End-to-End-Text-Recognition-with-Hybrid-HMM-Maxout-Alsharif-Pineau",
+            "title": {
+                "fragments": [],
+                "text": "End-to-End Text Recognition with Hybrid HMM Maxout Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This work proposes new solutions to the character and word recognition problems and shows how to combine these solutions in an end-to-end text-recognition system that beats state-of-the-art results on all the sub-problems for both the ICDAR 2003 and SVT benchmark datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2146721"
+                        ],
+                        "name": "C. Yao",
+                        "slug": "C.-Yao",
+                        "structuredName": {
+                            "firstName": "Cong",
+                            "lastName": "Yao",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Yao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145905113"
+                        ],
+                        "name": "X. Bai",
+                        "slug": "X.-Bai",
+                        "structuredName": {
+                            "firstName": "Xiang",
+                            "lastName": "Bai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Bai"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2276155"
+                        ],
+                        "name": "Baoguang Shi",
+                        "slug": "Baoguang-Shi",
+                        "structuredName": {
+                            "firstName": "Baoguang",
+                            "lastName": "Shi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Baoguang Shi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1743698"
+                        ],
+                        "name": "Wenyu Liu",
+                        "slug": "Wenyu-Liu",
+                        "structuredName": {
+                            "firstName": "Wenyu",
+                            "lastName": "Liu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wenyu Liu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11341313,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ca0eb5d81484f62af7b10f18aa4ed65d7856c106",
+            "isKey": false,
+            "numCitedBy": 243,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Driven by the wide range of applications, scene text detection and recognition have become active research topics in computer vision. Though extensively studied, localizing and reading text in uncontrolled environments remain extremely challenging, due to various interference factors. In this paper, we propose a novel multi-scale representation for scene text recognition. This representation consists of a set of detectable primitives, termed as strokelets, which capture the essential substructures of characters at different granularities. Strokelets possess four distinctive advantages: (1) Usability: automatically learned from bounding box labels, (2) Robustness: insensitive to interference factors, (3) Generality: applicable to variant languages, and (4) Expressivity: effective at describing characters. Extensive experiments on standard benchmarks verify the advantages of strokelets and demonstrate the effectiveness of the proposed algorithm for text recognition."
+            },
+            "slug": "Strokelets:-A-Learned-Multi-scale-Representation-Yao-Bai",
+            "title": {
+                "fragments": [],
+                "text": "Strokelets: A Learned Multi-scale Representation for Scene Text Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This paper proposes a novel multi-scale representation for scene text recognition that consists of a set of detectable primitives, termed as strokelets, which capture the essential substructures of characters at different granularities."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2897313"
+                        ],
+                        "name": "Nitish Srivastava",
+                        "slug": "Nitish-Srivastava",
+                        "structuredName": {
+                            "firstName": "Nitish",
+                            "lastName": "Srivastava",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nitish Srivastava"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064160"
+                        ],
+                        "name": "A. Krizhevsky",
+                        "slug": "A.-Krizhevsky",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Krizhevsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krizhevsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145124475"
+                        ],
+                        "name": "R. Salakhutdinov",
+                        "slug": "R.-Salakhutdinov",
+                        "structuredName": {
+                            "firstName": "Ruslan",
+                            "lastName": "Salakhutdinov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Salakhutdinov"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 179,
+                                "start": 159
+                            }
+                        ],
+                        "text": "The CNNs are trained with multinomial logistic regression loss, back-propagation, and stochastic gradient descent (SGD) with dropout regularisation similar to Hinton et al. (2012)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 67
+                            }
+                        ],
+                        "text": "It should be noted that all the methods make use of strong static language models, either relying on a constrained dictionary or re-ranking mechanism."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14832074,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1366de5bb112746a555e9c0cd00de3ad8628aea8",
+            "isKey": false,
+            "numCitedBy": 6189,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "When a large feedforward neural network is trained on a small training set, it typically performs poorly on held-out test data. This \"overfitting\" is greatly reduced by randomly omitting half of the feature detectors on each training case. This prevents complex co-adaptations in which a feature detector is only helpful in the context of several other specific feature detectors. Instead, each neuron learns to detect a feature that is generally helpful for producing the correct answer given the combinatorially large variety of internal contexts in which it must operate. Random \"dropout\" gives big improvements on many benchmark tasks and sets new records for speech and object recognition."
+            },
+            "slug": "Improving-neural-networks-by-preventing-of-feature-Hinton-Srivastava",
+            "title": {
+                "fragments": [],
+                "text": "Improving neural networks by preventing co-adaptation of feature detectors"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1723883"
+                        ],
+                        "name": "F. Perronnin",
+                        "slug": "F.-Perronnin",
+                        "structuredName": {
+                            "firstName": "Florent",
+                            "lastName": "Perronnin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Perronnin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46398811"
+                        ],
+                        "name": "Yan Liu",
+                        "slug": "Yan-Liu",
+                        "structuredName": {
+                            "firstName": "Yan",
+                            "lastName": "Liu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yan Liu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143995438"
+                        ],
+                        "name": "Jorge S\u00e1nchez",
+                        "slug": "Jorge-S\u00e1nchez",
+                        "structuredName": {
+                            "firstName": "Jorge",
+                            "lastName": "S\u00e1nchez",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jorge S\u00e1nchez"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50228329"
+                        ],
+                        "name": "H. Poirier",
+                        "slug": "H.-Poirier",
+                        "structuredName": {
+                            "firstName": "Herv\u00e9",
+                            "lastName": "Poirier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Poirier"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 63
+                            }
+                        ],
+                        "text": "Rodriguez-Serrano et al. (2013) use aggregated Fisher Vectors (Perronnin et al. (2010)) and a Structured SVM framework to create a joint word-image and text embedding."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16161770,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "48257a889a9aa61998ae20fa52b25d90c441f63a",
+            "isKey": false,
+            "numCitedBy": 763,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The problem of large-scale image search has been traditionally addressed with the bag-of-visual-words (BOV). In this article, we propose to use as an alternative the Fisher kernel framework. We first show why the Fisher representation is well-suited to the retrieval problem: it describes an image by what makes it different from other images. One drawback of the Fisher vector is that it is high-dimensional and, as opposed to the BOV, it is dense. The resulting memory and computational costs do not make Fisher vectors directly amenable to large-scale retrieval. Therefore, we compress Fisher vectors to reduce their memory footprint and speed-up the retrieval. We compare three binarization approaches: a simple approach devised for this representation and two standard compression techniques. We show on two publicly available datasets that compressed Fisher vectors perform very well using as little as a few hundreds of bits per image, and significantly better than a very recent compressed BOV approach."
+            },
+            "slug": "Large-scale-image-retrieval-with-compressed-Fisher-Perronnin-Liu",
+            "title": {
+                "fragments": [],
+                "text": "Large-scale image retrieval with compressed Fisher vectors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This article shows why the Fisher representation is well-suited to the retrieval problem: it describes an image by what makes it different from other images, and why it should be compressed to reduce their memory footprint and speed-up the retrieval."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145815031"
+                        ],
+                        "name": "S. Lucas",
+                        "slug": "S.-Lucas",
+                        "structuredName": {
+                            "firstName": "Simon",
+                            "lastName": "Lucas",
+                            "middleNames": [
+                                "M.",
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Lucas"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "87531536"
+                        ],
+                        "name": "A. Panaretos",
+                        "slug": "A.-Panaretos",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Panaretos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Panaretos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2073684197"
+                        ],
+                        "name": "Luis Sosa",
+                        "slug": "Luis-Sosa",
+                        "structuredName": {
+                            "firstName": "Luis",
+                            "lastName": "Sosa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Luis Sosa"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2052189571"
+                        ],
+                        "name": "Anthony Tang",
+                        "slug": "Anthony-Tang",
+                        "structuredName": {
+                            "firstName": "Anthony",
+                            "lastName": "Tang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anthony Tang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2108862960"
+                        ],
+                        "name": "Shirley Wong",
+                        "slug": "Shirley-Wong",
+                        "structuredName": {
+                            "firstName": "Shirley",
+                            "lastName": "Wong",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Shirley Wong"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2114080648"
+                        ],
+                        "name": "Robert Young",
+                        "slug": "Robert-Young",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Young",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Robert Young"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6379469,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ce39eb5cc1049a1060a499d6b6e94c8b2ec11da1",
+            "isKey": false,
+            "numCitedBy": 591,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes the robust reading competitions forICDAR 2003. With the rapid growth in research over thelast few years on recognizing text in natural scenes, thereis an urgent need to establish some common benchmarkdatasets, and gain a clear understanding of the current stateof the art. We use the term robust reading to refer to text imagesthat are beyond the capabilities of current commercialOCR packages. We chose to break down the robust readingproblem into three sub-problems, and run competitionsfor each stage, and also a competition for the best overallsystem. The sub-problems we chose were text locating,character recognition and word recognition.By breaking down the problem in this way, we hope togain a better understanding of the state of the art in eachof the sub-problems. Furthermore, our methodology involvesstoring detailed results of applying each algorithm toeach image in the data sets, allowing researchers to study indepth the strengths and weaknesses of each algorithm. Thetext locating contest was the only one to have any entries.We report the results of this contest, and show cases wherethe leading algorithms succeed and fail."
+            },
+            "slug": "ICDAR-2003-robust-reading-competitions-Lucas-Panaretos",
+            "title": {
+                "fragments": [],
+                "text": "ICDAR 2003 robust reading competitions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "The robust reading problem was broken down into three sub-problems, and competitions for each stage, and also a competition for the best overall system, which was the only one to have any entries."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Seventh International Conference on Document Analysis and Recognition, 2003. Proceedings."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694974"
+                        ],
+                        "name": "Dimosthenis Karatzas",
+                        "slug": "Dimosthenis-Karatzas",
+                        "structuredName": {
+                            "firstName": "Dimosthenis",
+                            "lastName": "Karatzas",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dimosthenis Karatzas"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688013"
+                        ],
+                        "name": "F. Shafait",
+                        "slug": "F.-Shafait",
+                        "structuredName": {
+                            "firstName": "Faisal",
+                            "lastName": "Shafait",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Shafait"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1809705"
+                        ],
+                        "name": "S. Uchida",
+                        "slug": "S.-Uchida",
+                        "structuredName": {
+                            "firstName": "Seiichi",
+                            "lastName": "Uchida",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Uchida"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35613969"
+                        ],
+                        "name": "M. Iwamura",
+                        "slug": "M.-Iwamura",
+                        "structuredName": {
+                            "firstName": "M.",
+                            "lastName": "Iwamura",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Iwamura"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2730090"
+                        ],
+                        "name": "L. G. I. Bigorda",
+                        "slug": "L.-G.-I.-Bigorda",
+                        "structuredName": {
+                            "firstName": "Llu\u00eds",
+                            "lastName": "Bigorda",
+                            "middleNames": [
+                                "G\u00f3mez",
+                                "i"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. G. I. Bigorda"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2729896"
+                        ],
+                        "name": "Sergi Robles Mestre",
+                        "slug": "Sergi-Robles-Mestre",
+                        "structuredName": {
+                            "firstName": "Sergi",
+                            "lastName": "Mestre",
+                            "middleNames": [
+                                "Robles"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sergi Robles Mestre"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40016884"
+                        ],
+                        "name": "J. M. Romeu",
+                        "slug": "J.-M.-Romeu",
+                        "structuredName": {
+                            "firstName": "Joan",
+                            "lastName": "Romeu",
+                            "middleNames": [
+                                "Mas"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. M. Romeu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50313341"
+                        ],
+                        "name": "D. F. Mota",
+                        "slug": "D.-F.-Mota",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Mota",
+                            "middleNames": [
+                                "Fern\u00e1ndez"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. F. Mota"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145467588"
+                        ],
+                        "name": "Jon Almaz\u00e1n",
+                        "slug": "Jon-Almaz\u00e1n",
+                        "structuredName": {
+                            "firstName": "Jon",
+                            "lastName": "Almaz\u00e1n",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jon Almaz\u00e1n"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2578506"
+                        ],
+                        "name": "Llu\u00eds-Pere de las Heras",
+                        "slug": "Llu\u00eds-Pere-de-las-Heras",
+                        "structuredName": {
+                            "firstName": "Llu\u00eds-Pere",
+                            "lastName": "Heras",
+                            "middleNames": [
+                                "de",
+                                "las"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Llu\u00eds-Pere de las Heras"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 206777226,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fcd7b547bf0a6646a282f521db880e74974aa838",
+            "isKey": false,
+            "numCitedBy": 883,
+            "numCiting": 51,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This report presents the final results of the ICDAR 2013 Robust Reading Competition. The competition is structured in three Challenges addressing text extraction in different application domains, namely born-digital images, real scene images and real-scene videos. The Challenges are organised around specific tasks covering text localisation, text segmentation and word recognition. The competition took place in the first quarter of 2013, and received a total of 42 submissions over the different tasks offered. This report describes the datasets and ground truth specification, details the performance evaluation protocols used and presents the final results along with a brief summary of the participating methods."
+            },
+            "slug": "ICDAR-2013-Robust-Reading-Competition-Karatzas-Shafait",
+            "title": {
+                "fragments": [],
+                "text": "ICDAR 2013 Robust Reading Competition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The datasets and ground truth specification are described, the performance evaluation protocols used are details, and the final results are presented along with a brief summary of the participating methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 12th International Conference on Document Analysis and Recognition"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2819639"
+                        ],
+                        "name": "Mustafa \u00d6zuysal",
+                        "slug": "Mustafa-\u00d6zuysal",
+                        "structuredName": {
+                            "firstName": "Mustafa",
+                            "lastName": "\u00d6zuysal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mustafa \u00d6zuysal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717736"
+                        ],
+                        "name": "P. Fua",
+                        "slug": "P.-Fua",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Fua",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Fua"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689738"
+                        ],
+                        "name": "V. Lepetit",
+                        "slug": "V.-Lepetit",
+                        "structuredName": {
+                            "firstName": "Vincent",
+                            "lastName": "Lepetit",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Lepetit"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 48
+                            }
+                        ],
+                        "text": "The character classifiers include random ferns (Ozuysal et al. (2007)) in Wang et al. (2011), and CNNs in Wang et al. (2012); Jaderberg et al. (2014c)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 192,
+                                "start": 181
+                            }
+                        ],
+                        "text": "The unaries of the CRF are provided by a CNN that predicts characters at each position of the output, while higher order terms are provided by another CNN that detects the presence of N-grams."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9372284,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8747f8a3ceaa0802922631ddb7f503674a3f6ca3",
+            "isKey": false,
+            "numCitedBy": 512,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "While feature point recognition is a key component of modern approaches to object detection, existing approaches require computationally expensive patch preprocessing to handle perspective distortion. In this paper, we show that formulating the problem in a Naive Bayesian classification framework makes such preprocessing unnecessary and produces an algorithm that is simple, efficient, and robust. Furthermore, it scales well to handle large number of classes. To recognize the patches surrounding keypoints, our classifier uses hundreds of simple binary features and models class posterior probabilities. We make the problem computationally tractable by assuming independence between arbitrary sets of features. Even though this is not strictly true, we demonstrate that our classifier nevertheless performs remarkably well on image datasets containing very significant perspective changes."
+            },
+            "slug": "Fast-Keypoint-Recognition-in-Ten-Lines-of-Code-\u00d6zuysal-Fua",
+            "title": {
+                "fragments": [],
+                "text": "Fast Keypoint Recognition in Ten Lines of Code"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper shows that formulating the problem in a Naive Bayesian classification framework makes such preprocessing unnecessary and produces an algorithm that is simple, efficient, and robust, and it scales well to handle large number of classes."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2007 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2704494"
+                        ],
+                        "name": "Jonathan Tompson",
+                        "slug": "Jonathan-Tompson",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Tompson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jonathan Tompson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49147969"
+                        ],
+                        "name": "Arjun Jain",
+                        "slug": "Arjun-Jain",
+                        "structuredName": {
+                            "firstName": "Arjun",
+                            "lastName": "Jain",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Arjun Jain"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2428034"
+                        ],
+                        "name": "C. Bregler",
+                        "slug": "C.-Bregler",
+                        "structuredName": {
+                            "firstName": "Christoph",
+                            "lastName": "Bregler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Bregler"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 59,
+                                "start": 38
+                            }
+                        ],
+                        "text": "Another example is the recent work of Tompson et al. (2014) for human pose estimation, where an MRF-like model over the distribution of spatial locations for each body part is constructed, incorporating a single round of message-passing."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To test the generalisation of our model, we also perform experiments with random alpha-numeric strings to evaluate the method when no visual language model is applicable."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 392527,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "12ecc2d786080f638a01b9999518e9386baa157d",
+            "isKey": false,
+            "numCitedBy": 1202,
+            "numCiting": 47,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper proposes a new hybrid architecture that consists of a deep Convolu-tional Network and a Markov Random Field. We show how this architecture is successfully applied to the challenging problem of articulated human pose estimation in monocular images. The architecture can exploit structural domain constraints such as geometric relationships between body joint locations. We show that joint training of these two model paradigms improves performance and allows us to significantly outperform existing state-of-the-art techniques."
+            },
+            "slug": "Joint-Training-of-a-Convolutional-Network-and-a-for-Tompson-Jain",
+            "title": {
+                "fragments": [],
+                "text": "Joint Training of a Convolutional Network and a Graphical Model for Human Pose Estimation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 98,
+                "text": "This paper proposes a new hybrid architecture that consists of a deep Convolu-tional Network and a Markov Random Field and shows how this architecture is successfully applied to the challenging problem of articulated human pose estimation in monocular images."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145107462"
+                        ],
+                        "name": "Stuart J. Russell",
+                        "slug": "Stuart-J.-Russell",
+                        "structuredName": {
+                            "firstName": "Stuart",
+                            "lastName": "Russell",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Stuart J. Russell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2784519"
+                        ],
+                        "name": "Peter Norvig",
+                        "slug": "Peter-Norvig",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Norvig",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Peter Norvig"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 152,
+                                "start": 132
+                            }
+                        ],
+                        "text": "The graph associated with the function (2) has cliques of orderN ; hence, whenN is even moderately large, we resort to beam search (Russel et al. (1994)) to maximise (2) and find the predicted wordw\u2217."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "We now review the component CNN models, originally presented in our tech report Jaderberg et al. (2014a), that form the basis of our joint model in Section 4."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 53142908,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3524cdf7cf8344e7eb74886f71fcbb5c6732c337",
+            "isKey": false,
+            "numCitedBy": 26732,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The long-anticipated revision of this #1 selling book offers the most comprehensive, state of the art introduction to the theory and practice of artificial intelligence for modern applications. Intelligent Agents. Solving Problems by Searching. Informed Search Methods. Game Playing. Agents that Reason Logically. First-order Logic. Building a Knowledge Base. Inference in First-Order Logic. Logical Reasoning Systems. Practical Planning. Planning and Acting. Uncertainty. Probabilistic Reasoning Systems. Making Simple Decisions. Making Complex Decisions. Learning from Observations. Learning with Neural Networks. Reinforcement Learning. Knowledge in Learning. Agents that Communicate. Practical Communication in English. Perception. Robotics. For computer professionals, linguists, and cognitive scientists interested in artificial intelligence."
+            },
+            "slug": "Artificial-Intelligence:-A-Modern-Approach-Russell-Norvig",
+            "title": {
+                "fragments": [],
+                "text": "Artificial Intelligence: A Modern Approach"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "The long-anticipated revision of this #1 selling book offers the most comprehensive, state of the art introduction to the theory and practice of artificial intelligence for modern applications."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "116530952"
+                        ],
+                        "name": "Wayne A. Wickelgran",
+                        "slug": "Wayne-A.-Wickelgran",
+                        "structuredName": {
+                            "firstName": "Wayne",
+                            "lastName": "Wickelgran",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wayne A. Wickelgran"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 123,
+                                "start": 106
+                            }
+                        ],
+                        "text": "This method of encoding variable length sequences is similar to the Wickelphone phoneme-encoding methods (Wickelgran (1969))."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 143755179,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "2da1dd84c0679f0687a1f3e239f266c4396f4526",
+            "isKey": false,
+            "numCitedBy": 373,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Context-sensitive-coding,-associative-memory,-and-Wickelgran",
+            "title": {
+                "fragments": [],
+                "text": "Context-sensitive coding, associative memory, and serial order in (speech) behavior."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1969
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 12
+                            }
+                        ],
+                        "text": "ICDAR 2013 (Karatzas et al. (2013)) test dataset contains 1015 groundtruth cropped word images from scene text."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "ICDAR"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2013
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "robust reading competition"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 12
+                            }
+                        ],
+                        "text": "ICDAR 2003 (Lucas et al. (2003)) is a scene text recognition dataset, with the test set containing 251 full scene images and 860 groundtruth cropped images of the words contained with the full images."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "ICDAR 2003 robust reading competitions . In ICDAR"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICDAR 2003 robust reading competitions . In ICDAR"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 12
+                            }
+                        ],
+                        "text": "ICDAR 2013 (Karatzas et al. (2013)) test dataset contains 1015 groundtruth cropped word images from scene text."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "ICDAR 2013 robust reading competition. In ICDAR"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICDAR 2013 robust reading competition. In ICDAR"
+            },
+            "year": 2013
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 15,
+            "methodology": 21,
+            "result": 1
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 28,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Deep-Structured-Output-Learning-for-Unconstrained-Jaderberg-Simonyan/21da448e7c31e1ff6cc3b7155a9c9c49a0138060?sort=total-citations"
+}
