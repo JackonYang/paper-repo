@@ -1,0 +1,2713 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1943813"
+                        ],
+                        "name": "Erin Allwein",
+                        "slug": "Erin-Allwein",
+                        "structuredName": {
+                            "firstName": "Erin",
+                            "lastName": "Allwein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Erin Allwein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716301"
+                        ],
+                        "name": "R. Schapire",
+                        "slug": "R.-Schapire",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Schapire",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schapire"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Allwein et al. (2000) described and analyzed a general approach for multiclass problems using error correcting output codes (Dietterich and Bakiri, 1995)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 2182,
+                                "start": 64
+                            }
+                        ],
+                        "text": "This notion of a margin has been employed in previous research (Allwein et al., 2000) but not in the context of SVM. Using the definition of a margin for multiclass problems we describe in Section 3 a compact quadratic optimization problem. We then discuss its dual problem and the form of the resulting multiclass predictor. In Section 4 we give a decomposition of the dual problem into multiple small optimization problems. This decomposition yields a memory and time efficient representation of multiclass problems. We proceed and describe an iterative solution for the set of the reduced optimization problems. We first discuss in Section 5 the means of choosing which reduced problem to solve on each round of the algorithm. We then discuss in Section 6 an efficient fixed-point algorithm for finding an approximate solution for the reduced problem that was chosen. We analyze the algorithm and derive a bound on its rate of convergence to the optimal solution. The baseline algorithm is based on a main loop which is composed of an example selection for optimization followed by an invocation of the fixedpoint algorithm with the example that was chosen. This baseline algorithm can be used with small datasets but to make it practical for large ones, several technical improvements had to be sought. We therefore devote Section 7 to a description of the different technical improvements we have taken in order to make our approach applicable to large datasets. We also discuss the running time and accuracy results achieved in experiments that underscore the technical improvements. In addition, we report in Section 8 the results achieved in evaluation experiments, comparing them to previous work. Finally, we give conclusions in Section 9. Related work Naturally, our work builds on previous research and advances in learning using support vector machines. The space is clearly too limited to mention all the relevant work, and thus we refer the reader to the books and collections mentioned above. As we have already mentioned, the idea of casting multiclass problems as a single constrained optimization with a quadratic objective function was proposed by Vapnik (1998), Weston and Watkins (1999), Bredensteiner and Bennet (1999), and Guermeur et."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 2611,
+                                "start": 64
+                            }
+                        ],
+                        "text": "This notion of a margin has been employed in previous research (Allwein et al., 2000) but not in the context of SVM. Using the definition of a margin for multiclass problems we describe in Section 3 a compact quadratic optimization problem. We then discuss its dual problem and the form of the resulting multiclass predictor. In Section 4 we give a decomposition of the dual problem into multiple small optimization problems. This decomposition yields a memory and time efficient representation of multiclass problems. We proceed and describe an iterative solution for the set of the reduced optimization problems. We first discuss in Section 5 the means of choosing which reduced problem to solve on each round of the algorithm. We then discuss in Section 6 an efficient fixed-point algorithm for finding an approximate solution for the reduced problem that was chosen. We analyze the algorithm and derive a bound on its rate of convergence to the optimal solution. The baseline algorithm is based on a main loop which is composed of an example selection for optimization followed by an invocation of the fixedpoint algorithm with the example that was chosen. This baseline algorithm can be used with small datasets but to make it practical for large ones, several technical improvements had to be sought. We therefore devote Section 7 to a description of the different technical improvements we have taken in order to make our approach applicable to large datasets. We also discuss the running time and accuracy results achieved in experiments that underscore the technical improvements. In addition, we report in Section 8 the results achieved in evaluation experiments, comparing them to previous work. Finally, we give conclusions in Section 9. Related work Naturally, our work builds on previous research and advances in learning using support vector machines. The space is clearly too limited to mention all the relevant work, and thus we refer the reader to the books and collections mentioned above. As we have already mentioned, the idea of casting multiclass problems as a single constrained optimization with a quadratic objective function was proposed by Vapnik (1998), Weston and Watkins (1999), Bredensteiner and Bennet (1999), and Guermeur et. al (2000). However, the size of the resulting optimization problems devised in the above papers is typically large and complex. The idea of breaking a large constrained optimization problem into small problems, where each of which employs a subset of the constraints was first explored in the context of support vector machines by Boser et al. (1992). These ideas were further"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 84,
+                                "start": 64
+                            }
+                        ],
+                        "text": "This notion of a margin has been employed in previous research (Allwein et al., 2000) but not in the context of SVM."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 2270,
+                                "start": 64
+                            }
+                        ],
+                        "text": "This notion of a margin has been employed in previous research (Allwein et al., 2000) but not in the context of SVM. Using the definition of a margin for multiclass problems we describe in Section 3 a compact quadratic optimization problem. We then discuss its dual problem and the form of the resulting multiclass predictor. In Section 4 we give a decomposition of the dual problem into multiple small optimization problems. This decomposition yields a memory and time efficient representation of multiclass problems. We proceed and describe an iterative solution for the set of the reduced optimization problems. We first discuss in Section 5 the means of choosing which reduced problem to solve on each round of the algorithm. We then discuss in Section 6 an efficient fixed-point algorithm for finding an approximate solution for the reduced problem that was chosen. We analyze the algorithm and derive a bound on its rate of convergence to the optimal solution. The baseline algorithm is based on a main loop which is composed of an example selection for optimization followed by an invocation of the fixedpoint algorithm with the example that was chosen. This baseline algorithm can be used with small datasets but to make it practical for large ones, several technical improvements had to be sought. We therefore devote Section 7 to a description of the different technical improvements we have taken in order to make our approach applicable to large datasets. We also discuss the running time and accuracy results achieved in experiments that underscore the technical improvements. In addition, we report in Section 8 the results achieved in evaluation experiments, comparing them to previous work. Finally, we give conclusions in Section 9. Related work Naturally, our work builds on previous research and advances in learning using support vector machines. The space is clearly too limited to mention all the relevant work, and thus we refer the reader to the books and collections mentioned above. As we have already mentioned, the idea of casting multiclass problems as a single constrained optimization with a quadratic objective function was proposed by Vapnik (1998), Weston and Watkins (1999), Bredensteiner and Bennet (1999), and Guermeur et. al (2000). However, the size of the resulting optimization problems devised in the above papers is typically large and complex."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 9790719,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cd74cc5129c45268d4e766d3619e7cb0ead5c8c8",
+            "isKey": false,
+            "numCitedBy": 1991,
+            "numCiting": 79,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a unifying framework for studying the solution of multiclass categorization problems by reducing them to multiple binary problems that are then solved using a margin-based binary learning algorithm. The proposed framework unifies some of the most popular approaches in which each class is compared against all others, or in which all pairs of classes are compared to each other, or in which output codes with error-correcting properties are used. We propose a general method for combining the classifiers generated on the binary problems, and we prove a general empirical multiclass loss bound given the empirical loss of the individual binary learning algorithms. The scheme and the corresponding bounds apply to many popular classification learning algorithms including support-vector machines, AdaBoost, regression, logistic regression and decision-tree algorithms. We also give a multiclass generalization error analysis for general output codes with AdaBoost as the binary learner. Experimental results with SVM and AdaBoost show that our scheme provides a viable alternative to the most commonly used multiclass algorithms."
+            },
+            "slug": "Reducing-Multiclass-to-Binary:-A-Unifying-Approach-Allwein-Schapire",
+            "title": {
+                "fragments": [],
+                "text": "Reducing Multiclass to Binary: A Unifying Approach for Margin Classifiers"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "A general method for combining the classifiers generated on the binary problems is proposed, and a general empirical multiclass loss bound is proved given the empirical loss of the individual binary learning algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2647543"
+                        ],
+                        "name": "Erin J. Bredensteiner",
+                        "slug": "Erin-J.-Bredensteiner",
+                        "structuredName": {
+                            "firstName": "Erin",
+                            "lastName": "Bredensteiner",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Erin J. Bredensteiner"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145728220"
+                        ],
+                        "name": "K. Bennett",
+                        "slug": "K.-Bennett",
+                        "structuredName": {
+                            "firstName": "Kristin",
+                            "lastName": "Bennett",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Bennett"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 232,
+                                "start": 201
+                            }
+                        ],
+                        "text": "As we have already mentioned, the idea of casting multiclass problems as a single constrained optimization with a quadratic objective function was proposed by Vapnik (1998), Weston and Watkins (1999), Bredensteiner and Bennet (1999), and Guermeur et. al (2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 1021,
+                                "start": 79
+                            }
+                        ],
+                        "text": "However, the roots of this line of research go back to the seminal work of Lev Bregman (1967) which was further developed by Yair Censor and colleagues (see Censor and Zenios, 1997 for an excellent overview). These ideas distilled in Platt\u2019s method, called SMO, for sequential minimal optimization. SMO works with reduced problems that are derived from a pair of examples while our approach employs a single example for each reduced optimization problem. The result is a simple optimization problem which can be solved analytically in binary classification problems (see Platt, 1998) and leads to an efficient numerical algorithm (that is guaranteed to converge) in multiclass settings. Furthermore, although not explored in this paper, it deems possible that the single-example reduction can be used in parallel applications. Many of the technical improvements we discuss in this paper have been proposed in previous work. In particular ideas such as using a working set and caching have been described by Burges (1998), Platt (1998), Joachims (1998), and others."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 94,
+                                "start": 79
+                            }
+                        ],
+                        "text": "However, the roots of this line of research go back to the seminal work of Lev Bregman (1967) which was further developed by Yair Censor and colleagues (see Censor and Zenios, 1997 for an excellent overview)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11279588,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "09a807e7272f44e50398518665563f889c49bea6",
+            "isKey": false,
+            "numCitedBy": 393,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We examine the problem of how to discriminate between objects of three or more classes. Specifically, we investigate how two-class discrimination methods can be extended to the multiclass case. We show how the linear programming (LP) approaches based on the work of Mangasarian and quadratic programming (QP) approaches based on Vapnik's Support Vector Machine (SVM) can be combined to yield two new approaches to the multiclass problem. In LP multiclass discrimination, a single linear program is used to construct a piecewise-linear classification function. In our proposed multiclass SVM method, a single quadratic program is used to construct a piecewise-nonlinear classification function. Each piece of this function can take the form of a polynomial, a radial basis function, or even a neural network. For the k > 2-class problems, the SVM method as originally proposed required the construction of a two-class SVM to separate each class from the remaining classes. Similarily, k two-class linear programs can be used for the multiclass problem. We performed an empirical study of the original LP method, the proposed k LP method, the proposed single QP method and the original k QP methods. We discuss the advantages and disadvantages of each approach."
+            },
+            "slug": "Multicategory-Classification-by-Support-Vector-Bredensteiner-Bennett",
+            "title": {
+                "fragments": [],
+                "text": "Multicategory Classification by Support Vector Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "This work investigates how two-class discrimination methods can be extended to the multiclass case, and shows how the linear programming (LP) and quadratic programming (QP) approaches based on Vapnik's Support Vector Machine (SVM) can be combined to yield two new approaches to theMulticlass problem."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Optim. Appl."
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144189092"
+                        ],
+                        "name": "John C. Platt",
+                        "slug": "John-C.-Platt",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Platt",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "John C. Platt"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1099857,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4de39c94e340a108fff01a90a67b0c17c86fb981",
+            "isKey": false,
+            "numCitedBy": 5910,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This chapter describes a new algorithm for training Support Vector Machines: Sequential Minimal Optimization, or SMO. Training a Support Vector Machine (SVM) requires the solution of a very large quadratic programming (QP) optimization problem. SMO breaks this large QP problem into a series of smallest possible QP problems. These small QP problems are solved analytically, which avoids using a time-consuming numerical QP optimization as an inner loop. The amount of memory required for SMO is linear in the training set size, which allows SMO to handle very large training sets. Because large matrix computation is avoided, SMO scales somewhere between linear and quadratic in the training set size for various test problems, while a standard projected conjugate gradient (PCG) chunking algorithm scales somewhere between linear and cubic in the training set size. SMO's computation time is dominated by SVM evaluation, hence SMO is fastest for linear SVMs and sparse data sets. For the MNIST database, SMO is as fast as PCG chunking; while for the UCI Adult database and linear SVMs, SMO can be more than 1000 times faster than the PCG chunking algorithm."
+            },
+            "slug": "Fast-training-of-support-vector-machines-using-in-Platt",
+            "title": {
+                "fragments": [],
+                "text": "Fast training of support vector machines using sequential minimal optimization, advances in kernel methods"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "SMO breaks this large quadratic programming problem into a series of smallest possible QP problems, which avoids using a time-consuming numerical QP optimization as an inner loop and hence SMO is fastest for linear SVMs and sparse data sets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145183709"
+                        ],
+                        "name": "J. Weston",
+                        "slug": "J.-Weston",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Weston",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weston"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "4562073"
+                        ],
+                        "name": "C. Watkins",
+                        "slug": "C.-Watkins",
+                        "structuredName": {
+                            "firstName": "Chris",
+                            "lastName": "Watkins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Watkins"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 96,
+                                "start": 72
+                            }
+                        ],
+                        "text": "A few attempts have been made to generalize SVM to multiclass problems (Weston and Watkins, 1999, Vapnik, 1998)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 199,
+                                "start": 174
+                            }
+                        ],
+                        "text": "As we have already mentioned, the idea of casting multiclass problems as a single constrained optimization with a quadratic objective function was proposed by Vapnik (1998), Weston and Watkins (1999), Bredensteiner and Bennet (1999), and Guermeur et. al (2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 20
+                            }
+                        ],
+                        "text": "As mentioned above, Weston and Watkins (1999) also developed a multiclass version for SVM."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15059183,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3b74aa66dd2e4ac0f9be884f810eab6c3cbd57ba",
+            "isKey": false,
+            "numCitedBy": 847,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The solution of binary classi cation problems using support vector machines (SVMs) is well developed, but multi-class problems with more than two classes have typically been solved by combining independently produced binary classi ers. We propose a formulation of the SVM that enables a multi-class pattern recognition problem to be solved in a single optimisation. We also propose a similar generalization of linear programming machines. We report experiments using bench-mark datasets in which these two methods achieve a reduction in the number of support vectors and kernel calculations needed. 1. k-Class Pattern Recognition The k-class pattern recognition problem is to construct a decision function given ` iid (independent and identically distributed) samples (points) of an unknown function, typically with noise: (x1; y1); : : : ; (x`; y`) (1) where xi; i = 1; : : : ; ` is a vector of length d and yi 2 f1; : : : ; kg represents the class of the sample. A natural loss function is the number of mistakes made. 2. Solving k-Class Problems with Binary SVMs For the binary pattern recognition problem (case k = 2), the support vector approach has been well developed [3, 5]. The classical approach to solving k-class pattern recognition problems is to consider the problem as a collection of binary classi cation problems. In the one-versus-rest method one constructs k classi ers, one for each class. The n classi er constructs a hyperplane between class n and the k 1 other classes. A particular point is assigned to the class for which the distance from the margin, in the positive direction (i.e. in the direction in which class \\one\" lies rather than class \\rest\"), is maximal. This method has been used widely in ESANN'1999 proceedings European Symposium on Artificial Neural Networks Bruges (Belgium), 21-23 April 1999, D-Facto public., ISBN 2-600049-9-X, pp. 219-224"
+            },
+            "slug": "Support-vector-machines-for-multi-class-pattern-Weston-Watkins",
+            "title": {
+                "fragments": [],
+                "text": "Support vector machines for multi-class pattern recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A formulation of the SVM is proposed that enables a multi-class pattern recognition problem to be solved in a single optimisation and a similar generalization of linear programming machines is proposed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ESANN"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1693407"
+                        ],
+                        "name": "K. Crammer",
+                        "slug": "K.-Crammer",
+                        "structuredName": {
+                            "firstName": "Koby",
+                            "lastName": "Crammer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Crammer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 89
+                            }
+                        ],
+                        "text": "Our current research on multiclass problems concentrates on analogous online approaches (Crammer and Singer, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8729730,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "28b9bacde6499f8cc6f7e70feee4232107211e39",
+            "isKey": false,
+            "numCitedBy": 433,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we study online classification algorithms for multiclass problems in the mistake bound model. The hypotheses we use maintain one prototype vector per class. Given an input instance, a multiclass hypothesis computes a similarity-score between each prototype and the input instance and then sets the predicted label to be the index of the prototype achieving the highest similarity. To design and analyze the learning algorithms in this paper we introduce the notion of ultracon-servativeness. Ultraconservative algorithms are algorithms that update only the prototypes attaining similarity-scores which are higher than the score of the correct label's prototype. We start by describing a family of additive ultraconservative algorithms where each algorithm in the family updates its prototypes by finding a feasible solution for a set of linear constraints that depend on the instantaneous similarity-scores. We then discuss a specific online algorithm that seeks a set of prototypes which have a small norm. The resulting algorithm, which we term MIRA (for Margin Infused Relaxed Algorithm) is ultraconservative as well. We derive mistake bounds for all the algorithms and provide further analysis of MIRA using a generalized notion of the margin for multiclass problems."
+            },
+            "slug": "Ultraconservative-Online-Algorithms-for-Multiclass-Crammer-Singer",
+            "title": {
+                "fragments": [],
+                "text": "Ultraconservative Online Algorithms for Multiclass Problems"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 57,
+                "text": "This paper studies online classification algorithms for multiclass problems in the mistake bound model and introduces the notion of ultracon-servativeness, a family of additive ultraconservative algorithms where each algorithm in the family updates its prototypes by finding a feasible solution for a set of linear constraints that depend on the instantaneous similarity-scores."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144299726"
+                        ],
+                        "name": "Thomas G. Dietterich",
+                        "slug": "Thomas-G.-Dietterich",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Dietterich",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas G. Dietterich"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3242194"
+                        ],
+                        "name": "Ghulum Bakiri",
+                        "slug": "Ghulum-Bakiri",
+                        "structuredName": {
+                            "firstName": "Ghulum",
+                            "lastName": "Bakiri",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ghulum Bakiri"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 47109072,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d221bbcbd20c7157e4500f942de8ceec490f8936",
+            "isKey": false,
+            "numCitedBy": 2852,
+            "numCiting": 51,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Multiclass learning problems involve finding a definition for an unknown function f(x) whose range is a discrete set containing k > 2 values (i.e., k \"classes\"). The definition is acquired by studying collections of training examples of the form (xi, f(xi)). Existing approaches to multiclass learning problems include direct application of multiclass algorithms such as the decision-tree algorithms C4.5 and CART, application of binary concept learning algorithms to learn individual binary functions for each of the k classes, and application of binary concept learning algorithms with distributed output representations. This paper compares these three approaches to a new technique in which error-correcting codes are employed as a distributed output representation. We show that these output representations improve the generalization performance of both C4.5 and backpropagation on a wide range of multiclass learning tasks. We also demonstrate that this approach is robust with respect to changes in the size of the training sample, the assignment of distributed representations to particular classes, and the application of overfitting avoidance techniques such as decision-tree pruning. Finally, we show that--like the other methods--the error-correcting code technique can provide reliable class probability estimates. Taken together, these results demonstrate that error-correcting output codes provide a general-purpose method for improving the performance of inductive learning programs on multiclass problems."
+            },
+            "slug": "Solving-Multiclass-Learning-Problems-via-Output-Dietterich-Bakiri",
+            "title": {
+                "fragments": [],
+                "text": "Solving Multiclass Learning Problems via Error-Correcting Output Codes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "It is demonstrated that error-correcting output codes provide a general-purpose method for improving the performance of inductive learning programs on multiclass problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Artif. Intell. Res."
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50263663"
+                        ],
+                        "name": "D. Boswell",
+                        "slug": "D.-Boswell",
+                        "structuredName": {
+                            "firstName": "Dustin",
+                            "lastName": "Boswell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Boswell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 43
+                            }
+                        ],
+                        "text": "We use the Karush-Kuhn-Tucker theorem (see Cristianini and Shawe-Taylor, 2000) to find the necessary conditions for a point \u03c4 to be an optimum of Eq."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 178,
+                                "start": 144
+                            }
+                        ],
+                        "text": "SVMs have gained an enormous popularity in statistics, learning theory, and engineering (see for instance Vapnik, 1998, Scho\u0308lkopf et al., 1998, Cristianini and Shawe-Taylor, 2000, and the many references therein)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 104
+                            }
+                        ],
+                        "text": "To solve the optimization problem we use the Karush-Kuhn-Tucker theorem (see for instance Vapnik, 1998, Cristianini and Shawe-Taylor, 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 18986102,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ea2ea7c6e280c1cfb67ee38ea63a327b1ba3ca36",
+            "isKey": false,
+            "numCitedBy": 2113,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Support Vector Machines (SVM\u2019s) are a relatively new learning method used for binary classification. The basic idea is to find a hyperplane which separates the d-dimensional data perfectly into its two classes. However, since example data is often not linearly separable, SVM\u2019s introduce the notion of a \u201ckernel induced feature space\u201d which casts the data into a higher dimensional space where the data is separable. Typically, casting into such a space would cause problems computationally, and with overfitting. The key insight used in SVM\u2019s is that the higher-dimensional space doesn\u2019t need to be dealt with directly (as it turns out, only the formula for the dot-product in that space is needed), which eliminates the above concerns. Furthermore, the VC-dimension (a measure of a system\u2019s likelihood to perform well on unseen data) of SVM\u2019s can be explicitly calculated, unlike other learning methods like neural networks, for which there is no measure. Overall, SVM\u2019s are intuitive, theoretically wellfounded, and have shown to be practically successful. SVM\u2019s have also been extended to solve regression tasks (where the system is trained to output a numerical value, rather than \u201cyes/no\u201d classification)."
+            },
+            "slug": "Introduction-to-Support-Vector-Machines-Boswell",
+            "title": {
+                "fragments": [],
+                "text": "Introduction to Support Vector Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 56,
+                "text": "Support Vector Machines (SVM\u2019s) are intuitive, theoretically wellfounded, and have shown to be practically successful."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707625"
+                        ],
+                        "name": "B. Sch\u00f6lkopf",
+                        "slug": "B.-Sch\u00f6lkopf",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Sch\u00f6lkopf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Sch\u00f6lkopf"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 30545896,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "356125478f5d06b564b420755a4944254045bbbe",
+            "isKey": false,
+            "numCitedBy": 627,
+            "numCiting": 113,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Foreword The Support Vector Machine has recently been introduced as a new technique for solving various function estimation problems, including the pattern recognition problem. To develop such a technique, it was necessary to rst extract factors responsible for future generalization, to obtain bounds on generalization that depend on these factors, and lastly to develop a technique that constructively minimizes these bounds. The subject of this book are methods based on combining advanced branches of statistics and functional analysis, developing these theories into practical algorithms that perform better than existing heuristic approaches. The book provides a comprehensive analysis of what can be done using Support Vector Machines, achieving record results in real-life pattern recognition problems. In addition, it proposes a new form of nonlinear Principal Component Analysis using Support Vector kernel techniques, which I consider as the most natural and elegant way for generalization of classical Principal Component Analysis. In many ways the Support Vector machine became so popular thanks to works of Bernhard Schh olkopf. The work, submitted for the title of Doktor der Naturwis-senschaften, appears as excellent. It is a substantial contribution to Machine Learning technology."
+            },
+            "slug": "Support-vector-learning-Sch\u00f6lkopf",
+            "title": {
+                "fragments": [],
+                "text": "Support vector learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This book provides a comprehensive analysis of what can be done using Support vector Machines, achieving record results in real-life pattern recognition problems, and proposes a new form of nonlinear Principal Component Analysis using Support Vector kernel techniques, which it is considered as the most natural and elegant way for generalization of classical Principal Component analysis."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1703537"
+                        ],
+                        "name": "Y. Freund",
+                        "slug": "Y.-Freund",
+                        "structuredName": {
+                            "firstName": "Yoav",
+                            "lastName": "Freund",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Freund"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716301"
+                        ],
+                        "name": "R. Schapire",
+                        "slug": "R.-Schapire",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Schapire",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schapire"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 4
+                            }
+                        ],
+                        "text": "MH (Freund and Schapire, 1997, Schapire and Singer, 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Keywords: Multiclass problems, SVM, Kernel Machines"
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 6644398,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ccf5208521cb8c35f50ee8873df89294b8ed7292",
+            "isKey": false,
+            "numCitedBy": 13123,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the first part of the paper we consider the problem of dynamically apportioning resources among a set of options in a worst-case on-line framework. The model we study can be interpreted as a broad, abstract extension of the well-studied on-line prediction model to a general decision-theoretic setting. We show that the multiplicative weight-update Littlestone?Warmuth rule can be adapted to this model, yielding bounds that are slightly weaker in some cases, but applicable to a considerably more general class of learning problems. We show how the resulting learning algorithm can be applied to a variety of problems, including gambling, multiple-outcome prediction, repeated games, and prediction of points in Rn. In the second part of the paper we apply the multiplicative weight-update technique to derive a new boosting algorithm. This boosting algorithm does not require any prior knowledge about the performance of the weak learning algorithm. We also study generalizations of the new boosting algorithm to the problem of learning functions whose range, rather than being binary, is an arbitrary finite set or a bounded segment of the real line."
+            },
+            "slug": "A-decision-theoretic-generalization-of-on-line-and-Freund-Schapire",
+            "title": {
+                "fragments": [],
+                "text": "A decision-theoretic generalization of on-line learning and an application to boosting"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 61,
+                "text": "The model studied can be interpreted as a broad, abstract extension of the well-studied on-line prediction model to a general decision-theoretic setting, and it is shown that the multiplicative weight-update Littlestone?Warmuth rule can be adapted to this model, yielding bounds that are slightly weaker in some cases, but applicable to a considerably more general class of learning problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EuroCOLT"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707625"
+                        ],
+                        "name": "B. Sch\u00f6lkopf",
+                        "slug": "B.-Sch\u00f6lkopf",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Sch\u00f6lkopf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Sch\u00f6lkopf"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2676309"
+                        ],
+                        "name": "C. Burges",
+                        "slug": "C.-Burges",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Burges",
+                            "middleNames": [
+                                "J.",
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Burges"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46234526"
+                        ],
+                        "name": "Alex Smola",
+                        "slug": "Alex-Smola",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Smola",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alex Smola"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 142,
+                                "start": 120
+                            }
+                        ],
+                        "text": "SVMs have gained an enormous popularity in statistics, learning theory, and engineering (see for instance Vapnik, 1998, Scho\u0308lkopf et al., 1998, Cristianini and Shawe-Taylor, 2000, and the many references therein)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 180,
+                                "start": 158
+                            }
+                        ],
+                        "text": "Numerous specialized algorithms have been devised for multiclass problems by building upon classification learning algorithms for binary problems, i.e., problems in which the set of possible labels is of size two."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 60502900,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9c4da62e9e89e65ac78ee271e424e8b498053e8c",
+            "isKey": false,
+            "numCitedBy": 5544,
+            "numCiting": 260,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Introduction to support vector learning roadmap. Part 1 Theory: three remarks on the support vector method of function estimation, Vladimir Vapnik generalization performance of support vector machines and other pattern classifiers, Peter Bartlett and John Shawe-Taylor Bayesian voting schemes and large margin classifiers, Nello Cristianini and John Shawe-Taylor support vector machines, reproducing kernel Hilbert spaces, and randomized GACV, Grace Wahba geometry and invariance in kernel based methods, Christopher J.C. Burges on the annealed VC entropy for margin classifiers - a statistical mechanics study, Manfred Opper entropy numbers, operators and support vector kernels, Robert C. Williamson et al. Part 2 Implementations: solving the quadratic programming problem arising in support vector classification, Linda Kaufman making large-scale support vector machine learning practical, Thorsten Joachims fast training of support vector machines using sequential minimal optimization, John C. Platt. Part 3 Applications: support vector machines for dynamic reconstruction of a chaotic system, Davide Mattera and Simon Haykin using support vector machines for time series prediction, Klaus-Robert Muller et al pairwise classification and support vector machines, Ulrich Kressel. Part 4 Extensions of the algorithm: reducing the run-time complexity in support vector machines, Edgar E. Osuna and Federico Girosi support vector regression with ANOVA decomposition kernels, Mark O. Stitson et al support vector density estimation, Jason Weston et al combining support vector and mathematical programming methods for classification, Bernhard Scholkopf et al."
+            },
+            "slug": "Advances-in-kernel-methods:-support-vector-learning-Sch\u00f6lkopf-Burges",
+            "title": {
+                "fragments": [],
+                "text": "Advances in kernel methods: support vector learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "Support vector machines for dynamic reconstruction of a chaotic system, Klaus-Robert Muller et al pairwise classification and support vector machines, Ulrich Kressel."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716301"
+                        ],
+                        "name": "R. Schapire",
+                        "slug": "R.-Schapire",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Schapire",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schapire"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2329907,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9a9309e056272ff2076f447df8dbc536f46fc466",
+            "isKey": false,
+            "numCitedBy": 1918,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe several improvements to Freund and Schapire's AdaBoost boosting algorithm, particularly in a setting in which hypotheses may assign confidences to each of their predictions. We give a simplified analysis of AdaBoost in this setting, and we show how this analysis can be used to find improved parameter settings as well as a refined criterion for training weak hypotheses. We give a specific method for assigning confidences to the predictions of decision trees, a method closely related to one used by Quinlan. This method also suggests a technique for growing decision trees which turns out to be identical to one proposed by Kearns and Mansour. We focus next on how to apply the new boosting algorithms to multiclass classification problems, particularly to the multi-label case in which each example may belong to more than one class. We give two boosting methods for this problem, plus a third method based on output coding. One of these leads to a new method for handling the single-label case which is simpler but as effective as techniques suggested by Freund and Schapire. Finally, we give some experimental results comparing a few of the algorithms discussed in this paper."
+            },
+            "slug": "Improved-Boosting-Algorithms-Using-Confidence-rated-Schapire-Singer",
+            "title": {
+                "fragments": [],
+                "text": "Improved Boosting Algorithms Using Confidence-rated Predictions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 92,
+                "text": "Several improvements to Freund and Schapire's AdaBoost boosting algorithm are described, particularly in a setting in which hypotheses may assign confidences to each of their predictions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT' 98"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144189092"
+                        ],
+                        "name": "John C. Platt",
+                        "slug": "John-C.-Platt",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Platt",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "John C. Platt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685083"
+                        ],
+                        "name": "N. Cristianini",
+                        "slug": "N.-Cristianini",
+                        "structuredName": {
+                            "firstName": "Nello",
+                            "lastName": "Cristianini",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Cristianini"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1404459229"
+                        ],
+                        "name": "J. Shawe-Taylor",
+                        "slug": "J.-Shawe-Taylor",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Shawe-Taylor",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Shawe-Taylor"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 82
+                            }
+                        ],
+                        "text": "Furthermore, previous work on the generalization properties of large margin DAGs (Platt et al., 2000) for multiclass problems showed that the generalization properties depend on the l2-norm of M (see also Crammer and Singer, 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1204938,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "32484f6d111bf21f1395a34a087991a9041dd0ae",
+            "isKey": false,
+            "numCitedBy": 1876,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new learning architecture: the Decision Directed Acyclic Graph (DDAG), which is used to combine many two-class classifiers into a multiclass classifier. For an N-class problem, the DDAG contains N(N - 1)/2 classifiers, one for each pair of classes. We present a VC analysis of the case when the node classifiers are hyperplanes; the resulting bound on the test error depends on N and on the margin achieved at the nodes, but not on the dimension of the space. This motivates an algorithm, DAGSVM, which operates in a kernel-induced feature space and uses two-class maximal margin hyperplanes at each decision-node of the DDAG. The DAGSVM is substantially faster to train and evaluate than either the standard algorithm or Max Wins, while maintaining comparable accuracy to both of these algorithms."
+            },
+            "slug": "Large-Margin-DAGs-for-Multiclass-Classification-Platt-Cristianini",
+            "title": {
+                "fragments": [],
+                "text": "Large Margin DAGs for Multiclass Classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "An algorithm, DAGSVM, is presented, which operates in a kernel-induced feature space and uses two-class maximal margin hyperplanes at each decision-node of the DDAG, which is substantially faster to train and evaluate than either the standard algorithm or Max Wins, while maintaining comparable accuracy to both of these algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1680188"
+                        ],
+                        "name": "T. Joachims",
+                        "slug": "T.-Joachims",
+                        "structuredName": {
+                            "firstName": "Thorsten",
+                            "lastName": "Joachims",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Joachims"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 60502770,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bb99668d4df98a3f6ff0b9fa3402e09008f22e2c",
+            "isKey": false,
+            "numCitedBy": 1838,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Training a support vector machine (SVM) leads to a quadratic optimization problem with bound constraints and one linear equality constraint. Despite the fact that this type of problem is well understood, there are many issues to be considered in designing an SVM learner. In particular, for large learning tasks with many training examples, oo-the-shelf optimization techniques for general quadratic programs quickly become intractable in their memory and time requirements. SV M light1 is an implementation of an SVM learner which addresses the problem of large tasks. This chapter presents algorithmic and computational results developed for SV M light V2.0, which make large-scale SVM training more practical. The results give guidelines for the application of SVMs to large domains."
+            },
+            "slug": "Making-large-scale-support-vector-machine-learning-Joachims",
+            "title": {
+                "fragments": [],
+                "text": "Making large-scale support vector machine learning practical"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This chapter presents algorithmic and computational results developed for SV M light V2.0, which make large-scale SVM training more practical and give guidelines for the application of SVMs to large domains."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685083"
+                        ],
+                        "name": "N. Cristianini",
+                        "slug": "N.-Cristianini",
+                        "structuredName": {
+                            "firstName": "Nello",
+                            "lastName": "Cristianini",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Cristianini"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1404459229"
+                        ],
+                        "name": "J. Shawe-Taylor",
+                        "slug": "J.-Shawe-Taylor",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Shawe-Taylor",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Shawe-Taylor"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 43
+                            }
+                        ],
+                        "text": "We use the Karush-Kuhn-Tucker theorem (see Cristianini and Shawe-Taylor, 2000) to find the necessary conditions for a point \u03c4 to be an optimum of Eq."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 178,
+                                "start": 144
+                            }
+                        ],
+                        "text": "SVMs have gained an enormous popularity in statistics, learning theory, and engineering (see for instance Vapnik, 1998, Scho\u0308lkopf et al., 1998, Cristianini and Shawe-Taylor, 2000, and the many references therein)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 104
+                            }
+                        ],
+                        "text": "To solve the optimization problem we use the Karush-Kuhn-Tucker theorem (see for instance Vapnik, 1998, Cristianini and Shawe-Taylor, 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14727192,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5c04f8002e24a8c09bfbfedca3c6c346fe1e5d53",
+            "isKey": false,
+            "numCitedBy": 13352,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From the publisher: This is the first comprehensive introduction to Support Vector Machines (SVMs), a new generation learning system based on recent advances in statistical learning theory. SVMs deliver state-of-the-art performance in real-world applications such as text categorisation, hand-written character recognition, image classification, biosequences analysis, etc., and are now established as one of the standard tools for machine learning and data mining. Students will find the book both stimulating and accessible, while practitioners will be guided smoothly through the material required for a good grasp of the theory and its applications. The concepts are introduced gradually in accessible and self-contained stages, while the presentation is rigorous and thorough. Pointers to relevant literature and web sites containing software ensure that it forms an ideal starting point for further study. Equally, the book and its associated web site will guide practitioners to updated literature, new applications, and on-line software."
+            },
+            "slug": "An-Introduction-to-Support-Vector-Machines-and-Cristianini-Shawe-Taylor",
+            "title": {
+                "fragments": [],
+                "text": "An Introduction to Support Vector Machines and Other Kernel-based Learning Methods"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 80,
+                "text": "This is the first comprehensive introduction to Support Vector Machines (SVMs), a new generation learning system based on recent advances in statistical learning theory, and will guide practitioners to updated literature, new applications, and on-line software."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707625"
+                        ],
+                        "name": "B. Sch\u00f6lkopf",
+                        "slug": "B.-Sch\u00f6lkopf",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Sch\u00f6lkopf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Sch\u00f6lkopf"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38817267"
+                        ],
+                        "name": "K. Sung",
+                        "slug": "K.-Sung",
+                        "structuredName": {
+                            "firstName": "Kah",
+                            "lastName": "Sung",
+                            "middleNames": [
+                                "Kay"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Sung"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2676309"
+                        ],
+                        "name": "C. Burges",
+                        "slug": "C.-Burges",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Burges",
+                            "middleNames": [
+                                "J.",
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Burges"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1804489"
+                        ],
+                        "name": "F. Girosi",
+                        "slug": "F.-Girosi",
+                        "structuredName": {
+                            "firstName": "Federico",
+                            "lastName": "Girosi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Girosi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1770745"
+                        ],
+                        "name": "P. Niyogi",
+                        "slug": "P.-Niyogi",
+                        "structuredName": {
+                            "firstName": "Partha",
+                            "lastName": "Niyogi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Niyogi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685292"
+                        ],
+                        "name": "T. Poggio",
+                        "slug": "T.-Poggio",
+                        "structuredName": {
+                            "firstName": "Tomaso",
+                            "lastName": "Poggio",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Poggio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50560492"
+                        ],
+                        "name": "V. Vapnik",
+                        "slug": "V.-Vapnik",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Vapnik",
+                            "middleNames": [
+                                "Naumovich"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Vapnik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 39,
+                                "start": 15
+                            }
+                        ],
+                        "text": "2% on the USPS (Sch\u00f6lkopf et al., 1996) using a set of binary SVMs training by the \u2018one-vs-rest\u2019 method."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 135,
+                                "start": 113
+                            }
+                        ],
+                        "text": "Scho\u0308lkopf et al. (1997) achieved a test error of 1.4% on the MNIST dataset and a test error of 4.2% on the USPS (Scho\u0308lkopf et al., 1996) using a set of binary SVMs training by the \u2018one-vs-rest\u2019 method."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 166,
+                                "start": 162
+                            }
+                        ],
+                        "text": "Available at http://www.ics.uci.edu/\u0303 mlearn/MLRepository.html\nWe also ran the multiclass SVM on the complete training set of MNIST, Letter and Shuttle and on the USPS 3 dataset."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 1900499,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c4a422669ec9b6a60b05d2d2595314008a5fb419",
+            "isKey": true,
+            "numCitedBy": 1314,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The support vector (SV) machine is a novel type of learning machine, based on statistical learning theory, which contains polynomial classifiers, neural networks, and radial basis function (RBF) networks as special cases. In the RBF case, the SV algorithm automatically determines centers, weights, and threshold that minimize an upper bound on the expected test error. The present study is devoted to an experimental comparison of these machines with a classical approach, where the centers are determined by X-means clustering, and the weights are computed using error backpropagation. We consider three machines, namely, a classical RBF machine, an SV machine with Gaussian kernel, and a hybrid system with the centers determined by the SV method and the weights trained by error backpropagation. Our results show that on the United States postal service database of handwritten digits, the SV machine achieves the highest recognition accuracy, followed by the hybrid system. The SV approach is thus not only theoretically well-founded but also superior in a practical application."
+            },
+            "slug": "Comparing-support-vector-machines-with-Gaussian-to-Sch\u00f6lkopf-Sung",
+            "title": {
+                "fragments": [],
+                "text": "Comparing support vector machines with Gaussian kernels to radial basis function classifiers"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The results show that on the United States postal service database of handwritten digits, the SV machine achieves the highest recognition accuracy, followed by the hybrid system, and the SV approach is thus not only theoretically well-founded but also superior in a practical application."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Signal Process."
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2219581"
+                        ],
+                        "name": "B. Boser",
+                        "slug": "B.-Boser",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Boser",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Boser"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1743797"
+                        ],
+                        "name": "I. Guyon",
+                        "slug": "I.-Guyon",
+                        "structuredName": {
+                            "firstName": "Isabelle",
+                            "lastName": "Guyon",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Guyon"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50560492"
+                        ],
+                        "name": "V. Vapnik",
+                        "slug": "V.-Vapnik",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Vapnik",
+                            "middleNames": [
+                                "Naumovich"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Vapnik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 145,
+                                "start": 132
+                            }
+                        ],
+                        "text": "This baseline algorithm can be used with small datasets but to make it practical for large ones, several technical improvements had to be sought."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 222,
+                                "start": 203
+                            }
+                        ],
+                        "text": "The idea of breaking a large constrained optimization problem into small problems, where each of which employs a subset of the constraints was first explored in the context of support vector machines by Boser et al. (1992)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207165665,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2599131a4bc2fa957338732a37c744cfe3e17b24",
+            "isKey": false,
+            "numCitedBy": 10838,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A training algorithm that maximizes the margin between the training patterns and the decision boundary is presented. The technique is applicable to a wide variety of the classification functions, including Perceptrons, polynomials, and Radial Basis Functions. The effective number of parameters is adjusted automatically to match the complexity of the problem. The solution is expressed as a linear combination of supporting patterns. These are the subset of training patterns that are closest to the decision boundary. Bounds on the generalization performance based on the leave-one-out method and the VC-dimension are given. Experimental results on optical character recognition problems demonstrate the good generalization obtained when compared with other learning algorithms."
+            },
+            "slug": "A-training-algorithm-for-optimal-margin-classifiers-Boser-Guyon",
+            "title": {
+                "fragments": [],
+                "text": "A training algorithm for optimal margin classifiers"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 93,
+                "text": "A training algorithm that maximizes the margin between the training patterns and the decision boundary is presented, applicable to a wide variety of the classification functions, including Perceptrons, polynomials, and Radial Basis Functions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT '92"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2227181"
+                        ],
+                        "name": "K. H\u00f6ffgen",
+                        "slug": "K.-H\u00f6ffgen",
+                        "structuredName": {
+                            "firstName": "Klaus-Uwe",
+                            "lastName": "H\u00f6ffgen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. H\u00f6ffgen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1723095"
+                        ],
+                        "name": "H. Simon",
+                        "slug": "H.-Simon",
+                        "structuredName": {
+                            "firstName": "Hans",
+                            "lastName": "Simon",
+                            "middleNames": [
+                                "Ulrich"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Simon"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1823251"
+                        ],
+                        "name": "K. S. V. Horn",
+                        "slug": "K.-S.-V.-Horn",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Horn",
+                            "middleNames": [
+                                "S.",
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. S. V. Horn"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 134,
+                                "start": 111
+                            }
+                        ],
+                        "text": "Direct approaches that attempt to minimize the empirical error are computationally expensive (see for instance Ho\u0308ffgen and Simon, 1992, Crammer and Singer, 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Building on Vapnik\u2019s work on support vector machines (Vapnik, 1998), we describe in the next section our paradigm for finding a good matrix M by replacing the discrete empirical error minimization problem with a quadratic optimization problem."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6707032,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fef36189265d90252106cdfd64e0a8d9d5c4c58d",
+            "isKey": false,
+            "numCitedBy": 184,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We investigate the problem of learning concepts by presenting labeled and randomly chosen training\u2013examples to single neurons. It is well-known that linear halfspaces are learnable by the method of linear programming. The corresponding (Mc-Culloch-Pitts) neurons are therefore efficiently trainable to learn an unknown halfspace from examples. We want to analyze how fast the learning performance degrades when the representational power of the neuron is overstrained, i.e., if more complex concepts than just halfspaces are allowed. We show that a neuron cannot efficently find its probably almost optimal adjustment (unless RP = NP). If the weights and the threshold of the neuron have a fixed constant bound on their coding length, the situation is even worse: There is in general no polynomial time training method which bounds the resulting prediction error of the neuron by k.opt for a fixed constant k (unless RP = NP). Other variants of learning more complex concepts than halfspaces by single neurons are also investigated. We show that neither heuristical learning nor learning by sigmoidal neurons with a constant reject-rate is efficiently possible (unless RP = NP)."
+            },
+            "slug": "Robust-trainability-of-single-neurons-H\u00f6ffgen-Simon",
+            "title": {
+                "fragments": [],
+                "text": "Robust trainability of single neurons"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "It is shown that a neuron cannot efficently find its probably almost optimal adjustment (unless RP = NP) and neither heuristical learning nor learning by sigmoidal neurons with a constant reject-rate is efficiently possible."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT '92"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341779"
+                        ],
+                        "name": "J. R. Quinlan",
+                        "slug": "J.-R.-Quinlan",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Quinlan",
+                            "middleNames": [
+                                "Ross"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. R. Quinlan"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 145,
+                                "start": 132
+                            }
+                        ],
+                        "text": "Notable examples for multiclass learning algorithms are the multiclass extensions for decision tree learning (Breiman et al., 1984, Quinlan, 1993) and various specialized versions of boosting such as AdaBoost."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Keywords: Multiclass problems, SVM, Kernel Machines"
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 5262555,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "807c1f19047f96083e13614f7ce20f2ac98c239a",
+            "isKey": false,
+            "numCitedBy": 21897,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From the Publisher: \nClassifier systems play a major role in machine learning and knowledge-based systems, and Ross Quinlan's work on ID3 and C4.5 is widely acknowledged to have made some of the most significant contributions to their development. This book is a complete guide to the C4.5 system as implemented in C for the UNIX environment. It contains a comprehensive guide to the system's use , the source code (about 8,800 lines), and implementation notes. The source code and sample datasets are also available on a 3.5-inch floppy diskette for a Sun workstation. \n \nC4.5 starts with large sets of cases belonging to known classes. The cases, described by any mixture of nominal and numeric properties, are scrutinized for patterns that allow the classes to be reliably discriminated. These patterns are then expressed as models, in the form of decision trees or sets of if-then rules, that can be used to classify new cases, with emphasis on making the models understandable as well as accurate. The system has been applied successfully to tasks involving tens of thousands of cases described by hundreds of properties. The book starts from simple core learning methods and shows how they can be elaborated and extended to deal with typical problems such as missing data and over hitting. Advantages and disadvantages of the C4.5 approach are discussed and illustrated with several case studies. \n \nThis book and software should be of interest to developers of classification-based intelligent systems and to students in machine learning and expert systems courses."
+            },
+            "slug": "C4.5:-Programs-for-Machine-Learning-Quinlan",
+            "title": {
+                "fragments": [],
+                "text": "C4.5: Programs for Machine Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A complete guide to the C4.5 system as implemented in C for the UNIX environment, which starts from simple core learning methods and shows how they can be elaborated and extended to deal with typical problems such as missing data and over hitting."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2076469"
+                        ],
+                        "name": "Y. Guermeur",
+                        "slug": "Y.-Guermeur",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "Guermeur",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Guermeur"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1766703"
+                        ],
+                        "name": "A. Elisseeff",
+                        "slug": "A.-Elisseeff",
+                        "structuredName": {
+                            "firstName": "Andr\u00e9",
+                            "lastName": "Elisseeff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Elisseeff"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1398381409"
+                        ],
+                        "name": "H. Paugam-Moisy",
+                        "slug": "H.-Paugam-Moisy",
+                        "structuredName": {
+                            "firstName": "H\u00e9l\u00e8ne",
+                            "lastName": "Paugam-Moisy",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Paugam-Moisy"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 35292337,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d46abc8a2b2b764d3362b0617620724b6a9ade9c",
+            "isKey": false,
+            "numCitedBy": 64,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a support vector machine devoted to the approximation of multi-class discriminant functions. Its training procedure consists in minimizing an expression of the guaranteed risk. This bound is significantly tighter than the former ones, which should make the implementation of the structural risk minimization inductive principle in the context of multi-class discrimination better grounded."
+            },
+            "slug": "A-new-multi-class-SVM-based-on-a-uniform-result-Guermeur-Elisseeff",
+            "title": {
+                "fragments": [],
+                "text": "A new multi-class SVM based on a uniform convergence result"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A support vector machine devoted to the approximation of multi-class discriminant functions is introduced that is significantly tighter than the former ones, which should make the implementation of the structural risk minimization inductive principle in the context ofmulti-class discrimination better grounded."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the IEEE-INNS-ENNS International Joint Conference on Neural Networks. IJCNN 2000. Neural Computing: New Challenges and Perspectives for the New Millennium"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1744109"
+                        ],
+                        "name": "S. Salzberg",
+                        "slug": "S.-Salzberg",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Salzberg",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Salzberg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1800681"
+                        ],
+                        "name": "Alberto Maria Segre",
+                        "slug": "Alberto-Maria-Segre",
+                        "structuredName": {
+                            "firstName": "Alberto",
+                            "lastName": "Segre",
+                            "middleNames": [
+                                "Maria"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alberto Maria Segre"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 60499165,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7feb0fc888cd55360949554db032d7d1cba9e947",
+            "isKey": false,
+            "numCitedBy": 7028,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Algorithms for constructing decision trees are among the most well known and widely used of all machine learning methods. Among decision tree algorithms, J. Ross Quinlan's ID3 and its successor, C4.5, are probably the most popular in the machine learning community. These algorithms and variations on them have been the subject of numerous research papers since Quinlan introduced ID3. Until recently, most researchers looking for an introduction to decision trees turned to Quinlan's seminal 1986 Machine Learning journal article [Quinlan, 1986]. In his new book, C4.5: Programs for Machine Learning, Quinlan has put together a definitive, much needed description of his complete system, including the latest developments. As such, this book will be a welcome addition to the library of many researchers and students."
+            },
+            "slug": "Programs-for-Machine-Learning-Salzberg-Segre",
+            "title": {
+                "fragments": [],
+                "text": "Programs for Machine Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "In his new book, C4.5: Programs for Machine Learning, Quinlan has put together a definitive, much needed description of his complete system, including the latest developments, which will be a welcome addition to the library of many researchers and students."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35180576"
+                        ],
+                        "name": "L. Bregman",
+                        "slug": "L.-Bregman",
+                        "structuredName": {
+                            "firstName": "Lev",
+                            "lastName": "Bregman",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bregman"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 93,
+                                "start": 79
+                            }
+                        ],
+                        "text": "However, the roots of this line of research go back to the seminal work of Lev Bregman (1967) which was further developed by Yair Censor and colleagues (see Censor and Zenios, 1997 for an excellent overview)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 121309410,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "44a6b76e5cbc61330663d0a9f393caf91a3a1be8",
+            "isKey": false,
+            "numCitedBy": 2440,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "The-relaxation-method-of-finding-the-common-point-Bregman",
+            "title": {
+                "fragments": [],
+                "text": "The relaxation method of finding the common point of convex sets and its application to the solution of problems in convex programming"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1967
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2939803"
+                        ],
+                        "name": "Ronan Collobert",
+                        "slug": "Ronan-Collobert",
+                        "structuredName": {
+                            "firstName": "Ronan",
+                            "lastName": "Collobert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronan Collobert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751569"
+                        ],
+                        "name": "Samy Bengio",
+                        "slug": "Samy-Bengio",
+                        "structuredName": {
+                            "firstName": "Samy",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samy Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8952183,
+            "fieldsOfStudy": [
+                "Economics",
+                "Education"
+            ],
+            "id": "7141ea996fc449807b14c071716cecac0999f4ce",
+            "isKey": false,
+            "numCitedBy": 985,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Keywords: learning Reference EPFL-REPORT-82604 URL: http://publications.idiap.ch/downloads/reports/2000/rr00-17.pdf Record created on 2006-03-10, modified on 2017-05-10"
+            },
+            "slug": "SVMTorch:-Support-Vector-Machines-for-Large-Scale-Collobert-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "SVMTorch: Support Vector Machines for Large-Scale Regression Problems"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50560492"
+                        ],
+                        "name": "V. Vapnik",
+                        "slug": "V.-Vapnik",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Vapnik",
+                            "middleNames": [
+                                "Naumovich"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Vapnik"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 53
+                            }
+                        ],
+                        "text": "Building on Vapnik\u2019s work on support vector machines (Vapnik, 1998), we describe in the next section our paradigm for finding a good matrix M by replacing the discrete empirical error minimization problem with a quadratic optimization problem."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 98
+                            }
+                        ],
+                        "text": "A few attempts have been made to generalize SVM to multiclass problems (Weston and Watkins, 1999, Vapnik, 1998)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 156,
+                                "start": 144
+                            }
+                        ],
+                        "text": "Numerous specialized algorithms have been devised for multiclass problems by building upon classification learning algorithms for binary problems, i.e., problems in which the set of possible labels is of size two."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 83,
+                                "start": 71
+                            }
+                        ],
+                        "text": "Each reduced optimization problem has k variables and k + 1 constraints,\nmin \u03c4\nQ(\u03c4\u0304) = 1\n2 Ap(\u03c4\u0304p \u00b7 \u03c4\u0304p) + B\u0304p \u00b7 \u03c4\u0304p (20)\nsubject to : \u03c4\u0304p \u2264 1\u0304yp and \u03c4\u0304p \u00b7 1\u0304 = 0 ."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 159
+                            }
+                        ],
+                        "text": "As we have already mentioned, the idea of casting multiclass problems as a single constrained optimization with a quadratic objective function was proposed by Vapnik (1998), Weston and Watkins (1999), Bredensteiner and Bennet (1999), and Guermeur et. al (2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 136,
+                                "start": 124
+                            }
+                        ],
+                        "text": "We would like to note in\npassing that it is possible to cast an analogous optimization problem with \u201chard\u201d constraints as in (Vapnik, 1998)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 81,
+                                "start": 69
+                            }
+                        ],
+                        "text": "(14) with a kernel function K(\u00b7, \u00b7) that satisfies Mercer\u2019s conditions (Vapnik, 1998)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "This method is described in Section 6."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 90
+                            }
+                        ],
+                        "text": "To solve the optimization problem we use the Karush-Kuhn-Tucker theorem (see for instance Vapnik, 1998, Cristianini and Shawe-Taylor, 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 118,
+                                "start": 106
+                            }
+                        ],
+                        "text": "SVMs have gained an enormous popularity in statistics, learning theory, and engineering (see for instance Vapnik, 1998, Scho\u0308lkopf et al., 1998, Cristianini and Shawe-Taylor, 2000, and the many references therein)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 28637672,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "385197d4c02593e2823c71e4f90a0993b703620e",
+            "isKey": true,
+            "numCitedBy": 26320,
+            "numCiting": 1,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A comprehensive look at learning and generalization theory. The statistical theory of learning and generalization concerns the problem of choosing desired functions on the basis of empirical data. Highly applicable to a variety of computer science and robotics fields, this book offers lucid coverage of the theory as a whole. Presenting a method for determining the necessary and sufficient conditions for consistency of learning process, the author covers function estimates from small data pools, applying these estimations to real-life problems, and much more."
+            },
+            "slug": "Statistical-learning-theory-Vapnik",
+            "title": {
+                "fragments": [],
+                "text": "Statistical learning theory"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "Presenting a method for determining the necessary and sufficient conditions for consistency of learning process, the author covers function estimates from small data pools, applying these estimations to real-life problems, and much more."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3319973"
+                        ],
+                        "name": "A. Stachurski",
+                        "slug": "A.-Stachurski",
+                        "structuredName": {
+                            "firstName": "Andrzej",
+                            "lastName": "Stachurski",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Stachurski"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 180,
+                                "start": 157
+                            }
+                        ],
+                        "text": "However, the roots of this line of research go back to the seminal work of Lev Bregman (1967) which was further developed by Yair Censor and colleagues (see Censor and Zenios, 1997 for an excellent overview)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 19584334,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "da45065be36213069eec538159138b7bc49cd208",
+            "isKey": false,
+            "numCitedBy": 573,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Yair Censor and Stavros A. Zenios, Oxford University Press, New York, 1997, 539 pp., ISBN 0-19-510062-X, $85.00"
+            },
+            "slug": "Parallel-Optimization:-Theory,-Algorithms-and-Stachurski",
+            "title": {
+                "fragments": [],
+                "text": "Parallel Optimization: Theory, Algorithms and Applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "Yair Censor and Stavros A. Zenios, Oxford University Press, New York, 1997, 539 pp."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Scalable Comput. Pract. Exp."
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1711460"
+                        ],
+                        "name": "Chih-Jen Lin",
+                        "slug": "Chih-Jen-Lin",
+                        "structuredName": {
+                            "firstName": "Chih-Jen",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chih-Jen Lin"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Lin (2001) showed that this scheme does converge to the solution in a finite number of steps."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 116986247,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "51f795e9dc45d1fcedebf91366770c9b354a0833",
+            "isKey": false,
+            "numCitedBy": 4,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Stopping-Criteria-of-Decomposition-Methods-for-a-Lin",
+            "title": {
+                "fragments": [],
+                "text": "Stopping Criteria of Decomposition Methods for Support Vector Machines: a Theoretical Justification"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1644344103"
+                        ],
+                        "name": "J. C. BurgesChristopher",
+                        "slug": "J.-C.-BurgesChristopher",
+                        "structuredName": {
+                            "firstName": "J",
+                            "lastName": "BurgesChristopher",
+                            "middleNames": [
+                                "C"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. C. BurgesChristopher"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 96,
+                                "start": 83
+                            }
+                        ],
+                        "text": "In particular ideas such as using a working set and caching have been described by Burges (1998), Platt (1998), Joachims (1998), and others."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 215966761,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6716697767fc601efc7690f40820d9ea7a7bf57c",
+            "isKey": false,
+            "numCitedBy": 13527,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The tutorial starts with an overview of the concepts of VC dimension and structural risk minimization. We then describe linear Support Vector Machines (SVMs) for separable and non-separable data, w..."
+            },
+            "slug": "A-Tutorial-on-Support-Vector-Machines-for-Pattern-BurgesChristopher",
+            "title": {
+                "fragments": [],
+                "text": "A Tutorial on Support Vector Machines for Pattern Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 96,
+                "text": "This tutorial starts with an overview of the concepts of VC dimension and structural risk minimization and describes linear Support Vector Machines (SVMs) for separable and non-separable data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Kernel-based Vector Machines"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Kernel-based Vector Machines"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Multiclass Kernel-based Vector Machines"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Multiclass Kernel-based Vector Machines"
+            }
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 16,
+            "methodology": 8
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 28,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/On-the-Algorithmic-Implementation-of-Multiclass-Crammer-Singer/cfc6d0c8260594ebc5dd20ee558d29b1014ed41a?sort=total-citations"
+}

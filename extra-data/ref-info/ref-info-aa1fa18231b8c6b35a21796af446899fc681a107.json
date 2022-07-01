@@ -1,0 +1,4002 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1794409"
+                        ],
+                        "name": "K. Grauman",
+                        "slug": "K.-Grauman",
+                        "structuredName": {
+                            "firstName": "Kristen",
+                            "lastName": "Grauman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Grauman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 23
+                            }
+                        ],
+                        "text": "Pyramid m atch kernels [5, 14, 13] map local features to multi-resolution histograms and compute a weig ht d histogram intersection."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 80,
+                                "start": 74
+                            }
+                        ],
+                        "text": "Algorithms 15 training 30 training Algorithms 15 training 30 training PMK [5, 6] 50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 74,
+                                "start": 71
+                            }
+                        ],
+                        "text": "For example, the \u03c7(2) kernel [8] and the histogram intersection kernel [5] are designed t o compare histograms, hence they can be used as local kernels, if the features are histograms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13036203,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "625bce34ec80d29242340400d916e799d2975430",
+            "isKey": false,
+            "numCitedBy": 1593,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Discriminative learning is challenging when examples are sets of features, and the sets vary in cardinality and lack any sort of meaningful ordering. Kernel-based classification methods can learn complex decision boundaries, but a kernel over unordered set inputs must somehow solve for correspondences epsivnerally a computationally expensive task that becomes impractical for large set sizes. We present a new fast kernel function which maps unordered feature sets to multi-resolution histograms and computes a weighted histogram intersection in this space. This \"pyramid match\" computation is linear in the number of features, and it implicitly finds correspondences based on the finest resolution histogram cell where a matched pair first appears. Since the kernel does not penalize the presence of extra features, it is robust to clutter. We show the kernel function is positive-definite, making it valid for use in learning algorithms whose optimal solutions are guaranteed only for Mercer kernels. We demonstrate our algorithm on object recognition tasks and show it to be accurate and dramatically faster than current approaches"
+            },
+            "slug": "The-pyramid-match-kernel:-discriminative-with-sets-Grauman-Darrell",
+            "title": {
+                "fragments": [],
+                "text": "The pyramid match kernel: discriminative classification with sets of image features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A new fast kernel function is presented which maps unordered feature sets to multi-resolution histograms and computes a weighted histogram intersection in this space and is shown to be positive-definite, making it valid for use in learning algorithms whose optimal solutions are guaranteed only for Mercer kernels."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Tenth IEEE International Conference on Computer Vision (ICCV'05) Volume 1"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1794409"
+                        ],
+                        "name": "K. Grauman",
+                        "slug": "K.-Grauman",
+                        "structuredName": {
+                            "firstName": "Kristen",
+                            "lastName": "Grauman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Grauman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 31
+                            }
+                        ],
+                        "text": "Sum [7] Bhattacharyya [12] PMK [6] EMK-CKSVD EMK-Fourier Train O(n(2)m(2)d) O(n(2)m(3)d) O(n(2)m log(T )d) O(nmDd + nD(2)) O(nmDd) Test O(nm(2)d) O(nm(3)d) O(nm log(T )d) O(mDd + D(2)) O(mDd)"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 131
+                            }
+                        ],
+                        "text": "Although we only experiment with a Gaussian kernel, a similar complexit y would be typical for other nonlinear kernels, as used in [6, 9, 14, 31, 4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 80,
+                                "start": 74
+                            }
+                        ],
+                        "text": "Algorithms 15 training 30 training Algorithms 15 training 30 training PMK [5, 6] 50."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 35
+                            }
+                        ],
+                        "text": "PMK is the pyramid match kernel of [6], with T in PMK giving the value of the maximal feature range."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16823830,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d4632690af6cb5522f6895586c16cb741e0757c5",
+            "isKey": true,
+            "numCitedBy": 381,
+            "numCiting": 64,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In numerous domains it is useful to represent a single example by the set of the local features or parts that comprise it. However, this representation poses a challenge to many conventional machine learning techniques, since sets may vary in cardinality and elements lack a meaningful ordering. Kernel methods can learn complex functions, but a kernel over unordered set inputs must somehow solve for correspondences---generally a computationally expensive task that becomes impractical for large set sizes. We present a new fast kernel function called the pyramid match that measures partial match similarity in time linear in the number of features. The pyramid match maps unordered feature sets to multi-resolution histograms and computes a weighted histogram intersection in order to find implicit correspondences based on the finest resolution histogram cell where a matched pair first appears. We show the pyramid match yields a Mercer kernel, and we prove bounds on its error relative to the optimal partial matching cost. We demonstrate our algorithm on both classification and regression tasks, including object recognition, 3-D human pose inference, and time of publication estimation for documents, and we show that the proposed method is accurate and significantly more efficient than current approaches."
+            },
+            "slug": "The-Pyramid-Match-Kernel:-Efficient-Learning-with-Grauman-Darrell",
+            "title": {
+                "fragments": [],
+                "text": "The Pyramid Match Kernel: Efficient Learning with Sets of Features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "The pyramid match maps unordered feature sets to multi-resolution histograms and computes a weighted histogram intersection in order to find implicit correspondences based on the finest resolution histogram cell where a matched pair first appears."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145140331"
+                        ],
+                        "name": "Hao Zhang",
+                        "slug": "Hao-Zhang",
+                        "structuredName": {
+                            "firstName": "Hao",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hao Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39668247"
+                        ],
+                        "name": "A. Berg",
+                        "slug": "A.-Berg",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Berg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Berg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145854440"
+                        ],
+                        "name": "M. Maire",
+                        "slug": "M.-Maire",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Maire",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Maire"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143751119"
+                        ],
+                        "name": "Jitendra Malik",
+                        "slug": "Jitendra-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jitendra Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 131
+                            }
+                        ],
+                        "text": "Although we only experiment with a Gaussian kernel, a similar complexit y would be typical for other nonlinear kernels, as used in [6, 9, 14, 31, 4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 274094,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ceb0e1a86dc35e21ce5f0524c8476f15e1b08988",
+            "isKey": false,
+            "numCitedBy": 1278,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider visual category recognition in the framework of measuring similarities, or equivalently perceptual distances, to prototype examples of categories. This approach is quite flexible, and permits recognition based on color, texture, and particularly shape, in a homogeneous framework. While nearest neighbor classifiers are natural in this setting, they suffer from the problem of high variance (in bias-variance decomposition) in the case of limited sampling. Alternatively, one could use support vector machines but they involve time-consuming optimization and computation of pairwise distances. We propose a hybrid of these two methods which deals naturally with the multiclass setting, has reasonable computational complexity both in training and at run time, and yields excellent results in practice. The basic idea is to find close neighbors to a query sample and train a local support vector machine that preserves the distance function on the collection of neighbors. Our method can be applied to large, multiclass data sets for which it outperforms nearest neighbor and support vector machines, and remains efficient when the problem becomes intractable for support vector machines. A wide variety of distance functions can be used and our experiments show state-of-the-art performance on a number of benchmark data sets for shape and texture classification (MNIST, USPS, CUReT) and object recognition (Caltech- 101). On Caltech-101 we achieved a correct classification rate of 59.05%(\u00b10.56%) at 15 training images per class, and 66.23%(\u00b10.48%) at 30 training images."
+            },
+            "slug": "SVM-KNN:-Discriminative-Nearest-Neighbor-for-Visual-Zhang-Berg",
+            "title": {
+                "fragments": [],
+                "text": "SVM-KNN: Discriminative Nearest Neighbor Classification for Visual Category Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 64,
+                "text": "This work considers visual category recognition in the framework of measuring similarities, or equivalently perceptual distances, to prototype examples of categories and proposes a hybrid of these two methods which deals naturally with the multiclass setting, has reasonable computational complexity both in training and at run time, and yields excellent results in practice."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2119321914"
+                        ],
+                        "name": "Ankita Kumar",
+                        "slug": "Ankita-Kumar",
+                        "structuredName": {
+                            "firstName": "Ankita",
+                            "lastName": "Kumar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ankita Kumar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1781120"
+                        ],
+                        "name": "C. Sminchisescu",
+                        "slug": "C.-Sminchisescu",
+                        "structuredName": {
+                            "firstName": "Cristian",
+                            "lastName": "Sminchisescu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Sminchisescu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 90
+                            }
+                        ],
+                        "text": "If necessary, location information can be incorporated int o EMK, using a spatial pyramid [14, 13]: KP (X,Y) = \u2211L\u22121 l=0 2 t=1 2 KS(X ,Y) = \u03c6S(X) \u03c6S(Y), whereL is the number of pyramid levels,2 is the number of spatial cells in the l-th pyramid level,X are local features falling within the spatial cell (l, s), and\u03c6P (X) = [\u03c6(X ((1,1))), ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 23
+                            }
+                        ],
+                        "text": "Pyramid m atch kernels [5, 14, 13] map local features to multi-resolution histograms and compute a weig ht d histogram intersection."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 6222017,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7075ed16cc3a6b82936ae9d18b848fbec4fddafd",
+            "isKey": false,
+            "numCitedBy": 82,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Kernel classifiers based on Support Vector Machines (SVM) have recently achieved state-of-the art results on several popular datasets like Caltech or Pascal. This was possible by combining the advantages of SVM - convexity and the availability of efficient optimizers, with 'hyperkernels' - linear combinations of kernels computed at multiple levels of image encoding. The use of hyperkernels faces the challenge of choosing the kernel weights, the use of possibly irrelevant, poorly performing kernels, and an increased number of parameters that can lead to overfitting. In this paper we advocate the transition from SVMs to Support Kernel Machines (SKM) - models that estimate both the parameters of a sparse linear combination of kernels, and the parameters of a discriminative classifier. We exploit recent kernel learning techniques, not previously used in computer vision, that show how learning SKMs can be formulated as a convex optimization problem, which can be solved efficiently using Sequential Minimal Optimization. We study kernel learning for several multi-level image encodings for supervised object recognition and report competitive results on several datasets, including INRIA pedestrian, Caltech 101 and the newly created Caltech 256."
+            },
+            "slug": "Support-Kernel-Machines-for-Object-Recognition-Kumar-Sminchisescu",
+            "title": {
+                "fragments": [],
+                "text": "Support Kernel Machines for Object Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Recent kernel learning techniques are exploited that show how learning SKMs can be formulated as a convex optimization problem, which can be solved efficiently using Sequential Minimal Optimization."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2007 IEEE 11th International Conference on Computer Vision"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2066819269"
+                        ],
+                        "name": "James Philbin",
+                        "slug": "James-Philbin",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Philbin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Philbin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700928"
+                        ],
+                        "name": "O. Chum",
+                        "slug": "O.-Chum",
+                        "structuredName": {
+                            "firstName": "Ond\u0159ej",
+                            "lastName": "Chum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "O. Chum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2090818"
+                        ],
+                        "name": "M. Isard",
+                        "slug": "M.-Isard",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Isard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Isard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1782755"
+                        ],
+                        "name": "Josef Sivic",
+                        "slug": "Josef-Sivic",
+                        "structuredName": {
+                            "firstName": "Josef",
+                            "lastName": "Sivic",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Josef Sivic"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 9,
+                                "start": 5
+                            }
+                        ],
+                        "text": "1 in [21]), risking a significant decrease in classification performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6875974,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b6371f8c70c2684faefd99fffcc556c3a75dd7f4",
+            "isKey": false,
+            "numCitedBy": 1480,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The state of the art in visual object retrieval from large databases is achieved by systems that are inspired by text retrieval. A key component of these approaches is that local regions of images are characterized using high-dimensional descriptors which are then mapped to ldquovisual wordsrdquo selected from a discrete vocabulary.This paper explores techniques to map each visual region to a weighted set of words, allowing the inclusion of features which were lost in the quantization stage of previous systems. The set of visual words is obtained by selecting words based on proximity in descriptor space. We describe how this representation may be incorporated into a standard tf-idf architecture, and how spatial verification is modified in the case of this soft-assignment. We evaluate our method on the standard Oxford Buildings dataset, and introduce a new dataset for evaluation. Our results exceed the current state of the art retrieval performance on these datasets, particularly on queries with poor initial recall where techniques like query expansion suffer. Overall we show that soft-assignment is always beneficial for retrieval with large vocabularies, at a cost of increased storage requirements for the index."
+            },
+            "slug": "Lost-in-quantization:-Improving-particular-object-Philbin-Chum",
+            "title": {
+                "fragments": [],
+                "text": "Lost in quantization: Improving particular object retrieval in large scale image databases"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "82117876"
+                        ],
+                        "name": "F. Jurie",
+                        "slug": "F.-Jurie",
+                        "structuredName": {
+                            "firstName": "Fr\u00e9d\u00e9ric",
+                            "lastName": "Jurie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Jurie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756114"
+                        ],
+                        "name": "B. Triggs",
+                        "slug": "B.-Triggs",
+                        "structuredName": {
+                            "firstName": "Bill",
+                            "lastName": "Triggs",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Triggs"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 48
+                            }
+                        ],
+                        "text": "Various methods for creating vocabularies exist [10], the most common being k-means clustering of all (or a subsample of) the local features to obtain visual words."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11117513,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8d32093cd04d6beffb6d757f58b5ac950543ff7d",
+            "isKey": false,
+            "numCitedBy": 896,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Visual codebook based quantization of robust appearance descriptors extracted from local image patches is an effective means of capturing image statistics for texture analysis and scene classification. Codebooks are usually constructed by using a method such as k-means to cluster the descriptor vectors of patches sampled either densely ('textons') or sparsely ('bags of features' based on key-points or salience measures) from a set of training images. This works well for texture analysis in homogeneous images, but the images that arise in natural object recognition tasks have far less uniform statistics. We show that for dense sampling, k-means over-adapts to this, clustering centres almost exclusively around the densest few regions in descriptor space and thus failing to code other informative regions. This gives suboptimal codes that are no better than using randomly selected centres. We describe a scalable acceptance-radius based clusterer that generates better codebooks and study its performance on several image classification tasks. We also show that dense representations outperform equivalent keypoint based ones on these tasks and that SVM or mutual information based feature selection starting from a dense codebook further improves the performance."
+            },
+            "slug": "Creating-efficient-codebooks-for-visual-recognition-Jurie-Triggs",
+            "title": {
+                "fragments": [],
+                "text": "Creating efficient codebooks for visual recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is shown that dense representations outperform equivalent keypoint based ones on these tasks and that SVM or mutual information based feature selection starting from a dense codebook further improves the performance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Tenth IEEE International Conference on Computer Vision (ICCV'05) Volume 1"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2875887"
+                        ],
+                        "name": "Jianguo Zhang",
+                        "slug": "Jianguo-Zhang",
+                        "structuredName": {
+                            "firstName": "Jianguo",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jianguo Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3502855"
+                        ],
+                        "name": "Marcin Marszalek",
+                        "slug": "Marcin-Marszalek",
+                        "structuredName": {
+                            "firstName": "Marcin",
+                            "lastName": "Marszalek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcin Marszalek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1749609"
+                        ],
+                        "name": "S. Lazebnik",
+                        "slug": "S.-Lazebnik",
+                        "structuredName": {
+                            "firstName": "Svetlana",
+                            "lastName": "Lazebnik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Lazebnik"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1486613,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dee20a7ce7745fc367c8bc7ede4f7b8c22efa52d",
+            "isKey": false,
+            "numCitedBy": 2175,
+            "numCiting": 73,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recently, methods based on local image features have shown promise for texture and object recognition tasks. This paper presents a large-scale evaluation of an approach that represents images as distributions (signatures or histograms) of features extracted from a sparse set of keypoint locations and learns a Support Vector Machine classifier with kernels based on two effective measures for comparing distributions, the Earth Mover\u2019s Distance and the \u03c72 distance. We first evaluate the performance of our approach with different keypoint detectors and descriptors, as well as different kernels and classifiers. We then conduct a comparative evaluation with several state-of-the-art recognition methods on four texture and five object databases. On most of these databases, our implementation exceeds the best reported results and achieves comparable performance on the rest. Finally, we investigate the influence of background correlations on recognition performance via extensive tests on the PASCAL database, for which ground-truth object localization information is available. Our experiments demonstrate that image representations based on distributions of local features are surprisingly effective for classification of texture and object images under challenging real-world conditions, including significant intra-class variations and substantial background clutter."
+            },
+            "slug": "Local-Features-and-Kernels-for-Classification-of-A-Zhang-Marszalek",
+            "title": {
+                "fragments": [],
+                "text": "Local Features and Kernels for Classification of Texture and Object Categories: A Comprehensive Study"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 50,
+                "text": "A large-scale evaluation of an approach that represents images as distributions of features extracted from a sparse set of keypoint locations and learns a Support Vector Machine classifier with kernels based on two effective measures for comparing distributions, the Earth Mover\u2019s Distance and the \u03c72 distance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 Conference on Computer Vision and Pattern Recognition Workshop (CVPRW'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47690405"
+                        ],
+                        "name": "P. Moreno",
+                        "slug": "P.-Moreno",
+                        "structuredName": {
+                            "firstName": "Pedro",
+                            "lastName": "Moreno",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Moreno"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35541734"
+                        ],
+                        "name": "Purdy Ho",
+                        "slug": "Purdy-Ho",
+                        "structuredName": {
+                            "firstName": "Purdy",
+                            "lastName": "Ho",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Purdy Ho"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699559"
+                        ],
+                        "name": "N. Vasconcelos",
+                        "slug": "N.-Vasconcelos",
+                        "structuredName": {
+                            "firstName": "Nuno",
+                            "lastName": "Vasconcelos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Vasconcelos"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 167,
+                                "start": 156
+                            }
+                        ],
+                        "text": "Other approaches estimate a probability distribu tion on sets of local features, then derive their similarity using distribution-based comparison mea sures [12, 18, 2]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6831693,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9f73f60fb07a979e53beac26c92eaaafb644a648",
+            "isKey": false,
+            "numCitedBy": 497,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Over the last years significant efforts have been made to develop kernels that can be applied to sequence data such as DNA, text, speech, video and images. The Fisher Kernel and similar variants have been suggested as good ways to combine an underlying generative model in the feature space and discriminant classifiers such as SVM's. In this paper we suggest an alternative procedure to the Fisher kernel for systematically finding kernel functions that naturally handle variable length sequence data in multimedia domains. In particular for domains such as speech and images we explore the use of kernel functions that take full advantage of well known probabilistic models such as Gaussian Mixtures and single full covariance Gaussian models. We derive a kernel distance based on the Kullback-Leibler (KL) divergence between generative models. In effect our approach combines the best of both generative and discriminative methods and replaces the standard SVM kernels. We perform experiments on speaker identification/verification and image classification tasks and show that these new kernels have the best performance in speaker verification and mostly outperform the Fisher kernel based SVM's and the generative classifiers in speaker identification and image classification."
+            },
+            "slug": "A-Kullback-Leibler-Divergence-Based-Kernel-for-SVM-Moreno-Ho",
+            "title": {
+                "fragments": [],
+                "text": "A Kullback-Leibler Divergence Based Kernel for SVM Classification in Multimedia Applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper suggests an alternative procedure to the Fisher kernel for systematically finding kernel functions that naturally handle variable length sequence data in multimedia domains and derives a kernel distance based on the Kullback-Leibler (KL) divergence between generative models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3140335"
+                        ],
+                        "name": "A. Shashua",
+                        "slug": "A.-Shashua",
+                        "structuredName": {
+                            "firstName": "Amnon",
+                            "lastName": "Shashua",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Shashua"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1918412"
+                        ],
+                        "name": "Tamir Hazan",
+                        "slug": "Tamir-Hazan",
+                        "structuredName": {
+                            "firstName": "Tamir",
+                            "lastName": "Hazan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tamir Hazan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 22
+                            }
+                        ],
+                        "text": "Algebraic set kernels [26] exploit tensor products to aggregate local kernels, whereas principal angle kernels"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1048211,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "034d0ffe364ccb0b986d515725d7b65f9817def3",
+            "isKey": false,
+            "numCitedBy": 32,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a general family of algebraic positive definite similarity functions over spaces of matrices with varying column rank. The columns can represent local regions in an image (whereby images have varying number of local parts), images of an image sequence, motion trajectories in a multibody motion, and so forth. The family of set kernels we derive is based on a group invariant tensor product lifting with parameters that can be naturally tuned to provide a cook-book of sorts covering the possible \"wish lists\" from similarity measures over sets of varying cardinality. We highlight the strengths of our approach by demonstrating the set kernels for visual recognition of pedestrians using local parts representations."
+            },
+            "slug": "Algebraic-Set-Kernels-with-Application-to-Inference-Shashua-Hazan",
+            "title": {
+                "fragments": [],
+                "text": "Algebraic Set Kernels with Application to Inference Over Local Image Representations"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 59,
+                "text": "A general family of algebraic positive definite similarity functions over spaces of matrices with varying column rank based on a group invariant tensor product lifting with parameters that can be naturally tuned to provide a cook-book of sorts covering the possible \"wish lists\" from similarity measures over sets of varying cardinality."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2834541"
+                        ],
+                        "name": "R. Kondor",
+                        "slug": "R.-Kondor",
+                        "structuredName": {
+                            "firstName": "Risi",
+                            "lastName": "Kondor",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Kondor"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768120"
+                        ],
+                        "name": "T. Jebara",
+                        "slug": "T.-Jebara",
+                        "structuredName": {
+                            "firstName": "Tony",
+                            "lastName": "Jebara",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Jebara"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 165,
+                                "start": 154
+                            }
+                        ],
+                        "text": "Other approaches estimate a probability distribution on sets of local features, then derive their similarity using distribution-based comparison measures [12, 18, 2]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 22
+                            }
+                        ],
+                        "text": "Sum [7] Bhattacharyya [12] PMK [6] EMK-CKSVD EMK-Fourier Train O(n(2)m(2)d) O(n(2)m(3)d) O(n(2)m log(T )d) O(nmDd + nD(2)) O(nmDd) Test O(nm(2)d) O(nm(3)d) O(nm log(T )d) O(mDd + D(2)) O(mDd)"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 51,
+                                "start": 47
+                            }
+                        ],
+                        "text": "\u2019Bhattacharyya\u2019 is the Bhattacharyya kernel in [12]."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 2682584,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6e55cd4297a43cac83203ab7dee1fc2064e4a5ac",
+            "isKey": false,
+            "numCitedBy": 289,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In various application domains, including image recognition, it is natural to represent each example as a set of vectors. With a base kernel we can implicitly map these vectors to a Hilbert space and fit a Gaussian distribution to the whole set using Kernel PCA. We define our kernel between examples as Bhattacharyya's measure of affinity between such Gaussians. The resulting kernel is computable in closed form and enjoys many favorable properties, including graceful behavior under transformations, potentially justifying the vector set representation even in cases when more conventional representations also exist."
+            },
+            "slug": "A-Kernel-Between-Sets-of-Vectors-Kondor-Jebara",
+            "title": {
+                "fragments": [],
+                "text": "A Kernel Between Sets of Vectors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "The kernel between examples is defined as Bhattacharyya's measure of affinity between Gaussians, which is computable in closed form and enjoys many favorable properties, including graceful behavior under transformations, potentially justifying the vector set representation even in cases when more conventional representations also exist."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145128145"
+                        ],
+                        "name": "Lior Wolf",
+                        "slug": "Lior-Wolf",
+                        "structuredName": {
+                            "firstName": "Lior",
+                            "lastName": "Wolf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lior Wolf"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3140335"
+                        ],
+                        "name": "A. Shashua",
+                        "slug": "A.-Shashua",
+                        "structuredName": {
+                            "firstName": "Amnon",
+                            "lastName": "Shashua",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Shashua"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6066634,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "84497fd95b90e5bfe3ee0ed701808a8ec4c28690",
+            "isKey": false,
+            "numCitedBy": 293,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of learning with instances defined over a space of sets of vectors. We derive a new positive definite kernel f(A,B) defined over pairs of matrices A,B based on the concept of principal angles between two linear subspaces. We show that the principal angles can be recovered using only inner-products between pairs of column vectors of the input matrices thereby allowing the original column vectors of A,B to be mapped onto arbitrarily high-dimensional feature spaces.We demonstrate the usage of the matrix-based kernel function f(A,B) with experiments on two visual tasks. The first task is the discrimination of \"irregular\" motion trajectory of an individual or a group of individuals in a video sequence. We use the SVM approach using f(A,B) where an input matrix represents the motion trajectory of a group of individuals over a certain (fixed) time frame. We show that the classification (irregular versus regular) greatly outperforms the conventional representation where all the trajectories form a single vector. The second application is the visual recognition of faces from input video sequences representing head motion and facial expressions where f(A,B) is used to compare two image sequences."
+            },
+            "slug": "Learning-over-Sets-using-Kernel-Principal-Angles-Wolf-Shashua",
+            "title": {
+                "fragments": [],
+                "text": "Learning over Sets using Kernel Principal Angles"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 74,
+                "text": "A new positive definite kernel f(A,B) defined over pairs of matrices A,B is derived based on the concept of principal angles between two linear subspaces and it is shown that the principal angles can be recovered using only inner-products between pairs of column vectors of the input matrices thereby allowing the original column vectors to be mapped onto arbitrarily high-dimensional feature spaces."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1749609"
+                        ],
+                        "name": "S. Lazebnik",
+                        "slug": "S.-Lazebnik",
+                        "structuredName": {
+                            "firstName": "Svetlana",
+                            "lastName": "Lazebnik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Lazebnik"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144189388"
+                        ],
+                        "name": "J. Ponce",
+                        "slug": "J.-Ponce",
+                        "structuredName": {
+                            "firstName": "Jean",
+                            "lastName": "Ponce",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Ponce"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 90
+                            }
+                        ],
+                        "text": "If necessary, location information can be incorporated int o EMK, using a spatial pyramid [14, 13]: KP (X,Y) = \u2211L\u22121 l=0 2 t=1 2 KS(X ,Y) = \u03c6S(X) \u03c6S(Y), whereL is the number of pyramid levels,2 is the number of spatial cells in the l-th pyramid level,X are local features falling within the spatial cell (l, s), and\u03c6P (X) = [\u03c6(X ((1,1))), ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 23
+                            }
+                        ],
+                        "text": "Pyramid m atch kernels [5, 14, 13] map local features to multi-resolution histograms and compute a weig ht d histogram intersection."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 131
+                            }
+                        ],
+                        "text": "Although we only experiment with a Gaussian kernel, a similar complexit y would be typical for other nonlinear kernels, as used in [6, 9, 14, 31, 4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2421251,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6dbaff29d3898cf60f63f5a34cb9610ebb75220c",
+            "isKey": false,
+            "numCitedBy": 8328,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a method for recognizing scene categories based on approximate global geometric correspondence. This technique works by partitioning the image into increasingly fine sub-regions and computing histograms of local features found inside each sub-region. The resulting \"spatial pyramid\" is a simple and computationally efficient extension of an orderless bag-of-features image representation, and it shows significantly improved performance on challenging scene categorization tasks. Specifically, our proposed method exceeds the state of the art on the Caltech-101 database and achieves high accuracy on a large database of fifteen natural scene categories. The spatial pyramid framework also offers insights into the success of several recently proposed image descriptions, including Torralba\u2019s \"gist\" and Lowe\u2019s SIFT descriptors."
+            },
+            "slug": "Beyond-Bags-of-Features:-Spatial-Pyramid-Matching-Lazebnik-Schmid",
+            "title": {
+                "fragments": [],
+                "text": "Beyond Bags of Features: Spatial Pyramid Matching for Recognizing Natural Scene Categories"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 67,
+                "text": "This paper presents a method for recognizing scene categories based on approximate global geometric correspondence that exceeds the state of the art on the Caltech-101 database and achieves high accuracy on a large database of fifteen natural scene categories."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48964143"
+                        ],
+                        "name": "Prateek Jain",
+                        "slug": "Prateek-Jain",
+                        "structuredName": {
+                            "firstName": "Prateek",
+                            "lastName": "Jain",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Prateek Jain"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1692670"
+                        ],
+                        "name": "B. Kulis",
+                        "slug": "B.-Kulis",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Kulis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Kulis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1794409"
+                        ],
+                        "name": "K. Grauman",
+                        "slug": "K.-Grauman",
+                        "structuredName": {
+                            "firstName": "Kristen",
+                            "lastName": "Grauman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Grauman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 131
+                            }
+                        ],
+                        "text": "Although we only experiment with a Gaussian kernel, a similar complexit y would be typical for other nonlinear kernels, as used in [6, 9, 14, 31, 4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 861158,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "11e7d074e4deebfed771d0aa226f4160f4c5c82b",
+            "isKey": false,
+            "numCitedBy": 304,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a method that enables scalable image search for learned metrics. Given pairwise similarity and dissimilarity constraints between some images, we learn a Mahalanobis distance function that captures the imagespsila underlying relationships well. To allow sub-linear time similarity search under the learned metric, we show how to encode the learned metric parameterization into randomized locality-sensitive hash functions. We further formulate an indirect solution that enables metric learning and hashing for vector spaces whose high dimensionality make it infeasible to learn an explicit weighting over the feature dimensions. We demonstrate the approach applied to a variety of image datasets. Our learned metrics improve accuracy relative to commonly-used metric baselines, while our hashing construction enables efficient indexing with learned distances and very large databases."
+            },
+            "slug": "Fast-image-search-for-learned-metrics-Jain-Kulis",
+            "title": {
+                "fragments": [],
+                "text": "Fast image search for learned metrics"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 55,
+                "text": "A method that enables scalable image search for learned metrics and an indirect solution that enables metric learning and hashing for vector spaces whose high dimensionality make it infeasible to learn an explicit weighting over the feature dimensions is introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1794837"
+                        ],
+                        "name": "Siwei Lyu",
+                        "slug": "Siwei-Lyu",
+                        "structuredName": {
+                            "firstName": "Siwei",
+                            "lastName": "Lyu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Siwei Lyu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In [17], the authors modify the sum kernel by introducing an integer exponent on local kernels."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 68,
+                                "start": 60
+                            }
+                        ],
+                        "text": "In fact, this is related to the normalized sum match kernel [7 , 17]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2262078,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cba5ad0b755434eda25c0147633a843e5b9cbd24",
+            "isKey": false,
+            "numCitedBy": 214,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A new class of kernels for object recognition based on local image feature representations are introduced in this paper. These kernels satisfy the Mercer condition and incorporate multiple types of local features and semilocal constraints between them. Experimental results of SVM classifiers coupled with the proposed kernels are reported on recognition tasks with the COIL-100 database and compared with existing methods. The proposed kernels achieved competitive performance and were robust to changes in object configurations and image degradations."
+            },
+            "slug": "Mercer-kernels-for-object-recognition-with-local-Lyu",
+            "title": {
+                "fragments": [],
+                "text": "Mercer kernels for object recognition with local features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 84,
+                "text": "A new class of kernels for object recognition based on local image feature representations that satisfy the Mercer condition and incorporate multiple types of local features and semilocal constraints between them are introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2279670"
+                        ],
+                        "name": "Andrea Frome",
+                        "slug": "Andrea-Frome",
+                        "structuredName": {
+                            "firstName": "Andrea",
+                            "lastName": "Frome",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrea Frome"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143751119"
+                        ],
+                        "name": "Jitendra Malik",
+                        "slug": "Jitendra-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jitendra Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 131
+                            }
+                        ],
+                        "text": "Although we only experiment with a Gaussian kernel, a similar complexit y would be typical for other nonlinear kernels, as used in [6, 9, 14, 31, 4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13917267,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c633c9a8bb41fbf23247fe26917d0848d4b58c66",
+            "isKey": false,
+            "numCitedBy": 234,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we introduce and experiment with a framework for learning local perceptual distance functions for visual recognition. We learn a distance function for each training image as a combination of elementary distances between patch-based visual features. We apply these combined local distance functions to the tasks of image retrieval and classification of novel images. On the Caltech 101 object recognition benchmark, we achieve 60.3% mean recognition across classes using 15 training images per class, which is better than the best published performance by Zhang, et al."
+            },
+            "slug": "Image-Retrieval-and-Classification-Using-Local-Frome-Singer",
+            "title": {
+                "fragments": [],
+                "text": "Image Retrieval and Classification Using Local Distance Functions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 76,
+                "text": "This paper introduces and experiment with a framework for learning local perceptual distance functions for visual recognition as a combination of elementary distances between patch-based visual features, and applies this framework to the tasks of image retrieval and classification of novel images."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2243801"
+                        ],
+                        "name": "Jim Mutch",
+                        "slug": "Jim-Mutch",
+                        "structuredName": {
+                            "firstName": "Jim",
+                            "lastName": "Mutch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jim Mutch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35238678"
+                        ],
+                        "name": "D. Lowe",
+                        "slug": "D.-Lowe",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Lowe",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Lowe"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 127,
+                                "start": 123
+                            }
+                        ],
+                        "text": "Noti ce that EMK is used in conjunction with a linear classifier (linear SVM here) whereas all other method s (except HMAX [19]) require nonlinear classifiers."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1427294,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f9e65fcb0e04174577f211d702d3f837e3624c5b",
+            "isKey": false,
+            "numCitedBy": 548,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We apply a biologically inspired model of visual object recognition to the multiclass object categorization problem. Our model modifies that of Serre, Wolf, and Poggio. As in that work, we first apply Gabor filters at all positions and scales; feature complexity and position/scale invariance are then built up by alternating template matching and max pooling operations. We refine the approach in several biologically plausible ways, using simple versions of sparsification and lateral inhibition. We demonstrate the value of retaining some position and scale information above the intermediate feature level. Using feature selection we arrive at a model that performs better with fewer features. Our final model is tested on the Caltech 101 object categories and the UIUC car localization task, in both cases achieving state-of-the-art performance. The results strengthen the case for using this class of model in computer vision."
+            },
+            "slug": "Multiclass-Object-Recognition-with-Sparse,-Features-Mutch-Lowe",
+            "title": {
+                "fragments": [],
+                "text": "Multiclass Object Recognition with Sparse, Localized Features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 74,
+                "text": "A biologically inspired model of visual object recognition to the multiclass object categorization problem, modifies that of Serre, Wolf, and Poggio, and demonstrates the value of retaining some position and scale information above the intermediate feature level."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "31558848"
+                        ],
+                        "name": "A. Rahimi",
+                        "slug": "A.-Rahimi",
+                        "structuredName": {
+                            "firstName": "Ali",
+                            "lastName": "Rahimi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Rahimi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "9229182"
+                        ],
+                        "name": "B. Recht",
+                        "slug": "B.-Recht",
+                        "structuredName": {
+                            "firstName": "Benjamin",
+                            "lastName": "Recht",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Recht"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 106
+                            }
+                        ],
+                        "text": "Another tractable approach to large-scale learning is to approximate the kernel using random feature maps [22, 23]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 877929,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7a59fde27461a3ef4a21a249cc403d0d96e4a0d7",
+            "isKey": false,
+            "numCitedBy": 2834,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "To accelerate the training of kernel machines, we propose to map the input data to a randomized low-dimensional feature space and then apply existing fast linear methods. The features are designed so that the inner products of the transformed data are approximately equal to those in the feature space of a user specified shift-invariant kernel. We explore two sets of random features, provide convergence bounds on their ability to approximate various radial basis kernels, and show that in large-scale classification and regression tasks linear machine learning algorithms applied to these features outperform state-of-the-art large-scale kernel machines."
+            },
+            "slug": "Random-Features-for-Large-Scale-Kernel-Machines-Rahimi-Recht",
+            "title": {
+                "fragments": [],
+                "text": "Random Features for Large-Scale Kernel Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "Two sets of random features are explored, provided convergence bounds on their ability to approximate various radial basis kernels, and it is shown that in large-scale classification and regression tasks linear machine learning algorithms applied to these features outperform state-of-the-art large- scale kernel machines."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1808255"
+                        ],
+                        "name": "K. Kim",
+                        "slug": "K.-Kim",
+                        "structuredName": {
+                            "firstName": "Kwang",
+                            "lastName": "Kim",
+                            "middleNames": [
+                                "In"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Kim"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "30541601"
+                        ],
+                        "name": "M. Franz",
+                        "slug": "M.-Franz",
+                        "structuredName": {
+                            "firstName": "Matthias",
+                            "lastName": "Franz",
+                            "middleNames": [
+                                "O."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Franz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707625"
+                        ],
+                        "name": "B. Sch\u00f6lkopf",
+                        "slug": "B.-Sch\u00f6lkopf",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Sch\u00f6lkopf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Sch\u00f6lkopf"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 91
+                            }
+                        ],
+                        "text": "If the pre-image constraints H = [\u03c8(z1), . . . , \u03c8(zD)] are dropped, it is easy to show that KPCA can be recovered."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 167,
+                                "start": 163
+                            }
+                        ],
+                        "text": "Another option would be to approximate each eigenvector with a single feature vector \u03c8(z) by solving the pre-image problem (z, \u03b2) = argminz,\u03b2 \u2016 \u2211F i=1 \u03b1i\u03c8(xi) \u2212 \u03b2\u03c8(z)\u20162, after KPCA."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 42
+                            }
+                        ],
+                        "text": "This faces two difficulties, however: (i) KPCA scales cubically in the number of selected local features, F ; (ii) O(Fmd) work is required to extract the set-level feature vector for one image, because the eigenvectors are linear combinations of the selected local feature vectors, \u2211F i=1 \u03b1i\u03c8(xi)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 48
+                            }
+                        ],
+                        "text": "One way is kernel principal component analysis (KPCA) [24] on a randomly selected pool of F local features, with the basis set to the topmost D eigenvectors."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 65
+                            }
+                        ],
+                        "text": "Although the first difficulty can be palliated by iterative KPCA [11], the second computational challenge remains."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 71
+                            }
+                        ],
+                        "text": "In addition, we use 10,000 randomly selected SIFT descriptors to learn KPCA-based local feature maps, which takes about 12 hours for the training and testing sets on the full Scene-15 dataset, respectively."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 7329667,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "52e0d19b78c1507cdd8c4de88202e725a807f936",
+            "isKey": true,
+            "numCitedBy": 298,
+            "numCiting": 63,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In recent years, kernel principal component analysis (KPCA) has been suggested for various image processing tasks requiring an image model such as, e.g., denoising or compression. The original form of KPCA, however, can be only applied to strongly restricted image classes due to the limited number of training examples that can be processed. We therefore propose a new iterative method for performing KPCA, the kernel Hebbian algorithm, which iteratively estimates the kernel principal components with only linear order memory complexity. In our experiments, we compute models for complex image classes such as faces and natural images which require a large number of training examples. The resulting image models are tested in single-frame super-resolution and denoising applications. The KPCA model is not specifically tailored to these tasks; in fact, the same model can be used in super-resolution with variable input resolution, or denoising with unknown noise characteristics, in spite of this, both super-resolution and denoising performance are comparable to existing methods."
+            },
+            "slug": "Iterative-kernel-principal-component-analysis-for-Kim-Franz",
+            "title": {
+                "fragments": [],
+                "text": "Iterative kernel principal component analysis for image modeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A new iterative method for performing KPCA is proposed, the kernel Hebbian algorithm, which iteratively estimates the kernel principal components with only linear order memory complexity."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1910299"
+                        ],
+                        "name": "Oren Boiman",
+                        "slug": "Oren-Boiman",
+                        "structuredName": {
+                            "firstName": "Oren",
+                            "lastName": "Boiman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oren Boiman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2177801"
+                        ],
+                        "name": "E. Shechtman",
+                        "slug": "E.-Shechtman",
+                        "structuredName": {
+                            "firstName": "Eli",
+                            "lastName": "Shechtman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Shechtman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144611617"
+                        ],
+                        "name": "M. Irani",
+                        "slug": "M.-Irani",
+                        "structuredName": {
+                            "firstName": "Michal",
+                            "lastName": "Irani",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Irani"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 82
+                            }
+                        ],
+                        "text": "The best result on Caltech101 was obtained by combining multiple descriptor types [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 74543,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7ae4d5ec354f2a54b5cd70395cb12283390d0638",
+            "isKey": false,
+            "numCitedBy": 1205,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "State-of-the-art image classification methods require an intensive learning/training stage (using SVM, Boosting, etc.) In contrast, non-parametric nearest-neighbor (NN) based image classifiers require no training time and have other favorable properties. However, the large performance gap between these two families of approaches rendered NN-based image classifiers useless. We claim that the effectiveness of non-parametric NN-based image classification has been considerably undervalued. We argue that two practices commonly used in image classification methods, have led to the inferior performance of NN-based image classifiers: (i) Quantization of local image descriptors (used to generate \"bags-of-words \", codebooks). (ii) Computation of 'image-to-image' distance, instead of 'image-to-class' distance. We propose a trivial NN-based classifier - NBNN, (Naive-Bayes nearest-neighbor), which employs NN- distances in the space of the local image descriptors (and not in the space of images). NBNN computes direct 'image- to-class' distances without descriptor quantization. We further show that under the Naive-Bayes assumption, the theoretically optimal image classifier can be accurately approximated by NBNN. Although NBNN is extremely simple, efficient, and requires no learning/training phase, its performance ranks among the top leading learning-based image classifiers. Empirical comparisons are shown on several challenging databases (Caltech-101 ,Caltech-256 and Graz-01)."
+            },
+            "slug": "In-defense-of-Nearest-Neighbor-based-image-Boiman-Shechtman",
+            "title": {
+                "fragments": [],
+                "text": "In defense of Nearest-Neighbor based image classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "It is argued that two practices commonly used in image classification methods, have led to the inferior performance of NN-based image classifiers: Quantization of local image descriptors (used to generate \"bags-of-words \", codebooks) and Computation of 'image-to-image' distance, instead of ' image- to-class' distance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2819449"
+                        ],
+                        "name": "Mehul Parsana",
+                        "slug": "Mehul-Parsana",
+                        "structuredName": {
+                            "firstName": "Mehul",
+                            "lastName": "Parsana",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mehul Parsana"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700393"
+                        ],
+                        "name": "Sourangshu Bhattacharya",
+                        "slug": "Sourangshu-Bhattacharya",
+                        "structuredName": {
+                            "firstName": "Sourangshu",
+                            "lastName": "Bhattacharya",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sourangshu Bhattacharya"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145880755"
+                        ],
+                        "name": "C. Bhattacharyya",
+                        "slug": "C.-Bhattacharyya",
+                        "structuredName": {
+                            "firstName": "Chiranjib",
+                            "lastName": "Bhattacharyya",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Bhattacharyya"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145986798"
+                        ],
+                        "name": "K. Ramakrishnan",
+                        "slug": "K.-Ramakrishnan",
+                        "structuredName": {
+                            "firstName": "K.",
+                            "lastName": "Ramakrishnan",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Ramakrishnan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 21
+                            }
+                        ],
+                        "text": "Neighborhood kernels [20] integrate the spatial location of local features into a sum match kernel."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14853165,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dbc762f303e76ce51e7791d921f62927051bd4aa",
+            "isKey": false,
+            "numCitedBy": 19,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper introduces kernels on attributed pointsets, which are sets of vectors embedded in an euclidean space. The embedding gives the notion of neighborhood, which is used to define positive semidefinite kernels on pointsets. Two novel kernels on neighborhoods are proposed, one evaluating the attribute similarity and the other evaluating shape similarity. Shape similarity function is motivated from spectral graph matching techniques. The kernels are tested on three real life applications: face recognition, photo album tagging, and shot annotation in video sequences, with encouraging results."
+            },
+            "slug": "Kernels-on-Attributed-Pointsets-with-Applications-Parsana-Bhattacharya",
+            "title": {
+                "fragments": [],
+                "text": "Kernels on Attributed Pointsets with Applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 95,
+                "text": "This paper introduces kernels on attributed pointsets, which are sets of vectors embedded in an euclidean space that gives the notion of neighborhood, which is used to define positive semidefinite kernels on pointsets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144782042"
+                        ],
+                        "name": "Kai Yu",
+                        "slug": "Kai-Yu",
+                        "structuredName": {
+                            "firstName": "Kai",
+                            "lastName": "Yu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kai Yu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143836295"
+                        ],
+                        "name": "W. Xu",
+                        "slug": "W.-Xu",
+                        "structuredName": {
+                            "firstName": "Wei",
+                            "lastName": "Xu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Xu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144768792"
+                        ],
+                        "name": "Yihong Gong",
+                        "slug": "Yihong-Gong",
+                        "structuredName": {
+                            "firstName": "Yihong",
+                            "lastName": "Gong",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yihong Gong"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5881297,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "16802aa97dce7e60fd32d85b31f69e0d18e14726",
+            "isKey": false,
+            "numCitedBy": 80,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we aim to train deep neural networks for rapid visual recognition. The task is highly challenging, largely due to the lack of a meaningful regular-izer on the functions realized by the networks. We propose a novel regularization method that takes advantage of kernel methods, where an oracle kernel function represents prior knowledge about the recognition task of interest. We derive an efficient algorithm using stochastic gradient descent, and demonstrate encouraging results on a wide range of recognition tasks, in terms of both accuracy and speed."
+            },
+            "slug": "Deep-Learning-with-Kernel-Regularization-for-Visual-Yu-Xu",
+            "title": {
+                "fragments": [],
+                "text": "Deep Learning with Kernel Regularization for Visual Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A novel regularization method is proposed that takes advantage of kernel methods, where an oracle kernel function represents prior knowledge about the recognition task of interest."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48004138"
+                        ],
+                        "name": "Li Fei-Fei",
+                        "slug": "Li-Fei-Fei",
+                        "structuredName": {
+                            "firstName": "Li",
+                            "lastName": "Fei-Fei",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Li Fei-Fei"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2276554"
+                        ],
+                        "name": "R. Fergus",
+                        "slug": "R.-Fergus",
+                        "structuredName": {
+                            "firstName": "Rob",
+                            "lastName": "Fergus",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fergus"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690922"
+                        ],
+                        "name": "P. Perona",
+                        "slug": "P.-Perona",
+                        "structuredName": {
+                            "firstName": "Pietro",
+                            "lastName": "Perona",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Perona"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Caltech-101: Caltech-101 [ 15 ] contains 9144 images from 101 object categories and a background category."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6953475,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "812355cec91fa30bb50e9e992a3549af39e4f6eb",
+            "isKey": false,
+            "numCitedBy": 2365,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning visual models of object categories notoriously requires hundreds or thousands of training examples. We show that it is possible to learn much information about a category from just one, or a handful, of images. The key insight is that, rather than learning from scratch, one can take advantage of knowledge coming from previously learned categories, no matter how different these categories might be. We explore a Bayesian implementation of this idea. Object categories are represented by probabilistic models. Prior knowledge is represented as a probability density function on the parameters of these models. The posterior model for an object category is obtained by updating the prior in the light of one or more observations. We test a simple implementation of our algorithm on a database of 101 diverse object categories. We compare category models learned by an implementation of our Bayesian approach to models learned from by maximum likelihood (ML) and maximum a posteriori (MAP) methods. We find that on a database of more than 100 categories, the Bayesian approach produces informative models when the number of training examples is too small for other methods to operate successfully."
+            },
+            "slug": "One-shot-learning-of-object-categories-Fei-Fei-Fergus",
+            "title": {
+                "fragments": [],
+                "text": "One-shot learning of object categories"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "It is found that on a database of more than 100 categories, the Bayesian approach produces informative models when the number of training examples is too small for other methods to operate successfully."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1738975"
+                        ],
+                        "name": "J. V. Gemert",
+                        "slug": "J.-V.-Gemert",
+                        "structuredName": {
+                            "firstName": "Jan",
+                            "lastName": "Gemert",
+                            "middleNames": [
+                                "C.",
+                                "van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. V. Gemert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1720149"
+                        ],
+                        "name": "J. Geusebroek",
+                        "slug": "J.-Geusebroek",
+                        "structuredName": {
+                            "firstName": "Jan-Mark",
+                            "lastName": "Geusebroek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Geusebroek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1696916"
+                        ],
+                        "name": "C. Veenman",
+                        "slug": "C.-Veenman",
+                        "structuredName": {
+                            "firstName": "Cor",
+                            "lastName": "Veenman",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Veenman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144638781"
+                        ],
+                        "name": "A. Smeulders",
+                        "slug": "A.-Smeulders",
+                        "structuredName": {
+                            "firstName": "Arnold",
+                            "lastName": "Smeulders",
+                            "middleNames": [
+                                "W.",
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Smeulders"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1986844,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c0a27dd14832dc00ffb4c659d3f675333654bf0a",
+            "isKey": false,
+            "numCitedBy": 712,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper introduces a method for scene categorization by modeling ambiguity in the popular codebook approach. The codebook approach describes an image as a bag of discrete visual codewords, where the frequency distributions of these words are used for image categorization. There are two drawbacks to the traditional codebook model: codeword uncertainty and codeword plausibility. Both of these drawbacks stem from the hard assignment of visual features to a single codeword. We show that allowing a degree of ambiguity in assigning codewords improves categorization performance for three state-of-the-art datasets."
+            },
+            "slug": "Kernel-Codebooks-for-Scene-Categorization-Gemert-Geusebroek",
+            "title": {
+                "fragments": [],
+                "text": "Kernel Codebooks for Scene Categorization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "It is shown that allowing a degree of ambiguity in assigning codewords improves categorization performance for three state-of-the-art datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1711979"
+                        ],
+                        "name": "Marco Cuturi",
+                        "slug": "Marco-Cuturi",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Cuturi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marco Cuturi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152303545"
+                        ],
+                        "name": "Jean-Philippe Vert",
+                        "slug": "Jean-Philippe-Vert",
+                        "structuredName": {
+                            "firstName": "Jean-Philippe",
+                            "lastName": "Vert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jean-Philippe Vert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 165,
+                                "start": 154
+                            }
+                        ],
+                        "text": "Other approaches estimate a probability distribution on sets of local features, then derive their similarity using distribution-based comparison measures [12, 18, 2]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 830486,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "3155c575e85c86e596dca8e46a97f3cb3f6ee0a7",
+            "isKey": false,
+            "numCitedBy": 26,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Complex objects can often be conveniently represented by finite sets of simpler components, such as images by sets of patches or texts by bags of words. We study the class of positive definite (p.d.) kernels for two such objects that can be expressed as a function of the merger of their respective sets of components. We prove a general integral representation of such kernels and present two particular examples. One of them leads to a kernel for sets of points living in a space endowed itself with a positive definite kernel. We provide experimental results on a benchmark experiment of handwritten digits image classification which illustrate the validity of the approach."
+            },
+            "slug": "Semigroup-Kernels-on-Finite-Sets-Cuturi-Vert",
+            "title": {
+                "fragments": [],
+                "text": "Semigroup Kernels on Finite Sets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A general integral representation of positive definite (p.d.) kernels for two such objects that can be expressed as a function of the merger of their respective sets of components is proved."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1782755"
+                        ],
+                        "name": "Josef Sivic",
+                        "slug": "Josef-Sivic",
+                        "structuredName": {
+                            "firstName": "Josef",
+                            "lastName": "Sivic",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Josef Sivic"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 23,
+                                "start": 19
+                            }
+                        ],
+                        "text": "Bag of words (BOW) [27] is probably one of the most popular ima ge representations, due to both its conceptual simplicity and its computational efficiency ."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14457153,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "642e328cae81c5adb30069b680cf60ba6b475153",
+            "isKey": false,
+            "numCitedBy": 6760,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe an approach to object and scene retrieval which searches for and localizes all the occurrences of a user outlined object in a video. The object is represented by a set of viewpoint invariant region descriptors so that recognition can proceed successfully despite changes in viewpoint, illumination and partial occlusion. The temporal continuity of the video within a shot is used to track the regions in order to reject unstable regions and reduce the effects of noise in the descriptors. The analogy with text retrieval is in the implementation where matches on descriptors are pre-computed (using vector quantization), and inverted file systems and document rankings are used. The result is that retrieved is immediate, returning a ranked list of key frames/shots in the manner of Google. The method is illustrated for matching in two full length feature films."
+            },
+            "slug": "Video-Google:-a-text-retrieval-approach-to-object-Sivic-Zisserman",
+            "title": {
+                "fragments": [],
+                "text": "Video Google: a text retrieval approach to object matching in videos"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 92,
+                "text": "An approach to object and scene retrieval which searches for and localizes all the occurrences of a user outlined object in a video, represented by a set of viewpoint invariant region descriptors so that recognition can proceed successfully despite changes in viewpoint, illumination and partial occlusion."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Ninth IEEE International Conference on Computer Vision"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733689"
+                        ],
+                        "name": "D. Haussler",
+                        "slug": "D.-Haussler",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Haussler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Haussler"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 24
+                            }
+                        ],
+                        "text": "The sum match kernel of Haussler [7] is obtained by adding local kernels over all combinations of local features from two different sets."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 38
+                            }
+                        ],
+                        "text": "\u2019Sum\u2019 is the sum match kernel used in [7]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 4
+                            }
+                        ],
+                        "text": "Sum [7] Bhattacharyya [12] PMK [6] EMK-CKSVD EMK-Fourier Train O(n(2)m(2)d) O(n(2)m(3)d) O(n(2)m log(T )d) O(nmDd + nD(2)) O(nmDd) Test O(nm(2)d) O(nm(3)d) O(nm log(T )d) O(mDd + D(2)) O(mDd)"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 33
+                            }
+                        ],
+                        "text": "The sum match kernel of Haussler [7] i s obtained by adding local kernels over all combinations of local features from two different sets."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 68,
+                                "start": 60
+                            }
+                        ],
+                        "text": "In fact, this is related to the normalized sum match kernel [7 , 17]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17702358,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "5ee0d8aeb2cb01ef4d8a858d234e72a7400c03ac",
+            "isKey": true,
+            "numCitedBy": 1371,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a new method of constructing kernels on sets whose elements are discrete structures like strings, trees and graphs. The method can be applied iteratively to build a kernel on a innnite set from kernels involving generators of the set. The family of kernels generated generalizes the family of radial basis kernels. It can also be used to deene kernels in the form of joint Gibbs probability distributions. Kernels can be built from hidden Markov random elds, generalized regular expressions, pair-HMMs, or ANOVA de-compositions. Uses of the method lead to open problems involving the theory of innnitely divisible positive deenite functions. Fundamentals of this theory and the theory of reproducing kernel Hilbert spaces are reviewed and applied in establishing the validity of the method."
+            },
+            "slug": "Convolution-kernels-on-discrete-structures-Haussler",
+            "title": {
+                "fragments": [],
+                "text": "Convolution kernels on discrete structures"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 92,
+                "text": "A new method of constructing kernels on sets whose elements are discrete structures like strings, trees and graphs is introduced, which can be applied iteratively to build a kernel on a innnite set from kernels involving generators of the set."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1389955537"
+                        ],
+                        "name": "S. Shalev-Shwartz",
+                        "slug": "S.-Shalev-Shwartz",
+                        "structuredName": {
+                            "firstName": "Shai",
+                            "lastName": "Shalev-Shwartz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Shalev-Shwartz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1706280"
+                        ],
+                        "name": "Nathan Srebro",
+                        "slug": "Nathan-Srebro",
+                        "structuredName": {
+                            "firstName": "Nathan",
+                            "lastName": "Srebro",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nathan Srebro"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145658292"
+                        ],
+                        "name": "Andrew Cotter",
+                        "slug": "Andrew-Cotter",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Cotter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Cotter"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 53306004,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "eb4ffd271451a8fbed752582543bd34925fa4396",
+            "isKey": false,
+            "numCitedBy": 2003,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe and analyze a simple and effective stochastic sub-gradient descent algorithm for solving the optimization problem cast by Support Vector Machines (SVM). We prove that the number of iterations required to obtain a solution of accuracy $${\\epsilon}$$ is $${\\tilde{O}(1 / \\epsilon)}$$, where each iteration operates on a single training example. In contrast, previous analyses of stochastic gradient descent methods for SVMs require $${\\Omega(1 / \\epsilon^2)}$$ iterations. As in previously devised SVM solvers, the number of iterations also scales linearly with 1/\u03bb, where \u03bb is the regularization parameter of SVM. For a linear kernel, the total run-time of our method is $${\\tilde{O}(d/(\\lambda \\epsilon))}$$, where d is a bound on the number of non-zero features in each example. Since the run-time does not depend directly on the size of the training set, the resulting algorithm is especially suited for learning from large datasets. Our approach also extends to non-linear kernels while working solely on the primal objective function, though in this case the runtime does depend linearly on the training set size. Our algorithm is particularly well suited for large text classification problems, where we demonstrate an order-of-magnitude speedup over previous SVM learning methods."
+            },
+            "slug": "Pegasos:-primal-estimated-sub-gradient-solver-for-Shalev-Shwartz-Singer",
+            "title": {
+                "fragments": [],
+                "text": "Pegasos: primal estimated sub-gradient solver for SVM"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "A simple and effective stochastic sub-gradient descent algorithm for solving the optimization problem cast by Support Vector Machines, which is particularly well suited for large text classification problems, and demonstrates an order-of-magnitude speedup over previous SVM learning methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Math. Program."
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1849128"
+                        ],
+                        "name": "Rong-En Fan",
+                        "slug": "Rong-En-Fan",
+                        "structuredName": {
+                            "firstName": "Rong-En",
+                            "lastName": "Fan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rong-En Fan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2782886"
+                        ],
+                        "name": "Kai-Wei Chang",
+                        "slug": "Kai-Wei-Chang",
+                        "structuredName": {
+                            "firstName": "Kai-Wei",
+                            "lastName": "Chang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kai-Wei Chang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1793529"
+                        ],
+                        "name": "Cho-Jui Hsieh",
+                        "slug": "Cho-Jui-Hsieh",
+                        "structuredName": {
+                            "firstName": "Cho-Jui",
+                            "lastName": "Hsieh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Cho-Jui Hsieh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2144799660"
+                        ],
+                        "name": "Xiang-Rui Wang",
+                        "slug": "Xiang-Rui-Wang",
+                        "structuredName": {
+                            "firstName": "Xiang-Rui",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xiang-Rui Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1711460"
+                        ],
+                        "name": "Chih-Jen Lin",
+                        "slug": "Chih-Jen-Lin",
+                        "structuredName": {
+                            "firstName": "Chih-Jen",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chih-Jen Lin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 23
+                            }
+                        ],
+                        "text": "We work with LIBLINEAR [3] for BOW-Linear, EMK-Fourier and EMK-CKSVD, and LIBSVM for BOW-Gaussian (the former need a linear classifier whereas the latter uses a nonlinear classifier)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3116168,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "268a4f8da15a42f3e0e71691f760ff5edbf9cec8",
+            "isKey": false,
+            "numCitedBy": 7764,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "LIBLINEAR is an open source library for large-scale linear classification. It supports logistic regression and linear support vector machines. We provide easy-to-use command-line tools and library calls for users and developers. Comprehensive documents are available for both beginners and advanced users. Experiments demonstrate that LIBLINEAR is very efficient on large sparse data sets."
+            },
+            "slug": "LIBLINEAR:-A-Library-for-Large-Linear-Fan-Chang",
+            "title": {
+                "fragments": [],
+                "text": "LIBLINEAR: A Library for Large Linear Classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 96,
+                "text": "LIBLINEAR is an open source library for large-scale linear classification that supports logistic regression and linear support vector machines and provides easy-to-use command-line tools and library calls for users and developers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2078940925"
+                        ],
+                        "name": "AI Koan",
+                        "slug": "AI-Koan",
+                        "structuredName": {
+                            "firstName": "AI",
+                            "lastName": "Koan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "AI Koan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 115,
+                                "start": 107
+                            }
+                        ],
+                        "text": "Another tractable approach to large-scale learning is to ap proximate the kernel using random feature maps [22, 23]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14171621,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "47aa6d7381cc9993da60e4547b01f415a04f3cf2",
+            "isKey": false,
+            "numCitedBy": 403,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Randomized neural networks are immortalized in this AI Koan: In the days when Sussman was a novice, Minsky once came to him as he sat hacking at the PDP-6. \u201cWhat are you doing?\u201d asked Minsky. \u201cI am training a randomly wired neural net to play tic-tac-toe,\u201d Sussman replied. \u201cWhy is the net wired randomly?\u201d asked Minsky. Sussman replied, \u201cI do not want it to have any preconceptions of how to play.\u201d Minsky then shut his eyes. \u201cWhy do you close your eyes?\u201d Sussman asked his teacher. \u201cSo that the room will be empty,\u201d replied Minsky. At that moment, Sussman was enlightened. We analyze shallow random networks with the help of concentration of measure inequalities. Specifically, we consider architectures that compute a weighted sum of their inputs after passing them through a bank of arbitrary randomized nonlinearities. We identify conditions under which these networks exhibit good classification performance, and bound their test error in terms of the size of the dataset and the number of random nonlinearities."
+            },
+            "slug": "Weighted-Sums-of-Random-Kitchen-Sinks-:-Replacing-Koan",
+            "title": {
+                "fragments": [],
+                "text": "Weighted Sums of Random Kitchen Sinks : Replacing minimization with randomization in learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work considers architectures that compute a weighted sum of their inputs after passing them through a bank of arbitrary randomized nonlinearities, and identifies conditions under which these networks exhibit good classification performance, and bound their test error in terms of the size of the dataset and the number of random non linearities."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707625"
+                        ],
+                        "name": "B. Sch\u00f6lkopf",
+                        "slug": "B.-Sch\u00f6lkopf",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Sch\u00f6lkopf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Sch\u00f6lkopf"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46234526"
+                        ],
+                        "name": "Alex Smola",
+                        "slug": "Alex-Smola",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Smola",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alex Smola"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145034054"
+                        ],
+                        "name": "K. M\u00fcller",
+                        "slug": "K.-M\u00fcller",
+                        "structuredName": {
+                            "firstName": "Klaus-Robert",
+                            "lastName": "M\u00fcller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. M\u00fcller"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6674407,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "3f600e6c6cf93e78c9e6e690443d6d22c4bf18b9",
+            "isKey": false,
+            "numCitedBy": 7881,
+            "numCiting": 62,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A new method for performing a nonlinear form of principal component analysis is proposed. By the use of integral operator kernel functions, one can efficiently compute principal components in high-dimensional feature spaces, related to input space by some nonlinear mapfor instance, the space of all possible five-pixel products in 16 16 images. We give the derivation of the method and present experimental results on polynomial feature extraction for pattern recognition."
+            },
+            "slug": "Nonlinear-Component-Analysis-as-a-Kernel-Eigenvalue-Sch\u00f6lkopf-Smola",
+            "title": {
+                "fragments": [],
+                "text": "Nonlinear Component Analysis as a Kernel Eigenvalue Problem"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "A new method for performing a nonlinear form of principal component analysis by the use of integral operator kernel functions is proposed and experimental results on polynomial feature extraction for pattern recognition are presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1644050191"
+                        ],
+                        "name": "G. LoweDavid",
+                        "slug": "G.-LoweDavid",
+                        "structuredName": {
+                            "firstName": "G",
+                            "lastName": "LoweDavid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. LoweDavid"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 40
+                            }
+                        ],
+                        "text": "The local features are SIFT descriptors [16] extracted from 16\u00d716 image patches."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 174065,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4cab9c4b571761203ed4c3a4c5a07dd615f57a91",
+            "isKey": false,
+            "numCitedBy": 25501,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a method for extracting distinctive invariant features from images that can be used to perform reliable matching between different views of an object or scene. The features are ..."
+            },
+            "slug": "Distinctive-Image-Features-from-Scale-Invariant-LoweDavid",
+            "title": {
+                "fragments": [],
+                "text": "Distinctive Image Features from Scale-Invariant Keypoints"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "This paper presents a method for extracting distinctive invariant features from images that can be used to perform reliable matching between different views of an object or scene."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2004
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 105,
+                                "start": 94
+                            }
+                        ],
+                        "text": "We illustrate our methodology in three publicly available computer vision datasets: Scene-15, Caltech-101 and Caltech-256."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 11,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Caltech-101 is one of the most frequently used benchmarks for image classification, and results obtained by different algorithms are available from the published papers, allowing direct comparisons."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 165,
+                                "start": 154
+                            }
+                        ],
+                        "text": "In experiments, we show that EMK are efficient and achieve state of the art classification results in three difficult computer vision datasets: Scene-15, Caltech-101 and Caltech-256."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 77
+                            }
+                        ],
+                        "text": "We use the same fixed \u03b3 = 1 for our SIFT descriptor in all datasets: Scene-15, Caltech-101 and Caltech-256, although a more careful selection is likely to further improve performance."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 25
+                            }
+                        ],
+                        "text": "Caltech-101: Caltech-101 [15] contains 9144 images from 101 object categories and a background category."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "One-shot learning of object"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "categories. PAMI,"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 91
+                            }
+                        ],
+                        "text": "If the pre-image constraints H = [\u03c8(z1), . . . , \u03c8(zD)] are dropped, it is easy to show that KPCA can be recovered."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 167,
+                                "start": 163
+                            }
+                        ],
+                        "text": "Another option would be to approximate each eigenvector with a single feature vector \u03c8(z) by solving the pre-image problem (z, \u03b2) = argminz,\u03b2 \u2016 \u2211F i=1 \u03b1i\u03c8(xi) \u2212 \u03b2\u03c8(z)\u20162, after KPCA."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 42
+                            }
+                        ],
+                        "text": "This faces two difficulties, however: (i) KPCA scales cubically in the number of selected local features, F ; (ii) O(Fmd) work is required to extract the set-level feature vector for one image, because the eigenvectors are linear combinations of the selected local feature vectors, \u2211F i=1 \u03b1i\u03c8(xi)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 48
+                            }
+                        ],
+                        "text": "One way is kernel principal component analysis (KPCA) [24] on a randomly selected pool of F local features, with the basis set to the topmost D eigenvectors."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 65
+                            }
+                        ],
+                        "text": "Although the first difficulty can be palliated by iterative KPCA [11], the secon d computational challenge remains."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 60
+                            }
+                        ],
+                        "text": "Although the first difficulty can be palliated by iterative KPCA [11], the second computational challenge remains."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 71
+                            }
+                        ],
+                        "text": "In addition, we use 10,000 randomly selected SIFT descriptors to learn KPCA-based local feature maps, which takes about 12 hours for the training and testing sets on the full Scene-15 dataset, respectively."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Iterative kernel pr  incipal component analysis for image modeling.PAMI"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2005
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 91
+                            }
+                        ],
+                        "text": "If the pre-image constraints H = [\u03c8(z1), . . . , \u03c8(zD)] are dropped, it is easy to show that KPCA can be recovered."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 167,
+                                "start": 163
+                            }
+                        ],
+                        "text": "Another option would be to approximate each eigenvector with a single feature vector \u03c8(z) by solving the pre-image problem (z, \u03b2) = argminz,\u03b2 \u2016 \u2211F i=1 \u03b1i\u03c8(xi) \u2212 \u03b2\u03c8(z)\u20162, after KPCA."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 42
+                            }
+                        ],
+                        "text": "This faces two difficulties, however: (i) KPCA scales cubically in the number of selected local features, F ; (ii) O(Fmd) work is required to extract the set-level feature vector for one image, because the eigenvectors are linear combinations of the selected local feature vectors, \u2211F i=1 \u03b1i\u03c8(xi)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 48
+                            }
+                        ],
+                        "text": "One way is kernel principal component analysis (KPCA) [24] on a randomly selected pool of F local features, with the basis set to the topmost D eigenvectors."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 60
+                            }
+                        ],
+                        "text": "Although the first difficulty can be palliated by iterative KPCA [11], the second computational challenge remains."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 94,
+                                "start": 90
+                            }
+                        ],
+                        "text": "How can we learn the basis vectors? One way is kernel principa l omponent analysis (KPCA) [24] on a randomly selected pool of F local features, with the basis set to the topmost D eigenvectors."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 71
+                            }
+                        ],
+                        "text": "In addition, we use 10,000 randomly selected SIFT descriptors to learn KPCA-based local feature maps, which takes about 12 hours for the training and testing sets on the full Scene-15 dataset, respectively."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Nonlinear comp  onent analysis as a kernel eigenvalue problem.Neural Computation"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[29] measure similarities based on angles between linear su bspaces spanned by local features in the two sets."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Learning over sets using kernel p rincipal angles.JMLR"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2003
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 83
+                            }
+                        ],
+                        "text": "The best result o n Caltech101 was obtained by combining multiple descriptor types [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "In defense of neare  st-n ighbor based image classification"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "InCVPR,"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 94,
+                                "start": 90
+                            }
+                        ],
+                        "text": "Since recent developments have shown that linear SVMs can be trained in linear complexity [25], there is no sub stantial cost added in the training phase."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Pegasos: P  rimal estimated sub-gradient solver for svm. InICML, pages 807\u2013814"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2007
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 40
+                            }
+                        ],
+                        "text": "The local fe tures are SIFT descriptors [16] extracted from 16\u00d716 image patches."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Distinctive image features from scale-invari  ant keypoints.IJCV"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2004
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 29
+                            }
+                        ],
+                        "text": "For example, the \u03c7(2) kernel [8] and the histogram intersection kernel [5] are designed t o compare histograms, hence they can be used as local kernels, if the features are histograms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Local f e tures and kernels for classification of texture and object categories: A comprehensive stud"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "y. IJCV,"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 41
+                            }
+                        ],
+                        "text": "A related method is the kernel cod eb ok [28], where a set-level feature is also extracted based on a local kernel , but with different feature map\u03c6(\u00b7)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Smeulde rs. K rnel codebooks for scene categorization"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "InECCV,"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 28,
+                                "start": 24
+                            }
+                        ],
+                        "text": "Caltech-101:Caltech-101 [15] contains 9144 images from 101 object categ ori s and a background category."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "One-shot learning of obj  ect categories"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PAMI"
+            },
+            "year": 2006
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 14,
+            "methodology": 21
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 41,
+        "totalPages": 5
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Efficient-Match-Kernel-between-Sets-of-Features-for-Bo-Sminchisescu/aa1fa18231b8c6b35a21796af446899fc681a107?sort=total-citations"
+}

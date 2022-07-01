@@ -1,0 +1,2334 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35188630"
+                        ],
+                        "name": "George E. Dahl",
+                        "slug": "George-E.-Dahl",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Dahl",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "George E. Dahl"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144580027"
+                        ],
+                        "name": "Dong Yu",
+                        "slug": "Dong-Yu",
+                        "structuredName": {
+                            "firstName": "Dong",
+                            "lastName": "Yu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dong Yu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144718788"
+                        ],
+                        "name": "L. Deng",
+                        "slug": "L.-Deng",
+                        "structuredName": {
+                            "firstName": "Li",
+                            "lastName": "Deng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Deng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1723644"
+                        ],
+                        "name": "A. Acero",
+                        "slug": "A.-Acero",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Acero",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Acero"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 51,
+                                "start": 45
+                            }
+                        ],
+                        "text": "In this paper, we have scaled up CD-DNN-HMMs [5, 6] to large data sets for speech-to-text transcription."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 91,
+                                "start": 85
+                            }
+                        ],
+                        "text": "We have demonstrated that recent improvements from using CD-DNNHMMs on smaller tasks [5, 6] do carry over to large corpora and speech-to-text transcription, achieving up to 33% relative WER reduction over a discriminatively trained GMM-HMM."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 23
+                            }
+                        ],
+                        "text": "Second, we advance the CD-DNN-HMMs by introducing weight sparseness and the related learning strategy and demonstrate that this can reduce recognition error or model size."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 49
+                            }
+                        ],
+                        "text": "For a more detailed description, please refer to [6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 58
+                            }
+                        ],
+                        "text": "Context-dependent deep-neural-network HMMs, or CDDNN-HMMs [5, 6], apply the classical ANN-HMMs of the 90\u2019s to traditional tied-state triphones directly, exploiting Hinton\u2019s deep-belief-network (DBN) pre-training procedure."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 82
+                            }
+                        ],
+                        "text": "The WER results presented may further be improved by tuning transition parameters [6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 102
+                            }
+                        ],
+                        "text": "We believe that direct modeling of tied triphone states is the enabler\nof the superior performance of CD-DNN-HMMs."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 102
+                            }
+                        ],
+                        "text": "Table 1 shows the core result: The word-error rate (WER) is reduced from the GMM-HMM\u2019s 27.4% (BMMI) to CD-DNN-HMM\u2019s 18.5%\u2014a 33% relative reduction, which is quite significant."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 92
+                            }
+                        ],
+                        "text": "In this section, we will describe the process and some practical considerations in training CD-DNN-HMMs."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 33
+                            }
+                        ],
+                        "text": "We evaluate the effectiveness of CD-DNN-HMMs on the task of speech-to-text transcription using the 309-hour SwitchboardI training set [14]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 11,
+                                "start": 0
+                            }
+                        ],
+                        "text": "CD-DNN-HMMs combine classic artificial-neural-network HMMs with traditional tied-state triphones and deep-beliefnetwork pre-training."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 26
+                            }
+                        ],
+                        "text": "Even without pretraining, CD-DNN-HMMs with two or more hidden layers easily outperform the discriminatively trained GMM-HMMs."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 218,
+                                "start": 207
+                            }
+                        ],
+                        "text": "Third, we present the statistical view of the multi-layer perceptron (MLP) and DBN and provide empirical evidence for understanding which factors contribute most to the accuracy improvements achieved by the CD-DNN-HMMs."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 201,
+                                "start": 190
+                            }
+                        ],
+                        "text": "The two main challenges we are facing are to improve efficiency of the training to scale up further to thousands of hours of data, and to develop effective speaker-adaptation techniques for CD-DNN-HMMs."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 115,
+                                "start": 109
+                            }
+                        ],
+                        "text": "The minibatch size and learning rates used in this work are very close to what have been used in other tasks [5, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 212,
+                                "start": 206
+                            }
+                        ],
+                        "text": "This was shown to lead to a very promising and possibly disruptive acoustic model as indicated by a 16% relative recognition error reduction over discriminatively trained GMM-HMMs on a business search task [5, 6], which features short query utterances, tens of hours of training data, and hundreds of tied states."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14862572,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6658bbf68995731b2083195054ff45b4eca38b3a",
+            "isKey": false,
+            "numCitedBy": 2677,
+            "numCiting": 93,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a novel context-dependent (CD) model for large-vocabulary speech recognition (LVSR) that leverages recent advances in using deep belief networks for phone recognition. We describe a pre-trained deep neural network hidden Markov model (DNN-HMM) hybrid architecture that trains the DNN to produce a distribution over senones (tied triphone states) as its output. The deep belief network pre-training algorithm is a robust and often helpful way to initialize deep neural networks generatively that can aid in optimization and reduce generalization error. We illustrate the key components of our model, describe the procedure for applying CD-DNN-HMMs to LVSR, and analyze the effects of various modeling choices on performance. Experiments on a challenging business search dataset demonstrate that CD-DNN-HMMs can significantly outperform the conventional context-dependent Gaussian mixture model (GMM)-HMMs, with an absolute sentence accuracy improvement of 5.8% and 9.2% (or relative error reduction of 16.0% and 23.2%) over the CD-GMM-HMMs trained using the minimum phone error rate (MPE) and maximum-likelihood (ML) criteria, respectively."
+            },
+            "slug": "Context-Dependent-Pre-Trained-Deep-Neural-Networks-Dahl-Yu",
+            "title": {
+                "fragments": [],
+                "text": "Context-Dependent Pre-Trained Deep Neural Networks for Large-Vocabulary Speech Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A pre-trained deep neural network hidden Markov model (DNN-HMM) hybrid architecture that trains the DNN to produce a distribution over senones (tied triphone states) as its output that can significantly outperform the conventional context-dependent Gaussian mixture model (GMM)-HMMs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Audio, Speech, and Language Processing"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40360972"
+                        ],
+                        "name": "Abdel-rahman Mohamed",
+                        "slug": "Abdel-rahman-Mohamed",
+                        "structuredName": {
+                            "firstName": "Abdel-rahman",
+                            "lastName": "Mohamed",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Abdel-rahman Mohamed"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35188630"
+                        ],
+                        "name": "George E. Dahl",
+                        "slug": "George-E.-Dahl",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Dahl",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "George E. Dahl"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 131773,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f37cfdc4520c56c1eaf87cee5ec2a4028ceaa9c5",
+            "isKey": false,
+            "numCitedBy": 406,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Hidden Markov Models (HMMs) have been the state-of-the-art techniques for acoustic modeling despite their unrealistic independence assumptions and the very limited representational capacity of their hidden states. There are many proposals in the research community for deeper models that are capable of modeling the many types of variability present in the speech generation p r cess. Deep Belief Networks (DBNs) have recently proved to be very effective fo r a variety of machine learning problems and this paper applies DBNs to acous ti modeling. On the standard TIMIT corpus, DBNs consistently outperform ot her techniques and the best DBN achieves a phone error rate (PER) of 23.0% on the T IMIT core test set."
+            },
+            "slug": "Deep-Belief-Networks-for-phone-recognition-Mohamed-Dahl",
+            "title": {
+                "fragments": [],
+                "text": "Deep Belief Networks for phone recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Deep Belief Networks (DBNs) have recently proved to be very effective in a variety of machine learning problems and this paper applies DBNs to acous ti modeling."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145660147"
+                        ],
+                        "name": "H. Franco",
+                        "slug": "H.-Franco",
+                        "structuredName": {
+                            "firstName": "Horacio",
+                            "lastName": "Franco",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Franco"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2111403728"
+                        ],
+                        "name": "Michael Cohen",
+                        "slug": "Michael-Cohen",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Cohen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael Cohen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144798098"
+                        ],
+                        "name": "N. Morgan",
+                        "slug": "N.-Morgan",
+                        "structuredName": {
+                            "firstName": "Nelson",
+                            "lastName": "Morgan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Morgan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2681887"
+                        ],
+                        "name": "D. Rumelhart",
+                        "slug": "D.-Rumelhart",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Rumelhart",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Rumelhart"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2242830"
+                        ],
+                        "name": "Victor Abrash",
+                        "slug": "Victor-Abrash",
+                        "structuredName": {
+                            "firstName": "Victor",
+                            "lastName": "Abrash",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Victor Abrash"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "into a monophone and a context-dependent part [ 3 ], or hierarchically decomposed [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 37480532,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "583f48d72127c00e0499513c1b2f4e8ac71e4406",
+            "isKey": false,
+            "numCitedBy": 57,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract In this paper we present a training method and a network architecture for estimating context-dependent observation probabilities in the framework of a hybrid hidden Markov model (HMM)/multi layer perceptron (MLP) speaker-independent continuous speech recognition system. The context-dependent modeling approach we present here computes the HMM context-dependent observation probabilities using a Bayesian factorization in terms of context-conditioned posterior phone probabilities which are computed with a set of MLPs, one for every relevant context. The proposed network architecture shares the input-to-hidden layer among the set of context dependent MLPs in order to reduce the number of independent parameters. Multiple states for phone models with different context dependence for each state are used to model the different context effects at the beginning and end of phonetic segments. A new training procedure that \"smooths\" networks with different degrees of context dependence is proposed to obtain a robust estimate of the context-dependent probabilities. We have used this new architecture to model generalized biphone phonetic contexts. Tests with the speaker-independent DARPA Resource Management database have shown average reductions in word error rates of 28% using a word-pair grammar, compared to our earlier context-independent HMM/MLP hybrid."
+            },
+            "slug": "Context-dependent-connectionist-probability-in-a-Franco-Cohen",
+            "title": {
+                "fragments": [],
+                "text": "Context-dependent connectionist probability estimation in a hybrid hidden Markov model-neural net speech recognition system"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 50,
+                "text": "A new training procedure that \"smooths\" networks with different degrees of context dependence is proposed to obtain a robust estimate of the context-dependent probabilities of the HMM/MLP speaker-independent continuous speech recognition system."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Speech Lang."
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144657062"
+                        ],
+                        "name": "J. Fritsch",
+                        "slug": "J.-Fritsch",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Fritsch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Fritsch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48427153"
+                        ],
+                        "name": "M. Finke",
+                        "slug": "M.-Finke",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Finke",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Finke"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 83,
+                                "start": 80
+                            }
+                        ],
+                        "text": "into a monophone and a context-dependent part [3], or hierarchically decomposed [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6491398,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7f58b2140534a391c2decb4ab09ab4cecdb548a4",
+            "isKey": false,
+            "numCitedBy": 27,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present the ACID/HNN framework, a principled approach to hierarchical connectionist acoustic modeling in large vocabulary conversational speech recognition (LVCSR). Our approach consists of an agglomerative clustering algorithm based on information divergence (ACID) to automatically design and robustly estimate hierarchies of neural networks (HNN) for arbitrarily large sets of context-dependent decision tree clustered HMM states. We argue that a hierarchical approach is crucial in applying locally discriminative connectionist models to the typically very large state spaces observed in LVCSR systems. We evaluate the ACID/HNN framework on the Switchboard conversational telephone speech corpus. Furthermore, we focus on the benefits of the proposed connectionist acoustic model, namely exploiting the hierarchical structure for speaker adaptation and decoding speed-up algorithms."
+            },
+            "slug": "ACID/HNN:-clustering-hierarchies-of-neural-networks-Fritsch-Finke",
+            "title": {
+                "fragments": [],
+                "text": "ACID/HNN: clustering hierarchies of neural networks for context-dependent connectionist acoustic modeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "It is argued that a hierarchical approach is crucial in applying locally discriminative connectionist models to the typically very large state spaces observed in LVCSR systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 1998 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP '98 (Cat. No.98CH36181)"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144580027"
+                        ],
+                        "name": "Dong Yu",
+                        "slug": "Dong-Yu",
+                        "structuredName": {
+                            "firstName": "Dong",
+                            "lastName": "Yu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dong Yu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144718788"
+                        ],
+                        "name": "L. Deng",
+                        "slug": "L.-Deng",
+                        "structuredName": {
+                            "firstName": "Li",
+                            "lastName": "Deng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Deng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35188630"
+                        ],
+                        "name": "George E. Dahl",
+                        "slug": "George-E.-Dahl",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Dahl",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "George E. Dahl"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Only recently did Yu et al. discover that doing so is not only feasible but works very well [ 5 ].,DNN-HMMs [ 5 , 6], apply the classical ANN-HMMs of the 90\u2019s to traditional tied-state triphones directly, exploiting Hinton\u2019s deep-belief-network (DBN) pre-training procedure.,This was shown to lead to a very promising and possibly disruptive acoustic model as indicated by a 16% relative recognition error reduction over discriminatively trained GMM-HMMs on a business search task [ 5 , 6], which features short query utterances, tens of hours of training data, and hundreds of tied states.,It had long been assumed that the thousands of triphone states were too many to be accurately modeled by an MLP, but [ 5 ] has shown that doing so is not only feasible but works very well.,However, this seems to be not critical [ 5 ].,The minibatch size and learning rates used in this work are very close to what have been used in other tasks [ 5 , 6].,In this paper, we have scaled up CD-DNN-HMMs [ 5 , 6] to large data sets for speech-to-text transcription.,We have demonstrated that recent improvements from using CD-DNN-HMMs on smaller tasks [ 5 , 6] do carry over to large corpora and speech-to-text transcription, achieving up to 33% relative WER reduction over a discriminatively trained GMM-HMM."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 18141431,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ecd4bc32bb2717c96f76dd100fcd1255a07bd656",
+            "isKey": false,
+            "numCitedBy": 206,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recently, deep learning techniques have been successfully applied to automatic speech recognition tasks -first to phonetic recognition with context-independent deep belief network (DBN) hidden Markov models (HMMs) and later to large vocabulary continuous speech recognition using context-dependent (CD) DBN-HMMs. In this paper, we report our most recent experiments designed to understand the roles of the two main phases of the DBN learning -pre-training and fine tuning -in the recognition performance of a CD-DBN-HMM based large-vocabulary speech recognizer. As expected, we show that pre-training can initialize weights to a point in the space where fine-tuning can be effective and thus is crucial in training deep structured models. However, a moderate increase of the amount of unlabeled pre-training data has an insignificant effect on the final recognition results as long as the original training size is sufficiently large to initialize the DBN weights. On the other hand, with additional labeled training data, the fine-tuning phase of DBN training can significantly improve the recognition accuracy."
+            },
+            "slug": "Roles-of-Pre-Training-and-Fine-Tuning-in-DBN-HMMs-Yu-Deng",
+            "title": {
+                "fragments": [],
+                "text": "Roles of Pre-Training and Fine-Tuning in Context-Dependent DBN-HMMs for Real-World Speech Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "It is shown that pre-training can initialize weights to a point in the space where fine-tuning can be effective and thus is crucial in training deep structured models and in the recognition performance of a CD-DBN-HMM based large-vocabulary speech recognizer."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1762744"
+                        ],
+                        "name": "A. Stolcke",
+                        "slug": "A.-Stolcke",
+                        "structuredName": {
+                            "firstName": "Andreas",
+                            "lastName": "Stolcke",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Stolcke"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2108424673"
+                        ],
+                        "name": "Barry Y. Chen",
+                        "slug": "Barry-Y.-Chen",
+                        "structuredName": {
+                            "firstName": "Barry",
+                            "lastName": "Chen",
+                            "middleNames": [
+                                "Y."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Barry Y. Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145660147"
+                        ],
+                        "name": "H. Franco",
+                        "slug": "H.-Franco",
+                        "structuredName": {
+                            "firstName": "Horacio",
+                            "lastName": "Franco",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Franco"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2084801"
+                        ],
+                        "name": "V. R. Gadde",
+                        "slug": "V.-R.-Gadde",
+                        "structuredName": {
+                            "firstName": "Venkata",
+                            "lastName": "Gadde",
+                            "middleNames": [
+                                "Ramana",
+                                "Rao"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. R. Gadde"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1790301"
+                        ],
+                        "name": "M. Graciarena",
+                        "slug": "M.-Graciarena",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Graciarena",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Graciarena"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144091892"
+                        ],
+                        "name": "M. Hwang",
+                        "slug": "M.-Hwang",
+                        "structuredName": {
+                            "firstName": "Mei-Yuh",
+                            "lastName": "Hwang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hwang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1783839"
+                        ],
+                        "name": "Katrin Kirchhoff",
+                        "slug": "Katrin-Kirchhoff",
+                        "structuredName": {
+                            "firstName": "Katrin",
+                            "lastName": "Kirchhoff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Katrin Kirchhoff"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33638380"
+                        ],
+                        "name": "Arindam Mandal",
+                        "slug": "Arindam-Mandal",
+                        "structuredName": {
+                            "firstName": "Arindam",
+                            "lastName": "Mandal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Arindam Mandal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144798098"
+                        ],
+                        "name": "N. Morgan",
+                        "slug": "N.-Morgan",
+                        "structuredName": {
+                            "firstName": "Nelson",
+                            "lastName": "Morgan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Morgan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143722633"
+                        ],
+                        "name": "X. Lei",
+                        "slug": "X.-Lei",
+                        "structuredName": {
+                            "firstName": "Xin",
+                            "lastName": "Lei",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Lei"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2556936"
+                        ],
+                        "name": "Tim Ng",
+                        "slug": "Tim-Ng",
+                        "structuredName": {
+                            "firstName": "Tim",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tim Ng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144339506"
+                        ],
+                        "name": "Mari Ostendorf",
+                        "slug": "Mari-Ostendorf",
+                        "structuredName": {
+                            "firstName": "Mari",
+                            "lastName": "Ostendorf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mari Ostendorf"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145468185"
+                        ],
+                        "name": "M. S\u00f6nmez",
+                        "slug": "M.-S\u00f6nmez",
+                        "structuredName": {
+                            "firstName": "M.",
+                            "lastName": "S\u00f6nmez",
+                            "middleNames": [
+                                "Kemal"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. S\u00f6nmez"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34847166"
+                        ],
+                        "name": "A. Venkataraman",
+                        "slug": "A.-Venkataraman",
+                        "structuredName": {
+                            "firstName": "Anand",
+                            "lastName": "Venkataraman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Venkataraman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2767150"
+                        ],
+                        "name": "D. Vergyri",
+                        "slug": "D.-Vergyri",
+                        "structuredName": {
+                            "firstName": "Dimitra",
+                            "lastName": "Vergyri",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Vergyri"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47825073"
+                        ],
+                        "name": "Weiqi Wang",
+                        "slug": "Weiqi-Wang",
+                        "structuredName": {
+                            "firstName": "Weiqi",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Weiqi Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143851659"
+                        ],
+                        "name": "Jing Zheng",
+                        "slug": "Jing-Zheng",
+                        "structuredName": {
+                            "firstName": "Jing",
+                            "lastName": "Zheng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jing Zheng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "9024683"
+                        ],
+                        "name": "Q. Zhu",
+                        "slug": "Q.-Zhu",
+                        "structuredName": {
+                            "firstName": "Qifeng",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Q. Zhu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 85
+                            }
+                        ],
+                        "text": "We should note here that ANNs have been trained on up to 2000 hours of speech before [7], but with much fewer output units (monophones) and fewer hidden layers."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 16
+                            }
+                        ],
+                        "text": "For comparison, [7] reports around 17% on this task, and results on more recent but similar test sets are around 17-18% [15]."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 3126850,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4e3ba28fb3493afd2c3db4bd8be6d8d41cf3647a",
+            "isKey": false,
+            "numCitedBy": 96,
+            "numCiting": 80,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We summarize recent progress in automatic speech-to-text transcription at SRI, ICSI, and the University of Washington. The work encompasses all components of speech modeling found in a state-of-the-art recognition system, from acoustic features, to acoustic modeling and adaptation, to language modeling. In the front end, we experimented with nonstandard features, including various measures of voicing, discriminative phone posterior features estimated by multilayer perceptrons, and a novel phone-level macro-averaging for cepstral normalization. Acoustic modeling was improved with combinations of front ends operating at multiple frame rates, as well as by modifications to the standard methods for discriminative Gaussian estimation. We show that acoustic adaptation can be improved by predicting the optimal regression class complexity for a given speaker. Language modeling innovations include the use of a syntax-motivated almost-parsing language model, as well as principled vocabulary-selection techniques. Finally, we address portability issues, such as the use of imperfect training transcripts, and language-specific adjustments required for recognition of Arabic and Mandarin"
+            },
+            "slug": "Recent-innovations-in-speech-to-text-transcription-Stolcke-Chen",
+            "title": {
+                "fragments": [],
+                "text": "Recent innovations in speech-to-text transcription at SRI-ICSI-UW"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "It is shown that acoustic adaptation can be improved by predicting the optimal regression class complexity for a given speaker, and speech modeling innovations include the use of a syntax-motivated almost-parsing language model, as well as principled vocabulary-selection techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Audio, Speech, and Language Processing"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145086187"
+                        ],
+                        "name": "S. Renals",
+                        "slug": "S.-Renals",
+                        "structuredName": {
+                            "firstName": "Steve",
+                            "lastName": "Renals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Renals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144798098"
+                        ],
+                        "name": "N. Morgan",
+                        "slug": "N.-Morgan",
+                        "structuredName": {
+                            "firstName": "Nelson",
+                            "lastName": "Morgan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Morgan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733733"
+                        ],
+                        "name": "H. Bourlard",
+                        "slug": "H.-Bourlard",
+                        "structuredName": {
+                            "firstName": "Herv\u00e9",
+                            "lastName": "Bourlard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Bourlard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2111403728"
+                        ],
+                        "name": "Michael Cohen",
+                        "slug": "Michael-Cohen",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Cohen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael Cohen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145660147"
+                        ],
+                        "name": "H. Franco",
+                        "slug": "H.-Franco",
+                        "structuredName": {
+                            "firstName": "Horacio",
+                            "lastName": "Franco",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Franco"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 142,
+                                "start": 139
+                            }
+                        ],
+                        "text": "Since the early 90\u2019s, artificial neural networks (ANNs) have been used to model the state emission probabilities of HMM speech recognizers [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 47
+                            }
+                        ],
+                        "text": "Following the traditional ANN-HMMs of the 90\u2019s [1], we replace the acoustic model\u2019s Gaussian mixtures with an MLP and compute the HMM\u2019s state emission likelihoods po|s(o|s) by converting state posteriors obtained from the MLP to likelihoods:"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2077908,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a08c99425ad94eed67d059813511fe9ca55e73eb",
+            "isKey": false,
+            "numCitedBy": 292,
+            "numCiting": 131,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The authors are concerned with integrating connectionist networks into a hidden Markov model (HMM) speech recognition system. This is achieved through a statistical interpretation of connectionist networks as probability estimators. They review the basis of HMM speech recognition and point out the possible benefits of incorporating connectionist networks. Issues necessary to the construction of a connectionist HMM recognition system are discussed, including choice of connectionist probability estimator. They describe the performance of such a system using a multilayer perceptron probability estimator evaluated on the speaker-independent DARPA Resource Management database. In conclusion, they show that a connectionist component improves a state-of-the-art HMM system. >"
+            },
+            "slug": "Connectionist-probability-estimators-in-HMM-speech-Renals-Morgan",
+            "title": {
+                "fragments": [],
+                "text": "Connectionist probability estimators in HMM speech recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "It is shown that a connectionist component improves a state-of-the-art HMM system through a statistical interpretation of connectionist networks as probability estimators."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Speech Audio Process."
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145058181"
+                        ],
+                        "name": "H. Hon",
+                        "slug": "H.-Hon",
+                        "structuredName": {
+                            "firstName": "Hsiao-Wuen",
+                            "lastName": "Hon",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Hon"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 35
+                            }
+                        ],
+                        "text": "CART-clustered crossword triphones [2]), ANN-HMMs were never used to do so directly."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 62769681,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "084fe54d45c8014d76a1862cd0e2fa2a0187210c",
+            "isKey": false,
+            "numCitedBy": 36,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Vocabulary-independent-speech-recognition:-the-Hon",
+            "title": {
+                "fragments": [],
+                "text": "Vocabulary-independent speech recognition: the Vocind System"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2681887"
+                        ],
+                        "name": "D. Rumelhart",
+                        "slug": "D.-Rumelhart",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Rumelhart",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Rumelhart"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2116648700"
+                        ],
+                        "name": "Ronald J. Williams",
+                        "slug": "Ronald-J.-Williams",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Williams",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronald J. Williams"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 33
+                            }
+                        ],
+                        "text": "Following the original BP paper [10], we also smoothe the gradients with a firstorder low-pass (\u201cmomentum,\u201d time constant \u2248 25 seconds)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 205001834,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "052b1d8ce63b07fec3de9dbb583772d860b7c769",
+            "isKey": false,
+            "numCitedBy": 20330,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a new learning procedure, back-propagation, for networks of neurone-like units. The procedure repeatedly adjusts the weights of the connections in the network so as to minimize a measure of the difference between the actual output vector of the net and the desired output vector. As a result of the weight adjustments, internal \u2018hidden\u2019 units which are not part of the input or output come to represent important features of the task domain, and the regularities in the task are captured by the interactions of these units. The ability to create useful new features distinguishes back-propagation from earlier, simpler methods such as the perceptron-convergence procedure1."
+            },
+            "slug": "Learning-representations-by-back-propagating-errors-Rumelhart-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "Learning representations by back-propagating errors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 67,
+                "text": "Back-propagation repeatedly adjusts the weights of the connections in the network so as to minimize a measure of the difference between the actual output vector of the net and the desired output vector, which helps to represent important features of the task domain."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Nature"
+            },
+            "year": 1986
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2217144"
+                        ],
+                        "name": "Simon Osindero",
+                        "slug": "Simon-Osindero",
+                        "structuredName": {
+                            "firstName": "Simon",
+                            "lastName": "Osindero",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Simon Osindero"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1725303"
+                        ],
+                        "name": "Y. Teh",
+                        "slug": "Y.-Teh",
+                        "structuredName": {
+                            "firstName": "Yee",
+                            "lastName": "Teh",
+                            "middleNames": [
+                                "Whye"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Teh"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 169,
+                                "start": 163
+                            }
+                        ],
+                        "text": "Context-dependent deep-neural-network HMMs, or CDDNN-HMMs [5, 6], apply the classical ANN-HMMs of the 90\u2019s to traditional tied-state triphones directly, exploiting Hinton\u2019s deep-belief-network (DBN) pre-training procedure."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 116,
+                                "start": 112
+                            }
+                        ],
+                        "text": "Hinton and many others have found that initializing MLPs with pretrained parameters never hurts and often helps [11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 4
+                            }
+                        ],
+                        "text": "The RBM parameters can be efficiently trained in an unsupervised fashion by maximizing the likelihood L =\u220f\nt \u2211 h Ph,v(h, v(t)) over training samples v(t) with the approximate contrastive divergence algorithm [11, 12]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "RBMs are not scale-invariant, so the training corpus is normalized to zero mean and unit variance [13]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 119,
+                                "start": 116
+                            }
+                        ],
+                        "text": "The DBN pre-training procedure treats each consecutive pair of layers in the MLP as a restricted Boltzmann machine (RBM) [11] whose joint probability is defined as\nPh,v(h, v) = 1 Zh,v \u00b7 evT Wh+vT b+aT h\nfor the Bernoulli-Bernoulli RBM applied to binary v with a second bias vector b and normalization term Zh,v , and\nPh,v(h, v) = 1 Zh,v \u00b7 evT Wh+(v\u2212b)T (v\u2212b)+aT h\nfor the Gaussian-Bernoulli RBM applied to continuous v."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 121
+                            }
+                        ],
+                        "text": "The DBN pre-training procedure treats each consecutive pair of layers in the MLP as a restricted Boltzmann machine (RBM) [11] whose joint probability is defined as"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 39,
+                                "start": 33
+                            }
+                        ],
+                        "text": "[13] A. Mohamed, G. Dahl, and G. Hinton, \u201cDeep Belief Networks for Phone Recognition,\u201d in Proc."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 14,
+                                "start": 8
+                            }
+                        ],
+                        "text": "[11] G. Hinton, S. Osindero, and Y. Teh, \u201cA Fast Learning Algorithm for Deep Belief Nets\u201d, Neural Computation, vol. 18, pp. 1527\u2013 1554, 2006."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The deep belief network (DBN), proposed by Hinton [11], provides a new way to train deep generative models."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 28,
+                                "start": 22
+                            }
+                        ],
+                        "text": "[10] D. Rumelhart, G. Hinton, and R. Williams, \u201cLearning Representations By Back-Propagating Errors,\u201d Nature, vol. 323, Oct. 1986."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 109,
+                                "start": 101
+                            }
+                        ],
+                        "text": "t \u2211 h Ph,v(h, v(t)) over training samples v(t) with the approximate contrastive divergence algorithm [11, 12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 133,
+                                "start": 129
+                            }
+                        ],
+                        "text": "With mini-batches, much of the algorithm can be written as operations on large matrices, for which GPGPUs are an excellent match [11]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 14,
+                                "start": 8
+                            }
+                        ],
+                        "text": "[12] G. Hinton, \u201cA Practical Guide to Training Restricted Boltzmann Machines\u201d, Technical Report UTML TR 2010\u2013003, University of Toronto, 2010."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 2309950,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8978cf7574ceb35f4c3096be768c7547b28a35d0",
+            "isKey": true,
+            "numCitedBy": 13408,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We show how to use complementary priors to eliminate the explaining-away effects that make inference difficult in densely connected belief nets that have many hidden layers. Using complementary priors, we derive a fast, greedy algorithm that can learn deep, directed belief networks one layer at a time, provided the top two layers form an undirected associative memory. The fast, greedy algorithm is used to initialize a slower learning procedure that fine-tunes the weights using a contrastive version of the wake-sleep algorithm. After fine-tuning, a network with three hidden layers forms a very good generative model of the joint distribution of handwritten digit images and their labels. This generative model gives better digit classification than the best discriminative learning algorithms. The low-dimensional manifolds on which the digits lie are modeled by long ravines in the free-energy landscape of the top-level associative memory, and it is easy to explore these ravines by using the directed connections to display what the associative memory has in mind."
+            },
+            "slug": "A-Fast-Learning-Algorithm-for-Deep-Belief-Nets-Hinton-Osindero",
+            "title": {
+                "fragments": [],
+                "text": "A Fast Learning Algorithm for Deep Belief Nets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "A fast, greedy algorithm is derived that can learn deep, directed belief networks one layer at a time, provided the top two layers form an undirected associative memory."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 109,
+                                "start": 101
+                            }
+                        ],
+                        "text": "t \u2211 h Ph,v(h, v(t)) over training samples v(t) with the approximate contrastive divergence algorithm [11, 12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 34
+                            }
+                        ],
+                        "text": "We use the specific form given in [12]:"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 21145246,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e95d3934e51107da7610acd0b1bcb6551671f9f1",
+            "isKey": false,
+            "numCitedBy": 2744,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Restricted Boltzmann machines (RBMs) have been used as generative models of many different types of data. RBMs are usually trained using the contrastive divergence learning procedure. This requires a certain amount of practical experience to decide how to set the values of numerical meta-parameters. Over the last few years, the machine learning group at the University of Toronto has acquired considerable expertise at training RBMs and this guide is an attempt to share this expertise with other machine learning researchers."
+            },
+            "slug": "A-Practical-Guide-to-Training-Restricted-Boltzmann-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "A Practical Guide to Training Restricted Boltzmann Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This guide is an attempt to share expertise at training restricted Boltzmann machines with other machine learning researchers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks: Tricks of the Trade"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1796044"
+                        ],
+                        "name": "L. Saul",
+                        "slug": "L.-Saul",
+                        "structuredName": {
+                            "firstName": "Lawrence",
+                            "lastName": "Saul",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Saul"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35132120"
+                        ],
+                        "name": "T. Jaakkola",
+                        "slug": "T.-Jaakkola",
+                        "structuredName": {
+                            "firstName": "T.",
+                            "lastName": "Jaakkola",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Jaakkola"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694621"
+                        ],
+                        "name": "Michael I. Jordan",
+                        "slug": "Michael-I.-Jordan",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jordan",
+                            "middleNames": [
+                                "I."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael I. Jordan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 99
+                            }
+                        ],
+                        "text": "An effective practical trick is to replace the marginalization with the \u201cmean-field approximation\u201d [9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7424318,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0a79433b5feacd9e8feeafa629dae5a85f362fef",
+            "isKey": false,
+            "numCitedBy": 438,
+            "numCiting": 57,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We develop a mean field theory for sigmoid belief networks based on ideas from statistical mechanics. Our mean field theory provides a tractable approximation to the true probability distribution in these networks; it also yields a lower bound on the likelihood of evidence. We demonstrate the utility of this framework on a benchmark problem in statistical pattern recognition-the classification of handwritten digits."
+            },
+            "slug": "Mean-Field-Theory-for-Sigmoid-Belief-Networks-Saul-Jaakkola",
+            "title": {
+                "fragments": [],
+                "text": "Mean Field Theory for Sigmoid Belief Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 64,
+                "text": "The utility of a mean field theory for sigmoid belief networks based on ideas from statistical mechanics is demonstrated on a benchmark problem in statistical pattern recognition-the classification of handwritten digits."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Artif. Intell. Res."
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51083130"
+                        ],
+                        "name": "F. Rosenblatt",
+                        "slug": "F.-Rosenblatt",
+                        "structuredName": {
+                            "firstName": "Frank",
+                            "lastName": "Rosenblatt",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Rosenblatt"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 75
+                            }
+                        ],
+                        "text": "A deep neural network (DNN) is a conventional multi-layer perceptron (MLP, [8]) with many hidden layers, optionally initialized using the DBN pre-training algorithm."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 62710001,
+            "fieldsOfStudy": [
+                "Biology"
+            ],
+            "id": "9b486c647916df9f8be0f8d4fc5c94c493bfaa80",
+            "isKey": false,
+            "numCitedBy": 1904,
+            "numCiting": 77,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract : Part I attempts to review the background, basic sources of data, concepts, and methodology to be employed in the study of perceptrons. In Chapter 2, a brief review of the main alternative approaches to the development of brain models is presented. Chapter 3 considers the physiological and psychological criteria for a suitable model, and attempts to evaluate the empirical evidence which is available on several important issues. Chapter 4 contains basic definitions and some of the notation to be used in later sections are presented. Parts II and III are devoted to a summary of the established theoretical results obtained to date. Part II (Chapters 5 through 14) deals with the theory of three-layer series-coupled perceptrons, on which most work has been done to date. Part III (Chapters 15 through 20) deals with the theory of multi-layer and cross-coupled perceptrons. Part IV is concerned with more speculative models and problems for future analysis. Of necessity, the final chapters become increasingly heuristic in character, as the theory of perceptrons is not yet complete, and new possibilities are continually coming to light."
+            },
+            "slug": "PRINCIPLES-OF-NEURODYNAMICS.-PERCEPTRONS-AND-THE-OF-Rosenblatt",
+            "title": {
+                "fragments": [],
+                "text": "PRINCIPLES OF NEURODYNAMICS. PERCEPTRONS AND THE THEORY OF BRAIN MECHANISMS"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "The background, basic sources of data, concepts, and methodology to be employed in the study of perceptrons are reviewed, and some of the notation to be used in later sections are presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1963
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "By using CD-DNN-HMMs, a one-third word-error reduction has been achieved on a difficult benchmark task, compared to a discriminatively trained conventional CD-GMM-HMM [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "This work describes our subsequent efforts [4] on scaling it up in terms of training-data size (from 24 hours to 309), model complexity (from 761 output classes to 9304), depth (up to 9 hidden layers), and task (from"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Algorithm 1 summarizes the training procedure [4]."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Conversational Speech Transcription Using Context-Dependent Deep Neural Networks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Interspeech 2011"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Voicemail Corpus Part I and II Linguistic Data Consortium"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Voicemail Corpus Part I and II Linguistic Data Consortium"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 134
+                            }
+                        ],
+                        "text": "We evaluate the effectiveness of CD-DNN-HMMs on the task of speech-to-text transcription using the 309-hour SwitchboardI training set [14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Switchboard-1 Release 2,"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Linguistic Data Consortium, Philadelphia,"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "IEEE Trans. Audio, Speech, and Lang. Processing, Special Section on Rich Transcription"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Audio, Speech, and Lang. Processing, Special Section on Rich Transcription"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Switchboard-1 Release 2 Linguistic Data Consortium"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Switchboard-1 Release 2 Linguistic Data Consortium"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 161,
+                                "start": 157
+                            }
+                        ],
+                        "text": "Much of the gain also carries over to four less well-matched test sets\u2014the cell-phone SW portion of RT03S, 110 in-house voice-mails, 249 LDC voicemails from [16], and a 55-minute in-house set of wideband recordings of teleconferences."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Voicemail Corpus Part I and II,"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Linguistic Data Consortium, Philadelphia,"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 98
+                            }
+                        ],
+                        "text": "RBMs are not scale-invariant, so the training corpus is normalized to zero mean and unit variance [13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "and G"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Hinton, \u201cDeep Belief Networks for Phone Recognition,\u201d in Proc. NIPS Workshop Deep Learning for Speech Recognition"
+            },
+            "year": 2009
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 8,
+            "methodology": 10
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 20,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Conversational-Speech-Transcription-Using-Deep-Seide-Li/473f0739666af2791ad6592822118240ed968b70?sort=total-citations"
+}

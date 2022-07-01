@@ -1,0 +1,4138 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2918196"
+                        ],
+                        "name": "B. Bilgi\u00e7",
+                        "slug": "B.-Bilgi\u00e7",
+                        "structuredName": {
+                            "firstName": "Berkin",
+                            "lastName": "Bilgi\u00e7",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Bilgi\u00e7"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 29
+                            }
+                        ],
+                        "text": "In Visual Computer Vision on GPU\u2019s, 2008."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 93
+                            }
+                        ],
+                        "text": "Finally, a number of groups have recently ported HOG to a parallel implementation using GPUs [4, 32, 34]; such efforts are complementary to our own."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 61403578,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f186139703e804cd659052452c08d760f0f328e9",
+            "isKey": false,
+            "numCitedBy": 14,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Detecting people in images is a challenging task\nbecause of the variability in clothing and illumination conditions,\nand the wide range of poses that people can adopt. To discriminate\nthe human shape clearly, Dalal and Triggs [1] proposed a gradient\nbased, robust feature set that yielded excellent detection results.\nThis method computes locally normalized gradient orientation\nhistograms over blocks of size 16x16 pixels representing a\ndetection window. The block histograms within the window are then\nconcatenated. The resulting feature vector is powerful enough to\ndetect people with 88% detection rate at 10 -4 false positives per\nwindow (FPPW) using a linear SVM. The detection window slides over\nthe image in all possible image scales; hence this is\ncomputationally expensive, being able to run at 1 FPS for a 320x240\nimage on a typical CPU with a sparse scanning methodology. Due to\nits simplicity and high descriptive power, several authors worked\non the Dalal-Triggs algorithm to make it feasible for real time\ndetection. One such approach is to implement this method on a\nGraphics Processing Unit (GPU), exploiting the parallelisms in the\nalgorithm. Another way is to formulate the detector as an\nattentional cascade, so as to allow early rejections to decrease\nthe detection time. Zhu et al. [2] demonstrated that it is possible\nto obtain a 30x speed up over the original algorithm with this\nmethodology. In this thesis, we combine the two proposed\nmethods and investigate the feasibility of a fast person\nlocalization framework that integrates the cascade-of-rejectors\napproach with the Histograms of Oriented Gradients (HoG) features\non a data parallel architecture. The salient features of people are\ncaptured by HoG blocks of variable sizes and locations which are\nchosen by the AdaBoost algorithm from a large set of possible\nblocks. We use the integral image representation for histogram\ncomputation and a rejection cascade in a sliding-windows manner,\nboth of which can be implemented in a data parallel fashion.\nUtilizing the NVIDIA CUDA framework to realize this method on a\nGraphics Processing Unit (GPU), we report a speed up by a factor of\n13 over our CPU implementation. For a 1280x960 image our parallel\ntechnique attains a processing speed of 2.5 to 8 frames per second\ndepending on the image scanning density, with a detection quality\ncomparable to the original HoG algorithm."
+            },
+            "slug": "Fast-Human-Detection-with-Cascaded-Ensembles-Bilgi\u00e7",
+            "title": {
+                "fragments": [],
+                "text": "Fast Human Detection with Cascaded Ensembles"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This thesis combines the two proposed methods and investigates the feasibility of a fast person localization framework that integrates the cascade-of-rejectors approach with the Histograms of Oriented Gradients (HoG) features on a data parallel architecture."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1765022"
+                        ],
+                        "name": "M. Enzweiler",
+                        "slug": "M.-Enzweiler",
+                        "structuredName": {
+                            "firstName": "Markus",
+                            "lastName": "Enzweiler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Enzweiler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144854796"
+                        ],
+                        "name": "D. Gavrila",
+                        "slug": "D.-Gavrila",
+                        "structuredName": {
+                            "firstName": "Dariu",
+                            "lastName": "Gavrila",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Gavrila"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 25
+                            }
+                        ],
+                        "text": "For pedestrian detection [8, 10], however, the top performing methods are all based on sliding windows [6, 7, 14, 22, 31], and each of these methods utilizes some form of gradient histograms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 180,
+                                "start": 173
+                            }
+                        ],
+                        "text": "Another recent approach used a fast coarse-to-fine detection scheme but sacrificed detection of small pedestrians [35] (which are of crucial importance in many applications [8, 10])."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 1192198,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5224b79368dba945a9e90506f23a1cfa91f6f404",
+            "isKey": false,
+            "numCitedBy": 1231,
+            "numCiting": 94,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Pedestrian detection is a rapidly evolving area in computer vision with key applications in intelligent vehicles, surveillance, and advanced robotics. The objective of this paper is to provide an overview of the current state of the art from both methodological and experimental perspectives. The first part of the paper consists of a survey. We cover the main components of a pedestrian detection system and the underlying models. The second (and larger) part of the paper contains a corresponding experimental study. We consider a diverse set of state-of-the-art systems: wavelet-based AdaBoost cascade, HOG/linSVM, NN/LRF, and combined shape-texture detection. Experiments are performed on an extensive data set captured onboard a vehicle driving through urban environment. The data set includes many thousands of training samples as well as a 27-minute test sequence involving more than 20,000 images with annotated pedestrian locations. We consider a generic evaluation setting and one specific to pedestrian detection onboard a vehicle. Results indicate a clear advantage of HOG/linSVM at higher image resolutions and lower processing speeds, and a superiority of the wavelet-based AdaBoost cascade approach at lower image resolutions and (near) real-time processing speeds. The data set (8.5 GB) is made public for benchmarking purposes."
+            },
+            "slug": "Monocular-Pedestrian-Detection:-Survey-and-Enzweiler-Gavrila",
+            "title": {
+                "fragments": [],
+                "text": "Monocular Pedestrian Detection: Survey and Experiments"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "An overview of the current state of the art of pedestrian detection from both methodological and experimental perspectives is provided and a clear advantage of HOG/linSVM at higher image resolutions and lower processing speeds is indicated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [],
+                        "name": "Wei Zhang",
+                        "slug": "Wei-Zhang",
+                        "structuredName": {
+                            "firstName": "Wei",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wei Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1696991"
+                        ],
+                        "name": "G. Zelinsky",
+                        "slug": "G.-Zelinsky",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Zelinsky",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Zelinsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145654220"
+                        ],
+                        "name": "D. Samaras",
+                        "slug": "D.-Samaras",
+                        "structuredName": {
+                            "firstName": "Dimitris",
+                            "lastName": "Samaras",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Samaras"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 118,
+                                "start": 114
+                            }
+                        ],
+                        "text": "Another recent approach used a fast coarse-to-fine detection scheme but sacrificed detection of small pedestrians [35] (which are of crucial importance in many applications [8, 10])."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 8356979,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "340ad17611fddb1f59a8b50114839544878229b7",
+            "isKey": false,
+            "numCitedBy": 134,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a multi-resolution framework inspired by human visual search for general object detection. Different resolutions are represented using a coarse-to-fine feature hierarchy. During detection, the lower resolution features are initially used to reject the majority of negative windows at relatively low cost, leaving a relatively small number of windows to be processed in higher resolutions. This enables the use of computationally more expensive higher resolution features to achieve high detection accuracy. We applied this framework on Histograms of Oriented Gradient (HOG) features for object detection. Our multi-resolution detector produced better performance for pedestrian detection than state-of-the-art methods (Dalal and Triggs, 2005), and was faster during both training and testing. Testing our method on motorbikes and cars from the VOC database revealed similar improvements in both speed and accuracy, suggesting that our approach is suitable for realtime general object detection applications."
+            },
+            "slug": "Real-time-Accurate-Object-Detection-using-Multiple-Zhang-Zelinsky",
+            "title": {
+                "fragments": [],
+                "text": "Real-time Accurate Object Detection using Multiple Resolutions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "This work proposes a multi-resolution framework inspired by human visual search for general object detection that produced better performance for pedestrian detection than state-of-the-art methods, and was faster during both training and testing."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2007 IEEE 11th International Conference on Computer Vision"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2721983"
+                        ],
+                        "name": "F. Fleuret",
+                        "slug": "F.-Fleuret",
+                        "structuredName": {
+                            "firstName": "Fran\u00e7ois",
+                            "lastName": "Fleuret",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Fleuret"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707642"
+                        ],
+                        "name": "D. Geman",
+                        "slug": "D.-Geman",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Geman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 80,
+                                "start": 76
+                            }
+                        ],
+                        "text": "Through numerous strategies, including cascades [28], coarse-to-fine search [17], distance transforms [13], branch and bound search [19], and many others, the classification stage can be made quite fast."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6754141,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9b535f4edc4cbf8d4fb6182ec6b5c54db3c1cccb",
+            "isKey": false,
+            "numCitedBy": 339,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study visual selection: Detect and roughly localize all instances of a generic object class, such as a face, in a greyscale scene, measuring performance in terms of computation and false alarms. Our approach is sequential testing which is coarse-to-fine in both in the exploration of poses and the representation of objects. All the tests are binary and indicate the presence or absence of loose spatial arrangements of oriented edge fragments. Starting from training examples, we recursively find larger and larger arrangements which are \u201cdecomposable,\u201d which implies the probability of an arrangement appearing on an object decays slowly with its size. Detection means finding a sufficient number of arrangements of each size along a decreasing sequence of pose cells. At the beginning, the tests are simple and universal, accommodating many poses simultaneously, but the false alarm rate is relatively high. Eventually, the tests are more discriminating, but also more complex and dedicated to specific poses. As a result, the spatial distribution of processing is highly skewed and detection is rapid, but at the expense of (isolated) false alarms which, presumably, could be eliminated with localized, more intensive, processing."
+            },
+            "slug": "Coarse-to-Fine-Face-Detection-Fleuret-Geman",
+            "title": {
+                "fragments": [],
+                "text": "Coarse-to-Fine Face Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "The approach is sequential testing which is coarse-to-fine in both in the exploration of poses and the representation of objects, and the spatial distribution of processing is highly skewed and detection is rapid, but at the expense of (isolated) false alarms which could be eliminated with localized, more intensive, processing."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48950628"
+                        ],
+                        "name": "N. Dalal",
+                        "slug": "N.-Dalal",
+                        "structuredName": {
+                            "firstName": "Navneet",
+                            "lastName": "Dalal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Dalal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756114"
+                        ],
+                        "name": "B. Triggs",
+                        "slug": "B.-Triggs",
+                        "structuredName": {
+                            "firstName": "Bill",
+                            "lastName": "Triggs",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Triggs"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 183,
+                                "start": 180
+                            }
+                        ],
+                        "text": "1) (with E computed over a 9\u00d79 image neighborhood); (b) standard deviation of intensity values computed in each local 9\u00d79 neighborhood C(i, j)= E[I(i, j)2]\u2212E[I(i, j)]; and (c) HOG [6] (each channel is a single gradient orientation at one of four normalizations)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 174
+                            }
+                        ],
+                        "text": "The resulting method achieves state-of-the-art results, being within 1-2% detection rate of the highest reported results across four datasets (Caltech Pedestrians [8], INRIA [6], ETH [11], and TUD-Brussels [33])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 49
+                            }
+                        ],
+                        "text": "Finally, a number of groups have recently ported HOG to a parallel implementation using GPUs [4, 32, 34]; such efforts are complementary to our own."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 103
+                            }
+                        ],
+                        "text": "For pedestrian detection [8, 10], however, the top performing methods are all based on sliding windows [6, 7, 14, 22, 31], and each of these methods utilizes some form of gradient histograms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 65
+                            }
+                        ],
+                        "text": "Finally, in Figure 7 we show fullimage results on three datasets [6, 8, 33]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 403,
+                                "start": 398
+                            }
+                        ],
+                        "text": "Instead,\n1/8 1/4 1/2 1 2 4\n0.7\n0.8\n0.9\n(a) scale step\nd e te\nc ti o n r\na te\nfppi=1 fppi=.5 fppi=.25\n0.1 0.6 1.1 1.6 2.1 0.82\n0.84\n0.86\n0.88\n0.9\n(b) \u03bb\nd e te\nc ti o n r\na te\nfppi=1 fppi=.5\n1 2 4 8 16 32\n0.4\n0.6\n0.8\n(c) scales per octave\nd e te\nc ti o n\nr a\nte\nfppi=1 fppi=.5 fppi=.25\nFigure 5: Performance under various parameter choices in the construction of FPDW; evaluated using 25 trials on the INRIA full image dataset using."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 317,
+                                "start": 314
+                            }
+                        ],
+                        "text": "The channel types plotted are: (a) gradient histogram channels computed over locally L1 normalized gradients M\u2032(i, j) = M(i, j)/(E[M(i, j)]+ .1) (with E computed over a 9\u00d79 image neighborhood); (b) standard deviation of intensity values computed in each local 9\u00d79 neighborhood C(i, j)= E[I(i, j)2]\u2212E[I(i, j)]; and (c) HOG [6] (each channel is a single gradient orientation at one of four normalizations)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 115,
+                                "start": 110
+                            }
+                        ],
+                        "text": "The second set of images contains 5000 128\u00d7 64 windows cropped at random positions from the 1218 images in the INRIA negative training set."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 59
+                            }
+                        ],
+                        "text": "First, we used the 1237 cropped pedestrian images from the INRIA pedestrians training dataset."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 54
+                            }
+                        ],
+                        "text": "This includes all top performing pedestrian detectors [6, 7, 14, 22, 31] evaluated on the Caltech Pedestrian dataset [8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 107
+                            }
+                        ],
+                        "text": "At 80% detection rate on the INRIA pedestrian dataset [6], VJ outputs 10 false positives per image (fppi), HOG [6] outputs 1 fppi, and the most recent methods [7, 14], through a combination of richer features and more sophisticated learning techniques, output just .1 fppi (error rates as reported in [8])."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 430,
+                                "start": 427
+                            }
+                        ],
+                        "text": "(a) normalized gradient\n1 2 3\n0.05\n0.1\n0.2\n0.4\n0.8\nscaling factor (s)\n\u00b5 (\nra ti o )\npedestrians natural images best\u2212fit: \u03bb=1.129\n1 2 3\n0.2\n0.4\n0.6\n0.8\nscaling factor (s)\n\u03c3 *\n(r a ti o )\npedestrians natural images\n(b) local standard deviation\n1 2 3\n0.05\n0.1\n0.2\n0.4\n0.8\nscaling factor (s)\n\u00b5 (\nra ti o )\npedestrians natural images best\u2212fit: \u03bb=1.133\n1 2 3\n0.1\n0.2 0.3\n0.4 0.5\nscaling factor (s)\n\u03c3 *\n(r a ti o )\npedestrians natural images\n(c) HOG\n1 2 3\n0.05 0.1 0.2 0.4 0.8\nscaling factor (s)\n\u00b5 (\nra ti o )\npedestrians natural images best\u2212fit: \u03bb=1.294\n1 2 3\n0.2\n0.4\n0.6\nscaling factor (s)\n\u03c3 *\n(r a ti o )\npedestrians natural images\nFigure 4: Behavior of channel energy in downsampled images."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 54
+                            }
+                        ],
+                        "text": "At 80% detection rate on the INRIA pedestrian dataset [6], VJ outputs 10 false positives per image (fppi), HOG [6] outputs 1 fppi, and the most recent methods [7, 14], through a combination of richer features and more sophisticated learning techniques, output just ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206590483,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cec734d7097ab6b1e60d95228ffd64248eb89d66",
+            "isKey": true,
+            "numCitedBy": 29262,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study the question of feature sets for robust visual object recognition; adopting linear SVM based human detection as a test case. After reviewing existing edge and gradient based descriptors, we show experimentally that grids of histograms of oriented gradient (HOG) descriptors significantly outperform existing feature sets for human detection. We study the influence of each stage of the computation on performance, concluding that fine-scale gradients, fine orientation binning, relatively coarse spatial binning, and high-quality local contrast normalization in overlapping descriptor blocks are all important for good results. The new approach gives near-perfect separation on the original MIT pedestrian database, so we introduce a more challenging dataset containing over 1800 annotated human images with a large range of pose variations and backgrounds."
+            },
+            "slug": "Histograms-of-oriented-gradients-for-human-Dalal-Triggs",
+            "title": {
+                "fragments": [],
+                "text": "Histograms of oriented gradients for human detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown experimentally that grids of histograms of oriented gradient (HOG) descriptors significantly outperform existing feature sets for human detection, and the influence of each stage of the computation on performance is studied."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2362117"
+                        ],
+                        "name": "M. Bajracharya",
+                        "slug": "M.-Bajracharya",
+                        "structuredName": {
+                            "firstName": "Max",
+                            "lastName": "Bajracharya",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Bajracharya"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153485128"
+                        ],
+                        "name": "B. Moghaddam",
+                        "slug": "B.-Moghaddam",
+                        "structuredName": {
+                            "firstName": "Baback",
+                            "lastName": "Moghaddam",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Moghaddam"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144692242"
+                        ],
+                        "name": "A. Howard",
+                        "slug": "A.-Howard",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Howard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Howard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7207299"
+                        ],
+                        "name": "Shane Brennan",
+                        "slug": "Shane-Brennan",
+                        "structuredName": {
+                            "firstName": "Shane",
+                            "lastName": "Brennan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Shane Brennan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1782162"
+                        ],
+                        "name": "L. Matthies",
+                        "slug": "L.-Matthies",
+                        "structuredName": {
+                            "firstName": "Larry",
+                            "lastName": "Matthies",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Matthies"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 51,
+                                "start": 44
+                            }
+                        ],
+                        "text": "A number of fast systems have been proposed [3, 12]; however, a detailed overview is outside of the scope of this work."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12109566,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "df9a016950ffaaa8526e7332f0a6568ad43d054f",
+            "isKey": false,
+            "numCitedBy": 90,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we describe a fully integrated system for detecting, localizing, and tracking pedestrians from a moving vehicle. The system can reliably detect upright pedestrians to a range of 40 m in lightly cluttered urban environments. The system uses range data from stereo vision to segment the scene into regions of interest, from which shape features are extracted and used to classify pedestrians. The regions are tracked using shape and appearance features. Tracking is used to temporally filter classifications to improve performance and to estimate the velocity of pedestrians for use in path planning. The end-to-end system runs at 5 Hz on 1,024 \u00d7 768 imagery using a standard 2.4 GHz Intel Core 2 Quad processor, and has been integrated and tested on multiple ground vehicles and environments. We show performance on a diverse set of datasets with groundtruth in outdoor environments with varying degrees of pedestrian density and clutter. In highly cluttered urban environments, the detection rates are on a par with state-of-the-art but significantly slower systems."
+            },
+            "slug": "A-Fast-Stereo-based-System-for-Detecting-and-from-a-Bajracharya-Moghaddam",
+            "title": {
+                "fragments": [],
+                "text": "A Fast Stereo-based System for Detecting and Tracking Pedestrians from a Moving Vehicle"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 75,
+                "text": "A fully integrated system for detecting, localizing, and tracking pedestrians from a moving vehicle that can reliably detect upright pedestrians to a range of 40 m in lightly cluttered urban environments and on a diverse set of datasets with groundtruth in outdoor environments with varying degrees of pedestrian density and clutter."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144238410"
+                        ],
+                        "name": "Qiang Zhu",
+                        "slug": "Qiang-Zhu",
+                        "structuredName": {
+                            "firstName": "Qiang",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Qiang Zhu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39369497"
+                        ],
+                        "name": "Mei-Chen Yeh",
+                        "slug": "Mei-Chen-Yeh",
+                        "structuredName": {
+                            "firstName": "Mei-Chen",
+                            "lastName": "Yeh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mei-Chen Yeh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143766349"
+                        ],
+                        "name": "K. Cheng",
+                        "slug": "K.-Cheng",
+                        "structuredName": {
+                            "firstName": "K.",
+                            "lastName": "Cheng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Cheng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1815078"
+                        ],
+                        "name": "S. Avidan",
+                        "slug": "S.-Avidan",
+                        "structuredName": {
+                            "firstName": "Shai",
+                            "lastName": "Avidan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Avidan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 110
+                            }
+                        ],
+                        "text": "One of the earliest attempts to create real time detectors that utilize gradient histograms was the method of [36] (based on integral histograms [25])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7800101,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "05fe01b57b3ba58dc5029c068a48567b55018ea5",
+            "isKey": false,
+            "numCitedBy": 1568,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We integrate the cascade-of-rejectors approach with the Histograms of Oriented Gradients (HoG) features to achieve a fast and accurate human detection system. The features used in our system are HoGs of variable-size blocks that capture salient features of humans automatically. Using AdaBoost for feature selection, we identify the appropriate set of blocks, from a large set of possible blocks. In our system, we use the integral image representation and a rejection cascade which significantly speed up the computation. For a 320 \u00d7 280 image, the system can process 5 to 30 frames per second depending on the density in which we scan the image, while maintaining an accuracy level similar to existing methods."
+            },
+            "slug": "Fast-Human-Detection-Using-a-Cascade-of-Histograms-Zhu-Yeh",
+            "title": {
+                "fragments": [],
+                "text": "Fast Human Detection Using a Cascade of Histograms of Oriented Gradients"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 67,
+                "text": "This work integrates the cascade-of-rejectors approach with the Histograms of Oriented Gradients features to achieve a fast and accurate human detection system that can process 5 to 30 frames per second depending on the density in which the image is scanned, while maintaining an accuracy level similar to existing methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3127283"
+                        ],
+                        "name": "Piotr Doll\u00e1r",
+                        "slug": "Piotr-Doll\u00e1r",
+                        "structuredName": {
+                            "firstName": "Piotr",
+                            "lastName": "Doll\u00e1r",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Piotr Doll\u00e1r"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144035504"
+                        ],
+                        "name": "Z. Tu",
+                        "slug": "Z.-Tu",
+                        "structuredName": {
+                            "firstName": "Zhuowen",
+                            "lastName": "Tu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Z. Tu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690922"
+                        ],
+                        "name": "P. Perona",
+                        "slug": "P.-Perona",
+                        "structuredName": {
+                            "firstName": "Pietro",
+                            "lastName": "Perona",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Perona"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50172592"
+                        ],
+                        "name": "Serge J. Belongie",
+                        "slug": "Serge-J.-Belongie",
+                        "structuredName": {
+                            "firstName": "Serge",
+                            "lastName": "Belongie",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Serge J. Belongie"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 72
+                            }
+                        ],
+                        "text": "For the following experiments, we use the ChnFtrs detector described in [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 103
+                            }
+                        ],
+                        "text": "For pedestrian detection [8, 10], however, the top performing methods are all based on sliding windows [6, 7, 14, 22, 31], and each of these methods utilizes some form of gradient histograms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 152,
+                                "start": 149
+                            }
+                        ],
+                        "text": "Numerous local and global features can be written in this form including gradient histograms, linear filters, color statistics, and countless others [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 170
+                            }
+                        ],
+                        "text": "Nevertheless, even when highly optimized, just constructing gradient histograms over a finely sampled image pyramid takes a minimum of about one second per 640\u00d7480 image [7, 14]; thus this becomes a major bottleneck for all of the pedestrian detectors listed above."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 54
+                            }
+                        ],
+                        "text": "This includes all top performing pedestrian detectors [6, 7, 14, 22, 31] evaluated on the Caltech Pedestrian dataset [8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 91
+                            }
+                        ],
+                        "text": "However, the proposed system was real time for single scale detection only (recent methods [7, 14] achieve similar speeds and with higher accuracy); in this work we are interested in real time multiscale detection."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 90,
+                                "start": 87
+                            }
+                        ],
+                        "text": "No re-training was necessary for this work; instead, we rescale a pre-trained detector [7] using the approximation in (2) (details below)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 215,
+                                "start": 208
+                            }
+                        ],
+                        "text": "Typically, detectors are evaluated on 8-16 scales per octave [8], and even when optimized, just constructing gradient histograms over a finely sampled image pyramid can take over one second per 640\u00d7480 image [7, 14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 166,
+                                "start": 159
+                            }
+                        ],
+                        "text": "At 80% detection rate on the INRIA pedestrian dataset [6], VJ outputs 10 false positives per image (fppi), HOG [6] outputs 1 fppi, and the most recent methods [7, 14], through a combination of richer features and more sophisticated learning techniques, output just ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14924524,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fd375345cbd203aa9c88e1aa3c2e4e1835548b10",
+            "isKey": false,
+            "numCitedBy": 1233,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study the performance of \u2018integral channel features\u2019 for image classification tasks, \nfocusing in particular on pedestrian detection. The general idea behind integral channel features is that multiple registered image channels are computed using linear and \nnon-linear transformations of the input image, and then features such as local sums, histograms, and Haar features and their various generalizations are efficiently computed \nusing integral images. Such features have been used in recent literature for a variety of \ntasks \u2013 indeed, variations appear to have been invented independently multiple times. \nAlthough integral channel features have proven effective, little effort has been devoted to \nanalyzing or optimizing the features themselves. In this work we present a unified view \nof the relevant work in this area and perform a detailed experimental evaluation. We \ndemonstrate that when designed properly, integral channel features not only outperform \nother features including histogram of oriented gradient (HOG), they also (1) naturally \nintegrate heterogeneous sources of information, (2) have few parameters and are insensitive to exact parameter settings, (3) allow for more accurate spatial localization during \ndetection, and (4) result in fast detectors when coupled with cascade classifiers."
+            },
+            "slug": "Integral-Channel-Features-Doll\u00e1r-Tu",
+            "title": {
+                "fragments": [],
+                "text": "Integral Channel Features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "It is demonstrated that when designed properly, integral channel features not only outperform other features including histogram of oriented gradient (HOG), they also result in fast detectors when coupled with cascade classifiers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1787591"
+                        ],
+                        "name": "Christoph H. Lampert",
+                        "slug": "Christoph-H.-Lampert",
+                        "structuredName": {
+                            "firstName": "Christoph",
+                            "lastName": "Lampert",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christoph H. Lampert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1758219"
+                        ],
+                        "name": "Matthew B. Blaschko",
+                        "slug": "Matthew-B.-Blaschko",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Blaschko",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthew B. Blaschko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143936663"
+                        ],
+                        "name": "Thomas Hofmann",
+                        "slug": "Thomas-Hofmann",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Hofmann",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Hofmann"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 136,
+                                "start": 132
+                            }
+                        ],
+                        "text": "Through numerous strategies, including cascades [28], coarse-to-fine search [17], distance transforms [13], branch and bound search [19], and many others, the classification stage can be made quite fast."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6131848,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "54b224478a63e33441c651175c522f3702062fc4",
+            "isKey": false,
+            "numCitedBy": 800,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Most successful object recognition systems rely on binary classification, deciding only if an object is present or not, but not providing information on the actual object location. To perform localization, one can take a sliding window approach, but this strongly increases the computational cost, because the classifier function has to be evaluated over a large set of candidate subwindows. In this paper, we propose a simple yet powerful branch-and-bound scheme that allows efficient maximization of a large class of classifier functions over all possible subimages. It converges to a globally optimal solution typically in sublinear time. We show how our method is applicable to different object detection and retrieval scenarios. The achieved speedup allows the use of classifiers for localization that formerly were considered too slow for this task, such as SVMs with a spatial pyramid kernel or nearest neighbor classifiers based on the chi2-distance. We demonstrate state-of-the-art performance of the resulting systems on the UIUC Cars dataset, the PASCAL VOC 2006 dataset and in the PASCAL VOC 2007 competition."
+            },
+            "slug": "Beyond-sliding-windows:-Object-localization-by-Lampert-Blaschko",
+            "title": {
+                "fragments": [],
+                "text": "Beyond sliding windows: Object localization by efficient subwindow search"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A simple yet powerful branch-and-bound scheme that allows efficient maximization of a large class of classifier functions over all possible subimages and converges to a globally optimal solution typically in sublinear time is proposed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145687022"
+                        ],
+                        "name": "J. Crowley",
+                        "slug": "J.-Crowley",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Crowley",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Crowley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "103228971"
+                        ],
+                        "name": "Olivier Ri",
+                        "slug": "Olivier-Ri",
+                        "structuredName": {
+                            "firstName": "Olivier",
+                            "lastName": "Ri",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Olivier Ri"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1772389"
+                        ],
+                        "name": "J. Piater",
+                        "slug": "J.-Piater",
+                        "structuredName": {
+                            "firstName": "Justus",
+                            "lastName": "Piater",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Piater"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 100
+                            }
+                        ],
+                        "text": "Significant research has also been devoted to scale space theory [21], including real time variants [5, 9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9406897,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "491e183ea96b526a2c3f2b874d62d7dcfcc2a12c",
+            "isKey": false,
+            "numCitedBy": 43,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The characteristic (or intrinsic) scale of a local image pattern is the scale parameter at which the Laplacian provides a local maximum. Nearly every position in an image will exhibit a small number of such characteristic scales. Computing a Gaussian jet at a characteristic scale provides a scale invariant feature vector for tracking, matching, indexing and recognition. However, the computational cost of directly searching the scale axis for the characteristic scale at each image position can be prohibitively expensive. In this paper, we describe a fast method for computing the characteristic scale by interpolating values from a scale-invariant Laplacian pyramid. We present an experimental evaluation of the scale invariance of the impulse response for pyramids computed with three forms of Gaussian filters. We show that interpolation between pixels across scales can be used to provide an accurate estimate of the characteristic scale at each image point."
+            },
+            "slug": "Fast-Computation-of-Characteristic-Scale-Using-a-Crowley-Ri",
+            "title": {
+                "fragments": [],
+                "text": "Fast Computation of Characteristic Scale Using a Half-Octave Pyramid"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This paper describes a fast method for computing the characteristic scale by interpolating values from a scale-invariant Laplacian pyramid and presents an experimental evaluation of the scale invariance of the impulse response for pyramids computed with three forms of Gaussian filters."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2797063"
+                        ],
+                        "name": "S. Agarwal",
+                        "slug": "S.-Agarwal",
+                        "structuredName": {
+                            "firstName": "Shivani",
+                            "lastName": "Agarwal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Agarwal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144590225"
+                        ],
+                        "name": "D. Roth",
+                        "slug": "D.-Roth",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Roth",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Roth"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 55
+                            }
+                        ],
+                        "text": "Numerous other detection frameworks have been proposed [2, 15, 20, 30], and although a full review is outside the scope of this work, the approximations we develop could potentially be applicable to such approaches as well."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 262977,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3d081b80b1850df9b1e382f97a7a244890d6485e",
+            "isKey": false,
+            "numCitedBy": 638,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present an approach for learning to detect objects in still gray images, that is based on a sparse, part-based representation of objects. A vocabulary of information-rich object parts is automatically constructed from a set of sample images of the object class of interest. Images are then represented using parts from this vocabulary, along with spatial relations observed among them. Based on this representation, a feature-efficient learning algorithm is used to learn to detect instances of the object class. The framework developed can be applied to any object with distinguishable parts in a relatively fixed spatial configuration. We report experiments on images of side views of cars. Our experiments show that the method achieves high detection accuracy on a difficult test set of real-world images, and is highly robust to partial occlusion and background variation.In addition, we discuss and offer solutions to several methodological issues that are significant for the research community to be able to evaluate object detection approaches."
+            },
+            "slug": "Learning-a-Sparse-Representation-for-Object-Agarwal-Roth",
+            "title": {
+                "fragments": [],
+                "text": "Learning a Sparse Representation for Object Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "An approach for learning to detect objects in still gray images, that is based on a sparse, part-based representation of objects, that achieves high detection accuracy on a difficult test set of real-world images, and is highly robust to partial occlusion and background variation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2433494"
+                        ],
+                        "name": "Andreas Ess",
+                        "slug": "Andreas-Ess",
+                        "structuredName": {
+                            "firstName": "Andreas",
+                            "lastName": "Ess",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andreas Ess"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1789756"
+                        ],
+                        "name": "B. Leibe",
+                        "slug": "B.-Leibe",
+                        "structuredName": {
+                            "firstName": "B.",
+                            "lastName": "Leibe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Leibe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144810819"
+                        ],
+                        "name": "K. Schindler",
+                        "slug": "K.-Schindler",
+                        "structuredName": {
+                            "firstName": "Konrad",
+                            "lastName": "Schindler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Schindler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 51,
+                                "start": 44
+                            }
+                        ],
+                        "text": "A number of fast systems have been proposed [3, 12]; however, a detailed overview is outside of the scope of this work."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7616980,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0dfdb4d55430b88d01c0a6d7d6e20df0f6a932fc",
+            "isKey": false,
+            "numCitedBy": 291,
+            "numCiting": 71,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we address the problem of multiperson tracking in busy pedestrian zones using a stereo rig mounted on a mobile platform. The complexity of the problem calls for an integrated solution that extracts as much visual information as possible and combines it through cognitive feedback cycles. We propose such an approach, which jointly estimates camera position, stereo depth, object detection, and tracking. The interplay between those components is represented by a graphical model. Since the model has to incorporate object-object interactions and temporal links to past frames, direct inference is intractable. We, therefore, propose a two-stage procedure: for each frame, we first solve a simplified version of the model (disregarding interactions and temporal continuity) to estimate the scene geometry and an overcomplete set of object detections. Conditioned on these results, we then address object interactions, tracking, and prediction in a second step. The approach is experimentally evaluated on several long and difficult video sequences from busy inner-city locations. Our results show that the proposed integration makes it possible to deliver robust tracking performance in scenes of realistic complexity."
+            },
+            "slug": "Robust-Multiperson-Tracking-from-a-Mobile-Platform-Ess-Leibe",
+            "title": {
+                "fragments": [],
+                "text": "Robust Multiperson Tracking from a Mobile Platform"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "This paper addresses the problem of multiperson tracking in busy pedestrian zones using a stereo rig mounted on a mobile platform with a two-stage procedure, which jointly estimates camera position, stereo depth, object detection, and tracking."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145030811"
+                        ],
+                        "name": "C. Papageorgiou",
+                        "slug": "C.-Papageorgiou",
+                        "structuredName": {
+                            "firstName": "Constantine",
+                            "lastName": "Papageorgiou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Papageorgiou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145328018"
+                        ],
+                        "name": "M. Oren",
+                        "slug": "M.-Oren",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Oren",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Oren"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685292"
+                        ],
+                        "name": "T. Poggio",
+                        "slug": "T.-Poggio",
+                        "structuredName": {
+                            "firstName": "Tomaso",
+                            "lastName": "Poggio",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Poggio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 84,
+                                "start": 80
+                            }
+                        ],
+                        "text": "Utilizing integral images, Haar like features (differences of rectangular sums) [24] at any position and scale can be computed with a fixed number of operations [28]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6476085,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "76f560991d56ad689ec32f9e9d13291e0193f4cf",
+            "isKey": false,
+            "numCitedBy": 1604,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a general trainable framework for object detection in static images of cluttered scenes. The detection technique we develop is based on a wavelet representation of an object class derived from a statistical analysis of the class instances. By learning an object class in terms of a subset of an overcomplete dictionary of wavelet basis functions, we derive a compact representation of an object class which is used as an input to a support vector machine classifier. This representation overcomes both the problem of in-class variability and provides a low false detection rate in unconstrained environments. We demonstrate the capabilities of the technique in two domains whose inherent information content differs significantly. The first system is face detection and the second is the domain of people which, in contrast to faces, vary greatly in color, texture, and patterns. Unlike previous approaches, this system learns from examples and does not rely on any a priori (hand-crafted) models or motion-based segmentation. The paper also presents a motion-based extension to enhance the performance of the detection algorithm over video sequences. The results presented here suggest that this architecture may well be quite general."
+            },
+            "slug": "A-general-framework-for-object-detection-Papageorgiou-Oren",
+            "title": {
+                "fragments": [],
+                "text": "A general framework for object detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "A general trainable framework for object detection in static images of cluttered scenes based on a wavelet representation of an object class derived from a statistical analysis of the class instances and a motion-based extension to enhance the performance of the detection algorithm over video sequences is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Sixth International Conference on Computer Vision (IEEE Cat. No.98CH36271)"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1789756"
+                        ],
+                        "name": "B. Leibe",
+                        "slug": "B.-Leibe",
+                        "structuredName": {
+                            "firstName": "B.",
+                            "lastName": "Leibe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Leibe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1732672"
+                        ],
+                        "name": "A. Leonardis",
+                        "slug": "A.-Leonardis",
+                        "structuredName": {
+                            "firstName": "Ale\u0161",
+                            "lastName": "Leonardis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Leonardis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48920094"
+                        ],
+                        "name": "B. Schiele",
+                        "slug": "B.-Schiele",
+                        "structuredName": {
+                            "firstName": "Bernt",
+                            "lastName": "Schiele",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Schiele"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 55
+                            }
+                        ],
+                        "text": "Numerous other detection frameworks have been proposed [2, 15, 20, 30], and although a full review is outside the scope of this work, the approximations we develop could potentially be applicable to such approaches as well."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14144539,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1c41c1f86b92a8c011e0324d90624d539a849b8b",
+            "isKey": false,
+            "numCitedBy": 1060,
+            "numCiting": 95,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract\nThis paper presents a novel method for detecting and localizing objects of a visual category in cluttered real-world scenes. Our approach considers object categorization and figure-ground segmentation as two interleaved processes that closely collaborate towards a common goal. As shown in our work, the tight coupling between those two processes allows them to benefit from each other and improve the combined performance.\n\nThe core part of our approach is a highly flexible learned representation for object shape that can combine the information observed on different training examples in a probabilistic extension of the Generalized Hough Transform. The resulting approach can detect categorical objects in novel images and automatically infer a probabilistic segmentation from the recognition result. This segmentation is then in turn used to again improve recognition by allowing the system to focus its efforts on object pixels and to discard misleading influences from the background. Moreover, the information from where in the image a hypothesis draws its support is employed in an MDL based hypothesis verification stage to resolve ambiguities between overlapping hypotheses and factor out the effects of partial occlusion.\n\nAn extensive evaluation on several large data sets shows that the proposed system is applicable to a range of different object categories, including both rigid and articulated objects. In addition, its flexible representation allows it to achieve competitive object detection performance already from training sets that are between one and two orders of magnitude smaller than those used in comparable systems.\n"
+            },
+            "slug": "Robust-Object-Detection-with-Interleaved-and-Leibe-Leonardis",
+            "title": {
+                "fragments": [],
+                "text": "Robust Object Detection with Interleaved Categorization and Segmentation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 57,
+                "text": "A novel method for detecting and localizing objects of a visual category in cluttered real-world scenes that is applicable to a range of different object categories, including both rigid and articulated objects and able to achieve competitive object detection performance from training sets that are between one and two orders of magnitude smaller than those used in comparable systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "29905643"
+                        ],
+                        "name": "F. Porikli",
+                        "slug": "F.-Porikli",
+                        "structuredName": {
+                            "firstName": "Fatih",
+                            "lastName": "Porikli",
+                            "middleNames": [
+                                "Murat"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Porikli"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 149,
+                                "start": 145
+                            }
+                        ],
+                        "text": "One of the earliest attempts to create real time detectors that utilize gradient histograms was the method of [36] (based on integral histograms [25])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1122429,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fbf4d36e787e2e5c8444e1a2229b821e9cd68adf",
+            "isKey": false,
+            "numCitedBy": 810,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel method, which we refer as an integral histogram, to compute the histograms of all possible target regions in a Cartesian data space. Our method has three distinct advantages: 1) It is computationally superior to the conventional approach. The integral histogram method makes it possible to employ even an exhaustive search process in real-time, which was impractical before. 2) It can be extended to higher data dimensions, uniform and nonuniform bin formations, and multiple target scales without sacrificing its computational advantages. 3) It enables the description of higher level histogram features. We exploit the spatial arrangement of data points, and recursively propagate an aggregated histogram by starting from the origin and traversing through the remaining points along either a scan-line or a wave-front. At each step, we update a single bin using the values of integral histogram at the previously visited neighboring data points. After the integral histogram is propagated, histogram of any target region can be computed easily by using simple arithmetic operations."
+            },
+            "slug": "Integral-histogram:-a-fast-way-to-extract-in-spaces-Porikli",
+            "title": {
+                "fragments": [],
+                "text": "Integral histogram: a fast way to extract histograms in Cartesian spaces"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "The integral histogram method makes it possible to employ even an exhaustive search process in real-time, which was impractical before, and enables the description of higher level histogram features."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145319478"
+                        ],
+                        "name": "Michael J. Jones",
+                        "slug": "Michael-J.-Jones",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jones",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael J. Jones"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1731948"
+                        ],
+                        "name": "Paul A. Viola",
+                        "slug": "Paul-A.-Viola",
+                        "structuredName": {
+                            "firstName": "Paul",
+                            "lastName": "Viola",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Paul A. Viola"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 23,
+                                "start": 18
+                            }
+                        ],
+                        "text": "[29] P. Viola, M. Jones, and D. Snow."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 48
+                            }
+                        ],
+                        "text": "Through numerous strategies, including cascades [28], coarse-to-fine search [17], distance transforms [13], branch and bound search [19], and many others, the classification stage can be made quite fast."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 15,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Viola and Jones demonstrated a detection framework using scale invariant features that achieves real time multiscale detection rates; however, scale invariant features tend to be quite limited."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 34
+                            }
+                        ],
+                        "text": "The Viola and Jones detector (VJ) [28] was built using this idea."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 21
+                            }
+                        ],
+                        "text": "[28] P. Viola and M. Jones."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 114
+                            }
+                        ],
+                        "text": "False positive rates have gone down two orders of magnitude since the groundbreaking work of Viola and Jones (VJ) [28, 29]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 20
+                            }
+                        ],
+                        "text": "(b) Viola and Jones [28] utilized shift and scale invariant features, allowing a trained detector to be placed at any location and scale without relying on an image pyramid."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 105
+                            }
+                        ],
+                        "text": "1 Related Work One of the most successful approaches for object detection is the sliding window paradigm [23, 28]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 165,
+                                "start": 161
+                            }
+                        ],
+                        "text": "Utilizing integral images, Haar like features (differences of rectangular sums) [24] at any position and scale can be computed with a fixed number of operations [28]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15810545,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "548ab5770b89650158f99caee1bed3a986b0dcdf",
+            "isKey": true,
+            "numCitedBy": 724,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract This paper extends the face detection framework proposedby Viola and Jones 2001 to handle pro\ufb01le views and rotatedfaces. As in the work of Rowley et al 1998. and Schneider-man et al. 2000, we build different detectors for differentviews of the face. A decision tree is then trained to deter-mine the viewpoint class (such as right pro\ufb01le or rotated60 degrees) for a given window of the image being exam-ined. This is similar to the approach of Rowley et al. 1998.The appropriate detector for that viewpoint can then be runinstead of running all detectors on all windows. This tech-niqueyields goodresults and maintainsthe speed advantageof the Viola-Jones detector. 1. Introduction There are a number of techniques that can successfullydetect frontal upright faces in a wide variety of images[11, 7, 10, 12, 3, 6]. While the de\ufb01nition of \u201cfrontal\u201d and\u201cupright\u201dmayvaryfromsystem to system, the reality is thatmany natural images contain rotated or pro\ufb01le faces thatare not reliably detected. There are a small number of sys-tems which explicitly address non-frontal, or non-uprightface detection [8, 10, 2]. This paper describes progress to-ward a system which can detect faces regardless of posereliably and in real-time.This paperextendsthe frameworkproposedby Viola andJones [12]. This approach is selected because of its compu-tational ef\ufb01ciency and simplicity.One observation which is shared among all previous re-lated work is that a multi-view detector must be carefullyconstructed by combining a collection of detectors eachtrained for a single viewpoint. It appears that a monolithicapproach, where a single classi\ufb01er is trained to detect allposes of a face, is unlearnable with existing classi\ufb01ers. Ourinformal experiments lend support to this conclusion, sincea classi\ufb01er trained on all poses appears to be hopelessly in-accurate.This paper addresses two types of pose variation: non-frontal faces, which are rotated out of the image plane, andnon-upright faces, which are rotated in the image plane.In both cases the multi-view detector presented in this pa-per is a combination of Viola-Jones detectors, each detectortrained on face data taken from a single viewpoint.Reliable non-upright face detection was \ufb01rst presentedin a paper by Rowley, Baluja and Kanade [8]. They traintwo neural network classi\ufb01ers. The \ufb01rst estimates the poseof a face in the detection window. The second is a conven-tional face detector. Faces are detected in three steps: foreach image window the pose of \u201cface\u201d is \ufb01rst estimated; thepose estimate is then used to de-rotate the image window;the window is then classi\ufb01ed by the second detector. Fornon-face windows, the poses estimate must be consideredrandom. Nevertheless, a rotated non-faceshouldbe rejectedby the conventional detector. One potential \ufb02aw of such asystem is that the \ufb01nal detection rate is roughly the productof the correct classi\ufb01cation rates of the two classi\ufb01ers (sincethe errors of the two classi\ufb01ers are somewhat independent).One could adopt the Rowley et al. three step approachwhile replacingthe classi\ufb01ers with those of Viola andJones.The \ufb01nal system would be more ef\ufb01cient, but not signi\ufb01-cantly. Classi\ufb01cation by the Viola-Jones system is so ef\ufb01-cient, that derotation would dominate the computational ex-pense. In principle derotation is not strictly necessary sinceit should be possible to construct a detector for rotated facesdirectly. Detection becomes a two stage process. First thepose of the window is estimated and then one ofrotationspeci\ufb01c detectors is called upon to classify the window.In this paper detection of non-upright faces is handledusing the two stage approach. In the \ufb01rst stage the pose ofeach window is estimated using a decision tree constructedusing features like those described by Viola and Jones. Inthe second stage one ofpose speci\ufb01c Viola-Jones dete-tectors are used to classify the window.Oncepose speci\ufb01c detectors are trained and available,an alternative detection process can be tested as well. In thiscase alldetectors are evaluated and the union of their de-"
+            },
+            "slug": "Fast-Multi-view-Face-Detection-Jones-Viola",
+            "title": {
+                "fragments": [],
+                "text": "Fast Multi-view Face Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A multi-view detector presented in this pa-per is a combination of Viola-Jones detectors, each detectortrained on face data taken from a single viewpoint, which appears that a monolithic approach to face detection is unlearnable with existing classi\ufb01er trained on all poses."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145030811"
+                        ],
+                        "name": "C. Papageorgiou",
+                        "slug": "C.-Papageorgiou",
+                        "structuredName": {
+                            "firstName": "Constantine",
+                            "lastName": "Papageorgiou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Papageorgiou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685292"
+                        ],
+                        "name": "T. Poggio",
+                        "slug": "T.-Poggio",
+                        "structuredName": {
+                            "firstName": "Tomaso",
+                            "lastName": "Poggio",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Poggio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 105
+                            }
+                        ],
+                        "text": "1 Related Work One of the most successful approaches for object detection is the sliding window paradigm [23, 28]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13308232,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e6c20ed0c3f375f403ab5d750a6e9699d5c3af6a",
+            "isKey": false,
+            "numCitedBy": 1404,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a general, trainable system for object detection in unconstrained, cluttered scenes. The system derives much of its power from a representation that describes an object class in terms of an overcomplete dictionary of local, oriented, multiscale intensity differences between adjacent regions, efficiently computable as a Haar wavelet transform. This example-based learning approach implicitly derives a model of an object class by training a support vector machine classifier using a large set of positive and negative examples. We present results on face, people, and car detection tasks using the same architecture. In addition, we quantify how the representation affects detection performance by considering several alternate representations including pixels and principal components. We also describe a real-time application of our person detection system as part of a driver assistance system."
+            },
+            "slug": "A-Trainable-System-for-Object-Detection-Papageorgiou-Poggio",
+            "title": {
+                "fragments": [],
+                "text": "A Trainable System for Object Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 92,
+                "text": "A general, trainable system for object detection in unconstrained, cluttered scenes that derives much of its power from a representation that describes an object class in terms of an overcomplete dictionary of local, oriented, multiscale intensity differences between adjacent regions, efficiently computable as a Haar wavelet transform."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2433494"
+                        ],
+                        "name": "Andreas Ess",
+                        "slug": "Andreas-Ess",
+                        "structuredName": {
+                            "firstName": "Andreas",
+                            "lastName": "Ess",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andreas Ess"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1789756"
+                        ],
+                        "name": "B. Leibe",
+                        "slug": "B.-Leibe",
+                        "structuredName": {
+                            "firstName": "B.",
+                            "lastName": "Leibe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Leibe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144810819"
+                        ],
+                        "name": "K. Schindler",
+                        "slug": "K.-Schindler",
+                        "structuredName": {
+                            "firstName": "Konrad",
+                            "lastName": "Schindler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Schindler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 96,
+                                "start": 92
+                            }
+                        ],
+                        "text": "Evaluation scripts, detector descriptions, additional results (including on the ETH dataset [11] and under varying conditions) are all available online at [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 187,
+                                "start": 183
+                            }
+                        ],
+                        "text": "The resulting method achieves state-of-the-art results, being within 1-2% detection rate of the highest reported results across four datasets (Caltech Pedestrians [8], INRIA [6], ETH [11], and TUD-Brussels [33])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10044277,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7047496e6159cdac94b2871516b593bf1c6bf0c5",
+            "isKey": false,
+            "numCitedBy": 623,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a mobile vision system for multi-person tracking in busy environments. Specifically, the system integrates continuous visual odometry computation with tracking-by-detection in order to track pedestrians in spite of frequent occlusions and egomotion of the camera rig. To achieve reliable performance under real-world conditions, it has long been advocated to extract and combine as much visual information as possible. We propose a way to closely integrate the vision modules for visual odometry, pedestrian detection, depth estimation, and tracking. The integration naturally leads to several cognitive feedback loops between the modules. Among others, we propose a novel feedback connection from the object detector to visual odometry which utilizes the semantic knowledge of detection to stabilize localization. Feedback loops always carry the danger that erroneous feedback from one module is amplified and causes the entire system to become instable. We therefore incorporate automatic failure detection and recovery, allowing the system to continue when a module becomes unreliable. The approach is experimentally evaluated on several long and difficult video sequences from busy inner-city locations. Our results show that the proposed integration makes it possible to deliver stable tracking performance in scenes of previously infeasible complexity."
+            },
+            "slug": "A-mobile-vision-system-for-robust-multi-person-Ess-Leibe",
+            "title": {
+                "fragments": [],
+                "text": "A mobile vision system for robust multi-person tracking"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 88,
+                "text": "A mobile vision system for multi-person tracking in busy environments that integrates continuous visual odometry computation with tracking-by-detection in order to track pedestrians in spite of frequent occlusions and egomotion of the camera rig is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2152835649"
+                        ],
+                        "name": "Li Zhang",
+                        "slug": "Li-Zhang",
+                        "structuredName": {
+                            "firstName": "Li",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Li Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144862593"
+                        ],
+                        "name": "R. Nevatia",
+                        "slug": "R.-Nevatia",
+                        "structuredName": {
+                            "firstName": "Ramakant",
+                            "lastName": "Nevatia",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Nevatia"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 29
+                            }
+                        ],
+                        "text": "In Visual Computer Vision on GPU\u2019s, 2008."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 93
+                            }
+                        ],
+                        "text": "Finally, a number of groups have recently ported HOG to a parallel implementation using GPUs [4, 32, 34]; such efforts are complementary to our own."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 4007419,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0e19a62d03849ae9eb385416e6fbde63b90098c6",
+            "isKey": false,
+            "numCitedBy": 61,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe an efficient design for scan-window based object detectors using a general purpose graphics hardware computing (GPGPU) framework. While the design is particularly applied to built a pedestrian detector that uses histogram of oriented gradient (HOG) features and the support vector machine (SVM) classifiers, the methodology we use is generic and can be applied to other objects, using different features and classifiers. The GPGPU paradigm is utilized for feature extraction and classification, so that the scan windows can be processed in parallel. We further propose to precompute and cache all the histograms in advance, instead of using integral images, which greatly lowers the computation cost. A multi-scale reduce strategy is employed to save expensive CPU-GPU data transfers. Experimental results show that our implementation achieves a more-than-ten-times speed up with no loss on detection rates."
+            },
+            "slug": "Efficient-scan-window-based-object-detection-using-Zhang-Nevatia",
+            "title": {
+                "fragments": [],
+                "text": "Efficient scan-window based object detection using GPGPU"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "This work describes an efficient design for scan-window based object detectors using a general purpose graphics hardware computing (GPGPU) framework and proposes to precompute and cache all the histograms in advance, instead of using integral images, which greatly lowers the computation cost."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35208858"
+                        ],
+                        "name": "Subhransu Maji",
+                        "slug": "Subhransu-Maji",
+                        "structuredName": {
+                            "firstName": "Subhransu",
+                            "lastName": "Maji",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Subhransu Maji"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39668247"
+                        ],
+                        "name": "A. Berg",
+                        "slug": "A.-Berg",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Berg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Berg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143751119"
+                        ],
+                        "name": "Jitendra Malik",
+                        "slug": "Jitendra-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jitendra Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 54
+                            }
+                        ],
+                        "text": "This includes all top performing pedestrian detectors [6, 7, 14, 22, 31] evaluated on the Caltech Pedestrian dataset [8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 103
+                            }
+                        ],
+                        "text": "For pedestrian detection [8, 10], however, the top performing methods are all based on sliding windows [6, 7, 14, 22, 31], and each of these methods utilizes some form of gradient histograms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2990061,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a7086378e68dae59975cf749c101c53a0fa90eab",
+            "isKey": false,
+            "numCitedBy": 1082,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Straightforward classification using kernelized SVMs requires evaluating the kernel for a test vector and each of the support vectors. For a class of kernels we show that one can do this much more efficiently. In particular we show that one can build histogram intersection kernel SVMs (IKSVMs) with runtime complexity of the classifier logarithmic in the number of support vectors as opposed to linear for the standard approach. We further show that by precomputing auxiliary tables we can construct an approximate classifier with constant runtime and space requirements, independent of the number of support vectors, with negligible loss in classification accuracy on various tasks. This approximation also applies to 1 - chi2 and other kernels of similar form. We also introduce novel features based on a multi-level histograms of oriented edge energy and present experiments on various detection datasets. On the INRIA pedestrian dataset an approximate IKSVM classifier based on these features has the current best performance, with a miss rate 13% lower at 10-6 False Positive Per Window than the linear SVM detector of Dalal & Triggs. On the Daimler Chrysler pedestrian dataset IKSVM gives comparable accuracy to the best results (based on quadratic SVM), while being 15times faster. In these experiments our approximate IKSVM is up to 2000times faster than a standard implementation and requires 200times less memory. Finally we show that a 50times speedup is possible using approximate IKSVM based on spatial pyramid features on the Caltech 101 dataset with negligible loss of accuracy."
+            },
+            "slug": "Classification-using-intersection-kernel-support-is-Maji-Berg",
+            "title": {
+                "fragments": [],
+                "text": "Classification using intersection kernel support vector machines is efficient"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "It is shown that one can build histogram intersection kernel SVMs (IKSVMs) with runtime complexity of the classifier logarithmic in the number of support vectors as opposed to linear for the standard approach."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2276554"
+                        ],
+                        "name": "R. Fergus",
+                        "slug": "R.-Fergus",
+                        "structuredName": {
+                            "firstName": "Rob",
+                            "lastName": "Fergus",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fergus"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690922"
+                        ],
+                        "name": "P. Perona",
+                        "slug": "P.-Perona",
+                        "structuredName": {
+                            "firstName": "Pietro",
+                            "lastName": "Perona",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Perona"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 55
+                            }
+                        ],
+                        "text": "Numerous other detection frameworks have been proposed [2, 15, 20, 30], and although a full review is outside the scope of this work, the approximations we develop could potentially be applicable to such approaches as well."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5745749,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "62837ab473124ea43cb8d7c6a4b4ee0f6f14e8c5",
+            "isKey": false,
+            "numCitedBy": 2487,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a method to learn and recognize object class models from unlabeled and unsegmented cluttered scenes in a scale invariant manner. Objects are modeled as flexible constellations of parts. A probabilistic representation is used for all aspects of the object: shape, appearance, occlusion and relative scale. An entropy-based feature detector is used to select regions and their scale within the image. In learning the parameters of the scale-invariant object model are estimated. This is done using expectation-maximization in a maximum-likelihood setting. In recognition, this model is used in a Bayesian manner to classify images. The flexible nature of the model is demonstrated by excellent results over a range of datasets including geometrically constrained classes (e.g. faces, cars) and flexible objects (such as animals)."
+            },
+            "slug": "Object-class-recognition-by-unsupervised-learning-Fergus-Perona",
+            "title": {
+                "fragments": [],
+                "text": "Object class recognition by unsupervised scale-invariant learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The flexible nature of the model is demonstrated by excellent results over a range of datasets including geometrically constrained classes (e.g. faces, cars) and flexible objects (such as animals)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2003 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2003. Proceedings."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2340109"
+                        ],
+                        "name": "C. Wojek",
+                        "slug": "C.-Wojek",
+                        "structuredName": {
+                            "firstName": "Christian",
+                            "lastName": "Wojek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Wojek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1891864"
+                        ],
+                        "name": "Gyuri Dork\u00f3",
+                        "slug": "Gyuri-Dork\u00f3",
+                        "structuredName": {
+                            "firstName": "Gyuri",
+                            "lastName": "Dork\u00f3",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Gyuri Dork\u00f3"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2146216616"
+                        ],
+                        "name": "Andr\u00e9 Schulz",
+                        "slug": "Andr\u00e9-Schulz",
+                        "structuredName": {
+                            "firstName": "Andr\u00e9",
+                            "lastName": "Schulz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andr\u00e9 Schulz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48920094"
+                        ],
+                        "name": "B. Schiele",
+                        "slug": "B.-Schiele",
+                        "structuredName": {
+                            "firstName": "Bernt",
+                            "lastName": "Schiele",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Schiele"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 29
+                            }
+                        ],
+                        "text": "In Visual Computer Vision on GPU\u2019s, 2008."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 93
+                            }
+                        ],
+                        "text": "Finally, a number of groups have recently ported HOG to a parallel implementation using GPUs [4, 32, 34]; such efforts are complementary to our own."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 37286148,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a114d163aa331aaa417be65dc6ec5f898c9660f1",
+            "isKey": false,
+            "numCitedBy": 135,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a fast object class localization framework implemented on a data parallel architecture currently available in recent computers. Our case study, the implementation of Histograms of Oriented Gradients (HOG) descriptors, shows that just by using this recent programming model we can easily speed up an original CPU-only implementation by a factor of 34, making it unnecessary to use early rejection cascades that sacrifice classification performance, even in real-time conditions. Using recent techniques to program the Graphics Processing Unit (GPU) allow our method to scale up to the latest, as well as to future improvements of the hardware."
+            },
+            "slug": "Sliding-Windows-for-Rapid-Object-Class-A-Parallel-Wojek-Dork\u00f3",
+            "title": {
+                "fragments": [],
+                "text": "Sliding-Windows for Rapid Object Class Localization: A Parallel Technique"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 66,
+                "text": "A fast object class localization framework implemented on a data parallel architecture currently available in recent computers, and using recent techniques to program the Graphics Processing Unit (GPU) allow this method to scale up to the latest, as well as to future improvements of the hardware."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "DAGM-Symposium"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49649079"
+                        ],
+                        "name": "D. Field",
+                        "slug": "D.-Field",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Field",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Field"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1600874,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "aeb37769d72999bcbfb0582b73607fd8d23f4545",
+            "isKey": false,
+            "numCitedBy": 3274,
+            "numCiting": 57,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The relative efficiency of any particular image-coding scheme should be defined only in relation to the class of images that the code is likely to encounter. To understand the representation of images by the mammalian visual system, it might therefore be useful to consider the statistics of images from the natural environment (i.e., images with trees, rocks, bushes, etc). In this study, various coding schemes are compared in relation to how they represent the information in such natural images. The coefficients of such codes are represented by arrays of mechanisms that respond to local regions of space, spatial frequency, and orientation (Gabor-like transforms). For many classes of image, such codes will not be an efficient means of representing information. However, the results obtained with six natural images suggest that the orientation and the spatial-frequency tuning of mammalian simple cells are well suited for coding the information in such images if the goal of the code is to convert higher-order redundancy (e.g., correlation between the intensities of neighboring pixels) into first-order redundancy (i.e., the response distribution of the coefficients). Such coding produces a relatively high signal-to-noise ratio and permits information to be transmitted with only a subset of the total number of cells. These results support Barlow's theory that the goal of natural vision is to represent the information in the natural environment with minimal redundancy."
+            },
+            "slug": "Relations-between-the-statistics-of-natural-images-Field",
+            "title": {
+                "fragments": [],
+                "text": "Relations between the statistics of natural images and the response properties of cortical cells."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The results obtained with six natural images suggest that the orientation and the spatial-frequency tuning of mammalian simple cells are well suited for coding the information in such images if the goal of the code is to convert higher-order redundancy into first- order redundancy."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Journal of the Optical Society of America. A, Optics and image science"
+            },
+            "year": 1987
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685089"
+                        ],
+                        "name": "Pedro F. Felzenszwalb",
+                        "slug": "Pedro-F.-Felzenszwalb",
+                        "structuredName": {
+                            "firstName": "Pedro",
+                            "lastName": "Felzenszwalb",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pedro F. Felzenszwalb"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2983898"
+                        ],
+                        "name": "Ross B. Girshick",
+                        "slug": "Ross-B.-Girshick",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Girshick",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ross B. Girshick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145689002"
+                        ],
+                        "name": "David A. McAllester",
+                        "slug": "David-A.-McAllester",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "McAllester",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David A. McAllester"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1770537"
+                        ],
+                        "name": "D. Ramanan",
+                        "slug": "D.-Ramanan",
+                        "structuredName": {
+                            "firstName": "Deva",
+                            "lastName": "Ramanan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ramanan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 103
+                            }
+                        ],
+                        "text": "For pedestrian detection [8, 10], however, the top performing methods are all based on sliding windows [6, 7, 14, 22, 31], and each of these methods utilizes some form of gradient histograms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 170
+                            }
+                        ],
+                        "text": "Nevertheless, even when highly optimized, just constructing gradient histograms over a finely sampled image pyramid takes a minimum of about one second per 640\u00d7480 image [7, 14]; thus this becomes a major bottleneck for all of the pedestrian detectors listed above."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 54
+                            }
+                        ],
+                        "text": "This includes all top performing pedestrian detectors [6, 7, 14, 22, 31] evaluated on the Caltech Pedestrian dataset [8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 91
+                            }
+                        ],
+                        "text": "However, the proposed system was real time for single scale detection only (recent methods [7, 14] achieve similar speeds and with higher accuracy); in this work we are interested in real time multiscale detection."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 215,
+                                "start": 208
+                            }
+                        ],
+                        "text": "Typically, detectors are evaluated on 8-16 scales per octave [8], and even when optimized, just constructing gradient histograms over a finely sampled image pyramid can take over one second per 640\u00d7480 image [7, 14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 166,
+                                "start": 159
+                            }
+                        ],
+                        "text": "At 80% detection rate on the INRIA pedestrian dataset [6], VJ outputs 10 false positives per image (fppi), HOG [6] outputs 1 fppi, and the most recent methods [7, 14], through a combination of richer features and more sophisticated learning techniques, output just ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3198903,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e79272fe3d65197100eae8be9fec6469107969ae",
+            "isKey": true,
+            "numCitedBy": 9374,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe an object detection system based on mixtures of multiscale deformable part models. Our system is able to represent highly variable object classes and achieves state-of-the-art results in the PASCAL object detection challenges. While deformable part models have become quite popular, their value had not been demonstrated on difficult benchmarks such as the PASCAL data sets. Our system relies on new methods for discriminative training with partially labeled data. We combine a margin-sensitive approach for data-mining hard negative examples with a formalism we call latent SVM. A latent SVM is a reformulation of MI--SVM in terms of latent variables. A latent SVM is semiconvex, and the training problem becomes convex once latent information is specified for the positive examples. This leads to an iterative training algorithm that alternates between fixing latent values for positive examples and optimizing the latent SVM objective function."
+            },
+            "slug": "Object-Detection-with-Discriminatively-Trained-Part-Felzenszwalb-Girshick",
+            "title": {
+                "fragments": [],
+                "text": "Object Detection with Discriminatively Trained Part Based Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 91,
+                "text": "An object detection system based on mixtures of multiscale deformable part models that is able to represent highly variable object classes and achieves state-of-the-art results in the PASCAL object detection challenges is described."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1829021"
+                        ],
+                        "name": "D. Ruderman",
+                        "slug": "D.-Ruderman",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Ruderman",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ruderman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1762240"
+                        ],
+                        "name": "W. Bialek",
+                        "slug": "W.-Bialek",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Bialek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Bialek"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 13
+                            }
+                        ],
+                        "text": "Ruderman and Bialek [26, 27] showed that various statistics of natural images are independent of the scale at which the images were captured, or in other words, the statistics of an image are independent of the scene area corresponding to a single pixel."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 140,
+                                "start": 132
+                            }
+                        ],
+                        "text": "In order to understand more generally how information behaves in resampled images, we turn to the study of natural image statistics [16, 27]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 46
+                            }
+                        ],
+                        "text": "1 Exponential Scaling Law Ruderman and Bialek [26, 27] showed that various statistics of natural images are independent of the scale at which the images were captured, or in other words, the statistics of an image are independent of the scene area corresponding to a single pixel."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 27
+                            }
+                        ],
+                        "text": "[27] D. L. Ruderman and W. Bialek."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 10210242,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4ea293ac6d42d09ccb9ffab7bd72dcf6102c3eab",
+            "isKey": true,
+            "numCitedBy": 974,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In order to best understand a visual system one should attempt to characterize the natural images it processes. We gather images from the woods and find that these scenes possess an ensemble scale invariance. Further, they are highly non-Gaussian, and this non-Gaussian character cannot be removed through local linear filtering. We find that including a simple \"gain control\" nonlinearity in the filtering process makes the filter output quite Gaussian, meaning information is maximized at fixed channel variance. Finally, we use the measured power spectrum to place an upper bound on the information conveyed about natural scenes by an array of receptors."
+            },
+            "slug": "Statistics-of-Natural-Images:-Scaling-in-the-Woods-Ruderman-Bialek",
+            "title": {
+                "fragments": [],
+                "text": "Statistics of Natural Images: Scaling in the Woods"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "This work gathers images from the woods and finds that these scenes possess an ensemble scale invariance, and this non-Gaussian character cannot be removed through local linear filtering, meaning information is maximized at fixed channel variance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2340109"
+                        ],
+                        "name": "C. Wojek",
+                        "slug": "C.-Wojek",
+                        "structuredName": {
+                            "firstName": "Christian",
+                            "lastName": "Wojek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Wojek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48920094"
+                        ],
+                        "name": "B. Schiele",
+                        "slug": "B.-Schiele",
+                        "structuredName": {
+                            "firstName": "Bernt",
+                            "lastName": "Schiele",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Schiele"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 54
+                            }
+                        ],
+                        "text": "This includes all top performing pedestrian detectors [6, 7, 14, 22, 31] evaluated on the Caltech Pedestrian dataset [8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 103
+                            }
+                        ],
+                        "text": "For pedestrian detection [8, 10], however, the top performing methods are all based on sliding windows [6, 7, 14, 22, 31], and each of these methods utilizes some form of gradient histograms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 39046756,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3e6fa6cf1fe2e23fdf7716f89b160333c7a93b26",
+            "isKey": false,
+            "numCitedBy": 266,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Over the years a number of powerful people detectors have been proposed. While it is standard to test complete detectors on publicly available datasets, it is often unclear how the different components (e.g. features and classifiers) of the respective detectors compare. Therefore, this paper contributes a systematic comparison of the most prominent and successful people detectors. Based on this evaluation we also propose a new detector that outperforms the state-of-art on the INRIA person dataset by combining multiple features."
+            },
+            "slug": "A-Performance-Evaluation-of-Single-and-People-Wojek-Schiele",
+            "title": {
+                "fragments": [],
+                "text": "A Performance Evaluation of Single and Multi-feature People Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "A systematic comparison of the most prominent and successful people detectors is contributed and a new detector is proposed that outperforms the state-of-art on the INRIA person dataset by combining multiple features."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "DAGM-Symposium"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2110604335"
+                        ],
+                        "name": "Markus Weber",
+                        "slug": "Markus-Weber",
+                        "structuredName": {
+                            "firstName": "Markus",
+                            "lastName": "Weber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Markus Weber"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678311"
+                        ],
+                        "name": "M. Welling",
+                        "slug": "M.-Welling",
+                        "structuredName": {
+                            "firstName": "Max",
+                            "lastName": "Welling",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Welling"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690922"
+                        ],
+                        "name": "P. Perona",
+                        "slug": "P.-Perona",
+                        "structuredName": {
+                            "firstName": "Pietro",
+                            "lastName": "Perona",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Perona"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 55
+                            }
+                        ],
+                        "text": "Numerous other detection frameworks have been proposed [2, 15, 20, 30], and although a full review is outside the scope of this work, the approximations we develop could potentially be applicable to such approaches as well."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8970876,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1cf1527807ebb16020b04d4166e7ba8d27652302",
+            "isKey": false,
+            "numCitedBy": 757,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a method to learn object class models from unlabeled and unsegmented cluttered scenes for the purpose of visual object recognition. We focus on a particular type of model where objects are represented as flexible constellations of rigid parts (features). The variability within a class is represented by a joint probability density function (pdf) on the shape of the constellation and the output of part detectors. In a first stage, the method automatically identifies distinctive parts in the training set by applying a clustering algorithm to patterns selected by an interest operator. It then learns the statistical shape model using expectation maximization. The method achieves very good classification results on human faces and rear views of cars."
+            },
+            "slug": "Unsupervised-Learning-of-Models-for-Recognition-Weber-Welling",
+            "title": {
+                "fragments": [],
+                "text": "Unsupervised Learning of Models for Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "A method to learn object class models from unlabeled and unsegmented cluttered cluttered scenes for the purpose of visual object recognition that achieves very good classification results on human faces and rear views of cars."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1829021"
+                        ],
+                        "name": "D. Ruderman",
+                        "slug": "D.-Ruderman",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Ruderman",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ruderman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2793971,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "13206b6ba3711a14a56cf1599ecb08c16f49061e",
+            "isKey": false,
+            "numCitedBy": 912,
+            "numCiting": 144,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recently there has been a resurgence of interest in the properties of natural images. Their statistics are important not only in image compression but also for the study of sensory processing in biology, which can be viewed as satisfying certain \u2018design criteria\u2019. This review summarizes previous work on image statistics and presents our own data. Perhaps the most notable property of natural images is an invariance to scale. We present data to support this claim as well as evidence for a hierarchical invariance in natural scenes. These symmetries provide a powerful description of natural images as they greatly restrict the class of allowed distributions."
+            },
+            "slug": "The-statistics-of-natural-images-Ruderman",
+            "title": {
+                "fragments": [],
+                "text": "The statistics of natural images"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3205375"
+                        ],
+                        "name": "T. Lindeberg",
+                        "slug": "T.-Lindeberg",
+                        "structuredName": {
+                            "firstName": "Tony",
+                            "lastName": "Lindeberg",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Lindeberg"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 96,
+                                "start": 92
+                            }
+                        ],
+                        "text": "Without scale invariance, the standard approach is to explicitly construct an image pyramid [21] and perform detection at each scale separately, see Figure 1(a)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 65
+                            }
+                        ],
+                        "text": "Significant research has also been devoted to scale space theory [21], including real time variants [5, 9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17143661,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f306444acc81b0af1875e5633e921148cb3a8977",
+            "isKey": false,
+            "numCitedBy": 682,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A basic and extensive treatment of discrete aspects of the scale-space theory is presented. A genuinely discrete scale-space theory is developed and its connection to the continuous scale-space theory is explained. Special attention is given to discretization effects, which occur when results from the continuous scale-space theory are to be implemented computationally. The 1D problem is solved completely in an axiomatic manner. For the 2D problem, the author discusses how the 2D discrete scale space should be constructed. The main results are as follows: the proper way to apply the scale-space theory to discrete signals and discrete images is by discretization of the diffusion equation, not the convolution integral; the discrete scale space obtained in this way can be described by convolution with the kernel, which is the discrete analog of the Gaussian kernel, a scale-space implementation based on the sampled Gaussian kernel might lead to undesirable effects and computational problems, especially at fine levels of scale; the 1D discrete smoothing transformations can be characterized exactly and a complete catalogue is given; all finite support 1D discrete smoothing transformations arise from repeated averaging over two adjacent elements (the limit case of such an averaging process is described); and the symmetric 1D discrete smoothing kernels are nonnegative and unimodal, in both the spatial and the frequency domain. >"
+            },
+            "slug": "Scale-Space-for-Discrete-Signals-Lindeberg",
+            "title": {
+                "fragments": [],
+                "text": "Scale-Space for Discrete Signals"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 50,
+                "text": "The proper way to apply the scale-space theory to discrete signals and discrete images is by discretization of the diffusion equation, not the convolution integral."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1852617"
+                        ],
+                        "name": "R. Eaton",
+                        "slug": "R.-Eaton",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Eaton",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Eaton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144003273"
+                        ],
+                        "name": "M. R. Stevens",
+                        "slug": "M.-R.-Stevens",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Stevens",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. R. Stevens"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37186378"
+                        ],
+                        "name": "J. McBride",
+                        "slug": "J.-McBride",
+                        "structuredName": {
+                            "firstName": "Jonah",
+                            "lastName": "McBride",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. McBride"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3216031"
+                        ],
+                        "name": "G. Foil",
+                        "slug": "G.-Foil",
+                        "structuredName": {
+                            "firstName": "Greydon",
+                            "lastName": "Foil",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Foil"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2789970"
+                        ],
+                        "name": "M. Snorrason",
+                        "slug": "M.-Snorrason",
+                        "structuredName": {
+                            "firstName": "Magn\u00fas",
+                            "lastName": "Snorrason",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Snorrason"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 100
+                            }
+                        ],
+                        "text": "Significant research has also been devoted to scale space theory [21], including real time variants [5, 9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6305279,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a924cb7518f3a5dac09001e4bbd9d574be8c41f8",
+            "isKey": false,
+            "numCitedBy": 8,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Over the last 30 years, scale space representations have emerged as a fundamental tool for allowing systems to become increasingly robust against changes in camera viewpoint. Unfortunately, the implementation details that are required to properly construct a scale space representation are not published in the literature. Incorrectly implementing these details will lead to extremely poor system performance. In this paper, we address the practical considerations associated with scale space representations. Our focus is to make explicit how a scale space is constructed, thereby increasing the accessibility of this powerful representation to developers of computer vision systems."
+            },
+            "slug": "A-Systems-View-of-Scale-Space-Eaton-Stevens",
+            "title": {
+                "fragments": [],
+                "text": "A Systems View of Scale Space"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This paper addresses the practical considerations associated with scale space representations and makes explicit how a scale space is constructed, thereby increasing the accessibility of this powerful representation to developers of computer vision systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Fourth IEEE International Conference on Computer Vision Systems (ICVS'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685089"
+                        ],
+                        "name": "Pedro F. Felzenszwalb",
+                        "slug": "Pedro-F.-Felzenszwalb",
+                        "structuredName": {
+                            "firstName": "Pedro",
+                            "lastName": "Felzenszwalb",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pedro F. Felzenszwalb"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1713089"
+                        ],
+                        "name": "D. Huttenlocher",
+                        "slug": "D.-Huttenlocher",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Huttenlocher",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Huttenlocher"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 102
+                            }
+                        ],
+                        "text": "Through numerous strategies, including cascades [28], coarse-to-fine search [17], distance transforms [13], branch and bound search [19], and many others, the classification stage can be made quite fast."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9018871,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6deeed19c56ec6e737a909de9ee172b93f0d0a89",
+            "isKey": false,
+            "numCitedBy": 449,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A pictorial structure is a collection of parts arranged in a deformable configuration. Each part is represented using a simple appearance model and the deformable configuration is represented by spring-like connections between pairs of parts. While pictorial structures were introduced a number of years ago, they have not been broadly applied to matching and recognition problems. This has been due in part to the computational difficulty of matching pictorial structures to images. In this paper we present an efficient algorithm for finding the best global match of a pictorial stucture to an image. With this improved algorithm, pictorial structures provide a practical and powerful framework for quantitative descriptions of objects and scenes, and are suitable for many generic image recognition problems. We illustrate the approach using simple models of a person and a car."
+            },
+            "slug": "Efficient-matching-of-pictorial-structures-Felzenszwalb-Huttenlocher",
+            "title": {
+                "fragments": [],
+                "text": "Efficient matching of pictorial structures"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "An efficient algorithm for finding the best global match of a pictorial stucture to an image is presented and it is shown that this approach is suitable for many generic image recognition problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings IEEE Conference on Computer Vision and Pattern Recognition. CVPR 2000 (Cat. No.PR00662)"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145450429"
+                        ],
+                        "name": "J. Miles",
+                        "slug": "J.-Miles",
+                        "structuredName": {
+                            "firstName": "Joseph",
+                            "lastName": "Miles",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Miles"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143604379"
+                        ],
+                        "name": "J. Williamson",
+                        "slug": "J.-Williamson",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Williamson",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Williamson"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 119392472,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "728612afb6ce43360a88560c75572969ce89d659",
+            "isKey": false,
+            "numCitedBy": 9,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Soit E la famille de toutes les fonctions entieres f(t)=\u03a3 \u221e k =0 a k t k verifiant a o =1, a k >0 pour k=1,2,3,..., et \u222b 0 \u221e t k /f(t) dt=1/a k , k=0,1,2,.... On demontre le theoreme suivant: la fonction exponentielle f(t)=e t est le seul membre de E"
+            },
+            "slug": "A-characterization-of-the-exponential-function-Miles-Williamson",
+            "title": {
+                "fragments": [],
+                "text": "A characterization of the exponential function"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1986
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "14055446"
+                        ],
+                        "name": "S. G. Ghurye",
+                        "slug": "S.-G.-Ghurye",
+                        "structuredName": {
+                            "firstName": "Sudhish",
+                            "lastName": "Ghurye",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. G. Ghurye"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 124645453,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "ff4930d0a76a7aaf215723ae1f311665b3e233ea",
+            "isKey": false,
+            "numCitedBy": 2,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "A-Characterization-of-the-Exponential-Function-Ghurye",
+            "title": {
+                "fragments": [],
+                "text": "A Characterization of the Exponential Function"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1957
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Huttenlocher . Efficient matching of pictorial structures"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2000
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 13
+                            }
+                        ],
+                        "text": "Ruderman and Bialek [26, 27] showed that various statistics of natural images are independent of the scale at which the images were captured, or in other words, the statistics of an image are independent of the scene area corresponding to a single pixel."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 46
+                            }
+                        ],
+                        "text": "1 Exponential Scaling Law Ruderman and Bialek [26, 27] showed that various statistics of natural images are independent of the scale at which the images were captured, or in other words, the statistics of an image are independent of the scene area corresponding to a single pixel."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 27
+                            }
+                        ],
+                        "text": "[27] D. L. Ruderman and W. Bialek."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "The statistics of natural images. Network: Computation"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Systems,"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 55,
+                                "start": 52
+                            }
+                        ],
+                        "text": "[9] R. S. Eaton, M. R. Stevens, J. C. McBride, G. T. Foil, and M. S. Snorrason."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 92
+                            }
+                        ],
+                        "text": "To take advantage of this, we proposed a hybrid approach that uses a sparsely sampled image pyramid to approximate features at intermediate scales."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "www.vision.caltech.edu/Image_Datasets/CaltechPedestrians"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "www.vision.caltech.edu/Image_Datasets/CaltechPedestrians"
+            }
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 23,
+            "methodology": 13
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 36,
+        "totalPages": 4
+    },
+    "page_url": "https://www.semanticscholar.org/paper/The-Fastest-Pedestrian-Detector-in-the-West-Doll\u00e1r-Belongie/7fe1a8ca95b63f5c5d60f929c5822bfa7d5ac8e5?sort=total-citations"
+}

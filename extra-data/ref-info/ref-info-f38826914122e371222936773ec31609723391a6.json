@@ -1,0 +1,2625 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2090818"
+                        ],
+                        "name": "M. Isard",
+                        "slug": "M.-Isard",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Isard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Isard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145162067"
+                        ],
+                        "name": "A. Blake",
+                        "slug": "A.-Blake",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Blake",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Blake"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 18939846,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "91a389b99a77895e4b33e4a81af2f0a5fe8fc011",
+            "isKey": false,
+            "numCitedBy": 676,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Tracking research has diverged into two camps; low-level approaches which are typically fast and robust but provide little fine-scale information, and high-level approaches which track complex deformations in high-dimensional spaces but must trade off speed against robustness. Real-time high-level systems perform poorly in clutter and initialisation for most high-level systems is either performed manually or by a separate module. This paper presents a new technique to combine low- and high-level information in a consistent probabilistic framework, using the statistical technique of importance sampling combined with the Condensation algorithm. The general framework, which we term Icondensation, is described, and a hand tracker is demonstrated which combines colour blob-tracking with a contour model. The resulting tracker is robust to rapid motion, heavy clutter and hand-coloured distractors, and re-initialises automatically. The system runs comfortably in real time on an entry-level desktop workstation."
+            },
+            "slug": "ICONDENSATION:-Unifying-Low-Level-and-High-Level-in-Isard-Blake",
+            "title": {
+                "fragments": [],
+                "text": "ICONDENSATION: Unifying Low-Level and High-Level Tracking in a Stochastic Framework"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A new technique to combine low- and high-level information in a consistent probabilistic framework is presented, using the statistical technique of importance sampling combined with the Condensation algorithm, and a hand tracker is demonstrated which combines colour blob-tracking with a contour model."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34767834"
+                        ],
+                        "name": "D. Magee",
+                        "slug": "D.-Magee",
+                        "structuredName": {
+                            "firstName": "Derek",
+                            "lastName": "Magee",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Magee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35061525"
+                        ],
+                        "name": "R. Boyle",
+                        "slug": "R.-Boyle",
+                        "structuredName": {
+                            "firstName": "Roger",
+                            "lastName": "Boyle",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Boyle"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 3169600,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f70d73d3c12eb51c2ab984e8276a9a765f8536f3",
+            "isKey": false,
+            "numCitedBy": 17,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract A method of extracting, classifying and modelling non-rigid shapes froman image sequence ispresented. Shapes areapproximated by polygonswherethe number of sides is related to the physical features of a shape class ratherthan any particular shape. A method of \u2018seeding\u2019 the polygonal approxima-tionisgivenwhere\u2018seeds\u2019 areautomaticallyextracted fromasetofdata. Mul-tiple models are built using polygons with different numbers of sides to al-low for feature occlusion. Principal component analysis (PCA) is performedon vector representations of the sides of the polygons which are normalisedby the total perimeter. This removes the need for normalisation of scale andtranslationas required in thePointDistributionModel [16]. A \u2018\ufb01t score\u2019 met-ricisde\ufb01nedwhich givesan indicationof howwellagivenshape\ufb01tsamodel. 1 Introduction There has been much work carried out on the extraction and classi\ufb01cation of non-rigidshapes from image sequences. In this paper a new method of classifying images automat-ically from an image sequence is proposed. This method is applied in the monitoring ofcattle movement to identifya particularnon-rigidobject in a scene (a cow in ourexample)and gain knowledge about the way in which this object changes with time.Kass et al [11] use an active shape model (snake) in which an energy function is min-imisedtoextractanobjectfromascene. TerzopoulosandSzeliski[15]havemadesomere-\ufb01nementstothistechniquewiththeinclusionofKalman\ufb01ltertechniques(Kalmansnakes).Blake et al [3] have further re\ufb01ned the technique by adding \u2018templates\u2019to this process toincorporate a search for a speci\ufb01c shape. In recent years theadvantage of such model-based approaches has been shown where prior informationabout a class of shapes is usedin extraction and classi\ufb01cation. The point distributionmodel (PDM) described by Cooteset al [16] is a useful way of describing a class of non-rigid shapeswhere a shape class isdescribed by a \ufb01xed number of points. A model is built from a group of shapes \ufb01tted withthis\ufb01xed number of \u2018reference points\u2019 and principalcomponent analysis (PCA) is used toextract \u2018modesof variation\u2019fromthedataset. Members ofashapeclass aredescribed withreference to an eigenspace where the axes are the eigenvectors produced from the princi-pal componentanalysis. A \u2018valid\u2019shape isconstructedby takingan area inthiseigenspacecentred around the mean shape (origin) and bounded by maximum deviations along eachprincipalaxes whichare related totheeigenvaluesproduced by PCA and thusthevariancewithinthe data set. PDMs rely on accurate positioningof pointsand can only describe ac-curately shape classes which deform in a linear fashion which can result in invalid shapesbeing included in the model.There havebeen a numberof methodsproposedforpoint\ufb01ttingaroundapre-extractedcontour [1, 2] which involve \ufb01nding a number of reference points (points of high curva-ture,extreme pointsetc) and addingextrapointsspaced evenlyroundthecontoursuch thatthe contour may be approximated by a spline. Hill et al [8] have proposed a new schemewhereby a contour is approximated by an arbitrary number of straight lines as de\ufb01ned bythe critical point detection algorithm described by Zhu and Chirlian [19]. In the compari-sonoftwoshapestheaveragenumberofpointsrequiredtorepresent theshapes isusedand"
+            },
+            "slug": "Building-Shape-Models-from-Image-Sequences-using-Magee-Boyle",
+            "title": {
+                "fragments": [],
+                "text": "Building Shape Models from Image Sequences using Piecewise Linear Approximation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "A new method of classifying images automat-ically from an image sequence is proposed and is applied in the monitoring of cattle movement to identify a particular non-rigid object in a scene and gain knowledge about the way in which this object changes with time."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1769685"
+                        ],
+                        "name": "K. Toyama",
+                        "slug": "K.-Toyama",
+                        "structuredName": {
+                            "firstName": "Kentaro",
+                            "lastName": "Toyama",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Toyama"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145162067"
+                        ],
+                        "name": "A. Blake",
+                        "slug": "A.-Blake",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Blake",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Blake"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5637383,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7bfe222d83e9dd9117bc4f8508962a01fb0b1626",
+            "isKey": false,
+            "numCitedBy": 231,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A new exemplar-based, probabilistic paradigm for visual tracking is presented. Probabilistic mechanisms are attractive because they handle fusion of information, especially temporal fusion, in a principled manner. Exemplars are selected representatives of raw training data, used here to represent probabilistic mixture distributions of object configurations. Their use avoids tedious hand-construction of object models and problems with changes of topology. Using exemplars in place of a parameterized model poses several challenges, addressed here with what we call the \"Metric Mixture\" (M/sup 2/) approach. The M/sup 2/ model has several valuable properties. Principally, it provides alternatives to standard learning algorithms by allowing the use of metrics that are not embedded in a vector space. Secondly, it uses a noise model that is learned from training data. Lastly, it eliminates any need for an assumption of probabilistic pixelwise independence. Experiments demonstrate the effectiveness of the M/sup 2/ model in two domains tracking walking people using chamfer distances on binary edge images and tracking mouth movements by means of a shuffle distance."
+            },
+            "slug": "Probabilistic-tracking-in-a-metric-space-Toyama-Blake",
+            "title": {
+                "fragments": [],
+                "text": "Probabilistic tracking in a metric space"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 57,
+                "text": "A new exemplar-based, probabilistic paradigm for visual tracking is presented, which provides alternatives to standard learning algorithms by allowing the use of metrics that are not embedded in a vector space and eliminates any need for an assumption of probabilistically pixelwise independence."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2679389"
+                        ],
+                        "name": "A. Baumberg",
+                        "slug": "A.-Baumberg",
+                        "structuredName": {
+                            "firstName": "Adam",
+                            "lastName": "Baumberg",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Baumberg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1967104"
+                        ],
+                        "name": "David C. Hogg",
+                        "slug": "David-C.-Hogg",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Hogg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David C. Hogg"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 62491650,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "67eac618325d5f5f31ce17922d51fad995a57749",
+            "isKey": false,
+            "numCitedBy": 283,
+            "numCiting": 10,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "There has been considerable research interest recently, in the areas of real time contour tracking and active shape models. This paper demonstrates how dynamic filtering can be used in combination with a modal-based flexible shape model to track an articulated non-rigid body in motion. The results show the method being used to track the silhouette of a walking pedestrian in real time. The active shape model used was generated automatically from real image data and incorporates variability in shape due to orientation as well as object flexibility. A Kalman filter is used to control spatial scale for feature search over successive frames. Iterative refinement allows accurate contour localisation where feasible. The shape model incorporates knowledge of the likely shape of the contour and speeds up tracking by reducing the number of system parameters. A further increase in speed is obtained by filtering the shape parameters independently.<<ETX>>"
+            },
+            "slug": "An-efficient-method-for-contour-tracking-using-Baumberg-Hogg",
+            "title": {
+                "fragments": [],
+                "text": "An efficient method for contour tracking using active shape models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper demonstrates how dynamic filtering can be used in combination with a modal-based flexible shape model to track an articulated non-rigid body in motion."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of 1994 IEEE Workshop on Motion of Non-rigid and Articulated Objects"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144429686"
+                        ],
+                        "name": "James W. Davis",
+                        "slug": "James-W.-Davis",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Davis",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James W. Davis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688328"
+                        ],
+                        "name": "A. Bobick",
+                        "slug": "A.-Bobick",
+                        "structuredName": {
+                            "firstName": "Aaron",
+                            "lastName": "Bobick",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Bobick"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 16135896,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cf8e9dc8a261ea9cf2a4bd4e15a2bd9e6237a5ab",
+            "isKey": false,
+            "numCitedBy": 558,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A new view-based approach to the representation and recognition of action is presented. The basis of the representation is a temporal template-a static vector-image where the vector value at each point is a function of the motion properties at the corresponding spatial location in an image sequence. Using 18 aerobics exercises as a test domain, we explore the representational power of a simple, two component version of the templates: the first value is a binary value indicating the presence of motion, and the second value is a function of the recency of motion in a sequence. We then develop a recognition method which matches these temporal templates against stored instances of views of known actions. The method automatically performs temporal segmentation, is invariant to linear changes in speed, and runs in real-time on a standard platform. We recently incorporated this technique into the KIDSROOM: an interactive, narrative play-space for children."
+            },
+            "slug": "The-representation-and-recognition-of-human-using-Davis-Bobick",
+            "title": {
+                "fragments": [],
+                "text": "The representation and recognition of human movement using temporal templates"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 88,
+                "text": "A new view-based approach to the representation and recognition of action is presented, using a temporal template-a static vector-image where the vector value at each point is a function of the motion properties at the corresponding spatial location in an image sequence."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2105795"
+                        ],
+                        "name": "Michael J. Black",
+                        "slug": "Michael-J.-Black",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Black",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael J. Black"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1723930"
+                        ],
+                        "name": "A. Jepson",
+                        "slug": "A.-Jepson",
+                        "structuredName": {
+                            "firstName": "Allan",
+                            "lastName": "Jepson",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Jepson"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5159845,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6a6a5b2f475b0e91256fd8e01651c96bb888ddf5",
+            "isKey": false,
+            "numCitedBy": 107,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The recognition of human gestures in image sequences is an important and challenging problem that enables a host of human-computer interaction applications. This paper describes an incremental recognition strategy that is an extension of the \"Condensation\" algorithm proposed by Isard and Blake (1996). Gestures are modeled as temporal trajectories of some estimated parameter over time (in this case velocity). The condensation algorithm is used to incrementally match the gesture models to the input data. The method is demonstrated with an example of an augmented office white-board in which a user makes simple hand gestures to grab regions of the board, print them, save them, etc."
+            },
+            "slug": "Recognizing-temporal-trajectories-using-the-Black-Jepson",
+            "title": {
+                "fragments": [],
+                "text": "Recognizing temporal trajectories using the condensation algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper describes an incremental recognition strategy that is an extension of the \"Condensation\" algorithm proposed by Isard and Blake (1996) where gestures are modeled as temporal trajectories of some estimated parameter over time (in this case velocity)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Third IEEE International Conference on Automatic Face and Gesture Recognition"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144429686"
+                        ],
+                        "name": "James W. Davis",
+                        "slug": "James-W.-Davis",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Davis",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James W. Davis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688328"
+                        ],
+                        "name": "A. Bobick",
+                        "slug": "A.-Bobick",
+                        "structuredName": {
+                            "firstName": "Aaron",
+                            "lastName": "Bobick",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Bobick"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 169,
+                                "start": 166
+                            }
+                        ],
+                        "text": "Vision (1998) 5] known as \u2018Re-sampling Condensation\u2019 in which a second set of samples is taken from each image in the input sequence based on the results of the initial Condensation sampling."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 7448285,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3c706d5065bc9cc48e6cabed2619c5c801e155dd",
+            "isKey": false,
+            "numCitedBy": 420,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A new view-based approach to the representation and recognition of action is presented. The basis of the representation is a temporal template | a static vector-image where the vector value at each point is a function of the motion properties at the corresponding spatial location in an image sequence. Using 18 aerobics exercises as a test domain, we explore the representational power of a simple, two component version of the templates: the rst value is a binary value indicating the presence of motion, and the second value is a function of the recency of motion in a sequence. We then develop a recognition method which matches these temporal templates against stored instances of views of known actions. The method automatically performs temporal segmentation, is invariant to linear changes in speed, and runs in real-time on a standard platform. We recently incorporated this technique into the KidsRoom: an interactive, narrative play-space for children."
+            },
+            "slug": "The-Representation-and-Recognition-of-Action-Using-Davis-Bobick",
+            "title": {
+                "fragments": [],
+                "text": "The Representation and Recognition of Action Using Temporal Templates"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 88,
+                "text": "A new view-based approach to the representation and recognition of action is presented, using a temporal template | a static vector-image where the vector value at each point is a function of the motion properties at the corresponding spatial location in an image sequence."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CVPR 1997"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1698422"
+                        ],
+                        "name": "J. MacCormick",
+                        "slug": "J.-MacCormick",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "MacCormick",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. MacCormick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2090818"
+                        ],
+                        "name": "M. Isard",
+                        "slug": "M.-Isard",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Isard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Isard"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14382281,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "86efc15754e34254e5991c3a0fdcffbffbc47a3e",
+            "isKey": false,
+            "numCitedBy": 570,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Partitioned sampling is a technique which was introduced in [I7] for avoiding the high cost of particle filters when tracking more than one object. In fact this technique can reduce the curse of dimensionality in other situations too. This paper describes how to use partitioned sampling on articulated objects, obtaining results that would be impossible with standard sampling methods. Because partitioned sampling is the statistical analogue of a hierarchical search, it makes sense to use it on articulated objects, since links at the base of the object can be localised before moving on to search for subsequent links."
+            },
+            "slug": "Partitioned-Sampling,-Articulated-Objects,-and-Hand-MacCormick-Isard",
+            "title": {
+                "fragments": [],
+                "text": "Partitioned Sampling, Articulated Objects, and Interface-Quality Hand Tracking"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper describes how to use partitioned sampling on articulated objects, obtaining results that would be impossible with standard sampling methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2090818"
+                        ],
+                        "name": "M. Isard",
+                        "slug": "M.-Isard",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Isard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Isard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145162067"
+                        ],
+                        "name": "A. Blake",
+                        "slug": "A.-Blake",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Blake",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Blake"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 18,
+                                "start": 8
+                            }
+                        ],
+                        "text": "14, the Re-sampling Condensation tracker performs better than Condensation alone (0% resampling) in 80\u2013100% of cases."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Keywords: Re-sampling; Hidden Markov models; Multi-stream"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 23,
+                                "start": 13
+                            }
+                        ],
+                        "text": "The complete Re-sampling Condensation scheme is shown in Fig."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 40,
+                                "start": 37
+                            }
+                        ],
+                        "text": "Vision (1998) 5] known as \u2018Re-sampling Condensation\u2019 in which a second set of samples is taken from each image in the input sequence based on the results of the initial Condensation sampling."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 100
+                            }
+                        ],
+                        "text": "In our example \u2018normal\u2019 and \u2018lame\u2019 behaviours are modelled by separate CHMMs (see Section 4) within the Re-sampling Condensation framework."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Re-sampling condensation was evaluated using a test set of 10 sequences of healthy cows walking from right to left in a farmyard setting as shown in Fig."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Re-sampling condensation is a novel two stage algorithm with no computational overhead over the standard Condensation algorithm (the algorithm has in fact lower computational cost) that, under certain circumstances, gives more robust tracking results as image information is included in sample location."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 143,
+                                "start": 133
+                            }
+                        ],
+                        "text": "In the rest of this section, we present an alternative method for incorporating partial observations in the prior densities known as Re-sampling Condensation which also utilises the advantage of separating out variation components without the constraints of independent observation evaluation and independent dynamics modelling for these components."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Re-sampling condensation relies on the variation within the spatial (shape) model being separated into pseudo-independent components (analogous to genes)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 24
+                            }
+                        ],
+                        "text": "We combine a stochastic \u2018Re-sampling Condensation\u2019 tracker with multiple \u2018cyclic hidden Markov models\u2019 to\nmodel and classify livestock \u2018behaviour\u2019."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Re-sampling Condensation splits the samples into two groups."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 140,
+                                "start": 130
+                            }
+                        ],
+                        "text": "In our scheme we use the combined tracker and classifier paradigm of Black and Jepson to model object shape change over time in a Re-sampling Condensation framework (see Section 5)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 24
+                            }
+                        ],
+                        "text": "It should be noted that Re-sampling Condensation relies on the variation within the spatial model being separated into pseudo-independent components (position, scale, interanimal, front legs and rear-legs characteristics in the livestock example)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 48,
+                                "start": 38
+                            }
+                        ],
+                        "text": "14 show lower average error rates for Re-sampling Condensation at intermediate levels of resampling, although there is a drop off in performance at high levels of re-sampling."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 6821810,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "963dddc907f56bd1d6c98dd40f560eb8786e49ea",
+            "isKey": true,
+            "numCitedBy": 5523,
+            "numCiting": 62,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The problem of tracking curves in dense visual clutter is challenging. Kalman filtering is inadequate because it is based on Gaussian densities which, being unimo dal, cannot represent simultaneous alternative hypotheses. The Condensation algorithm uses \u201cfactored sampling\u201d, previously applied to the interpretation of static images, in which the probability distribution of possible interpretations is represented by a randomly generated set. Condensation uses learned dynamical models, together with visual observations, to propagate the random set over time. The result is highly robust tracking of agile motion. Notwithstanding the use of stochastic methods, the algorithm runs in near real-time."
+            },
+            "slug": "CONDENSATION\u2014Conditional-Density-Propagation-for-Isard-Blake",
+            "title": {
+                "fragments": [],
+                "text": "CONDENSATION\u2014Conditional Density Propagation for Visual Tracking"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The Condensation algorithm uses \u201cfactored sampling\u201d, previously applied to the interpretation of static images, in which the probability distribution of possible interpretations is represented by a randomly generated set."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143777332"
+                        ],
+                        "name": "Neil Johnson",
+                        "slug": "Neil-Johnson",
+                        "structuredName": {
+                            "firstName": "Neil",
+                            "lastName": "Johnson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Neil Johnson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1967104"
+                        ],
+                        "name": "David C. Hogg",
+                        "slug": "David-C.-Hogg",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Hogg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David C. Hogg"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2925120,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "33630a6a8637005b387fb0783fde6ec165ca326f",
+            "isKey": false,
+            "numCitedBy": 280,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The advent in recent years of robust, real-time, model-based tracking techniques for rigid and non-rigid moving objects has made automated surveillance and event recognition a possibility. A statistically based model of object trajectories is presented which is learnt from the observation of long image sequences. Trajectory data is supplied by a tracker using Active Shape Models, from which a model of the distribution of typical trajectories is learnt. Experimental results are included to show the generation of the model for trajectories within a pedestrian scene. We indicate how the resulting model can be used for the identification of atypical events."
+            },
+            "slug": "Learning-the-Distribution-of-Object-Trajectories-Johnson-Hogg",
+            "title": {
+                "fragments": [],
+                "text": "Learning the Distribution of Object Trajectories for Event Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A statistically based model of object trajectories is presented which is learnt from the observation of long image sequences and it is indicated how the resulting model can be used for the identification of atypical events."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144994682"
+                        ],
+                        "name": "A. Pentland",
+                        "slug": "A.-Pentland",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Pentland",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Pentland"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144152544"
+                        ],
+                        "name": "B. Horowitz",
+                        "slug": "B.-Horowitz",
+                        "structuredName": {
+                            "firstName": "Bradley",
+                            "lastName": "Horowitz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Horowitz"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In recent years, there has been much interest in object tracking [1\u20135] and temporal modeling [6\u20139]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 28815139,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "f706f1babe84c0728be3a06a4d3023cdc44f61c2",
+            "isKey": false,
+            "numCitedBy": 417,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The authors introduce a physically correct model of elastic nonrigid motion. This model is based on the finite element method, but decouples the degrees of freedom by breaking down object motion into rigid and nonrigid vibration or deformation modes. The result is an accurate representation for both rigid and nonrigid motion that has greatly reduced dimensionality, capturing the intuition that nonrigid motion is normally coherent and not chaotic. Because of the small number of parameters involved, this representation is used to obtain accurate overstrained estimates of both rigid and nonrigid global motion. It is also shown that these estimates can be integrated over time by use of an extended Kalman filter, resulting in stable and accurate estimates of both three-dimensional shape and three-dimensional velocity. The formulation is then extended to include constrained nonrigid motion. Examples of tracking single nonrigid objects and multiple constrained objects are presented. >"
+            },
+            "slug": "Recovery-of-Nonrigid-Motion-and-Structure-Pentland-Horowitz",
+            "title": {
+                "fragments": [],
+                "text": "Recovery of Nonrigid Motion and Structure"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "This model is based on the finite element method, but decouples the degrees of freedom by breaking down object motion into rigid and nonrigid vibration or deformation modes, resulting in an accurate representation for both rigid andnonrigid motion that has greatly reduced dimensionality."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7205190"
+                        ],
+                        "name": "Tim Cootes",
+                        "slug": "Tim-Cootes",
+                        "structuredName": {
+                            "firstName": "Tim",
+                            "lastName": "Cootes",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tim Cootes"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144482985"
+                        ],
+                        "name": "C. Taylor",
+                        "slug": "C.-Taylor",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Taylor",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Taylor"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32250556"
+                        ],
+                        "name": "D. H. Cooper",
+                        "slug": "D.-H.-Cooper",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Cooper",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. H. Cooper"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47581828"
+                        ],
+                        "name": "J. Graham",
+                        "slug": "J.-Graham",
+                        "structuredName": {
+                            "firstName": "Jim",
+                            "lastName": "Graham",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Graham"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 9737106,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "d7f4e5d48bb21c2b0c5672688ea8a8072f6a35f0",
+            "isKey": false,
+            "numCitedBy": 630,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A method for building flexible shape models is presented in which a shape is represented by a set of labelled points. The technique determines the statistics of the points over a collection of example shapes. The mean positions of the points give an average shape and a number of modes of variation are determined describing the main ways in which the example shapes tend to deform from the average. In this way allowed variation in shape can be included in the model. The method produces a compact flexible \u2018Point Distribution Model\u2019 with a small number of linearly independent parameters, which can be used during image search. We demonstrate the application of the Point Distribution Model in describing two classes of shapes."
+            },
+            "slug": "Training-Models-of-Shape-from-Sets-of-Examples-Cootes-Taylor",
+            "title": {
+                "fragments": [],
+                "text": "Training Models of Shape from Sets of Examples"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A method for building flexible shape models is presented in which a shape is represented by a set of labelled points and a number of modes of variation are determined describing the main ways in which the example shapes tend to deform from the average."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144784813"
+                        ],
+                        "name": "S. Gong",
+                        "slug": "S.-Gong",
+                        "structuredName": {
+                            "firstName": "Shaogang",
+                            "lastName": "Gong",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Gong"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38763892"
+                        ],
+                        "name": "M. Walter",
+                        "slug": "M.-Walter",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Walter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Walter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2639990"
+                        ],
+                        "name": "A. Psarrou",
+                        "slug": "A.-Psarrou",
+                        "structuredName": {
+                            "firstName": "Alexandra",
+                            "lastName": "Psarrou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Psarrou"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5090530,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "61c76e435ff1fc18b71319664e7496b07dacfca5",
+            "isKey": false,
+            "numCitedBy": 18,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "An algorithm is described for modelling and recognising temporal structures of visual activities. The method is based on (1) learning prior probabilistic knowledge using hidden Markov models, (2) automatic temporal clustering of hidden Markov states based on expectation maximisation and (3) using observation augmented conditional density distributions to reduce the number of samples required for propagation and therefore improve recognition speed and robustness."
+            },
+            "slug": "Recognition-of-temporal-structures:-Learning-prior-Gong-Walter",
+            "title": {
+                "fragments": [],
+                "text": "Recognition of temporal structures: Learning prior and propagating observation augmented densities via hidden Markov states"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 61,
+                "text": "An algorithm is described for modelling and recognising temporal structures of visual activities using hidden Markov models, and using observation augmented conditional density distributions to reduce the number of samples required for propagation and therefore improve recognition speed and robustness."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Seventh IEEE International Conference on Computer Vision"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50564384"
+                        ],
+                        "name": "G. Edwards",
+                        "slug": "G.-Edwards",
+                        "structuredName": {
+                            "firstName": "Gareth",
+                            "lastName": "Edwards",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Edwards"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1830709"
+                        ],
+                        "name": "A. Lanitis",
+                        "slug": "A.-Lanitis",
+                        "structuredName": {
+                            "firstName": "Andreas",
+                            "lastName": "Lanitis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Lanitis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144482985"
+                        ],
+                        "name": "C. Taylor",
+                        "slug": "C.-Taylor",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Taylor",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Taylor"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7205190"
+                        ],
+                        "name": "Tim Cootes",
+                        "slug": "Tim-Cootes",
+                        "structuredName": {
+                            "firstName": "Tim",
+                            "lastName": "Cootes",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tim Cootes"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 807316,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "14e013ca6a01c63e4fa4b4339d00463d0d11a617",
+            "isKey": false,
+            "numCitedBy": 145,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Statistical-models-of-face-images-improving-Edwards-Lanitis",
+            "title": {
+                "fragments": [],
+                "text": "Statistical models of face images - improving specificity"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Image Vis. Comput."
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2721138"
+                        ],
+                        "name": "N. Sumpter",
+                        "slug": "N.-Sumpter",
+                        "structuredName": {
+                            "firstName": "Neil",
+                            "lastName": "Sumpter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Sumpter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2285244"
+                        ],
+                        "name": "A. Bulpitt",
+                        "slug": "A.-Bulpitt",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Bulpitt",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Bulpitt"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 29
+                            }
+                        ],
+                        "text": "In the system, a hierarchical spatial model based on a variant of the point distribution model [Proc."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 906184,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "78033b9cf605cd52fdd6c188d3e07febb832676b",
+            "isKey": false,
+            "numCitedBy": 63,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Learning-spatio-temporal-patterns-for-predicting-Sumpter-Bulpitt",
+            "title": {
+                "fragments": [],
+                "text": "Learning Spatio-Temporal Patterns for Predicting Object Behaviour"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34767834"
+                        ],
+                        "name": "D. Magee",
+                        "slug": "D.-Magee",
+                        "structuredName": {
+                            "firstName": "Derek",
+                            "lastName": "Magee",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Magee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35061525"
+                        ],
+                        "name": "R. Boyle",
+                        "slug": "R.-Boyle",
+                        "structuredName": {
+                            "firstName": "Roger",
+                            "lastName": "Boyle",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Boyle"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14134117,
+            "fieldsOfStudy": [
+                "Business"
+            ],
+            "id": "e04ec6e377f8677c7d36fcadb1d42f1d3f8cd287",
+            "isKey": false,
+            "numCitedBy": 7,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A method of generating complementary eigenspaces optimised for interclass and intra-class separability respectively is presented. The objective of creating these spaces is to improve the efficiency of eigenspace search algorithms. The inter-class optimised space may also be used to improve classification and a quantitative evaluation of this against conventional Principal Component Analysis and Canonical analysis (based on Linear Discriminant Analysis) is presented. A qualitative comparison of the intra-class optimised space and spaces produced by Principal Component Analysis on single class data is also presented."
+            },
+            "slug": "Building-Class-Sensitive-Models-for-Tracking-Magee-Boyle",
+            "title": {
+                "fragments": [],
+                "text": "Building Class Sensitive Models for Tracking Applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "The inter-class optimised space may also be used to improve classification and a quantitative evaluation of this against conventional Principal Component Analysis and Canonical analysis (based on Linear Discriminant Analysis) is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34751187"
+                        ],
+                        "name": "C. R. Wren",
+                        "slug": "C.-R.-Wren",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Wren",
+                            "middleNames": [
+                                "Richard"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. R. Wren"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46978775"
+                        ],
+                        "name": "B. Clarkson",
+                        "slug": "B.-Clarkson",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Clarkson",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Clarkson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144994682"
+                        ],
+                        "name": "A. Pentland",
+                        "slug": "A.-Pentland",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Pentland",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Pentland"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 144,
+                                "start": 141
+                            }
+                        ],
+                        "text": "Vision (1998) 5] known as \u2018Re-sampling Condensation\u2019 in which a second set of samples is taken from each image in the input sequence based on the results of the initial Condensation sampling."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 5504594,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c0bab94f35f6ddeee87fe67e07ddbd4d121d6485",
+            "isKey": false,
+            "numCitedBy": 73,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Human motion can be understood on many levels. The most basic level is the notion that humans are collections of things that have predictable visual appearance. Next is the notion that humans exist in a physical universe, as a consequence of this, a large part of human motion can be modeled and predicted with the laws of physics. Finally there is the notion that humans utilize muscles to actively shape purposeful motion. We employ a recursive framework for real-time, 3D tracking of human motion that enables pixel-level, probabilistic processes to take advantage of the contextual knowledge encoded in the higher-level models, including models of dynamic constraints on human motion. We show that models of purposeful action arise naturally from this framework, and further, that those models can be used to improve the perception of human motion. Results are shown that demonstrate automatic discovery of features in this new feature space."
+            },
+            "slug": "Understanding-purposeful-human-motion-Wren-Clarkson",
+            "title": {
+                "fragments": [],
+                "text": "Understanding purposeful human motion"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work employs a recursive framework for real-time, 3D tracking of human motion that enables pixel-level, probabilistic processes to take advantage of the contextual knowledge encoded in the higher-level models, including models of dynamic constraints on human motion."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Fourth IEEE International Conference on Automatic Face and Gesture Recognition (Cat. No. PR00580)"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38763892"
+                        ],
+                        "name": "M. Walter",
+                        "slug": "M.-Walter",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Walter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Walter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2639990"
+                        ],
+                        "name": "A. Psarrou",
+                        "slug": "A.-Psarrou",
+                        "structuredName": {
+                            "firstName": "Alexandra",
+                            "lastName": "Psarrou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Psarrou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144784813"
+                        ],
+                        "name": "S. Gong",
+                        "slug": "S.-Gong",
+                        "structuredName": {
+                            "firstName": "Shaogang",
+                            "lastName": "Gong",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Gong"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8663003,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "348039aec83930ca32847e8da23e2329d3acbfd4",
+            "isKey": false,
+            "numCitedBy": 23,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recognition of human behaviours requires modeling the underlying spatial and temporal structures of their motion patterns. Such structures are intrinsically probabilistic and therefore should be modelled as stochastic processes. In this paper we introduce a framework to recognise behaviours based on both learning prior and continuous propagation of density models of behaviour patterns. Prior is learned from training sequences using hidden Markov models and density models are augmented by current visual observation."
+            },
+            "slug": "Learning-Prior-and-Observation-Augmented-Density-Walter-Psarrou",
+            "title": {
+                "fragments": [],
+                "text": "Learning Prior and Observation Augmented Density Models for Behaviour Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper introduces a framework to recognise behaviours based on both learning prior and continuous propagation of density models of behaviour patterns, which is learned from training sequences using hidden Markov models and density models are augmented by current visual observation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144152544"
+                        ],
+                        "name": "B. Horowitz",
+                        "slug": "B.-Horowitz",
+                        "structuredName": {
+                            "firstName": "Bradley",
+                            "lastName": "Horowitz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Horowitz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144994682"
+                        ],
+                        "name": "A. Pentland",
+                        "slug": "A.-Pentland",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Pentland",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Pentland"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5863271,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "f244c6d0f9abe7564a48653eb6726c814bb5fd27",
+            "isKey": false,
+            "numCitedBy": 187,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The elastic properties of real materials provide constraint on the types of non-rigid motion that can occur, and thus allow overconstrained estimates of 3-D non-rigid motion from optical flow data. It is shown that by modeling and simulating the physics of non-rigid motion it is possible to obtain good estimates of both object shape and velocity. Examples using grey-scale and X-ray imagery are presented, including an example of tracking a complex articulated figure.<<ETX>>"
+            },
+            "slug": "Recovery-of-non-rigid-motion-and-structure-Horowitz-Pentland",
+            "title": {
+                "fragments": [],
+                "text": "Recovery of non-rigid motion and structure"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "It is shown that by modeling and simulating the physics of non-rigid motion it is possible to obtain good estimates of both object shape and velocity."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings. 1991 IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143777332"
+                        ],
+                        "name": "Neil Johnson",
+                        "slug": "Neil-Johnson",
+                        "structuredName": {
+                            "firstName": "Neil",
+                            "lastName": "Johnson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Neil Johnson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1692470"
+                        ],
+                        "name": "Aphrodite Galata",
+                        "slug": "Aphrodite-Galata",
+                        "structuredName": {
+                            "firstName": "Aphrodite",
+                            "lastName": "Galata",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aphrodite Galata"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1967104"
+                        ],
+                        "name": "David C. Hogg",
+                        "slug": "David-C.-Hogg",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Hogg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David C. Hogg"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 33
+                            }
+                        ],
+                        "text": "Re-sampling condensation relies on the variation within the spatial (shape) model being separated into pseudo-independent components (analogous to genes)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7703810,
+            "fieldsOfStudy": [
+                "Biology"
+            ],
+            "id": "21880431cc168d45e1fd948caf3787be97bbaff8",
+            "isKey": false,
+            "numCitedBy": 81,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Providing a machine with the ability to learn and use models of natural interaction is a challenging and largely unaddressed problem. A framework is developed enabling both the acquisition of interaction behaviours from the observation of humans, and the use of the acquired behaviour models to simulate a plausible partner during interaction. Statistically based interaction behaviour models are acquired automatically from the observation of interacting humans. Interaction with a virtual human is achieved using the model together with a stochastic tracking algorithm. Experimental results demonstrate the generation and use of the model for a simple human interaction."
+            },
+            "slug": "The-acquisition-and-use-of-interaction-behaviour-Johnson-Galata",
+            "title": {
+                "fragments": [],
+                "text": "The acquisition and use of interaction behaviour models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "A framework is developed enabling both the acquisition of interaction behaviours from the observation of humans, and the use of the acquired behaviour models to simulate a plausible partner during interaction."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings. 1998 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (Cat. No.98CB36231)"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1712517"
+                        ],
+                        "name": "L. Rabiner",
+                        "slug": "L.-Rabiner",
+                        "structuredName": {
+                            "firstName": "Lawrence",
+                            "lastName": "Rabiner",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Rabiner"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 13618539,
+            "fieldsOfStudy": [
+                "Geology"
+            ],
+            "id": "8fe2ea0a67954f1380b3387e3262f1cdb9f9b3e5",
+            "isKey": false,
+            "numCitedBy": 24804,
+            "numCiting": 98,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The fabric comprises a novel type of netting which will have particular utility in screening out mosquitoes and like insects and pests. The fabric is defined of voids having depth as well as width and length. The fabric is usable as a material from which to form clothing for wear, or bed coverings, or sleeping bags, etc., besides use simply as a netting."
+            },
+            "slug": "A-Tutorial-on-Hidden-Markov-Models-and-Selected-Rabiner",
+            "title": {
+                "fragments": [],
+                "text": "A Tutorial on Hidden Markov Models and Selected Applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "The fabric comprises a novel type of netting which will have particular utility in screening out mosquitoes and like insects and pests."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35043531"
+                        ],
+                        "name": "A. Dempster",
+                        "slug": "A.-Dempster",
+                        "structuredName": {
+                            "firstName": "Arthur",
+                            "lastName": "Dempster",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Dempster"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7890796"
+                        ],
+                        "name": "N. Laird",
+                        "slug": "N.-Laird",
+                        "structuredName": {
+                            "firstName": "Nan",
+                            "lastName": "Laird",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Laird"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2235217"
+                        ],
+                        "name": "D. Rubin",
+                        "slug": "D.-Rubin",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Rubin",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Rubin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 4193919,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "d36efb9ad91e00faa334b549ce989bfae7e2907a",
+            "isKey": false,
+            "numCitedBy": 48403,
+            "numCiting": 134,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Vibratory power unit for vibrating conveyers and screens comprising an asynchronous polyphase motor, at least one pair of associated unbalanced masses disposed on the shaft of said motor, with the first mass of a pair of said unbalanced masses being rigidly fastened to said shaft and with said second mass of said pair being movably arranged relative to said first mass, means for controlling and regulating the conveying rate during conveyer operation by varying the rotational speed of said motor between predetermined minimum and maximum values, said second mass being movably outwardly by centrifugal force against the pressure of spring means, said spring means being prestressed in such a manner that said second mass is, at rotational motor speeds lower than said minimum speed, held in its initial position, and at motor speeds between said lower and upper values in positions which are radially offset with respect to the axis of said motor to an extent depending on the value of said rotational motor speed."
+            },
+            "slug": "Maximum-likelihood-from-incomplete-data-via-the-EM-Dempster-Laird",
+            "title": {
+                "fragments": [],
+                "text": "Maximum likelihood from incomplete data via the EM - algorithm plus discussions on the paper"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1977
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2054579"
+                        ],
+                        "name": "M. Pitt",
+                        "slug": "M.-Pitt",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Pitt",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Pitt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50275561"
+                        ],
+                        "name": "N. Shephard",
+                        "slug": "N.-Shephard",
+                        "structuredName": {
+                            "firstName": "Neil",
+                            "lastName": "Shephard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Shephard"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 25
+                            }
+                        ],
+                        "text": "The original application of the particle filter in machine vision was for object tracking [1] in an image sequence, in which models of an object (spatial and temporal) were fitted to an image sequence to obtain object properties over time."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8736789,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "34ab10d1b07d8416ab4184098ad5f2ea2b29ad63",
+            "isKey": false,
+            "numCitedBy": 2569,
+            "numCiting": 100,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article analyses the recently suggested particle approach to filtering time series. We suggest that the algorithm is not robust to outliers for two reasons: the design of the simulators and the use of the discrete support to represent the sequentially updating prior distribution. Here we tackle the first of these problems."
+            },
+            "slug": "Filtering-via-Simulation:-Auxiliary-Particle-Pitt-Shephard",
+            "title": {
+                "fragments": [],
+                "text": "Filtering via Simulation: Auxiliary Particle Filters"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 98,
+                "text": "This article analyses the recently suggested particle approach to filtering time series and suggests that the algorithm is not robust to outliers for two reasons: the design of the simulators and the use of the discrete support to represent the sequentially updating prior distribution."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2256718"
+                        ],
+                        "name": "W. Press",
+                        "slug": "W.-Press",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Press",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Press"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48590121"
+                        ],
+                        "name": "S. Teukolsky",
+                        "slug": "S.-Teukolsky",
+                        "structuredName": {
+                            "firstName": "Saul",
+                            "lastName": "Teukolsky",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Teukolsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2608024"
+                        ],
+                        "name": "W. Vetterling",
+                        "slug": "W.-Vetterling",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Vetterling",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Vetterling"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35046585"
+                        ],
+                        "name": "B. Flannery",
+                        "slug": "B.-Flannery",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Flannery",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Flannery"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 61769312,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "ca2832d2c30287a9ee5b8584cc498d2b1cb14753",
+            "isKey": false,
+            "numCitedBy": 16689,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Note: Includes bibliographical references, 3 appendixes and 2 indexes.- Diskette v 2.06, 3.5''[1.44M] for IBM PC, PS/2 and compatibles [DOS] Reference Record created on 2004-09-07, modified on 2016-08-08"
+            },
+            "slug": "Numerical-recipes-in-C-Press-Teukolsky",
+            "title": {
+                "fragments": [],
+                "text": "Numerical recipes in C"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The Diskette v 2.06, 3.5''[1.44M] for IBM PC, PS/2 and compatibles [DOS] Reference Record created on 2004-09-07, modified on 2016-08-08."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145500689"
+                        ],
+                        "name": "A. Viterbi",
+                        "slug": "A.-Viterbi",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Viterbi",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Viterbi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15843983,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "145c0b53514b02bdc3dadfb2e1cea124f2abd99b",
+            "isKey": false,
+            "numCitedBy": 5209,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The probability of error in decoding an optimal convolutional code transmitted over a memoryless channel is bounded from above and below as a function of the constraint length of the code. For all but pathological channels the bounds are asymptotically (exponentially) tight for rates above R_{0} , the computational cutoff rate of sequential decoding. As a function of constraint length the performance of optimal convolutional codes is shown to be superior to that of block codes of the same length, the relative improvement increasing with rate. The upper bound is obtained for a specific probabilistic nonsequential decoding algorithm which is shown to be asymptotically optimum for rates above R_{0} and whose performance bears certain similarities to that of sequential decoding algorithms."
+            },
+            "slug": "Error-bounds-for-convolutional-codes-and-an-optimum-Viterbi",
+            "title": {
+                "fragments": [],
+                "text": "Error bounds for convolutional codes and an asymptotically optimum decoding algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The upper bound is obtained for a specific probabilistic nonsequential decoding algorithm which is shown to be asymptotically optimum for rates above R_{0} and whose performance bears certain similarities to that of sequential decoding algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Inf. Theory"
+            },
+            "year": 1967
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145392702"
+                        ],
+                        "name": "P. Green",
+                        "slug": "P.-Green",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Green",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Green"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 12
+                            }
+                        ],
+                        "text": "Propagating multiple hypotheses gave improved robustness over single hypothesis techniques such as Kalman filters [11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 125093681,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "3f1bb45d5d20c107daa9dbc489019cf22a3a6e6b",
+            "isKey": false,
+            "numCitedBy": 4620,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Markov-chain-Monte-Carlo-in-Practice-Green",
+            "title": {
+                "fragments": [],
+                "text": "Markov chain Monte Carlo in Practice"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1750924"
+                        ],
+                        "name": "Demetri Terzopoulos",
+                        "slug": "Demetri-Terzopoulos",
+                        "structuredName": {
+                            "firstName": "Demetri",
+                            "lastName": "Terzopoulos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Demetri Terzopoulos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717841"
+                        ],
+                        "name": "R. Szeliski",
+                        "slug": "R.-Szeliski",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Szeliski",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Szeliski"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In recent years, there has been much interest in object tracking [1\u20135] and temporal modeling [6\u20139]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 61134880,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bd13c71fa6a6242e702041d54eadd7f4cb19108e",
+            "isKey": false,
+            "numCitedBy": 423,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Tracking-with-Kalman-snakes-Terzopoulos-Szeliski",
+            "title": {
+                "fragments": [],
+                "text": "Tracking with Kalman snakes"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1993
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "An efficient method for tracking using active shape models"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the IEEE Workshop on Motion of Nonrigid Objects"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 82
+                            }
+                        ],
+                        "text": "This is essentially an application of the Expectation Maximisation (EM) algorithm [20] which calculates a locally optimum set of parameters (state transition probabilities and observational probability densities) by iteratively refining an initial estimate to these parameters."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Maximum likelihood from incomplete data via the em algorithm, Journal of the Royal Statistical Society"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Series B"
+            },
+            "year": 1977
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Error bounds for convolution codes and an asymptotically optimal decoding algorithm"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Information Theory"
+            },
+            "year": 1967
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Tracking with Kalman snakes, Active Vision"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Tracking with Kalman snakes, Active Vision"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Image and Vision Computing"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Image and Vision Computing"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Icondensation: unifying low-level tracking in a stochastic framework"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Fifth European Conference on Computer Vision"
+            },
+            "year": 1998
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 3,
+            "methodology": 4
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 33,
+        "totalPages": 4
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Detecting-lameness-using-'Re-sampling-Condensation'-Magee-Boyle/f38826914122e371222936773ec31609723391a6?sort=total-citations"
+}

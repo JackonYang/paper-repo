@@ -1,0 +1,2487 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689738"
+                        ],
+                        "name": "V. Lepetit",
+                        "slug": "V.-Lepetit",
+                        "structuredName": {
+                            "firstName": "Vincent",
+                            "lastName": "Lepetit",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Lepetit"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717736"
+                        ],
+                        "name": "P. Fua",
+                        "slug": "P.-Fua",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Fua",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Fua"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 58
+                            }
+                        ],
+                        "text": "More details about the trees construction can be found in [10]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 78
+                            }
+                        ],
+                        "text": "As a result, even though we use a monoscale algorithm for keypoint extraction [10], we can achieve scale-invariance across a range of scales by using training images at different resolutions and retaining only those keypoints that are stable within the range."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17852817,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4c69166295d6e6312978dbf17ce177810d01cd1f",
+            "isKey": false,
+            "numCitedBy": 34,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In earlier work\u00a0\\cite{Lepetit04b}, we proposed to treat wide baseline matching of feature points as a classification problem and proposed an implementation based on K-means and nearest neighbor classification. We showed that this method is both reliable and faster than competing methods, but still too slow for real-time implementations. Here we show that using decision trees instead speeds up the computation greatly, while increasing the robustness. This allows point matching under large viewpoint and illumination changes that is suitable for accurate object pose estimation at 25 Hz on a standard Pentium IV PC. Most of the previous methods rely either on using {\\em ad hoc} local descriptors or on estimating local affine deformations. By contrast, we treat wide baseline matching of keypoints as a classification problem, in which each class corresponds to the set of all possible views of such a point. Given one or more images of a target object, we train the system by synthesizing a large number of views of individual keypoints and by using statistical classification tools to produce a compact description of this {\\it view set}. At run-time, we rely on this description to decide to which class, if any, an observed feature belongs. This formulation allows us to use decision trees to reduce matching error rates, and to move some of the computational burden from matching to training, which can be performed beforehand. We will show that our method is both reliable and fast enough to detect and estimate in real-time the 3D pose of an object in the presence of occlusions, illumination changes, and cluttered backgrounds."
+            },
+            "slug": "Towards-Recognizing-Feature-Points-using-Trees-Lepetit-Fua",
+            "title": {
+                "fragments": [],
+                "text": "Towards Recognizing Feature Points using Classification Trees"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This method is both reliable and fast enough to detect and estimate in real-time the 3D pose of an object in the presence of occlusions, illumination changes, and cluttered backgrounds."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689738"
+                        ],
+                        "name": "V. Lepetit",
+                        "slug": "V.-Lepetit",
+                        "structuredName": {
+                            "firstName": "Vincent",
+                            "lastName": "Lepetit",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Lepetit"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2715451"
+                        ],
+                        "name": "J. Pilet",
+                        "slug": "J.-Pilet",
+                        "structuredName": {
+                            "firstName": "Julien",
+                            "lastName": "Pilet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Pilet"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717736"
+                        ],
+                        "name": "P. Fua",
+                        "slug": "P.-Fua",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Fua",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Fua"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2639638,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "33a5206f36ed1b2433517fc5001edd96d9da32bd",
+            "isKey": false,
+            "numCitedBy": 76,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a novel approach to point matching under large viewpoint and illumination changes that are suitable for accurate object pose estimation at a much lower computational cost than state-of-the-art methods. Most of these methods rely either on using ad hoc local descriptors or on estimating local affine deformations. By contrast, we treat wide baseline matching of key points as a classification problem, in which each class corresponds to the set of all possible views of such a point. Given one or more images of a target object, we train the system by synthesizing a large number of views of individual key points and by using statistical classification tools to produce a compact description of this view set. At run-time, we rely on this description to decide to which class, if any, an observed feature belongs. This formulation allows us to use a classification method to reduce matching error rates, and to move some of the computational burden from matching to training, which can be performed beforehand. In the context of pose estimation, we present experimental results for both planar and non-planar objects in the presence of occlusions, illumination changes, and cluttered backgrounds. We show that the method is both reliable and suitable for initializing real-time applications."
+            },
+            "slug": "Point-matching-as-a-classification-problem-for-fast-Lepetit-Pilet",
+            "title": {
+                "fragments": [],
+                "text": "Point matching as a classification problem for fast and robust object pose estimation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 81,
+                "text": "A novel approach to point matching under large viewpoint and illumination changes that are suitable for accurate object pose estimation at a much lower computational cost than state-of-the-art methods is proposed and is both reliable and suitable for initializing real-time applications."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004."
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2715451"
+                        ],
+                        "name": "J. Pilet",
+                        "slug": "J.-Pilet",
+                        "structuredName": {
+                            "firstName": "Julien",
+                            "lastName": "Pilet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Pilet"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689738"
+                        ],
+                        "name": "V. Lepetit",
+                        "slug": "V.-Lepetit",
+                        "structuredName": {
+                            "firstName": "Vincent",
+                            "lastName": "Lepetit",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Lepetit"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717736"
+                        ],
+                        "name": "P. Fua",
+                        "slug": "P.-Fua",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Fua",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Fua"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Figure 12. Deformable objects: the object is detected and its deformation estimated, using the method described in [ 18 ]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Our methodis also used in [ 18 ] to detectdeformableobjects and estimate their deformation in real-time."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11477512,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "633486eba027325842dd75b68144ef2c2628f87c",
+            "isKey": false,
+            "numCitedBy": 104,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a real-time method for detecting deformable surfaces, with no need whatsoever for a priori pose knowledge. Our method starts from a set of wide baseline point matches between an undeformed image of the object and the image in which it is to be detected. The matches are used not only to detect but also to compute a precise mapping from one to the other. The algorithm is robust to large deformations, lighting changes, motion blur, and occlusions. It runs at 10 frames per second on a 2.8 GHz PC and we are not aware of any other published technique that produces similar results. Combining deformable meshes with a well designed robust estimator is key to dealing with the large number of parameters involved in modeling deformable surfaces and rejecting erroneous matches for error rates of up to 95%, which is considerably more than what is required in practice."
+            },
+            "slug": "Real-time-nonrigid-surface-detection-Pilet-Lepetit",
+            "title": {
+                "fragments": [],
+                "text": "Real-time nonrigid surface detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 86,
+                "text": "A real-time method for detecting deformable surfaces, with no need whatsoever for a priori pose knowledge, using a set of wide baseline point matches between an undeformed image of the object and the image in which it is to be detected."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1704728"
+                        ],
+                        "name": "T. Tuytelaars",
+                        "slug": "T.-Tuytelaars",
+                        "structuredName": {
+                            "firstName": "Tinne",
+                            "lastName": "Tuytelaars",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Tuytelaars"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Since the pioneering work by Schmid and Mohr [1], the algorithms have become ever more robust to scale, viewpoint, illumination changes and partial occlusions [2, 3, 4, 5, 6, 7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[2] fit an ellipse to the texture around local intensity extrema to obtain correspondences remarkably robust to viewpoint changes."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 552096,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9ad20e6f6f89631caf6960516bb9939b9430bba0",
+            "isKey": false,
+            "numCitedBy": 568,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "\u2018Invariant regions\u2019 are image patches that automatically deform with changing viewpoint as to keep on covering identical physical parts of a scene. Such regions are then described by a set of invariant features, which makes it relatively easy to match them between views and under changing illumination. In previous work, we have presented invariant regions that are based on a combination of corners and edges. The application discussed then was image database retrieval. Here, an alternative method for extracting (affinely) invariant regions is given, that does not depend on the presence of edges or corners in the image but is purely intensity-based. Also, we demonstrate the use of such regions for another application, which is wide baseline stereo matching. As a matter of fact, the goal is to build an opportunistic system that exploits several types of invariant regions as it sees fit. This yields more correspondences and a system that can deal with a wider range of images. To increase the robustness of the system even further, two semi-local constraints on combinations of region correspondences are derived (one geometric, the other photometric). They allow to test the consistency of correspondences and hence to reject falsely matched regions."
+            },
+            "slug": "Wide-Baseline-Stereo-Matching-based-on-Local,-Tuytelaars-Gool",
+            "title": {
+                "fragments": [],
+                "text": "Wide Baseline Stereo Matching based on Local, Affinely Invariant Regions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work presents an alternative method for extracting invariant regions that does not depend on the presence of edges or corners in the image but is purely intensity-based, and demonstrates the use of such regions for another application, which is wide baseline stereo matching."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1750470"
+                        ],
+                        "name": "S. Nayar",
+                        "slug": "S.-Nayar",
+                        "structuredName": {
+                            "firstName": "Shree",
+                            "lastName": "Nayar",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Nayar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1851364"
+                        ],
+                        "name": "S. Nene",
+                        "slug": "S.-Nene",
+                        "structuredName": {
+                            "firstName": "Sameer",
+                            "lastName": "Nene",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Nene"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "82910116"
+                        ],
+                        "name": "H. Murase",
+                        "slug": "H.-Murase",
+                        "structuredName": {
+                            "firstName": "Hiroshi",
+                            "lastName": "Murase",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Murase"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 123,
+                                "start": 119
+                            }
+                        ],
+                        "text": "The methods used range from relatively simple methods such as Principal Component Analysis and Nearest Neighbor search [11] to more sophisticated ones such as AdaBoost and classifiers cascade to achieve realtime detection of human faces at varying scales [12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 328096,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fd136608c086e07d406aef8e096e32327d9b92b7",
+            "isKey": false,
+            "numCitedBy": 196,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A real-time vision system is described that can recognize 100 complex three-dimensional objects. In contrast to traditional strategies that rely on object geometry and local image features, the present system is founded on the concept of appearance matching. Appearance manifolds of the 100 objects were automatically learned using a computer-controlled turntable. The entire learning process was completed in 1 day. A recognition loop has been implemented that performs scene change detection, image segmentation, region normalizations, and appearance matching, in less than 1 second. The hardware used by the recognition system includes no more than a CCD color camera and a workstation. The real-time capability and interactive nature of the system have allowed numerous observers to test its performance. To quantify performance, we have conducted controlled experiments on recognition and pose estimation. The recognition rate was found to be 100% and object pose was estimated with a mean absolute error of 2.02 degrees and standard deviation of 1.67 degrees."
+            },
+            "slug": "Real-time-100-object-recognition-system-Nayar-Nene",
+            "title": {
+                "fragments": [],
+                "text": "Real-time 100 object recognition system"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 64,
+                "text": "A real-time vision system is described that can recognize 100 complex three-dimensional objects and its recognition rate was found to be 100% and object pose was estimated with a mean absolute error of 2.02 degrees and standard deviation of 1.67 degrees."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of IEEE International Conference on Robotics and Automation"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "4801654"
+                        ],
+                        "name": "Y. Amit",
+                        "slug": "Y.-Amit",
+                        "structuredName": {
+                            "firstName": "Yali",
+                            "lastName": "Amit",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Amit"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707642"
+                        ],
+                        "name": "D. Geman",
+                        "slug": "D.-Geman",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Geman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 13,
+                                "start": 10
+                            }
+                        ],
+                        "text": "Following [9], if dl(p) denotes the posterior distribution in the node of tree Tl reached by a patch p, p is classified considering the average of the distributions dl(p):"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 133,
+                                "start": 130
+                            }
+                        ],
+                        "text": "Randomized trees are simple but powerful tools for classification, introduced and applied to recognition of handwritten digits in [9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 54
+                            }
+                        ],
+                        "text": "Here, we advocate instead the use of randomized trees [9] as the classification technique."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12470146,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "de5e95325e139fd0a46df1dd28aabecd0273b772",
+            "isKey": true,
+            "numCitedBy": 1152,
+            "numCiting": 78,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We explore a new approach to shape recognition based on a virtually infinite family of binary features (queries) of the image data, designed to accommodate prior information about shape invariance and regularity. Each query corresponds to a spatial arrangement of several local topographic codes (or tags), which are in themselves too primitive and common to be informative about shape. All the discriminating power derives from relative angles and distances among the tags. The important attributes of the queries are a natural partial ordering corresponding to increasing structure and complexity; semi-invariance, meaning that most shapes of a given class will answer the same way to two queries that are successive in the ordering; and stability, since the queries are not based on distinguished points and substructures. No classifier based on the full feature set can be evaluated, and it is impossible to determine a priori which arrangements are informative. Our approach is to select informative features and build tree classifiers at the same time by inductive learning. In effect, each tree provides an approximation to the full posterior where the features chosen depend on the branch that is traversed. Due to the number and nature of the queries, standard decision tree construction based on a fixed-length feature vector is not feasible. Instead we entertain only a small random sample of queries at each node, constrain their complexity to increase with tree depth, and grow multiple trees. The terminal nodes are labeled by estimates of the corresponding posterior distribution over shape classes. An image is classified by sending it down every tree and aggregating the resulting distributions. The method is applied to classifying handwritten digits and synthetic linear and nonlinear deformations of three hundred symbols. State-of-the-art error rates are achieved on the National Institute of Standards and Technology database of digits. The principal goal of the experiments on symbols is to analyze invariance, generalization error and related issues, and a comparison with artificial neural networks methods is presented in this context. Figure 1: LATEX Symbol"
+            },
+            "slug": "Shape-Quantization-and-Recognition-with-Randomized-Amit-Geman",
+            "title": {
+                "fragments": [],
+                "text": "Shape Quantization and Recognition with Randomized Trees"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 84,
+                "text": "A new approach to shape recognition based on a virtually infinite family of binary features (queries) of the image data, designed to accommodate prior information about shape invariance and regularity, and a comparison with artificial neural networks methods is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2721983"
+                        ],
+                        "name": "F. Fleuret",
+                        "slug": "F.-Fleuret",
+                        "structuredName": {
+                            "firstName": "Fran\u00e7ois",
+                            "lastName": "Fleuret",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Fleuret"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707642"
+                        ],
+                        "name": "D. Geman",
+                        "slug": "D.-Geman",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Geman"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 123,
+                                "start": 119
+                            }
+                        ],
+                        "text": "In [8], we used a K-mean plus Nearest Neighbor classifier to validate our approach, because it is simple to implement and it gives good results."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14593016,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "54ad43a4c83cfb5aefa27a5d89201b02949f1847",
+            "isKey": false,
+            "numCitedBy": 25,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study visual selection: Detect and roughly localize all instances of a generic object class, such as a face, in a greyscale scene, measuring performance in terms of computation and false alarms. Our approach is sequential testing which is coarse-tone in both in the exploration of poses and the representation of objects. All the tests are all binary and indicate the presence or absence of loose spatial arrangements of oriented edge fragments. Starting from training examples, we recursively nd larger and larger arrangements which are \"decomposable,\" which implies the probability of an arrangement appearing on an object decays slowly with its size. Detection means nding a suucient number of arrangements of each size along a decreasing sequence of pose cells. At the beginning, the tests are simple and universal, accommodating many poses simultaneously, but the false alarm rate is relatively high. Eventually, the tests are more discriminating, but also more complex and dedicated to speciic poses. As a result, the spatial distribution of processing is highly skewed and detection is rapid, but at the expense of (isolated) false alarms which, presumably, could be eliminated with localized, more intensive, processing."
+            },
+            "slug": "Coarse-to-Fine-Visual-Selection-Fleuret-Geman",
+            "title": {
+                "fragments": [],
+                "text": "Coarse-to-Fine Visual Selection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "The approach is sequential testing which is coarse-tone in both in the exploration of poses and the representation of objects, and the spatial distribution of processing is highly skewed and detection is rapid, but at the expense of false alarms which, presumably, could be eliminated with localized, more intensive, processing."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35238678"
+                        ],
+                        "name": "D. Lowe",
+                        "slug": "D.-Lowe",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Lowe",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Lowe"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 89,
+                                "start": 85
+                            }
+                        ],
+                        "text": "This method is as effective and much faster than the usual way of computing local descriptors and comparing their responses."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5258236,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f9f836d28f52ad260213d32224a6d227f8e8849a",
+            "isKey": false,
+            "numCitedBy": 16256,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "An object recognition system has been developed that uses a new class of local image features. The features are invariant to image scaling, translation, and rotation, and partially invariant to illumination changes and affine or 3D projection. These features share similar properties with neurons in inferior temporal cortex that are used for object recognition in primate vision. Features are efficiently detected through a staged filtering approach that identifies stable points in scale space. Image keys are created that allow for local geometric deformations by representing blurred image gradients in multiple orientation planes and at multiple scales. The keys are used as input to a nearest neighbor indexing method that identifies candidate object matches. Final verification of each match is achieved by finding a low residual least squares solution for the unknown model parameters. Experimental results show that robust object recognition can be achieved in cluttered partially occluded images with a computation time of under 2 seconds."
+            },
+            "slug": "Object-recognition-from-local-scale-invariant-Lowe",
+            "title": {
+                "fragments": [],
+                "text": "Object recognition from local scale-invariant features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "Experimental results show that robust object recognition can be achieved in cluttered partially occluded images with a computation time of under 2 seconds."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Seventh IEEE International Conference on Computer Vision"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40309692"
+                        ],
+                        "name": "C. G. Harris",
+                        "slug": "C.-G.-Harris",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Harris",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. G. Harris"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40365651"
+                        ],
+                        "name": "M. Stephens",
+                        "slug": "M.-Stephens",
+                        "structuredName": {
+                            "firstName": "M.",
+                            "lastName": "Stephens",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Stephens"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 80,
+                                "start": 76
+                            }
+                        ],
+                        "text": "Scale-invariant feature extraction can be achieved by using Harris detector [13] at several Gaussian derivative scales, or by considering local optima of pyramidal difference-of-Gaussian filters in scale-space [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1694378,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6818668fb895d95861a2eb9673ddc3a41e27b3b3",
+            "isKey": false,
+            "numCitedBy": 14111,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The problem we are addressing in Alvey Project MMI149 is that of using computer vision to understand the unconstrained 3D world, in which the viewed scenes will in general contain too wide a diversity of objects for topdown recognition techniques to work. For example, we desire to obtain an understanding of natural scenes, containing roads, buildings, trees, bushes, etc., as typified by the two frames from a sequence illustrated in Figure 1. The solution to this problem that we are pursuing is to use a computer vision system based upon motion analysis of a monocular image sequence from a mobile camera. By extraction and tracking of image features, representations of the 3D analogues of these features can be constructed."
+            },
+            "slug": "A-Combined-Corner-and-Edge-Detector-Harris-Stephens",
+            "title": {
+                "fragments": [],
+                "text": "A Combined Corner and Edge Detector"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "The problem the authors are addressing in Alvey Project MMI149 is that of using computer vision to understand the unconstrained 3D world, in which the viewed scenes will in general contain too wide a diversity of objects for topdown recognition techniques to work."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Alvey Vision Conference"
+            },
+            "year": 1988
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2679389"
+                        ],
+                        "name": "A. Baumberg",
+                        "slug": "A.-Baumberg",
+                        "structuredName": {
+                            "firstName": "Adam",
+                            "lastName": "Baumberg",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Baumberg"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Since the pioneering work by Schmid and Mohr [1], the algorithms have become ever more robust to scale, viewpoint, illumination changes and partial occlusions [2, 3, 4, 5, 6, 7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 12,
+                                "start": 9
+                            }
+                        ],
+                        "text": "Baumberg [3] uses a variant of the Fourier-Mellin transformation to achieve rotation invariance."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15626261,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "67f693427d956c0dbc822e7f3452aee8ca36204b",
+            "isKey": false,
+            "numCitedBy": 767,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a robust method for automatically matching features in images corresponding to the same physical point on an object seen from two arbitrary viewpoints. Unlike conventional stereo matching approaches we assume no prior knowledge about the relative camera positions and orientations. In fact in our application this is the information we wish to determine from the image feature matches. Features are detected in two or more images and characterised using affine texture invariants. The problem of window effects is explicitly addressed by our method-our feature characterisation is invariant to linear transformations of the image data including rotation, stretch and skew. The feature matching process is optimised for a structure-from-motion application where we wish to ignore unreliable matches at the expense of reducing the number of feature matches."
+            },
+            "slug": "Reliable-feature-matching-across-widely-separated-Baumberg",
+            "title": {
+                "fragments": [],
+                "text": "Reliable feature matching across widely separated views"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "A robust method for automatically matching features in images corresponding to the same physical point on an object seen from two arbitrary viewpoints that is optimised for a structure-from-motion application where it wishes to ignore unreliable matches at the expense of reducing the number of feature matches."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings IEEE Conference on Computer Vision and Pattern Recognition. CVPR 2000 (Cat. No.PR00662)"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1731948"
+                        ],
+                        "name": "Paul A. Viola",
+                        "slug": "Paul-A.-Viola",
+                        "structuredName": {
+                            "firstName": "Paul",
+                            "lastName": "Viola",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Paul A. Viola"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145319478"
+                        ],
+                        "name": "Michael J. Jones",
+                        "slug": "Michael-J.-Jones",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jones",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael J. Jones"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 259,
+                                "start": 255
+                            }
+                        ],
+                        "text": "The methods used range from relatively simple methods such as Principal Component Analysis and Nearest Neighbor search [11] to more sophisticated ones such as AdaBoost and classifiers cascade to achieve realtime detection of human faces at varying scales [12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2715202,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dc6ea0e30e46163b706f2f8bdc9c67ca87f83d63",
+            "isKey": false,
+            "numCitedBy": 17884,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes a machine learning approach for visual object detection which is capable of processing images extremely rapidly and achieving high detection rates. This work is distinguished by three key contributions. The first is the introduction of a new image representation called the \"integral image\" which allows the features used by our detector to be computed very quickly. The second is a learning algorithm, based on AdaBoost, which selects a small number of critical visual features from a larger set and yields extremely efficient classifiers. The third contribution is a method for combining increasingly more complex classifiers in a \"cascade\" which allows background regions of the image to be quickly discarded while spending more computation on promising object-like regions. The cascade can be viewed as an object specific focus-of-attention mechanism which unlike previous approaches provides statistical guarantees that discarded regions are unlikely to contain the object of interest. In the domain of face detection the system yields detection rates comparable to the best previous systems. Used in real-time applications, the detector runs at 15 frames per second without resorting to image differencing or skin color detection."
+            },
+            "slug": "Rapid-object-detection-using-a-boosted-cascade-of-Viola-Jones",
+            "title": {
+                "fragments": [],
+                "text": "Rapid object detection using a boosted cascade of simple features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "A machine learning approach for visual object detection which is capable of processing images extremely rapidly and achieving high detection rates and the introduction of a new image representation called the \"integral image\" which allows the features used by the detector to be computed very quickly."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "82117876"
+                        ],
+                        "name": "F. Jurie",
+                        "slug": "F.-Jurie",
+                        "structuredName": {
+                            "firstName": "Fr\u00e9d\u00e9ric",
+                            "lastName": "Jurie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Jurie"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 137,
+                                "start": 133
+                            }
+                        ],
+                        "text": "The key ingredient of our approach is to treat wide baseline matching of feature points as a classification problem, in which each class corresponds to the set of all possible views of such a point."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16256524,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "faa1b52af5f2af02ac52143bb9335fda0b637977",
+            "isKey": false,
+            "numCitedBy": 62,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The use of hypothesis verification is recurrent in the model-based recognition literature. Verification consists in measuring how many model features transformed by a pose coincide with some image features. When data involved in the computation of the pose are noisy, the pose is inaccurate and difficult to verify, especially when the objects are partially occluded. To address this problem, the noise in image features is modeled by a Gaussian distribution. A probabilistic framework allows the evaluation of the probability of a matching, knowing that the pose belongs to a rectangular volume of the pose space. It involves quadratic programming, if the transformation is affine. This matching probability is used in an algorithm computing the best pose. It consists in a recursive multiresolution exploration of the pose space, discarding outliers in the match data while the search is progressing. Numerous experimental results are described. They consist of 2D and 3D recognition experiments using the proposed algorithm."
+            },
+            "slug": "Solution-of-the-Simultaneous-Pose-and-Problem-Using-Jurie",
+            "title": {
+                "fragments": [],
+                "text": "Solution of the Simultaneous Pose and Correspondence Problem Using Gaussian Error Model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A probabilistic framework allows the evaluation of the probability of a matching, knowing that the pose belongs to a rectangular volume of the pose space, and involves quadratic programming, if the transformation is affine."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Vis. Image Underst."
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1775242"
+                        ],
+                        "name": "Frederik Schaffalitzky",
+                        "slug": "Frederik-Schaffalitzky",
+                        "structuredName": {
+                            "firstName": "Frederik",
+                            "lastName": "Schaffalitzky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Frederik Schaffalitzky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Since the pioneering work by Schmid and Mohr [1], the algorithms have become ever more robust to scale, viewpoint, illumination changes and partial occlusions [2, 3, 4, 5, 6, 7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1699616,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7e81996384b030b580a0e02c0dc367d59c0c15ba",
+            "isKey": false,
+            "numCitedBy": 697,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "There has been considerable success in automated reconstruction for image sequences where small baseline algorithms can be used to establish matches across a number of images. In contrast in the case of widely separated views, methods have generally been restricted to two or three views.In this paper we investigate the problem of establishing relative viewpoints given a large number of images where no ordering information is provided. A typical application would be where images are obtained from different sources or at different times: both the viewpoint (position, orientation, scale) and lighting conditions may vary significantly over the data set.Such a problem is not fundamentally amenable to exhaustive pair wise and triplet wide baseline matching because this would be prohibitively expensive as the number of views increases. Instead, we investiate how a combination of image invariants, covariants, and multiple view relations can be used in concord to enable efficient multiple view matching. The result is a matching algorithm which is linear in the number of views.The methods are illustrated on several real image data sets. The output enables an image based technique for navigating in a 3D scene, moving from one image to whichever image is the next most appropriate."
+            },
+            "slug": "Multi-view-Matching-for-Unordered-Image-Sets,-or-Do-Schaffalitzky-Zisserman",
+            "title": {
+                "fragments": [],
+                "text": "Multi-view Matching for Unordered Image Sets, or \"How Do I Organize My Holiday Snaps?\""
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This paper invests how a combination of image invariants, covariants, and multiple view relations can be used in concord to enable efficient multiple view matching and produces a matching algorithm which is linear in the number of views."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49283226"
+                        ],
+                        "name": "Jason Meltzer",
+                        "slug": "Jason-Meltzer",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Meltzer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jason Meltzer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1715634"
+                        ],
+                        "name": "Ming-Hsuan Yang",
+                        "slug": "Ming-Hsuan-Yang",
+                        "structuredName": {
+                            "firstName": "Ming-Hsuan",
+                            "lastName": "Yang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ming-Hsuan Yang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2110343814"
+                        ],
+                        "name": "Rakesh Gupta",
+                        "slug": "Rakesh-Gupta",
+                        "structuredName": {
+                            "firstName": "Rakesh",
+                            "lastName": "Gupta",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rakesh Gupta"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1715959"
+                        ],
+                        "name": "Stefano Soatto",
+                        "slug": "Stefano-Soatto",
+                        "structuredName": {
+                            "firstName": "Stefano",
+                            "lastName": "Soatto",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Stefano Soatto"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 17595811,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6333df47b880d7b2e0435c04c0294a0351e73fc8",
+            "isKey": false,
+            "numCitedBy": 49,
+            "numCiting": 47,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a method for learning feature descriptors using multiple images, motivated by the problems of mobile robot navigation and localization. The technique uses the relative simplicity of small baseline tracking in image sequences to develop descriptors suitable for the more challenging task of wide baseline matching across significant viewpoint changes. The variations in the appearance of each feature are learned using kernel principal component analysis (KPCA) over the course of image sequences. An approximate version of KPCA is applied to reduce the computational complexity of the algorithms and yield a compact representation. Our experiments demonstrate robustness to wide appearance variations on non-planar surfaces, including changes in illumination, viewpoint, scale, and geometry of the scene."
+            },
+            "slug": "Multiple-View-Feature-Descriptors-from-Image-via-Meltzer-Yang",
+            "title": {
+                "fragments": [],
+                "text": "Multiple View Feature Descriptors from Image Sequences via Kernel Principal Component Analysis"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "The technique uses the relative simplicity of small baseline tracking in image sequences to develop descriptors suitable for the more challenging task of wide baseline matching across significant viewpoint changes, motivated by the problems of mobile robot navigation and localization."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "4801654"
+                        ],
+                        "name": "Y. Amit",
+                        "slug": "Y.-Amit",
+                        "structuredName": {
+                            "firstName": "Yali",
+                            "lastName": "Amit",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Amit"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707642"
+                        ],
+                        "name": "D. Geman",
+                        "slug": "D.-Geman",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Geman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48025819"
+                        ],
+                        "name": "Xiaodong Fan",
+                        "slug": "Xiaodong-Fan",
+                        "structuredName": {
+                            "firstName": "Xiaodong",
+                            "lastName": "Fan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xiaodong Fan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 144
+                            }
+                        ],
+                        "text": "To increase the range of applicability of our approach, we will investigate the use of other additional image features, such as spread gradient [19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8504251,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d41963bb5af33ba1a764f659a4067f1ff56866e0",
+            "isKey": false,
+            "numCitedBy": 155,
+            "numCiting": 42,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Multiclass shape detection, in the sense of recognizing and localizing instances from multiple shape classes, is formulated as a two-step process in which local indexing primes global interpretation. During indexing a list of instantiations (shape identities and poses) is compiled, constrained only by no missed detections at the expense of false positives. Global information, such as expected relationships among poses, is incorporated afterward to remove ambiguities. This division is motivated by computational efficiency. In addition, indexing itself is organized as a coarse-to-fine search simultaneously in class and pose. This search can be interpreted as successive approximations to likelihood ratio tests arising from a simple (\"naive Bayes\") statistical model for the edge maps extracted from the original images. The key to constructing efficient \"hypothesis tests\" for multiple classes and poses is local ORing; in particular, spread edges provide imprecise but common and locally invariant features. Natural tradeoffs then emerge between discrimination and the pattern of spreading. These are analyzed mathematically within the model-based framework and the whole procedure is illustrated by experiments in reading license plates."
+            },
+            "slug": "A-coarse-to-fine-strategy-for-multiclass-shape-Amit-Geman",
+            "title": {
+                "fragments": [],
+                "text": "A coarse-to-fine strategy for multiclass shape detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "Multiclass shape detection is formulated as a two-step process in which local indexing primes global interpretation and the key to constructing efficient \"hypothesis tests\" for multiple classes and poses is local ORing."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1885903"
+                        ],
+                        "name": "N. Allezard",
+                        "slug": "N.-Allezard",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Allezard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Allezard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756828"
+                        ],
+                        "name": "M. Dhome",
+                        "slug": "M.-Dhome",
+                        "structuredName": {
+                            "firstName": "Michel",
+                            "lastName": "Dhome",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Dhome"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "82117876"
+                        ],
+                        "name": "F. Jurie",
+                        "slug": "F.-Jurie",
+                        "structuredName": {
+                            "firstName": "Fr\u00e9d\u00e9ric",
+                            "lastName": "Jurie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Jurie"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[15] represent the keypoint neighborhood by a hierarchical sampling, and rotation invariance is obtained by starting the circular sampling with respect to the gradient direction."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 26161318,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1ad091806631dc2fbd6feeb67f67754fd5b3b2f2",
+            "isKey": false,
+            "numCitedBy": 19,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A strategy combining advantages of view-based and model-based object recognition approaches has been developed. Textured 3D models are used to produce local appearances of object key-points. Correspondences between 3D points and local appearances are also established during this learning stage. The recognition consists first in matching these local appearances and those extracted from the image. A robust 3D pose estimation is then carried out, discarding spurious correspondences. This algorithm is computationally very efficient. It can analyse images including several objects and can also handle partial object occultations as well as important changes of brightness and contrast."
+            },
+            "slug": "Recognition-of-3D-textured-objects-by-mixing-and-Allezard-Dhome",
+            "title": {
+                "fragments": [],
+                "text": "Recognition of 3D textured objects by mixing view-based and model-based representations"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "A strategy combining advantages of view-based and model-based object recognition approaches has been developed that can analyse images including several objects and can also handle partial object occultations as well as important changes of brightness and contrast."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings 15th International Conference on Pattern Recognition. ICPR-2000"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1712041"
+                        ],
+                        "name": "K. Mikolajczyk",
+                        "slug": "K.-Mikolajczyk",
+                        "structuredName": {
+                            "firstName": "Krystian",
+                            "lastName": "Mikolajczyk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Mikolajczyk"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 61
+                            }
+                        ],
+                        "text": "One solution is to iteratively refine the point localization [4], which can be costly."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Since the pioneering work by Schmid and Mohr [1], the algorithms have become ever more robust to scale, viewpoint, illumination changes and partial occlusions [2, 3, 4, 5, 6, 7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[4] have also defined an affine invariant point detector to handle larger viewpoint changes, that has been used for 3D object recognition [14], but it relies on an iterative estimation that would be too slow for our purposes."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8571961,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "9c7a96155f10f152cae0866102c061cdf6da02e8",
+            "isKey": false,
+            "numCitedBy": 1683,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a novel approach for detecting affine invariant interest points. Our method can deal with significant affine transformations including large scale changes. Such transformations introduce significant changes in the point location as well as in the scale and the shape of the neighbourhood of an interest point. Our approach allows to solve for these problems simultaneously. It is based on three key ideas : 1) The second moment matrix computed in a point can be used to normalize a region in an affine invariant way (skew and stretch). 2) The scale of the local structure is indicated by local extrema of normalized derivatives over scale. 3) An affine-adapted Harris detector determines the location of interest points. A multi-scale version of this detector is used for initialization. An iterative algorithm then modifies location, scale and neighbourhood of each point and converges to affine invariant points. For matching and recognition, the image is characterized by a set of affine invariant points; the affine transformation associated with each point allows the computation of an affine invariant descriptor which is also invariant to affine illumination changes. A quantitative comparison of our detector with existing ones shows a significant improvement in the presence of large affine deformations. Experimental results for wide baseline matching show an excellent performance in the presence of large perspective transformations including significant scale changes. Results for recognition are very good for a database with more than 5000 images."
+            },
+            "slug": "An-Affine-Invariant-Interest-Point-Detector-Mikolajczyk-Schmid",
+            "title": {
+                "fragments": [],
+                "text": "An Affine Invariant Interest Point Detector"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "A novel approach for detecting affine invariant interest points that can deal with significant affine transformations including large scale changes and shows an excellent performance in the presence of large perspective transformations including significant scale changes."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1919611"
+                        ],
+                        "name": "Florica Mindru",
+                        "slug": "Florica-Mindru",
+                        "structuredName": {
+                            "firstName": "Florica",
+                            "lastName": "Mindru",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Florica Mindru"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2525101"
+                        ],
+                        "name": "T. Moons",
+                        "slug": "T.-Moons",
+                        "structuredName": {
+                            "firstName": "Theo",
+                            "lastName": "Moons",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Moons"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 218,
+                                "start": 214
+                            }
+                        ],
+                        "text": "As a result, even though we use a monoscale algorithm for keypoint extraction [10], we can achieve scale-invariance across a range of scales by using training images at different resolutions and retaining only those keypoints that are stable within the range."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7100288,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ee146084f94c240857206208c214aa37951db244",
+            "isKey": false,
+            "numCitedBy": 129,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "New invariant features are presented that can be used for the recognition of planar color patterns such as labels, logos, pictograms, etc., irrespective of the viewpoint or the illumination conditions, and without the need for error prone contour extraction. The new features are based on moments of powers of the intensities in the individual color bands and combinations thereof. These moments implicitly characterize the shape, the intensity and the color distribution of the pattern in a uniform manner. The paper gives a classification of all functions of such moments which are invariant under both affine deformations of the pattern (thus achieving viewpoint invariance) as well as linear changes of the intensity values of the color bands (hence, coping with changes in the irradiance pattern due to different lighting conditions and/or viewpoints). The discriminant power and classification performance of the new invariants for color pattern recognition is tested on a data set of images of outdoors advertising panels. A comparison to moment invariants presented in literature is included as well."
+            },
+            "slug": "Recognizing-color-patterns-irrespective-of-and-Mindru-Moons",
+            "title": {
+                "fragments": [],
+                "text": "Recognizing color patterns irrespective of viewpoint and illumination"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "New invariant features are presented that can be used for the recognition of planar color patterns such as labels, logos, pictograms, etc., irrespective of the viewpoint or the illumination conditions, and without the need for error prone contour extraction."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings. 1999 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (Cat. No PR00149)"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1736489"
+                        ],
+                        "name": "Fred Rothganger",
+                        "slug": "Fred-Rothganger",
+                        "structuredName": {
+                            "firstName": "Fred",
+                            "lastName": "Rothganger",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fred Rothganger"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1749609"
+                        ],
+                        "name": "S. Lazebnik",
+                        "slug": "S.-Lazebnik",
+                        "structuredName": {
+                            "firstName": "Svetlana",
+                            "lastName": "Lazebnik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Lazebnik"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144189388"
+                        ],
+                        "name": "J. Ponce",
+                        "slug": "J.-Ponce",
+                        "structuredName": {
+                            "firstName": "Jean",
+                            "lastName": "Ponce",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Ponce"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 142,
+                                "start": 138
+                            }
+                        ],
+                        "text": "[4] have also defined an affine invariant point detector to handle larger viewpoint changes, that has been used for 3D object recognition [14], but it relies on an iterative estimation that would be too slow for our purposes."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2046294,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1468251456faef0ef2dfa87937fda2aea0bacb90",
+            "isKey": false,
+            "numCitedBy": 163,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a representation for three-dimensional objects in terms of affine-invariant image patches and their spatial relationships. Multi-view constraints associated with groups of patches are combined with a normalized representation of their appearance to guide matching and reconstruction, allowing the acquisition of true three-dimensional affine and Euclidean models from multiple images and their recognition in a single photograph taken from an arbitrary viewpoint. The proposed approach does not require a separate segmentation stage and is applicable to cluttered scenes. Preliminary modeling and recognition results are presented."
+            },
+            "slug": "3D-object-modeling-and-recognition-using-patches-Rothganger-Lazebnik",
+            "title": {
+                "fragments": [],
+                "text": "3D object modeling and recognition using affine-invariant patches and multi-view spatial constraints"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 58,
+                "text": "Multi-view constraints associated with groups of patches are combined with a normalized representation of their appearance to guide matching and reconstruction, allowing the acquisition of true three-dimensional affine and Euclidean models from multiple images and their recognition in a single photograph taken from an arbitrary viewpoint."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2003 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2003. Proceedings."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145564537"
+                        ],
+                        "name": "Jiri Matas",
+                        "slug": "Jiri-Matas",
+                        "structuredName": {
+                            "firstName": "Jiri",
+                            "lastName": "Matas",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jiri Matas"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700928"
+                        ],
+                        "name": "O. Chum",
+                        "slug": "O.-Chum",
+                        "structuredName": {
+                            "firstName": "Ond\u0159ej",
+                            "lastName": "Chum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "O. Chum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2067522034"
+                        ],
+                        "name": "Martin Urban",
+                        "slug": "Martin-Urban",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Urban",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Martin Urban"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1758039"
+                        ],
+                        "name": "T. Pajdla",
+                        "slug": "T.-Pajdla",
+                        "structuredName": {
+                            "firstName": "Tom\u00e1s",
+                            "lastName": "Pajdla",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Pajdla"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Since the pioneering work by Schmid and Mohr [1], the algorithms have become ever more robust to scale, viewpoint, illumination changes and partial occlusions [2, 3, 4, 5, 6, 7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 72
+                            }
+                        ],
+                        "text": "Most of these methods are too slow for real-time processing, except for [5] that introduces Maximally Stable Extremal Regions to achieve near frame rate matching of stable regions."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2104851,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "9d5ea177c7fcaf88ec6f56cbeb3e9b74c08e98a3",
+            "isKey": false,
+            "numCitedBy": 3922,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The wide-baseline stereo problem, i.e. the problem of establishing correspondences between a pair of images taken from different viewpoints is studied. A new set of image elements that are put into correspondence, the so called extremal regions, is introduced. Extremal regions possess highly desirable properties: the set is closed under 1. continuous (and thus projective) transformation of image coordinates and 2. monotonic transformation of image intensities. An efficient (near linear complexity) and practically fast detection algorithm (near frame rate) is presented for an affinely-invariant stable subset of extremal regions, the maximally stable extremal regions (MSER). A new robust similarity measure for establishing tentative correspondences is proposed. The robustness ensures that invariants from multiple measurement regions (regions obtained by invariant constructions from extremal regions), some that are significantly larger (and hence discriminative) than the MSERs, may be used to establish tentative correspondences. The high utility of MSERs, multiple measurement regions and the robust metric is demonstrated in wide-baseline experiments on image pairs from both indoor and outdoor scenes. Significant change of scale (3.5\u00d7), illumination conditions, out-of-plane rotation, occlusion , locally anisotropic scale change and 3D translation of the viewpoint are all present in the test problems. Good estimates of epipolar geometry (average distance from corresponding points to the epipolar line below 0.09 of the inter-pixel distance) are obtained."
+            },
+            "slug": "Robust-Wide-Baseline-Stereo-from-Maximally-Stable-Matas-Chum",
+            "title": {
+                "fragments": [],
+                "text": "Robust Wide Baseline Stereo from Maximally Stable Extremal Regions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "The wide-baseline stereo problem, i.e. the problem of establishing correspondences between a pair of images taken from different viewpoints, is studied and an efficient and practically fast detection algorithm is presented for an affinely-invariant stable subset of extremal regions, the maximally stable extremal region (MSER)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145299933"
+                        ],
+                        "name": "R. Mohr",
+                        "slug": "R.-Mohr",
+                        "structuredName": {
+                            "firstName": "Roger",
+                            "lastName": "Mohr",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Mohr"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 98
+                            }
+                        ],
+                        "text": "Given the extracted feature points, various local descriptors have been proposed: Schmid and Mohr [1] compute rotation invariant descriptors as functions of relatively high order image derivatives to achieve orientation invariance."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 48,
+                                "start": 45
+                            }
+                        ],
+                        "text": "Since the pioneering work by Schmid and Mohr [1], the algorithms have become ever more robust to scale, viewpoint, illumination changes and partial occlusions [2, 3, 4, 5, 6, 7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 325871,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "49fcd806450d947e56c82ef2b438ad9c484069dc",
+            "isKey": false,
+            "numCitedBy": 1792,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper addresses the problem of retrieving images from large image databases. The method is based on local grayvalue invariants which are computed at automatically detected interest points. A voting algorithm and semilocal constraints make retrieval possible. Indexing allows for efficient retrieval from a database of more than 1,000 images. Experimental results show correct retrieval in the case of partial visibility, similarity transformations, extraneous features, and small perspective deformations."
+            },
+            "slug": "Local-Grayvalue-Invariants-for-Image-Retrieval-Schmid-Mohr",
+            "title": {
+                "fragments": [],
+                "text": "Local Grayvalue Invariants for Image Retrieval"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 82,
+                "text": "This paper addresses the problem of retrieving images from large image databases with a method based on local grayvalue invariants which are computed at automatically detected interest points and allows for efficient retrieval from a database of more than 1,000 images."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1644050191"
+                        ],
+                        "name": "G. LoweDavid",
+                        "slug": "G.-LoweDavid",
+                        "structuredName": {
+                            "firstName": "G",
+                            "lastName": "LoweDavid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. LoweDavid"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 97
+                            }
+                        ],
+                        "text": "We compared our results with those obtained using the executable that implements the SIFT method [7] kindly provided by David Lowe."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 213,
+                                "start": 210
+                            }
+                        ],
+                        "text": "Scale-invariant feature extraction can be achieved by using Harris detector [13] at several Gaussian derivative scales, or by considering local optima of pyramidal difference-of-Gaussian filters in scale-space [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 26
+                            }
+                        ],
+                        "text": "We also use the method of [7] to attribute a 2D orientation to the keypoints and achieve some normalization."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 159
+                            }
+                        ],
+                        "text": "Since the pioneering work by Schmid and Mohr [1], the algorithms have become ever more robust to scale, viewpoint, illumination changes and partial occlusions [2, 3, 4, 5, 6, 7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 5
+                            }
+                        ],
+                        "text": "Lowe [7] introduces a descriptor called SIFT based on several orientation histograms, that is not fully"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 174065,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4cab9c4b571761203ed4c3a4c5a07dd615f57a91",
+            "isKey": true,
+            "numCitedBy": 25501,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a method for extracting distinctive invariant features from images that can be used to perform reliable matching between different views of an object or scene. The features are ..."
+            },
+            "slug": "Distinctive-Image-Features-from-Scale-Invariant-LoweDavid",
+            "title": {
+                "fragments": [],
+                "text": "Distinctive Image Features from Scale-Invariant Keypoints"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "This paper presents a method for extracting distinctive invariant features from images that can be used to perform reliable matching between different views of an object or scene."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2004
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 104
+                            }
+                        ],
+                        "text": "Deformable objects: the object is detected and its deformation estimated, using the method described in [18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 27
+                            }
+                        ],
+                        "text": "Our method is also used in [18] to detect deformable objects and estimate their deformation in real-time."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Real-Time Non-Rigid Surface Detection"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Conference on Computer Vision and Pattern Recognition, San Diego, CA, June 2005."
+            },
+            "year": 2005
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Reconnaissance d'objets 3D3D`3D\u00e0 l'aide d'arbres de classification"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of Image'Com"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Reconnaissance d\u2019objets 3D \u00e0 l\u2019aide d\u2019arbres de classification"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of Image\u2019Com, 1996."
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Jedynak and F . Fleuret , \u201c Reconnaissance d \u2019 objets 3 D \u00e0 l \u2019 aide d \u2019 arbres de classification"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2004
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 12,
+            "methodology": 15,
+            "result": 1
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 26,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Randomized-trees-for-real-time-keypoint-recognition-Lepetit-Lagger/d0faf378ca4d6227b47bb36254a57f7ceeb0c566?sort=total-citations"
+}

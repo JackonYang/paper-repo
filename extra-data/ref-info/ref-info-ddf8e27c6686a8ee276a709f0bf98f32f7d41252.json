@@ -1,0 +1,1415 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1692688"
+                        ],
+                        "name": "Yuri Boykov",
+                        "slug": "Yuri-Boykov",
+                        "structuredName": {
+                            "firstName": "Yuri",
+                            "lastName": "Boykov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yuri Boykov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144197071"
+                        ],
+                        "name": "M. Jolly",
+                        "slug": "M.-Jolly",
+                        "structuredName": {
+                            "firstName": "Marie-Pierre",
+                            "lastName": "Jolly",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Jolly"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 99
+                            }
+                        ],
+                        "text": "The inferiority of the Ising model and the \u201cno interaction model\u201d has been demonstrated previously [3] but here is quantified for the first time."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 61
+                            }
+                        ],
+                        "text": "MAP inference of is therefore done by applying min cut as in [3] to the Gibbs energy A ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Other studies [4, 3] concentrate on capturing the tendency for images of solid objects to be coherent, via Markov Random Field priors such as the Ising model."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 22,
+                                "start": 19
+                            }
+                        ],
+                        "text": "This is well known [3] to give poor results and this will be quantified in section 5."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 127,
+                                "start": 124
+                            }
+                        ],
+                        "text": "The results of minimising A HIJDK \u0091 (neglecting { |#} ;,< \u2014 see later) gives considerably improved segmentation performance [3]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 69
+                            }
+                        ],
+                        "text": "We have formalised the energy minimization model of Boykov and Jolly [3] for foreground/background segmentation as a probabilistic GMMRF and developed a pseudolikelihood algorithm for parameter learning."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 15,
+                                "start": 12
+                            }
+                        ],
+                        "text": "In practice [3] the homogeneous MRF succeeds in enforcing some coherence, as intended, but introduces \u201cManhattan\u201d artefacts that point to the need for a more subtle form of prior and/or data likelihood, and again this is quantified in section 5."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 306,
+                                "start": 303
+                            }
+                        ],
+                        "text": "Since also the partition function ;,z for the prior is always independent of , the MAP estimate of can be obtained (3) by minimising AU+i{ |#} ;%< with respect to and this can be achieved exactly, given that k is binary valued here, using a \u201cminimum cut\u201d algorithm [4] which has recently been developed [3] to achieve good segmentation in interactive time (around 1 second for a ~ &#& l image)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 107
+                            }
+                        ],
+                        "text": "The Ising prior on opacity, being homogeneous, is a rather blunt instrument, and it is convincingly argued [3] that a \u201cprior\u201d that encourages object coherence only where contrast is low, is far more effective."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2245438,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1175608cde3de3d3b6e17aea53ccbafbda6eb638",
+            "isKey": true,
+            "numCitedBy": 4174,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we describe a new technique for general purpose interactive segmentation of N-dimensional images. The user marks certain pixels as \"object\" or \"background\" to provide hard constraints for segmentation. Additional soft constraints incorporate both boundary and region information. Graph cuts are used to find the globally optimal segmentation of the N-dimensional image. The obtained solution gives the best balance of boundary and region properties among all segmentations satisfying the constraints. The topology of our segmentation is unrestricted and both \"object\" and \"background\" segments may consist of several isolated parts. Some experimental results are presented in the context of photo/video editing and medical image segmentation. We also demonstrate an interesting Gestalt example. A fast implementation of our segmentation method is possible via a new max-flow algorithm."
+            },
+            "slug": "Interactive-graph-cuts-for-optimal-boundary-&-of-in-Boykov-Jolly",
+            "title": {
+                "fragments": [],
+                "text": "Interactive Graph Cuts for Optimal Boundary and Region Segmentation of Objects in N-D Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 87,
+                "text": "A new technique for general purpose interactive segmentation of N-dimensional images where the user marks certain pixels as \"object\" or \"background\" to provide hard constraints for segmentation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICCV"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143708263"
+                        ],
+                        "name": "Yung-Yu Chuang",
+                        "slug": "Yung-Yu-Chuang",
+                        "structuredName": {
+                            "firstName": "Yung-Yu",
+                            "lastName": "Chuang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yung-Yu Chuang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143800609"
+                        ],
+                        "name": "B. Curless",
+                        "slug": "B.-Curless",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Curless",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Curless"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1745260"
+                        ],
+                        "name": "D. Salesin",
+                        "slug": "D.-Salesin",
+                        "structuredName": {
+                            "firstName": "D.",
+                            "lastName": "Salesin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Salesin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717841"
+                        ],
+                        "name": "R. Szeliski",
+                        "slug": "R.-Szeliski",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Szeliski",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Szeliski"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 190,
+                                "start": 184
+                            }
+                        ],
+                        "text": "Each pixel is considered, in general, to have been generated as an additive combination of a proportion % ( &(' '*) ) of foreground colour with a proportion )$+ , of background colour [2, 1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 13
+                            }
+                        ],
+                        "text": "Some studies [1, 2] focus on inference of transparency in order to deal with mixed pixels and transparent textures such as hair."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2062421,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "03b2a8c90b9e5068bb05bfc885588e647f97356d",
+            "isKey": false,
+            "numCitedBy": 900,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper proposes a new Bayesian framework for solving the matting problem, i.e. extracting a foreground element from a background image by estimating an opacity for each pixel of the foreground element. Our approach models both the foreground and background color distributions with spatially-varying sets of Gaussians, and assumes a fractional blending of the foreground and background colors to produce the final output. It then uses a maximum-likelihood criterion to estimate the optimal opacity, foreground and background simultaneously. In addition to providing a principled approach to the matting problem, our algorithm effectively handles objects with intricate boundaries, such as hair strands and fur, and provides an improvement over existing techniques for these difficult cases."
+            },
+            "slug": "A-Bayesian-approach-to-digital-matting-Chuang-Curless",
+            "title": {
+                "fragments": [],
+                "text": "A Bayesian approach to digital matting"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 90,
+                "text": "This paper proposes a new Bayesian framework for solving the matting problem, i.e. extracting a foreground element from a background image by estimating an opacity for each pixel of the foreground element by using a maximum-likelihood criterion."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143751119"
+                        ],
+                        "name": "Jitendra Malik",
+                        "slug": "Jitendra-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jitendra Malik"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50172592"
+                        ],
+                        "name": "Serge J. Belongie",
+                        "slug": "Serge-J.-Belongie",
+                        "structuredName": {
+                            "firstName": "Serge",
+                            "lastName": "Belongie",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Serge J. Belongie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145266088"
+                        ],
+                        "name": "T. Leung",
+                        "slug": "T.-Leung",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Leung",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Leung"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46865129"
+                        ],
+                        "name": "Jianbo Shi",
+                        "slug": "Jianbo-Shi",
+                        "structuredName": {
+                            "firstName": "Jianbo",
+                            "lastName": "Shi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jianbo Shi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 159,
+                                "start": 155
+                            }
+                        ],
+                        "text": "The database contrasts with the form of ground truth supplied with the Berkeley database2 which is designed to test exhaustive, for bottom up segmentation [10]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17582380,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "34d4eb4666a20f7e3fad689d7862959bd128130b",
+            "isKey": false,
+            "numCitedBy": 1296,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper provides an algorithm for partitioning grayscale images into disjoint regions of coherent brightness and texture. Natural images contain both textured and untextured regions, so the cues of contour and texture differences are exploited simultaneously. Contours are treated in the intervening contour framework, while texture is analyzed using textons. Each of these cues has a domain of applicability, so to facilitate cue combination we introduce a gating operator based on the texturedness of the neighborhood at a pixel. Having obtained a local measure of how likely two nearby pixels are to belong to the same region, we use the spectral graph theoretic framework of normalized cuts to find partitions of the image into regions of coherent texture and brightness. Experimental results on a wide range of images are shown."
+            },
+            "slug": "Contour-and-Texture-Analysis-for-Image-Segmentation-Malik-Belongie",
+            "title": {
+                "fragments": [],
+                "text": "Contour and Texture Analysis for Image Segmentation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 74,
+                "text": "This paper provides an algorithm for partitioning grayscale images into disjoint regions of coherent brightness and texture, and introduces a gating operator based on the texturedness of the neighborhood at a pixel to facilitate cue combination."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48377731"
+                        ],
+                        "name": "G. Winkler",
+                        "slug": "G.-Winkler",
+                        "structuredName": {
+                            "firstName": "Gerhard",
+                            "lastName": "Winkler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Winkler"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 122
+                            }
+                        ],
+                        "text": "Curiously this problem with pseudolikelihood and autoregeression seems not to be generally acknowledged in standard texts [7, 9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 13,
+                                "start": 10
+                            }
+                        ],
+                        "text": "Following [7], the pseudo-energy is defined to be A \u00a2Z 32 +\u009c{ |#} ."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 173,
+                                "start": 170
+                            }
+                        ],
+                        "text": "There is no claim that \u0308 itself approximates the true likelihood, but that, under certain circumstances, its maximum coincides asymptotically with that of the likelihood [7] \u2014 asymptotically, that is, as the size of the data tends to infinity."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 62
+                            }
+                        ],
+                        "text": "This is because of the well-known role of partition functions [7] in parameter learning for Gibbs distributions."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 90,
+                                "start": 84
+                            }
+                        ],
+                        "text": "can be spatially correlated, for example via a first order Gauss-Markov interaction [6, 7] as, for example, in the Ising prior: ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 45306254,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "769a3188b73fdd9c5ea10970989827bd6d5c769d",
+            "isKey": true,
+            "numCitedBy": 697,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The book is mainly concerned with the mathematical foundations of Bayesian image analysis and its algorithms. This amounts to the study of Markov random fields and dynamic Monte Carlo algorithms like sampling, simulated annealing and stochastic gradient algorithms. The approach is introductory and elementary: given basic concepts from linear algebra and real analysis it is self-contained. No previous knowledge from image analysis is required. Knowledge of elementary probability theory and statistics is certainly beneficial but not absolutely necessary. The necessary background from imaging is sketched and illustrated by a number of concrete applications like restoration, texture segmentation and motion analysis."
+            },
+            "slug": "Image-analysis,-random-fields-and-dynamic-Monte-a-Winkler",
+            "title": {
+                "fragments": [],
+                "text": "Image analysis, random fields and dynamic Monte Carlo methods: a mathematical introduction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 99,
+                "text": "The book is mainly concerned with the mathematical foundations of Bayesian image analysis and its algorithms, which amounts to the study of Markov random fields and dynamic Monte Carlo algorithms like sampling, simulated annealing and stochastic gradient algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Applications of mathematics"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3154722"
+                        ],
+                        "name": "Mark A. Ruzon",
+                        "slug": "Mark-A.-Ruzon",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Ruzon",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark A. Ruzon"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145086151"
+                        ],
+                        "name": "Carlo Tomasi",
+                        "slug": "Carlo-Tomasi",
+                        "structuredName": {
+                            "firstName": "Carlo",
+                            "lastName": "Tomasi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Carlo Tomasi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 190,
+                                "start": 184
+                            }
+                        ],
+                        "text": "Each pixel is considered, in general, to have been generated as an additive combination of a proportion % ( &(' '*) ) of foreground colour with a proportion )$+ , of background colour [2, 1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 13
+                            }
+                        ],
+                        "text": "Some studies [1, 2] focus on inference of transparency in order to deal with mixed pixels and transparent textures such as hair."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16307305,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "64ce3c02fde4157458d84b977dc74a3bd7eda50d",
+            "isKey": false,
+            "numCitedBy": 400,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many boundaries between objects in the world project onto curves in an image. However, boundaries involving natural objects (e.g., trees, hair, water, smoke) are often unworkable under this model because many pixels receive light from more than one object. We propose a technique for estimating alpha, the proportion in which two colors mix to produce a color at the boundary. The technique extends blue screen matting to backgrounds that have almost arbitrary color distributions, though coarse knowledge of the boundary's location is required. Results show a number of different objects moved from one image to another while maintaining naturalism."
+            },
+            "slug": "Alpha-estimation-in-natural-images-Ruzon-Tomasi",
+            "title": {
+                "fragments": [],
+                "text": "Alpha estimation in natural images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A technique for estimating alpha, the proportion in which two colors mix to produce a color at the boundary, is proposed and results show a number of different objects moved from one image to another while maintaining naturalism."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings IEEE Conference on Computer Vision and Pattern Recognition. CVPR 2000 (Cat. No.PR00662)"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3072213"
+                        ],
+                        "name": "J. Besag",
+                        "slug": "J.-Besag",
+                        "structuredName": {
+                            "firstName": "Julian",
+                            "lastName": "Besag",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Besag"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 90,
+                                "start": 84
+                            }
+                        ],
+                        "text": "can be spatially correlated, for example via a first order Gauss-Markov interaction [6, 7] as, for example, in the Ising prior: ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 146,
+                                "start": 143
+                            }
+                        ],
+                        "text": "A well established technique for parameter estimation in formally intractable MRFs like this one is to introduce a \u201cpseudolikelihood function\u201d [6] and maximise it with respect to its parameters."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15128952,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "47865b56fee61d9c9ff477f7c79f090cc6663d3a",
+            "isKey": false,
+            "numCitedBy": 4634,
+            "numCiting": 79,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "may 7th, 1986, Professor A. F. M. Smith in the Chair] SUMMARY A continuous two-dimensional region is partitioned into a fine rectangular array of sites or \"pixels\", each pixel having a particular \"colour\" belonging to a prescribed finite set. The true colouring of the region is unknown but, associated with each pixel, there is a possibly multivariate record which conveys imperfect information about its colour according to a known statistical model. The aim is to reconstruct the true scene, with the additional knowledge that pixels close together tend to have the same or similar colours. In this paper, it is assumed that the local characteristics of the true scene can be represented by a nondegenerate Markov random field. Such information can be combined with the records by Bayes' theorem and the true scene can be estimated according to standard criteria. However, the computational burden is enormous and the reconstruction may reflect undesirable largescale properties of the random field. Thus, a simple, iterative method of reconstruction is proposed, which does not depend on these large-scale characteristics. The method is illustrated by computer simulations in which the original scene is not directly related to the assumed random field. Some complications, including parameter estimation, are discussed. Potential applications are mentioned briefly."
+            },
+            "slug": "On-the-Statistical-Analysis-of-Dirty-Pictures-Besag",
+            "title": {
+                "fragments": [],
+                "text": "On the Statistical Analysis of Dirty Pictures"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1986
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685873"
+                        ],
+                        "name": "X. Descombes",
+                        "slug": "X.-Descombes",
+                        "structuredName": {
+                            "firstName": "Xavier",
+                            "lastName": "Descombes",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Descombes"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714070"
+                        ],
+                        "name": "M. Sigelle",
+                        "slug": "M.-Sigelle",
+                        "structuredName": {
+                            "firstName": "Marc",
+                            "lastName": "Sigelle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Sigelle"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1742371"
+                        ],
+                        "name": "F. Pr\u00eateux",
+                        "slug": "F.-Pr\u00eateux",
+                        "structuredName": {
+                            "firstName": "Fran\u00e7oise",
+                            "lastName": "Pr\u00eateux",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Pr\u00eateux"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 20291184,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "ebf41cdbef53587defa2fafa06006657e09f0de5",
+            "isKey": false,
+            "numCitedBy": 71,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we tackle the problem of estimating textural parameters. We do not consider the problem of texture synthesis, but the problem of extracting textural features for tasks such as image segmentation. We take into account nonstationarities occurring in the local mean. We focus on Gaussian Markov random fields for which two estimation methods are proposed, and applied in a nonstationary framework. The first one consists of extracting conditional probabilities and performing a least square approximation. This method is applied to a nonstationary framework, dealing with the piecewise constant local mean. This framework is adapted to practical tasks when discriminating several textures on a single image. The blurring effect affecting edges between two different textures is thus reduced. The second proposed method is based on renormalization theory. Statistics involved only concern variances of Gaussian laws, leading to Cramer-Rao estimators. This method is thus especially robust with respect to the size of sampling. Moreover, nonstationarities of the local mean do not affect results. We then demonstrate that the estimated parameters allow texture discrimination for remote sensing data. The first proposed estimation method is applied to extract urban areas from SPOT images. Since discontinuities of the local mean are taken into account, we obtain an accurate urban areas delineation. Finally, we apply the renormalization based on method to segment ice in polar regions from AVHRR data."
+            },
+            "slug": "Estimating-Gaussian-Markov-random-field-parameters-Descombes-Sigelle",
+            "title": {
+                "fragments": [],
+                "text": "Estimating Gaussian Markov random field parameters in a nonstationary framework: application to remote sensing imaging"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper focuses on Gaussian Markov random fields for which two estimation methods are proposed, and applied in a nonstationary framework, and demonstrates that the estimated parameters allow texture discrimination for remote sensing data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Image Process."
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2145349582"
+                        ],
+                        "name": "Sanjiv Kumar",
+                        "slug": "Sanjiv-Kumar",
+                        "structuredName": {
+                            "firstName": "Sanjiv",
+                            "lastName": "Kumar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sanjiv Kumar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145670946"
+                        ],
+                        "name": "M. Hebert",
+                        "slug": "M.-Hebert",
+                        "structuredName": {
+                            "firstName": "Martial",
+                            "lastName": "Hebert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hebert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 66,
+                                "start": 63
+                            }
+                        ],
+                        "text": "Note also that recent advances in Discriminative Random Fields [8] which can often circumvent such issues, turn out not to be applicable to using the GMMRF model with trimap labelling."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 40
+                            }
+                        ],
+                        "text": "\u2014 the Discriminative Random Field model [8] has recently been shown to be very effective for image classification tasks."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10689850,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e54f01884e1fba4a0bbd2f0989ad21a16ebb13e3",
+            "isKey": false,
+            "numCitedBy": 530,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this work we present discriminative random fields (DRFs), a discriminative framework for the classification of image regions by incorporating neighborhood interactions in the labels as well as the observed data. The discriminative random fields offer several advantages over the conventional Markov random field (MRF) framework. First, the DRFs allow to relax the strong assumption of conditional independence of the observed data generally used in the MRF framework for tractability. This assumption is too restrictive for a large number of applications in vision. Second, the DRFs derive their classification power by exploiting the probabilistic discriminative models instead of the generative models used in the MRF framework. Finally, all the parameters in the DRF model are estimated simultaneously from the training data unlike the MRF framework where likelihood parameters are usually learned separately from the field parameters. We illustrate the advantages of the DRFs over the MRF framework in an application of man-made structure detection in natural images taken from the Corel database."
+            },
+            "slug": "Discriminative-random-fields:-a-discriminative-for-Kumar-Hebert",
+            "title": {
+                "fragments": [],
+                "text": "Discriminative random fields: a discriminative framework for contextual interaction in classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 88,
+                "text": "This work presents discriminative random fields (DRFs), a discrim inative framework for the classification of image regions by incorporating neighborhood interactions in the labels as well as the observed data that offers several advantages over the conventional Markov random field framework."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Ninth IEEE International Conference on Computer Vision"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144653004"
+                        ],
+                        "name": "V. Kolmogorov",
+                        "slug": "V.-Kolmogorov",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Kolmogorov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Kolmogorov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2984143"
+                        ],
+                        "name": "R. Zabih",
+                        "slug": "R.-Zabih",
+                        "structuredName": {
+                            "firstName": "Ramin",
+                            "lastName": "Zabih",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Zabih"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 786967,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "30c15f9be29524e72b9744f8dc14faf2a122d65f",
+            "isKey": false,
+            "numCitedBy": 1924,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the last few years, several new algorithms based on graph cuts have been developed to solve energy minimization problems in computer vision. Each of these techniques constructs a graph such that the minimum cut on the graph also minimizes the energy. Yet, because these graph constructions are complex and highly specific to a particular energy function, graph cuts have seen limited application to date. In this paper, we give a characterization of the energy functions that can be minimized by graph cuts. Our results are restricted to functions of binary variables. However, our work generalizes many previous constructions and is easily applicable to vision problems that involve large numbers of labels, such as stereo, motion, image restoration, and scene reconstruction. We give a precise characterization of what energy functions can be minimized using graph cuts, among the energy functions that can be written as a sum of terms containing three or fewer binary variables. We also provide a general-purpose construction to minimize such an energy function. Finally, we give a necessary condition for any energy function of binary variables to be minimized by graph cuts. Researchers who are considering the use of graph cuts to optimize a particular energy function can use our results to determine if this is possible and then follow our construction to create the appropriate graph. A software implementation is freely available."
+            },
+            "slug": "What-energy-functions-can-be-minimized-via-graph-Kolmogorov-Zabih",
+            "title": {
+                "fragments": [],
+                "text": "What energy functions can be minimized via graph cuts?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work gives a precise characterization of what energy functions can be minimized using graph cuts, among the energy functions that can be written as a sum of terms containing three or fewer binary variables."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3194361"
+                        ],
+                        "name": "S. Geman",
+                        "slug": "S.-Geman",
+                        "structuredName": {
+                            "firstName": "Stuart",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Geman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707642"
+                        ],
+                        "name": "D. Geman",
+                        "slug": "D.-Geman",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Geman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 90,
+                                "start": 86
+                            }
+                        ],
+                        "text": "The contrast-sensitive GMMRF has some similarity to the well known line process model [11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5837272,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "459b30a9a960080f3b313e41886b1aa0e51e882c",
+            "isKey": false,
+            "numCitedBy": 18704,
+            "numCiting": 60,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We make an analogy between images and statistical mechanics systems. Pixel gray levels and the presence and orientation of edges are viewed as states of atoms or molecules in a lattice-like physical system. The assignment of an energy function in the physical system determines its Gibbs distribution. Because of the Gibbs distribution, Markov random field (MRF) equivalence, this assignment also determines an MRF image model. The energy function is a more convenient and natural mechanism for embodying picture attributes than are the local characteristics of the MRF. For a range of degradation mechanisms, including blurring, nonlinear deformations, and multiplicative or additive noise, the posterior distribution is an MRF with a structure akin to the image model. By the analogy, the posterior distribution defines another (imaginary) physical system. Gradual temperature reduction in the physical system isolates low energy states (``annealing''), or what is the same thing, the most probable states under the Gibbs distribution. The analogous operation under the posterior distribution yields the maximum a posteriori (MAP) estimate of the image given the degraded observations. The result is a highly parallel ``relaxation'' algorithm for MAP estimation. We establish convergence properties of the algorithm and we experiment with some simple pictures, for which good restorations are obtained at low signal-to-noise ratios."
+            },
+            "slug": "Stochastic-Relaxation,-Gibbs-Distributions,-and-the-Geman-Geman",
+            "title": {
+                "fragments": [],
+                "text": "Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 52,
+                "text": "The analogy between images and statistical mechanics systems is made and the analogous operation under the posterior distribution yields the maximum a posteriori (MAP) estimate of the image given the degraded observations, creating a highly parallel ``relaxation'' algorithm for MAP estimation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1984
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49026551"
+                        ],
+                        "name": "D. Greig",
+                        "slug": "D.-Greig",
+                        "structuredName": {
+                            "firstName": "Darryl",
+                            "lastName": "Greig",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Greig"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "146294528"
+                        ],
+                        "name": "B. Porteous",
+                        "slug": "B.-Porteous",
+                        "structuredName": {
+                            "firstName": "Baroness",
+                            "lastName": "Porteous",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Porteous"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1887111"
+                        ],
+                        "name": "A. Seheult",
+                        "slug": "A.-Seheult",
+                        "structuredName": {
+                            "firstName": "Allan",
+                            "lastName": "Seheult",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Seheult"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 115691220,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "a717b20e99b76cb228b47694140ed3dce082b530",
+            "isKey": false,
+            "numCitedBy": 1257,
+            "numCiting": 4,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Exact-Maximum-A-Posteriori-Estimation-for-Binary-Greig-Porteous",
+            "title": {
+                "fragments": [],
+                "text": "Exact Maximum A Posteriori Estimation for Binary Images"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1989
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 268,
+                                "start": 265
+                            }
+                        ],
+                        "text": "Since also the partition function ;,z for the prior is always independent of , the MAP estimate of can be obtained (3) by minimising AU+i{ |#} ;%< with respect to and this can be achieved exactly, given that k is binary valued here, using a \u201cminimum cut\u201d algorithm [4] which has recently been developed [3] to achieve good segmentation in interactive time (around 1 second for a ~ &#& l image)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Other studies [4, 3] concentrate on capturing the tendency for images of solid objects to be coherent, via Markov Random Field priors such as the Ising model."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 96
+                            }
+                        ],
+                        "text": "This can be achieved exactly, given that is binary valued here, using a \u201cminimum cut\u201d algorithm [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Exact MAP estimation for binary images"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Royal Statistical Society 51"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 122
+                            }
+                        ],
+                        "text": "Curiously this problem with pseudolikelihood and autoregeression seems not to be generally acknowledged in standard texts [7, 9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 127,
+                                "start": 124
+                            }
+                        ],
+                        "text": "It is well known that the parameters of a Gaussian MRF can be obtained from pseudolikelihood as an auto-regression estimate [9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "GMRF parameter estimation in a non-stationary framework by a renormalization technique"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Image Processing 8"
+            },
+            "year": 1999
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 7,
+            "methodology": 7
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 13,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Interactive-Image-Segmentation-Using-an-Adaptive-Blake-Rother/ddf8e27c6686a8ee276a709f0bf98f32f7d41252?sort=total-citations"
+}

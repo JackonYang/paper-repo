@@ -1,0 +1,1029 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716933"
+                        ],
+                        "name": "I. Cox",
+                        "slug": "I.-Cox",
+                        "structuredName": {
+                            "firstName": "Ingemar",
+                            "lastName": "Cox",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Cox"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 143,
+                                "start": 140
+                            }
+                        ],
+                        "text": "Second, the algorithm referred to as MLMH+V is the e cient dynamic programming implementation from [3] (for the binocular version) and from [6] (for the N -camera version)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 125
+                            }
+                        ],
+                        "text": "However, the representation using (a; d) is favored over one using (a; b) because we do need two base camera (A and B) as in [6] but only one (A)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 6,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In [6], a pair of camera is used as a reference or base pair."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 81,
+                                "start": 72
+                            }
+                        ],
+                        "text": "Many solutions for global disparity surface matching have been proposed [2, 5, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16823066,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4fb1358e846b7d441df25a167f190beb7fb3e240",
+            "isKey": false,
+            "numCitedBy": 52,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper extends results of a maximum likelihood two-frame stereo algorithm to the case of N cameras. The N-camera stereo algorithm determines the \"best\" set of correspondences between a given pair of cameras, referred to as the principal cameras. Knowledge of the relative positions of the cameras allows the 3D point hypothesized by an assumed correspondence of two features in the principal pair to be projected onto the image plane of the remaining N-2 cameras. These N-2 points are then used to verify proposed matches. Not only does the algorithm explicitly model occlusion between features of the principal pair, but the possibility of occlusions in the N-2 additional views is also modelled. The benefits and importance of this are experimentally verified. Like other multi-frame stereo algorithms, the computational and memory costs of this approach increase linearly with each additional view. Experimental results are shown for two outdoor scenes. It is clearly demonstrated that the number of correspondence errors is significantly reduced as the number of views/cameras is increased.<<ETX>>"
+            },
+            "slug": "A-maximum-likelihood-N-camera-stereo-algorithm-Cox",
+            "title": {
+                "fragments": [],
+                "text": "A maximum likelihood N-camera stereo algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 63,
+                "text": "This paper extends results of a maximum likelihood two-frame stereo algorithm to the case of N cameras, and explicitly model occlusion between features of the principal pair, but the possibility of occlusions in the N-2 additional views is also modelled."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "1994 Proceedings of IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145337347"
+                        ],
+                        "name": "H. Baker",
+                        "slug": "H.-Baker",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Baker",
+                            "middleNames": [
+                                "Harlyn"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Baker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1738591"
+                        ],
+                        "name": "T. Binford",
+                        "slug": "T.-Binford",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Binford",
+                            "middleNames": [
+                                "O."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Binford"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11002139,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "278618251450aaeb334227ec82bacabfc1c266de",
+            "isKey": false,
+            "numCitedBy": 545,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The past few years have seen a growing interest in the application\" of three-dimensional image processing. With the increasing demand for 3-D spatial information for tasks of passive navigation [7,12], automatic surveillance [9], aerial cartography [10,13], and inspection in industrial automation, the importance of effective stereo analysis has been made quite clear. A particular challenge is to provide reliable and accurate depth data for input to object or terrain modelling systems (such as [5]. This paper describes an algorithm for such stereo sensing It uses an edge-based line-by-line stereo correlation scheme, and appears to be fast, robust, and parallel implementable. The processing consists of extracting edge descriptions for a stereo pair of images, linking these edges to their nearest neighbors to obtain the edge connectivity structure, correlating the edge descriptions on the basis of local edge properties, then cooperatively removmg those edge correspondences determined to be in error - those which violate the connectivity structure of the two images. A further correlation process, using a technique similar to that used for the edges, is applied to the image intensity values over intervals defined by the previous correlation The result of the processing is a full image array disparity map of the scene viewed."
+            },
+            "slug": "Depth-from-Edge-and-Intensity-Based-Stereo-Baker-Binford",
+            "title": {
+                "fragments": [],
+                "text": "Depth from Edge and Intensity Based Stereo"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This paper describes an algorithm for stereo sensing that uses an edge-based line-by-line stereo correlation scheme, and appears to be fast, robust, and parallel implementable."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IJCAI"
+            },
+            "year": 1981
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716933"
+                        ],
+                        "name": "I. Cox",
+                        "slug": "I.-Cox",
+                        "structuredName": {
+                            "firstName": "Ingemar",
+                            "lastName": "Cox",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Cox"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2073254280"
+                        ],
+                        "name": "S. L. Hingorani",
+                        "slug": "S.-L.-Hingorani",
+                        "structuredName": {
+                            "firstName": "Sunita",
+                            "lastName": "Hingorani",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. L. Hingorani"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2109493725"
+                        ],
+                        "name": "Satish Rao",
+                        "slug": "Satish-Rao",
+                        "structuredName": {
+                            "firstName": "Satish",
+                            "lastName": "Rao",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Satish Rao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1711252"
+                        ],
+                        "name": "B. Maggs",
+                        "slug": "B.-Maggs",
+                        "structuredName": {
+                            "firstName": "Bruce",
+                            "lastName": "Maggs",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Maggs"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "While this is considerably slower than [ 3 ], the algorithm was not optimized for speed."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "The matching then proceed using dynamic programming as in [ 3 ]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "the efficient dynamic programming implementation from [ 3 ] (for the binocular version) and from IS] (for the N-camera version)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 16802006,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b232e3426e0014389ea05132ea8d08789dcc0566",
+            "isKey": false,
+            "numCitedBy": 555,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A stereo algorithm is presented that optimizes a maximum likelihood cost function. The maximum likelihood cost function assumes that corresponding features in the left and right images are normally distributed about a common true value and consists of a weighted squared error term if two features are matched or a (fixed) cost if a feature is determined to be occluded. The stereo algorithm finds the set of correspondences that maximize the cost function subject to ordering and uniqueness constraints. The stereo algorithm is independent of the matching primitives. However, for the experiments described in this paper, matching is performed on the $cf4$individual pixel intensities.$cf3$ Contrary to popular belief, the pixel-based stereo appears to be robust for a variety of images. It also has the advantages of (i) providing adensedisparity map, (ii) requiringnofeature extraction, and (iii)avoidingthe adaptive windowing problem of area-based correlation methods. Because feature extraction and windowing are unnecessary, a very fast implementation is possible. Experimental results reveal that good stereo correspondences can be found using only ordering and uniqueness constraints, i.e., withoutlocalsmoothness constraints. However, it is shown that the original maximum likelihood stereo algorithm exhibits multiple global minima. The dynamic programming algorithm is guaranteed to find one, but not necessarily the same one for each epipolar scanline, causing erroneous correspondences which are visible as small local differences between neighboring scanlines. Traditionally, regularization, which modifies the original cost function, has been applied to the problem of multiple global minima. We developed several variants of the algorithm that avoid classical regularization while imposing several global cohesiveness constraints. We believe this is a novel approach that has the advantage of guaranteeing that solutions minimize the original cost function and preserve discontinuities. The constraints are based on minimizing the total number of horizontal and/or vertical discontinuities along and/or between adjacent epipolar lines, and local smoothing is avoided. Experiments reveal that minimizing the sum of the horizontal and vertical discontinuities provides the most accurate results. A high percentage of correct matches and very little smearing of depth discontinuities are obtained. An alternative to imposing cohesiveness constraints to reduce the correspondence ambiguities is to use more than two cameras. We therefore extend the two camera maximum likelihood toNcameras. TheN-camera stereo algorithm determines the \u201cbest\u201d set of correspondences between a given pair of cameras, referred to as the principal cameras. Knowledge of the relative positions of the cameras allows the 3D point hypothesized by an assumed correspondence of two features in the principal pair to be projected onto the image plane of the remainingN? 2 cameras. TheseN? 2 points are then used to verify proposed matches. Not only does the algorithm explicitly model occlusion between features of the principal pair, but the possibility of occlusions in theN? 2 additional views is also modeled. Previous work did not model this occlusion process, the benefits and importance of which are experimentally verified. Like other multiframe stereo algorithms, the computational and memory costs of this approach increase linearly with each additional view. Experimental results are shown for two outdoor scenes. It is clearly demonstrated that the number of correspondence errors is significantly reduced as the number of views/cameras is increased."
+            },
+            "slug": "A-Maximum-Likelihood-Stereo-Algorithm-Cox-Hingorani",
+            "title": {
+                "fragments": [],
+                "text": "A Maximum Likelihood Stereo Algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "Several variants of the algorithm are developed that avoid classical regularization while imposing several global cohesiveness constraints, and this is a novel approach that has the advantage of guaranteeing that solutions minimize the original cost function and preserve discontinuities."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Vis. Image Underst."
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733113"
+                        ],
+                        "name": "T. Kanade",
+                        "slug": "T.-Kanade",
+                        "structuredName": {
+                            "firstName": "Takeo",
+                            "lastName": "Kanade",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Kanade"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47993332"
+                        ],
+                        "name": "A. Yoshida",
+                        "slug": "A.-Yoshida",
+                        "structuredName": {
+                            "firstName": "Atsushi",
+                            "lastName": "Yoshida",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Yoshida"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "9329878"
+                        ],
+                        "name": "K. Oda",
+                        "slug": "K.-Oda",
+                        "structuredName": {
+                            "firstName": "Kazuo",
+                            "lastName": "Oda",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Oda"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48656083"
+                        ],
+                        "name": "H. Kano",
+                        "slug": "H.-Kano",
+                        "structuredName": {
+                            "firstName": "Hiroshi",
+                            "lastName": "Kano",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Kano"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2110303933"
+                        ],
+                        "name": "Masaya Tanaka",
+                        "slug": "Masaya-Tanaka",
+                        "structuredName": {
+                            "firstName": "Masaya",
+                            "lastName": "Tanaka",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Masaya Tanaka"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 14,
+                                "start": 11
+                            }
+                        ],
+                        "text": "In [7] and [8], a multiple-camera real-time stereo system is presented."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14574065,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4dee0b034f5d6c62ef66f7b3db4812ae4e151fba",
+            "isKey": false,
+            "numCitedBy": 394,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We have developed a video-rate stereo machine that has the capability of generating a dense depth map at the video rate. The performance bench marks of the CMU video-rate stereo machine are: 1) multi-image input of up to 6 cameras; 2) throughput of 30 million point/spl times/disparity measurement per second; 3) frame rate of 30 frame/sec; 4) a dense depth map of up to 256/spl times/240 pixels; 5) disparity search range of up to 60 pixels; 6) high precision of depth output up to 8 bits (with interpolation). The capability of passively producing such a dense depth map (3D representation) of a scene at the video rate can open up a new class of applications of 3D vision: merging real and virtual worlds in real time."
+            },
+            "slug": "A-stereo-machine-for-video-rate-dense-depth-mapping-Kanade-Yoshida",
+            "title": {
+                "fragments": [],
+                "text": "A stereo machine for video-rate dense depth mapping and its new applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "The capability of passively producing such a dense depth map (3D representation) of a scene at the video rate can open up a new class of applications of 3D vision: merging real and virtual worlds in real time."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings CVPR IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1738740"
+                        ],
+                        "name": "S. B. Kang",
+                        "slug": "S.-B.-Kang",
+                        "structuredName": {
+                            "firstName": "Sing",
+                            "lastName": "Kang",
+                            "middleNames": [
+                                "Bing"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. B. Kang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145787720"
+                        ],
+                        "name": "J. Webb",
+                        "slug": "J.-Webb",
+                        "structuredName": {
+                            "firstName": "Jon",
+                            "lastName": "Webb",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Webb"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699161"
+                        ],
+                        "name": "C. L. Zitnick",
+                        "slug": "C.-L.-Zitnick",
+                        "structuredName": {
+                            "firstName": "C.",
+                            "lastName": "Zitnick",
+                            "middleNames": [
+                                "Lawrence"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. L. Zitnick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733113"
+                        ],
+                        "name": "T. Kanade",
+                        "slug": "T.-Kanade",
+                        "structuredName": {
+                            "firstName": "Takeo",
+                            "lastName": "Kanade",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Kanade"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 6,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In [7] and [8], a multiple-camera real-time stereo system is presented."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11485609,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "d3fb95a02ee10b74c0764f0c448ef333cf2086cb",
+            "isKey": false,
+            "numCitedBy": 39,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe our four-camera multibaseline stereo system in a convergent configuration and our implementation of a parallel depth recovery scheme for this system. Our system is capable of image capture at video rate. This is critical in applications that require three-dimensional tracking. We obtain dense stereo depth data by projecting a light pattern of frequency modulated sinusoidally varying intensity onto the scene, thus increaing the local discriminability at each pixel and facilitating matches. In addition, we make most of the camera view areas by converging them at a volume of interest. Results indicate that we are able to extract stereo depth data that are, on the average, less than 1 mm in error at distances between 1.5 to 3.5 m away from the cameras."
+            },
+            "slug": "An-Active-Multibaseline-Stereo-System-with-Image-Kang-Webb",
+            "title": {
+                "fragments": [],
+                "text": "An Active Multibaseline Stereo System with Real-Time Image Acquisition"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1722219"
+                        ],
+                        "name": "Y. Ohta",
+                        "slug": "Y.-Ohta",
+                        "structuredName": {
+                            "firstName": "Yuichi",
+                            "lastName": "Ohta",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Ohta"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733113"
+                        ],
+                        "name": "T. Kanade",
+                        "slug": "T.-Kanade",
+                        "structuredName": {
+                            "firstName": "Takeo",
+                            "lastName": "Kanade",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Kanade"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 9691638,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ffacc9e5144f0efed41fd49b2a388939afff5db9",
+            "isKey": false,
+            "numCitedBy": 1113,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a stereo matching algorithm using the dynamic programming technique. The stereo matching problem, that is, obtaining a correspondence between right and left images, can be cast as a search problem. When a pair of stereo images is rectified, pairs of corresponding points can be searched for within the same scanlines. We call this search intra-scanline search. This intra-scanline search can be treated as the problem of finding a matching path on a two-dimensional (2D) search plane whose axes are the right and left scanlines. Vertically connected edges in the images provide consistency constraints across the 2D search planes. Inter-scanline search in a three-dimensional (3D) search space, which is a stack of the 2D search planes, is needed to utilize this constraint. Our stereo matching algorithm uses edge-delimited intervals as elements to be matched, and employs the above mentioned two searches: one is inter-scanline search for possible correspondences of connected edges in right and left images and the other is intra-scanline search for correspondences of edge-delimited intervals on each scanline pair. Dynamic programming is used for both searches which proceed simultaneously: the former supplies the consistency constraint to the latter while the latter supplies the matching score to the former. An interval-based similarity metric is used to compute the score. The algorithm has been tested with different types of images including urban aerial images, synthesized images, and block scenes, and its computational requirement has been discussed."
+            },
+            "slug": "Stereo-by-Intra-and-Inter-Scanline-Search-Using-Ohta-Kanade",
+            "title": {
+                "fragments": [],
+                "text": "Stereo by Intra- and Inter-Scanline Search Using Dynamic Programming"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "This paper presents a stereo matching algorithm using the dynamic programming technique that uses edge-delimited intervals as elements to be matched, and employs the above mentioned two searches: one is inter-scanline search for possible correspondences of connected edges in right and left images and the other is intra-scanlines search for correspondence of edge-Delimited interval on each scanline pair."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1985
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 114
+                            }
+                        ],
+                        "text": "3 Solving the Maximum Flow problem There is an abundant literature on algorithms to solve the maximum- ow problem [9, 10]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 58
+                            }
+                        ],
+                        "text": "Currently, the best maximum- ow algorithm is presented in [10] and is particularly well suited for sparse graphs like the ones built for stereo matching."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 146
+                            }
+                        ],
+                        "text": "This implies that the pre ow-push algorithm used, with a running time O(ve log(v2=e)) yields a running time of O(n2d2 log(nd)) The new best bound [10] runs in O(e 3 2 log(v2=e) log(U)) where U is the largest edge capacity, yields a running time of O(n1:5d1:5 log(nd) log(U)) The dynamic programming approach on separate epipolar lines [3] requires a total running time of (nd), which might seem much better than the maximum- ow algorithm."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Length functions for  ow computations"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Technical Report 97-055, NEC  Research Institute, Princeton NJ,"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 114
+                            }
+                        ],
+                        "text": "3 Solving the Maximum Flow problem There is an abundant literature on algorithms to solve the maximum- ow problem [9, 10]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 89,
+                                "start": 86
+                            }
+                        ],
+                        "text": "For this paper, we implemented a well known algorithm, pre ow-push lift-to-front (see [9])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "In-  troduction to Algorithms"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "McGraw-Hill, New York, "
+            },
+            "year": 1990
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A maximum likelihood stereo algorithm. Computer Vision and Image Understanding"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 6,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In [2], dynamic programming is used to rst match epipolar lines and then iteratively improve the solutions obtained by using vertical edges as reference."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 149,
+                                "start": 143
+                            }
+                        ],
+                        "text": "The resulting optimization problem can be solved e ciently by using dynamic programming along epipolar lines, resulting in the same problem as [2, 3] of relating the independent solutions."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 81,
+                                "start": 72
+                            }
+                        ],
+                        "text": "Many solutions for global disparity surface matching have been proposed [2, 5, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Stereo by intra - and inter - scanline using dynamic programming"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans . Pattern Analysis and Machine intelligence"
+            },
+            "year": 1985
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 178,
+                                "start": 175
+                            }
+                        ],
+                        "text": "1 Epipolar geometry and Matching It is a well known fact that for a given camera geometry, each image point is restricted to move along a single line called the epipolar line [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 99
+                            }
+                        ],
+                        "text": "In fact, this corresponds to enforcing a smoothness constraint along epipolar lines (also noted in [4])."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Three-dimentional computer vision"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1993
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Stereo by intra-and interscanline using dynamic programming"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1985
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Length functions for flow computations"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Technical Report 97-055,"
+            },
+            "year": 1997
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 5,
+            "methodology": 5,
+            "result": 1
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 13,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/A-maximum-flow-formulation-of-the-N-camera-stereo-Roy-Cox/006328c8add2ce30c186048c89097560d2661c27?sort=total-citations"
+}
