@@ -1,3 +1,4 @@
+from urllib.parse import quote
 from lib_cache import jcache
 import logging
 import requests
@@ -26,6 +27,8 @@ def send_request(url):
 @jcache
 def send_refs(pid, offset, referer):
     print('sending request...')
+    referer = quote(referer, safe='/:?=&')
+    # print("referer: ", referer)
     response = requests.get(
         url="https://www.semanticscholar.org/api/1/paper/%s/citations" % pid,
         params={
@@ -46,9 +49,9 @@ def send_refs(pid, offset, referer):
     return response.json()
 
 
-def safe_send_refs(pid, page_url, outfile):
+def safe_send_refs(pid, offset, page_url):
     try:
-        return send_refs(pid, page_url, outfile)
+        return send_refs(pid, offset, page_url)
     except Exception:
         return None
 
@@ -67,9 +70,13 @@ def download_ref_links(pid, page_url, outfile):
     links = []
 
     meta_info = safe_send_refs(pid, 0, page_url)
-    if not meta_info or 'citations' not in meta_info:
-        print(meta_info)
-        return default_empty_rsp(page_url, meta_info)
+    if not meta_info:
+        return default_empty_rsp(page_url)
+    elif 'citations' not in meta_info:
+        data = default_empty_rsp(page_url, meta_info)
+        with open(outfile, 'w') as f:
+            json.dump(data, f, indent=4, sort_keys=True)
+        return data
 
     links.extend(meta_info.pop('citations'))
     total_links = meta_info['totalCitations']
