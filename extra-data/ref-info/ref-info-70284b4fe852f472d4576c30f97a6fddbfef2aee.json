@@ -1,0 +1,2182 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145859952"
+                        ],
+                        "name": "M. Varma",
+                        "slug": "M.-Varma",
+                        "structuredName": {
+                            "firstName": "Manik",
+                            "lastName": "Varma",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Varma"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 97
+                            }
+                        ],
+                        "text": "Further details of the filter bank, as well as pre and post image processing steps, are given in [17]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 116,
+                                "start": 97
+                            }
+                        ],
+                        "text": "The outline of the rest of the paper is as follows: in section 2 we review the filter bank based Varma and Zisserman (VZ) texture classifier."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 67
+                            }
+                        ],
+                        "text": "In particular, we focus on the texture classification algorithm of Varma and Zisserman [17] which, to the best of our knowledge, currently gives the most accurate classification results on the Columbia-Utrecht (CUReT) database [3]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In [17], results are also reported for the case where the images excluded from the training set by the Greedy algorithm are added to the test set and classified."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In [17] it was demonstrated that using rotationally invariant filter banks (i."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 97
+                            }
+                        ],
+                        "text": "These filter response distributions were learnt from training images and represented by clusters [2, 11, 15, 17], or histograms [9, 10, 19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 91,
+                                "start": 87
+                            }
+                        ],
+                        "text": "In particular, we focus on the texture classification algorithm of Varma and Zisserman [17] which, to the"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 116
+                            }
+                        ],
+                        "text": "The success in these areas was largely due to learning a fuller statistical representation of filter bank responses [1, 2, 10, 11, 13, 17]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 110
+                            }
+                        ],
+                        "text": "The classification results for 61 textures using 610 textons for the other three filter banks investigated in [17] are: Maximum Response 4 (MR4) = 91."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 180,
+                                "start": 171
+                            }
+                        ],
+                        "text": "The classification performance surpasses that of recent state-of-the-art filter bank based classifiers such as Leung & Malik [IJCV 01], Cula & Dana [CVPR 01], and Varma & Zisserman [ECCV 02]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 41
+                            }
+                        ],
+                        "text": "In this paper, we replicate the setup of [17] and include all 61 classes present in the database."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 17
+                            }
+                        ],
+                        "text": "In previous work [17], the performance of four filter banks was contrasted (including the filter bank used by Leung and Malik (LM) [11] and Cula and Dana [2] as well as the one used by Schmid (S) [16]) and it was demonstrated that the rotationally invariant, multi-scale, Maximum Response MR8 filter bank (described below) yields better results than all the other three."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 25
+                            }
+                        ],
+                        "text": "Later algorithms such as [2, 17] have built on this paper and extended it to classify single images without compromising accuracy."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 3214795,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7417d7dcf6152736612e3f04ccc72731dc8d9505",
+            "isKey": false,
+            "numCitedBy": 418,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we present a new approach to material classification under unknown viewpoint and illumination. Our texture model is based on the statistical distribution of clustered filter responses. However, unlike previous 3D texton representations, we use rotationally invariant filters and cluster in an extremely low dimensional space. Having built a texton dictionary, we present a novel method of classifying a single image without requiring any a priori knowledge about the viewing or illumination conditions under which it was photographed. We argue that using rotationally invariant filters while clustering in such a low dimensional space improves classification performance and demonstrate this claim with results on all 61 textures in the Columbia-Utrecht database. We then proceed to show how texture models can be further extended by compensating for viewpoint changes using weak isotropy.The new clustering and classification methods are compared to those of Leung and Malik (ICCV 1999), Schmid (CVPR 2001) and Cula and Dana (CVPR 2001), which are the current state-of-the-art approaches."
+            },
+            "slug": "Classifying-Images-of-Materials:-Achieving-and-Varma-Zisserman",
+            "title": {
+                "fragments": [],
+                "text": "Classifying Images of Materials: Achieving Viewpoint and Illumination Independence"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "This paper presents a novel method of classifying a single image without requiring any a priori knowledge about the viewing or illumination conditions under which it was photographed, and argues that using rotationally invariant filters while clustering in such a low dimensional space improves classification performance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2672681"
+                        ],
+                        "name": "G. O. Cula",
+                        "slug": "G.-O.-Cula",
+                        "structuredName": {
+                            "firstName": "Gabriela",
+                            "lastName": "Cula",
+                            "middleNames": [
+                                "Oana"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. O. Cula"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1710772"
+                        ],
+                        "name": "Kristin J. Dana",
+                        "slug": "Kristin-J.-Dana",
+                        "structuredName": {
+                            "firstName": "Kristin",
+                            "lastName": "Dana",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kristin J. Dana"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 97
+                            }
+                        ],
+                        "text": "These filter response distributions were learnt from training images and represented by clusters [2, 11, 15, 17], or histograms [9, 10, 19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 116
+                            }
+                        ],
+                        "text": "The success in these areas was largely due to learning a fuller statistical representation of filter bank responses [1, 2, 10, 11, 13, 17]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 147,
+                                "start": 143
+                            }
+                        ],
+                        "text": "The classification performance surpasses that of recent state-of-the-art filter bank based classifiers such as Leung & Malik [IJCV 01], Cula & Dana [CVPR 01], and Varma & Zisserman [ECCV 02]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 157,
+                                "start": 154
+                            }
+                        ],
+                        "text": "In previous work [17], the performance of four filter banks was contrasted (including the filter bank used by Leung and Malik (LM) [11] and Cula and Dana [2] as well as the one used by Schmid (S) [16]) and it was demonstrated that the rotationally invariant, multi-scale, Maximum Response MR8 filter bank (described below) yields better results than all the other three."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 25
+                            }
+                        ],
+                        "text": "Later algorithms such as [2, 17] have built on this paper and extended it to classify single images without compromising accuracy."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 7356365,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6b45dc2f11ed201f192d9bec153fcca1ca95e460",
+            "isKey": true,
+            "numCitedBy": 196,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A bidirectional texture function (BTF) describes image texture as it varies with viewing and illumination direction. Many real world surfaces such as skin, fur, gravel, etc. exhibit fine-scale geometric surface detail. Accordingly, variations in appearance with viewing and illumination direction may be quite complex due to local foreshortening, masking and shadowing. Representations of surface texture that support robust recognition must account for these effects. We construct a representation which captures the underlying statistical distribution of features in the image texture as well as the variations in this distribution with viewing and illumination direction. The representation combines clustering to learn characteristic image features and principle components analysis to reduce the space of feature histograms. This representation is based on a core image set as determined by a quantitative evaluation of importance of individual images in the overall representation. The result is a compact representation and a recognition method where a single novel image of unknown viewing and illumination direction can be classified efficiently. The CUReT (Columbia-Utrecht reflectance and texture) database is used as a test set for evaluation of these methods."
+            },
+            "slug": "Compact-representation-of-bidirectional-texture-Cula-Dana",
+            "title": {
+                "fragments": [],
+                "text": "Compact representation of bidirectional texture functions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 50,
+                "text": "A representation is constructed which captures the underlying statistical distribution of features in the image texture as well as the variations in this distribution with viewing and illumination direction and is a compact representation and a recognition method where a single novel image of unknown viewing and illuminated direction can be classified efficiently."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2841773"
+                        ],
+                        "name": "S. Konishi",
+                        "slug": "S.-Konishi",
+                        "structuredName": {
+                            "firstName": "Scott",
+                            "lastName": "Konishi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Konishi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145081362"
+                        ],
+                        "name": "A. Yuille",
+                        "slug": "A.-Yuille",
+                        "structuredName": {
+                            "firstName": "Alan",
+                            "lastName": "Yuille",
+                            "middleNames": [
+                                "Loddon"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Yuille"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14777835,
+            "fieldsOfStudy": [
+                "Environmental Science"
+            ],
+            "id": "9083e6709b52cba61b8a6c9d2628c489b5e2c1db",
+            "isKey": false,
+            "numCitedBy": 97,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper investigates the use of colour and texture cues for segmentation of images within two specified domains. The first is the Sowerby dataset, which contains one hundred colour photographs of country roads in England that have been interactively segmented and classified into six classes-edge, vegetation, air, road, building, and other. The second domain is a set of thirty five-images, taken in San Francisco, which have been interactively segmented into similar classes. In each domain we learn the joint probability distributions of filter responses, based on colour and texture, for each class. These distributions are then used for classification. We restrict ourselves to a limited number of filters in order to ensure that the learnt filter responses do not overfit the training data (our region classes are chosen so as to ensure that there is enough data to avoid over fitting). We do performance analysis on the two datasets by evaluating the false positive and false negative error rates for the classification. This shows that the learnt models achieve high accuracy in classifying individual pixels into those classes for which the filter responses are approximately spatially homogeneous (i.e. road, vegetation, and air but not edge and building). A more sensitive performance measure, the Chernoff information, is calculated in order to quantify how well the cues for edge and building are doing. This demonstrates that statistical knowledge of the domain is a powerful tool for segmentation."
+            },
+            "slug": "Statistical-cues-for-domain-specific-image-with-Konishi-Yuille",
+            "title": {
+                "fragments": [],
+                "text": "Statistical cues for domain specific image segmentation with performance analysis"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "Performance analysis on the Sowerby dataset shows that the learnt models achieve high accuracy in classifying individual pixels into those classes for which the filter responses are approximately spatially homogeneous."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings IEEE Conference on Computer Vision and Pattern Recognition. CVPR 2000 (Cat. No.PR00662)"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145266088"
+                        ],
+                        "name": "T. Leung",
+                        "slug": "T.-Leung",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Leung",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Leung"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143751119"
+                        ],
+                        "name": "Jitendra Malik",
+                        "slug": "Jitendra-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jitendra Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 97
+                            }
+                        ],
+                        "text": "These filter response distributions were learnt from training images and represented by clusters [2, 11, 15, 17], or histograms [9, 10, 19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 116
+                            }
+                        ],
+                        "text": "The success in these areas was largely due to learning a fuller statistical representation of filter bank responses [1, 2, 10, 11, 13, 17]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 135,
+                                "start": 131
+                            }
+                        ],
+                        "text": "In previous work [17], the performance of four filter banks was contrasted (including the filter bank used by Leung and Malik (LM) [11] and Cula and Dana [2] as well as the one used by Schmid (S) [16]) and it was demonstrated that the rotationally invariant, multi-scale, Maximum Response MR8 filter bank (described below) yields better results than all the other three."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 40,
+                                "start": 36
+                            }
+                        ],
+                        "text": "Leung and Malik\u2019s influential paper [11] established much of the framework for this area - textons, \u03c7(2) distance metric, testing on the CUReT database."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14915716,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "90d6e7f2202f754d8588f9536e3f5b4a24701f24",
+            "isKey": true,
+            "numCitedBy": 1713,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study the recognition of surfaces made from different materials such as concrete, rug, marble, or leather on the basis of their textural appearance. Such natural textures arise from spatial variation of two surface attributes: (1) reflectance and (2) surface normal. In this paper, we provide a unified model to address both these aspects of natural texture. The main idea is to construct a vocabulary of prototype tiny surface patches with associated local geometric and photometric properties. We call these 3D textons. Examples might be ridges, grooves, spots or stripes or combinations thereof. Associated with each texton is an appearance vector, which characterizes the local irradiance distribution, represented as a set of linear Gaussian derivative filter outputs, under different lighting and viewing conditions.Given a large collection of images of different materials, a clustering approach is used to acquire a small (on the order of 100) 3D texton vocabulary. Given a few (1 to 4) images of any material, it can be characterized using these textons. We demonstrate the application of this representation for recognition of the material viewed under novel lighting and viewing conditions. We also illustrate how the 3D texton model can be used to predict the appearance of materials under novel conditions."
+            },
+            "slug": "Representing-and-Recognizing-the-Visual-Appearance-Leung-Malik",
+            "title": {
+                "fragments": [],
+                "text": "Representing and Recognizing the Visual Appearance of Materials using Three-dimensional Textons"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A unified model to construct a vocabulary of prototype tiny surface patches with associated local geometric and photometric properties, represented as a set of linear Gaussian derivative filter outputs, under different lighting and viewing conditions is provided."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145380991"
+                        ],
+                        "name": "Song-Chun Zhu",
+                        "slug": "Song-Chun-Zhu",
+                        "structuredName": {
+                            "firstName": "Song-Chun",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Song-Chun Zhu"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 56,
+                                "start": 52
+                            }
+                        ],
+                        "text": "tials [8, 18] or at best a combination of marginals [19] were used."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 128
+                            }
+                        ],
+                        "text": "These filter response distributions were learnt from training images and represented by clusters [2, 11, 15, 17], or histograms [9, 10, 19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 199529912,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ba58e6bcfc1f3d4f5f55a217a87077c0b33f1843",
+            "isKey": false,
+            "numCitedBy": 162,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ". This article presents a statistical theory for texture modeling. This theory combines \ufb01ltering theory and Markov random \ufb01eld modeling through the maximum entropy principle, and interprets and clari\ufb01es many previous concepts and methods for texture analysis and synthesis from a uni\ufb01ed point of view. Our theory characterizes the ensemble of images I with the same texture appearance by a probability distribution f . I / on a random \ufb01eld, and the objective of texture modeling is to make inference about f . I / , given a set of observed texture examples. In our theory, texture modeling consists of two steps. (1) A set of \ufb01lters is selected from a general \ufb01lter bank to capture features of the texture, these \ufb01lters are applied to observed texture images, and the histograms of the \ufb01ltered images are extracted. These histograms are estimates of the marginal distributions of f . I / . This step is called feature extraction. (2) The maximum entropy principle is employed to derive a distribution p . I / , which is restricted to have the same marginal distributions as those in (1). This p . I / is considered as an estimate of f . I / . This step is called feature fusion. A stepwise algorithm is proposed to choose \ufb01lters from a general \ufb01lter bank. The resulting model, called FRAME (Filters, Random \ufb01elds And Maximum Entropy), is a Markov random \ufb01eld (MRF) model, but with a much enriched vocabulary and hence much stronger descriptive ability than the previous MRF models used for texture modeling. Gibbs sampler is adopted to synthesize texture images by drawing typical samples from p . I / , thus the model is veri\ufb01ed by seeing whether the synthesized texture images have similar visual appearances to the texture images being modeled. Experiments on a variety of 1D and 2D textures are described to illustrate our theory and to show the performance of our algorithms. These experiments demonstrate that many textures which are previously considered as from different categories can be modeled and synthesized in a common framework."
+            },
+            "slug": "Filters,-Random-Fields-and-Maximum-Entropy-(FRAME):-Zhu",
+            "title": {
+                "fragments": [],
+                "text": "Filters, Random Fields and Maximum Entropy (FRAME): Towards a Unified Theory for Texture Modeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "The resulting model, called FRAME (Filters, Random fields And Maximum Entropy), is a Markov random field (MRF) model, but with a much enriched vocabulary and hence much stronger descriptive ability than the previous MRF models used for texture modeling."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33523605"
+                        ],
+                        "name": "J. Portilla",
+                        "slug": "J.-Portilla",
+                        "structuredName": {
+                            "firstName": "Javier",
+                            "lastName": "Portilla",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Portilla"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689350"
+                        ],
+                        "name": "Eero P. Simoncelli",
+                        "slug": "Eero-P.-Simoncelli",
+                        "structuredName": {
+                            "firstName": "Eero",
+                            "lastName": "Simoncelli",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Eero P. Simoncelli"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 116
+                            }
+                        ],
+                        "text": "The success in these areas was largely due to learning a fuller statistical representation of filter bank responses [1, 2, 10, 11, 13, 17]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2475577,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "37afeac49518877dc96a3ca2ec3ebdfc5305e0a9",
+            "isKey": false,
+            "numCitedBy": 1811,
+            "numCiting": 96,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a universal statistical model for texture images in the context of an overcomplete complex wavelet transform. The model is parameterized by a set of statistics computed on pairs of coefficients corresponding to basis functions at adjacent spatial locations, orientations, and scales. We develop an efficient algorithm for synthesizing random images subject to these constraints, by iteratively projecting onto the set of images satisfying each constraint, and we use this to test the perceptual validity of the model. In particular, we demonstrate the necessity of subgroups of the parameter set by showing examples of texture synthesis that fail when those parameters are removed from the set. We also demonstrate the power of our model by successfully synthesizing examples drawn from a diverse collection of artificial and natural textures."
+            },
+            "slug": "A-Parametric-Texture-Model-Based-on-Joint-of-Portilla-Simoncelli",
+            "title": {
+                "fragments": [],
+                "text": "A Parametric Texture Model Based on Joint Statistics of Complex Wavelet Coefficients"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 64,
+                "text": "A universal statistical model for texture images in the context of an overcomplete complex wavelet transform is presented, demonstrating the necessity of subgroups of the parameter set by showing examples of texture synthesis that fail when those parameters are removed from the set."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2360881"
+                        ],
+                        "name": "D. Heeger",
+                        "slug": "D.-Heeger",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Heeger",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Heeger"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "116003860"
+                        ],
+                        "name": "J. Bergen",
+                        "slug": "J.-Bergen",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Bergen",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Bergen"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 128
+                            }
+                        ],
+                        "text": "These filter response distributions were learnt from training images and represented by clusters [2, 11, 15, 17], or histograms [9, 10, 19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 53246434,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5a4a9bc8b322285f3cf98df89dde91ea81287cf1",
+            "isKey": false,
+            "numCitedBy": 747,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes a method for synthesizing images that match the texture appearanceof a given digitized sample. This synthesis is completely automatic and requires only the \u201ctarget\u201d texture as input. It allows generation of as much texture as desired so that any object can be covered. It can be used to produce solid textures for creating textured 3-d objects without the distortions inherent in texture mapping. It can also be used to synthesize texture mixtures, images that look a bit like each of several digitized samples. The approach is based on a model of human texture perception, and has potential to be a practically useful tool for graphics applications."
+            },
+            "slug": "Pyramid-based-texture-analysis/synthesis-Heeger-Bergen",
+            "title": {
+                "fragments": [],
+                "text": "Pyramid-based texture analysis/synthesis"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "This paper describes a method for synthesizing images that match the texture appearance of a given digitized sample, based on a model of human texture perception, and has potential to be a practically useful tool for graphics applications."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIGGRAPH"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1722325"
+                        ],
+                        "name": "J. Bonet",
+                        "slug": "J.-Bonet",
+                        "structuredName": {
+                            "firstName": "Jeremy",
+                            "lastName": "Bonet",
+                            "middleNames": [
+                                "S.",
+                                "De"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Bonet"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 116
+                            }
+                        ],
+                        "text": "The success in these areas was largely due to learning a fuller statistical representation of filter bank responses [1, 2, 10, 11, 13, 17]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1908692,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "18bc39207b4d24eabf9d98649db53563d9c2e3fd",
+            "isKey": false,
+            "numCitedBy": 726,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper outlines a technique for treating input texture images as probability density estimators from which new textures, with similar appearance and structural properties, can be sampled. In a two-phase process, the input texture is first analyzed by measuring the joint occurrence of texture discrimination features at multiple resolutions. In the second phase, a new texture is synthesized by sampling successive spatial frequency bands from the input texture, conditioned on the similar joint occurrence of features at lower spatial frequencies. Textures synthesized with this method more successfully capture the characteristics of input textures than do previous techniques."
+            },
+            "slug": "Multiresolution-sampling-procedure-for-analysis-and-Bonet",
+            "title": {
+                "fragments": [],
+                "text": "Multiresolution sampling procedure for analysis and synthesis of texture images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "A technique for treating input texture images as probability density estimators from which new textures, with similar appearance and structural properties, can be sampled, which more successfully capture the characteristics of input textures than do previous techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIGGRAPH"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 68,
+                                "start": 64
+                            }
+                        ],
+                        "text": "This is somewhat similar to the co-occurrence representation of [16] for filter banks."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 200,
+                                "start": 196
+                            }
+                        ],
+                        "text": "In previous work [17], the performance of four filter banks was contrasted (including the filter bank used by Leung and Malik (LM) [11] and Cula and Dana [2] as well as the one used by Schmid (S) [16]) and it was demonstrated that the rotationally invariant, multi-scale, Maximum Response MR8 filter bank (described below) yields better results than all the other three."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5927402,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "db7159af39b66cde32cec502a17d48436b541d00",
+            "isKey": false,
+            "numCitedBy": 423,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a new method for constructing models from a set of positive and negative sample images; the method requires no manual extraction of significant objects or features. Our model representation is based on two layers. The first one consists of \"generic\" descriptors which represent sets of similar rotational invariant feature vectors. Rotation invariance allows to group similar, but rotated patterns and makes the method robust to model deformations. The second layer is the joint probability on the frequencies of the \"generic\" descriptors over neighborhoods. This probability is multi-modal and is represented by a set of \"spatial-frequency\" clusters. It adds a statistical spatial constraint which is rotationally invariant. Our two-layer representation is novel; it allows to efficiently capture \"texture-like\" visual structure. The selection of distinctive structure determines characteristic model features (common to the positive and rare in the negative examples) and increases the performance of the model. Models are retrieved and localized using a probabilistic score. Experimental results for \"textured\" animals and faces show a very good performance for retrieval as well as localization."
+            },
+            "slug": "Constructing-models-for-content-based-image-Schmid",
+            "title": {
+                "fragments": [],
+                "text": "Constructing models for content-based image retrieval"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 80,
+                "text": "A new method for constructing models from a set of positive and negative sample images; the method requires no manual extraction of significant objects or features and allows to efficiently capture \"texture-like\" visual structure."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2023498"
+                        ],
+                        "name": "Thomas D. Rikert",
+                        "slug": "Thomas-D.-Rikert",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Rikert",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas D. Rikert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145319478"
+                        ],
+                        "name": "Michael J. Jones",
+                        "slug": "Michael-J.-Jones",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jones",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael J. Jones"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1731948"
+                        ],
+                        "name": "Paul A. Viola",
+                        "slug": "Paul-A.-Viola",
+                        "structuredName": {
+                            "firstName": "Paul",
+                            "lastName": "Viola",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Paul A. Viola"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 97
+                            }
+                        ],
+                        "text": "These filter response distributions were learnt from training images and represented by clusters [2, 11, 15, 17], or histograms [9, 10, 19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17251623,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "25bb1db7eff259fcc4e906f81184a1e07db9ff29",
+            "isKey": false,
+            "numCitedBy": 57,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents an approach to object detection which is based on recent work in statistical models for texture synthesis and recognition. Our method follows the texture recognition work of De Bonet and Viola (1998). We use feature vectors which capture the joint occurrence of local features at multiple resolutions. The distribution of feature vectors for a set of training images of an object class is estimated by clustering the data and then forming a mixture of Gaussian models. The mixture model is further refined by determining which clusters are the most discriminative for the class and retaining only those clusters. After the model is learned, test images are classified by computing the likelihood of their feature vectors with respect to the model. We present promising results in applying our technique to face detection and car detection."
+            },
+            "slug": "A-cluster-based-statistical-model-for-object-Rikert-Jones",
+            "title": {
+                "fragments": [],
+                "text": "A cluster-based statistical model for object detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 76,
+                "text": "This paper presents an approach to object detection which is based on recent work in statistical models for texture synthesis and recognition, and presents promising results in applying the technique to face detection and car detection."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Seventh IEEE International Conference on Computer Vision"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1710772"
+                        ],
+                        "name": "Kristin J. Dana",
+                        "slug": "Kristin-J.-Dana",
+                        "structuredName": {
+                            "firstName": "Kristin",
+                            "lastName": "Dana",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kristin J. Dana"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1750470"
+                        ],
+                        "name": "S. Nayar",
+                        "slug": "S.-Nayar",
+                        "structuredName": {
+                            "firstName": "Shree",
+                            "lastName": "Nayar",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Nayar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "8038506"
+                        ],
+                        "name": "B. Ginneken",
+                        "slug": "B.-Ginneken",
+                        "structuredName": {
+                            "firstName": "Bram",
+                            "lastName": "Ginneken",
+                            "middleNames": [
+                                "van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Ginneken"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716904"
+                        ],
+                        "name": "J. Koenderink",
+                        "slug": "J.-Koenderink",
+                        "structuredName": {
+                            "firstName": "Jan",
+                            "lastName": "Koenderink",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Koenderink"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 124,
+                                "start": 121
+                            }
+                        ],
+                        "text": "best of our knowledge, currently gives the most accurate classification results on the Columbia-Utrecht (CUReT) database [3]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 32509646,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "8a07de049e417cc61442d8c1ecc576155f6777a8",
+            "isKey": false,
+            "numCitedBy": 580,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this work, we investigate the visual appearance of real-world surfaces and the dependence of appearance on imaging conditions. We present a BRDF (bidirectional reflectance distribution function) database with reflectance measurements for over 60 different samples, each observed with over 200 different combinations of viewing and source directions. We fit the BRDF measurements to two recent models to obtain a BRDF parameter database. These BRDF parameters can be directly used for both image analysis and image synthesis. Finally, we present a BTF (bidirectional texture function) database with image textures from over 60 different samples, each observed with over 200 different combinations of viewing and source directions. Each of these unique databases has important implications for a variety of vision algorithms and each is made publicly available."
+            },
+            "slug": "Reflectance-and-Texture-of-Real-World-Surfaces-Dana-Nayar",
+            "title": {
+                "fragments": [],
+                "text": "Reflectance and texture of real-world surfaces"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 90,
+                "text": "The visual appearance of real-world surfaces and the dependence of appearance on imaging conditions is investigated and a BRDF (bidirectional reflectance distribution function) database with reflectance measurements for over 60 different samples, each observed with over 200 different combinations of viewing and source directions is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3266057"
+                        ],
+                        "name": "A. Zalesny",
+                        "slug": "A.-Zalesny",
+                        "structuredName": {
+                            "firstName": "Alexey",
+                            "lastName": "Zalesny",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Zalesny"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 13,
+                                "start": 6
+                            }
+                        ],
+                        "text": "tials [8, 18] or at best a combination of marginals [19] were used."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 51,
+                                "start": 47
+                            }
+                        ],
+                        "text": "In a related development, Zalesny and Van Gool [18] also eschewed filter banks in favour of a Markov Random Field (MRF) model."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Zalesny and Van Gool, using a subset of all available cliques present in a neighbourhood, showed\nthat it was possible to learn and sample from a parametric MRF model given enough computational power."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 208,
+                                "start": 204
+                            }
+                        ],
+                        "text": "This problem may be tackled by using a multi-scale representation \u2013 which filters traditionally provide \u2013 or an alternative method of selecting important long range interactions in the MRF, as is done by [18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2423738,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c2fbd5b1a43d87ef142b59ce3a2028e4a19ed33e",
+            "isKey": true,
+            "numCitedBy": 69,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A texture synthesis method is presented that generates similar texture from an example image. It is based on the emulation of simple but rather carefully chosen image intensity statistics. The resulting texture models are compact and no longer require the example image from which they were derived. They make explicit some structural aspects of the textures and the modeling allows knitting together different textures with convincingly looking transition zones. As textures are seldom flat, it is important to also model 3D effects when textures change under changing viewpoint. The simulation of such changes is supported by the model, assuming examples for the different viewpoints are given."
+            },
+            "slug": "A-Compact-Model-for-Viewpoint-Dependent-Texture-Zalesny-Gool",
+            "title": {
+                "fragments": [],
+                "text": "A Compact Model for Viewpoint Dependent Texture Synthesis"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 97,
+                "text": "A texture synthesis method is presented that generates similar texture from an example image based on the emulation of simple but rather carefully chosen image intensity statistics."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SMILE"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768236"
+                        ],
+                        "name": "W. Freeman",
+                        "slug": "W.-Freeman",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Freeman",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Freeman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 82
+                            }
+                        ],
+                        "text": "Next, to synthesise the texture, the input texture block is initially tiled as in [5] to the required dimensions."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9334387,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dd7bf950093fc65f3ae6ad79666ce1077f9dfb2e",
+            "isKey": false,
+            "numCitedBy": 2463,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a simple image-based method of generating novel visual appearance in which a new image is synthesized by stitching together small patches of existing images. We call this process image quilting. First, we use quilting as a fast and very simple texture synthesis algorithm which produces surprisingly good results for a wide range of textures. Second, we extend the algorithm to perform texture transfer \u2014 rendering an object with a texture taken from a different object. More generally, we demonstrate how an image can be re-rendered in the style of a different image. The method works directly on the images and does not require 3D information."
+            },
+            "slug": "Image-quilting-for-texture-synthesis-and-transfer-Efros-Freeman",
+            "title": {
+                "fragments": [],
+                "text": "Image quilting for texture synthesis and transfer"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This work uses quilting as a fast and very simple texture synthesis algorithm which produces surprisingly good results for a wide range of textures and extends the algorithm to perform texture transfer \u2014 rendering an object with a texture taken from a different object."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIGGRAPH"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144016256"
+                        ],
+                        "name": "D. Forsyth",
+                        "slug": "D.-Forsyth",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Forsyth",
+                            "middleNames": [
+                                "Alexander"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Forsyth"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144189388"
+                        ],
+                        "name": "J. Ponce",
+                        "slug": "J.-Ponce",
+                        "structuredName": {
+                            "firstName": "Jean",
+                            "lastName": "Ponce",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Ponce"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 72
+                            }
+                        ],
+                        "text": "Texture research is generally divided into four canonical problem areas [7]: (1) synthesis; (2) classification; (3) segmentation; and (4) shape from texture."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 53924538,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "787827850b614135f6b432603afc90b58a8cc665",
+            "isKey": false,
+            "numCitedBy": 4098,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From the Publisher: \nThe accessible presentation of this book gives both a general view of the entire computer vision enterprise and also offers sufficient detail to be able to build useful applications. Users learn techniques that have proven to be useful by first-hand experience and a wide range of mathematical methods. A CD-ROM with every copy of the text contains source code for programming practice, color images, and illustrative movies. Comprehensive and up-to-date, this book includes essential topics that either reflect practical significance or are of theoretical importance. Topics are discussed in substantial and increasing depth. Application surveys describe numerous important application areas such as image based rendering and digital libraries. Many important algorithms broken down and illustrated in pseudo code. Appropriate for use by engineers as a comprehensive reference to the computer vision enterprise."
+            },
+            "slug": "Computer-Vision:-A-Modern-Approach-Forsyth-Ponce",
+            "title": {
+                "fragments": [],
+                "text": "Computer Vision: A Modern Approach"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "Comprehensive and up-to-date, this book includes essential topics that either reflect practical significance or are of theoretical importance and describes numerous important application areas such as image based rendering and digital libraries."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145266088"
+                        ],
+                        "name": "T. Leung",
+                        "slug": "T.-Leung",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Leung",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Leung"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 58
+                            }
+                        ],
+                        "text": "The work in this paper, following that of Efros and Leung [6], demonstrates that for certain tasks (synthesis, classification) filter banks are not necessary,"
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 147
+                            }
+                        ],
+                        "text": "Figure 4: Synthesis: (a) Input texture blocks, (b) Ribbed Paper (CUReT) synthesised using a 7\u00d7 7 neighbourhood and 100 textons (c) Efros and Leung [6] - 15 \u00d7 15, 800 textons and (d) D6 (Brodatz) - 11 \u00d7 11, 300 textons."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 151,
+                                "start": 148
+                            }
+                        ],
+                        "text": "However, the supremacy of filter bank based methods was brought into question, in the case of texture synthesis, by the approach of Efros and Leung [6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 15,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Efros and Leung gave a computational method for generating a texture with similar MRF statistics to the original sample, but without explicitly learning or even representing these distributions."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 42
+                            }
+                        ],
+                        "text": "The work in this paper, following that of Efros and Leung [6], demonstrates that for certain tasks (synthesis, classification) filter banks are not necessary, but are sufficient (though their performance for both tasks is inferior)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 221583955,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bba3264d6794538381687ad6e151a7f42f3872a9",
+            "isKey": true,
+            "numCitedBy": 1647,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A non-parametric method for texture synthesis is proposed. The texture synthesis process grows a new image outward from an initial seed, one pixel at a time. A Markov random field model is assumed, and the conditional distribution of a pixel given all its neighbors synthesized so far is estimated by querying the sample image and finding all similar neighborhoods. The degree of randomness is controlled by a single perceptually intuitive parameter. The method aims at preserving as much local structure as possible and produces good results for a wide variety of synthetic and real-world textures."
+            },
+            "slug": "Texture-synthesis-by-non-parametric-sampling-Efros-Leung",
+            "title": {
+                "fragments": [],
+                "text": "Texture synthesis by non-parametric sampling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 54,
+                "text": "A non-parametric method for texture synthesis that aims at preserving as much local structure as possible and produces good results for a wide variety of synthetic and real-world textures."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Seventh IEEE International Conference on Computer Vision"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34679741"
+                        ],
+                        "name": "S. Li",
+                        "slug": "S.-Li",
+                        "structuredName": {
+                            "firstName": "S.",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Li"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 107,
+                                "start": 103
+                            }
+                        ],
+                        "text": "tential functions and then use the Hammersley-Clifford theorem to calculate the joint probability p(I) [12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12779752,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b9701ad65e256bd8841c4f80ced09b4ca1d5e331",
+            "isKey": false,
+            "numCitedBy": 1426,
+            "numCiting": 417,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Markov random field (MRF) theory provides a basis for modeling contextual constraints in visual processing and interpretation. It enables systematic development of optimal vision algorithms when used with optimization principles. This detailed and thoroughly enhanced third edition presents a comprehensive study / reference to theories, methodologies and recent developments in solving computer vision problems based on MRFs, statistics and optimisation. It treats various problems in low- and high-level computational vision in a systematic and unified way within the MAP-MRF framework. Among the main issues covered are: how to use MRFs to encode contextual constraints that are indispensable to image understanding; how to derive the objective function for the optimal solution to a problem; and how to design computational algorithms for finding an optimal solution. Easy-to-follow and coherent, the revised edition is accessible, includes the most recent advances, and has new and expanded sections on such topics as: Discriminative Random Fields (DRF) Strong Random Fields (SRF) Spatial-Temporal Models Total Variation Models Learning MRF for Classification (motivation + DRF) Relation to Graphic Models Graph Cuts Belief Propagation Features: Focuses on the application of Markov random fields to computer vision problems, such as image restoration and edge detection in the low-level domain, and object matching and recognition in the high-level domain Presents various vision models in a unified framework, including image restoration and reconstruction, edge and region segmentation, texture, stereo and motion, object matching and recognition, and pose estimation Uses a variety of examples to illustrate how to convert a specific vision problem involving uncertainties and constraints into essentially an optimization problem under the MRF setting Introduces readers to the basic concepts, important models and various special classes of MRFs on the regular image lattice and MRFs on relational graphs derived from images Examines the problems of parameter estimation and function optimization Includes an extensive list of references This broad-ranging and comprehensive volume is an excellent reference for researchers working in computer vision, image processing, statistical pattern recognition and applications of MRFs. It has been class-tested and is suitable as a textbook for advanced courses relating to these areas."
+            },
+            "slug": "Markov-Random-Field-Modeling-in-Image-Analysis-Li",
+            "title": {
+                "fragments": [],
+                "text": "Markov Random Field Modeling in Image Analysis"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This detailed and thoroughly enhanced third edition presents a comprehensive study / reference to theories, methodologies and recent developments in solving computer vision problems based on MRFs, statistics and optimisation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Computer Science Workbench"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3194361"
+                        ],
+                        "name": "S. Geman",
+                        "slug": "S.-Geman",
+                        "structuredName": {
+                            "firstName": "Stuart",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Geman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707642"
+                        ],
+                        "name": "D. Geman",
+                        "slug": "D.-Geman",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Geman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 13,
+                                "start": 6
+                            }
+                        ],
+                        "text": "tials [8, 18] or at best a combination of marginals [19] were used."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5837272,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "459b30a9a960080f3b313e41886b1aa0e51e882c",
+            "isKey": false,
+            "numCitedBy": 18703,
+            "numCiting": 60,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We make an analogy between images and statistical mechanics systems. Pixel gray levels and the presence and orientation of edges are viewed as states of atoms or molecules in a lattice-like physical system. The assignment of an energy function in the physical system determines its Gibbs distribution. Because of the Gibbs distribution, Markov random field (MRF) equivalence, this assignment also determines an MRF image model. The energy function is a more convenient and natural mechanism for embodying picture attributes than are the local characteristics of the MRF. For a range of degradation mechanisms, including blurring, nonlinear deformations, and multiplicative or additive noise, the posterior distribution is an MRF with a structure akin to the image model. By the analogy, the posterior distribution defines another (imaginary) physical system. Gradual temperature reduction in the physical system isolates low energy states (``annealing''), or what is the same thing, the most probable states under the Gibbs distribution. The analogous operation under the posterior distribution yields the maximum a posteriori (MAP) estimate of the image given the degraded observations. The result is a highly parallel ``relaxation'' algorithm for MAP estimation. We establish convergence properties of the algorithm and we experiment with some simple pictures, for which good restorations are obtained at low signal-to-noise ratios."
+            },
+            "slug": "Stochastic-Relaxation,-Gibbs-Distributions,-and-the-Geman-Geman",
+            "title": {
+                "fragments": [],
+                "text": "Stochastic Relaxation, Gibbs Distributions, and the Bayesian Restoration of Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 52,
+                "text": "The analogy between images and statistical mechanics systems is made and the analogous operation under the posterior distribution yields the maximum a posteriori (MAP) estimate of the image given the degraded observations, creating a highly parallel ``relaxation'' algorithm for MAP estimation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1984
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35106875"
+                        ],
+                        "name": "R. Duda",
+                        "slug": "R.-Duda",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Duda",
+                            "middleNames": [
+                                "O."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Duda"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3108177"
+                        ],
+                        "name": "P. Hart",
+                        "slug": "P.-Hart",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Hart",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Hart"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 232,
+                                "start": 229
+                            }
+                        ],
+                        "text": "Implementation details and results: To learn the texton dictionary, filter responses of 13 randomly selected images per texture class (taken from the set of training images) are aggregated and clustered via the K-Means algorithm [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12946615,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b07ce649d6f6eb636872527104b0209d3edc8188",
+            "isKey": false,
+            "numCitedBy": 16926,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Provides a unified, comprehensive and up-to-date treatment of both statistical and descriptive methods for pattern recognition. The topics treated include Bayesian decision theory, supervised and unsupervised learning, nonparametric techniques, discriminant analysis, clustering, preprosessing of pictorial data, spatial filtering, shape description techniques, perspective transformations, projective invariants, linguistic procedures, and artificial intelligence techniques for scene analysis."
+            },
+            "slug": "Pattern-classification-and-scene-analysis-Duda-Hart",
+            "title": {
+                "fragments": [],
+                "text": "Pattern classification and scene analysis"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 66,
+                "text": "The topics treated include Bayesian decision theory, supervised and unsupervised learning, nonparametric techniques, discriminant analysis, clustering, preprosessing of pictorial data, spatial filtering, shape description techniques, perspective transformations, projective invariants, linguistic procedures, and artificial intelligence techniques for scene analysis."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "A Wiley-Interscience publication"
+            },
+            "year": 1973
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2256718"
+                        ],
+                        "name": "W. Press",
+                        "slug": "W.-Press",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Press",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Press"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48590121"
+                        ],
+                        "name": "S. Teukolsky",
+                        "slug": "S.-Teukolsky",
+                        "structuredName": {
+                            "firstName": "Saul",
+                            "lastName": "Teukolsky",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Teukolsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2608024"
+                        ],
+                        "name": "W. Vetterling",
+                        "slug": "W.-Vetterling",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Vetterling",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Vetterling"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35046585"
+                        ],
+                        "name": "B. Flannery",
+                        "slug": "B.-Flannery",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Flannery",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Flannery"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 202,
+                                "start": 198
+                            }
+                        ],
+                        "text": "A nearest neighbour classifier is then used to assign the texture class of the nearest model to the test image, where the distance between two normalised frequency histograms is measured using \u03c7(2) [14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 61769312,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "ca2832d2c30287a9ee5b8584cc498d2b1cb14753",
+            "isKey": false,
+            "numCitedBy": 16689,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Note: Includes bibliographical references, 3 appendixes and 2 indexes.- Diskette v 2.06, 3.5''[1.44M] for IBM PC, PS/2 and compatibles [DOS] Reference Record created on 2004-09-07, modified on 2016-08-08"
+            },
+            "slug": "Numerical-recipes-in-C-Press-Teukolsky",
+            "title": {
+                "fragments": [],
+                "text": "Numerical recipes in C"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The Diskette v 2.06, 3.5''[1.44M] for IBM PC, PS/2 and compatibles [DOS] Reference Record created on 2004-09-07, modified on 2016-08-08."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 7,
+            "methodology": 14,
+            "result": 1
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 19,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Texture-classification:-are-filter-banks-necessary-Varma-Zisserman/70284b4fe852f472d4576c30f97a6fddbfef2aee?sort=total-citations"
+}

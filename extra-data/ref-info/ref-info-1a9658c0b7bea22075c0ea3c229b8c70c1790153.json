@@ -1,0 +1,3386 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2256269"
+                        ],
+                        "name": "C. Farabet",
+                        "slug": "C.-Farabet",
+                        "structuredName": {
+                            "firstName": "Cl\u00e9ment",
+                            "lastName": "Farabet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Farabet"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2341378"
+                        ],
+                        "name": "C. Couprie",
+                        "slug": "C.-Couprie",
+                        "structuredName": {
+                            "firstName": "Camille",
+                            "lastName": "Couprie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Couprie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688714"
+                        ],
+                        "name": "Laurent Najman",
+                        "slug": "Laurent-Najman",
+                        "structuredName": {
+                            "firstName": "Laurent",
+                            "lastName": "Najman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Laurent Najman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 67,
+                                "start": 47
+                            }
+                        ],
+                        "text": "Most convolutional network users (see for e.g. Farabet et al., 2013) upscale the label plane to the input image size."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 97,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Yet another approach would be the use of a multiscale convolutional network (Farabet et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 51,
+                                "start": 31
+                            }
+                        ],
+                        "text": "Adopting the same notation as (Farabet et al., 2013), the output of a network f with M stages and trainable parameters (W,b), for a given input patch Ii,j,k can be formally written as:\nf(Ii,j,k; (W,b)) = WMHM\u22121 , (2)\nwith the output of the mth hidden layer computed as:\nHm = tanh(pool(WmHm\u22121 + bm))\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 12
+                            }
+                        ],
+                        "text": "Similar to (Farabet et al., 2013), (Schulz & Behnke, 2012) proposed a similar multiscale convolutional architecture."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 245,
+                                "start": 225
+                            }
+                        ],
+                        "text": "\u2026interest c \u2208 {1, ..., N}) into conditional probabilities, by applying a softmax function:\np(c|Ii,j,k; (W,b)) = efc(Ii,j,k;(W,b))\u2211\nd\u2208{1,...,N} efd(Ii,j,k;(W,b))\n, (4)\n1Most people use dW = 1 for convolutional layers, and dW = kW for pooling layers.\nand maximizing the likelihood of the training data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 13
+                            }
+                        ],
+                        "text": "Contrary to (Farabet et al., 2013) (i) we did not consider addition of any distortion on the images3, (ii) we did not use contrastive normalization and (iii) we did not sample training patches according to balanced class frequencies."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "We will now detail our recurrent network approach."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally, in Section 3.3, we show how to infer the full scene labeling in an efficient manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 16
+                            }
+                        ],
+                        "text": "More recently, (Farabet et al., 2013) investigated the use of convolutional networks to extract features from a multiscale pyramid of images."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206765110,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "237a04dd8291cbdb59b6dc4b53e689af743fe2a3",
+            "isKey": true,
+            "numCitedBy": 2403,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Scene labeling consists of labeling each pixel in an image with the category of the object it belongs to. We propose a method that uses a multiscale convolutional network trained from raw pixels to extract dense feature vectors that encode regions of multiple sizes centered on each pixel. The method alleviates the need for engineered features, and produces a powerful representation that captures texture, shape, and contextual information. We report results using multiple postprocessing methods to produce the final labeling. Among those, we propose a technique to automatically retrieve, from a pool of segmentation components, an optimal set of components that best explain the scene; these components are arbitrary, for example, they can be taken from a segmentation tree or from any family of oversegmentations. The system yields record accuracies on the SIFT Flow dataset (33 classes) and the Barcelona dataset (170 classes) and near-record accuracy on Stanford background dataset (eight classes), while being an order of magnitude faster than competing approaches, producing a 320\u00d7240 image labeling in less than a second, including feature extraction."
+            },
+            "slug": "Learning-Hierarchical-Features-for-Scene-Labeling-Farabet-Couprie",
+            "title": {
+                "fragments": [],
+                "text": "Learning Hierarchical Features for Scene Labeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "A method that uses a multiscale convolutional network trained from raw pixels to extract dense feature vectors that encode regions of multiple sizes centered on each pixel, alleviates the need for engineered features, and produces a powerful representation that captures texture, shape, and contextual information."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2529182"
+                        ],
+                        "name": "David Grangier",
+                        "slug": "David-Grangier",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Grangier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Grangier"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2939803"
+                        ],
+                        "name": "Ronan Collobert",
+                        "slug": "Ronan-Collobert",
+                        "structuredName": {
+                            "firstName": "Ronan",
+                            "lastName": "Collobert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronan Collobert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 24
+                            }
+                        ],
+                        "text": "In a preliminary work, (Grangier et al., 2009) proposed an innovative approach to scene labeling without the use of any graphical model."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally, in Section 3.3, we show how to infer the full scene labeling in an efficient manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7296318,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1ecc15c576b54d17f7900b073e19edb2db2554f1",
+            "isKey": false,
+            "numCitedBy": 85,
+            "numCiting": 4,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a deep learning strategy for scene parsing, i.e. to asssign a class label to each pixel of an image. We investigate the use of deep convolutional network for modeling the complex scene label structures, relying on a supervised greedy learning strategy. Compared to standard approaches based on CRFs, our strategy does not need hand-crafted features, allows modeling more complex spatial dependencies and has a lower inference cost. Experiments over the MSRC benchmark and the LabelMe dataset show the effectiveness of our approach."
+            },
+            "slug": "Deep-Convolutional-Networks-for-Scene-Parsing-Grangier-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Deep Convolutional Networks for Scene Parsing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 68,
+                "text": "This work proposes a deep learning strategy for scene parsing, i.e. to asssign a class label to each pixel of an image, which does not need hand-crafted features, allows modeling more complex spatial dependencies and has a lower inference cost."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721683"
+                        ],
+                        "name": "J. Verbeek",
+                        "slug": "J.-Verbeek",
+                        "structuredName": {
+                            "firstName": "Jakob",
+                            "lastName": "Verbeek",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Verbeek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756114"
+                        ],
+                        "name": "B. Triggs",
+                        "slug": "B.-Triggs",
+                        "structuredName": {
+                            "firstName": "Bill",
+                            "lastName": "Triggs",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Triggs"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 103
+                            }
+                        ],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features (Verbeek & Triggs, 2008; Gould et al., 2009; Liu et al., 2011; Kumar & Koller, 2010; Socher et al., 2011; Lempitsky et al., 2011; Tighe & Lazebnik, 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 35912107,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5158864dadb3e9e9dc99ca33c80f1f880e795793",
+            "isKey": false,
+            "numCitedBy": 137,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Conditional Random Fields (CRFs) are an effective tool for a variety of different data segmentation and labeling tasks including visual scene interpretation, which seeks to partition images into their constituent semantic-level regions and assign appropriate class labels to each region. For accurate labeling it is important to capture the global context of the image as well as local information. We introduce a CRF based scene labeling model that incorporates both local features and features aggregated over the whole image or large sections of it. Secondly, traditional CRF learning requires fully labeled datasets which can be costly and troublesome to produce. We introduce a method for learning CRFs from datasets with many unlabeled nodes by marginalizing out the unknown labels so that the log-likelihood of the known ones can be maximized by gradient ascent. Loopy Belief Propagation is used to approximate the marginals needed for the gradient and log-likelihood calculations and the Bethe free-energy approximation to the log-likelihood is monitored to control the step size. Our experimental results show that effective models can be learned from fragmentary labelings and that incorporating top-down aggregate features significantly improves the segmentations. The resulting segmentations are compared to the state-of-the-art on three different image datasets."
+            },
+            "slug": "Scene-Segmentation-with-CRFs-Learned-from-Partially-Verbeek-Triggs",
+            "title": {
+                "fragments": [],
+                "text": "Scene Segmentation with CRFs Learned from Partially Labeled Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work introduces a CRF based scene labeling model that incorporates both local features and features aggregated over the whole image or large sections of it and shows that effective models can be learned from fragmentary labelings and that incorporating top-down aggregate features significantly improves the segmentations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34602236"
+                        ],
+                        "name": "Jakob Verbeek",
+                        "slug": "Jakob-Verbeek",
+                        "structuredName": {
+                            "firstName": "Jakob",
+                            "lastName": "Verbeek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jakob Verbeek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756114"
+                        ],
+                        "name": "B. Triggs",
+                        "slug": "B.-Triggs",
+                        "structuredName": {
+                            "firstName": "Bill",
+                            "lastName": "Triggs",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Triggs"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15591363,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "623d3e7c1153d89630431c784800f97616e6a9bd",
+            "isKey": false,
+            "numCitedBy": 51,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Conditional Random Fields (CRFs) are an effective tool for a variety of different data segmentation and labeling tasks including visual scene interpretation, which seeks to partition images into their constituent semantic-level regions and assign appropriate class labels to each region. For accurate labeling it is important to capture the global context of the image as well as local information. We introduce a CRF based scene labeling model that incorporates both local features and features aggregated over the whole image or large sections of it. Secondly, traditional CRF learning requires fully labeled datasets which can be costly and troublesome to produce. We introduce a method for learning CRFs from datasets with many unlabeled nodes by marginalizing out the unknown labels so that the log-likelihood of the known ones can be maximized by gradient ascent. Loopy Belief Propagation is used to approximate the marginals needed for the gradient and log-likelihood calculations and the Bethe free-energy approximation to the log-likelihood is monitored to control the step size. Our experimental results show that effective models can be learned from fragmentary labelings and that incorporating top-down aggregate features significantly improves the segmentations. The resulting segmentations are compared to the state-of-the-art on three different image datasets."
+            },
+            "slug": "Scene-segmentation-with-Conditional-Random-Fields-Verbeek-Triggs",
+            "title": {
+                "fragments": [],
+                "text": "Scene segmentation with Conditional Random Fields learned from partially labeled images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work introduces a CRF based scene labeling model that incorporates both local features and features aggregated over the whole image or large sections of it and shows that effective models can be learned from fragmentary labelings and that incorporating top-down aggregate features significantly improves the segmentations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS 2007"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51505748"
+                        ],
+                        "name": "Daniel Munoz",
+                        "slug": "Daniel-Munoz",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Munoz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Daniel Munoz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756566"
+                        ],
+                        "name": "J. Bagnell",
+                        "slug": "J.-Bagnell",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Bagnell",
+                            "middleNames": [
+                                "Andrew"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Bagnell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145670946"
+                        ],
+                        "name": "M. Hebert",
+                        "slug": "M.-Hebert",
+                        "structuredName": {
+                            "firstName": "Martial",
+                            "lastName": "Hebert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hebert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 175,
+                                "start": 157
+                            }
+                        ],
+                        "text": "RNNs have been successfully applied to wide variety of tasks, including in natural language processing (Stoianov et al., 1997), speech processing (Robinson, 1994) and image processing (Graves & Schmidhuber, 2008)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15601601,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "370308ad57aa43a29df1a9500c813c13254e16cd",
+            "isKey": false,
+            "numCitedBy": 249,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this work we propose a hierarchical approach for labeling semantic objects and regions in scenes. Our approach is reminiscent of early vision literature in that we use a decomposition of the image in order to encode relational and spatial information. In contrast to much existing work on structured prediction for scene understanding, we bypass a global probabilistic model and instead directly train a hierarchical inference procedure inspired by the message passing mechanics of some approximate inference procedures in graphical models. This approach mitigates both the theoretical and empirical difficulties of learning probabilistic models when exact inference is intractable. In particular, we draw from recent work in machine learning and break the complex inference process into a hierarchical series of simple machine learning subproblems. Each subproblem in the hierarchy is designed to capture the image and contextual statistics in the scene. This hierarchy spans coarse-to-fine regions and explicitly models the mixtures of semantic labels that may be present due to imperfect segmentation. To avoid cascading of errors and overfitting, we train the learning problems in sequence to ensure robustness to likely errors earlier in the inference sequence and leverage the stacking approach developed by Cohen et al."
+            },
+            "slug": "Stacked-Hierarchical-Labeling-Munoz-Bagnell",
+            "title": {
+                "fragments": [],
+                "text": "Stacked Hierarchical Labeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This work bypasses a global probabilistic model and instead directly train a hierarchical inference procedure inspired by the message passing mechanics of some approximate inference procedures in graphical models, which mitigates both the theoretical and empirical difficulties of learning Probabilistic models when exact inference is intractable."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064160"
+                        ],
+                        "name": "A. Krizhevsky",
+                        "slug": "A.-Krizhevsky",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Krizhevsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krizhevsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 240,
+                                "start": 217
+                            }
+                        ],
+                        "text": "This type of neural network has been shown to be very efficient in many vision applications, such as object recognition, segmentation and classification (LeCun et al., 1990; Jarrett et al., 2009; Turaga et al., 2010; Krizhevsky et al., 2012)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 149
+                            }
+                        ],
+                        "text": "\u2026mth convolution or\npooling layer is computed as:\nszm = szm\u22121 \u2212 kWm\ndWm + 1 , (1)\nwhere sz0 is the input patch size, kWm is the size of the convolution (or pooling) kernels in themth layer, and dWm is the pixel step size used to slide the convolution (or pooling) kernels over the input planes.1\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 195908774,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "abd1c342495432171beb7ca8fd9551ef13cbd0ff",
+            "isKey": false,
+            "numCitedBy": 80897,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes. On the test data, we achieved top-1 and top-5 error rates of 37.5% and 17.0%, respectively, which is considerably better than the previous state-of-the-art. The neural network, which has 60 million parameters and 650,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, and three fully connected layers with a final 1000-way softmax. To make training faster, we used non-saturating neurons and a very efficient GPU implementation of the convolution operation. To reduce overfitting in the fully connected layers we employed a recently developed regularization method called \"dropout\" that proved to be very effective. We also entered a variant of this model in the ILSVRC-2012 competition and achieved a winning top-5 test error rate of 15.3%, compared to 26.2% achieved by the second-best entry."
+            },
+            "slug": "ImageNet-classification-with-deep-convolutional-Krizhevsky-Sutskever",
+            "title": {
+                "fragments": [],
+                "text": "ImageNet classification with deep convolutional neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A large, deep convolutional neural network was trained to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes and employed a recently developed regularization method called \"dropout\" that proved to be very effective."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Commun. ACM"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1944614"
+                        ],
+                        "name": "Hannes Schulz",
+                        "slug": "Hannes-Schulz",
+                        "structuredName": {
+                            "firstName": "Hannes",
+                            "lastName": "Schulz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hannes Schulz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699019"
+                        ],
+                        "name": "Sven Behnke",
+                        "slug": "Sven-Behnke",
+                        "structuredName": {
+                            "firstName": "Sven",
+                            "lastName": "Behnke",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sven Behnke"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 36
+                            }
+                        ],
+                        "text": "Similar to (Farabet et al., 2013), (Schulz & Behnke, 2012) proposed a similar multiscale convolutional architecture."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally, in Section 3.3, we show how to infer the full scene labeling in an efficient manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8907669,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7ce629c521c02cae136725819d0cb0d86a6e7b4e",
+            "isKey": true,
+            "numCitedBy": 45,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "After successes at image classication, segmentation is the next step towards image understanding for neural networks. We propose a convolutional network architecture that includes innovative elements, such as multiple output maps, suitable loss functions, supervised pretraining, multiscale inputs, reused outputs, and pairwise class location lters. Ex- periments on three data sets show that our method performs on par with current in computer vision methods with regards to accuracy and exceeds them in speed."
+            },
+            "slug": "Learning-Object-Class-Segmentation-with-Neural-Schulz-Behnke",
+            "title": {
+                "fragments": [],
+                "text": "Learning Object-Class Segmentation with Convolutional Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "A convolutional network architecture that includes innovative elements, such as multiple output maps, suitable loss functions, supervised pretraining, multiscale inputs, reused outputs, and pairwise class location lters is proposed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ESANN"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681442"
+                        ],
+                        "name": "Ce Liu",
+                        "slug": "Ce-Liu",
+                        "structuredName": {
+                            "firstName": "Ce",
+                            "lastName": "Liu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ce Liu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143738177"
+                        ],
+                        "name": "Jenny Yuen",
+                        "slug": "Jenny-Yuen",
+                        "structuredName": {
+                            "firstName": "Jenny",
+                            "lastName": "Yuen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jenny Yuen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143805211"
+                        ],
+                        "name": "A. Torralba",
+                        "slug": "A.-Torralba",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Torralba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Torralba"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 169,
+                                "start": 152
+                            }
+                        ],
+                        "text": "Table 3 compares the performance of our architectures with related works on the Stanford Background Dataset and Table 4 compares the performance on the SIFT Flow Dataset."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 158,
+                                "start": 142
+                            }
+                        ],
+                        "text": "We tested our proposed method on two different fullylabeled datasets: the Stanford Background (Gould et al., 2009) and the SIFT Flow Dataset (Liu et al., 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 163,
+                                "start": 147
+                            }
+                        ],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features (Verbeek & Triggs, 2008; Gould et al., 2009; Liu et al., 2011; Kumar & Koller, 2010; Socher et al., 2011; Lempitsky et al., 2011; Tighe & Lazebnik, 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 145,
+                                "start": 128
+                            }
+                        ],
+                        "text": "Section 4 presents the results of our experiments in two standard datasets: the Stanford Background Dataset (8 classes) and the SIFT Flow Dataset (33 classes) and compare the performance with other systems."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 18477260,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f5a52b69dde106cb69cb7c35dd8ca23071966876",
+            "isKey": true,
+            "numCitedBy": 390,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "While there has been a lot of recent work on object recognition and image understanding, the focus has been on carefully establishing mathematical models for images, scenes, and objects. In this paper, we propose a novel, nonparametric approach for object recognition and scene parsing using a new technology we name label transfer. For an input image, our system first retrieves its nearest neighbors from a large database containing fully annotated images. Then, the system establishes dense correspondences between the input image and each of the nearest neighbors using the dense SIFT flow algorithm [28], which aligns two images based on local image structures. Finally, based on the dense scene correspondences obtained from SIFT flow, our system warps the existing annotations and integrates multiple cues in a Markov random field framework to segment and recognize the query image. Promising experimental results have been achieved by our nonparametric scene parsing system on challenging databases. Compared to existing object recognition approaches that require training classifiers or appearance models for each object category, our system is easy to implement, has few parameters, and embeds contextual information naturally in the retrieval/alignment procedure."
+            },
+            "slug": "Nonparametric-Scene-Parsing-via-Label-Transfer-Liu-Yuen",
+            "title": {
+                "fragments": [],
+                "text": "Nonparametric Scene Parsing via Label Transfer"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This paper proposes a novel, nonparametric approach for object recognition and scene parsing using a new technology the authors name label transfer, which is easy to implement, has few parameters, and embeds contextual information naturally in the retrieval/alignment procedure."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2397422"
+                        ],
+                        "name": "Joseph Tighe",
+                        "slug": "Joseph-Tighe",
+                        "structuredName": {
+                            "firstName": "Joseph",
+                            "lastName": "Tighe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Joseph Tighe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1749609"
+                        ],
+                        "name": "S. Lazebnik",
+                        "slug": "S.-Lazebnik",
+                        "structuredName": {
+                            "firstName": "Svetlana",
+                            "lastName": "Lazebnik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Lazebnik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 51694943,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "914f6db28db0de5f439e891dac38f09bbdc5a452",
+            "isKey": false,
+            "numCitedBy": 713,
+            "numCiting": 63,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a simple and effective nonparametric approach to the problem of image parsing, or labeling image regions (in our case, superpixels produced by bottom-up segmentation) with their categories. This approach requires no training, and it can easily scale to datasets with tens of thousands of images and hundreds of labels. It works by scene-level matching with global image descriptors, followed by superpixel-level matching with local features and efficient Markov random field (MRF) optimization for incorporating neighborhood context. Our MRF setup can also compute a simultaneous labeling of image regions into semantic classes (e.g., tree, building, car) and geometric classes (sky, vertical, ground). Our system outperforms the state-of-the-art non-parametric method based on SIFT Flow on a dataset of 2,688 images and 33 labels. In addition, we report per-pixel rates on a larger dataset of 15,150 images and 170 labels. To our knowledge, this is the first complete evaluation of image parsing on a dataset of this size, and it establishes a new benchmark for the problem."
+            },
+            "slug": "Superparsing-Scalable-Nonparametric-Image-Parsing-Tighe-Lazebnik",
+            "title": {
+                "fragments": [],
+                "text": "SuperParsing: Scalable Nonparametric Image Parsing with Superpixels"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 85,
+                "text": "This paper presents a simple and effective nonparametric approach to the problem of image parsing, or labeling image regions (in this case, superpixels produced by bottom-up segmentation) with their categories, and establishes a new benchmark for the problem."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3717791"
+                        ],
+                        "name": "M. P. Kumar",
+                        "slug": "M.-P.-Kumar",
+                        "structuredName": {
+                            "firstName": "M.",
+                            "lastName": "Kumar",
+                            "middleNames": [
+                                "Pawan"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. P. Kumar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1736370"
+                        ],
+                        "name": "D. Koller",
+                        "slug": "D.-Koller",
+                        "structuredName": {
+                            "firstName": "Daphne",
+                            "lastName": "Koller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Koller"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 92
+                            }
+                        ],
+                        "text": "Our approach can be viewed as a particular instance of the Jordan\u2019s recurrent network adapted to image processing (we use a convolutional neural network instead)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 185,
+                                "start": 165
+                            }
+                        ],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features (Verbeek & Triggs, 2008; Gould et al., 2009; Liu et al., 2011; Kumar & Koller, 2010; Socher et al., 2011; Lempitsky et al., 2011; Tighe & Lazebnik, 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10699029,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "05d0340695c89384ebfd929c6fe46dc6023a0238",
+            "isKey": false,
+            "numCitedBy": 152,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recent advances in scene understanding and related tasks have highlighted the importance of using regions to reason about high-level scene structure. Typically, the regions are selected beforehand and then an energy function is defined over them. This two step process suffers from the following deficiencies: (i) the regions may not match the boundaries of the scene entities, thereby introducing errors; and (ii) as the regions are obtained without any knowledge of the energy function, they may not be suitable for the task at hand. We address these problems by designing an efficient approach for obtaining the best set of regions in terms of the energy function itself. Each iteration of our algorithm selects regions from a large dictionary by solving an accurate linear programming relaxation via dual decomposition. The dictionary of regions is constructed by merging and intersecting segments obtained from multiple bottom-up over-segmentations. To demonstrate the usefulness of our algorithm, we consider the task of scene segmentation and show significant improvements over state of the art methods."
+            },
+            "slug": "Efficiently-selecting-regions-for-scene-Kumar-Koller",
+            "title": {
+                "fragments": [],
+                "text": "Efficiently selecting regions for scene understanding"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work designs an efficient approach for obtaining the best set of regions in terms of the energy function itself and demonstrates the usefulness of the algorithm on the task of scene segmentation and shows significant improvements over state of the art methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2010 IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681442"
+                        ],
+                        "name": "Ce Liu",
+                        "slug": "Ce-Liu",
+                        "structuredName": {
+                            "firstName": "Ce",
+                            "lastName": "Liu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ce Liu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143738177"
+                        ],
+                        "name": "Jenny Yuen",
+                        "slug": "Jenny-Yuen",
+                        "structuredName": {
+                            "firstName": "Jenny",
+                            "lastName": "Yuen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jenny Yuen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143805211"
+                        ],
+                        "name": "A. Torralba",
+                        "slug": "A.-Torralba",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Torralba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Torralba"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": ", 2009 [5] 74."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features [1\u20137]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "We tested our proposed method on two different datasets for scene parsing: the Stanford Background [1] and the SIFT Flow Dataset [5]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 566387,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ef2448cf2eae2bc2fc1d83f1da0fbaba188ecec7",
+            "isKey": true,
+            "numCitedBy": 361,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we propose a novel nonparametric approach for object recognition and scene parsing using dense scene alignment. Given an input image, we retrieve its best matches from a large database with annotated images using our modified, coarse-to-fine SIFT flow algorithm that aligns the structures within two images. Based on the dense scene correspondence obtained from the SIFT flow, our system warps the existing annotations, and integrates multiple cues in a Markov random field framework to segment and recognize the query image. Promising experimental results have been achieved by our nonparametric scene parsing system on a challenging database. Compared to existing object recognition approaches that require training for each object category, our system is easy to implement, has few parameters, and embeds contextual information naturally in the retrieval/alignment procedure."
+            },
+            "slug": "Nonparametric-scene-parsing:-Label-transfer-via-Liu-Yuen",
+            "title": {
+                "fragments": [],
+                "text": "Nonparametric scene parsing: Label transfer via dense scene alignment"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Compared to existing object recognition approaches that require training for each object category, the proposed nonparametric scene parsing system is easy to implement, has few parameters, and embeds contextual information naturally in the retrieval/alignment procedure."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145273587"
+                        ],
+                        "name": "Stephen Gould",
+                        "slug": "Stephen-Gould",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Gould",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Stephen Gould"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "97911988"
+                        ],
+                        "name": "Richard Fulton",
+                        "slug": "Richard-Fulton",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Fulton",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Richard Fulton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1736370"
+                        ],
+                        "name": "D. Koller",
+                        "slug": "D.-Koller",
+                        "structuredName": {
+                            "firstName": "Daphne",
+                            "lastName": "Koller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Koller"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 95
+                            }
+                        ],
+                        "text": "We tested our proposed method on two different fullylabeled datasets: the Stanford Background (Gould et al., 2009) and the SIFT Flow Dataset (Liu et al., 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 145,
+                                "start": 127
+                            }
+                        ],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features (Verbeek & Triggs, 2008; Gould et al., 2009; Liu et al., 2011; Kumar & Koller, 2010; Socher et al., 2011; Lempitsky et al., 2011; Tighe & Lazebnik, 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 80
+                            }
+                        ],
+                        "text": "Table 3 compares the performance of our architectures with related works on the Stanford Background Dataset and Table 4 compares the performance on the SIFT Flow Dataset."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 93,
+                                "start": 74
+                            }
+                        ],
+                        "text": "In terms of accuracy, our system achieves state-of-theart results on both Stanford Background and SIFT Flow datasets, while keeping a fast inference time."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 80
+                            }
+                        ],
+                        "text": "Section 4 presents the results of our experiments in two standard datasets: the Stanford Background Dataset (8 classes) and the SIFT Flow Dataset (33 classes) and compare the performance with other systems."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 7
+                            }
+                        ],
+                        "text": "As in (Gould et al., 2009), we performed a 5-fold cross-validation with the dataset randomly split into 572 training images and 143 test images in each fold."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 68
+                            }
+                        ],
+                        "text": "Providing feedback from the output into the input allows the network to model label dependencies, and correct its own previous predictions."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17448963,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dc08847b65953ef2ae3542e47b08b57a46b5ba34",
+            "isKey": true,
+            "numCitedBy": 709,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "High-level, or holistic, scene understanding involves reasoning about objects, regions, and the 3D relationships between them. This requires a representation above the level of pixels that can be endowed with high-level attributes such as class of object/region, its orientation, and (rough 3D) location within the scene. Towards this goal, we propose a region-based model which combines appearance and scene geometry to automatically decompose a scene into semantically meaningful regions. Our model is defined in terms of a unified energy function over scene appearance and structure. We show how this energy function can be learned from data and present an efficient inference technique that makes use of multiple over-segmentations of the image to propose moves in the energy-space. We show, experimentally, that our method achieves state-of-the-art performance on the tasks of both multi-class image segmentation and geometric reasoning. Finally, by understanding region classes and geometry, we show how our model can be used as the basis for 3D reconstruction of the scene."
+            },
+            "slug": "Decomposing-a-scene-into-geometric-and-semantically-Gould-Fulton",
+            "title": {
+                "fragments": [],
+                "text": "Decomposing a scene into geometric and semantically consistent regions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A region-based model which combines appearance and scene geometry to automatically decompose a scene into semantically meaningful regions and which achieves state-of-the-art performance on the tasks of both multi-class image segmentation and geometric reasoning."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE 12th International Conference on Computer Vision"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2570381"
+                        ],
+                        "name": "Brody Huval",
+                        "slug": "Brody-Huval",
+                        "structuredName": {
+                            "firstName": "Brody",
+                            "lastName": "Huval",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Brody Huval"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3100049"
+                        ],
+                        "name": "Bharath Putta Bath",
+                        "slug": "Bharath-Putta-Bath",
+                        "structuredName": {
+                            "firstName": "Bharath",
+                            "lastName": "Bath",
+                            "middleNames": [
+                                "Putta"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bharath Putta Bath"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally, in Section 3.3, we show how to infer the full scene labeling in an efficient manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 23,
+                                "start": 4
+                            }
+                        ],
+                        "text": "In (Socher et al., 2012), the authors proposed an approach which combines convolutional and recursive networks for classifying RGB-D images."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16900529,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cc75c81148245198d4c6d4c8fcbbae487215903b",
+            "isKey": true,
+            "numCitedBy": 591,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recent advances in 3D sensing technologies make it possible to easily record color and depth images which together can improve object recognition. Most current methods rely on very well-designed features for this new 3D modality. We introduce a model based on a combination of convolutional and recursive neural networks (CNN and RNN) for learning features and classifying RGB-D images. The CNN layer learns low-level translationally invariant features which are then given as inputs to multiple, fixed-tree RNNs in order to compose higher order features. RNNs can be seen as combining convolution and pooling into one efficient, hierarchical operation. Our main result is that even RNNs with random weights compose powerful features. Our model obtains state of the art performance on a standard RGB-D object dataset while being more accurate and faster during training and testing than comparable architectures such as two-layer CNNs."
+            },
+            "slug": "Convolutional-Recursive-Deep-Learning-for-3D-Object-Socher-Huval",
+            "title": {
+                "fragments": [],
+                "text": "Convolutional-Recursive Deep Learning for 3D Object Classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work introduces a model based on a combination of convolutional and recursive neural networks (CNN and RNN) for learning features and classifying RGB-D images, which obtains state of the art performance on a standardRGB-D object dataset while being more accurate and faster during training and testing than comparable architectures such as two-layer CNNs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3178417"
+                        ],
+                        "name": "Srinivas C. Turaga",
+                        "slug": "Srinivas-C.-Turaga",
+                        "structuredName": {
+                            "firstName": "Srinivas",
+                            "lastName": "Turaga",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Srinivas C. Turaga"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "31052092"
+                        ],
+                        "name": "J. Murray",
+                        "slug": "J.-Murray",
+                        "structuredName": {
+                            "firstName": "Joseph",
+                            "lastName": "Murray",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Murray"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35086944"
+                        ],
+                        "name": "Viren Jain",
+                        "slug": "Viren-Jain",
+                        "structuredName": {
+                            "firstName": "Viren",
+                            "lastName": "Jain",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Viren Jain"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2061202596"
+                        ],
+                        "name": "Fabian Roth",
+                        "slug": "Fabian-Roth",
+                        "structuredName": {
+                            "firstName": "Fabian",
+                            "lastName": "Roth",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fabian Roth"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2495450"
+                        ],
+                        "name": "M. Helmstaedter",
+                        "slug": "M.-Helmstaedter",
+                        "structuredName": {
+                            "firstName": "Moritz",
+                            "lastName": "Helmstaedter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Helmstaedter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1997979"
+                        ],
+                        "name": "K. Briggman",
+                        "slug": "K.-Briggman",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Briggman",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Briggman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144922222"
+                        ],
+                        "name": "W. Denk",
+                        "slug": "W.-Denk",
+                        "structuredName": {
+                            "firstName": "Winfried",
+                            "lastName": "Denk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Denk"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144924970"
+                        ],
+                        "name": "H. Seung",
+                        "slug": "H.-Seung",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Seung",
+                            "middleNames": [
+                                "Sebastian"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Seung"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 169,
+                                "start": 150
+                            }
+                        ],
+                        "text": "\u2026plane size szm of the mth convolution or\npooling layer is computed as:\nszm = szm\u22121 \u2212 kWm\ndWm + 1 , (1)\nwhere sz0 is the input patch size, kWm is the size of the convolution (or pooling) kernels in themth layer, and dWm is the pixel step size used to slide the convolution (or pooling) kernels over\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 215,
+                                "start": 196
+                            }
+                        ],
+                        "text": "This type of neural network has been shown to be very efficient in many vision applications, such as object recognition, segmentation and classification (LeCun et al., 1990; Jarrett et al., 2009; Turaga et al., 2010; Krizhevsky et al., 2012)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17652676,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "feacb4cf21eaf068197f80b164827db888ddd28d",
+            "isKey": false,
+            "numCitedBy": 344,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many image segmentation algorithms first generate an affinity graph and then partition it. We present a machine learning approach to computing an affinity graph using a convolutional network (CN) trained using ground truth provided by human experts. The CN affinity graph can be paired with any standard partitioning algorithm and improves segmentation accuracy significantly compared to standard hand-designed affinity functions. We apply our algorithm to the challenging 3D segmentation problem of reconstructing neuronal processes from volumetric electron microscopy (EM) and show that we are able to learn a good affinity graph directly from the raw EM images. Further, we show that our affinity graph improves the segmentation accuracy of both simple and sophisticated graph partitioning algorithms. In contrast to previous work, we do not rely on prior knowledge in the form of hand-designed image features or image preprocessing. Thus, we expect our algorithm to generalize effectively to arbitrary image types."
+            },
+            "slug": "Convolutional-Networks-Can-Learn-to-Generate-Graphs-Turaga-Murray",
+            "title": {
+                "fragments": [],
+                "text": "Convolutional Networks Can Learn to Generate Affinity Graphs for Image Segmentation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 76,
+                "text": "This work presents a machine learning approach to computing an affinity graph using a convolutional network (CN) trained using ground truth provided by human experts and shows that the CN affinity graph can be paired with any standard partitioning algorithm and improves segmentation accuracy significantly compared to standard hand-designed affinity functions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740145"
+                        ],
+                        "name": "V. Lempitsky",
+                        "slug": "V.-Lempitsky",
+                        "structuredName": {
+                            "firstName": "Victor",
+                            "lastName": "Lempitsky",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Lempitsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1687524"
+                        ],
+                        "name": "A. Vedaldi",
+                        "slug": "A.-Vedaldi",
+                        "structuredName": {
+                            "firstName": "Andrea",
+                            "lastName": "Vedaldi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Vedaldi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 90
+                            }
+                        ],
+                        "text": "Providing feedback from the output into the input allows the network to model label dependencies, and correct its own previous predictions."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 208
+                            }
+                        ],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features (Verbeek & Triggs, 2008; Gould et al., 2009; Liu et al., 2011; Kumar & Koller, 2010; Socher et al., 2011; Lempitsky et al., 2011; Tighe & Lazebnik, 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2121251,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b65891fde65045c86d71e6577f44b2dcbf43b9f4",
+            "isKey": false,
+            "numCitedBy": 157,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Graph cut optimization is one of the standard workhorses of image segmentation since for binary random field representations of the image, it gives globally optimal results and there are efficient polynomial time implementations. Often, the random field is applied over a flat partitioning of the image into non-intersecting elements, such as pixels or super-pixels. In the paper we show that if, instead of a flat partitioning, the image is represented by a hierarchical segmentation tree, then the resulting energy combining unary and boundary terms can still be optimized using graph cut (with all the corresponding benefits of global optimality and efficiency). As a result of such inference, the image gets partitioned into a set of segments that may come from different layers of the tree. \n \nWe apply this formulation, which we call the pylon model, to the task of semantic segmentation where the goal is to separate an image into areas belonging to different semantic classes. The experiments highlight the advantage of inference on a segmentation tree (over a flat partitioning) and demonstrate that the optimization in the pylon model is able to flexibly choose the level of segmentation across the image. Overall, the proposed system has superior segmentation accuracy on several datasets (Graz-02, Stanford background) compared to previously suggested approaches."
+            },
+            "slug": "Pylon-Model-for-Semantic-Segmentation-Lempitsky-Vedaldi",
+            "title": {
+                "fragments": [],
+                "text": "Pylon Model for Semantic Segmentation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper shows that if, instead of a flat partitioning, the image is represented by a hierarchical segmentation tree, then the resulting energy combining unary and boundary terms can still be optimized using graph cut (with all the corresponding benefits of global optimality and efficiency)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2585821"
+                        ],
+                        "name": "Cliff Chiung-Yu Lin",
+                        "slug": "Cliff-Chiung-Yu-Lin",
+                        "structuredName": {
+                            "firstName": "Cliff",
+                            "lastName": "Lin",
+                            "middleNames": [
+                                "Chiung-Yu"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Cliff Chiung-Yu Lin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 38
+                            }
+                        ],
+                        "text": "Providing feedback from the output into the input allows the network to model label dependencies, and correct its own previous predictions."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Socher et al., 2011) also considered the use of deep learning techniques to deal with scene labeling, where off-theshelf features of segments are recursively merged to assign a semantic category label."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally, in Section 3.3, we show how to infer the full scene labeling in an efficient manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 206,
+                                "start": 187
+                            }
+                        ],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features (Verbeek & Triggs, 2008; Gould et al., 2009; Liu et al., 2011; Kumar & Koller, 2010; Socher et al., 2011; Lempitsky et al., 2011; Tighe & Lazebnik, 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 18690358,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9c0ddf74f87d154db88d79c640578c1610451eec",
+            "isKey": true,
+            "numCitedBy": 1320,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recursive structure is commonly found in the inputs of different modalities such as natural scene images or natural language sentences. Discovering this recursive structure helps us to not only identify the units that an image or sentence contains but also how they interact to form a whole. We introduce a max-margin structure prediction architecture based on recursive neural networks that can successfully recover such structure both in complex scene images as well as sentences. The same algorithm can be used both to provide a competitive syntactic parser for natural language sentences from the Penn Treebank and to outperform alternative approaches for semantic scene segmentation, annotation and classification. For segmentation and annotation our algorithm obtains a new level of state-of-the-art performance on the Stanford background dataset (78.1%). The features from the image parse tree outperform Gist descriptors for scene classification by 4%."
+            },
+            "slug": "Parsing-Natural-Scenes-and-Natural-Language-with-Socher-Lin",
+            "title": {
+                "fragments": [],
+                "text": "Parsing Natural Scenes and Natural Language with Recursive Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "A max-margin structure prediction architecture based on recursive neural networks that can successfully recover such structure both in complex scene images as well as sentences is introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2077257730"
+                        ],
+                        "name": "Kevin Jarrett",
+                        "slug": "Kevin-Jarrett",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Jarrett",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kevin Jarrett"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2645384"
+                        ],
+                        "name": "K. Kavukcuoglu",
+                        "slug": "K.-Kavukcuoglu",
+                        "structuredName": {
+                            "firstName": "Koray",
+                            "lastName": "Kavukcuoglu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Kavukcuoglu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1706809"
+                        ],
+                        "name": "Marc'Aurelio Ranzato",
+                        "slug": "Marc'Aurelio-Ranzato",
+                        "structuredName": {
+                            "firstName": "Marc'Aurelio",
+                            "lastName": "Ranzato",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marc'Aurelio Ranzato"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 206769720,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1f88427d7aa8225e47f946ac41a0667d7b69ac52",
+            "isKey": false,
+            "numCitedBy": 2084,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In many recent object recognition systems, feature extraction stages are generally composed of a filter bank, a non-linear transformation, and some sort of feature pooling layer. Most systems use only one stage of feature extraction in which the filters are hard-wired, or two stages where the filters in one or both stages are learned in supervised or unsupervised mode. This paper addresses three questions: 1. How does the non-linearities that follow the filter banks influence the recognition accuracy? 2. does learning the filter banks in an unsupervised or supervised manner improve the performance over random filters or hardwired filters? 3. Is there any advantage to using an architecture with two stages of feature extraction, rather than one? We show that using non-linearities that include rectification and local contrast normalization is the single most important ingredient for good accuracy on object recognition benchmarks. We show that two stages of feature extraction yield better accuracy than one. Most surprisingly, we show that a two-stage system with random filters can yield almost 63% recognition rate on Caltech-101, provided that the proper non-linearities and pooling layers are used. Finally, we show that with supervised refinement, the system achieves state-of-the-art performance on NORB dataset (5.6%) and unsupervised pre-training followed by supervised refinement produces good accuracy on Caltech-101 (\u226b 65%), and the lowest known error rate on the undistorted, unprocessed MNIST dataset (0.53%)."
+            },
+            "slug": "What-is-the-best-multi-stage-architecture-for-Jarrett-Kavukcuoglu",
+            "title": {
+                "fragments": [],
+                "text": "What is the best multi-stage architecture for object recognition?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "It is shown that using non-linearities that include rectification and local contrast normalization is the single most important ingredient for good accuracy on object recognition benchmarks and that two stages of feature extraction yield better accuracy than one."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE 12th International Conference on Computer Vision"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7253297"
+                        ],
+                        "name": "T. Munich",
+                        "slug": "T.-Munich",
+                        "structuredName": {
+                            "firstName": "Tu",
+                            "lastName": "Munich",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Munich"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "88741922"
+                        ],
+                        "name": "H Germany",
+                        "slug": "H-Germany",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "Germany",
+                            "middleNames": [
+                                "H"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H Germany"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 211,
+                                "start": 185
+                            }
+                        ],
+                        "text": "RNNs have been successfully applied to wide variety of tasks, including in natural language processing (Stoianov et al., 1997), speech processing (Robinson, 1994) and image processing (Graves & Schmidhuber, 2008)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 639755,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c08d0525bd42fa1c24f9f5df72f4c8fcf7063b22",
+            "isKey": false,
+            "numCitedBy": 743,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Offline handwriting recognition\u2014the automatic transcription of images of handwritten text\u2014is a challenging task that combines computer vision with sequence learning. In most systems the two elements are handled separately, with sophisticated preprocessing techniques used to extract the image features and sequential models such as HMMs used to provide the transcriptions. By combining two recent innovations in neural networks\u2014multidimensional recurrent neural networks and connectionist temporal classification\u2014this paper introduces a globally trained offline handwriting recogniser that takes raw pixel data as input. Unlike competing systems, it does not require any alphabet specific preprocessing, and can therefore be used unchanged for any language. Evidence of its generality and power is provided by data from a recent international Arabic recognition competition, where it outperformed all entries (91.4% accuracy compared to 87.2% for the competition winner) despite the fact that neither author understands a word of Arabic."
+            },
+            "slug": "Offline-Handwriting-Recognition-with-Recurrent-Munich-Germany",
+            "title": {
+                "fragments": [],
+                "text": "Offline Handwriting Recognition with Multidimensional Recurrent Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper introduces a globally trained offline handwriting recogniser that takes raw pixel data as input and does not require any alphabet specific preprocessing, and can therefore be used unchanged for any language."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2884373"
+                        ],
+                        "name": "J. Elman",
+                        "slug": "J.-Elman",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Elman",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Elman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 63
+                            }
+                        ],
+                        "text": "Section 3.2 introduces our recurrent network approach for scene labeling."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 68,
+                                "start": 57
+                            }
+                        ],
+                        "text": "Several variants have been later introduced, such as in (Elman, 1990)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2763403,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "668087f0ae7ce1de6e0bd0965dbb480c08103260",
+            "isKey": true,
+            "numCitedBy": 9860,
+            "numCiting": 111,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Time underlies many interesting human behaviors. Thus, the question of how to represent time in connectionist models is very important. One approach is to represent time implicitly by its effects on processing rather than explicitly (as in a spatial representation). The current report develops a proposal along these lines first described by Jordan (1986) which involves the use of recurrent links in order to provide networks with a dynamic memory. In this approach, hidden unit patterns are fed back to themselves; the internal representations which develop thus reflect task demands in the context of prior internal states. A set of simulations is reported which range from relatively simple problems (temporal version of XOR) to discovering syntactic/semantic features for words. The networks are able to learn interesting internal representations which incorporate task demands with memory demands; indeed, in this approach the notion of memory is inextricably bound up with task processing. These representations reveal a rich structure, which allows them to be highly context-dependent while also expressing generalizations across classes of items. These representations suggest a method for representing lexical categories and the type/token distinction."
+            },
+            "slug": "Finding-Structure-in-Time-Elman",
+            "title": {
+                "fragments": [],
+                "text": "Finding Structure in Time"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A proposal along these lines first described by Jordan (1986) which involves the use of recurrent links in order to provide networks with a dynamic memory and suggests a method for representing lexical categories and the type/token distinction is developed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Cogn. Sci."
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2939803"
+                        ],
+                        "name": "Ronan Collobert",
+                        "slug": "Ronan-Collobert",
+                        "structuredName": {
+                            "firstName": "Ronan",
+                            "lastName": "Collobert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronan Collobert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2645384"
+                        ],
+                        "name": "K. Kavukcuoglu",
+                        "slug": "K.-Kavukcuoglu",
+                        "structuredName": {
+                            "firstName": "Koray",
+                            "lastName": "Kavukcuoglu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Kavukcuoglu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2256269"
+                        ],
+                        "name": "C. Farabet",
+                        "slug": "C.-Farabet",
+                        "structuredName": {
+                            "firstName": "Cl\u00e9ment",
+                            "lastName": "Farabet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Farabet"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 66
+                            }
+                        ],
+                        "text": "All the algorithms and experiments were implemented using Torch7 (Collobert et al., 2012)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14235136,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2dce3867e57697cd9cc1a28eff51bc29914bf55f",
+            "isKey": false,
+            "numCitedBy": 24,
+            "numCiting": 10,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Neural networks and machine learning algorithms in general require a flexible environment where new algorithm prototypes and experiments can be set up as quickly as possible with best possible computational performance. To that end, we provide a new framework called Torch7, that is especially suited to achieve both of these competing goals. Torch7 is a versatile numeric computing framework and machine learning library that extends a very lightweight and powerful programming language Lua. Its goal is to provide a flexible environment to design, train and deploy learning machines. Flexibility is obtained via Lua, an extremely lightweight scripting language. High performance is obtained via efficient OpenMP/SSE and CUDA implementations of low-level numeric routines. Torch7 can also easily be interfaced to third-party software thanks to Lua\u2019s light C interface."
+            },
+            "slug": "Implementing-Neural-Networks-Efficiently-Collobert-Kavukcuoglu",
+            "title": {
+                "fragments": [],
+                "text": "Implementing Neural Networks Efficiently"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "Torch7 is a versatile numeric computing framework and machine learning library that extends a very lightweight and powerful programming language Lua to provide a flexible environment to design, train and deploy learning machines."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks: Tricks of the Trade"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34956145"
+                        ],
+                        "name": "I. Stoianov",
+                        "slug": "I.-Stoianov",
+                        "structuredName": {
+                            "firstName": "Ivelin",
+                            "lastName": "Stoianov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Stoianov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1806832"
+                        ],
+                        "name": "J. Nerbonne",
+                        "slug": "J.-Nerbonne",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Nerbonne",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Nerbonne"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally, in Section 3.3, we show how to infer the full scene labeling in an efficient manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 104
+                            }
+                        ],
+                        "text": "RNNs have been successfully applied to wide variety of tasks, including in natural language processing (Stoianov et al., 1997), speech processing (Robinson, 1994) and image processing (Graves & Schmidhuber, 2008)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3130602,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8357154b79ec9949c85a1e0bf4b29bc087b5e63d",
+            "isKey": true,
+            "numCitedBy": 19,
+            "numCiting": 53,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Simple Recurrent Networks (SRN) are Neural Network (connectionist) models able to process natural language. Phonotactics concerns the order of symbols in words. We continued an earlier unsuccessful trial to model the phonotactics of Dutch words with SRNs. In order to overcome the previously reported obstacles, a new method for testing the network training was developed - optimal threshold evaluation. This method is based on minimising the erroneous character prediction of a trained SRN. The network training was improved as well. The training words were presented to the network according to their frequencies, which emphasizes the more frequent sequences. The achieved results are promising and provide a base for further study."
+            },
+            "slug": "Modeling-the-Phonotactic-Structure-of-Natural-Words-Stoianov-Nerbonne",
+            "title": {
+                "fragments": [],
+                "text": "Modeling the Phonotactic Structure of Natural Language Words with Simple Recurrent Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A new method for testing the network training was developed - optimal threshold evaluation - based on minimising the erroneous character prediction of a trained SRN for phonotactics of Dutch words with SRNs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2219581"
+                        ],
+                        "name": "B. Boser",
+                        "slug": "B.-Boser",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Boser",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Boser"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1747317"
+                        ],
+                        "name": "J. Denker",
+                        "slug": "J.-Denker",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Denker",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Denker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37274089"
+                        ],
+                        "name": "D. Henderson",
+                        "slug": "D.-Henderson",
+                        "structuredName": {
+                            "firstName": "Donnie",
+                            "lastName": "Henderson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Henderson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2799635"
+                        ],
+                        "name": "R. Howard",
+                        "slug": "R.-Howard",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Howard",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Howard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34859193"
+                        ],
+                        "name": "W. Hubbard",
+                        "slug": "W.-Hubbard",
+                        "structuredName": {
+                            "firstName": "Wayne",
+                            "lastName": "Hubbard",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Hubbard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2041866"
+                        ],
+                        "name": "L. Jackel",
+                        "slug": "L.-Jackel",
+                        "structuredName": {
+                            "firstName": "Lawrence",
+                            "lastName": "Jackel",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Jackel"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 154
+                            }
+                        ],
+                        "text": "This type of neural network has been shown to be very efficient in many vision applications, such as object recognition, segmentation and classification (LeCun et al., 1990; Jarrett et al., 2009; Turaga et al., 2010; Krizhevsky et al., 2012)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 166,
+                                "start": 148
+                            }
+                        ],
+                        "text": "\u2026be shown (see Figure 1) that the output plane size szm of the mth convolution or\npooling layer is computed as:\nszm = szm\u22121 \u2212 kWm\ndWm + 1 , (1)\nwhere sz0 is the input patch size, kWm is the size of the convolution (or pooling) kernels in themth layer, and dWm is the pixel step size used to slide\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2542741,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "86ab4cae682fbd49c5a5bedb630e5a40fa7529f6",
+            "isKey": false,
+            "numCitedBy": 2929,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present an application of back-propagation networks to handwritten digit recognition. Minimal preprocessing of the data was required, but architecture of the network was highly constrained and specifically designed for the task. The input of the network consists of normalized images of isolated digits. The method has 1% error rate and about a 9% reject rate on zipcode digits provided by the U.S. Postal Service."
+            },
+            "slug": "Handwritten-Digit-Recognition-with-a-Network-LeCun-Boser",
+            "title": {
+                "fragments": [],
+                "text": "Handwritten Digit Recognition with a Back-Propagation Network"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "Minimal preprocessing of the data was required, but architecture of the network was highly constrained and specifically designed for the task, and has 1% error rate and about a 9% reject rate on zipcode digits provided by the U.S. Postal Service."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40268570"
+                        ],
+                        "name": "A. J. Robinson",
+                        "slug": "A.-J.-Robinson",
+                        "structuredName": {
+                            "firstName": "Anthony",
+                            "lastName": "Robinson",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. J. Robinson"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally, in Section 3.3, we show how to infer the full scene labeling in an efficient manner."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 161,
+                                "start": 147
+                            }
+                        ],
+                        "text": "RNNs have been successfully applied to wide variety of tasks, including in natural language processing (Stoianov et al., 1997), speech processing (Robinson, 1994) and image processing (Graves & Schmidhuber, 2008)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14787570,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c6629770cb6a00ad585918e71fe6dbad829ad0d1",
+            "isKey": true,
+            "numCitedBy": 543,
+            "numCiting": 91,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents an application of recurrent networks for phone probability estimation in large vocabulary speech recognition. The need for efficient exploitation of context information is discussed; a role for which the recurrent net appears suitable. An overview of early developments of recurrent nets for phone recognition is given along with the more recent improvements that include their integration with Markov models. Recognition results are presented for the DARPA TIMIT and Resource Management tasks, and it is concluded that recurrent nets are competitive with traditional means for performing phone probability estimation."
+            },
+            "slug": "An-application-of-recurrent-nets-to-phone-Robinson",
+            "title": {
+                "fragments": [],
+                "text": "An application of recurrent nets to phone probability estimation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Recognition results are presented for the DARPA TIMIT and Resource Management tasks, and it is concluded that recurrent nets are competitive with traditional means for performing phone probability estimation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145576002"
+                        ],
+                        "name": "R. Pfeifer",
+                        "slug": "R.-Pfeifer",
+                        "structuredName": {
+                            "firstName": "Rolf",
+                            "lastName": "Pfeifer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Pfeifer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1399006281"
+                        ],
+                        "name": "F. Fogelman-Souli\u00e9",
+                        "slug": "F.-Fogelman-Souli\u00e9",
+                        "structuredName": {
+                            "firstName": "Fran\u00e7oise",
+                            "lastName": "Fogelman-Souli\u00e9",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Fogelman-Souli\u00e9"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145091664"
+                        ],
+                        "name": "L. Steels",
+                        "slug": "L.-Steels",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Steels",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Steels"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2330522"
+                        ],
+                        "name": "Z. Schreter",
+                        "slug": "Z.-Schreter",
+                        "structuredName": {
+                            "firstName": "Zoltan",
+                            "lastName": "Schreter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Z. Schreter"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 142978792,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "fdab8cf20425392b8d1b9654e68cebf1c230d35e",
+            "isKey": false,
+            "numCitedBy": 194,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Knowledge Representation and Memory. Perception and Action. Learning. Problem Solving and Reasoning. Trends, Research Programs. Abstracts, Work in Progress."
+            },
+            "slug": "Connectionism-in-Perspective-Pfeifer-Fogelman-Souli\u00e9",
+            "title": {
+                "fragments": [],
+                "text": "Connectionism in Perspective"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694621"
+                        ],
+                        "name": "Michael I. Jordan",
+                        "slug": "Michael-I.-Jordan",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jordan",
+                            "middleNames": [
+                                "I."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael I. Jordan"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 75
+                            }
+                        ],
+                        "text": "We formally introduce convolutional neural networks (CNNs) in Section 3.1 and we discuss how to capture long\nrange label dependencies with these types of models, while keeping a tight control over the capacity."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 12
+                            }
+                        ],
+                        "text": "Already in (Jordan, 1986), the network was fed (in a time series framework) with the input of the current time step, plus the output of the previous one."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 56723681,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d76aafbeb54575859441a442376766c597f6bb52",
+            "isKey": true,
+            "numCitedBy": 1102,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Attractor-dynamics-and-parallelism-in-a-sequential-Jordan",
+            "title": {
+                "fragments": [],
+                "text": "Attractor dynamics and parallelism in a connectionist sequential machine"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 58
+                            }
+                        ],
+                        "text": "A typical convolutional network is composed of multiple stages, as shown in Figure 1."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 42,
+                                "start": 31
+                            }
+                        ],
+                        "text": "Convolutional neural networks (LeCun, 1989) are a natural extension of neural networks for treating images."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 59861896,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "01b6affe3ea4eae1978aec54e87087feb76d9215",
+            "isKey": false,
+            "numCitedBy": 863,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Generalization-and-network-design-strategies-LeCun",
+            "title": {
+                "fragments": [],
+                "text": "Generalization and network design strategies"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1989
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 254,
+                                "start": 232
+                            }
+                        ],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features (Verbeek & Triggs, 2008; Gould et al., 2009; Liu et al., 2011; Kumar & Koller, 2010; Socher et al., 2011; Lempitsky et al., 2011; Tighe & Lazebnik, 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Superparsing - scalable non - parametric image parsing withsuperpixels"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 254,
+                                "start": 240
+                            }
+                        ],
+                        "text": "These models are then trained to maximize the likelihood of correct classification given the features (Verbeek & Triggs, 2008; Gould et al., 2009; Liu et al., 2011; Kumar & Koller, 2010; Socher et al., 2011; Lempitsky et al., 2011; Tighe & Lazebnik, 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Superparsing - scalable non - parametric image parsing withsuperpixels"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2013
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 12,
+            "methodology": 19
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 28,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Recurrent-Convolutional-Neural-Networks-for-Scene-Pinheiro-Collobert/1a9658c0b7bea22075c0ea3c229b8c70c1790153?sort=total-citations"
+}

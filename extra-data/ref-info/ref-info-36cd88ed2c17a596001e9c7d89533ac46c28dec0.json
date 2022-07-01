@@ -1,0 +1,3649 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2085375589"
+                        ],
+                        "name": "H. Schneiderman",
+                        "slug": "H.-Schneiderman",
+                        "structuredName": {
+                            "firstName": "Henry",
+                            "lastName": "Schneiderman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Schneiderman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733113"
+                        ],
+                        "name": "T. Kanade",
+                        "slug": "T.-Kanade",
+                        "structuredName": {
+                            "firstName": "Takeo",
+                            "lastName": "Kanade",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Kanade"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1060186,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bbe488bb190d75f4b665d43e306bcab1ab228890",
+            "isKey": false,
+            "numCitedBy": 459,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we describe an algorithm for object recognition that explicitly models and estimated the posterior probability function, P(object/image). We have chosen a functional form of the posterior probability function that captures the joint statistics of local appearance and position on the object as well as the statistics of local appearance in the visual world at large. We use a discrete representation of local appearance consisting of approximately 10/sup 6/ patterns. We compute an estimate of P(object/image) in closed form by counting the frequency of occurrence of these patterns over various sets of training images. We have used this method for detecting human faces from frontal and profile views. The algorithm for frontal views has shown a detection rate of 93.0% with 88 false alarms on a set of 125 images containing 483 faces combining the MIT test set of Sung and Poggio with the CMU test sets of Rowley, Baluja, and Kanade. The algorithm for detection of profile views has also demonstrated promising results."
+            },
+            "slug": "Probabilistic-modeling-of-local-appearance-and-for-Schneiderman-Kanade",
+            "title": {
+                "fragments": [],
+                "text": "Probabilistic modeling of local appearance and spatial relationships for object recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 73,
+                "text": "An algorithm for object recognition that explicitly models and estimated the posterior probability function, P(object/image) in closed form is described, which captures the joint statistics of local appearance and position on the object as well as the statistics ofLocal appearance in the visual world at large."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings. 1998 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (Cat. No.98CB36231)"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2721983"
+                        ],
+                        "name": "F. Fleuret",
+                        "slug": "F.-Fleuret",
+                        "structuredName": {
+                            "firstName": "Fran\u00e7ois",
+                            "lastName": "Fleuret",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Fleuret"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707642"
+                        ],
+                        "name": "D. Geman",
+                        "slug": "D.-Geman",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Geman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 140,
+                                "start": 117
+                            }
+                        ],
+                        "text": "Much object detection work uses a coarse-to-fine search heuristic to reduce computational time (Rowley et al., 1998; Geman and Flueret, 2001; Romdhani et al., 2001; Viola and Jones, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 80
+                            }
+                        ],
+                        "text": "Recent representative work includes Burl and Perona (1996), Burl et al. (1998), Geman and Flueret (2001), and Amit (2000), who use binary or deterministic representations of the parts."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6754141,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9b535f4edc4cbf8d4fb6182ec6b5c54db3c1cccb",
+            "isKey": false,
+            "numCitedBy": 339,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study visual selection: Detect and roughly localize all instances of a generic object class, such as a face, in a greyscale scene, measuring performance in terms of computation and false alarms. Our approach is sequential testing which is coarse-to-fine in both in the exploration of poses and the representation of objects. All the tests are binary and indicate the presence or absence of loose spatial arrangements of oriented edge fragments. Starting from training examples, we recursively find larger and larger arrangements which are \u201cdecomposable,\u201d which implies the probability of an arrangement appearing on an object decays slowly with its size. Detection means finding a sufficient number of arrangements of each size along a decreasing sequence of pose cells. At the beginning, the tests are simple and universal, accommodating many poses simultaneously, but the false alarm rate is relatively high. Eventually, the tests are more discriminating, but also more complex and dedicated to specific poses. As a result, the spatial distribution of processing is highly skewed and detection is rapid, but at the expense of (isolated) false alarms which, presumably, could be eliminated with localized, more intensive, processing."
+            },
+            "slug": "Coarse-to-Fine-Face-Detection-Fleuret-Geman",
+            "title": {
+                "fragments": [],
+                "text": "Coarse-to-Fine Face Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "The approach is sequential testing which is coarse-to-fine in both in the exploration of poses and the representation of objects, and the spatial distribution of processing is highly skewed and detection is rapid, but at the expense of (isolated) false alarms which could be eliminated with localized, more intensive, processing."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1731948"
+                        ],
+                        "name": "Paul A. Viola",
+                        "slug": "Paul-A.-Viola",
+                        "structuredName": {
+                            "firstName": "Paul",
+                            "lastName": "Viola",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Paul A. Viola"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145319478"
+                        ],
+                        "name": "Michael J. Jones",
+                        "slug": "Michael-J.-Jones",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jones",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael J. Jones"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 186,
+                                "start": 165
+                            }
+                        ],
+                        "text": "Much object detection work uses a coarse-to-fine search heuristic to reduce computational time (Rowley et al., 1998; Geman and Flueret, 2001; Romdhani et al., 2001; Viola and Jones, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2715202,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dc6ea0e30e46163b706f2f8bdc9c67ca87f83d63",
+            "isKey": false,
+            "numCitedBy": 17883,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes a machine learning approach for visual object detection which is capable of processing images extremely rapidly and achieving high detection rates. This work is distinguished by three key contributions. The first is the introduction of a new image representation called the \"integral image\" which allows the features used by our detector to be computed very quickly. The second is a learning algorithm, based on AdaBoost, which selects a small number of critical visual features from a larger set and yields extremely efficient classifiers. The third contribution is a method for combining increasingly more complex classifiers in a \"cascade\" which allows background regions of the image to be quickly discarded while spending more computation on promising object-like regions. The cascade can be viewed as an object specific focus-of-attention mechanism which unlike previous approaches provides statistical guarantees that discarded regions are unlikely to contain the object of interest. In the domain of face detection the system yields detection rates comparable to the best previous systems. Used in real-time applications, the detector runs at 15 frames per second without resorting to image differencing or skin color detection."
+            },
+            "slug": "Rapid-object-detection-using-a-boosted-cascade-of-Viola-Jones",
+            "title": {
+                "fragments": [],
+                "text": "Rapid object detection using a boosted cascade of simple features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "A machine learning approach for visual object detection which is capable of processing images extremely rapidly and achieving high detection rates and the introduction of a new image representation called the \"integral image\" which allows the features used by the detector to be computed very quickly."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2511655"
+                        ],
+                        "name": "M. Burl",
+                        "slug": "M.-Burl",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Burl",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Burl"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2110604335"
+                        ],
+                        "name": "Markus Weber",
+                        "slug": "Markus-Weber",
+                        "structuredName": {
+                            "firstName": "Markus",
+                            "lastName": "Weber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Markus Weber"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690922"
+                        ],
+                        "name": "P. Perona",
+                        "slug": "P.-Perona",
+                        "structuredName": {
+                            "firstName": "Pietro",
+                            "lastName": "Perona",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Perona"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 60
+                            }
+                        ],
+                        "text": "Recent representative work includes Burl and Perona (1996), Burl et al. (1998), Geman and Flueret (2001), and Amit (2000), who use binary or deterministic representations of the parts."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Burl et al. (1996, 1998) allow for flexibility through Gaussian models of part position."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11023003,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "102cf35af78c14019edfe28c8cd624da7d5b3fac",
+            "isKey": false,
+            "numCitedBy": 334,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many object classes, including human faces, can be modeled as a set of characteristic parts arranged in a variable spatial configuration. We introduce a simplified model of a deformable object class and derive the optimal detector for this model. However, the optimal detector is not realizable except under special circumstances (independent part positions). A cousin of the optimal detector is developed which uses \u201csoft\u201d part detectors with a probabilistic description of the spatial arrangement of the parts. Spatial arrangements are modeled probabilistically using shape statistics to achieve invariance to translation, rotation, and scaling. Improved recognition performance over methods based on \u201chard\u201d part detectors is demonstrated for the problem of face detection in cluttered scenes."
+            },
+            "slug": "A-Probabilistic-Approach-to-Object-Recognition-and-Burl-Weber",
+            "title": {
+                "fragments": [],
+                "text": "A Probabilistic Approach to Object Recognition Using Local Photometry and Global Geometry"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A simplified model of a deformable object class is introduced and the optimal detector for this model is derived, which is not realizable except under special circumstances (independent part positions)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48920094"
+                        ],
+                        "name": "B. Schiele",
+                        "slug": "B.-Schiele",
+                        "structuredName": {
+                            "firstName": "Bernt",
+                            "lastName": "Schiele",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Schiele"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145687022"
+                        ],
+                        "name": "J. Crowley",
+                        "slug": "J.-Crowley",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Crowley",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Crowley"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Schiele and Crowley (1996, 2000) use a probabilistic representation where probability is estimated over the response to Gaussian derivative filters."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 109,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Swain and Ballard (1991) have used them for object recognition by color, and Schiele and Crowley (1996, 2000) for representing the quantized output of Gaussian derivatives."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 729473,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b634b2001e3fb6159ab15d5375eb4f78213d1eee",
+            "isKey": false,
+            "numCitedBy": 193,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes a probabilistic object recognition technique which does not require correspondence matching of images. This technique is an extension of our earlier work (1996) on object recognition using matching of multi-dimensional receptive field histograms. In the earlier paper we have shown that multi-dimensional receptive field histograms can be matched to provide object recognition which is robust in the face of changes in viewing position and independent of image plane rotation and scale. In this paper we extend this method to compute the probability of the presence of an object in an image. The paper begins with a review of the method and previously presented experimental results. We then extend the method for histogram matching to obtain a genuine probability of the presence of an object. We present experimental results on a database of 100 objects showing that the approach is capable recognizing all objects correctly by using only a small portion of the image. Our results show that receptive field histograms provide a technique for object recognition which is robust, has low computational cost and a computational complexity which is linear with the number of pixels."
+            },
+            "slug": "Probabilistic-object-recognition-using-receptive-Schiele-Crowley",
+            "title": {
+                "fragments": [],
+                "text": "Probabilistic object recognition using multidimensional receptive field histograms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The method for histogram matching is extended to compute the probability of the presence of an object in an image and shows that receptive field histograms provide a technique for object recognition which is robust, has low computational cost and a computational complexity which is linear with the number of pixels."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of 13th International Conference on Pattern Recognition"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3293655"
+                        ],
+                        "name": "S. Romdhani",
+                        "slug": "S.-Romdhani",
+                        "structuredName": {
+                            "firstName": "Sami",
+                            "lastName": "Romdhani",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Romdhani"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143635539"
+                        ],
+                        "name": "P. Torr",
+                        "slug": "P.-Torr",
+                        "structuredName": {
+                            "firstName": "Philip",
+                            "lastName": "Torr",
+                            "middleNames": [
+                                "H.",
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Torr"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1707625"
+                        ],
+                        "name": "B. Sch\u00f6lkopf",
+                        "slug": "B.-Sch\u00f6lkopf",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Sch\u00f6lkopf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Sch\u00f6lkopf"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145162067"
+                        ],
+                        "name": "A. Blake",
+                        "slug": "A.-Blake",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Blake",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Blake"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 163,
+                                "start": 142
+                            }
+                        ],
+                        "text": "Much object detection work uses a coarse-to-fine search heuristic to reduce computational time (Rowley et al., 1998; Geman and Flueret, 2001; Romdhani et al., 2001; Viola and Jones, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1952800,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d87d04c221b4dadbacb5ba0778553fa0eafa6820",
+            "isKey": false,
+            "numCitedBy": 216,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes an algorithm for finding faces within an image. The basis of the algorithm is to run an observation window at all possible positions, scales and orientation within the image. A non-linear support vector machine is used to determine whether or not a face is contained within the observation window. The non-linear support vector machine operates by comparing the input patch to a set of support vectors (which can be thought of as face and anti-face templates). Each support vector is scored by some nonlinear function against the observation window and if the resulting sum is over some threshold a face is indicated. Because of the huge search space that is considered, it is imperative to investigate ways to speed up the support vector machine. Within this paper we suggest a method of speeding up the non-linear support vector machine. A set of reduced set vectors (RVs) are calculated from the support vectors. By considering the RV's sequentially, and if at any point a face is deemed too unlikely to cease the sequential evaluation, obviating the need to evaluate the remaining RVs. The idea being that we only need to apply a subset of the RVs to eliminate things that are obviously not a face (thus reducing the computation). The key then is to explore the RVs in the right order and a method for this is proposed."
+            },
+            "slug": "Computationally-efficient-face-detection-Romdhani-Torr",
+            "title": {
+                "fragments": [],
+                "text": "Computationally efficient face detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A method of speeding up the non-linear support vector machine by considering the RV's sequentially, and if at any point a face is deemed too unlikely to cease the sequential evaluation, obviating the need to evaluate the remaining RVs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48920094"
+                        ],
+                        "name": "B. Schiele",
+                        "slug": "B.-Schiele",
+                        "structuredName": {
+                            "firstName": "Bernt",
+                            "lastName": "Schiele",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Schiele"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145687022"
+                        ],
+                        "name": "J. Crowley",
+                        "slug": "J.-Crowley",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Crowley",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Crowley"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Schiele and Crowley (1996, 2000) use a probabilistic representation where probability is estimated over the response to Gaussian derivative filters."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 109,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Swain and Ballard (1991) have used them for object recognition by color, and Schiele and Crowley (1996, 2000) for representing the quantized output of Gaussian derivatives."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2551159,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bd232cf2ab28cc0ba06942875f14206f04ebbae0",
+            "isKey": false,
+            "numCitedBy": 496,
+            "numCiting": 109,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The appearance of an object is composed of local structure. This local structure can be described and characterized by a vector of local features measured by local operators such as Gaussian derivatives or Gabor filters. This article presents a technique where appearances of objects are represented by the joint statistics of such local neighborhood operators. As such, this represents a new class of appearance based techniques for computer vision. Based on joint statistics, the paper develops techniques for the identification of multiple objects at arbitrary positions and orientations in a cluttered scene. Experiments show that these techniques can identify over 100 objects in the presence of major occlusions. Most remarkably, the techniques have low complexity and therefore run in real-time."
+            },
+            "slug": "Recognition-without-Correspondence-using-Receptive-Schiele-Crowley",
+            "title": {
+                "fragments": [],
+                "text": "Recognition without Correspondence using Multidimensional Receptive Field Histograms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This article presents a technique where appearances of objects are represented by the joint statistics of such local neighborhood operators, which represents a new class of appearance based techniques for computer vision."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2511655"
+                        ],
+                        "name": "M. Burl",
+                        "slug": "M.-Burl",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Burl",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Burl"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690922"
+                        ],
+                        "name": "P. Perona",
+                        "slug": "P.-Perona",
+                        "structuredName": {
+                            "firstName": "Pietro",
+                            "lastName": "Perona",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Perona"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 58,
+                                "start": 36
+                            }
+                        ],
+                        "text": "Recent representative work includes Burl and Perona (1996), Burl et al. (1998), Geman and Flueret (2001), and Amit (2000), who use binary or deterministic representations of the parts."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9204636,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "044779db85dc83e2633951791b29bc311cfbae53",
+            "isKey": false,
+            "numCitedBy": 133,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new framework for recognizing planar object classes, which is based on local feature detectors and a probabilistic model of the spatial arrangement of the features. The allowed object deformations are represented through shape statistics, which are learned from examples. Instances of an object in an image are detected by finding the appropriate features in the correct spatial configuration. The algorithm is robust with respect to partial occlusion, detector false alarms, and missed features. A 94% success rate was achieved for the problem of locating quasi-frontal views of faces in cluttered scenes."
+            },
+            "slug": "Recognition-of-planar-object-classes-Burl-Perona",
+            "title": {
+                "fragments": [],
+                "text": "Recognition of planar object classes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 94,
+                "text": "A new framework for recognizing planar object classes is presented, which is based on local feature detectors and a probabilistic model of the spatial arrangement of the features, and the allowed object deformations are represented through shape statistics, which are learned from examples."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings CVPR IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35146156"
+                        ],
+                        "name": "M. Lades",
+                        "slug": "M.-Lades",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Lades",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Lades"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3189439"
+                        ],
+                        "name": "J. Vorbr\u00fcggen",
+                        "slug": "J.-Vorbr\u00fcggen",
+                        "structuredName": {
+                            "firstName": "Jan",
+                            "lastName": "Vorbr\u00fcggen",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Vorbr\u00fcggen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1682548"
+                        ],
+                        "name": "J. Buhmann",
+                        "slug": "J.-Buhmann",
+                        "structuredName": {
+                            "firstName": "Joachim",
+                            "lastName": "Buhmann",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Buhmann"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2075388397"
+                        ],
+                        "name": "J. Lange",
+                        "slug": "J.-Lange",
+                        "structuredName": {
+                            "firstName": "J\u00f6rg",
+                            "lastName": "Lange",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Lange"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1704573"
+                        ],
+                        "name": "C. Malsburg",
+                        "slug": "C.-Malsburg",
+                        "structuredName": {
+                            "firstName": "Christoph",
+                            "lastName": "Malsburg",
+                            "middleNames": [
+                                "von",
+                                "der"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Malsburg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3038814"
+                        ],
+                        "name": "R. W\u00fcrtz",
+                        "slug": "R.-W\u00fcrtz",
+                        "structuredName": {
+                            "firstName": "Rolf",
+                            "lastName": "W\u00fcrtz",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. W\u00fcrtz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34993891"
+                        ],
+                        "name": "W. Konen",
+                        "slug": "W.-Konen",
+                        "structuredName": {
+                            "firstName": "Wolfgang",
+                            "lastName": "Konen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Konen"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Lades et al. (1993) and Wiskott et al. (1997) allow for flexibility through a flexible graph."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1266405,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4fb52984078d75ec5655962dc94dc7848182286b",
+            "isKey": false,
+            "numCitedBy": 2069,
+            "numCiting": 65,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "An object recognition system based on the dynamic link architecture, an extension to classical artificial neural networks (ANNs), is presented. The dynamic link architecture exploits correlations in the fine-scale temporal structure of cellular signals to group neurons dynamically into higher-order entities. These entities represent a rich structure and can code for high-level objects. To demonstrate the capabilities of the dynamic link architecture, a program was implemented that can recognize human faces and other objects from video images. Memorized objects are represented by sparse graphs, whose vertices are labeled by a multiresolution description in terms of a local power spectrum, and whose edges are labeled by geometrical distance vectors. Object recognition can be formulated as elastic graph matching, which is performed here by stochastic optimization of a matching cost function. The implementation on a transputer network achieved recognition of human faces and office objects from gray-level camera images. The performance of the program is evaluated by a statistical analysis of recognition results from a portrait gallery comprising images of 87 persons. >"
+            },
+            "slug": "Distortion-Invariant-Object-Recognition-in-the-Link-Lades-Vorbr\u00fcggen",
+            "title": {
+                "fragments": [],
+                "text": "Distortion Invariant Object Recognition in the Dynamic Link Architecture"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "An object recognition system based on the dynamic link architecture, an extension to classical artificial neural networks (ANNs), is presented and the implementation on a transputer network achieved recognition of human faces and office objects from gray-level camera images."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Computers"
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2987811"
+                        ],
+                        "name": "M. Swain",
+                        "slug": "M.-Swain",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Swain",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Swain"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1691804"
+                        ],
+                        "name": "D. Ballard",
+                        "slug": "D.-Ballard",
+                        "structuredName": {
+                            "firstName": "Dana",
+                            "lastName": "Ballard",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ballard"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Swain and Ballard (1991) have used them for object recognition by color, and Schiele and Crowley (1996, 2000) for representing the quantized output of Gaussian derivatives."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8167136,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5b1e1696564e5a3021ac3a501c9deeb6c0fbc637",
+            "isKey": false,
+            "numCitedBy": 5039,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Computer vision is embracing a new research focus in which the aim is to develop visual skills for robots that allow them to interact with a dynamic, realistic environment. To achieve this aim, new kinds of vision algorithms need to be developed which run in real time and subserve the robot's goals. Two fundamental goals are determining the location of a known object. Color can be successfully used for both tasks.This article demonstrates that color histograms of multicolored objects provide a robust, efficient cue for indexing into a large database of models. It shows that color histograms are stable object representations in the presence of occlusion and over change in view, and that they can differentiate among a large number of objects. For solving the identification problem, it introduces a technique calledHistogram Intersection, which matches model and image histograms and a fast incremental version of Histogram Intersection, which allows real-time indexing into a large database of stored models. For solving the location problem it introduces an algorithm calledHistogram Backprojection, which performs this task efficiently in crowded scenes."
+            },
+            "slug": "Color-indexing-Swain-Ballard",
+            "title": {
+                "fragments": [],
+                "text": "Color indexing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "It is demonstrated that color histograms of multicolored objects provide a robust, efficient cue for indexing into a large database of models and that they can differentiate among a large number of objects."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38817267"
+                        ],
+                        "name": "K. Sung",
+                        "slug": "K.-Sung",
+                        "structuredName": {
+                            "firstName": "Kah",
+                            "lastName": "Sung",
+                            "middleNames": [
+                                "Kay"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Sung"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685292"
+                        ],
+                        "name": "T. Poggio",
+                        "slug": "T.-Poggio",
+                        "structuredName": {
+                            "firstName": "Tomaso",
+                            "lastName": "Poggio",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Poggio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 7164794,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "088eb2d102c6bb486f5270d0b2adff76961994cf",
+            "isKey": false,
+            "numCitedBy": 2061,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present an example-based learning approach for locating vertical frontal views of human faces in complex scenes. The technique models the distribution of human face patterns by means of a few view-based \"face\" and \"nonface\" model clusters. At each image location, a difference feature vector is computed between the local image pattern and the distribution-based model. A trained classifier determines, based on the difference feature vector measurements, whether or not a human face exists at the current image location. We show empirically that the distance metric we adopt for computing difference feature vectors, and the \"nonface\" clusters we include in our distribution-based model, are both critical for the success of our system."
+            },
+            "slug": "Example-Based-Learning-for-View-Based-Human-Face-Sung-Poggio",
+            "title": {
+                "fragments": [],
+                "text": "Example-Based Learning for View-Based Human Face Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "An example-based learning approach for locating vertical frontal views of human faces in complex scenes and shows empirically that the distance metric adopted for computing difference feature vectors, and the \"nonface\" clusters included in the distribution-based model, are both critical for the success of the system."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "4801654"
+                        ],
+                        "name": "Y. Amit",
+                        "slug": "Y.-Amit",
+                        "structuredName": {
+                            "firstName": "Yali",
+                            "lastName": "Amit",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Amit"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 110
+                            }
+                        ],
+                        "text": "Recent representative work includes Burl and Perona (1996), Burl et al. (1998), Geman and Flueret (2001), and Amit (2000), who use binary or deterministic representations of the parts."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1390011,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "62ccf3020ac41088b39c3982d119752b0ba6b261",
+            "isKey": false,
+            "numCitedBy": 34,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article describes a parallel neural net architecture for efficient and robust visual selection in generic gray-level images. Objects are represented through flexible star-type planar arrangements of binary local features which are in turn star-type planar arrangements of oriented edges. Candidate locations are detected over a range of scales and other deformations, using a generalized Hough transform. The flexibility of the arrangements provides the required invariance. Training involves selecting a small number of stable local features from a predefined pool, which are well localized on registered examples of the object. Training therefore requires only small data sets. The parallel architecture is constructed so that the Hough transform associated with any object can be implemented without creating or modifying any connections. The different object representations are learned and stored in a central module. When one of these representations is evoked, it primes the appropriate layers in the network so that the corresponding Hough transform is computed. Analogies between the different layers in the network and those in the visual system are discussed. Furthermore, the model can be used to explain certain experiments on visual selection reported in the literature."
+            },
+            "slug": "A-Neural-Network-Architecture-for-Visual-Selection-Amit",
+            "title": {
+                "fragments": [],
+                "text": "A Neural Network Architecture for Visual Selection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 64,
+                "text": "A parallel neural net architecture for efficient and robust visual selection in generic gray-level images, constructed so that the Hough transform associated with any object can be implemented without creating or modifying any connections."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1736245"
+                        ],
+                        "name": "Laurenz Wiskott",
+                        "slug": "Laurenz-Wiskott",
+                        "structuredName": {
+                            "firstName": "Laurenz",
+                            "lastName": "Wiskott",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Laurenz Wiskott"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145893752"
+                        ],
+                        "name": "J. Fellous",
+                        "slug": "J.-Fellous",
+                        "structuredName": {
+                            "firstName": "Jean-Marc",
+                            "lastName": "Fellous",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Fellous"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721722"
+                        ],
+                        "name": "N. Kr\u00fcger",
+                        "slug": "N.-Kr\u00fcger",
+                        "structuredName": {
+                            "firstName": "Norbert",
+                            "lastName": "Kr\u00fcger",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Kr\u00fcger"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1704573"
+                        ],
+                        "name": "C. Malsburg",
+                        "slug": "C.-Malsburg",
+                        "structuredName": {
+                            "firstName": "Christoph",
+                            "lastName": "Malsburg",
+                            "middleNames": [
+                                "von",
+                                "der"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Malsburg"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 24
+                            }
+                        ],
+                        "text": "Lades et al. (1993) and Wiskott et al. (1997) allow for flexibility through a flexible graph."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10223132,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5c27487c3e0894b65e976a287e6f8c9aa40f089c",
+            "isKey": false,
+            "numCitedBy": 2135,
+            "numCiting": 89,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a system for recognizing human faces from single images out of a large database containing one image per person. Faces are represented by labeled graphs, based on a Gabor wavelet transform. Image graphs of new faces are extracted by an elastic graph matching process and can be compared by a simple similarity function. The system differs from Lades et al. (1993) in three respects. Phase information is used for accurate node positioning. Object-adapted graphs are used to handle large rotations in depth. Image graph extraction is based on a novel data structure, the bunch graph, which is constructed from a small set of sample image graphs."
+            },
+            "slug": "Face-recognition-by-elastic-bunch-graph-matching-Wiskott-Fellous",
+            "title": {
+                "fragments": [],
+                "text": "Face recognition by elastic bunch graph matching"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 74,
+                "text": "A system for recognizing human faces from single images out of a large database containing one image per person, based on a Gabor wavelet transform, which differs from Lades et al. (1993) in three respects."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of International Conference on Image Processing"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1715634"
+                        ],
+                        "name": "Ming-Hsuan Yang",
+                        "slug": "Ming-Hsuan-Yang",
+                        "structuredName": {
+                            "firstName": "Ming-Hsuan",
+                            "lastName": "Yang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ming-Hsuan Yang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144590225"
+                        ],
+                        "name": "D. Roth",
+                        "slug": "D.-Roth",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Roth",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Roth"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145237406"
+                        ],
+                        "name": "N. Ahuja",
+                        "slug": "N.-Ahuja",
+                        "structuredName": {
+                            "firstName": "Narendra",
+                            "lastName": "Ahuja",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Ahuja"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1709452,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "23234a0f211a44d9706b2570d474427b8f899ec1",
+            "isKey": false,
+            "numCitedBy": 354,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A novel learning approach for human face detection using a network of linear units is presented. The SNoW learning architecture is a sparse network of linear functions over a pre-defined or incrementally learned feature space and is specifically tailored for learning in the presence of a very large number of features. A wide range of face images in different poses, with different expressions and under different lighting conditions are used as a training set to capture the variations of human faces. Experimental results on commonly used benchmark data sets of a wide range of face images show that the SNoW-based approach outperforms methods that use neural networks, Bayesian methods, support vector machines and others. Furthermore, learning and evaluation using the SNoW-based method are significantly more efficient than with other methods."
+            },
+            "slug": "A-SNoW-Based-Face-Detector-Yang-Roth",
+            "title": {
+                "fragments": [],
+                "text": "A SNoW-Based Face Detector"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "Experimental results on commonly used benchmark data sets of a wide range of face images show that the SNoW-based approach outperforms methods that use neural networks, Bayesian methods, support vector machines and others."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1781874"
+                        ],
+                        "name": "E. Osuna",
+                        "slug": "E.-Osuna",
+                        "structuredName": {
+                            "firstName": "Edgar",
+                            "lastName": "Osuna",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Osuna"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1771659"
+                        ],
+                        "name": "R. Freund",
+                        "slug": "R.-Freund",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Freund",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Freund"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1804489"
+                        ],
+                        "name": "F. Girosi",
+                        "slug": "F.-Girosi",
+                        "structuredName": {
+                            "firstName": "Federico",
+                            "lastName": "Girosi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Girosi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2845602,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9008cdacbdcff8a218a6928e94fe7c6dfc237b24",
+            "isKey": false,
+            "numCitedBy": 2841,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We investigate the application of Support Vector Machines (SVMs) in computer vision. SVM is a learning technique developed by V. Vapnik and his team (AT&T Bell Labs., 1985) that can be seen as a new method for training polynomial, neural network, or Radial Basis Functions classifiers. The decision surfaces are found by solving a linearly constrained quadratic programming problem. This optimization problem is challenging because the quadratic form is completely dense and the memory requirements grow with the square of the number of data points. We present a decomposition algorithm that guarantees global optimality, and can be used to train SVM's over very large data sets. The main idea behind the decomposition is the iterative solution of sub-problems and the evaluation of optimality conditions which are used both to generate improved iterative values, and also establish the stopping criteria for the algorithm. We present experimental results of our implementation of SVM, and demonstrate the feasibility of our approach on a face detection problem that involves a data set of 50,000 data points."
+            },
+            "slug": "Training-support-vector-machines:-an-application-to-Osuna-Freund",
+            "title": {
+                "fragments": [],
+                "text": "Training support vector machines: an application to face detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A decomposition algorithm that guarantees global optimality, and can be used to train SVM's over very large data sets is presented, and the feasibility of the approach on a face detection problem that involves a data set of 50,000 data points is demonstrated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39682833"
+                        ],
+                        "name": "H. Rowley",
+                        "slug": "H.-Rowley",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Rowley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Rowley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1767244"
+                        ],
+                        "name": "S. Baluja",
+                        "slug": "S.-Baluja",
+                        "structuredName": {
+                            "firstName": "Shumeet",
+                            "lastName": "Baluja",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Baluja"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733113"
+                        ],
+                        "name": "T. Kanade",
+                        "slug": "T.-Kanade",
+                        "structuredName": {
+                            "firstName": "Takeo",
+                            "lastName": "Kanade",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Kanade"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 13,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Rowley, 1999) Schneiderman and Kanade (using AdaBoost)\nDetection False \u03b3 Detection Detection False ("
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 40120983,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3d76ef8e61395a6e9c32627f1f108772d084e2e9",
+            "isKey": false,
+            "numCitedBy": 4156,
+            "numCiting": 134,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a neural network-based face detection system. A retinally connected neural network examines small windows of an image and decides whether each window contains a face. The system arbitrates between multiple networks to improve performance over a single network. We use a bootstrap algorithm for training the networks, which adds false detections into the training set as training progresses. This eliminates the difficult task of manually selecting non-face training examples, which must be chosen to span the entire space of non-face images. Comparisons with other state-of-the-art face detection systems are presented; our system has better performance in terms of detection and false-positive rates."
+            },
+            "slug": "Neural-network-based-face-detection-Rowley-Baluja",
+            "title": {
+                "fragments": [],
+                "text": "Neural Network-Based Face Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "A neural network-based face detection system that arbitrates between multiple networks to improve performance over a single network using a bootstrap algorithm, which eliminates the difficult task of manually selecting non-face training examples."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49649079"
+                        ],
+                        "name": "D. Field",
+                        "slug": "D.-Field",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Field",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Field"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14659058,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "992c10fb6aa8ff278d33b7d7bf05acd41133ddf0",
+            "isKey": false,
+            "numCitedBy": 129,
+            "numCiting": 55,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The processing of spatial information by the visual system shows a number of similarities to the wavelet transforms that have become popular in applied mathematics. Over the last decade, a range of studies have focused on the question of \u2018why\u2019 the visual system would evolve this strategy of coding spatial information. One such approach has focused on the relationship between the visual code and the statistics of natural scenes under the assumption that the visual system has evolved this strategy as a means of optimizing the representation of its visual environment. This paper reviews some of this literature and looks at some of the statistical properties of natural scenes that allow this code to be efficient. It is argued that such wavelet codes are efficient because they increase the independence of the vectors' outputs (i.e. they increase the independence of the responses of the visual neurons) by finding the sparse structure available in the input. Studies with neural networks that attempt to maximize the \u2018sparsity\u2019 of the representation have been shown to produce vectors (neural receptive fields) that have many of the properties of a wavelet representation. It is argued that the visual environment has the appropriate sparse structure to make this sparse output possible. It is argued that these sparse/independent representations make it computationally easier to detect and represent the higher\u2013order structure present in complex environmental data."
+            },
+            "slug": "Wavelets,-vision-and-the-statistics-of-natural-Field",
+            "title": {
+                "fragments": [],
+                "text": "Wavelets, vision and the statistics of natural scenes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "This paper reviews some of the statistical properties of natural scenes that allow the visual code to be efficient and argues that such wavelet codes are efficient because they increase the independence of the vectors' outputs by finding the sparse structure available in the input."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Philosophical Transactions of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740213"
+                        ],
+                        "name": "Pedro M. Domingos",
+                        "slug": "Pedro-M.-Domingos",
+                        "structuredName": {
+                            "firstName": "Pedro",
+                            "lastName": "Domingos",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pedro M. Domingos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694780"
+                        ],
+                        "name": "M. Pazzani",
+                        "slug": "M.-Pazzani",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Pazzani",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Pazzani"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 27,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Domingos and Pazzani (1997) have demonstrated that the na\u0131\u0308ve Bayes classifier performs surprisingly well in a number of classification problems, even when there is significant statistical dependency among the independently modeled components."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 77139,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "700666f0c59a4fedc8b08294424c47cb99a8e2ff",
+            "isKey": false,
+            "numCitedBy": 3124,
+            "numCiting": 59,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The simple Bayesian classifier is known to be optimal when attributes are independent given the class, but the question of whether other sufficient conditions for its optimality exist has so far not been explored. Empirical results showing that it performs surprisingly well in many domains containing clear attribute dependences suggest that the answer to this question may be positive. This article shows that, although the Bayesian classifier's probability estimates are only optimal under quadratic loss if the independence assumption holds, the classifier itself can be optimal under zero-one loss (misclassification rate) even when this assumption is violated by a wide margin. The region of quadratic-loss optimality of the Bayesian classifier is in fact a second-order infinitesimal fraction of the region of zero-one optimality. This implies that the Bayesian classifier has a much greater range of applicability than previously thought. For example, in this article it is shown to be optimal for learning conjunctions and disjunctions, even though they violate the independence assumption. Further, studies in artificial domains show that it will often outperform more powerful classifiers for common training set sizes and numbers of attributes, even if its bias is a priori much less appropriate to the domain. This article's results also imply that detecting attribute dependence is not necessarily the best way to extend the Bayesian classifier, and this is also verified empirically."
+            },
+            "slug": "On-the-Optimality-of-the-Simple-Bayesian-Classifier-Domingos-Pazzani",
+            "title": {
+                "fragments": [],
+                "text": "On the Optimality of the Simple Bayesian Classifier under Zero-One Loss"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "The Bayesian classifier is shown to be optimal for learning conjunctions and disjunctions, even though they violate the independence assumption, and will often outperform more powerful classifiers for common training set sizes and numbers of attributes, even if its bias is a priori much less appropriate to the domain."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Machine Learning"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2056570941"
+                        ],
+                        "name": "Rui Shi",
+                        "slug": "Rui-Shi",
+                        "structuredName": {
+                            "firstName": "Rui",
+                            "lastName": "Shi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rui Shi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2113268317"
+                        ],
+                        "name": "W. Zeng",
+                        "slug": "W.-Zeng",
+                        "structuredName": {
+                            "firstName": "Wei",
+                            "lastName": "Zeng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Zeng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3154357"
+                        ],
+                        "name": "Zhengyu Su",
+                        "slug": "Zhengyu-Su",
+                        "structuredName": {
+                            "firstName": "Zhengyu",
+                            "lastName": "Su",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhengyu Su"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2149533120"
+                        ],
+                        "name": "Jian Jiang",
+                        "slug": "Jian-Jiang",
+                        "structuredName": {
+                            "firstName": "Jian",
+                            "lastName": "Jiang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jian Jiang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144027810"
+                        ],
+                        "name": "H. Damasio",
+                        "slug": "H.-Damasio",
+                        "structuredName": {
+                            "firstName": "Hanna",
+                            "lastName": "Damasio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Damasio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "30460080"
+                        ],
+                        "name": "Zhonglin Lu",
+                        "slug": "Zhonglin-Lu",
+                        "structuredName": {
+                            "firstName": "Zhonglin",
+                            "lastName": "Lu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhonglin Lu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33973920"
+                        ],
+                        "name": "Yalin Wang",
+                        "slug": "Yalin-Wang",
+                        "structuredName": {
+                            "firstName": "Yalin",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yalin Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "116303595"
+                        ],
+                        "name": "S. Yau",
+                        "slug": "S.-Yau",
+                        "structuredName": {
+                            "firstName": "Shing-Tung",
+                            "lastName": "Yau",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Yau"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145560807"
+                        ],
+                        "name": "X. Gu",
+                        "slug": "X.-Gu",
+                        "structuredName": {
+                            "firstName": "Xianfeng",
+                            "lastName": "Gu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Gu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 17229197,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "208ebe27e70640de8a94f0638fb13bfda71cd943",
+            "isKey": false,
+            "numCitedBy": 1069,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Automatic computation of surface correspondence via harmonic map is an active research field in computer vision, computer graphics and computational geometry. It may help document and understand physical and biological phenomena and also has broad applications in biometrics, medical imaging and motion capture inducstries. Although numerous studies have been devoted to harmonic map research, limited progress has been made to compute a diffeomorphic harmonic map on general topology surfaces with landmark constraints. This work conquers this problem by changing the Riemannian metric on the target surface to a hyperbolic metric so that the harmonic mapping is guaranteed to be a diffeomorphism under landmark constraints. The computational algorithms are based on Ricci flow and nonlinear heat diffusion methods. The approach is general and robust. We employ our algorithm to study the constrained surface registration problem which applies to both computer vision and medical imaging applications. Experimental results demonstrate that, by changing the Riemannian metric, the registrations are always diffeomorphic and achieve relatively high performance when evaluated with some popular surface registration evaluation standards."
+            },
+            "slug": "IEEE-TRANSACTIONS-ON-PATTERN-ANALYSIS-AND-MACHINE-Shi-Zeng",
+            "title": {
+                "fragments": [],
+                "text": "IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work conquers the constrained surface registration problem by changing the Riemannian metric on the target surface to a hyperbolic metric so that the harmonic mapping is guaranteed to be a diffeomorphism under landmark constraints."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716301"
+                        ],
+                        "name": "R. Schapire",
+                        "slug": "R.-Schapire",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Schapire",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schapire"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 160,
+                                "start": 136
+                            }
+                        ],
+                        "text": "We trained each classifier to minimize classification error on the training set by using Adaboost with Confidence-Weighted Predictions (Shapire and Singer, 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 214,
+                                "start": 183
+                            }
+                        ],
+                        "text": "AdaBoost then takes a weighted sum of these classifiers as the final classifier H (x):\nH (x) = sign (\nT\u2211 t=1 \u03b1t ht (x)\n) (11)\nBoth the standard AdaBoost algorithm and the AdaBoost with Confidence Weighted Predictions algorithm determine each \u03b1t as a function of the accuracy of ht (x) on the training data, but differ in how they do this."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 56
+                            }
+                        ],
+                        "text": "For this purpose, we use the algorithm of AdaBoost with Confidence Weighted Predictions, a modification of standard AdaBoost (Freund and Shapire, 1997)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 98
+                            }
+                        ],
+                        "text": "We chose to use a unique training method involving Adaboost with Confidence Weighted Predictions (Shapire and Singer, 1999) that guarantees to minimize an upper bound on the classification error on the training set."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 124,
+                                "start": 100
+                            }
+                        ],
+                        "text": "In Section 3.4, we will explain how the technique of AdaBoost with Confidence Weighted Predictions (Shapire and Singer, 1999) partially compensates for such deficiency by weighting the training samples such that the resulting classifier minimizes classification error on the training set."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 255,
+                                "start": 231
+                            }
+                        ],
+                        "text": "We will discuss both a basic training algorithm by which we estimated each table separately and an alternative training procedure that minimizes a classification error criterion using AdaBoost with Confidence Weighted Predictions (Shapire and Singer, 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2329907,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9a9309e056272ff2076f447df8dbc536f46fc466",
+            "isKey": true,
+            "numCitedBy": 1918,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe several improvements to Freund and Schapire's AdaBoost boosting algorithm, particularly in a setting in which hypotheses may assign confidences to each of their predictions. We give a simplified analysis of AdaBoost in this setting, and we show how this analysis can be used to find improved parameter settings as well as a refined criterion for training weak hypotheses. We give a specific method for assigning confidences to the predictions of decision trees, a method closely related to one used by Quinlan. This method also suggests a technique for growing decision trees which turns out to be identical to one proposed by Kearns and Mansour. We focus next on how to apply the new boosting algorithms to multiclass classification problems, particularly to the multi-label case in which each example may belong to more than one class. We give two boosting methods for this problem, plus a third method based on output coding. One of these leads to a new method for handling the single-label case which is simpler but as effective as techniques suggested by Freund and Schapire. Finally, we give some experimental results comparing a few of the algorithms discussed in this paper."
+            },
+            "slug": "Improved-Boosting-Algorithms-Using-Confidence-rated-Schapire-Singer",
+            "title": {
+                "fragments": [],
+                "text": "Improved Boosting Algorithms Using Confidence-rated Predictions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 92,
+                "text": "Several improvements to Freund and Schapire's AdaBoost boosting algorithm are described, particularly in a setting in which hypotheses may assign confidences to each of their predictions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT' 98"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763529"
+                        ],
+                        "name": "P. Cosman",
+                        "slug": "P.-Cosman",
+                        "structuredName": {
+                            "firstName": "Pamela",
+                            "lastName": "Cosman",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Cosman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144790332"
+                        ],
+                        "name": "R. Gray",
+                        "slug": "R.-Gray",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Gray",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Gray"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145876744"
+                        ],
+                        "name": "M. Vetterli",
+                        "slug": "M.-Vetterli",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Vetterli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Vetterli"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 9307657,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "a2531a801a1df4e65f53794bb56b52718b6dc472",
+            "isKey": false,
+            "numCitedBy": 210,
+            "numCiting": 209,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Subband and wavelet decompositions are powerful tools in image coding because of their decorrelating effects on image pixels, the concentration of energy in a few coefficients, their multirate/multiresolution framework, and their frequency splitting, which allows for efficient coding matched to the statistics of each frequency band and to the characteristics of the human visual system. Vector quantization (VQ) provides a means of converting the decomposed signal into bits in a manner that takes advantage of remaining inter and intraband correlation as well as of the more flexible partitions of higher dimensional vector spaces. Since 1988, a growing body of research has examined the use of VQ for subband/wavelet transform coefficients. We present a survey of these methods."
+            },
+            "slug": "Vector-quantization-of-image-subbands:-a-survey-Cosman-Gray",
+            "title": {
+                "fragments": [],
+                "text": "Vector quantization of image subbands: a survey"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Image Process."
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1703537"
+                        ],
+                        "name": "Y. Freund",
+                        "slug": "Y.-Freund",
+                        "structuredName": {
+                            "firstName": "Yoav",
+                            "lastName": "Freund",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Freund"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716301"
+                        ],
+                        "name": "R. Schapire",
+                        "slug": "R.-Schapire",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Schapire",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schapire"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "AdaBoost then takes a weighted sum of these classifiers as the final classifier H (x):\nH (x) = sign (\nT\u2211 t=1 \u03b1t ht (x)\n) (11)\nBoth the standard AdaBoost algorithm and the AdaBoost with Confidence Weighted Predictions algorithm determine each \u03b1t as a function of the accuracy of ht (x) on the training data, but differ in how they do this."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 126
+                            }
+                        ],
+                        "text": "For this purpose, we use the algorithm of AdaBoost with Confidence Weighted Predictions, a modification of standard AdaBoost (Freund and Shapire, 1997)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 9,
+                                "start": 1
+                            }
+                        ],
+                        "text": "\u2022 AdaBoost to weight training examples\nTo build the overall classifier, we could separately estimate Pr (partr | non-object) and Pr (partr | object), and plug them into the likelihood ratio test, Eq."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 11,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In AdaBoost with Confidence Weighted, \u03b1t can be determined by a binary search that minimizes a function of the margin.5 Both algorithms guarantee that the final classifier satisfies a bound on the classification error on the training set."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 30
+                            }
+                        ],
+                        "text": "This modification of standard AdaBoost allows for the base classifier to output a continuous value, proportional to confidence, rather than a binary classification as in the standard formulation."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 29
+                            }
+                        ],
+                        "text": "It is not well understood if AdaBoost is susceptible to overfitting as the number of iterations increase."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 46
+                            }
+                        ],
+                        "text": "(Rowley, 1999) Schneiderman and Kanade (using AdaBoost)\nDetection False \u03b3 Detection Detection False ("
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 53
+                            }
+                        ],
+                        "text": "In Section 3.4, we will explain how the technique of AdaBoost with Confidence Weighted Predictions (Shapire and Singer, 1999) partially compensates for such deficiency by weighting the training samples such that the resulting classifier minimizes classification error on the training set."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 35,
+                                "start": 27
+                            }
+                        ],
+                        "text": "One of the issues in using AdaBoost is when to stop the iteration."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 192,
+                                "start": 184
+                            }
+                        ],
+                        "text": "We will discuss both a basic training algorithm by which we estimated each table separately and an alternative training procedure that minimizes a classification error criterion using AdaBoost with Confidence Weighted Predictions (Shapire and Singer, 1999)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "AdaBoost, in general, works by sequentially training multiple instances h1(x), h2(x), . . . , hT (x) of a base\nclassifier h(x)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 6644398,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ccf5208521cb8c35f50ee8873df89294b8ed7292",
+            "isKey": true,
+            "numCitedBy": 13123,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the first part of the paper we consider the problem of dynamically apportioning resources among a set of options in a worst-case on-line framework. The model we study can be interpreted as a broad, abstract extension of the well-studied on-line prediction model to a general decision-theoretic setting. We show that the multiplicative weight-update Littlestone?Warmuth rule can be adapted to this model, yielding bounds that are slightly weaker in some cases, but applicable to a considerably more general class of learning problems. We show how the resulting learning algorithm can be applied to a variety of problems, including gambling, multiple-outcome prediction, repeated games, and prediction of points in Rn. In the second part of the paper we apply the multiplicative weight-update technique to derive a new boosting algorithm. This boosting algorithm does not require any prior knowledge about the performance of the weak learning algorithm. We also study generalizations of the new boosting algorithm to the problem of learning functions whose range, rather than being binary, is an arbitrary finite set or a bounded segment of the real line."
+            },
+            "slug": "A-decision-theoretic-generalization-of-on-line-and-Freund-Schapire",
+            "title": {
+                "fragments": [],
+                "text": "A decision-theoretic generalization of on-line learning and an application to boosting"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 61,
+                "text": "The model studied can be interpreted as a broad, abstract extension of the well-studied on-line prediction model to a general decision-theoretic setting, and it is shown that the multiplicative weight-update Littlestone?Warmuth rule can be adapted to this model, yielding bounds that are slightly weaker in some cases, but applicable to a considerably more general class of learning problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EuroCOLT"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145115014"
+                        ],
+                        "name": "Corinna Cortes",
+                        "slug": "Corinna-Cortes",
+                        "structuredName": {
+                            "firstName": "Corinna",
+                            "lastName": "Cortes",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Corinna Cortes"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50560492"
+                        ],
+                        "name": "V. Vapnik",
+                        "slug": "V.-Vapnik",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Vapnik",
+                            "middleNames": [
+                                "Naumovich"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Vapnik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 206,
+                                "start": 183
+                            }
+                        ],
+                        "text": "This re-weighting of the training examples is analogous to the way support vector machines identify the training examples that directly affect the placement of the decision boundary (Cortes and Vapnik, 1995)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 52874011,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "52b7bf3ba59b31f362aa07f957f1543a29a4279e",
+            "isKey": false,
+            "numCitedBy": 33429,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The support-vector network is a new learning machine for two-group classification problems. The machine conceptually implements the following idea: input vectors are non-linearly mapped to a very high-dimension feature space. In this feature space a linear decision surface is constructed. Special properties of the decision surface ensures high generalization ability of the learning machine. The idea behind the support-vector network was previously implemented for the restricted case where the training data can be separated without errors. We here extend this result to non-separable training data.High generalization ability of support-vector networks utilizing polynomial input transformations is demonstrated. We also compare the performance of the support-vector network to various classical learning algorithms that all took part in a benchmark study of Optical Character Recognition."
+            },
+            "slug": "Support-Vector-Networks-Cortes-Vapnik",
+            "title": {
+                "fragments": [],
+                "text": "Support-Vector Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "High generalization ability of support-vector networks utilizing polynomial input transformations is demonstrated and the performance of the support- vector network is compared to various classical learning algorithms that all took part in a benchmark study of Optical Character Recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Machine Learning"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145467467"
+                        ],
+                        "name": "M. Gori",
+                        "slug": "M.-Gori",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Gori",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Gori"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47260481"
+                        ],
+                        "name": "F. Scarselli",
+                        "slug": "F.-Scarselli",
+                        "structuredName": {
+                            "firstName": "Franco",
+                            "lastName": "Scarselli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Scarselli"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Therefore, only level 1 has to be recomputed at scale i ."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 126
+                            }
+                        ],
+                        "text": "It is not clear whether such decision boundaries will be good for separating two or more classes in a high dimensional space (Gori and Scarselli, 1998; Kung, 1993)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16496125,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "513a4542d439b3b4451550a2feb00389c52fcf1e",
+            "isKey": false,
+            "numCitedBy": 117,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Discusses the ability of multilayer perceptrons (MLPs) to model the probability distribution of data in typical pattern recognition and verification problems. It is proven that multilayer perceptrons with sigmoidal units and a number of hidden units less or equal than the number of inputs are unable to model patterns distributed in typical clusters, since these networks draw open separation surfaces in the pattern space. When using more hidden units than inputs, the separation surfaces can be closed but, unfortunately it is proven that determining whether or not a MLP draws closed separation surfaces in the pattern space is NP-hard. The major conclusion of the paper is somewhat opposite to what is believed and reported in many application papers: MLPs are definitely not adequate for applications of pattern recognition requiring a reliable rejection and, especially, they are not adequate for pattern verification tasks."
+            },
+            "slug": "Are-Multilayer-Perceptrons-Adequate-for-Pattern-and-Gori-Scarselli",
+            "title": {
+                "fragments": [],
+                "text": "Are Multilayer Perceptrons Adequate for Pattern Recognition and Verification?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "It is proven that multilayer perceptrons with sigmoidal units and a number of hidden units less or equal than the number of inputs are unable to model patterns distributed in typical clusters, since these networks draw open separation surfaces in the pattern space."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "121473402"
+                        ],
+                        "name": "P. Vaidyanathan",
+                        "slug": "P.-Vaidyanathan",
+                        "structuredName": {
+                            "firstName": "P.",
+                            "lastName": "Vaidyanathan",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Vaidyanathan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1780112"
+                        ],
+                        "name": "R. Coifman",
+                        "slug": "R.-Coifman",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Coifman",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Coifman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2066341997"
+                        ],
+                        "name": "Y. Meyer",
+                        "slug": "Y.-Meyer",
+                        "structuredName": {
+                            "firstName": "Yves",
+                            "lastName": "Meyer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Meyer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1650408984"
+                        ],
+                        "name": "S. Quake",
+                        "slug": "S.-Quake",
+                        "structuredName": {
+                            "firstName": "Steve",
+                            "lastName": "Quake",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Quake"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 63
+                            }
+                        ],
+                        "text": "In particular, we\nchose a 5/3 linear phase wavelet filterbank (Strang and Nguyen, 1997)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 125
+                            }
+                        ],
+                        "text": "The classifier performs a wavelet transform on the input window using a linear phase 5/3 perfect reconstruction filter bank (Strang and Nguyen, 1997)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 135,
+                                "start": 125
+                            }
+                        ],
+                        "text": "Each training image is geometrically normalized and aligned, corrected for lighting, and perturbed to create many synthetic variations."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 6
+                            }
+                        ],
+                        "text": "For each viewpoint, we collected the joint probability distribution for each pair of wavelet coefficients by using a large set of geometrically aligned images of the object."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1687407,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "3847cc53a2c7d736ac8bf879df601fe8db17fb12",
+            "isKey": true,
+            "numCitedBy": 1164,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Wavelet and short-time Fourier analysis is introduced in the context of frequency decompositions. Wavelet type frequency decompositions are associated with lter banks, and using this fact, lter bank theory is used to construct multiplicity M wavelet frames and tight frames. The way in which lter banks lead to decomposition and recomposition of arbitrary separable Hilbert spaces is also described. E cient computational structures for both lter banks and wavelets are also discussed. Contact Address: Ramesh A. Gopinath Department of EE, A235 Rice University, Houston, TX-77251 Phone (713) 527-8750 x3577 email: ramesh@rice.edu This work was supported by AFOSR under grant 90-0334 funded by DARPA Appears in Wavelets: A Tutorial in Theory and Applications, ed. C.K.Chui, Academic Press WAVELETS AND FILTER BANKS R.A.Gopinath and C.S.Burrus Department of Electrical and Computer Engineering, Rice University, Houston, TX-77251 CML TR-91-20 30th September '91"
+            },
+            "slug": "Wavelets-and-Filter-Banks-Vaidyanathan-Coifman",
+            "title": {
+                "fragments": [],
+                "text": "Wavelets and Filter Banks"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "102636025"
+                        ],
+                        "name": "C. Chow",
+                        "slug": "C.-Chow",
+                        "structuredName": {
+                            "firstName": "C.",
+                            "lastName": "Chow",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Chow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2119394814"
+                        ],
+                        "name": "C. N. Liu",
+                        "slug": "C.-N.-Liu",
+                        "structuredName": {
+                            "firstName": "C.",
+                            "lastName": "Liu",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. N. Liu"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 211,
+                                "start": 192
+                            }
+                        ],
+                        "text": "The idea of using statistical independence assumptions in probabilistic modeling problems has a long history in the literature of pattern recognition, beginning possibly with Lewis (1959) and Chow and Liu (1966)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 27127853,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "683fe3bbf2b2e628cf40d90e35fb39effc63b7e9",
+            "isKey": false,
+            "numCitedBy": 2729,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A method is presented to approximate optimally an n -dimensional discrete probability distribution by a product of second-order distributions, or the distribution of the first-order tree dependence. The problem is to find an optimum set of n - 1 first order dependence relationship among the n variables. It is shown that the procedure derived in this paper yields an approximation of a minimum difference in information. It is further shown that when this procedure is applied to empirical observations from an unknown distribution of tree dependence, the procedure is the maximum-likelihood estimate of the distribution."
+            },
+            "slug": "Approximating-discrete-probability-distributions-Chow-Liu",
+            "title": {
+                "fragments": [],
+                "text": "Approximating discrete probability distributions with dependence trees"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "It is shown that the procedure derived in this paper yields an approximation of a minimum difference in information when applied to empirical observations from an unknown distribution of tree dependence, and the procedure is the maximum-likelihood estimate of the distribution."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Inf. Theory"
+            },
+            "year": 1968
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "29832393"
+                        ],
+                        "name": "K. Arun",
+                        "slug": "K.-Arun",
+                        "structuredName": {
+                            "firstName": "K.",
+                            "lastName": "Arun",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Arun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143750392"
+                        ],
+                        "name": "T. Huang",
+                        "slug": "T.-Huang",
+                        "structuredName": {
+                            "firstName": "T.",
+                            "lastName": "Huang",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Huang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1698852"
+                        ],
+                        "name": "S. Blostein",
+                        "slug": "S.-Blostein",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Blostein",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Blostein"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8724100,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "691d0a287a2515ebe5019cda498dcb6d24dfd5a4",
+            "isKey": false,
+            "numCitedBy": 3495,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Two point sets {pi} and {p'i}; i = 1, 2,..., N are related by p'i = Rpi + T + Ni, where R is a rotation matrix, T a translation vector, and Ni a noise vector. Given {pi} and {p'i}, we present an algorithm for finding the least-squares solution of R and T, which is based on the singular value decomposition (SVD) of a 3 \u00d7 3 matrix. This new algorithm is compared to two earlier algorithms with respect to computer time requirements."
+            },
+            "slug": "Least-Squares-Fitting-of-Two-3-D-Point-Sets-Arun-Huang",
+            "title": {
+                "fragments": [],
+                "text": "Least-Squares Fitting of Two 3-D Point Sets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "An algorithm for finding the least-squares solution of R and T, which is based on the singular value decomposition (SVD) of a 3 \u00d7 3 matrix, is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1987
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "90716724"
+                        ],
+                        "name": "T. Martinez",
+                        "slug": "T.-Martinez",
+                        "structuredName": {
+                            "firstName": "Tony",
+                            "lastName": "Martinez",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Martinez"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Therefore, only level 1 has to be recomputed at scale i ."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 162,
+                                "start": 152
+                            }
+                        ],
+                        "text": "It is not clear whether such decision boundaries will be good for separating two or more classes in a high dimensional space (Gori and Scarselli, 1998; Kung, 1993)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14842477,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2059139942834d72776d873575747edf3c2a0fb1",
+            "isKey": false,
+            "numCitedBy": 132,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Demands for applications requiring massive parallelism in symbolic environments have given rebirth to research in models labeled as neural networks. These models are made up of many simple nodes which are highly interconnected such that computation takes place as data flows amongst the nodes of the network. To present, most models have proposed nodes based on simple analog functions, where inputs are multiplied by weights and summed, the total then optionally being transformed by an arbitrary function at the node. Learning in these systems is accomplished by adjusting the weights on the input lines. This paper discusses the use of digital (boolean) nodes as a primitive building block in connectionist systems. Digital nodes naturally engender new paradigms and mechanisms for learning and processing in connectionist networks. The digital nodes are used as the basic building block of a class of models called ASOCS (Adaptive Self-Organizing Concurrent Systems). These models combine massive parallelism with the ability to adapt in a self-organizing fashion. Basic features of standard neural network learning algorithms and those proposed using digital nodes are compared and contrasted. The latter mechanisms can lead to vastly improved efficiency for many applications."
+            },
+            "slug": "Digital-Neural-Networks-Martinez",
+            "title": {
+                "fragments": [],
+                "text": "Digital Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper discusses the use of digital (boolean) nodes as a primitive building block in connectionist systems, and basic features of standard neural network learning algorithms and those proposed using digital nodes are compared and contrasted."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 1988 IEEE International Conference on Systems, Man, and Cybernetics"
+            },
+            "year": 1988
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "147812033"
+                        ],
+                        "name": "P. M. Lewis",
+                        "slug": "P.-M.-Lewis",
+                        "structuredName": {
+                            "firstName": "Philip",
+                            "lastName": "Lewis",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. M. Lewis"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 187,
+                                "start": 175
+                            }
+                        ],
+                        "text": "The idea of using statistical independence assumptions in probabilistic modeling problems has a long history in the literature of pattern recognition, beginning possibly with Lewis (1959) and Chow and Liu (1966)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 4238250,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "05d4ae79db721b3be7ea41855bc94e451469e3e2",
+            "isKey": false,
+            "numCitedBy": 176,
+            "numCiting": 2,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Approximating-Probability-Distributions-to-Reduce-Lewis",
+            "title": {
+                "fragments": [],
+                "text": "Approximating Probability Distributions to Reduce Storage Requirements"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Inf. Control."
+            },
+            "year": 1959
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145876744"
+                        ],
+                        "name": "M. Vetterli",
+                        "slug": "M.-Vetterli",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Vetterli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Vetterli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2442915"
+                        ],
+                        "name": "J. Kovacevic",
+                        "slug": "J.-Kovacevic",
+                        "structuredName": {
+                            "firstName": "Jelena",
+                            "lastName": "Kovacevic",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Kovacevic"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 10506924,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "5216ea733e562541b33a7f97dab0de072b2e8827",
+            "isKey": false,
+            "numCitedBy": 2896,
+            "numCiting": 313,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "First published in 1995, Wavelets and Subband Coding offered a unified view of the exciting field of wavelets and their discrete-time cousins, filter banks, or subband coding. The book developed the theory in both continuous and discrete time, and presented important applications. During the past decade, it filled a useful need in explaining a new view of signal processing based on flexible time-frequency analysis and its applications. Since 2007, the authors now retain the copyright and allow open access to the book."
+            },
+            "slug": "Wavelets-and-Subband-Coding-Vetterli-Kovacevic",
+            "title": {
+                "fragments": [],
+                "text": "Wavelets and Subband Coding"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 85,
+                "text": "Wavelets and Subband Coding offered a unified view of the exciting field of wavelets and their discrete-time cousins, filter banks, or subband coding and developed the theory in both continuous and discrete time."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Prentice Hall Signal Processing Series"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 30523165,
+            "fieldsOfStudy": [],
+            "id": "6f01963039d0a921b1930b4563d1601ff36b971f",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Face Recognition by Elastic Bunch Graph Matching"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1997
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 12646365,
+            "fieldsOfStudy": [],
+            "id": "14e53403a0055dbe5faaf9f1f3be96ca0e692a4d",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Improved Boosting Algorithms using Confidence-Rated Predictions"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 206,
+                                "start": 183
+                            }
+                        ],
+                        "text": "This re-weighting of the training examples is analogous to the way support vector machines identify the training examples that directly affect the placement of the decision boundary (Cortes and Vapnik, 1995)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Support-Vector Networks. Machine Learning"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Support-Vector Networks. Machine Learning"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "These relationships (intra-subband, inter-subband, interfrequency ) were initially defined in"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "These relationships (intra-subband, inter-subband, interfrequency ) were initially defined in"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "for a complete description of the algorithm"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "for a complete description of the algorithm"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Rowley each provided image collections"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Rowley each provided image collections"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Introduced by Sung and Poggio (1998) for image classification and also used by"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Introduced by Sung and Poggio (1998) for image classification and also used by"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 163,
+                                "start": 142
+                            }
+                        ],
+                        "text": "Much object detection work uses a coarse-to-fine search heuristic to reduce computational time (Rowley et al., 1998; Geman and Flueret, 2001; Romdhani et al., 2001; Viola and Jones, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Computationally Efficient Face Detection. International Conference on Computer Vision"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Computationally Efficient Face Detection. International Conference on Computer Vision"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 115,
+                                "start": 96
+                            }
+                        ],
+                        "text": "Much object detection work uses a coarse-to-fine search heuristic to reduce computational time (Rowley et al., 1998; Geman and Flueret, 2001; Romdhani et al., 2001; Viola and Jones, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Neural networkbased face detection"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Recognition and Machine Intelligence"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Recognition and Machine Intelligence"
+            }
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 12,
+            "methodology": 14
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 41,
+        "totalPages": 5
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Object-Detection-Using-the-Statistics-of-Parts-Schneiderman-Kanade/36cd88ed2c17a596001e9c7d89533ac46c28dec0?sort=total-citations"
+}

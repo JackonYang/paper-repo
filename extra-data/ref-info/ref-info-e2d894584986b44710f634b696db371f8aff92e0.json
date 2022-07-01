@@ -1,0 +1,3771 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48799969"
+                        ],
+                        "name": "Matthew D. Zeiler",
+                        "slug": "Matthew-D.-Zeiler",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Zeiler",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthew D. Zeiler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2276554"
+                        ],
+                        "name": "R. Fergus",
+                        "slug": "R.-Fergus",
+                        "structuredName": {
+                            "firstName": "Rob",
+                            "lastName": "Fergus",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fergus"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 49
+                            }
+                        ],
+                        "text": "Notably, multiple layers of unpooled convolution [13, 30] have been utilized lately with considerable success."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In [30], Zeiler and Fergus reimplemented this model and adjusted different parts in turn."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3960646,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1a2a770d23b4a171fa81de62a78a3deb0588f238",
+            "isKey": false,
+            "numCitedBy": 11803,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Large Convolutional Network models have recently demonstrated impressive classification performance on the ImageNet benchmark Krizhevsky et al. [18]. However there is no clear understanding of why they perform so well, or how they might be improved. In this paper we explore both issues. We introduce a novel visualization technique that gives insight into the function of intermediate feature layers and the operation of the classifier. Used in a diagnostic role, these visualizations allow us to find model architectures that outperform Krizhevsky et al on the ImageNet classification benchmark. We also perform an ablation study to discover the performance contribution from different model layers. We show our ImageNet model generalizes well to other datasets: when the softmax classifier is retrained, it convincingly beats the current state-of-the-art results on Caltech-101 and Caltech-256 datasets."
+            },
+            "slug": "Visualizing-and-Understanding-Convolutional-Zeiler-Fergus",
+            "title": {
+                "fragments": [],
+                "text": "Visualizing and Understanding Convolutional Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A novel visualization technique is introduced that gives insight into the function of intermediate feature layers and the operation of the classifier in large Convolutional Network models, used in a diagnostic role to find model architectures that outperform Krizhevsky et al on the ImageNet classification benchmark."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064160"
+                        ],
+                        "name": "A. Krizhevsky",
+                        "slug": "A.-Krizhevsky",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Krizhevsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krizhevsky"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 17,
+                                "start": 9
+                            }
+                        ],
+                        "text": "For both CIFAR-10 and SVHN, performance gets better as the number of layers increases, although there is an upward tick at 8 layers for CIFAR-10 test error."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 12,
+                                "start": 4
+                            }
+                        ],
+                        "text": "For CIFAR-10, we tested the models using M = 32, 64, 128, or 256 feature maps per layer, and L = 1, 2, 4, 8, or 16 layers beyond the first."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 133,
+                                "start": 125
+                            }
+                        ],
+                        "text": "In particular, increasing any of them tends to improve performance, particularly on the training set (a notable exception to CIFAR-10 at 16 layers in the tied case, which goes up slightly)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 39,
+                                "start": 31
+                            }
+                        ],
+                        "text": "We describe our models for the CIFAR-10 [12] and SVHN [17] datasets used in our experiments."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 327,
+                                "start": 319
+                            }
+                        ],
+                        "text": "The final hidden layer is subject to pixel-wise L2 normalization and passed into a logistic classifier to produce a prediction Y:\nYk = exp(Y \u2032k)\u2211 k exp(Y \u2032 k)\nwhere Y\u2032k = \u2211 i,j,m Cki,j,m \u00b7 ZL+1i,j,m/||Z L+1 i,j ||\nThe first-layer kernels Vm are initialized from a zero-mean Gaussian distribution with standard deviation 0.1 for CIFAR-10 and 0.001 for SVHN."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 53
+                            }
+                        ],
+                        "text": "The exception to this is again the 8-layer models on CIFAR-10 test error, which suffer from overfitting."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 153,
+                                "start": 145
+                            }
+                        ],
+                        "text": "We considered models where the number of layers beyond the first was between 2 and 8, and the number of feature maps was between 16 and 256 (for CIFAR-10) or between 16 and 150 (for SVHN)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 81,
+                                "start": 77
+                            }
+                        ],
+                        "text": "1 Instantiation on CIFAR-10 and SVHN We describe our models for the CIFAR-10 [12] and SVHN [17] datasets used in our experiments."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 18268744,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5d90f06bb70a0a3dced62413346235c02b1aa086",
+            "isKey": true,
+            "numCitedBy": 17080,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Groups at MIT and NYU have collected a dataset of millions of tiny colour images from the web. It is, in principle, an excellent dataset for unsupervised training of deep generative models, but previous researchers who have tried this have found it dicult to learn a good set of lters from the images. We show how to train a multi-layer generative model that learns to extract meaningful features which resemble those found in the human visual cortex. Using a novel parallelization algorithm to distribute the work among multiple machines connected on a network, we show how training such a model can be done in reasonable time. A second problematic aspect of the tiny images dataset is that there are no reliable class labels which makes it hard to use for object recognition experiments. We created two sets of reliable labels. The CIFAR-10 set has 6000 examples of each of 10 classes and the CIFAR-100 set has 600 examples of each of 100 non-overlapping classes. Using these labels, we show that object recognition is signicantly improved by pre-training a layer of features on a large set of unlabeled tiny images."
+            },
+            "slug": "Learning-Multiple-Layers-of-Features-from-Tiny-Krizhevsky",
+            "title": {
+                "fragments": [],
+                "text": "Learning Multiple Layers of Features from Tiny Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "It is shown how to train a multi-layer generative model that learns to extract meaningful features which resemble those found in the human visual cortex, using a novel parallelization algorithm to distribute the work among multiple machines connected on a network."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34965728"
+                        ],
+                        "name": "J. Rolfe",
+                        "slug": "J.-Rolfe",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Rolfe",
+                            "middleNames": [
+                                "Tyler"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Rolfe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 14,
+                                "start": 9
+                            }
+                        ],
+                        "text": "Gregor & LeCun [9] showed how to backpropagate through such a network to give fast approximations to sparse coding known as LISTA."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 18,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Rolfe & LeCun [19] then showed in their DrSAE model how a discriminative term can be added."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2563011,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "72c35d7eb807ed46fb82024922ffbf45218f5a95",
+            "isKey": false,
+            "numCitedBy": 63,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present the discriminative recurrent sparse auto-encoder model, comprising a recurrent encoder of rectified linear units, unrolled for a fixed number of iterations, and connected to two linear decoders that reconstruct the input and predict its supervised classification. Training via backpropagation-through-time initially minimizes an unsupervised sparse reconstruction error; the loss function is then augmented with a discriminative term on the supervised classification. The depth implicit in the temporally-unrolled form allows the system to exhibit all the power of deep networks, while substantially reducing the number of trainable parameters. \nFrom an initially unstructured network the hidden units differentiate into categorical-units, each of which represents an input prototype with a well-defined class; and part-units representing deformations of these prototypes. The learned organization of the recurrent encoder is hierarchical: part-units are driven directly by the input, whereas the activity of categorical-units builds up over time through interactions with the part-units. Even using a small number of hidden units per layer, discriminative recurrent sparse auto-encoders achieve excellent performance on MNIST."
+            },
+            "slug": "Discriminative-Recurrent-Sparse-Auto-Encoders-Rolfe-LeCun",
+            "title": {
+                "fragments": [],
+                "text": "Discriminative Recurrent Sparse Auto-Encoders"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 95,
+                "text": "The discriminative recurrent sparse auto-encoder model is presented, comprising a recurrent encoder of rectified linear units, unrolled for a fixed number of iterations, and connected to two linear decoders that reconstruct the input and predict its supervised classification."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1697141"
+                        ],
+                        "name": "Honglak Lee",
+                        "slug": "Honglak-Lee",
+                        "structuredName": {
+                            "firstName": "Honglak",
+                            "lastName": "Lee",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Honglak Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1785346"
+                        ],
+                        "name": "Roger B. Grosse",
+                        "slug": "Roger-B.-Grosse",
+                        "structuredName": {
+                            "firstName": "Roger",
+                            "lastName": "Grosse",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Roger B. Grosse"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2615814"
+                        ],
+                        "name": "R. Ranganath",
+                        "slug": "R.-Ranganath",
+                        "structuredName": {
+                            "firstName": "Rajesh",
+                            "lastName": "Ranganath",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Ranganath"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 12008458,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1e80f755bcbf10479afd2338cec05211fdbd325c",
+            "isKey": false,
+            "numCitedBy": 2510,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "There has been much interest in unsupervised learning of hierarchical generative models such as deep belief networks. Scaling such models to full-sized, high-dimensional images remains a difficult problem. To address this problem, we present the convolutional deep belief network, a hierarchical generative model which scales to realistic image sizes. This model is translation-invariant and supports efficient bottom-up and top-down probabilistic inference. Key to our approach is probabilistic max-pooling, a novel technique which shrinks the representations of higher layers in a probabilistically sound way. Our experiments show that the algorithm learns useful high-level visual features, such as object parts, from unlabeled images of objects and natural scenes. We demonstrate excellent performance on several visual recognition tasks and show that our model can perform hierarchical (bottom-up and top-down) inference over full-sized images."
+            },
+            "slug": "Convolutional-deep-belief-networks-for-scalable-of-Lee-Grosse",
+            "title": {
+                "fragments": [],
+                "text": "Convolutional deep belief networks for scalable unsupervised learning of hierarchical representations"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 50,
+                "text": "The convolutional deep belief network is presented, a hierarchical generative model which scales to realistic image sizes and is translation-invariant and supports efficient bottom-up and top-down probabilistic inference."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML '09"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1895356"
+                        ],
+                        "name": "D. Ciresan",
+                        "slug": "D.-Ciresan",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Ciresan",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ciresan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2514691"
+                        ],
+                        "name": "U. Meier",
+                        "slug": "U.-Meier",
+                        "structuredName": {
+                            "firstName": "Ueli",
+                            "lastName": "Meier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "U. Meier"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2426718"
+                        ],
+                        "name": "Jonathan Masci",
+                        "slug": "Jonathan-Masci",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Masci",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jonathan Masci"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "6803671"
+                        ],
+                        "name": "L. Gambardella",
+                        "slug": "L.-Gambardella",
+                        "structuredName": {
+                            "firstName": "Luca",
+                            "lastName": "Gambardella",
+                            "middleNames": [
+                                "Maria"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gambardella"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 904144,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5a47ba057a858f8c024d2518cc3731fc7eb40de1",
+            "isKey": false,
+            "numCitedBy": 1169,
+            "numCiting": 42,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a fast, fully parameterizable GPU implementation of Convolutional Neural Network variants. Our feature extractors are neither carefully designed nor pre-wired, but rather learned in a supervised way. Our deep hierarchical architectures achieve the best published results on benchmarks for object classification (NORB, CIFAR10) and handwritten digit recognition (MNIST), with error rates of 2.53%, 19.51%, 0.35%, respectively. Deep nets trained by simple back-propagation perform better than more shallow ones. Learning is surprisingly rapid. NORB is completely trained within five epochs. Test error rates on MNIST drop to 2.42%, 0.97% and 0.48% after 1, 3 and 17 epochs, respectively."
+            },
+            "slug": "Flexible,-High-Performance-Convolutional-Neural-for-Ciresan-Meier",
+            "title": {
+                "fragments": [],
+                "text": "Flexible, High Performance Convolutional Neural Networks for Image Classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 94,
+                "text": "A fast, fully parameterizable GPU implementation of Convolutional Neural Network variants and their feature extractors are neither carefully designed nor pre-wired, but rather learned in a supervised way."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IJCAI"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3142556"
+                        ],
+                        "name": "Pierre Sermanet",
+                        "slug": "Pierre-Sermanet",
+                        "structuredName": {
+                            "firstName": "Pierre",
+                            "lastName": "Sermanet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pierre Sermanet"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2060028"
+                        ],
+                        "name": "D. Eigen",
+                        "slug": "D.-Eigen",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Eigen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Eigen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46447747"
+                        ],
+                        "name": "X. Zhang",
+                        "slug": "X.-Zhang",
+                        "structuredName": {
+                            "firstName": "Xiang",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143949035"
+                        ],
+                        "name": "Micha\u00ebl Mathieu",
+                        "slug": "Micha\u00ebl-Mathieu",
+                        "structuredName": {
+                            "firstName": "Micha\u00ebl",
+                            "lastName": "Mathieu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Micha\u00ebl Mathieu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2276554"
+                        ],
+                        "name": "R. Fergus",
+                        "slug": "R.-Fergus",
+                        "structuredName": {
+                            "firstName": "Rob",
+                            "lastName": "Fergus",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fergus"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 4071727,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5507caf1210b6bfbd04fe02b2669bc14292e23a1",
+            "isKey": false,
+            "numCitedBy": 4352,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present an integrated framework for using Convolutional Networks for classification, localization and detection. We show how a multiscale and sliding window approach can be efficiently implemented within a ConvNet. We also introduce a novel deep learning approach to localization by learning to predict object boundaries. Bounding boxes are then accumulated rather than suppressed in order to increase detection confidence. We show that different tasks can be learned simultaneously using a single shared network. This integrated framework is the winner of the localization task of the ImageNet Large Scale Visual Recognition Challenge 2013 (ILSVRC2013) and obtained very competitive results for the detection and classifications tasks. In post-competition work, we establish a new state of the art for the detection task. Finally, we release a feature extractor from our best model called OverFeat."
+            },
+            "slug": "OverFeat:-Integrated-Recognition,-Localization-and-Sermanet-Eigen",
+            "title": {
+                "fragments": [],
+                "text": "OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "This integrated framework for using Convolutional Networks for classification, localization and detection is the winner of the localization task of the ImageNet Large Scale Visual Recognition Challenge 2013 and obtained very competitive results for the detection and classifications tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144638694"
+                        ],
+                        "name": "Adam Coates",
+                        "slug": "Adam-Coates",
+                        "structuredName": {
+                            "firstName": "Adam",
+                            "lastName": "Coates",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Adam Coates"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 55,
+                                "start": 45
+                            }
+                        ],
+                        "text": "All layers use rectified linear units (ReLU) [3, 4, 16]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12132619,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6f568d757d2c1ab42f2006faa25690b74c3d2d44",
+            "isKey": false,
+            "numCitedBy": 600,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "While vector quantization (VQ) has been applied widely to generate features for visual recognition problems, much recent work has focused on more powerful methods. In particular, sparse coding has emerged as a strong alternative to traditional VQ approaches and has been shown to achieve consistently higher performance on benchmark datasets. Both approaches can be split into a training phase, where the system learns a dictionary of basis functions, and an encoding phase, where the dictionary is used to extract features from new inputs. In this work, we investigate the reasons for the success of sparse coding over VQ by decoupling these phases, allowing us to separate out the contributions of training and encoding in a controlled way. Through extensive experiments on CIFAR, NORB and Caltech 101 datasets, we compare several training and encoding schemes, including sparse coding and a form of VQ with a soft threshold activation function. Our results show not only that we can use fast VQ algorithms for training, but that we can just as well use randomly chosen exemplars from the training set. Rather than spend resources on training, we find it is more important to choose a good encoder\u2014which can often be a simple feed forward non-linearity. Our results include state-of-the-art performance on both CIFAR and NORB."
+            },
+            "slug": "The-Importance-of-Encoding-Versus-Training-with-and-Coates-Ng",
+            "title": {
+                "fragments": [],
+                "text": "The Importance of Encoding Versus Training with Sparse Coding and Vector Quantization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work investigates the reasons for the success of sparse coding over VQ by decoupling these phases, allowing us to separate out the contributions of training and encoding in a controlled way and shows not only that it can use fast VQ algorithms for training, but that they can just as well use randomly chosen exemplars from the training set."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2053671127"
+                        ],
+                        "name": "Li Wan",
+                        "slug": "Li-Wan",
+                        "structuredName": {
+                            "firstName": "Li",
+                            "lastName": "Wan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Li Wan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48799969"
+                        ],
+                        "name": "Matthew D. Zeiler",
+                        "slug": "Matthew-D.-Zeiler",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Zeiler",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthew D. Zeiler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33551113"
+                        ],
+                        "name": "Sixin Zhang",
+                        "slug": "Sixin-Zhang",
+                        "structuredName": {
+                            "firstName": "Sixin",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sixin Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2276554"
+                        ],
+                        "name": "R. Fergus",
+                        "slug": "R.-Fergus",
+                        "structuredName": {
+                            "firstName": "Rob",
+                            "lastName": "Fergus",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fergus"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 254,
+                                "start": 246
+                            }
+                        ],
+                        "text": "First, we note that despite the simple architecture of our model, it still achieves competitive performance on both datasets, relative to other models that, like ours, do not use any image transformations or other regularizations such as dropout [10, 28], stochastic pooling [29] or maxout [5] (see Table 1)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2936324,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "38f35dd624cd1cf827416e31ac5e0e0454028eca",
+            "isKey": false,
+            "numCitedBy": 2091,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce DropConnect, a generalization of Dropout (Hinton et al., 2012), for regularizing large fully-connected layers within neural networks. When training with Dropout, a randomly selected subset of activations are set to zero within each layer. DropConnect instead sets a randomly selected subset of weights within the network to zero. Each unit thus receives input from a random subset of units in the previous layer. We derive a bound on the generalization performance of both Dropout and DropConnect. We then evaluate DropConnect on a range of datasets, comparing to Dropout, and show state-of-the-art results on several image recognition benchmarks by aggregating multiple DropConnect-trained models."
+            },
+            "slug": "Regularization-of-Neural-Networks-using-DropConnect-Wan-Zeiler",
+            "title": {
+                "fragments": [],
+                "text": "Regularization of Neural Networks using DropConnect"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "This work introduces DropConnect, a generalization of Dropout, for regularizing large fully-connected layers within neural networks, and derives a bound on the generalization performance of both Dropout and DropConnect."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3142556"
+                        ],
+                        "name": "Pierre Sermanet",
+                        "slug": "Pierre-Sermanet",
+                        "structuredName": {
+                            "firstName": "Pierre",
+                            "lastName": "Sermanet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pierre Sermanet"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2127604"
+                        ],
+                        "name": "Soumith Chintala",
+                        "slug": "Soumith-Chintala",
+                        "structuredName": {
+                            "firstName": "Soumith",
+                            "lastName": "Chintala",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Soumith Chintala"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6788752,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9f7f9aba0a6a966ce04e29e401ea28f9eae82f02",
+            "isKey": false,
+            "numCitedBy": 453,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We classify digits of real-world house numbers using convolutional neural networks (ConvNets). Con-vNets are hierarchical feature learning neural networks whose structure is biologically inspired. Unlike many popular vision approaches that are hand-designed, ConvNets can automatically learn a unique set of features optimized for a given task. We augmented the traditional ConvNet architecture by learning multi-stage features and by using Lp pooling and establish a new state-of-the-art of 95.10% accuracy on the SVHN dataset (48% error improvement). Furthermore, we analyze the benefits of different pooling methods and multi-stage features in ConvNets. The source code and a tutorial are available at eblearn.sf.net."
+            },
+            "slug": "Convolutional-neural-networks-applied-to-house-Sermanet-Chintala",
+            "title": {
+                "fragments": [],
+                "text": "Convolutional neural networks applied to house numbers digit classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work augmented the traditional ConvNet architecture by learning multi-stage features and by using Lp pooling and establishes a new state-of-the-art of 95.10% accuracy on the SVHN dataset (48% error improvement)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 21st International Conference on Pattern Recognition (ICPR2012)"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1708655"
+                        ],
+                        "name": "B. Olshausen",
+                        "slug": "B.-Olshausen",
+                        "structuredName": {
+                            "firstName": "Bruno",
+                            "lastName": "Olshausen",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Olshausen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49649079"
+                        ],
+                        "name": "D. Field",
+                        "slug": "D.-Field",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Field",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Field"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 18,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Sparse coding [18] uses iterative algorithms, such as ISTA [1], to perform inference."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14208692,
+            "fieldsOfStudy": [
+                "Biology"
+            ],
+            "id": "2805537bec87a6177037b18f9a3a9d3f1038867b",
+            "isKey": false,
+            "numCitedBy": 3573,
+            "numCiting": 72,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Sparse-coding-with-an-overcomplete-basis-set:-A-by-Olshausen-Field",
+            "title": {
+                "fragments": [],
+                "text": "Sparse coding with an overcomplete basis set: A strategy employed by V1?"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Vision Research"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 34
+                            }
+                        ],
+                        "text": "These are are well-studied models [11, 21, 27], naturally suited to temporal and sequential data."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8378471,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "da5d2b6344fce4314e5f05356d06cdf1aafeef1a",
+            "isKey": false,
+            "numCitedBy": 45,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Temporal-Kernel-Recurrent-Neural-Networks-Sutskever-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "Temporal-Kernel Recurrent Neural Networks"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2897313"
+                        ],
+                        "name": "Nitish Srivastava",
+                        "slug": "Nitish-Srivastava",
+                        "structuredName": {
+                            "firstName": "Nitish",
+                            "lastName": "Srivastava",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nitish Srivastava"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064160"
+                        ],
+                        "name": "A. Krizhevsky",
+                        "slug": "A.-Krizhevsky",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Krizhevsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krizhevsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145124475"
+                        ],
+                        "name": "R. Salakhutdinov",
+                        "slug": "R.-Salakhutdinov",
+                        "structuredName": {
+                            "firstName": "Ruslan",
+                            "lastName": "Salakhutdinov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Salakhutdinov"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14832074,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1366de5bb112746a555e9c0cd00de3ad8628aea8",
+            "isKey": false,
+            "numCitedBy": 6189,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "When a large feedforward neural network is trained on a small training set, it typically performs poorly on held-out test data. This \"overfitting\" is greatly reduced by randomly omitting half of the feature detectors on each training case. This prevents complex co-adaptations in which a feature detector is only helpful in the context of several other specific feature detectors. Instead, each neuron learns to detect a feature that is generally helpful for producing the correct answer given the combinatorially large variety of internal contexts in which it must operate. Random \"dropout\" gives big improvements on many benchmark tasks and sets new records for speech and object recognition."
+            },
+            "slug": "Improving-neural-networks-by-preventing-of-feature-Hinton-Srivastava",
+            "title": {
+                "fragments": [],
+                "text": "Improving neural networks by preventing co-adaptation of feature detectors"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153440022"
+                        ],
+                        "name": "Ian J. Goodfellow",
+                        "slug": "Ian-J.-Goodfellow",
+                        "structuredName": {
+                            "firstName": "Ian",
+                            "lastName": "Goodfellow",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ian J. Goodfellow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1393680089"
+                        ],
+                        "name": "David Warde-Farley",
+                        "slug": "David-Warde-Farley",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Warde-Farley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Warde-Farley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153583218"
+                        ],
+                        "name": "Mehdi Mirza",
+                        "slug": "Mehdi-Mirza",
+                        "structuredName": {
+                            "firstName": "Mehdi",
+                            "lastName": "Mirza",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mehdi Mirza"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1760871"
+                        ],
+                        "name": "Aaron C. Courville",
+                        "slug": "Aaron-C.-Courville",
+                        "structuredName": {
+                            "firstName": "Aaron",
+                            "lastName": "Courville",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aaron C. Courville"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 293,
+                                "start": 290
+                            }
+                        ],
+                        "text": "First, we note that despite the simple architecture of our model, it still achieves competitive performance on both datasets, relative to other models that, like ours, do not use any image transformations or other regularizations such as dropout [10, 28], stochastic pooling [29] or maxout [5] (see Table 1)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10600578,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b7b915d508987b73b61eccd2b237e7ed099a2d29",
+            "isKey": false,
+            "numCitedBy": 1820,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of designing models to leverage a recently introduced approximate model averaging technique called dropout. We define a simple new model called maxout (so named because its output is the max of a set of inputs, and because it is a natural companion to dropout) designed to both facilitate optimization by dropout and improve the accuracy of dropout's fast approximate model averaging technique. We empirically verify that the model successfully accomplishes both of these tasks. We use maxout and dropout to demonstrate state of the art classification performance on four benchmark datasets: MNIST, CIFAR-10, CIFAR-100, and SVHN."
+            },
+            "slug": "Maxout-Networks-Goodfellow-Warde-Farley",
+            "title": {
+                "fragments": [],
+                "text": "Maxout Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "A simple new model called maxout is defined designed to both facilitate optimization by dropout and improve the accuracy of dropout's fast approximate model averaging technique."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2570381"
+                        ],
+                        "name": "Brody Huval",
+                        "slug": "Brody-Huval",
+                        "structuredName": {
+                            "firstName": "Brody",
+                            "lastName": "Huval",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Brody Huval"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3100049"
+                        ],
+                        "name": "Bharath Putta Bath",
+                        "slug": "Bharath-Putta-Bath",
+                        "structuredName": {
+                            "firstName": "Bharath",
+                            "lastName": "Bath",
+                            "middleNames": [
+                                "Putta"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bharath Putta Bath"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 18,
+                                "start": 14
+                            }
+                        ],
+                        "text": "More recently [25], they used a convolutional network in a separate stage to first learn features on RGB-Depth data, prior to hierarchical merging."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16900529,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cc75c81148245198d4c6d4c8fcbbae487215903b",
+            "isKey": false,
+            "numCitedBy": 591,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recent advances in 3D sensing technologies make it possible to easily record color and depth images which together can improve object recognition. Most current methods rely on very well-designed features for this new 3D modality. We introduce a model based on a combination of convolutional and recursive neural networks (CNN and RNN) for learning features and classifying RGB-D images. The CNN layer learns low-level translationally invariant features which are then given as inputs to multiple, fixed-tree RNNs in order to compose higher order features. RNNs can be seen as combining convolution and pooling into one efficient, hierarchical operation. Our main result is that even RNNs with random weights compose powerful features. Our model obtains state of the art performance on a standard RGB-D object dataset while being more accurate and faster during training and testing than comparable architectures such as two-layer CNNs."
+            },
+            "slug": "Convolutional-Recursive-Deep-Learning-for-3D-Object-Socher-Huval",
+            "title": {
+                "fragments": [],
+                "text": "Convolutional-Recursive Deep Learning for 3D Object Classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work introduces a model based on a combination of convolutional and recursive neural networks (CNN and RNN) for learning features and classifying RGB-D images, which obtains state of the art performance on a standardRGB-D object dataset while being more accurate and faster during training and testing than comparable architectures such as two-layer CNNs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144108062"
+                        ],
+                        "name": "Jasper Snoek",
+                        "slug": "Jasper-Snoek",
+                        "structuredName": {
+                            "firstName": "Jasper",
+                            "lastName": "Snoek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jasper Snoek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1777528"
+                        ],
+                        "name": "H. Larochelle",
+                        "slug": "H.-Larochelle",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Larochelle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Larochelle"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1722180"
+                        ],
+                        "name": "Ryan P. Adams",
+                        "slug": "Ryan-P.-Adams",
+                        "structuredName": {
+                            "firstName": "Ryan",
+                            "lastName": "Adams",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ryan P. Adams"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 632197,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2e2089ae76fe914706e6fa90081a79c8fe01611e",
+            "isKey": false,
+            "numCitedBy": 5016,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The use of machine learning algorithms frequently involves careful tuning of learning parameters and model hyperparameters. Unfortunately, this tuning is often a \"black art\" requiring expert experience, rules of thumb, or sometimes brute-force search. There is therefore great appeal for automatic approaches that can optimize the performance of any given learning algorithm to the problem at hand. In this work, we consider this problem through the framework of Bayesian optimization, in which a learning algorithm's generalization performance is modeled as a sample from a Gaussian process (GP). We show that certain choices for the nature of the GP, such as the type of kernel and the treatment of its hyperparameters, can play a crucial role in obtaining a good optimizer that can achieve expertlevel performance. We describe new algorithms that take into account the variable cost (duration) of learning algorithm experiments and that can leverage the presence of multiple cores for parallel experimentation. We show that these proposed algorithms improve on previous automatic procedures and can reach or surpass human expert-level optimization for many algorithms including latent Dirichlet allocation, structured SVMs and convolutional neural networks."
+            },
+            "slug": "Practical-Bayesian-Optimization-of-Machine-Learning-Snoek-Larochelle",
+            "title": {
+                "fragments": [],
+                "text": "Practical Bayesian Optimization of Machine Learning Algorithms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work describes new algorithms that take into account the variable cost of learning algorithm experiments and that can leverage the presence of multiple cores for parallel experimentation and shows that these proposed algorithms improve on previous automatic procedures and can reach or surpass human expert-level optimization for many algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753223"
+                        ],
+                        "name": "A. Graves",
+                        "slug": "A.-Graves",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Graves",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Graves"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40360972"
+                        ],
+                        "name": "Abdel-rahman Mohamed",
+                        "slug": "Abdel-rahman-Mohamed",
+                        "structuredName": {
+                            "firstName": "Abdel-rahman",
+                            "lastName": "Mohamed",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Abdel-rahman Mohamed"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 100
+                            }
+                        ],
+                        "text": "For example, they have recently been shown to deliver excellent performance for phoneme recognition [8] and cursive handwriting recognition [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206741496,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4177ec52d1b80ed57f2e72b0f9a42365f1a8598d",
+            "isKey": false,
+            "numCitedBy": 6896,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recurrent neural networks (RNNs) are a powerful model for sequential data. End-to-end training methods such as Connectionist Temporal Classification make it possible to train RNNs for sequence labelling problems where the input-output alignment is unknown. The combination of these methods with the Long Short-term Memory RNN architecture has proved particularly fruitful, delivering state-of-the-art results in cursive handwriting recognition. However RNN performance in speech recognition has so far been disappointing, with better results returned by deep feedforward networks. This paper investigates deep recurrent neural networks, which combine the multiple levels of representation that have proved so effective in deep networks with the flexible use of long range context that empowers RNNs. When trained end-to-end with suitable regularisation, we find that deep Long Short-term Memory RNNs achieve a test set error of 17.7% on the TIMIT phoneme recognition benchmark, which to our knowledge is the best recorded score."
+            },
+            "slug": "Speech-recognition-with-deep-recurrent-neural-Graves-Mohamed",
+            "title": {
+                "fragments": [],
+                "text": "Speech recognition with deep recurrent neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper investigates deep recurrent neural networks, which combine the multiple levels of representation that have proved so effective in deep networks with the flexible use of long range context that empowers RNNs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE International Conference on Acoustics, Speech and Signal Processing"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2585821"
+                        ],
+                        "name": "Cliff Chiung-Yu Lin",
+                        "slug": "Cliff-Chiung-Yu-Lin",
+                        "structuredName": {
+                            "firstName": "Cliff",
+                            "lastName": "Lin",
+                            "middleNames": [
+                                "Chiung-Yu"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Cliff Chiung-Yu Lin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[26] showed how image segments could be recursively merged to perform scene parsing."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 18690358,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9c0ddf74f87d154db88d79c640578c1610451eec",
+            "isKey": false,
+            "numCitedBy": 1320,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recursive structure is commonly found in the inputs of different modalities such as natural scene images or natural language sentences. Discovering this recursive structure helps us to not only identify the units that an image or sentence contains but also how they interact to form a whole. We introduce a max-margin structure prediction architecture based on recursive neural networks that can successfully recover such structure both in complex scene images as well as sentences. The same algorithm can be used both to provide a competitive syntactic parser for natural language sentences from the Penn Treebank and to outperform alternative approaches for semantic scene segmentation, annotation and classification. For segmentation and annotation our algorithm obtains a new level of state-of-the-art performance on the Stanford background dataset (78.1%). The features from the image parse tree outperform Gist descriptors for scene classification by 4%."
+            },
+            "slug": "Parsing-Natural-Scenes-and-Natural-Language-with-Socher-Lin",
+            "title": {
+                "fragments": [],
+                "text": "Parsing Natural Scenes and Natural Language with Recursive Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "A max-margin structure prediction architecture based on recursive neural networks that can successfully recover such structure both in complex scene images as well as sentences is introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34180232"
+                        ],
+                        "name": "Yuval Netzer",
+                        "slug": "Yuval-Netzer",
+                        "structuredName": {
+                            "firstName": "Yuval",
+                            "lastName": "Netzer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yuval Netzer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2156632012"
+                        ],
+                        "name": "Tao Wang",
+                        "slug": "Tao-Wang",
+                        "structuredName": {
+                            "firstName": "Tao",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tao Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144638694"
+                        ],
+                        "name": "Adam Coates",
+                        "slug": "Adam-Coates",
+                        "structuredName": {
+                            "firstName": "Adam",
+                            "lastName": "Coates",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Adam Coates"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1726358"
+                        ],
+                        "name": "A. Bissacco",
+                        "slug": "A.-Bissacco",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Bissacco",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Bissacco"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144397975"
+                        ],
+                        "name": "Bo Wu",
+                        "slug": "Bo-Wu",
+                        "structuredName": {
+                            "firstName": "Bo",
+                            "lastName": "Wu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bo Wu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 22
+                            }
+                        ],
+                        "text": "For both CIFAR-10 and SVHN, performance gets better as the number of layers increases, although there is an upward tick at 8 layers for CIFAR-10 test error."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 4
+                            }
+                        ],
+                        "text": "For SVHN, we used M = 32, 64, 128, or 256 feature maps and L = 1, 2, 4, or 8 layers beyond the first."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 53,
+                                "start": 49
+                            }
+                        ],
+                        "text": "We describe our models for the CIFAR-10 [12] and SVHN [17] datasets used in our experiments."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 346,
+                                "start": 342
+                            }
+                        ],
+                        "text": "The final hidden layer is subject to pixel-wise L2 normalization and passed into a logistic classifier to produce a prediction Y:\nYk = exp(Y \u2032k)\u2211 k exp(Y \u2032 k)\nwhere Y\u2032k = \u2211 i,j,m Cki,j,m \u00b7 ZL+1i,j,m/||Z L+1 i,j ||\nThe first-layer kernels Vm are initialized from a zero-mean Gaussian distribution with standard deviation 0.1 for CIFAR-10 and 0.001 for SVHN."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 186,
+                                "start": 182
+                            }
+                        ],
+                        "text": "We considered models where the number of layers beyond the first was between 2 and 8, and the number of feature maps was between 16 and 256 (for CIFAR-10) or between 16 and 150 (for SVHN)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 91
+                            }
+                        ],
+                        "text": "1 Instantiation on CIFAR-10 and SVHN We describe our models for the CIFAR-10 [12] and SVHN [17] datasets used in our experiments."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16852518,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "02227c94dd41fe0b439e050d377b0beb5d427cda",
+            "isKey": true,
+            "numCitedBy": 3893,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Detecting and reading text from natural images is a hard computer vision task that is central to a variety of emerging applications. Related problems like document character recognition have been widely studied by computer vision and machine learning researchers and are virtually solved for practical applications like reading handwritten digits. Reliably recognizing characters in more complex scenes like photographs, however, is far more difficult: the best existing methods lag well behind human performance on the same tasks. In this paper we attack the problem of recognizing digits in a real application using unsupervised feature learning methods: reading house numbers from street level photos. To this end, we introduce a new benchmark dataset for research use containing over 600,000 labeled digits cropped from Street View images. We then demonstrate the difficulty of recognizing these digits when the problem is approached with hand-designed features. Finally, we employ variants of two recently proposed unsupervised feature learning methods and find that they are convincingly superior on our benchmarks."
+            },
+            "slug": "Reading-Digits-in-Natural-Images-with-Unsupervised-Netzer-Wang",
+            "title": {
+                "fragments": [],
+                "text": "Reading Digits in Natural Images with Unsupervised Feature Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A new benchmark dataset for research use is introduced containing over 600,000 labeled digits cropped from Street View images, and variants of two recently proposed unsupervised feature learning methods are employed, finding that they are convincingly superior on benchmarks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153440022"
+                        ],
+                        "name": "Ian J. Goodfellow",
+                        "slug": "Ian-J.-Goodfellow",
+                        "structuredName": {
+                            "firstName": "Ian",
+                            "lastName": "Goodfellow",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ian J. Goodfellow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153583218"
+                        ],
+                        "name": "Mehdi Mirza",
+                        "slug": "Mehdi-Mirza",
+                        "structuredName": {
+                            "firstName": "Mehdi",
+                            "lastName": "Mirza",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mehdi Mirza"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1760871"
+                        ],
+                        "name": "Aaron C. Courville",
+                        "slug": "Aaron-C.-Courville",
+                        "structuredName": {
+                            "firstName": "Aaron",
+                            "lastName": "Courville",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aaron C. Courville"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 103
+                            }
+                        ],
+                        "text": "In contrast to the model we use, however, [15] trains unsupervised using contrastive divergence, while [6] is nonconvolutional and focuses on conditioning on random combinations of inputs and targets."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 142,
+                                "start": 139
+                            }
+                        ],
+                        "text": "There also are interesting relationships with convolutional Deep Belief Networks [15], as well as Multi-Prediction Deep Boltzmann Machines [6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 18
+                            }
+                        ],
+                        "text": "As pointed out by [6], mean field inference in such models can be unrolled and viewed as a type of recurrent network."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6442575,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5656fa5aa6e1beeb98703fc53ec112ad227c49ca",
+            "isKey": true,
+            "numCitedBy": 125,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce the multi-prediction deep Boltzmann machine (MP-DBM). The MP-DBM can be seen as a single probabilistic model trained to maximize a variational approximation to the generalized pseudolikelihood, or as a family of recurrent nets that share parameters and approximately solve different inference problems. Prior methods of training DBMs either do not perform well on classification tasks or require an initial learning pass that trains the DBM greedily, one layer at a time. The MP-DBM does not require greedy layerwise pretraining, and outperforms the standard DBM at classification, classification with missing inputs, and mean field prediction tasks.1"
+            },
+            "slug": "Multi-Prediction-Deep-Boltzmann-Machines-Goodfellow-Mirza",
+            "title": {
+                "fragments": [],
+                "text": "Multi-Prediction Deep Boltzmann Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 53,
+                "text": "The multi-prediction deep Boltzmann machine does not require greedy layerwise pretraining, and outperforms the standard DBM at classification, classification with missing inputs, and mean field prediction tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688276"
+                        ],
+                        "name": "Daan Wierstra",
+                        "slug": "Daan-Wierstra",
+                        "structuredName": {
+                            "firstName": "Daan",
+                            "lastName": "Wierstra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Daan Wierstra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3318461"
+                        ],
+                        "name": "M. Gagliolo",
+                        "slug": "M.-Gagliolo",
+                        "structuredName": {
+                            "firstName": "Matteo",
+                            "lastName": "Gagliolo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Gagliolo"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145842938"
+                        ],
+                        "name": "Faustino J. Gomez",
+                        "slug": "Faustino-J.-Gomez",
+                        "structuredName": {
+                            "firstName": "Faustino",
+                            "lastName": "Gomez",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Faustino J. Gomez"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 34
+                            }
+                        ],
+                        "text": "These are are well-studied models [11, 21, 27], naturally suited to temporal and sequential data."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11745761,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "75479012461814fd176556a56b32c2392462aef5",
+            "isKey": false,
+            "numCitedBy": 242,
+            "numCiting": 95,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In recent years, gradient-based LSTM recurrent neural networks (RNNs) solved many previously RNN-unlearnable tasks. Sometimes, however, gradient information is of little use for training RNNs, due to numerous local minima. For such cases, we present a novel method: EVOlution of systems with LINear Outputs (Evolino). Evolino evolves weights to the nonlinear, hidden nodes of RNNs while computing optimal linear mappings from hidden state to output, using methods such as pseudo-inverse-based linear regression. If we instead use quadratic programming to maximize the margin, we obtain the first evolutionary recurrent support vector machines. We show that Evolino-based LSTM can solve tasks that Echo State nets (Jaeger, 2004a) cannot and achieves higher accuracy in certain continuous function generation tasks than conventional gradient descent RNNs, including gradient-based LSTM."
+            },
+            "slug": "Training-Recurrent-Networks-by-Evolino-Schmidhuber-Wierstra",
+            "title": {
+                "fragments": [],
+                "text": "Training Recurrent Networks by Evolino"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown that Evolino-based LSTM can solve tasks that Echo State nets cannot and achieves higher accuracy in certain continuous function generation tasks than conventional gradient descent RNNs, including gradient-basedLSTM."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721248"
+                        ],
+                        "name": "P. Haffner",
+                        "slug": "P.-Haffner",
+                        "structuredName": {
+                            "firstName": "Patrick",
+                            "lastName": "Haffner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Haffner"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 65
+                            }
+                        ],
+                        "text": "Our investigation is based on a multilayer Convolutional Network [14], for which all layers beyond the first have the same size and connection topology."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14542261,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "isKey": false,
+            "numCitedBy": 35241,
+            "numCiting": 248,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day."
+            },
+            "slug": "Gradient-based-learning-applied-to-document-LeCun-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Gradient-based learning applied to document recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task, and Convolutional neural networks are shown to outperform all other techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proc. IEEE"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690427"
+                        ],
+                        "name": "C. Rozell",
+                        "slug": "C.-Rozell",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Rozell",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Rozell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2109729115"
+                        ],
+                        "name": "Don H. Johnson",
+                        "slug": "Don-H.-Johnson",
+                        "structuredName": {
+                            "firstName": "Don",
+                            "lastName": "Johnson",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Don H. Johnson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144908066"
+                        ],
+                        "name": "Richard Baraniuk",
+                        "slug": "Richard-Baraniuk",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Baraniuk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Richard Baraniuk"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1708655"
+                        ],
+                        "name": "B. Olshausen",
+                        "slug": "B.-Olshausen",
+                        "structuredName": {
+                            "firstName": "Bruno",
+                            "lastName": "Olshausen",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Olshausen"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[20] showed how the ISTA scheme can be unwrapped into a repeated series of network layers, which can be viewed as a recursive net."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6968318,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Biology"
+            ],
+            "id": "20b003b91679fd88b63e9bfab6f05f1e7ecabe2c",
+            "isKey": false,
+            "numCitedBy": 374,
+            "numCiting": 74,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "While evidence indicates that neural systems may be employing sparse approximations to represent sensed stimuli, the mechanisms underlying this ability are not understood. We describe a locally competitive algorithm (LCA) that solves a collection of sparse coding principles minimizing a weighted combination of mean-squared error and a coefficient cost function. LCAs are designed to be implemented in a dynamical system composed of many neuron-like elements operating in parallel. These algorithms use thresholding functions to induce local (usually one-way) inhibitory competitions between nodes to produce sparse representations. LCAs produce coefficients with sparsity levels comparable to the most popular centralized sparse coding algorithms while being readily suited for neural implementation. Additionally, LCA coefficients for video sequences demonstrate inertial properties that are both qualitatively and quantitatively more regular (i.e., smoother and more predictable) than the coefficients produced by greedy algorithms."
+            },
+            "slug": "Sparse-Coding-via-Thresholding-and-Local-in-Neural-Rozell-Johnson",
+            "title": {
+                "fragments": [],
+                "text": "Sparse Coding via Thresholding and Local Competition in Neural Circuits"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "A locally competitive algorithm (LCA) is described that solves a collection of sparse coding principles minimizing a weighted combination of mean-squared error and a coefficient cost function to produce coefficients with sparsity levels comparable to the most popular centralized sparse coding algorithms while being readily suited for neural implementation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3308557"
+                        ],
+                        "name": "S. Hochreiter",
+                        "slug": "S.-Hochreiter",
+                        "structuredName": {
+                            "firstName": "Sepp",
+                            "lastName": "Hochreiter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Hochreiter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 34
+                            }
+                        ],
+                        "text": "These are are well-studied models [11, 21, 27], naturally suited to temporal and sequential data."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1915014,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "44d2abe2175df8153f465f6c39b68b76a0d40ab9",
+            "isKey": false,
+            "numCitedBy": 51659,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms."
+            },
+            "slug": "Long-Short-Term-Memory-Hochreiter-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "Long Short-Term Memory"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A novel, efficient, gradient based method called long short-term memory (LSTM) is introduced, which can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144717963"
+                        ],
+                        "name": "Karol Gregor",
+                        "slug": "Karol-Gregor",
+                        "structuredName": {
+                            "firstName": "Karol",
+                            "lastName": "Gregor",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Karol Gregor"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 73
+                            }
+                        ],
+                        "text": "This novel recursive, convolutional architecture is reminiscent of LISTA [9], but without a direct projection from the input to each hidden layer."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 18,
+                                "start": 15
+                            }
+                        ],
+                        "text": "Gregor & LeCun [9] showed how to backpropagate through such a network to give fast approximations to sparse coding known as LISTA."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 13,
+                                "start": 8
+                            }
+                        ],
+                        "text": "Rolfe & LeCun [19] then showed in their DrSAE model how a discriminative term can be added."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 80
+                            }
+                        ],
+                        "text": "Our network can be considered a purely discriminative, convolutional version of LISTA or DrSAE."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 13333501,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e8f811399746c059bf4d4c3d43334045e0222209",
+            "isKey": false,
+            "numCitedBy": 1128,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In Sparse Coding (SC), input vectors are reconstructed using a sparse linear combination of basis vectors. SC has become a popular method for extracting features from data. For a given input, SC minimizes a quadratic reconstruction error with an L1 penalty term on the code. The process is often too slow for applications such as real-time pattern recognition. We proposed two versions of a very fast algorithm that produces approximate estimates of the sparse code that can be used to compute good visual features, or to initialize exact iterative algorithms. The main idea is to train a non-linear, feed-forward predictor with a specific architecture and a fixed depth to produce the best possible approximation of the sparse code. A version of the method, which can be seen as a trainable version of Li and Osher's coordinate descent method, is shown to produce approximate solutions with 10 times less computation than Li and Os-her's for the same approximation error. Unlike previous proposals for sparse code predictors, the system allows a kind of approximate \"explaining away\" to take place during inference. The resulting predictor is differentiable and can be included into globally-trained recognition systems."
+            },
+            "slug": "Learning-Fast-Approximations-of-Sparse-Coding-Gregor-LeCun",
+            "title": {
+                "fragments": [],
+                "text": "Learning Fast Approximations of Sparse Coding"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Two versions of a very fast algorithm that produces approximate estimates of the sparse code that can be used to compute good visual features, or to initialize exact iterative algorithms are proposed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2073603971"
+                        ],
+                        "name": "Vinod Nair",
+                        "slug": "Vinod-Nair",
+                        "structuredName": {
+                            "firstName": "Vinod",
+                            "lastName": "Nair",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Vinod Nair"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 55,
+                                "start": 45
+                            }
+                        ],
+                        "text": "All layers use rectified linear units (ReLU) [3, 4, 16]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15539264,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a538b05ebb01a40323997629e171c91aa28b8e2f",
+            "isKey": false,
+            "numCitedBy": 12805,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Restricted Boltzmann machines were developed using binary stochastic hidden units. These can be generalized by replacing each binary unit by an infinite number of copies that all have the same weights but have progressively more negative biases. The learning and inference rules for these \"Stepped Sigmoid Units\" are unchanged. They can be approximated efficiently by noisy, rectified linear units. Compared with binary units, these units learn features that are better for object recognition on the NORB dataset and face verification on the Labeled Faces in the Wild dataset. Unlike binary units, rectified linear units preserve information about relative intensities as information travels through multiple layers of feature detectors."
+            },
+            "slug": "Rectified-Linear-Units-Improve-Restricted-Boltzmann-Nair-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "Rectified Linear Units Improve Restricted Boltzmann Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "Restricted Boltzmann machines were developed using binary stochastic hidden units that learn features that are better for object recognition on the NORB dataset and face verification on the Labeled Faces in the Wild dataset."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40204991"
+                        ],
+                        "name": "A. Beck",
+                        "slug": "A.-Beck",
+                        "structuredName": {
+                            "firstName": "Amir",
+                            "lastName": "Beck",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Beck"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1727609"
+                        ],
+                        "name": "M. Teboulle",
+                        "slug": "M.-Teboulle",
+                        "structuredName": {
+                            "firstName": "Marc",
+                            "lastName": "Teboulle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Teboulle"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 129,
+                                "start": 125
+                            }
+                        ],
+                        "text": "Gregor & LeCun [9] showed how to backpropagate through such a network to give fast approximations to sparse coding known as LISTA."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 81
+                            }
+                        ],
+                        "text": "Our network can be considered a purely discriminative, convolutional version of LISTA or DrSAE."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 59
+                            }
+                        ],
+                        "text": "Sparse coding [18] uses iterative algorithms, such as ISTA [1], to perform inference."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 34
+                            }
+                        ],
+                        "text": "Rozell et al. [20] showed how the ISTA scheme can be unwrapped into a repeated series of network layers, which can be viewed as a recursive net."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 68
+                            }
+                        ],
+                        "text": "This novel recursive, convolutional architecture is reminiscent of LISTA [9], but without a direct projection from the input to each hidden layer."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 3072879,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "3c718363c22221fd16771672da3bfd5f67d2c34c",
+            "isKey": true,
+            "numCitedBy": 9237,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the class of iterative shrinkage-thresholding algorithms (ISTA) for solving linear inverse problems arising in signal/image processing. This class of methods, which can be viewed as an extension of the classical gradient algorithm, is attractive due to its simplicity and thus is adequate for solving large-scale problems even with dense matrix data. However, such methods are also known to converge quite slowly. In this paper we present a new fast iterative shrinkage-thresholding algorithm (FISTA) which preserves the computational simplicity of ISTA but with a global rate of convergence which is proven to be significantly better, both theoretically and practically. Initial promising numerical results for wavelet-based image deblurring demonstrate the capabilities of FISTA which is shown to be faster than ISTA by several orders of magnitude."
+            },
+            "slug": "A-Fast-Iterative-Shrinkage-Thresholding-Algorithm-Beck-Teboulle",
+            "title": {
+                "fragments": [],
+                "text": "A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 53,
+                "text": "A new fast iterative shrinkage-thresholding algorithm (FISTA) which preserves the computational simplicity of ISTA but with a global rate of convergence which is proven to be significantly better, both theoretically and practically."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIAM J. Imaging Sci."
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "98689724"
+                        ],
+                        "name": "K. Jaquay",
+                        "slug": "K.-Jaquay",
+                        "structuredName": {
+                            "firstName": "Kenneth",
+                            "lastName": "Jaquay",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Jaquay"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145456948"
+                        ],
+                        "name": "P. Norton",
+                        "slug": "P.-Norton",
+                        "structuredName": {
+                            "firstName": "Pedro",
+                            "lastName": "Norton",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Norton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 146,
+                                "start": 135
+                            }
+                        ],
+                        "text": "1 Introduction Convolutional networks have recently made significant progress in a variety of image classification and detection tasks [13, 2, 23], with further gains and applications continuing to be realized."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 220583671,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "0f9310ba00f382009e7768df60b5021c43ddb266",
+            "isKey": false,
+            "numCitedBy": 380,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ". The need for adaptive systems is growing with the increasing number of autonomous entities such as software systems and robots. A key characteris-tic of adaptive systems is that their environment changes, possibly in ways that were not envisaged at design-time. These changes in requirements, model and context mean the functional behaviour of a system cannot be fully defined in many cases, and consequently formal verification of the system is not possible. In this research, we propose a fuzzy representation to describe the result of requirement verification. We use an adaptive assisted living system as the case study. The RELAX language is used to create a flexible system specification. We model and simulate the system using UPPAAL 4 and use a fuzzy approach to translate the simulation result into fuzzy requirement satisfaction. The result shows the benefit of a more flexible representation by describing the degree of requirement satisfaction rather than a strict yes/no Boolean judgment."
+            },
+            "slug": "Flexible-Jaquay-Norton",
+            "title": {
+                "fragments": [],
+                "text": "Flexible"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1976
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753223"
+                        ],
+                        "name": "A. Graves",
+                        "slug": "A.-Graves",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Graves",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Graves"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1743758"
+                        ],
+                        "name": "M. Liwicki",
+                        "slug": "M.-Liwicki",
+                        "structuredName": {
+                            "firstName": "Marcus",
+                            "lastName": "Liwicki",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Liwicki"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143913738"
+                        ],
+                        "name": "Santiago Fern\u00e1ndez",
+                        "slug": "Santiago-Fern\u00e1ndez",
+                        "structuredName": {
+                            "firstName": "Santiago",
+                            "lastName": "Fern\u00e1ndez",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Santiago Fern\u00e1ndez"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2168488"
+                        ],
+                        "name": "Roman Bertolami",
+                        "slug": "Roman-Bertolami",
+                        "structuredName": {
+                            "firstName": "Roman",
+                            "lastName": "Bertolami",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Roman Bertolami"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1720945"
+                        ],
+                        "name": "H. Bunke",
+                        "slug": "H.-Bunke",
+                        "structuredName": {
+                            "firstName": "Horst",
+                            "lastName": "Bunke",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Bunke"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14635907,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "375214ac340226e23ec428e92ec499fb89f508b8",
+            "isKey": false,
+            "numCitedBy": 1587,
+            "numCiting": 64,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recognizing lines of unconstrained handwritten text is a challenging task. The difficulty of segmenting cursive or overlapping characters, combined with the need to exploit surrounding context, has led to low recognition rates for even the best current recognizers. Most recent progress in the field has been made either through improved preprocessing or through advances in language modeling. Relatively little work has been done on the basic recognition algorithms. Indeed, most systems rely on the same hidden Markov models that have been used for decades in speech and handwriting recognition, despite their well-known shortcomings. This paper proposes an alternative approach based on a novel type of recurrent neural network, specifically designed for sequence labeling tasks where the data is hard to segment and contains long-range bidirectional interdependencies. In experiments on two large unconstrained handwriting databases, our approach achieves word recognition accuracies of 79.7 percent on online data and 74.1 percent on offline data, significantly outperforming a state-of-the-art HMM-based system. In addition, we demonstrate the network's robustness to lexicon size, measure the individual influence of its hidden layers, and analyze its use of context. Last, we provide an in-depth discussion of the differences between the network and HMMs, suggesting reasons for the network's superior performance."
+            },
+            "slug": "A-Novel-Connectionist-System-for-Unconstrained-Graves-Liwicki",
+            "title": {
+                "fragments": [],
+                "text": "A Novel Connectionist System for Unconstrained Handwriting Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper proposes an alternative approach based on a novel type of recurrent neural network, specifically designed for sequence labeling tasks where the data is hard to segment and contains long-range bidirectional interdependencies, significantly outperforming a state-of-the-art HMM-based system."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 146,
+                                "start": 135
+                            }
+                        ],
+                        "text": "1 Introduction Convolutional networks have recently made significant progress in a variety of image classification and detection tasks [13, 2, 23], with further gains and applications continuing to be realized."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Overfeat: Integrated recognition"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "localization and detection using convolutional networks. http://arxiv.org/abs/1312.6229"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 279,
+                                "start": 275
+                            }
+                        ],
+                        "text": "First, we note that despite the simple architecture of our model, it still achieves competitive performance on both datasets, relative to other models that, like ours, do not use any image transformations or other regularizations such as dropout [10, 28], stochastic pooling [29] or maxout [5] (see Table 1)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Stochastic pooling"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Practical bayesian optimzation of machine learning algorithms"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Maxout networks. In ICML"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Maxout networks. In ICML"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 55,
+                                "start": 45
+                            }
+                        ],
+                        "text": "All layers use rectified linear units (ReLU) [3, 4, 16]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Deep sparse rectifier networks"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS, volume 15, pages 315\u2013323"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 143,
+                                "start": 140
+                            }
+                        ],
+                        "text": "For example, they have recently been shown to deliver excellent performance for phoneme recognition [8] and cursive handwriting recognition [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A novel connectionist system for improved unconstrained handwriting recognition"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PAMI, 31(5)"
+            },
+            "year": 2009
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 19,
+            "methodology": 8
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 34,
+        "totalPages": 4
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Understanding-Deep-Architectures-using-a-Recursive-Eigen-Rolfe/e2d894584986b44710f634b696db371f8aff92e0?sort=total-citations"
+}

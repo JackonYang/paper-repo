@@ -1,0 +1,1537 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064160"
+                        ],
+                        "name": "A. Krizhevsky",
+                        "slug": "A.-Krizhevsky",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Krizhevsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krizhevsky"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 18268744,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5d90f06bb70a0a3dced62413346235c02b1aa086",
+            "isKey": false,
+            "numCitedBy": 17080,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Groups at MIT and NYU have collected a dataset of millions of tiny colour images from the web. It is, in principle, an excellent dataset for unsupervised training of deep generative models, but previous researchers who have tried this have found it dicult to learn a good set of lters from the images. We show how to train a multi-layer generative model that learns to extract meaningful features which resemble those found in the human visual cortex. Using a novel parallelization algorithm to distribute the work among multiple machines connected on a network, we show how training such a model can be done in reasonable time. A second problematic aspect of the tiny images dataset is that there are no reliable class labels which makes it hard to use for object recognition experiments. We created two sets of reliable labels. The CIFAR-10 set has 6000 examples of each of 10 classes and the CIFAR-100 set has 600 examples of each of 100 non-overlapping classes. Using these labels, we show that object recognition is signicantly improved by pre-training a layer of features on a large set of unlabeled tiny images."
+            },
+            "slug": "Learning-Multiple-Layers-of-Features-from-Tiny-Krizhevsky",
+            "title": {
+                "fragments": [],
+                "text": "Learning Multiple Layers of Features from Tiny Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "It is shown how to train a multi-layer generative model that learns to extract meaningful features which resemble those found in the human visual cortex, using a novel parallelization algorithm to distribute the work among multiple machines connected on a network."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3119801"
+                        ],
+                        "name": "Xavier Glorot",
+                        "slug": "Xavier-Glorot",
+                        "structuredName": {
+                            "firstName": "Xavier",
+                            "lastName": "Glorot",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xavier Glorot"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 26
+                            }
+                        ],
+                        "text": "The transformations parameters \u03b1i and \u03b2i, however are updated after the initialization and after every 1000 iterations thereafter, using the whole data set in Equations (5\u20136)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5575601,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b71ac1e9fb49420d13e084ac67254a0bbd40f83f",
+            "isKey": false,
+            "numCitedBy": 12426,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Whereas before 2006 it appears that deep multilayer neural networks were not successfully trained, since then several algorithms have been shown to successfully train them, with experimental results showing the superiority of deeper vs less deep architectures. All these experimental results were obtained with new initialization or training mechanisms. Our objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future. We first observe the influence of the non-linear activations functions. We find that the logistic sigmoid activation is unsuited for deep networks with random initialization because of its mean value, which can drive especially the top hidden layer into saturation. Surprisingly, we find that saturated units can move out of saturation by themselves, albeit slowly, and explaining the plateaus sometimes seen when training neural networks. We find that a new non-linearity that saturates less can often be beneficial. Finally, we study how activations and gradients vary across layers and during training, with the idea that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1. Based on these considerations, we propose a new initialization scheme that brings substantially faster convergence. 1 Deep Neural Networks Deep learning methods aim at learning feature hierarchies with features from higher levels of the hierarchy formed by the composition of lower level features. They include Appearing in Proceedings of the 13 International Conference on Artificial Intelligence and Statistics (AISTATS) 2010, Chia Laguna Resort, Sardinia, Italy. Volume 9 of JMLR: WC Weston et al., 2008). Much attention has recently been devoted to them (see (Bengio, 2009) for a review), because of their theoretical appeal, inspiration from biology and human cognition, and because of empirical success in vision (Ranzato et al., 2007; Larochelle et al., 2007; Vincent et al., 2008) and natural language processing (NLP) (Collobert & Weston, 2008; Mnih & Hinton, 2009). Theoretical results reviewed and discussed by Bengio (2009), suggest that in order to learn the kind of complicated functions that can represent high-level abstractions (e.g. in vision, language, and other AI-level tasks), one may need deep architectures. Most of the recent experimental results with deep architecture are obtained with models that can be turned into deep supervised neural networks, but with initialization or training schemes different from the classical feedforward neural networks (Rumelhart et al., 1986). Why are these new algorithms working so much better than the standard random initialization and gradient-based optimization of a supervised training criterion? Part of the answer may be found in recent analyses of the effect of unsupervised pretraining (Erhan et al., 2009), showing that it acts as a regularizer that initializes the parameters in a \u201cbetter\u201d basin of attraction of the optimization procedure, corresponding to an apparent local minimum associated with better generalization. But earlier work (Bengio et al., 2007) had shown that even a purely supervised but greedy layer-wise procedure would give better results. So here instead of focusing on what unsupervised pre-training or semi-supervised criteria bring to deep architectures, we focus on analyzing what may be going wrong with good old (but deep) multilayer neural networks. Our analysis is driven by investigative experiments to monitor activations (watching for saturation of hidden units) and gradients, across layers and across training iterations. We also evaluate the effects on these of choices of activation function (with the idea that it might affect saturation) and initialization procedure (since unsupervised pretraining is a particular form of initialization and it has a drastic impact)."
+            },
+            "slug": "Understanding-the-difficulty-of-training-deep-Glorot-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Understanding the difficulty of training deep feedforward neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "120247189"
+                        ],
+                        "name": "Pascal Vincent",
+                        "slug": "Pascal-Vincent",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Vincent",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pascal Vincent"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1777528"
+                        ],
+                        "name": "H. Larochelle",
+                        "slug": "H.-Larochelle",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Larochelle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Larochelle"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1798462"
+                        ],
+                        "name": "Pierre-Antoine Manzagol",
+                        "slug": "Pierre-Antoine-Manzagol",
+                        "structuredName": {
+                            "firstName": "Pierre-Antoine",
+                            "lastName": "Manzagol",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pierre-Antoine Manzagol"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 207168299,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "843959ffdccf31c6694d135fad07425924f785b1",
+            "isKey": false,
+            "numCitedBy": 5467,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Previous work has shown that the difficulties in learning deep generative or discriminative models can be overcome by an initial unsupervised learning step that maps inputs to useful intermediate representations. We introduce and motivate a new training principle for unsupervised learning of a representation based on the idea of making the learned representations robust to partial corruption of the input pattern. This approach can be used to train autoencoders, and these denoising autoencoders can be stacked to initialize deep architectures. The algorithm can be motivated from a manifold learning and information theoretic perspective or from a generative model perspective. Comparative experiments clearly show the surprising advantage of corrupting the input of autoencoders on a pattern classification benchmark suite."
+            },
+            "slug": "Extracting-and-composing-robust-features-with-Vincent-Larochelle",
+            "title": {
+                "fragments": [],
+                "text": "Extracting and composing robust features with denoising autoencoders"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This work introduces and motivate a new training principle for unsupervised learning of a representation based on the idea of making the learned representations robust to partial corruption of the input pattern."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML '08"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2425018"
+                        ],
+                        "name": "S. Rifai",
+                        "slug": "S.-Rifai",
+                        "structuredName": {
+                            "firstName": "Salah",
+                            "lastName": "Rifai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Rifai"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3119801"
+                        ],
+                        "name": "Xavier Glorot",
+                        "slug": "Xavier-Glorot",
+                        "structuredName": {
+                            "firstName": "Xavier",
+                            "lastName": "Glorot",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xavier Glorot"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145467703"
+                        ],
+                        "name": "Pascal Vincent",
+                        "slug": "Pascal-Vincent",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Vincent",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pascal Vincent"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 10896752,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "3e1638d1ce6ec0d18c82fb3235a521db0a559da2",
+            "isKey": false,
+            "numCitedBy": 67,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Regularization is a well studied problem in the context of neural networks. It is usually used to improve the generalization performance when the number of input samples is relatively small or heavily contaminated with noise. The regularization of a parametric model can be achieved in different manners some of which are early stopping (Morgan and Bourlard, 1990), weight decay, output smoothing that are used to avoid overfitting during the training of the considered model. From a Bayesian point of view, many regularization techniques correspond to imposing certain prior distributions on model parameters (Krogh and Hertz, 1991). Using Bishop's approximation (Bishop, 1995) of the objective function when a restricted type of noise is added to the input of a parametric function, we derive the higher order terms of the Taylor expansion and analyze the coefficients of the regularization terms induced by the noisy input. In particular we study the effect of penalizing the Hessian of the mapping function with respect to the input in terms of generalization performance. We also show how we can control independently this coefficient by explicitly penalizing the Jacobian of the mapping function on corrupted inputs."
+            },
+            "slug": "Adding-noise-to-the-input-of-a-model-trained-with-a-Rifai-Glorot",
+            "title": {
+                "fragments": [],
+                "text": "Adding noise to the input of a model trained with a regularized objective"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work derives the higher order terms of the Taylor expansion and analyzes the coefficients of the regularization terms induced by the noisy input of a parametric function to study the effect of penalizing the Hessian of the mapping function with respect to the input in terms of generalization performance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144362425"
+                        ],
+                        "name": "S. Amari",
+                        "slug": "S.-Amari",
+                        "structuredName": {
+                            "firstName": "Shun\u2010ichi",
+                            "lastName": "Amari",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Amari"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "The transformations were beneficial in all cases, with and without regularization and with networks from two to five hidden layers."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 66,
+                                "start": 63
+                            }
+                        ],
+                        "text": "Second-order optimization methods such as the natural gradient [1] or Newton\u2019s method decrease the number of required iterations compared to the basic gradient descent, but they cannot be easily used with large models due to heavy computations with large matrices."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207585383,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5a767a341364de1f75bea85e0b12ba7d3586a461",
+            "isKey": false,
+            "numCitedBy": 2728,
+            "numCiting": 78,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "When a parameter space has a certain underlying structure, the ordinary gradient of a function does not represent its steepest direction, but the natural gradient does. Information geometry is used for calculating the natural gradients in the parameter space of perceptrons, the space of matrices (for blind source separation), and the space of linear dynamical systems (for blind source deconvolution). The dynamical behavior of natural gradient online learning is analyzed and is proved to be Fisher efficient, implying that it has asymptotically the same performance as the optimal batch estimation of parameters. This suggests that the plateau phenomenon, which appears in the backpropagation learning algorithm of multilayer perceptrons, might disappear or might not be so serious when the natural gradient is used. An adaptive method of updating the learning rate is proposed and analyzed."
+            },
+            "slug": "Natural-Gradient-Works-Efficiently-in-Learning-Amari",
+            "title": {
+                "fragments": [],
+                "text": "Natural Gradient Works Efficiently in Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The dynamical behavior of natural gradient online learning is analyzed and is proved to be Fisher efficient, implying that it has asymptotically the same performance as the optimal batch estimation of parameters."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145124475"
+                        ],
+                        "name": "R. Salakhutdinov",
+                        "slug": "R.-Salakhutdinov",
+                        "structuredName": {
+                            "firstName": "Ruslan",
+                            "lastName": "Salakhutdinov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Salakhutdinov"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 105
+                            }
+                        ],
+                        "text": "We transform the outputs of each hidden neuron in a multi-layer perceptron network to have zero output and zero slope on average, and use separate shortcut connections to model the linear dependencies instead."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1658773,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "46eb79e5eec8a4e2b2f5652b66441e8a4c921c3e",
+            "isKey": false,
+            "numCitedBy": 14638,
+            "numCiting": 42,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "High-dimensional data can be converted to low-dimensional codes by training a multilayer neural network with a small central layer to reconstruct high-dimensional input vectors. Gradient descent can be used for fine-tuning the weights in such \u201cautoencoder\u201d networks, but this works well only if the initial weights are close to a good solution. We describe an effective way of initializing the weights that allows deep autoencoder networks to learn low-dimensional codes that work much better than principal components analysis as a tool to reduce the dimensionality of data."
+            },
+            "slug": "Reducing-the-Dimensionality-of-Data-with-Neural-Hinton-Salakhutdinov",
+            "title": {
+                "fragments": [],
+                "text": "Reducing the Dimensionality of Data with Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This work describes an effective way of initializing the weights that allows deep autoencoder networks to learn low-dimensional codes that work much better than principal components analysis as a tool to reduce the dimensionality of data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Science"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46486898"
+                        ],
+                        "name": "A. Krogh",
+                        "slug": "A.-Krogh",
+                        "structuredName": {
+                            "firstName": "Anders",
+                            "lastName": "Krogh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krogh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2363971"
+                        ],
+                        "name": "J. Hertz",
+                        "slug": "J.-Hertz",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Hertz",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Hertz"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 10137788,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "48e1de7d085808004d5f0493d486669a3d2930b5",
+            "isKey": false,
+            "numCitedBy": 1365,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "It has been observed in numerical simulations that a weight decay can improve generalization in a feed-forward neural network. This paper explains why. It is proven that a weight decay has two effects in a linear network. First, it suppresses any irrelevant components of the weight vector by choosing the smallest vector that solves the learning problem. Second, if the size is chosen right, a weight decay can suppress some of the effects of static noise on the targets, which improves generalization quite a lot. It is then shown how to extend these results to networks with hidden layers and non-linear units. Finally the theory is confirmed by some numerical simulations using the data from NetTalk."
+            },
+            "slug": "A-Simple-Weight-Decay-Can-Improve-Generalization-Krogh-Hertz",
+            "title": {
+                "fragments": [],
+                "text": "A Simple Weight Decay Can Improve Generalization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "It is proven that a weight decay has two effects in a linear network, and it is shown how to extend these results to networks with hidden layers and non-linear units."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739396"
+                        ],
+                        "name": "N. Schraudolph",
+                        "slug": "N.-Schraudolph",
+                        "structuredName": {
+                            "firstName": "Nicol",
+                            "lastName": "Schraudolph",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Schraudolph"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 201,
+                                "start": 197
+                            }
+                        ],
+                        "text": "We experimentally confirm the usefulness of the transformations by noting that they make basic stochastic gradient learning competitive with state-of-the-art learning algorithms in speed, and that they seem also to help find solutions that generalize better."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14135490,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5763bd6b3f24a01c3bc7cd15d3c916b4840b759d",
+            "isKey": false,
+            "numCitedBy": 26,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Gradient factor centering is a new methodology for decomposing neural networks into biased and centered subnets which are then trained in parallel. The decomposition can be applied to any pattern-dependent factor in the network''s gradient, and is designed such that the subnets are more amenable to optimization by gradient descent than the original network: biased subnets because of their simplified architecture, centered subnets due to a modified gradient that improves conditioning. The architectural and algorithmic modifications mandated by this approach include both familiar and novel elements, often in prescribed combinations. The framework suggests for instance that shortcut connections - a well-known architectural feature - should work best in conjunction with slope centering, a new technique described herein. Our benchmark experiments bear out this prediction, and show that factor-centering decomposition can speed up learning significantly without adversely affecting the trained network''s generalization ability."
+            },
+            "slug": "Accelerated-Gradient-Descent-by-Factor-Centering-Schraudolph",
+            "title": {
+                "fragments": [],
+                "text": "Accelerated Gradient Descent by Factor-Centering Decomposition"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145704247"
+                        ],
+                        "name": "James Martens",
+                        "slug": "James-Martens",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Martens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Martens"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 129,
+                                "start": 125
+                            }
+                        ],
+                        "text": "We study the theoretical properties of the transformation by noting that they make the Fisher information matrix closer to a diagonal matrix, and thus standard gradient closer to the natural gradient."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11154521,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4c46347fbc272b21468efe3d9af34b4b2bad6684",
+            "isKey": false,
+            "numCitedBy": 844,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We develop a 2nd-order optimization method based on the \"Hessian-free\" approach, and apply it to training deep auto-encoders. Without using pre-training, we obtain results superior to those reported by Hinton & Salakhutdinov (2006) on the same tasks they considered. Our method is practical, easy to use, scales nicely to very large datasets, and isn't limited in applicability to auto-encoders, or any specific model class. We also discuss the issue of \"pathological curvature\" as a possible explanation for the difficulty of deep-learning and how 2nd-order optimization, and our method in particular, effectively deals with it."
+            },
+            "slug": "Deep-learning-via-Hessian-free-optimization-Martens",
+            "title": {
+                "fragments": [],
+                "text": "Deep learning via Hessian-free optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "A 2nd-order optimization method based on the \"Hessian-free\" approach is developed, and applied to training deep auto-encoders, and results superior to those reported by Hinton & Salakhutdinov (2006) are obtained."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739396"
+                        ],
+                        "name": "N. Schraudolph",
+                        "slug": "N.-Schraudolph",
+                        "structuredName": {
+                            "firstName": "Nicol",
+                            "lastName": "Schraudolph",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Schraudolph"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 206,
+                                "start": 202
+                            }
+                        ],
+                        "text": "We experimentally confirm the usefulness of the transformations by noting that they make basic stochastic gradient learning competitive with state-of-the-art learning algorithms in speed, and that they seem also to help find solutions that generalize better."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2226276,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "75a026ddfdd9c219d69fe8af816f085ea1b3877d",
+            "isKey": false,
+            "numCitedBy": 46,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "It has long been known that neural networks can learn faster when their input and hidden unit activity is centered about zero; recently we have extended this approach to also encompass the centering of error signals (Schraudolph & Sejnowski, 1996). Here we generalize this notion to all factors involved in the network''s gradient, leading us to propose centering the slope of hidden unit activation functions as well. Slope centering removes the linear component of backpropagated error; this improves credit assignment in networks with shortcut connections. Benchmark results show that this can speed up learning significantly without adversely affecting the trained network''s generalization ability."
+            },
+            "slug": "Centering-Neural-Network-Gradient-Factors-Schraudolph",
+            "title": {
+                "fragments": [],
+                "text": "Centering Neural Network Gradient Factors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work proposes centering the slope of hidden unit activation functions as well, which removes the linear component of backpropagated error and improves credit assignment in networks with shortcut connections."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks: Tricks of the Trade"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739396"
+                        ],
+                        "name": "N. Schraudolph",
+                        "slug": "N.-Schraudolph",
+                        "structuredName": {
+                            "firstName": "Nicol",
+                            "lastName": "Schraudolph",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Schraudolph"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Schraudolph [12] proposed a transformation of gradients of the error signals to have zero slope on average."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16101303,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3d47631f0ac44803821b96b90694a8ad5d4bdabd",
+            "isKey": false,
+            "numCitedBy": 5,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Shortcut connections are a popular architectural feature of multi-layer perceptrons. It is generally assumed that by implementing a linear sub-mapping, shortcuts assist the learning process in the remainder of the network. Here we find that this is not always the case: shortcut weights may also act as distractors that slow down convergence and can lead to inferior solutions. This problem can be addressed with slope centering, a particular form of gradient factor centering. By removing the linear component of the error signal at a hidden node, slope centering effectively decouples that node from the shortcuts that bypass it. This eliminates the possibility of destructive interference from shortcut weights, and thus ensures that the benefits of shortcut connections are fully realized."
+            },
+            "slug": "Slope-Centering:-Making-Shortcut-Weights-Effective-Schraudolph",
+            "title": {
+                "fragments": [],
+                "text": "Slope Centering: Making Shortcut Weights Effective"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Slope centering eliminates the possibility of destructive interference from shortcut weights, and thus ensures that the benefits of shortcut connections are fully realized."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721248"
+                        ],
+                        "name": "P. Haffner",
+                        "slug": "P.-Haffner",
+                        "structuredName": {
+                            "firstName": "Patrick",
+                            "lastName": "Haffner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Haffner"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14542261,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "isKey": false,
+            "numCitedBy": 35241,
+            "numCiting": 248,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day."
+            },
+            "slug": "Gradient-based-learning-applied-to-document-LeCun-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Gradient-based learning applied to document recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task, and Convolutional neural networks are shown to outperform all other techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proc. IEEE"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700994"
+                        ],
+                        "name": "R. Battiti",
+                        "slug": "R.-Battiti",
+                        "structuredName": {
+                            "firstName": "Roberto",
+                            "lastName": "Battiti",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Battiti"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 27960650,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bbf6f07e699587c8d52faf829a289f8cbc7f11a5",
+            "isKey": false,
+            "numCitedBy": 1216,
+            "numCiting": 65,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "On-line first-order backpropagation is sufficiently fast and effective for many large-scale classification problems but for very high precision mappings, batch processing may be the method of choice. This paper reviews first- and second-order optimization methods for learning in feedforward neural networks. The viewpoint is that of optimization: many methods can be cast in the language of optimization techniques, allowing the transfer to neural nets of detailed results about computational complexity and safety procedures to ensure convergence and to avoid numerical problems. The review is not intended to deliver detailed prescriptions for the most appropriate methods in specific applications, but to illustrate the main characteristics of the different methods and their mutual relations."
+            },
+            "slug": "First-and-Second-Order-Methods-for-Learning:-and-Battiti",
+            "title": {
+                "fragments": [],
+                "text": "First- and Second-Order Methods for Learning: Between Steepest Descent and Newton's Method"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "First- and second-order optimization methods for learning in feedforward neural networks are reviewed to illustrate the main characteristics of the different methods and their mutual relations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7245737"
+                        ],
+                        "name": "Nicolas Le Roux",
+                        "slug": "Nicolas-Le-Roux",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Le Roux",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nicolas Le Roux"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1798462"
+                        ],
+                        "name": "Pierre-Antoine Manzagol",
+                        "slug": "Pierre-Antoine-Manzagol",
+                        "structuredName": {
+                            "firstName": "Pierre-Antoine",
+                            "lastName": "Manzagol",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pierre-Antoine Manzagol"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 9666804,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6ed460701019072ee2e364a1a491f73dd931f27f",
+            "isKey": false,
+            "numCitedBy": 179,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Guided by the goal of obtaining an optimization algorithm that is both fast and yields good generalization, we study the descent direction maximizing the decrease in generalization error or the probability of not increasing generalization error. The surprising result is that from both the Bayesian and frequentist perspectives this can yield the natural gradient direction. Although that direction can be very expensive to compute we develop an efficient, general, online approximation to the natural gradient descent which is suited to large scale problems. We report experimental results showing much faster convergence in computation time and in number of iterations with TONGA (Topmoumoute Online natural Gradient Algorithm) than with stochastic gradient descent, even on very large datasets."
+            },
+            "slug": "Topmoumoute-Online-Natural-Gradient-Algorithm-Roux-Manzagol",
+            "title": {
+                "fragments": [],
+                "text": "Topmoumoute Online Natural Gradient Algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "An efficient, general, online approximation to the natural gradient descent which is suited to large scale problems and much faster convergence in computation time and in number of iterations with TONGA than with stochastic gradient descent, even on very large datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1895356"
+                        ],
+                        "name": "D. Ciresan",
+                        "slug": "D.-Ciresan",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Ciresan",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ciresan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2514691"
+                        ],
+                        "name": "U. Meier",
+                        "slug": "U.-Meier",
+                        "structuredName": {
+                            "firstName": "Ueli",
+                            "lastName": "Meier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "U. Meier"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "6803671"
+                        ],
+                        "name": "L. Gambardella",
+                        "slug": "L.-Gambardella",
+                        "structuredName": {
+                            "firstName": "Luca",
+                            "lastName": "Gambardella",
+                            "middleNames": [
+                                "Maria"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gambardella"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1918673,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b98cd08b75ebf2bd1d1ec47c51ef75777a7e64bd",
+            "isKey": false,
+            "numCitedBy": 875,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Good old online backpropagation for plain multilayer perceptrons yields a very low 0.35 error rate on the MNIST handwritten digits benchmark. All we need to achieve this best result so far are many hidden layers, many neurons per layer, numerous deformed training images to avoid overfitting, and graphics cards to greatly speed up learning."
+            },
+            "slug": "Deep,-Big,-Simple-Neural-Nets-for-Handwritten-Digit-Ciresan-Meier",
+            "title": {
+                "fragments": [],
+                "text": "Deep, Big, Simple Neural Nets for Handwritten Digit Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "Good old online backpropagation for plain multilayer perceptrons yields a very low 0.35 error rate on the MNIST handwritten digits benchmark."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1895356"
+                        ],
+                        "name": "D. Ciresan",
+                        "slug": "D.-Ciresan",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Ciresan",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ciresan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2514691"
+                        ],
+                        "name": "U. Meier",
+                        "slug": "U.-Meier",
+                        "structuredName": {
+                            "firstName": "Ueli",
+                            "lastName": "Meier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "U. Meier"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "6803671"
+                        ],
+                        "name": "L. Gambardella",
+                        "slug": "L.-Gambardella",
+                        "structuredName": {
+                            "firstName": "Luca",
+                            "lastName": "Gambardella",
+                            "middleNames": [
+                                "Maria"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gambardella"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 170,
+                                "start": 167
+                            }
+                        ],
+                        "text": "We study the theoretical properties of the transformation by noting that they make the Fisher information matrix closer to a diagonal matrix, and thus standard gradient closer to the natural gradient."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 45157843,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9e2964d36f154cc13b0af39c5b36cb3d76b27da1",
+            "isKey": false,
+            "numCitedBy": 414,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Deep-Big-Simple-Neural-Nets-Excel-on-Handwritten-Ciresan-Meier",
+            "title": {
+                "fragments": [],
+                "text": "Deep Big Simple Neural Nets Excel on Handwritten Digit Recognition"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34782608"
+                        ],
+                        "name": "G. Orr",
+                        "slug": "G.-Orr",
+                        "structuredName": {
+                            "firstName": "Genevieve",
+                            "lastName": "Orr",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Orr"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145034054"
+                        ],
+                        "name": "K. M\u00fcller",
+                        "slug": "K.-M\u00fcller",
+                        "structuredName": {
+                            "firstName": "Klaus-Robert",
+                            "lastName": "M\u00fcller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. M\u00fcller"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 196,
+                                "start": 192
+                            }
+                        ],
+                        "text": "We experimentally confirm the usefulness of the transformations by noting that they make basic stochastic gradient learning competitive with state-of-the-art learning algorithms in speed, and that they seem also to help find solutions that generalize better."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 20158889,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b87274e6d9aa4e6ba5148898aa92941617d2b6ed",
+            "isKey": false,
+            "numCitedBy": 2630,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Efficient-BackProp-LeCun-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Efficient BackProp"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks: Tricks of the Trade"
+            },
+            "year": 2012
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 7,
+            "methodology": 3
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 17,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Deep-Learning-Made-Easier-by-Linear-Transformations-Raiko-Valpola/b8ef1230a5cc9ea7cd8358f1ae7d1af97813ba14?sort=total-citations"
+}

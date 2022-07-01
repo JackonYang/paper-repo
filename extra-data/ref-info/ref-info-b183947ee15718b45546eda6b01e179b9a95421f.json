@@ -1,0 +1,4133 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2066267536"
+                        ],
+                        "name": "Santiago Man\u00e9n",
+                        "slug": "Santiago-Man\u00e9n",
+                        "structuredName": {
+                            "firstName": "Santiago",
+                            "lastName": "Man\u00e9n",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Santiago Man\u00e9n"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2737253"
+                        ],
+                        "name": "M. Guillaumin",
+                        "slug": "M.-Guillaumin",
+                        "structuredName": {
+                            "firstName": "Matthieu",
+                            "lastName": "Guillaumin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Guillaumin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 106
+                            }
+                        ],
+                        "text": "Note that previous methods have an implicit bias for which \u03b4 they are designed for, e.g. Objectness [4] and Randomized Prim [8] are tuned for low and high \u03b4, respectively, whereas we provide explicit control over diversity versus accuracy."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 130,
+                                "start": 127
+                            }
+                        ],
+                        "text": "Comparison of Edge Boxes to various state-of-the-algorithms, including Objectness [4], Selective Search [5], Randomized Prim\u2019s [8] and Rahtu [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 22,
+                                "start": 19
+                            }
+                        ],
+                        "text": "In a similar vein, [8] propose a randomized greedy algorithm for computing sets of superpixels that are likely to occur together."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 216,
+                                "start": 211
+                            }
+                        ],
+                        "text": "Candidate bounding boxes representing object proposals can be found by measuring their \u2018objectness\u2019 [4,11], producing multiple foreground-background segmentations of an image [6,9,10], or by merging superpixels [5,8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 35
+                            }
+                        ],
+                        "text": "Objectness [4] and Randomized Prim [8] are tuned for low and high \u03b4, respectively, whereas we provide explicit control over diversity versus accuracy."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The remarkable discovery made by these approaches [4,5,6,7,8,9,10,11] is that object proposals may be accurately generated in a manner that is agnostic to the type of object being detected."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 186,
+                                "start": 171
+                            }
+                        ],
+                        "text": "In fact, as shown in Table 2, to achieve a recall of 75% with an IoU of 0.7 requires 800 proposals using Edge Boxes, 1400 proposals using Selective Search, and 3000 using Randomized Prim\u2019s."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 56
+                            }
+                        ],
+                        "text": "Following the experimental setup of previous approaches [7,5,8,4] we evaluate our algorithm on the PASCAL VOC 2007 dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 4749697,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3aa259af5b7f1778eca7926ed1b6a6cbaebf28ab",
+            "isKey": true,
+            "numCitedBy": 301,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Generic object detection is the challenging task of proposing windows that localize all the objects in an image, regardless of their classes. Such detectors have recently been shown to benefit many applications such as speeding-up class-specific object detection, weakly supervised learning of object detectors and object discovery. In this paper, we introduce a novel and very efficient method for generic object detection based on a randomized version of Prim's algorithm. Using the connectivity graph of an image's super pixels, with weights modelling the probability that neighbouring super pixels belong to the same object, the algorithm generates random partial spanning trees with large expected sum of edge weights. Object localizations are proposed as bounding-boxes of those partial trees. Our method has several benefits compared to the state-of-the-art. Thanks to the efficiency of Prim's algorithm, it samples proposals very quickly: 1000 proposals are obtained in about 0.7s. With proposals bound to super pixel boundaries yet diversified by randomization, it yields very high detection rates and windows that tightly fit objects. In extensive experiments on the challenging PASCAL VOC 2007 and 2012 and SUN2012 benchmark datasets, we show that our method improves over state-of-the-art competitors for a wide range of evaluation scenarios."
+            },
+            "slug": "Prime-Object-Proposals-with-Randomized-Prim's-Man\u00e9n-Guillaumin",
+            "title": {
+                "fragments": [],
+                "text": "Prime Object Proposals with Randomized Prim's Algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A novel and very efficient method for generic object detection based on a randomized version of Prim's algorithm, using the connectivity graph of an image's super pixels, with weights modelling the probability that neighbouring super pixels belong to the same object."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE International Conference on Computer Vision"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2345212"
+                        ],
+                        "name": "Pekka Rantalankila",
+                        "slug": "Pekka-Rantalankila",
+                        "structuredName": {
+                            "firstName": "Pekka",
+                            "lastName": "Rantalankila",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pekka Rantalankila"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1776374"
+                        ],
+                        "name": "Juho Kannala",
+                        "slug": "Juho-Kannala",
+                        "structuredName": {
+                            "firstName": "Juho",
+                            "lastName": "Kannala",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Juho Kannala"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827962"
+                        ],
+                        "name": "Esa Rahtu",
+                        "slug": "Esa-Rahtu",
+                        "structuredName": {
+                            "firstName": "Esa",
+                            "lastName": "Rahtu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Esa Rahtu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The remarkable discovery made by these approaches [4,5,6,7,8,9,10,11] is that object proposals may be accurately generated in a manner that is agnostic to the type of object being detected."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[6,9,10] all start with multiple seed regions and generate a separate foreground-background segmentation for each seed."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 183,
+                                "start": 175
+                            }
+                        ],
+                        "text": "Candidate bounding boxes representing object proposals can be found by measuring their \u2018objectness\u2019 [4,11], producing multiple foreground-background segmentations of an image [6,9,10], or by merging superpixels [5,8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6970362,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7cce984b5257a4d3ac50ae9cce031a1b7cc8a57a",
+            "isKey": false,
+            "numCitedBy": 166,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a method for generating object segmentation proposals from groups of superpixels. The goal is to propose accurate segmentations for all objects of an image. The proposed object hypotheses can be used as input to object detection systems and thereby improve efficiency by replacing exhaustive search. The segmentations are generated in a class-independent manner and therefore the computational cost of the approach is independent of the number of object classes. Our approach combines both global and local search in the space of sets of superpixels. The local search is implemented by greedily merging adjacent pairs of superpixels to build a bottom-up segmentation hierarchy. The regions from such a hierarchy directly provide a part of our region proposals. The global search provides the other part by performing a set of graph cut segmentations on a superpixel graph obtained from an intermediate level of the hierarchy. The parameters of the graph cut problems are learnt in such a manner that they provide complementary sets of regions. Experiments with Pascal VOC images show that we reach state-of-the-art with greatly reduced computational cost."
+            },
+            "slug": "Generating-Object-Segmentation-Proposals-Using-and-Rantalankila-Kannala",
+            "title": {
+                "fragments": [],
+                "text": "Generating Object Segmentation Proposals Using Global and Local Search"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 63,
+                "text": "A method for generating object segmentation proposals from groups of superpixels to improve efficiency by replacing exhaustive search and reach state-of-the-art with greatly reduced computational cost."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3045340"
+                        ],
+                        "name": "Tomasz Malisiewicz",
+                        "slug": "Tomasz-Malisiewicz",
+                        "structuredName": {
+                            "firstName": "Tomasz",
+                            "lastName": "Malisiewicz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomasz Malisiewicz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 146,
+                                "start": 142
+                            }
+                        ],
+                        "text": "[23] proposed to use multiple overlapping segmentations to overcome errors of individual segmentations, this was explored further by [24] and [25] in the context of object detection."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15599169,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "562b04ee16f27c47625b4989ab011510518d0b0a",
+            "isKey": false,
+            "numCitedBy": 331,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Sliding window scanning is the dominant paradigm in object recognition research today. But while much success has been reported in detecting several rectangular-shaped object classes (i.e. faces, cars, pedestrians), results have been much less impressive for more general types of objects. Several researchers have advocated the use of image segmentation as a way to get a better spatial support for objects. In this paper, our aim is to address this issue by studying the following two questions: 1) how important is good spatial support for recognition? 2) can segmentation provide better spatial support for objects? To answer the first, we compare recognition performance using ground-truth segmentation vs. bounding boxes. To answer the second, we use the multiple segmentation approach to evaluate how close can real segments approach the ground-truth for real objects, and at what cost. Our results demonstrate the importance of finding the right spatial support for objects, and the feasibility of doing so without excessive computational burden."
+            },
+            "slug": "Improving-Spatial-Support-for-Objects-via-Multiple-Malisiewicz-Efros",
+            "title": {
+                "fragments": [],
+                "text": "Improving Spatial Support for Objects via Multiple Segmentations"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 37,
+                "text": "The multiple segmentation approach is used to evaluate how close can real segments approach the ground-truth for real objects, and at what cost."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2365442"
+                        ],
+                        "name": "B. Alexe",
+                        "slug": "B.-Alexe",
+                        "structuredName": {
+                            "firstName": "Bogdan",
+                            "lastName": "Alexe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Alexe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1879646"
+                        ],
+                        "name": "Thomas Deselaers",
+                        "slug": "Thomas-Deselaers",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Deselaers",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Deselaers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143865718"
+                        ],
+                        "name": "V. Ferrari",
+                        "slug": "V.-Ferrari",
+                        "structuredName": {
+                            "firstName": "Vittorio",
+                            "lastName": "Ferrari",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Ferrari"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 84
+                            }
+                        ],
+                        "text": "Our approach bears some resemblance to superpixels straddling measure introduced by [4]; however, rather than measuring the number of straddling contours we instead remove such contours from consideration."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 100
+                            }
+                        ],
+                        "text": "Candidate bounding boxes representing object proposals can be found by measuring their \u2018objectness\u2019 [4,11], producing multiple foreground-background segmentations of an image [6,9,10], or by merging superpixels [5,8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 14,
+                                "start": 11
+                            }
+                        ],
+                        "text": "Objectness [4] and Randomized Prim [8] are tuned for low and high \u03b4, respectively, whereas we provide explicit control over diversity versus accuracy."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The remarkable discovery made by these approaches [4,5,6,7,8,9,10,11] is that object proposals may be accurately generated in a manner that is agnostic to the type of object being detected."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[4] utilizes a superpixel straddling measure penalizing candidates containing segments overlapping the boundary."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 161,
+                                "start": 158
+                            }
+                        ],
+                        "text": "There is some speculation that the use of a small number of object proposals may even improve detection accuracy due to reduction of spurious false positives [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[4] proposed to rank candidates by combining a number of cues in a classification framework and assigning a resulting \u2018objectness\u2019 score to each proposal."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 125
+                            }
+                        ],
+                        "text": "Finally, it has been observed that the edges in the center of the box are of less importance than those near the box\u2019s edges [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 37
+                            }
+                        ],
+                        "text": "Since it\u2019s inception a few years ago [4,9,6], object proposal generation has found wide applicability."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 26
+                            }
+                        ],
+                        "text": "Among multiple cues, both [4] and [7] define scores based on edge distributions near window boundaries."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7316529,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2eb6caace8296fd4dfd4947efa4fe911c8e133b2",
+            "isKey": true,
+            "numCitedBy": 1196,
+            "numCiting": 62,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a generic objectness measure, quantifying how likely it is for an image window to contain an object of any class. We explicitly train it to distinguish objects with a well-defined boundary in space, such as cows and telephones, from amorphous background elements, such as grass and road. The measure combines in a Bayesian framework several image cues measuring characteristics of objects, such as appearing different from their surroundings and having a closed boundary. These include an innovative cue to measure the closed boundary characteristic. In experiments on the challenging PASCAL VOC 07 dataset, we show this new cue to outperform a state-of-the-art saliency measure, and the combined objectness measure to perform better than any cue alone. We also compare to interest point operators, a HOG detector, and three recent works aiming at automatic object segmentation. Finally, we present two applications of objectness. In the first, we sample a small numberof windows according to their objectness probability and give an algorithm to employ them as location priors for modern class-specific object detectors. As we show experimentally, this greatly reduces the number of windows evaluated by the expensive class-specific model. In the second application, we use objectness as a complementary score in addition to the class-specific model, which leads to fewer false positives. As shown in several recent papers, objectness can act as a valuable focus of attention mechanism in many other applications operating on image windows, including weakly supervised learning of object categories, unsupervised pixelwise segmentation, and object tracking in video. Computing objectness is very efficient and takes only about 4 sec. per image."
+            },
+            "slug": "Measuring-the-Objectness-of-Image-Windows-Alexe-Deselaers",
+            "title": {
+                "fragments": [],
+                "text": "Measuring the Objectness of Image Windows"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 68,
+                "text": "A generic objectness measure, quantifying how likely it is for an image window to contain an object of any class, and uses objectness as a complementary score in addition to the class-specific model, which leads to fewer false positives."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118775664"
+                        ],
+                        "name": "Xiaoyu Wang",
+                        "slug": "Xiaoyu-Wang",
+                        "structuredName": {
+                            "firstName": "Xiaoyu",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xiaoyu Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "41216159"
+                        ],
+                        "name": "Ming Yang",
+                        "slug": "Ming-Yang",
+                        "structuredName": {
+                            "firstName": "Ming",
+                            "lastName": "Yang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ming Yang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1682028"
+                        ],
+                        "name": "Shenghuo Zhu",
+                        "slug": "Shenghuo-Zhu",
+                        "structuredName": {
+                            "firstName": "Shenghuo",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Shenghuo Zhu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "119916460"
+                        ],
+                        "name": "Yuanqing Lin",
+                        "slug": "Yuanqing-Lin",
+                        "structuredName": {
+                            "firstName": "Yuanqing",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yuanqing Lin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 119
+                            }
+                        ],
+                        "text": "The most common use of the proposals is to allow for efficient object detection with complex and expensive classifiers [5,12,13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 70
+                            }
+                        ],
+                        "text": "Selective Search has been widely used by recent top detection methods [5,12,13] and the key to its success is relatively fast speed (seconds per image) and high recall."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 111,
+                                "start": 102
+                            }
+                        ],
+                        "text": "Object proposal generators are currently used by several state-of-the-art object detection algorithms [5,12,13], which include the winners of the 2013 ImageNet detection challenge [14] and top methods on the PASCAL VOC dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6194123,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f99408de2ae6c5c036e1825bdadf7b193c3ba734",
+            "isKey": false,
+            "numCitedBy": 363,
+            "numCiting": 69,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Generic object detection is confronted by dealing with different degrees of variations in distinct object classes with tractable computations, which demands for descriptive and flexible object representations that are also efficient to evaluate for many locations. In view of this, we propose to model an object class by a cascaded boosting classifier which integrates various types of features from competing local regions, named as region lets. A region let is a base feature extraction region defined proportionally to a detection window at an arbitrary resolution (i.e. size and aspect ratio). These region lets are organized in small groups with stable relative positions to delineate fine grained spatial layouts inside objects. Their features are aggregated to a one-dimensional feature within one group so as to tolerate deformations. Then we evaluate the object bounding box proposal in selective search from segmentation cues, limiting the evaluation locations to thousands. Our approach significantly outperforms the state-of-the-art on popular multi-class detection benchmark datasets with a single method, without any contexts. It achieves the detection mean average precision of 41.7% on the PASCAL VOC 2007 dataset and 39.7% on the VOC 2010 for 20 object categories. It achieves 14.7% mean average precision on the Image Net dataset for 200 object categories, outperforming the latest deformable part-based model (DPM) by 4.7%."
+            },
+            "slug": "Regionlets-for-Generic-Object-Detection-Wang-Yang",
+            "title": {
+                "fragments": [],
+                "text": "Regionlets for Generic Object Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work proposes to model an object class by a cascaded boosting classifier which integrates various types of features from competing local regions, named as region lets, which significantly outperforms the state-of-the-art on popular multi-class detection benchmark datasets with a single method."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE International Conference on Computer Vision"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1823362"
+                        ],
+                        "name": "J. Uijlings",
+                        "slug": "J.-Uijlings",
+                        "structuredName": {
+                            "firstName": "Jasper",
+                            "lastName": "Uijlings",
+                            "middleNames": [
+                                "R.",
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Uijlings"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756979"
+                        ],
+                        "name": "K. V. D. Sande",
+                        "slug": "K.-V.-D.-Sande",
+                        "structuredName": {
+                            "firstName": "Koen",
+                            "lastName": "Sande",
+                            "middleNames": [
+                                "E.",
+                                "A.",
+                                "van",
+                                "de"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. V. D. Sande"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695527"
+                        ],
+                        "name": "T. Gevers",
+                        "slug": "T.-Gevers",
+                        "structuredName": {
+                            "firstName": "Theo",
+                            "lastName": "Gevers",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Gevers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144638781"
+                        ],
+                        "name": "A. Smeulders",
+                        "slug": "A.-Smeulders",
+                        "structuredName": {
+                            "firstName": "Arnold",
+                            "lastName": "Smeulders",
+                            "middleNames": [
+                                "W.",
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Smeulders"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 107,
+                                "start": 104
+                            }
+                        ],
+                        "text": "Comparison of Edge Boxes to various state-of-the-algorithms, including Objectness [4], Selective Search [5], Randomized Prim\u2019s [8] and Rahtu [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 17
+                            }
+                        ],
+                        "text": "Selective Search [5] is based on computing multiple hierarchical segmentations based on superpixels from [27] and placing bounding boxes around them."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 216,
+                                "start": 211
+                            }
+                        ],
+                        "text": "Candidate bounding boxes representing object proposals can be found by measuring their \u2018objectness\u2019 [4,11], producing multiple foreground-background segmentations of an image [6,9,10], or by merging superpixels [5,8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 119
+                            }
+                        ],
+                        "text": "The most common use of the proposals is to allow for efficient object detection with complex and expensive classifiers [5,12,13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The remarkable discovery made by these approaches [4,5,6,7,8,9,10,11] is that object proposals may be accurately generated in a manner that is agnostic to the type of object being detected."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 111,
+                                "start": 102
+                            }
+                        ],
+                        "text": "Object proposal generators are currently used by several state-of-the-art object detection algorithms [5,12,13], which include the winners of the 2013 ImageNet detection challenge [14] and top methods on the PASCAL VOC dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 70
+                            }
+                        ],
+                        "text": "Selective Search has been widely used by recent top detection methods [5,12,13] and the key to its success is relatively fast speed (seconds per image) and high recall."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 56
+                            }
+                        ],
+                        "text": "Following the experimental setup of previous approaches [7,5,8,4] we evaluate our algorithm on the PASCAL VOC 2007 dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 17
+                            }
+                        ],
+                        "text": "Selective Search [5] achieves competitive accuracy, especially at higher IoU values and larger number of boxes."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 216077384,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "38b6540ddd5beebffd05047c78183f7575559fb2",
+            "isKey": true,
+            "numCitedBy": 4748,
+            "numCiting": 55,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper addresses the problem of generating possible object locations for use in object recognition. We introduce selective search which combines the strength of both an exhaustive search and segmentation. Like segmentation, we use the image structure to guide our sampling process. Like exhaustive search, we aim to capture all possible object locations. Instead of a single technique to generate possible object locations, we diversify our search and use a variety of complementary image partitionings to deal with as many image conditions as possible. Our selective search results in a small set of data-driven, class-independent, high quality locations, yielding 99\u00a0% recall and a Mean Average Best Overlap of 0.879 at 10,097 locations. The reduced number of locations compared to an exhaustive search enables the use of stronger machine learning techniques and stronger appearance models for object recognition. In this paper we show that our selective search enables the use of the powerful Bag-of-Words model for recognition. The selective search software is made publicly available (Software: http://disi.unitn.it/~uijlings/SelectiveSearch.html)."
+            },
+            "slug": "Selective-Search-for-Object-Recognition-Uijlings-Sande",
+            "title": {
+                "fragments": [],
+                "text": "Selective Search for Object Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 55,
+                "text": "This paper introduces selective search which combines the strength of both an exhaustive search and segmentation, and shows that its selective search enables the use of the powerful Bag-of-Words model for recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39599498"
+                        ],
+                        "name": "Chunhui Gu",
+                        "slug": "Chunhui-Gu",
+                        "structuredName": {
+                            "firstName": "Chunhui",
+                            "lastName": "Gu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chunhui Gu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2109780936"
+                        ],
+                        "name": "Joseph J. Lim",
+                        "slug": "Joseph-J.-Lim",
+                        "structuredName": {
+                            "firstName": "Joseph",
+                            "lastName": "Lim",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Joseph J. Lim"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1778133"
+                        ],
+                        "name": "Pablo Arbel\u00e1ez",
+                        "slug": "Pablo-Arbel\u00e1ez",
+                        "structuredName": {
+                            "firstName": "Pablo",
+                            "lastName": "Arbel\u00e1ez",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pablo Arbel\u00e1ez"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153652147"
+                        ],
+                        "name": "J. Malik",
+                        "slug": "J.-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 65
+                            }
+                        ],
+                        "text": "While segmentation has found limited success in object detection [22], in general it fails to provide accurate object regions."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2100273,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "42a5da01c672b2d37e76c62f851c1f88e6b988c0",
+            "isKey": false,
+            "numCitedBy": 433,
+            "numCiting": 112,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a unified framework for object detection, segmentation, and classification using regions. Region features are appealing in this context because: (1) they encode shape and scale information of objects naturally; (2) they are only mildly affected by background clutter. Regions have not been popular as features due to their sensitivity to segmentation errors. In this paper, we start by producing a robust bag of overlaid regions for each image using Arbeldez et al., CVPR 2009. Each region is represented by a rich set of image cues (shape, color and texture). We then learn region weights using a max-margin framework. In detection and segmentation, we apply a generalized Hough voting scheme to generate hypotheses of object locations, scales and support, followed by a verification classifier and a constrained segmenter on each hypothesis. The proposed approach significantly outperforms the state of the art on the ETHZ shape database(87.1% average detection rate compared to Ferrari et al. 's 67.2%), and achieves competitive performance on the Caltech 101 database."
+            },
+            "slug": "Recognition-using-regions-Gu-Lim",
+            "title": {
+                "fragments": [],
+                "text": "Recognition using regions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "This paper presents a unified framework for object detection, segmentation, and classification using regions using a generalized Hough voting scheme to generate hypotheses of object locations, scales and support, followed by a verification classifier and a constrained segmenter on each hypothesis."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3127283"
+                        ],
+                        "name": "Piotr Doll\u00e1r",
+                        "slug": "Piotr-Doll\u00e1r",
+                        "structuredName": {
+                            "firstName": "Piotr",
+                            "lastName": "Doll\u00e1r",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Piotr Doll\u00e1r"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699161"
+                        ],
+                        "name": "C. L. Zitnick",
+                        "slug": "C.-L.-Zitnick",
+                        "structuredName": {
+                            "firstName": "C.",
+                            "lastName": "Zitnick",
+                            "middleNames": [
+                                "Lawrence"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. L. Zitnick"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 30
+                            }
+                        ],
+                        "text": "(second row) Structured Edges [16], (third row) edge groups, (fourth row) example"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 121
+                            }
+                        ],
+                        "text": "If the initial edge map is generated using gradient-based Canny edges [28] with varying blur instead of Structured Edges [16] the results degrade."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 64
+                            }
+                        ],
+                        "text": "The edge responses are found using the Structured Edge detector [16,19] that has shown good performance in predicting object boundaries, while simultaneously being very efficient."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 5,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Edges tend to correspond to object boundaries, and as such boxes that tightly enclose a set of edges are likely to contain an object."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 116,
+                                "start": 112
+                            }
+                        ],
+                        "text": "As we demonstrate, the use of edges offers many computational advantages since they may be efficiently computed [16] and the resulting edge maps are sparse."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 96,
+                                "start": 89
+                            }
+                        ],
+                        "text": "We utilize the fast and publicly available Structured Edge detector recently proposed in [16,19] to obtain the initial edge map."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 17
+                            }
+                        ],
+                        "text": "Structured Edges [16] (default), multi-scale Structure Edges, and a fast variant that"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 5,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Edges can be represented probabilistically, have associated orientation information, and can be linked allowing for propagation of information; properly exploited, this additional information can be used to achieve large gains in accuracy."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 15
+                            }
+                        ],
+                        "text": "If multi-scale Structured Edges are computed instead of single-scale edges there is a minimal gain in accuracy."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 10702897,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9e8ce202fb51cd11d2b926e7ad21e08a58a43903",
+            "isKey": false,
+            "numCitedBy": 868,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Edge detection is a critical component of many vision systems, including object detectors and image segmentation algorithms. Patches of edges exhibit well-known forms of local structure, such as straight lines or T-junctions. In this paper we take advantage of the structure present in local image patches to learn both an accurate and computationally efficient edge detector. We formulate the problem of predicting local edge masks in a structured learning framework applied to random decision forests. Our novel approach to learning decision trees robustly maps the structured labels to a discrete space on which standard information gain measures may be evaluated. The result is an approach that obtains real time performance that is orders of magnitude faster than many competing state-of-the-art approaches, while also achieving state-of-the-art edge detection results on the BSDS500 Segmentation dataset and NYU Depth dataset. Finally, we show the potential of our approach as a general purpose edge detector by showing our learned edge models generalize well across datasets."
+            },
+            "slug": "Structured-Forests-for-Fast-Edge-Detection-Doll\u00e1r-Zitnick",
+            "title": {
+                "fragments": [],
+                "text": "Structured Forests for Fast Edge Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper forms the problem of predicting local edge masks in a structured learning framework applied to random decision forests and develops a novel approach to learning decision trees robustly maps the structured labels to a discrete space on which standard information gain measures may be evaluated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE International Conference on Computer Vision"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35681810"
+                        ],
+                        "name": "Jo\u00e3o Carreira",
+                        "slug": "Jo\u00e3o-Carreira",
+                        "structuredName": {
+                            "firstName": "Jo\u00e3o",
+                            "lastName": "Carreira",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jo\u00e3o Carreira"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1781120"
+                        ],
+                        "name": "C. Sminchisescu",
+                        "slug": "C.-Sminchisescu",
+                        "structuredName": {
+                            "firstName": "Cristian",
+                            "lastName": "Sminchisescu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Sminchisescu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 67
+                            }
+                        ],
+                        "text": "The only methods with comparable accuracy are Selective Search and CPMC, but these are considerably slower."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 183,
+                                "start": 175
+                            }
+                        ],
+                        "text": "Candidate bounding boxes representing object proposals can be found by measuring their \u2018objectness\u2019 [4,11], producing multiple foreground-background segmentations of an image [6,9,10], or by merging superpixels [5,8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 5
+                            }
+                        ],
+                        "text": "CPMC [6] generates high quality proposals but produces relatively few candidates and is thus unable to achieve high recall."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The remarkable discovery made by these approaches [4,5,6,7,8,9,10,11] is that object proposals may be accurately generated in a manner that is agnostic to the type of object being detected."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[6,9,10] all start with multiple seed regions and generate a separate foreground-background segmentation for each seed."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 37
+                            }
+                        ],
+                        "text": "Since it\u2019s inception a few years ago [4,9,6], object proposal generation has found wide applicability."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206764991,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cb2115a6765e8484830865b8ad5e6cc5dd29b48d",
+            "isKey": true,
+            "numCitedBy": 628,
+            "numCiting": 90,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel framework to generate and rank plausible hypotheses for the spatial extent of objects in images using bottom-up computational processes and mid-level selection cues. The object hypotheses are represented as figure-ground segmentations, and are extracted automatically, without prior knowledge of the properties of individual object classes, by solving a sequence of Constrained Parametric Min-Cut problems (CPMC) on a regular image grid. In a subsequent step, we learn to rank the corresponding segments by training a continuous model to predict how likely they are to exhibit real-world regularities (expressed as putative overlap with ground truth) based on their mid-level region properties, then diversify the estimated overlap score using maximum marginal relevance measures. We show that this algorithm significantly outperforms the state of the art for low-level segmentation in the VOC 2009 and 2010 data sets. In our companion papers [1], [2], we show that the algorithm can be used, successfully, in a segmentation-based visual object category recognition pipeline. This architecture ranked first in the VOC2009 and VOC2010 image segmentation and labeling challenges."
+            },
+            "slug": "CPMC:-Automatic-Object-Segmentation-Using-Min-Cuts-Carreira-Sminchisescu",
+            "title": {
+                "fragments": [],
+                "text": "CPMC: Automatic Object Segmentation Using Constrained Parametric Min-Cuts"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 76,
+                "text": "A novel framework to generate and rank plausible hypotheses for the spatial extent of objects in images using bottom-up computational processes and mid-level selection cues and it is shown that the algorithm can be used, successfully, in a segmentation-based visual object category recognition pipeline."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1729041"
+                        ],
+                        "name": "J. Canny",
+                        "slug": "J.-Canny",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Canny",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Canny"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 74,
+                                "start": 70
+                            }
+                        ],
+                        "text": "If the initial edge map is generated using gradient-based Canny edges [28] with varying blur instead of Structured Edges [16] the results degrade."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 30
+                            }
+                        ],
+                        "text": "using the Canny edge detector [28] with varying amounts of blur are also shown."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13284142,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fcf9fc4e23b45345c2404ce7d6cb0fc9dea2c9ec",
+            "isKey": false,
+            "numCitedBy": 27658,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes a computational approach to edge detection. The success of the approach depends on the definition of a comprehensive set of goals for the computation of edge points. These goals must be precise enough to delimit the desired behavior of the detector while making minimal assumptions about the form of the solution. We define detection and localization criteria for a class of edges, and present mathematical forms for these criteria as functionals on the operator impulse response. A third criterion is then added to ensure that the detector has only one response to a single edge. We use the criteria in numerical optimization to derive detectors for several common image features, including step edges. On specializing the analysis to step edges, we find that there is a natural uncertainty principle between detection and localization performance, which are the two main goals. With this principle we derive a single operator shape which is optimal at any scale. The optimal detector has a simple approximate implementation in which edges are marked at maxima in gradient magnitude of a Gaussian-smoothed image. We extend this simple detector using operators of several widths to cope with different signal-to-noise ratios in the image. We present a general method, called feature synthesis, for the fine-to-coarse integration of information from operators at different scales. Finally we show that step edge detector performance improves considerably as the operator point spread function is extended along the edge."
+            },
+            "slug": "A-Computational-Approach-to-Edge-Detection-Canny",
+            "title": {
+                "fragments": [],
+                "text": "A Computational Approach to Edge Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "There is a natural uncertainty principle between detection and localization performance, which are the two main goals, and with this principle a single operator shape is derived which is optimal at any scale."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1986
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2983898"
+                        ],
+                        "name": "Ross B. Girshick",
+                        "slug": "Ross-B.-Girshick",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Girshick",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ross B. Girshick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7408951"
+                        ],
+                        "name": "Jeff Donahue",
+                        "slug": "Jeff-Donahue",
+                        "structuredName": {
+                            "firstName": "Jeff",
+                            "lastName": "Donahue",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeff Donahue"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153652147"
+                        ],
+                        "name": "J. Malik",
+                        "slug": "J.-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 155,
+                                "start": 151
+                            }
+                        ],
+                        "text": "recent survey and evaluation of object proposal methods [26] and we also hope to evaluate our proposals coupled with state-of-the-art object detectors [13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 119
+                            }
+                        ],
+                        "text": "The most common use of the proposals is to allow for efficient object detection with complex and expensive classifiers [5,12,13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 70
+                            }
+                        ],
+                        "text": "Selective Search has been widely used by recent top detection methods [5,12,13] and the key to its success is relatively fast speed (seconds per image) and high recall."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 111,
+                                "start": 102
+                            }
+                        ],
+                        "text": "Object proposal generators are currently used by several state-of-the-art object detection algorithms [5,12,13], which include the winners of the 2013 ImageNet detection challenge [14] and top methods on the PASCAL VOC dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 215827080,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2f4df08d9072fc2ac181b7fced6a245315ce05c8",
+            "isKey": true,
+            "numCitedBy": 17074,
+            "numCiting": 66,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Object detection performance, as measured on the canonical PASCAL VOC dataset, has plateaued in the last few years. The best-performing methods are complex ensemble systems that typically combine multiple low-level image features with high-level context. In this paper, we propose a simple and scalable detection algorithm that improves mean average precision (mAP) by more than 30% relative to the previous best result on VOC 2012 -- achieving a mAP of 53.3%. Our approach combines two key insights: (1) one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects and (2) when labeled training data is scarce, supervised pre-training for an auxiliary task, followed by domain-specific fine-tuning, yields a significant performance boost. Since we combine region proposals with CNNs, we call our method R-CNN: Regions with CNN features. We also present experiments that provide insight into what the network learns, revealing a rich hierarchy of image features. Source code for the complete system is available at http://www.cs.berkeley.edu/~rbg/rcnn."
+            },
+            "slug": "Rich-Feature-Hierarchies-for-Accurate-Object-and-Girshick-Donahue",
+            "title": {
+                "fragments": [],
+                "text": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "This paper proposes a simple and scalable detection algorithm that improves mean average precision (mAP) by more than 30% relative to the previous best result on VOC 2012 -- achieving a mAP of 53.3%."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37535930"
+                        ],
+                        "name": "Ming-Ming Cheng",
+                        "slug": "Ming-Ming-Cheng",
+                        "structuredName": {
+                            "firstName": "Ming-Ming",
+                            "lastName": "Cheng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ming-Ming Cheng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7969330"
+                        ],
+                        "name": "Ziming Zhang",
+                        "slug": "Ziming-Zhang",
+                        "structuredName": {
+                            "firstName": "Ziming",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ziming Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1730822"
+                        ],
+                        "name": "Wen-Yan Lin",
+                        "slug": "Wen-Yan-Lin",
+                        "structuredName": {
+                            "firstName": "Wen-Yan",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wen-Yan Lin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143635540"
+                        ],
+                        "name": "Philip H. S. Torr",
+                        "slug": "Philip-H.-S.-Torr",
+                        "structuredName": {
+                            "firstName": "Philip",
+                            "lastName": "Torr",
+                            "middleNames": [
+                                "H.",
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Philip H. S. Torr"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 22,
+                                "start": 18
+                            }
+                        ],
+                        "text": "Finally, recently [11] proposed a very fast objectness score based on image gradients."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 9,
+                                "start": 5
+                            }
+                        ],
+                        "text": "BING [11], which is very fast, generates only very loosely fitting proposals and hence is only competitive at low IoU."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 41
+                            }
+                        ],
+                        "text": "The only method with comparable speed is BING, but BING has the worst accuracy of all evaluated methods at IoU of 0.7."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 100
+                            }
+                        ],
+                        "text": "Candidate bounding boxes representing object proposals can be found by measuring their \u2018objectness\u2019 [4,11], producing multiple foreground-background segmentations of an image [6,9,10], or by merging superpixels [5,8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The remarkable discovery made by these approaches [4,5,6,7,8,9,10,11] is that object proposals may be accurately generated in a manner that is agnostic to the type of object being detected."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9823657,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "636cea485f77373ae18e32ac8e1c4e37555db5bd",
+            "isKey": true,
+            "numCitedBy": 768,
+            "numCiting": 119,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Training a generic objectness measure to produce object proposals has recently become of significant interest. We observe that generic objects with well-defined closed boundaries can be detected by looking at the norm of gradients, with a suitable resizing of their corresponding image windows to a small fixed size. Based on this observation and computational reasons, we propose to resize the window to 8 \u00d7 8 and use the norm of the gradients as a simple 64D feature to describe it, for explicitly training a generic objectness measure. We further show how the binarized version of this feature, namely binarized normed gradients (BING), can be used for efficient objectness estimation, which requires only a few atomic operations (e.g., add, bitwise shift, etc.). To improve localization quality of the proposals while maintaining efficiency, we propose a novel fast segmentation method and demonstrate its effectiveness for improving BING\u2019s localization performance, when used in multi-thresholding straddling expansion (MTSE) post-processing. On the challenging PASCAL VOC2007 dataset, using 1000 proposals per image and intersection-over-union threshold of 0.5, our proposal method achieves a 95.6% object detection rate and 78.6% mean average best overlap in less than 0.005 second per image."
+            },
+            "slug": "BING:-Binarized-normed-gradients-for-objectness-at-Cheng-Zhang",
+            "title": {
+                "fragments": [],
+                "text": "BING: Binarized normed gradients for objectness estimation at 300fps"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "To improve localization quality of the proposals while maintaining efficiency, a novel fast segmentation method is proposed and demonstrated its effectiveness for improving BING\u2019s localization performance, when used in multi-thresholding straddling expansion (MTSE) post-processing."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2536361"
+                        ],
+                        "name": "J. Hosang",
+                        "slug": "J.-Hosang",
+                        "structuredName": {
+                            "firstName": "Jan",
+                            "lastName": "Hosang",
+                            "middleNames": [
+                                "Hendrik"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Hosang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1798000"
+                        ],
+                        "name": "Rodrigo Benenson",
+                        "slug": "Rodrigo-Benenson",
+                        "structuredName": {
+                            "firstName": "Rodrigo",
+                            "lastName": "Benenson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rodrigo Benenson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48920094"
+                        ],
+                        "name": "B. Schiele",
+                        "slug": "B.-Schiele",
+                        "structuredName": {
+                            "firstName": "Bernt",
+                            "lastName": "Schiele",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Schiele"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[26] for a thorough survey and evaluation of object proposal methods."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 39
+                            }
+                        ],
+                        "text": "All method runtimes were obtained from [26]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 60,
+                                "start": 56
+                            }
+                        ],
+                        "text": "recent survey and evaluation of object proposal methods [26] and we also hope to evaluate our proposals coupled with state-of-the-art object detectors [13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5819909,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7b1e6ed85dae91843f3d986a001fb59439adbc39",
+            "isKey": false,
+            "numCitedBy": 259,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Current top performing Pascal VOC object detectors employ detection proposals to guide the search for objects thereby avoiding exhaustive sliding window search across images. Despite the popularity of detection proposals, it is unclear which trade-offs are made when using them during object detection. We provide an in depth analysis of ten object proposal methods along with four baselines regarding ground truth annotation recall (on Pascal VOC 2007 and ImageNet 2013), repeatability, and impact on DPM detector performance. Our findings show common weaknesses of existing methods, and provide insights to choose the most adequate method for different settings."
+            },
+            "slug": "How-good-are-detection-proposals,-really-Hosang-Benenson",
+            "title": {
+                "fragments": [],
+                "text": "How good are detection proposals, really?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "An in depth analysis of ten object proposal methods along with four baselines regarding ground truth annotation recall (on Pascal VOC 2007 and ImageNet 2013), repeatability, and impact on DPM detector performance are provided."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827962"
+                        ],
+                        "name": "Esa Rahtu",
+                        "slug": "Esa-Rahtu",
+                        "structuredName": {
+                            "firstName": "Esa",
+                            "lastName": "Rahtu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Esa Rahtu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1776374"
+                        ],
+                        "name": "Juho Kannala",
+                        "slug": "Juho-Kannala",
+                        "structuredName": {
+                            "firstName": "Juho",
+                            "lastName": "Kannala",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Juho Kannala"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1758219"
+                        ],
+                        "name": "Matthew B. Blaschko",
+                        "slug": "Matthew-B.-Blaschko",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Blaschko",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthew B. Blaschko"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 144,
+                                "start": 141
+                            }
+                        ],
+                        "text": "Comparison of Edge Boxes to various state-of-the-algorithms, including Objectness [4], Selective Search [5], Randomized Prim\u2019s [8] and Rahtu [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[7] built on this idea by learning efficient cascades to more quickly and accurately rank candidates."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The remarkable discovery made by these approaches [4,5,6,7,8,9,10,11] is that object proposals may be accurately generated in a manner that is agnostic to the type of object being detected."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 56
+                            }
+                        ],
+                        "text": "Following the experimental setup of previous approaches [7,5,8,4] we evaluate our algorithm on the PASCAL VOC 2007 dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 34
+                            }
+                        ],
+                        "text": "Among multiple cues, both [4] and [7] define scores based on edge distributions near window boundaries."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11067843,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6741e2d0cf378e96541286e399f3ac16dbb06045",
+            "isKey": true,
+            "numCitedBy": 181,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Cascades are a popular framework to speed up object detection systems. Here we focus on the first layers of a category independent object detection cascade in which we sample a large number of windows from an objectness prior, and then discriminatively learn to filter these candidate windows by an order of magnitude. We make a number of contributions to cascade design that substantially improve over the state of the art: (i) our novel objectness prior gives much higher recall than competing methods, (ii) we propose objectness features that give high performance with very low computational cost, and (iii) we make use of a structured output ranking approach to learn highly effective, but inexpensive linear feature combinations by directly optimizing cascade performance. Thorough evaluation on the PASCAL VOC data set shows consistent improvement over the current state of the art, and over alternative discriminative learning strategies."
+            },
+            "slug": "Learning-a-category-independent-object-detection-Rahtu-Kannala",
+            "title": {
+                "fragments": [],
+                "text": "Learning a category independent object detection cascade"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 68,
+                "text": "This work focuses on the first layers of a category independent object detection cascade in which a large number of windows from an objectness prior are sampled, and then discriminatively learn to filter these candidate windows by an order of magnitude."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2011 International Conference on Computer Vision"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2831988"
+                        ],
+                        "name": "Ian Endres",
+                        "slug": "Ian-Endres",
+                        "structuredName": {
+                            "firstName": "Ian",
+                            "lastName": "Endres",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ian Endres"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2433269"
+                        ],
+                        "name": "Derek Hoiem",
+                        "slug": "Derek-Hoiem",
+                        "structuredName": {
+                            "firstName": "Derek",
+                            "lastName": "Hoiem",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Derek Hoiem"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 50
+                            }
+                        ],
+                        "text": "The remarkable discovery made by these approaches [4,5,6,7,8,9,10,11] is that object proposals may be accurately generated in a manner that is agnostic to the type of object being detected."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[6,9,10] all start with multiple seed regions and generate a separate foreground-background segmentation for each seed."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 37
+                            }
+                        ],
+                        "text": "Since it\u2019s inception a few years ago [4,9,6], object proposal generation has found wide applicability."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 183,
+                                "start": 175
+                            }
+                        ],
+                        "text": "Candidate bounding boxes representing object proposals can be found by measuring their \u2018objectness\u2019 [4,11], producing multiple foreground-background segmentations of an image [6,9,10], or by merging superpixels [5,8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5636067,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "18fe8a42cb3b7ce14e29a11faa3d7cc45f1be22f",
+            "isKey": true,
+            "numCitedBy": 235,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a category-independent method to produce a bag of regions and rank them, such that top-ranked regions are likely to be good segmentations of different objects. Our key objectives are completeness and diversity: Every object should have at least one good proposed region, and a diverse set should be top-ranked. Our approach is to generate a set of segmentations by performing graph cuts based on a seed region and a learned affinity function. Then, the regions are ranked using structured learning based on various cues. Our experiments on the Berkeley Segmentation Data Set and Pascal VOC 2011 demonstrate our ability to find most objects within a small bag of proposed regions."
+            },
+            "slug": "Category-Independent-Object-Proposals-with-Diverse-Endres-Hoiem",
+            "title": {
+                "fragments": [],
+                "text": "Category-Independent Object Proposals with Diverse Ranking"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 75,
+                "text": "A category-independent method to produce a bag of regions and rank them, such that top-ranked regions are likely to be good segmentations of different objects, demonstrating the ability to find most objects within a small bag of proposed regions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2787367"
+                        ],
+                        "name": "P. Siva",
+                        "slug": "P.-Siva",
+                        "structuredName": {
+                            "firstName": "Parthipan",
+                            "lastName": "Siva",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Siva"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145406421"
+                        ],
+                        "name": "T. Xiang",
+                        "slug": "T.-Xiang",
+                        "structuredName": {
+                            "firstName": "Tao",
+                            "lastName": "Xiang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Xiang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 54
+                            }
+                        ],
+                        "text": "Another popular use is for weakly supervised learning [20,21], where by limiting the number of candidate regions, learning with less supervision becomes feasible."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7659762,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "43aeb06eb886e56414951550f34548939840308d",
+            "isKey": false,
+            "numCitedBy": 156,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A conventional approach to learning object detectors uses fully supervised learning techniques which assumes that a training image set with manual annotation of object bounding boxes are provided. The manual annotation of objects in large image sets is tedious and unreliable. Therefore, a weakly supervised learning approach is desirable, where the training set needs only binary labels regarding whether an image contains the target object class. In the weakly supervised approach a detector is used to iteratively annotate the training set and learn the object model. We present a novel weakly supervised learning framework for learning an object detector. Our framework incorporates a new initial annotation model to start the iterative learning of a detector and a model drift detection method that is able to detect and stop the iterative learning when the detector starts to drift away from the objects of interest. We demonstrate the effectiveness of our approach on the challenging PASCAL 2007 dataset."
+            },
+            "slug": "Weakly-supervised-object-detector-learning-with-Siva-Xiang",
+            "title": {
+                "fragments": [],
+                "text": "Weakly supervised object detector learning with model drift detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work presents a novel weakly supervised learning framework for learning an object detector that incorporates a new initial annotation model to start the iterative learning of a detector and a model drift detection method that is able to detect and stop the iteratives learning when the detector starts to drift away from the objects of interest."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2011 International Conference on Computer Vision"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2365442"
+                        ],
+                        "name": "B. Alexe",
+                        "slug": "B.-Alexe",
+                        "structuredName": {
+                            "firstName": "Bogdan",
+                            "lastName": "Alexe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Alexe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1879646"
+                        ],
+                        "name": "Thomas Deselaers",
+                        "slug": "Thomas-Deselaers",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Deselaers",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Deselaers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143865718"
+                        ],
+                        "name": "V. Ferrari",
+                        "slug": "V.-Ferrari",
+                        "structuredName": {
+                            "firstName": "Vittorio",
+                            "lastName": "Ferrari",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Ferrari"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5611404,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d957ad316f7145c054d2dcbd47949869e46776b0",
+            "isKey": false,
+            "numCitedBy": 1008,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a novel method for unsupervised class segmentation on a set of images. It alternates between segmenting object instances and learning a class model. The method is based on a segmentation energy defined over all images at the same time, which can be optimized efficiently by techniques used before in interactive segmentation. Over iterations, our method progressively learns a class model by integrating observations over all images. In addition to appearance, this model captures the location and shape of the class with respect to an automatically determined coordinate frame common across images. This frame allows us to build stronger shape and location models, similar to those used in object class detection. Our method is inspired by interactive segmentation methods [1], but it is fully automatic and learns models characteristic for the object class rather than specific to one particular object/image. We experimentally demonstrate on the Caltech4, Caltech101, and Weizmann horses datasets that our method (a) transfers class knowledge across images and this improves results compared to segmenting every image independently; (b) outperforms Grabcut [1] for the task of unsupervised segmentation; (c) offers competitive performance compared to the state-of-the-art in unsupervised segmentation and in particular it outperforms the topic model [2]."
+            },
+            "slug": "ClassCut-for-Unsupervised-Class-Segmentation-Alexe-Deselaers",
+            "title": {
+                "fragments": [],
+                "text": "ClassCut for Unsupervised Class Segmentation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 92,
+                "text": "A novel method for unsupervised class segmentation on a set of images that alternates between segmenting object instances and learning a class model based on a segmentation energy defined over all images at the same time, which can be optimized efficiently by techniques used before in interactive segmentation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48950628"
+                        ],
+                        "name": "N. Dalal",
+                        "slug": "N.-Dalal",
+                        "structuredName": {
+                            "firstName": "Navneet",
+                            "lastName": "Dalal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Dalal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756114"
+                        ],
+                        "name": "B. Triggs",
+                        "slug": "B.-Triggs",
+                        "structuredName": {
+                            "firstName": "Bill",
+                            "lastName": "Triggs",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Triggs"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 188,
+                                "start": 181
+                            }
+                        ],
+                        "text": "The dominant approach to this problem over the past decade has been the sliding windows paradigm in which object classification is performed at every location and scale in an image [1,2,3]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206590483,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cec734d7097ab6b1e60d95228ffd64248eb89d66",
+            "isKey": false,
+            "numCitedBy": 29259,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study the question of feature sets for robust visual object recognition; adopting linear SVM based human detection as a test case. After reviewing existing edge and gradient based descriptors, we show experimentally that grids of histograms of oriented gradient (HOG) descriptors significantly outperform existing feature sets for human detection. We study the influence of each stage of the computation on performance, concluding that fine-scale gradients, fine orientation binning, relatively coarse spatial binning, and high-quality local contrast normalization in overlapping descriptor blocks are all important for good results. The new approach gives near-perfect separation on the original MIT pedestrian database, so we introduce a more challenging dataset containing over 1800 annotated human images with a large range of pose variations and backgrounds."
+            },
+            "slug": "Histograms-of-oriented-gradients-for-human-Dalal-Triggs",
+            "title": {
+                "fragments": [],
+                "text": "Histograms of oriented gradients for human detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown experimentally that grids of histograms of oriented gradient (HOG) descriptors significantly outperform existing feature sets for human detection, and the influence of each stage of the computation on performance is studied."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145160921"
+                        ],
+                        "name": "Bryan C. Russell",
+                        "slug": "Bryan-C.-Russell",
+                        "structuredName": {
+                            "firstName": "Bryan",
+                            "lastName": "Russell",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bryan C. Russell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768236"
+                        ],
+                        "name": "W. Freeman",
+                        "slug": "W.-Freeman",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Freeman",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Freeman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1782755"
+                        ],
+                        "name": "Josef Sivic",
+                        "slug": "Josef-Sivic",
+                        "structuredName": {
+                            "firstName": "Josef",
+                            "lastName": "Sivic",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Josef Sivic"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 137,
+                                "start": 133
+                            }
+                        ],
+                        "text": "[23] proposed to use multiple overlapping segmentations to overcome errors of individual segmentations, this was explored further by [24] and [25] in the context of object detection."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2066830,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "56766bab76cdcd541bf791730944a5e453006239",
+            "isKey": false,
+            "numCitedBy": 740,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Given a large dataset of images, we seek to automatically determine the visually similar object and scene classes together with their image segmentation. To achieve this we combine two ideas: (i) that a set of segmented objects can be partitioned into visual object classes using topic discovery models from statistical text analysis; and (ii) that visual object classes can be used to assess the accuracy of a segmentation. To tie these ideas together we compute multiple segmentations of each image and then: (i) learn the object classes; and (ii) choose the correct segmentations. We demonstrate that such an algorithm succeeds in automatically discovering many familiar objects in a variety of image datasets, including those from Caltech, MSRC and LabelMe."
+            },
+            "slug": "Using-Multiple-Segmentations-to-Discover-Objects-in-Russell-Freeman",
+            "title": {
+                "fragments": [],
+                "text": "Using Multiple Segmentations to Discover Objects and their Extent in Image Collections"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work compute multiple segmentations of each image and then learns the object classes and chooses the correct segmentations, demonstrating that such an algorithm succeeds in automatically discovering many familiar objects in a variety of image datasets, including those from Caltech, MSRC and LabelMe."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1879646"
+                        ],
+                        "name": "Thomas Deselaers",
+                        "slug": "Thomas-Deselaers",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Deselaers",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Deselaers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2365442"
+                        ],
+                        "name": "B. Alexe",
+                        "slug": "B.-Alexe",
+                        "structuredName": {
+                            "firstName": "Bogdan",
+                            "lastName": "Alexe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Alexe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143865718"
+                        ],
+                        "name": "V. Ferrari",
+                        "slug": "V.-Ferrari",
+                        "structuredName": {
+                            "firstName": "Vittorio",
+                            "lastName": "Ferrari",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Ferrari"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 54
+                            }
+                        ],
+                        "text": "Another popular use is for weakly supervised learning [20,21], where by limiting the number of candidate regions, learning with less supervision becomes feasible."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7664974,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "42bb241681c4bec1fa36211a204fa0dc8158e5ff",
+            "isKey": false,
+            "numCitedBy": 204,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning a new object class from cluttered training images is very challenging when the location of object instances is unknown. Previous works generally require objects covering a large portion of the images. We present a novel approach that can cope with extensive clutter as well as large scale and appearance variations between object instances. To make this possible we propose a conditional random field that starts from generic knowledge and then progressively adapts to the new class. Our approach simultaneously localizes object instances while learning an appearance model specific for the class. We demonstrate this on the challenging PASCAL VOC 2007 dataset. Furthermore, our method enables to train any state-of-the-art object detector in a weakly supervised fashion, although it would normally require object location annotations."
+            },
+            "slug": "Localizing-Objects-While-Learning-Their-Appearance-Deselaers-Alexe",
+            "title": {
+                "fragments": [],
+                "text": "Localizing Objects While Learning Their Appearance"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work proposes a conditional random field that starts from generic knowledge and then progressively adapts to the new class to enable any state-of-the-art object detector in a weakly supervised fashion, although it would normally require object location annotations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685089"
+                        ],
+                        "name": "Pedro F. Felzenszwalb",
+                        "slug": "Pedro-F.-Felzenszwalb",
+                        "structuredName": {
+                            "firstName": "Pedro",
+                            "lastName": "Felzenszwalb",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pedro F. Felzenszwalb"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2983898"
+                        ],
+                        "name": "Ross B. Girshick",
+                        "slug": "Ross-B.-Girshick",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Girshick",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ross B. Girshick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145689002"
+                        ],
+                        "name": "David A. McAllester",
+                        "slug": "David-A.-McAllester",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "McAllester",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David A. McAllester"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1770537"
+                        ],
+                        "name": "D. Ramanan",
+                        "slug": "D.-Ramanan",
+                        "structuredName": {
+                            "firstName": "Deva",
+                            "lastName": "Ramanan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ramanan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 188,
+                                "start": 181
+                            }
+                        ],
+                        "text": "The dominant approach to this problem over the past decade has been the sliding windows paradigm in which object classification is performed at every location and scale in an image [1,2,3]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3198903,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e79272fe3d65197100eae8be9fec6469107969ae",
+            "isKey": false,
+            "numCitedBy": 9371,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe an object detection system based on mixtures of multiscale deformable part models. Our system is able to represent highly variable object classes and achieves state-of-the-art results in the PASCAL object detection challenges. While deformable part models have become quite popular, their value had not been demonstrated on difficult benchmarks such as the PASCAL data sets. Our system relies on new methods for discriminative training with partially labeled data. We combine a margin-sensitive approach for data-mining hard negative examples with a formalism we call latent SVM. A latent SVM is a reformulation of MI--SVM in terms of latent variables. A latent SVM is semiconvex, and the training problem becomes convex once latent information is specified for the positive examples. This leads to an iterative training algorithm that alternates between fixing latent values for positive examples and optimizing the latent SVM objective function."
+            },
+            "slug": "Object-Detection-with-Discriminatively-Trained-Part-Felzenszwalb-Girshick",
+            "title": {
+                "fragments": [],
+                "text": "Object Detection with Discriminatively Trained Part Based Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 91,
+                "text": "An object detection system based on mixtures of multiscale deformable part models that is able to represent highly variable object classes and achieves state-of-the-art results in the PASCAL object detection challenges is described."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2433269"
+                        ],
+                        "name": "Derek Hoiem",
+                        "slug": "Derek-Hoiem",
+                        "structuredName": {
+                            "firstName": "Derek",
+                            "lastName": "Hoiem",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Derek Hoiem"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145670946"
+                        ],
+                        "name": "M. Hebert",
+                        "slug": "M.-Hebert",
+                        "structuredName": {
+                            "firstName": "Martial",
+                            "lastName": "Hebert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hebert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[23] proposed to use multiple overlapping segmentations to overcome errors of individual segmentations, this was explored further by [24] and [25] in the context of object detection."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206769405,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "ae89592317675c9c7642a3976c3a064cef736f92",
+            "isKey": false,
+            "numCitedBy": 757,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many computer vision algorithms limit their performance by ignoring the underlying 3D geometric structure in the image. We show that we can estimate the coarse geometric properties of a scene by learning appearance-based models of geometric classes, even in cluttered natural scenes. Geometric classes describe the 3D orientation of an image region with respect to the camera. We provide a multiple-hypothesis framework for robustly estimating scene structure from a single image and obtaining confidences for each geometric label. These confidences can then be used to improve the performance of many other applications. We provide a thorough quantitative evaluation of our algorithm on a set of outdoor images and demonstrate its usefulness in two applications: object detection and automatic single-view reconstruction."
+            },
+            "slug": "Geometric-context-from-a-single-image-Hoiem-Efros",
+            "title": {
+                "fragments": [],
+                "text": "Geometric context from a single image"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 58,
+                "text": "This work shows that it can estimate the coarse geometric properties of a scene by learning appearance-based models of geometric classes, even in cluttered natural scenes, and provides a multiple-hypothesis framework for robustly estimating scene structure from a single image and obtaining confidences for each geometric label."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Tenth IEEE International Conference on Computer Vision (ICCV'05) Volume 1"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2065295510"
+                        ],
+                        "name": "B. Nair",
+                        "slug": "B.-Nair",
+                        "structuredName": {
+                            "firstName": "B.",
+                            "lastName": "Nair",
+                            "middleNames": [
+                                "Sarath",
+                                "S"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Nair"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 52233527,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1d3b0e7c49f8de3cf17303e560bef528deaaf75d",
+            "isKey": false,
+            "numCitedBy": 28,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "1 B-404,Neelsidhi Atlantis, PIIT, Navi Mumbai, India 2 Sector 19A,Nerul, New Panvel, Navi Mumbai, India Email: bindu_k_nair@hotmail.com, ujwal.harode@gmail.com ABSTRACT An important and very crucial component of many systems involving images is the edge detection which includes object detectors and image segmentation algorithms. Edge patches always shows shapes of its inherent structure, like T junctions or lines. Taking advantage of the shapes available in the images we get to know of an edge detector which is accurate and efficient. In this approach the structured labels is robustly mapped to a space that is discrete by which evaluation of the measure of the standard information gain is possible. The outcome is a way that shows a real time performance which is many times faster than any of the traditional and modern approaches available today, which also achieves the best results for edge detection both the Berkeley Segmentation Dataset and Benchmark (BSDS 500) and the NYU depth dataset. This approach also shows its strength as a an edge detector that can be used for any regular purpose by displaying how this method generalize across all datasets"
+            },
+            "slug": "Fast-Edge-Detection-Using-Structured-Forests-Nair",
+            "title": {
+                "fragments": [],
+                "text": "Fast Edge Detection Using Structured Forests"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "This approach shows its strength as a an edge detector that can be used for any regular purpose by displaying how this method generalize across all datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685089"
+                        ],
+                        "name": "Pedro F. Felzenszwalb",
+                        "slug": "Pedro-F.-Felzenszwalb",
+                        "structuredName": {
+                            "firstName": "Pedro",
+                            "lastName": "Felzenszwalb",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pedro F. Felzenszwalb"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1713089"
+                        ],
+                        "name": "D. Huttenlocher",
+                        "slug": "D.-Huttenlocher",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Huttenlocher",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Huttenlocher"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 109,
+                                "start": 105
+                            }
+                        ],
+                        "text": "Selective Search [5] is based on computing multiple hierarchical segmentations based on superpixels from [27] and placing bounding boxes around them."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207663697,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "aeeffe327e6c93e9010c7b1e401caa9113723851",
+            "isKey": false,
+            "numCitedBy": 3750,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper addresses the problem of segmenting an image into regions. We define a predicate for measuring the evidence for a boundary between two regions using a graph-based representation of the image. We then develop an efficient segmentation algorithm based on this predicate, and show that although this algorithm makes greedy decisions it produces segmentations that satisfy global properties. We apply the algorithm to image segmentation using two different kinds of local neighborhoods in constructing the graph, and illustrate the results with both real and synthetic images. The algorithm runs in time nearly linear in the number of graph edges and is also fast in practice. An important characteristic of the method is its ability to preserve detail in low-variability image regions while ignoring detail in high-variability regions."
+            },
+            "slug": "Efficient-Graph-Based-Image-Segmentation-Felzenszwalb-Huttenlocher",
+            "title": {
+                "fragments": [],
+                "text": "Efficient Graph-Based Image Segmentation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "An efficient segmentation algorithm is developed based on a predicate for measuring the evidence for a boundary between two regions using a graph-based representation of the image and it is shown that although this algorithm makes greedy decisions it produces segmentations that satisfy global properties."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2165937"
+                        ],
+                        "name": "M. Eitz",
+                        "slug": "M.-Eitz",
+                        "structuredName": {
+                            "firstName": "Mathias",
+                            "lastName": "Eitz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Eitz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48966748"
+                        ],
+                        "name": "James Hays",
+                        "slug": "James-Hays",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Hays",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Hays"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751554"
+                        ],
+                        "name": "M. Alexa",
+                        "slug": "M.-Alexa",
+                        "structuredName": {
+                            "firstName": "Marc",
+                            "lastName": "Alexa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Alexa"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 47
+                            }
+                        ],
+                        "text": "using only a small fraction of the information [17,18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207194178,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "56ac97a7d53702a0941c7bdebe41c682d9831627",
+            "isKey": false,
+            "numCitedBy": 712,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Humans have used sketching to depict our visual world since prehistoric times. Even today, sketching is possibly the only rendering technique readily available to all humans. This paper is the first large scale exploration of human sketches. We analyze the distribution of non-expert sketches of everyday objects such as 'teapot' or 'car'. We ask humans to sketch objects of a given category and gather 20,000 unique sketches evenly distributed over 250 object categories. With this dataset we perform a perceptual study and find that humans can correctly identify the object category of a sketch 73% of the time. We compare human performance against computational recognition methods. We develop a bag-of-features sketch representation and use multi-class support vector machines, trained on our sketch dataset, to classify sketches. The resulting recognition method is able to identify unknown sketches with 56% accuracy (chance is 0.4%). Based on the computational model, we demonstrate an interactive sketch recognition system. We release the complete crowd-sourced dataset of sketches to the community."
+            },
+            "slug": "How-do-humans-sketch-objects-Eitz-Hays",
+            "title": {
+                "fragments": [],
+                "text": "How do humans sketch objects?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper is the first large scale exploration of human sketches, developing a bag-of-features sketch representation and using multi-class support vector machines, trained on the sketch dataset, to classify sketches."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACM Trans. Graph."
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3056091"
+                        ],
+                        "name": "M. Everingham",
+                        "slug": "M.-Everingham",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Everingham",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Everingham"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145715698"
+                        ],
+                        "name": "Christopher K. I. Williams",
+                        "slug": "Christopher-K.-I.-Williams",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Williams",
+                            "middleNames": [
+                                "K.",
+                                "I."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher K. I. Williams"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33652486"
+                        ],
+                        "name": "J. Winn",
+                        "slug": "J.-Winn",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Winn",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Winn"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 41
+                            }
+                        ],
+                        "text": "In particular, on the PASCAL VOC dataset [15], given just 1000 proposals we achieve over 96% object recall at overlap threshold of 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 65
+                            }
+                        ],
+                        "text": "5 is typically used to determine whether a detection was correct [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 127,
+                                "start": 123
+                            }
+                        ],
+                        "text": "Following the experimental setup of previous approaches [7,5,8,4] we evaluate our algorithm on the PASCAL VOC 2007 dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 231,
+                                "start": 227
+                            }
+                        ],
+                        "text": "Object proposal generators are currently used by several state-of-the-art object detection algorithms [5,12,13], which include the winners of the 2013 ImageNet detection challenge [14] and top methods on the PASCAL VOC dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 4246903,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "82635fb63640ae95f90ee9bdc07832eb461ca881",
+            "isKey": true,
+            "numCitedBy": 11680,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The Pascal Visual Object Classes (VOC) challenge is a benchmark in visual object category recognition and detection, providing the vision and machine learning communities with a standard dataset of images and annotation, and standard evaluation procedures. Organised annually from 2005 to present, the challenge and its associated dataset has become accepted as the benchmark for object detection.This paper describes the dataset and evaluation procedure. We review the state-of-the-art in evaluated methods for both classification and detection, analyse whether the methods are statistically different, what they are learning from the images (e.g. the object or its context), and what the methods find easy or confuse. The paper concludes with lessons learnt in the three year history of the challenge, and proposes directions for future improvement and extension."
+            },
+            "slug": "The-Pascal-Visual-Object-Classes-(VOC)-Challenge-Everingham-Gool",
+            "title": {
+                "fragments": [],
+                "text": "The Pascal Visual Object Classes (VOC) Challenge"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "The state-of-the-art in evaluated methods for both classification and detection are reviewed, whether the methods are statistically different, what they are learning from the images, and what the methods find easy or confuse."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3127283"
+                        ],
+                        "name": "Piotr Doll\u00e1r",
+                        "slug": "Piotr-Doll\u00e1r",
+                        "structuredName": {
+                            "firstName": "Piotr",
+                            "lastName": "Doll\u00e1r",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Piotr Doll\u00e1r"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699161"
+                        ],
+                        "name": "C. L. Zitnick",
+                        "slug": "C.-L.-Zitnick",
+                        "structuredName": {
+                            "firstName": "C.",
+                            "lastName": "Zitnick",
+                            "middleNames": [
+                                "Lawrence"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. L. Zitnick"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 69
+                            }
+                        ],
+                        "text": "runs at 10 fps without the edge sharpening enhancement introduced in [19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 82
+                            }
+                        ],
+                        "text": "We utilize the single-scale variant with the sharpening enhancement introduced in [19] to reduce runtime."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 64
+                            }
+                        ],
+                        "text": "The edge responses are found using the Structured Edge detector [16,19] that has shown good performance in predicting object boundaries, while simultaneously being very efficient."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 96,
+                                "start": 89
+                            }
+                        ],
+                        "text": "We utilize the fast and publicly available Structured Edge detector recently proposed in [16,19] to obtain the initial edge map."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 91,
+                                "start": 87
+                            }
+                        ],
+                        "text": "Finally, if we also disable the sharpening enhancement of the Structured Edge detector [19], the runtime of our algorithm is 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13874285,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8b1ab1fba09c8620d2c695d2a13e8965128197b4",
+            "isKey": false,
+            "numCitedBy": 701,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Edge detection is a critical component of many vision systems, including object detectors and image segmentation algorithms. Patches of edges exhibit well-known forms of local structure, such as straight lines or T-junctions. In this paper we take advantage of the structure present in local image patches to learn both an accurate and computationally efficient edge detector. We formulate the problem of predicting local edge masks in a structured learning framework applied to random decision forests. Our novel approach to learning decision trees robustly maps the structured labels to a discrete space on which standard information gain measures may be evaluated. The result is an approach that obtains realtime performance that is orders of magnitude faster than many competing state-of-the-art approaches, while also achieving state-of-the-art edge detection results on the BSDS500 Segmentation dataset and NYU Depth dataset. Finally, we show the potential of our approach as a general purpose edge detector by showing our learned edge models generalize well across datasets."
+            },
+            "slug": "Fast-Edge-Detection-Using-Structured-Forests-Doll\u00e1r-Zitnick",
+            "title": {
+                "fragments": [],
+                "text": "Fast Edge Detection Using Structured Forests"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper forms the problem of predicting local edge masks in a structured learning framework applied to random decision forests and develops a novel approach to learning decision trees robustly maps the structured labels to a discrete space on which standard information gain measures may be evaluated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "5403672"
+                        ],
+                        "name": "R. Weale",
+                        "slug": "R.-Weale",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Weale",
+                            "middleNames": [
+                                "Alexander"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Weale"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 47
+                            }
+                        ],
+                        "text": "using only a small fraction of the information [17,18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 84293972,
+            "fieldsOfStudy": [
+                "Biology"
+            ],
+            "id": "2f08f12553521a82249ca9b9cd1083f8b2e1ed86",
+            "isKey": false,
+            "numCitedBy": 2680,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Vision.-A-Computational-Investigation-Into-the-and-Weale",
+            "title": {
+                "fragments": [],
+                "text": "Vision. A Computational Investigation Into the Human Representation and Processing of Visual Information. David Marr"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1983
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 188,
+                                "start": 181
+                            }
+                        ],
+                        "text": "The dominant approach to this problem over the past decade has been the sliding windows paradigm in which object classification is performed at every location and scale in an image [1,2,3]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 42281583,
+            "fieldsOfStudy": [],
+            "id": "b09ec0b350f8352bce46a2f5bf7ae97c83a7b9ca",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Robust real-time face detection"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 184,
+                                "start": 180
+                            }
+                        ],
+                        "text": "Object proposal generators are currently used by several state-of-the-art object detection algorithms [5,12,13], which include the winners of the 2013 ImageNet detection challenge [14] and top methods on the PASCAL VOC dataset [15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206597351,
+            "fieldsOfStudy": [],
+            "id": "d2c733e34d48784a37d717fe43d9e93277a8c53e",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "ImageNet: A large-scale hierarchical image database"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2009
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 26,
+            "methodology": 11
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 30,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Edge-Boxes:-Locating-Object-Proposals-from-Edges-Zitnick-Doll\u00e1r/b183947ee15718b45546eda6b01e179b9a95421f?sort=total-citations"
+}

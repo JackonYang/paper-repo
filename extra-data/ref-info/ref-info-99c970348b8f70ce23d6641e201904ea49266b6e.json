@@ -1,0 +1,2980 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3119801"
+                        ],
+                        "name": "Xavier Glorot",
+                        "slug": "Xavier-Glorot",
+                        "structuredName": {
+                            "firstName": "Xavier",
+                            "lastName": "Glorot",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xavier Glorot"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 278,
+                                "start": 262
+                            }
+                        ],
+                        "text": "Indeed, many explanations for the difficulty of deep learning have been advanced in the literature, including the presence of many local minima, low curvature regions due to saturating nonlinearities, and exponential growth or decay of back-propagated gradients [12, 13, 14, 15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 205
+                            }
+                        ],
+                        "text": "At the same time, recent results have obtained excellent performance starting from carefullyscaled random initializations, though interestingly, pretrained initializations still exhibit faster convergence [21, 13, 22, 3, 4, 1, 23] (see Supplementary Appendix D for discussion)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 198,
+                                "start": 182
+                            }
+                        ],
+                        "text": "Unsupervised pretraining has been shown to speed the optimization of deep networks, and also to act as a special regularizer towards solutions with better generalization performance [18, 12, 13, 14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 56,
+                                "start": 52
+                            }
+                        ],
+                        "text": "As an alternative to greedy layerwise pre-training, [13] proposed choosing appropriately scaled initial conditions on weights that would preserve the norm of typical error vectors as they were backpropagated through the deep network."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 214,
+                                "start": 206
+                            }
+                        ],
+                        "text": "At the cost of expressivity, deep linear networks gain theoretical tractability and may prove fertile for addressing other phenomena in deep learning, such as the impact of carefully-scaled initializations [13, 23], momentum [23], dropout regularization [1], and sparsity constraints [2]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5575601,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b71ac1e9fb49420d13e084ac67254a0bbd40f83f",
+            "isKey": true,
+            "numCitedBy": 12426,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Whereas before 2006 it appears that deep multilayer neural networks were not successfully trained, since then several algorithms have been shown to successfully train them, with experimental results showing the superiority of deeper vs less deep architectures. All these experimental results were obtained with new initialization or training mechanisms. Our objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future. We first observe the influence of the non-linear activations functions. We find that the logistic sigmoid activation is unsuited for deep networks with random initialization because of its mean value, which can drive especially the top hidden layer into saturation. Surprisingly, we find that saturated units can move out of saturation by themselves, albeit slowly, and explaining the plateaus sometimes seen when training neural networks. We find that a new non-linearity that saturates less can often be beneficial. Finally, we study how activations and gradients vary across layers and during training, with the idea that training may be more difficult when the singular values of the Jacobian associated with each layer are far from 1. Based on these considerations, we propose a new initialization scheme that brings substantially faster convergence. 1 Deep Neural Networks Deep learning methods aim at learning feature hierarchies with features from higher levels of the hierarchy formed by the composition of lower level features. They include Appearing in Proceedings of the 13 International Conference on Artificial Intelligence and Statistics (AISTATS) 2010, Chia Laguna Resort, Sardinia, Italy. Volume 9 of JMLR: WC Weston et al., 2008). Much attention has recently been devoted to them (see (Bengio, 2009) for a review), because of their theoretical appeal, inspiration from biology and human cognition, and because of empirical success in vision (Ranzato et al., 2007; Larochelle et al., 2007; Vincent et al., 2008) and natural language processing (NLP) (Collobert & Weston, 2008; Mnih & Hinton, 2009). Theoretical results reviewed and discussed by Bengio (2009), suggest that in order to learn the kind of complicated functions that can represent high-level abstractions (e.g. in vision, language, and other AI-level tasks), one may need deep architectures. Most of the recent experimental results with deep architecture are obtained with models that can be turned into deep supervised neural networks, but with initialization or training schemes different from the classical feedforward neural networks (Rumelhart et al., 1986). Why are these new algorithms working so much better than the standard random initialization and gradient-based optimization of a supervised training criterion? Part of the answer may be found in recent analyses of the effect of unsupervised pretraining (Erhan et al., 2009), showing that it acts as a regularizer that initializes the parameters in a \u201cbetter\u201d basin of attraction of the optimization procedure, corresponding to an apparent local minimum associated with better generalization. But earlier work (Bengio et al., 2007) had shown that even a purely supervised but greedy layer-wise procedure would give better results. So here instead of focusing on what unsupervised pre-training or semi-supervised criteria bring to deep architectures, we focus on analyzing what may be going wrong with good old (but deep) multilayer neural networks. Our analysis is driven by investigative experiments to monitor activations (watching for saturation of hidden units) and gradients, across layers and across training iterations. We also evaluate the effects on these of choices of activation function (with the idea that it might affect saturation) and initialization procedure (since unsupervised pretraining is a particular form of initialization and it has a drastic impact)."
+            },
+            "slug": "Understanding-the-difficulty-of-training-deep-Glorot-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Understanding the difficulty of training deep feedforward neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The objective here is to understand better why standard gradient descent from random initialization is doing so poorly with deep neural networks, to better understand these recent relative successes and help design better algorithms in the future."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3087941"
+                        ],
+                        "name": "Pascal Lamblin",
+                        "slug": "Pascal-Lamblin",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Lamblin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pascal Lamblin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32384143"
+                        ],
+                        "name": "D. Popovici",
+                        "slug": "D.-Popovici",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Popovici",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Popovici"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1777528"
+                        ],
+                        "name": "H. Larochelle",
+                        "slug": "H.-Larochelle",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Larochelle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Larochelle"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 130
+                            }
+                        ],
+                        "text": "Next, we apply these solutions to investigate the commonly used greedy layer-wise pretraining strategy for training deep networks [17, 18], and recover conditions under which such pretraining speeds learning."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 84
+                            }
+                        ],
+                        "text": "We consider the effect of using autoencoders as the unsupervised pretraining module [18, 12], for which the input-output correlation matrix \u03a3(31) is simply the input correlation matrix \u03a3(11)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 375,
+                                "start": 367
+                            }
+                        ],
+                        "text": "What numerical weight initilization procedures can get us close to this weight manifold, so that we can exploit its rapid learning properties? A breakthrough in training deep neural networks started with the discovery that greedy layer-wise unsupervised pretraining could substantially speed up and improve the generalization performance of standard gradient descent [17, 18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 198,
+                                "start": 182
+                            }
+                        ],
+                        "text": "Unsupervised pretraining has been shown to speed the optimization of deep networks, and also to act as a special regularizer towards solutions with better generalization performance [18, 12, 13, 14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14201947,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "355d44f53428b1ac4fb2ab468d593c720640e5bd",
+            "isKey": true,
+            "numCitedBy": 3427,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Complexity theory of circuits strongly suggests that deep architectures can be much more efficient (sometimes exponentially) than shallow architectures, in terms of computational elements required to represent some functions. Deep multi-layer neural networks have many levels of non-linearities allowing them to compactly represent highly non-linear and highly-varying functions. However, until recently it was not clear how to train such deep networks, since gradient-based optimization starting from random initialization appears to often get stuck in poor solutions. Hinton et al. recently introduced a greedy layer-wise unsupervised learning algorithm for Deep Belief Networks (DBN), a generative model with many layers of hidden causal variables. In the context of the above optimization problem, we study this algorithm empirically and explore variants to better understand its success and extend it to cases where the inputs are continuous or where the structure of the input distribution is not revealing enough about the variable to be predicted in a supervised task. Our experiments also confirm the hypothesis that the greedy layer-wise unsupervised training strategy mostly helps the optimization, by initializing weights in a region near a good local minimum, giving rise to internal distributed representations that are high-level abstractions of the input, bringing better generalization."
+            },
+            "slug": "Greedy-Layer-Wise-Training-of-Deep-Networks-Bengio-Lamblin",
+            "title": {
+                "fragments": [],
+                "text": "Greedy Layer-Wise Training of Deep Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "These experiments confirm the hypothesis that the greedy layer-wise unsupervised training strategy mostly helps the optimization, by initializing weights in a region near a good local minimum, giving rise to internal distributed representations that are high-level abstractions of the input, bringing better generalization."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145704247"
+                        ],
+                        "name": "James Martens",
+                        "slug": "James-Martens",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Martens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Martens"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35188630"
+                        ],
+                        "name": "George E. Dahl",
+                        "slug": "George-E.-Dahl",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Dahl",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "George E. Dahl"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 214,
+                                "start": 206
+                            }
+                        ],
+                        "text": "At the cost of expressivity, deep linear networks gain theoretical tractability and may prove fertile for addressing other phenomena in deep learning, such as the impact of carefully-scaled initializations [13, 23], momentum [23], dropout regularization [1], and sparsity constraints [2]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 205
+                            }
+                        ],
+                        "text": "At the same time, recent results have obtained excellent performance starting from carefullyscaled random initializations, though interestingly, pretrained initializations still exhibit faster convergence [21, 13, 22, 3, 4, 1, 23] (see Supplementary Appendix D for discussion)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 10940950,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "aa7bfd2304201afbb19971ebde87b17e40242e91",
+            "isKey": false,
+            "numCitedBy": 3555,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Deep and recurrent neural networks (DNNs and RNNs respectively) are powerful models that were considered to be almost impossible to train using stochastic gradient descent with momentum. In this paper, we show that when stochastic gradient descent with momentum uses a well-designed random initialization and a particular type of slowly increasing schedule for the momentum parameter, it can train both DNNs and RNNs (on datasets with long-term dependencies) to levels of performance that were previously achievable only with Hessian-Free optimization. We find that both the initialization and the momentum are crucial since poorly initialized networks cannot be trained with momentum and well-initialized networks perform markedly worse when the momentum is absent or poorly tuned. \n \nOur success training these models suggests that previous attempts to train deep and recurrent neural networks from random initializations have likely failed due to poor initialization schemes. Furthermore, carefully tuned momentum methods suffice for dealing with the curvature issues in deep and recurrent network training objectives without the need for sophisticated second-order methods."
+            },
+            "slug": "On-the-importance-of-initialization-and-momentum-in-Sutskever-Martens",
+            "title": {
+                "fragments": [],
+                "text": "On the importance of initialization and momentum in deep learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown that when stochastic gradient descent with momentum uses a well-designed random initialization and a particular type of slowly increasing schedule for the momentum parameter, it can train both DNNs and RNNs to levels of performance that were previously achievable only with Hessian-Free optimization."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34927843"
+                        ],
+                        "name": "Andrew M. Saxe",
+                        "slug": "Andrew-M.-Saxe",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Saxe",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew M. Saxe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701656"
+                        ],
+                        "name": "James L. McClelland",
+                        "slug": "James-L.-McClelland",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "McClelland",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James L. McClelland"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "25769960"
+                        ],
+                        "name": "S. Ganguli",
+                        "slug": "S.-Ganguli",
+                        "structuredName": {
+                            "firstName": "Surya",
+                            "lastName": "Ganguli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Ganguli"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 173
+                            }
+                        ],
+                        "text": "The training set consists of 32 orthogonal input patterns, each associated with a 1000-dimensional feature vector generated by a hierarchical diffusion process described in [16] with a five level binary tree and flip probability of 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 37
+                            }
+                        ],
+                        "text": "Indeed, it has been shown previously [16] that this nonlinear learning dynamics in deep linear networks is sufficient to qualitatively capture aspects of the progressive, hierarchical differentiation of conceptual structure seen in infant development."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14989590,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4c9934b49ed65407b848c490d2156f08d6998945",
+            "isKey": false,
+            "numCitedBy": 47,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Psychological experiments have revealed remarkable regularities in the developmental time course of cognition. Infants generally acquire broad categorical distinctions (i.e., plant/animal) before finer ones (i.e., bird/fish), and periods of little change are often punctuated by stage-like transitions. This pattern of progressive differentiation has also been seen in neural network models as they learn from exposure to training data. Our work explains why the networks exhibit these phenomena. We find solutions to the dynamics of error-correcting learning in linear three layer neural networks. These solutions link the statistics of the training set and the dynamics of learning in the network, and characterize formally how learning leads to the emergence of structured representations for arbitrary training environments. We then consider training a neural network on data generated by a hierarchically structured probabilistic generative process. Our results reveal that, for a broad class of such structures, the learning dynamics must exhibit progressive, coarse-to-fine differentiation with stage-like transitions punctuating longer dormant periods."
+            },
+            "slug": "Learning-hierarchical-category-structure-in-deep-Saxe-McClelland",
+            "title": {
+                "fragments": [],
+                "text": "Learning hierarchical category structure in deep neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work considers training a neural network on data generated by a hierarchically structured probabilistic generative process, and finds solutions to the dynamics of error-correcting learning in linear three layer neural networks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1761978"
+                        ],
+                        "name": "D. Erhan",
+                        "slug": "D.-Erhan",
+                        "structuredName": {
+                            "firstName": "D.",
+                            "lastName": "Erhan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Erhan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1798462"
+                        ],
+                        "name": "Pierre-Antoine Manzagol",
+                        "slug": "Pierre-Antoine-Manzagol",
+                        "structuredName": {
+                            "firstName": "Pierre-Antoine",
+                            "lastName": "Manzagol",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pierre-Antoine Manzagol"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751569"
+                        ],
+                        "name": "Samy Bengio",
+                        "slug": "Samy-Bengio",
+                        "structuredName": {
+                            "firstName": "Samy",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samy Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145467703"
+                        ],
+                        "name": "Pascal Vincent",
+                        "slug": "Pascal-Vincent",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Vincent",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pascal Vincent"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 117,
+                                "start": 100
+                            }
+                        ],
+                        "text": "These successes have been achieved despite the noted difficulty of training such deep architectures [7, 8, 9, 10, 11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5108612,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ccf415df5a83b343dae261286d29a40e8b80e6c6",
+            "isKey": false,
+            "numCitedBy": 395,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Whereas theoretical work suggests that deep architectures might be more e cient at representing highly-varying functions, training deep architectures was unsuccessful until the recent advent of algorithms based on unsupervised pretraining. Even though these new algorithms have enabled training deep models, many questions remain as to the nature of this di cult learning problem. Answering these questions is important if learning in deep architectures is to be further improved. We attempt to shed some light on these questions through extensive simulations. The experiments confirm and clarify the advantage of unsupervised pre-training. They demonstrate the robustness of the training procedure with respect to the random initialization, the positive e ect of pre-training in terms of optimization and its role as a regularizer. We empirically show the influence of pre-training with respect to architecture depth, model capacity, and number of training examples."
+            },
+            "slug": "The-Difficulty-of-Training-Deep-Architectures-and-Erhan-Manzagol",
+            "title": {
+                "fragments": [],
+                "text": "The Difficulty of Training Deep Architectures and the Effect of Unsupervised Pre-Training"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "The experiments confirm and clarify the advantage of unsupervised pre- training, and empirically show the influence of pre-training with respect to architecture depth, model capacity, and number of training examples."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1761978"
+                        ],
+                        "name": "D. Erhan",
+                        "slug": "D.-Erhan",
+                        "structuredName": {
+                            "firstName": "D.",
+                            "lastName": "Erhan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Erhan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1760871"
+                        ],
+                        "name": "Aaron C. Courville",
+                        "slug": "Aaron-C.-Courville",
+                        "structuredName": {
+                            "firstName": "Aaron",
+                            "lastName": "Courville",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aaron C. Courville"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "120247189"
+                        ],
+                        "name": "Pascal Vincent",
+                        "slug": "Pascal-Vincent",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Vincent",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pascal Vincent"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 278,
+                                "start": 262
+                            }
+                        ],
+                        "text": "Indeed, many explanations for the difficulty of deep learning have been advanced in the literature, including the presence of many local minima, low curvature regions due to saturating nonlinearities, and exponential growth or decay of back-propagated gradients [12, 13, 14, 15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 198,
+                                "start": 182
+                            }
+                        ],
+                        "text": "Unsupervised pretraining has been shown to speed the optimization of deep networks, and also to act as a special regularizer towards solutions with better generalization performance [18, 12, 13, 14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15796526,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0d2336389dff3031910bd21dd1c44d1b4cd51725",
+            "isKey": false,
+            "numCitedBy": 1724,
+            "numCiting": 72,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Much recent research has been devoted to learning algorithms for deep architectures such as Deep Belief Networks and stacks of auto-encoder variants, with impressive results obtained in several areas, mostly on vision and language data sets. The best results obtained on supervised learning tasks involve an unsupervised learning component, usually in an unsupervised pre-training phase. Even though these new algorithms have enabled training deep models, many questions remain as to the nature of this difficult learning problem. The main question investigated here is the following: how does unsupervised pre-training work? Answering this questions is important if learning in deep architectures is to be further improved. We propose several explanatory hypotheses and test them through extensive simulations. We empirically show the influence of pre-training with respect to architecture depth, model capacity, and number of training examples. The experiments confirm and clarify the advantage of unsupervised pre-training. The results suggest that unsupervised pre-training guides the learning towards basins of attraction of minima that support better generalization from the training data set; the evidence from these results supports a regularization explanation for the effect of pre-training."
+            },
+            "slug": "Why-Does-Unsupervised-Pre-training-Help-Deep-Erhan-Courville",
+            "title": {
+                "fragments": [],
+                "text": "Why Does Unsupervised Pre-training Help Deep Learning?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The results suggest that unsupervised pre-training guides the learning towards basins of attraction of minima that support better generalization from the training data set; the evidence from these results supports a regularization explanation for the effect of pre- training."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1747181"
+                        ],
+                        "name": "J. Hartmanis",
+                        "slug": "J.-Hartmanis",
+                        "structuredName": {
+                            "firstName": "Juris",
+                            "lastName": "Hartmanis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Hartmanis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143817739"
+                        ],
+                        "name": "J. V. Leeuwen",
+                        "slug": "J.-V.-Leeuwen",
+                        "structuredName": {
+                            "firstName": "Jan",
+                            "lastName": "Leeuwen",
+                            "middleNames": [
+                                "van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. V. Leeuwen"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 26661612,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b1a5961609c623fc816aaa77565ba38b25531a8e",
+            "isKey": false,
+            "numCitedBy": 1302,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many algorithms are available to learn deep hierarchies of features from unlabeled data, especially images. In many cases, these algorithms involve multi-layered networks of features (eg, neural networks) that are sometimes tricky to train and tune and are difficult. Abstract A commonly encountered problem in MLP (multi-layer perceptron) classification problems is related to the prior probabilities of the individual classes-if the number of training examples that correspond to each class varies significantly between the classes, then. Abstract Validation can be used to detect when overfitting starts during supervised training of a neural network; training is then stopped before convergence to avoid the overfitting (\u00e2 \u0153early stopping\u00e2 ). The exact criterion used for validation-based early stopping, however, is usually. Abstract Reservoir computing has emerged in the last decade as an alternative to gradient descent methods for training recurrent neural networks. Echo State Network (ESN) is one of the key reservoir computing \u00e2 \u0153flavors\u00e2 . While being practical, conceptually simple, and easy. Preface In many cases, the amount of labeled data is limited and does not allow for fully identifying the function that needs to be learned. When labeled data is scarce, the learning algorithm is exposed to simultaneous underfitting and overfitting. The learning algorithm. Abstract Restricted Boltzmann machines (RBMs) have been used as generative models of many different types of data. RBMs are usually trained using the contrastive divergence learning procedure. This requires a certain amount of practical experience to decide.A commonly encountered problem in MLP (multi-layer perceptron) classification problems is related to the prior probabilities of the individual classes-if the number of training examples that correspond to each class varies significantly between the classes, then. Abstract Validation can be used to detect when overfitting starts during supervised training of a neural network; training is then stopped before convergence to avoid the overfitting (\u00e2 \u0153early stopping\u00e2 ). The exact criterion used for validation-based early stopping, however, is usually. Abstract Reservoir computing has emerged in the last decade as an alternative to gradient descent methods for training recurrent neural networks. Echo State Network (ESN) is one of the key reservoir computing \u00e2 \u0153flavors\u00e2 . While being practical, conceptually simple, and easy. Preface In many cases, the amount of labeled data is limited and does not allow for fully identifying the function that needs to be learned. When labeled data is scarce, the learning algorithm is exposed to simultaneous underfitting and overfitting. The learning algorithm. Abstract Restricted Boltzmann machines (RBMs) have been used as generative models of many different types of data. RBMs are usually trained using the contrastive divergence learning procedure. This requires a certain amount of practical experience to decide. It is our belief that researchers and practitioners acquire, through experience and word-ofmouth, techniques and heuristics that help them successfully apply neural networks to di cult real world problems. Often these\\ tricks\" are theo-tically well motivated. Sometimes they. Abstract The convergence of back-propagation learning is analyzed so as to explain common phenomenon observed by practitioners. Many undesirable behaviors of backprop can be avoided with tricks that are rarely exposed in serious technical publications. This. Abstract Chapter 1 strongly advocates the stochastic back-propagation method to train neural networks. This is in fact an instance of a more general technique called stochastic gradient descent (SGD). This chapter provides background material, explains why SGD is a. Abstract WeChapter 1 strongly advocates the stochastic back-propagation method to train neural networks. This is in fact an instance of a more general technique called stochastic gradient descent (SGD). This chapter provides background material, explains why SGD is a. Abstract We show how nonlinear semi-supervised embedding algorithms popular for use with \u00e2 \u0153shallow\u00e2 learning techniques such as kernel methods can be easily applied to deep multi-layer architectures, either as a regularizer at the output layer, or on each layer."
+            },
+            "slug": "Neural-Networks:-Tricks-of-the-Trade-Hartmanis-Leeuwen",
+            "title": {
+                "fragments": [],
+                "text": "Neural Networks: Tricks of the Trade"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is shown how nonlinear semi-supervised embedding algorithms popular for use with \u00e2 \u0153shallow\u00e2 learning techniques such as kernel methods can be easily applied to deep multi-layer architectures."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Lecture Notes in Computer Science"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144902513"
+                        ],
+                        "name": "P. Baldi",
+                        "slug": "P.-Baldi",
+                        "structuredName": {
+                            "firstName": "Pierre",
+                            "lastName": "Baldi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Baldi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1764952"
+                        ],
+                        "name": "K. Hornik",
+                        "slug": "K.-Hornik",
+                        "structuredName": {
+                            "firstName": "Kurt",
+                            "lastName": "Hornik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Hornik"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 73
+                            }
+                        ],
+                        "text": "The fixed point structure of gradient descent learning was worked out in [19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 91
+                            }
+                        ],
+                        "text": "Thus remarkably, the dynamics in (5) has only saddle points and no non-global local minima [19]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14333248,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9552ac39a57daacf3d75865a268935b5a0df9bbb",
+            "isKey": false,
+            "numCitedBy": 1336,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Neural-networks-and-principal-component-analysis:-Baldi-Hornik",
+            "title": {
+                "fragments": [],
+                "text": "Neural networks and principal component analysis: Learning from examples without local minima"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 84
+                            }
+                        ],
+                        "text": "We consider the effect of using autoencoders as the unsupervised pretraining module [18, 12], for which the input-output correlation matrix \u03a3(31) is simply the input correlation matrix \u03a3(11)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 278,
+                                "start": 262
+                            }
+                        ],
+                        "text": "Indeed, many explanations for the difficulty of deep learning have been advanced in the literature, including the presence of many local minima, low curvature regions due to saturating nonlinearities, and exponential growth or decay of back-propagated gradients [12, 13, 14, 15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 198,
+                                "start": 182
+                            }
+                        ],
+                        "text": "Unsupervised pretraining has been shown to speed the optimization of deep networks, and also to act as a special regularizer towards solutions with better generalization performance [18, 12, 13, 14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207178999,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e60ff004dde5c13ec53087872cfcdd12e85beb57",
+            "isKey": false,
+            "numCitedBy": 7558,
+            "numCiting": 345,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Theoretical results strongly suggest that in order to learn the kind of complicated functions that can represent high-level abstractions (e.g. in vision, language, and other AI-level tasks), one needs deep architectures. Deep architectures are composed of multiple levels of non-linear operations, such as in neural nets with many hidden layers or in complicated propositional formulae re-using many sub-formulae. Searching the parameter space of deep architectures is a difficult optimization task, but learning algorithms such as those for Deep Belief Networks have recently been proposed to tackle this problem with notable success, beating the state-of-the-art in certain areas. This paper discusses the motivations and principles regarding learning algorithms for deep architectures, in particular those exploiting as building blocks unsupervised learning of single-layer models such as Restricted Boltzmann Machines, used to construct deeper models such as Deep Belief Networks."
+            },
+            "slug": "Learning-Deep-Architectures-for-AI-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Learning Deep Architectures for AI"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The motivations and principles regarding learning algorithms for deep architectures, in particular those exploiting as building blocks unsupervised learning of single-layer modelssuch as Restricted Boltzmann Machines, used to construct deeper models such as Deep Belief Networks are discussed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Found. Trends Mach. Learn."
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1693668"
+                        ],
+                        "name": "K. Fukumizu",
+                        "slug": "K.-Fukumizu",
+                        "structuredName": {
+                            "firstName": "Kenji",
+                            "lastName": "Fukumizu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Fukumizu"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 89,
+                                "start": 85
+                            }
+                        ],
+                        "text": ", N2, where r \u00b7 r = \u03b4\u03b1\u03b2 , with all other connectivity modes a and b set to zero (see [20] for solutions to a partially overlapping but distinct set of initial conditions, further discussed in Supplementary Appendix A)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 605683,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9505f8c9e320fc51417ea5acbe6fad5afdcb37ec",
+            "isKey": false,
+            "numCitedBy": 19,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper discusses batch gradient descent learning in mul-tilayer networks with a large number of statistical training data. We emphasize on the diierence between regular cases, where the prepared model has the same size as the true function , and overrealizable cases, where the model has surplus hidden units to realize the true function. First, experimental study on multilayer perceptrons and linear neural networks (LNN) shows that batch learning induces strong overtrain-ing on both models in overrealizable cases, which means the degrade of generalization error by surplus units can be alleviated. We theoretically analyze the dynamics in LNN, and show that this overtraining is caused by shrinkage of the parameters corresponding to surplus units."
+            },
+            "slug": "Effect-of-Batch-Learning-in-Multilayer-Neural-Fukumizu",
+            "title": {
+                "fragments": [],
+                "text": "Effect of Batch Learning in Multilayer Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "Experimental study on multilayer perceptrons and linear neural networks (LNN) shows that batch learning induces strong overtrain-ing on both models in overrealizable cases, which means the degrade of generalization error by surplus units can be alleviated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICONIP"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1996134"
+                        ],
+                        "name": "Razvan Pascanu",
+                        "slug": "Razvan-Pascanu",
+                        "structuredName": {
+                            "firstName": "Razvan",
+                            "lastName": "Pascanu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Razvan Pascanu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2047446108"
+                        ],
+                        "name": "Tomas Mikolov",
+                        "slug": "Tomas-Mikolov",
+                        "structuredName": {
+                            "firstName": "Tomas",
+                            "lastName": "Mikolov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomas Mikolov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 303,
+                                "start": 299
+                            }
+                        ],
+                        "text": "Finally, we note that in recurrent networks, which can be thought of as infinitely deep feed-forward networks with tied weights, a very promising approach is a modification to the training objective that partially promotes dynamical isometry for the set of gradients currently being back-propagated [24]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14650762,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "84069287da0a6b488b8c933f3cb5be759cb6237e",
+            "isKey": false,
+            "numCitedBy": 3800,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "There are two widely known issues with properly training recurrent neural networks, the vanishing and the exploding gradient problems detailed in Bengio et al. (1994). In this paper we attempt to improve the understanding of the underlying issues by exploring these problems from an analytical, a geometric and a dynamical systems perspective. Our analysis is used to justify a simple yet effective solution. We propose a gradient norm clipping strategy to deal with exploding gradients and a soft constraint for the vanishing gradients problem. We validate empirically our hypothesis and proposed solutions in the experimental section."
+            },
+            "slug": "On-the-difficulty-of-training-recurrent-neural-Pascanu-Mikolov",
+            "title": {
+                "fragments": [],
+                "text": "On the difficulty of training recurrent neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "This paper proposes a gradient norm clipping strategy to deal with exploding gradients and a soft constraint for the vanishing gradients problem and validates empirically the hypothesis and proposed solutions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 117,
+                                "start": 100
+                            }
+                        ],
+                        "text": "These successes have been achieved despite the noted difficulty of training such deep architectures [7, 8, 9, 10, 11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15559637,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6fdb77260fc83dff91c44fea0f31a2cb8ed13d04",
+            "isKey": false,
+            "numCitedBy": 1116,
+            "numCiting": 63,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "One long-term goal of machine learning research is to produce methods that are applicable to highly complex tasks, such as perception (vision, audition), reasoning, intelligent control, and other artificially intelligent behaviors. We argue that in order to progress toward this goal, the Machine Learning community must endeavor to discover algorithms that can learn highly complex functions, with minimal need for prior knowledge, and with minimal human intervention. We present mathematical and empirical evidence suggesting that many popular approaches to non-parametric learning, particularly kernel methods, are fundamentally limited in their ability to learn complex high-dimensional functions. Our analysis focuses on two problems. First, kernel machines are shallow architectures, in which one large layer of simple template matchers is followed by a single layer of trainable coefficients. We argue that shallow architectures can be very inefficient in terms of required number of computational elements and examples. Second, we analyze a limitation of kernel machines with a local kernel, linked to the curse of dimensionality, that applies to supervised, unsupervised (manifold learning) and semi-supervised kernel machines. Using empirical results on invariant image recognition tasks, kernel methods are compared with deep architectures, in which lower-level features or concepts are progressively combined into more abstract and higher-level representations. We argue that deep architectures have the potential to generalize in non-local ways, i.e., beyond immediate neighbors, and that this is crucial in order to make progress on the kind of complex tasks required for artificial intelligence."
+            },
+            "slug": "Scaling-learning-algorithms-towards-AI-Bengio-LeCun",
+            "title": {
+                "fragments": [],
+                "text": "Scaling learning algorithms towards AI"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "It is argued that deep architectures have the potential to generalize in non-local ways, i.e., beyond immediate neighbors, and that this is crucial in order to make progress on the kind of complex tasks required for artificial intelligence."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2812486"
+                        ],
+                        "name": "P. Simard",
+                        "slug": "P.-Simard",
+                        "structuredName": {
+                            "firstName": "Patrice",
+                            "lastName": "Simard",
+                            "middleNames": [
+                                "Y."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Simard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688235"
+                        ],
+                        "name": "P. Frasconi",
+                        "slug": "P.-Frasconi",
+                        "structuredName": {
+                            "firstName": "Paolo",
+                            "lastName": "Frasconi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Frasconi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 117,
+                                "start": 100
+                            }
+                        ],
+                        "text": "These successes have been achieved despite the noted difficulty of training such deep architectures [7, 8, 9, 10, 11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206457500,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d0be39ee052d246ae99c082a565aba25b811be2d",
+            "isKey": false,
+            "numCitedBy": 6142,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recurrent neural networks can be used to map input sequences to output sequences, such as for recognition, production or prediction problems. However, practical difficulties have been reported in training recurrent neural networks to perform tasks in which the temporal contingencies present in the input/output sequences span long intervals. We show why gradient based learning algorithms face an increasingly difficult problem as the duration of the dependencies to be captured increases. These results expose a trade-off between efficient learning by gradient descent and latching on information for long periods. Based on an understanding of this problem, alternatives to standard gradient descent are considered."
+            },
+            "slug": "Learning-long-term-dependencies-with-gradient-is-Bengio-Simard",
+            "title": {
+                "fragments": [],
+                "text": "Learning long-term dependencies with gradient descent is difficult"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work shows why gradient based learning algorithms face an increasingly difficult problem as the duration of the dependencies to be captured increases, and exposes a trade-off between efficient learning by gradient descent and latching on information for long periods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145124475"
+                        ],
+                        "name": "R. Salakhutdinov",
+                        "slug": "R.-Salakhutdinov",
+                        "structuredName": {
+                            "firstName": "Ruslan",
+                            "lastName": "Salakhutdinov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Salakhutdinov"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 130
+                            }
+                        ],
+                        "text": "Next, we apply these solutions to investigate the commonly used greedy layer-wise pretraining strategy for training deep networks [17, 18], and recover conditions under which such pretraining speeds learning."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 375,
+                                "start": 367
+                            }
+                        ],
+                        "text": "What numerical weight initilization procedures can get us close to this weight manifold, so that we can exploit its rapid learning properties? A breakthrough in training deep neural networks started with the discovery that greedy layer-wise unsupervised pretraining could substantially speed up and improve the generalization performance of standard gradient descent [17, 18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1658773,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "46eb79e5eec8a4e2b2f5652b66441e8a4c921c3e",
+            "isKey": false,
+            "numCitedBy": 14638,
+            "numCiting": 42,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "High-dimensional data can be converted to low-dimensional codes by training a multilayer neural network with a small central layer to reconstruct high-dimensional input vectors. Gradient descent can be used for fine-tuning the weights in such \u201cautoencoder\u201d networks, but this works well only if the initial weights are close to a good solution. We describe an effective way of initializing the weights that allows deep autoencoder networks to learn low-dimensional codes that work much better than principal components analysis as a tool to reduce the dimensionality of data."
+            },
+            "slug": "Reducing-the-Dimensionality-of-Data-with-Neural-Hinton-Salakhutdinov",
+            "title": {
+                "fragments": [],
+                "text": "Reducing the Dimensionality of Data with Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This work describes an effective way of initializing the weights that allows deep autoencoder networks to learn low-dimensional codes that work much better than principal components analysis as a tool to reduce the dimensionality of data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Science"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064160"
+                        ],
+                        "name": "A. Krizhevsky",
+                        "slug": "A.-Krizhevsky",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Krizhevsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krizhevsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 257,
+                                "start": 254
+                            }
+                        ],
+                        "text": "At the cost of expressivity, deep linear networks gain theoretical tractability and may prove fertile for addressing other phenomena in deep learning, such as the impact of carefully-scaled initializations [13, 23], momentum [23], dropout regularization [1], and sparsity constraints [2]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 205
+                            }
+                        ],
+                        "text": "At the same time, recent results have obtained excellent performance starting from carefullyscaled random initializations, though interestingly, pretrained initializations still exhibit faster convergence [21, 13, 22, 3, 4, 1, 23] (see Supplementary Appendix D for discussion)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 130,
+                                "start": 121
+                            }
+                        ],
+                        "text": "Deep learning methods have realized impressive performance in a range of applications, from visual object classification [1, 2, 3] to speech recognition [4] and natural language processing [5, 6]."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 195908774,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "abd1c342495432171beb7ca8fd9551ef13cbd0ff",
+            "isKey": false,
+            "numCitedBy": 80897,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes. On the test data, we achieved top-1 and top-5 error rates of 37.5% and 17.0%, respectively, which is considerably better than the previous state-of-the-art. The neural network, which has 60 million parameters and 650,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, and three fully connected layers with a final 1000-way softmax. To make training faster, we used non-saturating neurons and a very efficient GPU implementation of the convolution operation. To reduce overfitting in the fully connected layers we employed a recently developed regularization method called \"dropout\" that proved to be very effective. We also entered a variant of this model in the ILSVRC-2012 competition and achieved a winning top-5 test error rate of 15.3%, compared to 26.2% achieved by the second-best entry."
+            },
+            "slug": "ImageNet-classification-with-deep-convolutional-Krizhevsky-Sutskever",
+            "title": {
+                "fragments": [],
+                "text": "ImageNet classification with deep convolutional neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A large, deep convolutional neural network was trained to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes and employed a recently developed regularization method called \"dropout\" that proved to be very effective."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Commun. ACM"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2921469"
+                        ],
+                        "name": "Yann Dauphin",
+                        "slug": "Yann-Dauphin",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "Dauphin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann Dauphin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 278,
+                                "start": 262
+                            }
+                        ],
+                        "text": "Indeed, many explanations for the difficulty of deep learning have been advanced in the literature, including the presence of many local minima, low curvature regions due to saturating nonlinearities, and exponential growth or decay of back-propagated gradients [12, 13, 14, 15]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14228101,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "306c7cd74beda5a09662b5f289bba50a2b5ea308",
+            "isKey": false,
+            "numCitedBy": 68,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article exposes the failure of some big neural networks to leverage added capacity to reduce underfitting. Past research suggest diminishing returns when increasing the size of neural networks. Our experiments on ImageNet LSVRC-2010 show that this may be due to the fact there are highly diminishing returns for capacity in terms of training error, leading to underfitting. This suggests that the optimization method - first order gradient descent - fails at this regime. Directly attacking this problem, either through the optimization method or the choices of parametrization, may allow to improve the generalization error on large datasets, for which a large capacity is required."
+            },
+            "slug": "Big-Neural-Networks-Waste-Capacity-Dauphin-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Big Neural Networks Waste Capacity"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "The experiments on ImageNet LSVRC-2010 show that this may be due to the fact there are highly diminishing returns for capacity in terms of training error, leading to underfitting, suggesting that the optimization method - first order gradient descent - fails at this regime."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40360972"
+                        ],
+                        "name": "Abdel-rahman Mohamed",
+                        "slug": "Abdel-rahman-Mohamed",
+                        "structuredName": {
+                            "firstName": "Abdel-rahman",
+                            "lastName": "Mohamed",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Abdel-rahman Mohamed"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35188630"
+                        ],
+                        "name": "George E. Dahl",
+                        "slug": "George-E.-Dahl",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Dahl",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "George E. Dahl"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 205
+                            }
+                        ],
+                        "text": "At the same time, recent results have obtained excellent performance starting from carefullyscaled random initializations, though interestingly, pretrained initializations still exhibit faster convergence [21, 13, 22, 3, 4, 1, 23] (see Supplementary Appendix D for discussion)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 156,
+                                "start": 153
+                            }
+                        ],
+                        "text": "Deep learning methods have realized impressive performance in a range of applications, from visual object classification [1, 2, 3] to speech recognition [4] and natural language processing [5, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9530137,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d2b62f77cb2864e465aa60bca6c26bb1d2f84963",
+            "isKey": false,
+            "numCitedBy": 1641,
+            "numCiting": 64,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Gaussian mixture models are currently the dominant technique for modeling the emission distribution of hidden Markov models for speech recognition. We show that better phone recognition on the TIMIT dataset can be achieved by replacing Gaussian mixture models by deep neural networks that contain many layers of features and a very large number of parameters. These networks are first pre-trained as a multi-layer generative model of a window of spectral feature vectors without making use of any discriminative information. Once the generative pre-training has designed the features, we perform discriminative fine-tuning using backpropagation to adjust the features slightly to make them better at predicting a probability distribution over the states of monophone hidden Markov models."
+            },
+            "slug": "Acoustic-Modeling-Using-Deep-Belief-Networks-Mohamed-Dahl",
+            "title": {
+                "fragments": [],
+                "text": "Acoustic Modeling Using Deep Belief Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "It is shown that better phone recognition on the TIMIT dataset can be achieved by replacing Gaussian mixture models by deep neural networks that contain many layers of features and a very large number of parameters."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Audio, Speech, and Language Processing"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145704247"
+                        ],
+                        "name": "James Martens",
+                        "slug": "James-Martens",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Martens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Martens"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 205
+                            }
+                        ],
+                        "text": "At the same time, recent results have obtained excellent performance starting from carefullyscaled random initializations, though interestingly, pretrained initializations still exhibit faster convergence [21, 13, 22, 3, 4, 1, 23] (see Supplementary Appendix D for discussion)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 11154521,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4c46347fbc272b21468efe3d9af34b4b2bad6684",
+            "isKey": false,
+            "numCitedBy": 844,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We develop a 2nd-order optimization method based on the \"Hessian-free\" approach, and apply it to training deep auto-encoders. Without using pre-training, we obtain results superior to those reported by Hinton & Salakhutdinov (2006) on the same tasks they considered. Our method is practical, easy to use, scales nicely to very large datasets, and isn't limited in applicability to auto-encoders, or any specific model class. We also discuss the issue of \"pathological curvature\" as a possible explanation for the difficulty of deep-learning and how 2nd-order optimization, and our method in particular, effectively deals with it."
+            },
+            "slug": "Deep-learning-via-Hessian-free-optimization-Martens",
+            "title": {
+                "fragments": [],
+                "text": "Deep learning via Hessian-free optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "A 2nd-order optimization method based on the \"Hessian-free\" approach is developed, and applied to training deep auto-encoders, and results superior to those reported by Hinton & Salakhutdinov (2006) are obtained."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827616"
+                        ],
+                        "name": "Quoc V. Le",
+                        "slug": "Quoc-V.-Le",
+                        "structuredName": {
+                            "firstName": "Quoc",
+                            "lastName": "Le",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Quoc V. Le"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1706809"
+                        ],
+                        "name": "Marc'Aurelio Ranzato",
+                        "slug": "Marc'Aurelio-Ranzato",
+                        "structuredName": {
+                            "firstName": "Marc'Aurelio",
+                            "lastName": "Ranzato",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marc'Aurelio Ranzato"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3089272"
+                        ],
+                        "name": "R. Monga",
+                        "slug": "R.-Monga",
+                        "structuredName": {
+                            "firstName": "Rajat",
+                            "lastName": "Monga",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Monga"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145139947"
+                        ],
+                        "name": "Matthieu Devin",
+                        "slug": "Matthieu-Devin",
+                        "structuredName": {
+                            "firstName": "Matthieu",
+                            "lastName": "Devin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthieu Devin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32131713"
+                        ],
+                        "name": "G. Corrado",
+                        "slug": "G.-Corrado",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Corrado",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Corrado"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118440152"
+                        ],
+                        "name": "Kai Chen",
+                        "slug": "Kai-Chen",
+                        "structuredName": {
+                            "firstName": "Kai",
+                            "lastName": "Chen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kai Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49959210"
+                        ],
+                        "name": "J. Dean",
+                        "slug": "J.-Dean",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Dean",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Dean"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 287,
+                                "start": 284
+                            }
+                        ],
+                        "text": "At the cost of expressivity, deep linear networks gain theoretical tractability and may prove fertile for addressing other phenomena in deep learning, such as the impact of carefully-scaled initializations [13, 23], momentum [23], dropout regularization [1], and sparsity constraints [2]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 130,
+                                "start": 121
+                            }
+                        ],
+                        "text": "Deep learning methods have realized impressive performance in a range of applications, from visual object classification [1, 2, 3] to speech recognition [4] and natural language processing [5, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206741597,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "72e93aa6767ee683de7f001fa72f1314e40a8f35",
+            "isKey": false,
+            "numCitedBy": 2100,
+            "numCiting": 63,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of building high-level, class-specific feature detectors from only unlabeled data. For example, is it possible to learn a face detector using only unlabeled images? To answer this, we train a deep sparse autoencoder on a large dataset of images (the model has 1 billion connections, the dataset has 10 million 200\u00d7200 pixel images downloaded from the Internet). We train this network using model parallelism and asynchronous SGD on a cluster with 1,000 machines (16,000 cores) for three days. Contrary to what appears to be a widely-held intuition, our experimental results reveal that it is possible to train a face detector without having to label images as containing a face or not. Control experiments show that this feature detector is robust not only to translation but also to scaling and out-of-plane rotation. We also find that the same network is sensitive to other high-level concepts such as cat faces and human bodies. Starting from these learned features, we trained our network to recognize 22,000 object categories from ImageNet and achieve a leap of 70% relative improvement over the previous state-of-the-art."
+            },
+            "slug": "Building-high-level-features-using-large-scale-Le-Ranzato",
+            "title": {
+                "fragments": [],
+                "text": "Building high-level features using large scale unsupervised learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "Contrary to what appears to be a widely-held intuition, the experimental results reveal that it is possible to train a face detector without having to label images as containing a face or not."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE International Conference on Acoustics, Speech and Signal Processing"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1895356"
+                        ],
+                        "name": "D. Ciresan",
+                        "slug": "D.-Ciresan",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Ciresan",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ciresan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2514691"
+                        ],
+                        "name": "U. Meier",
+                        "slug": "U.-Meier",
+                        "structuredName": {
+                            "firstName": "Ueli",
+                            "lastName": "Meier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "U. Meier"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 205
+                            }
+                        ],
+                        "text": "At the same time, recent results have obtained excellent performance starting from carefullyscaled random initializations, though interestingly, pretrained initializations still exhibit faster convergence [21, 13, 22, 3, 4, 1, 23] (see Supplementary Appendix D for discussion)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 130,
+                                "start": 121
+                            }
+                        ],
+                        "text": "Deep learning methods have realized impressive performance in a range of applications, from visual object classification [1, 2, 3] to speech recognition [4] and natural language processing [5, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2161592,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "398c296d0cc7f9d180f84969f8937e6d3a413796",
+            "isKey": false,
+            "numCitedBy": 3369,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Traditional methods of computer vision and machine learning cannot match human performance on tasks such as the recognition of handwritten digits or traffic signs. Our biologically plausible, wide and deep artificial neural network architectures can. Small (often minimal) receptive fields of convolutional winner-take-all neurons yield large network depth, resulting in roughly as many sparsely connected neural layers as found in mammals between retina and visual cortex. Only winner neurons are trained. Several deep neural columns become experts on inputs preprocessed in different ways; their predictions are averaged. Graphics cards allow for fast training. On the very competitive MNIST handwriting benchmark, our method is the first to achieve near-human performance. On a traffic sign recognition benchmark it outperforms humans by a factor of two. We also improve the state-of-the-art on a plethora of common image classification benchmarks."
+            },
+            "slug": "Multi-column-deep-neural-networks-for-image-Ciresan-Meier",
+            "title": {
+                "fragments": [],
+                "text": "Multi-column deep neural networks for image classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "On the very competitive MNIST handwriting benchmark, this method is the first to achieve near-human performance and improves the state-of-the-art on a plethora of common image classification benchmarks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2012 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2939803"
+                        ],
+                        "name": "Ronan Collobert",
+                        "slug": "Ronan-Collobert",
+                        "structuredName": {
+                            "firstName": "Ronan",
+                            "lastName": "Collobert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronan Collobert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145183709"
+                        ],
+                        "name": "J. Weston",
+                        "slug": "J.-Weston",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Weston",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weston"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 195,
+                                "start": 189
+                            }
+                        ],
+                        "text": "Deep learning methods have realized impressive performance in a range of applications, from visual object classification [1, 2, 3] to speech recognition [4] and natural language processing [5, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2617020,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "57458bc1cffe5caa45a885af986d70f723f406b4",
+            "isKey": false,
+            "numCitedBy": 5023,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a single convolutional neural network architecture that, given a sentence, outputs a host of language processing predictions: part-of-speech tags, chunks, named entity tags, semantic roles, semantically similar words and the likelihood that the sentence makes sense (grammatically and semantically) using a language model. The entire network is trained jointly on all these tasks using weight-sharing, an instance of multitask learning. All the tasks use labeled data except the language model which is learnt from unlabeled text and represents a novel form of semi-supervised learning for the shared tasks. We show how both multitask learning and semi-supervised learning improve the generalization of the shared tasks, resulting in state-of-the-art-performance."
+            },
+            "slug": "A-unified-architecture-for-natural-language-deep-Collobert-Weston",
+            "title": {
+                "fragments": [],
+                "text": "A unified architecture for natural language processing: deep neural networks with multitask learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 93,
+                "text": "This work describes a single convolutional neural network architecture that, given a sentence, outputs a host of language processing predictions: part-of-speech tags, chunks, named entity tags, semantic roles, semantically similar words and the likelihood that the sentence makes sense using a language model."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML '08"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144661918"
+                        ],
+                        "name": "John Bauer",
+                        "slug": "John-Bauer",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Bauer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "John Bauer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 195,
+                                "start": 189
+                            }
+                        ],
+                        "text": "Deep learning methods have realized impressive performance in a range of applications, from visual object classification [1, 2, 3] to speech recognition [4] and natural language processing [5, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14687186,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "acc4e56c44771ebf69302a06af51498aeb0a6ac8",
+            "isKey": false,
+            "numCitedBy": 900,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Natural language parsing has typically been done with small sets of discrete categories such as NP and VP, but this representation does not capture the full syntactic nor semantic richness of linguistic phrases, and attempts to improve on this by lexicalizing phrases or splitting categories only partly address the problem at the cost of huge feature spaces and sparseness. Instead, we introduce a Compositional Vector Grammar (CVG), which combines PCFGs with a syntactically untied recursive neural network that learns syntactico-semantic, compositional vector representations. The CVG improves the PCFG of the Stanford Parser by 3.8% to obtain an F1 score of 90.4%. It is fast to train and implemented approximately as an efficient reranker it is about 20% faster than the current Stanford factored parser. The CVG learns a soft notion of head words and improves performance on the types of ambiguities that require semantic information such as PP attachments."
+            },
+            "slug": "Parsing-with-Compositional-Vector-Grammars-Socher-Bauer",
+            "title": {
+                "fragments": [],
+                "text": "Parsing with Compositional Vector Grammars"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A Compositional Vector Grammar (CVG), which combines PCFGs with a syntactically untied recursive neural network that learns syntactico-semantic, compositional vector representations and improves performance on the types of ambiguities that require semantic information such as PP attachments."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1730609"
+                        ],
+                        "name": "O. Chapelle",
+                        "slug": "O.-Chapelle",
+                        "structuredName": {
+                            "firstName": "Olivier",
+                            "lastName": "Chapelle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "O. Chapelle"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 205
+                            }
+                        ],
+                        "text": "At the same time, recent results have obtained excellent performance starting from carefullyscaled random initializations, though interestingly, pretrained initializations still exhibit faster convergence [21, 13, 22, 3, 4, 1, 23] (see Supplementary Appendix D for discussion)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 16595612,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b0ced8ba22674b3b948c22deb0f43df93c82f87f",
+            "isKey": false,
+            "numCitedBy": 39,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We investigate the use of Hessian Free optimization for learning deep autoencoders. One of the critical components in that algorithm is the choice of the preconditioner. We argue in this paper that the Jacobi preconditioner leads to faster optimization and we show how it can be accurately and efficiently estimated using a randomized algorithm."
+            },
+            "slug": "Improved-Preconditioner-for-Hessian-Free-Chapelle",
+            "title": {
+                "fragments": [],
+                "text": "Improved Preconditioner for Hessian Free Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is argued in this paper that the Jacobi preconditioner leads to faster optimization and it is shown how it can be accurately and efficiently estimated using a randomized algorithm."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2066667188"
+                        ],
+                        "name": "Sepp Hochreiter",
+                        "slug": "Sepp-Hochreiter",
+                        "structuredName": {
+                            "firstName": "Sepp",
+                            "lastName": "Hochreiter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sepp Hochreiter"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 117,
+                                "start": 100
+                            }
+                        ],
+                        "text": "These successes have been achieved despite the noted difficulty of training such deep architectures [7, 8, 9, 10, 11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 60091947,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3f3d13e95c25a8f6a753e38dfce88885097cbd43",
+            "isKey": false,
+            "numCitedBy": 603,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Untersuchungen-zu-dynamischen-neuronalen-Netzen-Hochreiter",
+            "title": {
+                "fragments": [],
+                "text": "Untersuchungen zu dynamischen neuronalen Netzen"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34782608"
+                        ],
+                        "name": "G. Orr",
+                        "slug": "G.-Orr",
+                        "structuredName": {
+                            "firstName": "Genevieve",
+                            "lastName": "Orr",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Orr"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145034054"
+                        ],
+                        "name": "K. M\u00fcller",
+                        "slug": "K.-M\u00fcller",
+                        "structuredName": {
+                            "firstName": "Klaus-Robert",
+                            "lastName": "M\u00fcller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. M\u00fcller"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 117,
+                                "start": 100
+                            }
+                        ],
+                        "text": "These successes have been achieved despite the noted difficulty of training such deep architectures [7, 8, 9, 10, 11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 20158889,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b87274e6d9aa4e6ba5148898aa92941617d2b6ed",
+            "isKey": false,
+            "numCitedBy": 2630,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Efficient-BackProp-LeCun-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Efficient BackProp"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks: Tricks of the Trade"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Important gains from supervised fine-tuning of deep architectures on large labeled sets"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS Workshop on Deep Learning and Unsupervised Feature Learning"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Bengio . Big Neural Networks Waste Capacity"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Conference on Learning Representations"
+            },
+            "year": 2013
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 21,
+            "methodology": 5
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 27,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Exact-solutions-to-the-nonlinear-dynamics-of-in-Saxe-McClelland/99c970348b8f70ce23d6641e201904ea49266b6e?sort=total-citations"
+}

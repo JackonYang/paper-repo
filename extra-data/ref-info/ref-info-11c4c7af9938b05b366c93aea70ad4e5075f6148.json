@@ -1,0 +1,786 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1789486"
+                        ],
+                        "name": "G. Finlayson",
+                        "slug": "G.-Finlayson",
+                        "structuredName": {
+                            "firstName": "Graham",
+                            "lastName": "Finlayson",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Finlayson"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 59689291,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a76af26fcacbf6bc852a7e5f2724debc1040c67f",
+            "isKey": false,
+            "numCitedBy": 28,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Since colour characterizes local surface properties and is largely viewpoint insensitive it is a useful cue for object recognition. Indeed, Swain and Ballard have developed a simple scheme, called colour-indexing, which identi es objects by matching colourspace histograms. Their approach is remarkably robust in that variations such as a shift in viewing position, a change in the scene background or even object deformation degrade recognition only slightly. Colour-indexing fails, however, if the intensity or spectral characteristics of the incident illuminant varies. This thesis examines two di erent strategies for rectifying this failure. Firstly we consider applying a colour constancy transform to each image prior to colour-indexing (colours are mapped to their appearance under canonical lighting conditions). To solve for the colour constancy transform assumptions must be made about the world. These assumptions dictate the types of objects which can be recognized by colour-indexing + colour constancy preprocessing. We review several colour constancy algorithms and in almost all cases conclude that their assumptions are too limiting. The exception, a discrete implementation of Forsyth's CRULE, successfully solves the colour constancy problem for sets of simple objects viewed under constant illumination. To circumvent the need for colour constancy preprocessing and to recognize more complex object sets we consider indexing on illuminant invariants. Three illuminant invariants|volumetric, opponent and ratio|are examined. Each characterizes local surface properties, is largely viewpoint insensitive and is independent of both the intensity and spectral characteristics of the incident illuminant. We develop an algorithm, called Colour constant colour-indexing, which identi es objects by matching colour ratio-space histograms. In general our algorithm performs comparably iii with colour-indexing under xed illumination, but substantially better than colourindexing under varying illumination. iv Acknowledgements My sincerest thanks go to my supervisor Dr. Brian V. Funt. He has been exceptionally supportive throughout the duration of this thesis. In particular I greatly appreciate Dr. Funt's approach to research; the free exchange of ideas forms the foundation of a stimulating working environment. Regarding research, I am also indebted to Dr. Mark Drew. His research skills and tireless enthusiasm are an example to all. Special thanks go to my fellow graduate students in the Computing Science department. They contribute greatly to the general research environment and more importantly supply support and friendship. In particular I'd like to mention computing science stalwarts|Allan Bennet-Brown, Gilles Dionne and Mark Mezofenyi. In a category by himself is Sanjeev Mahajan|as well as being a close friend, he provided valuable insights concerning the probability results of this thesis. My nal thanks goes to the departmental advisor|Elma Krbavac. I met Elma whilst studying in Glasgow in May 1989. She was my introduction to the computing science department at Simon Fraser University. This meeting led to an adventure which is still continuing. v"
+            },
+            "slug": "Colour-object-recognition-Finlayson",
+            "title": {
+                "fragments": [],
+                "text": "Colour object recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "An algorithm, called Colour constant colour-indexing, is developed, which identi es objects by matching colour ratio-space histograms, and in general this algorithm performs comparably with colour- indexing under xed illumination, but substantially better than colourindexing under varying illumination."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1779110"
+                        ],
+                        "name": "C. Novak",
+                        "slug": "C.-Novak",
+                        "structuredName": {
+                            "firstName": "Carol",
+                            "lastName": "Novak",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Novak"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "12290634"
+                        ],
+                        "name": "S. Shafer",
+                        "slug": "S.-Shafer",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Shafer",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Shafer"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 37878868,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1a2921486f950349ff98639a43970b20eee80f81",
+            "isKey": false,
+            "numCitedBy": 21,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "One of the key problems in machine vision is color constancy: the ability to match object colors in images taken under different colors of illumination. This is a difficult problem because the apparent color will depend upon the spectral reflectance function of the object and the spectral distribution function of the incident light, both of which are generally unknown. Methods to solve this problem use a small number of basis functions to represent the two functions, and some sort of reference knowledge to allow the calculation of the coefficients. Most methods have the weakness that the reference property may not actually hold for all images, or will have too little information to recover enough of the functions to make an accurate determination of what the color should be. We have developed a method for color constancy that uses a color chart of known spectral characteristics to give stronger reference criteria, and with a large number of colors to give enough information to calculate the illuminant to the desired degree of accuracy. We call this approach \"supervised color constancy\" since the process is supervised by a picture of a known color chart. We present here two methods for computing supervised color constancy, one using least squares estimation, the other using a neural network. We show experimental results for the supervised calculation of the spectral power distribution of an unknown illuminant. Once this has been calculated, the color of any object with known reflectance can be reliably predicted. We arc developing an extension to allow the prediction of color appearance for an object whose spectral reflectance function is not known. We also propose a method of \"incremental color constancy\" which determines object color by repeated application of supervised color constancy under changing illumination."
+            },
+            "slug": "Supervised-color-constancy-using-a-color-chart-Novak-Shafer",
+            "title": {
+                "fragments": [],
+                "text": "Supervised color constancy using a color chart"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A method for color constancy that uses a color chart of known spectral characteristics to give stronger reference criteria, and with a large number of colors to give enough information to calculate the illuminant to the desired degree of accuracy is developed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3304188"
+                        ],
+                        "name": "B. Funt",
+                        "slug": "B.-Funt",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Funt",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Funt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1680726"
+                        ],
+                        "name": "M. S. Drew",
+                        "slug": "M.-S.-Drew",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Drew",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. S. Drew"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "this problem is to preprocess the images with some sort of color constancy algorithm [6], [lll, [8], [ 7 ] in order to remove the effects of varying illumination conditions and, in effect, normalize the images to a standard illuminant."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "[ 7 ] W. Forstner and E. Gulch, \u201cA fast operator for detection and precise locations of distinct points, comers, and centers of circular features,\u201d Proc."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206587418,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "737beaff15f85bd32a34b068a9e826e2ac825d84",
+            "isKey": false,
+            "numCitedBy": 92,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The authors combine an alternate version of B.K.P. Horn's computation (1974) for recovering lightness from Land's retinex scheme, as modified by A. Blake (1985), with a finite-dimensional linear model for color images. The authors recover surface spectral reflectance from images of near-Mondrian scenes by using edge detection and derivatives to screen out slowly changing illumination from color scene images. They first develop a model for lightness recovery, based on Horn's, because a similar treatment is needed for the FDM case (a particular finite-dimensional linear model). Based on the equations for the one-dimensional case, they develop a model of surface reflectance recovery for near-Mondrian images by extending the basic approach to the vector model of illumination, reflectance, and receptors.<<ETX>>"
+            },
+            "slug": "Color-constancy-computation-in-near-Mondrian-scenes-Funt-Drew",
+            "title": {
+                "fragments": [],
+                "text": "Color constancy computation in near-Mondrian scenes using a finite dimensional linear model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A model of surface reflectance recovery for near-Mondrian images is developed by extending the basic approach to the vector model of illumination, reflectance, and receptors by using edge detection and derivatives to screen out slowly changing illumination from color scene images."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings CVPR '88: The Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1988
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143814637"
+                        ],
+                        "name": "Berthold K. P. Horn",
+                        "slug": "Berthold-K.-P.-Horn",
+                        "structuredName": {
+                            "firstName": "Berthold",
+                            "lastName": "Horn",
+                            "middleNames": [
+                                "K.",
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Berthold K. P. Horn"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8154601,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "23384ac18d7edea7a6c6145fd605912e506dd671",
+            "isKey": false,
+            "numCitedBy": 422,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Determining-lightness-from-an-image-Horn",
+            "title": {
+                "fragments": [],
+                "text": "Determining lightness from an image"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Graph. Image Process."
+            },
+            "year": 1974
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "4688361"
+                        ],
+                        "name": "E. Land",
+                        "slug": "E.-Land",
+                        "structuredName": {
+                            "firstName": "Edwin",
+                            "lastName": "Land",
+                            "middleNames": [
+                                "Herbert"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Land"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144495967"
+                        ],
+                        "name": "J. McCann",
+                        "slug": "J.-McCann",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "McCann",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. McCann"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14430259,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "a2f9c78b094ccd50cbb175193d2993735d39c6a6",
+            "isKey": false,
+            "numCitedBy": 3174,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Sensations of color show a strong correlation with reflectance, even though the amount of visible light reaching the eye depends on the product of reflectance and illumination. The visual system must achieve this remarkable result by a scheme that does not measure flux. Such a scheme is described as the basis of retinex theory. This theory assumes that there are three independent cone systems, each starting with a set of receptors peaking, respectively, in the long-, middle-, and short-wavelength regions of the visible spectrum. Each system forms a separate image of the world in terms of lightness that shows a strong correlation with reflectance within its particular band of wavelengths. These images are not mixed, but rather are compared to generate color sensations. The problem then becomes how the lightness of areas in these separate images can be independent of flux. This article describes the mathematics of a lightness scheme that generates lightness numbers, the biologic correlate of reflectance, independent of the flux from objects"
+            },
+            "slug": "Lightness-and-retinex-theory.-Land-McCann",
+            "title": {
+                "fragments": [],
+                "text": "Lightness and retinex theory."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The mathematics of a lightness scheme that generates lightness numbers, the biologic correlate of reflectance, independent of the flux from objects is described."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Journal of the Optical Society of America"
+            },
+            "year": 1971
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1789486"
+                        ],
+                        "name": "G. Finlayson",
+                        "slug": "G.-Finlayson",
+                        "structuredName": {
+                            "firstName": "Graham",
+                            "lastName": "Finlayson",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Finlayson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1680726"
+                        ],
+                        "name": "M. S. Drew",
+                        "slug": "M.-S.-Drew",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Drew",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. S. Drew"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3304188"
+                        ],
+                        "name": "B. Funt",
+                        "slug": "B.-Funt",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Funt",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Funt"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "13, pp. 1,007-1,017. Oct. 1991. [ 5 ] M. A. Fischler and R.C."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "5400K Finlayson et al., [ 5 ] recently demonstrated that sharper (or more narrowband) sensor curves can be created by taking linear combinations of the human cone sensitivities."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9742150,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "8f376ea67936dda2d084fc740d61d1cade4be091",
+            "isKey": false,
+            "numCitedBy": 375,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We develop sensor transformations, collectively called spectral sharpening, that convert a given set of sensor sensitivity functions into a new set that will improve the performance of any color-constancy algorithm that is based on an independent adjustment of the sensor response channels. Independent adjustment of multiplicative coefficients corresponds to the application of a diagonal-matrix transform (DMT) to the sensor response vector and is a common feature of many theories of color constancy. Land's retinex and von Kries adaptation in particular. We set forth three techniques for spectral sharpening. Sensor-based sharpening focuses on the production of new sensors as linear combinations of the given ones such that each new sensor has its spectral sensitivity concentrated as much as possible within a narrow band of wavelengths. Data-based sharpening, on the other hand, extracts new sensors by optimizing the ability of a DMT to account for a given illumination change by examining the sensor response vectors obtained from a set of surfaces under two different illuminants. Finally in perfect sharpening we demonstrate that, if illumination and surface reflectance are described by two- and three-parameter finite-dimensional models, there exists a unique optimal sharpening transform. All three sharpening methods yield similar results. When sharpened cone sensitivities are used as sensors, a DMT models illumination change extremely well. We present simulation results suggesting that in general nondiagonal transforms can do only marginally better. Our sharpening results correlate well with the psychophysical evidence of spectral sharpening in the human visual system."
+            },
+            "slug": "Spectral-sharpening:-sensor-transformations-for-Finlayson-Drew",
+            "title": {
+                "fragments": [],
+                "text": "Spectral sharpening: sensor transformations for improved color constancy."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 83,
+                "text": "This work develops sensor transformations that convert a given set of sensor sensitivity functions into a new set that will improve the performance of any color-constancy algorithm that is based on an independent adjustment of the sensor response channels."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Journal of the Optical Society of America. A, Optics, image science, and vision"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2668183"
+                        ],
+                        "name": "G. Buchsbaum",
+                        "slug": "G.-Buchsbaum",
+                        "structuredName": {
+                            "firstName": "Gershon",
+                            "lastName": "Buchsbaum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Buchsbaum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3485613"
+                        ],
+                        "name": "A. Gottschalk",
+                        "slug": "A.-Gottschalk",
+                        "structuredName": {
+                            "firstName": "Allan",
+                            "lastName": "Gottschalk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Gottschalk"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Before histogramming, Swain converts from camera RGB triples to an opponent-theory-based [ 2 ] color space with axes blackwhite, red-green and blue-yellow."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 23369551,
+            "fieldsOfStudy": [
+                "Biology"
+            ],
+            "id": "a641c50f2f3c5e5dd7814af62e0b8b0f15259d09",
+            "isKey": false,
+            "numCitedBy": 507,
+            "numCiting": 86,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a systematic analysis of the role of opponent type processing in colour vision and the relation between opponent type colour transformations and the initial three colour mechanisms. It is shown that efficient information transmission is achieved by a transformation of the initial three colour mechanisms into an achromatic and two opponent chromatic channels. The derivation of the transformation is dependent solely on criteria from information theory. Thus it provides a logical rationale reconciling opponent type processing as an optimal necessary step after the initial three colour mechanisms, unifying respectively the Hering and Young-Helmholtz approaches to colour vision. The effects of chromatic adaptation on the spectral response of the achromatic and two chromatic channels are discussed from the point of view of information theory. It is argued that adaptation serves as a dynamic readjustment of these responses, necessary to meet criteria of efficient colour information transmission. The results are confronted with empirical observations to test the principles of the theory and the relation to other theories is discussed. Within the same framework the issue of trichromacy is discussed. It is argued that a broad class of typical colour spectra can effectively be represented by three significant degrees of freedom that make up a trichromatic system."
+            },
+            "slug": "Trichromacy,-opponent-colours-coding-and-optimum-in-Buchsbaum-Gottschalk",
+            "title": {
+                "fragments": [],
+                "text": "Trichromacy, opponent colours coding and optimum colour information transmission in the retina"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 52,
+                "text": "It is shown that efficient information transmission is achieved by a transformation of the initial three colour mechanisms into an achromatic and two opponent chromatic channels, providing a logical rationale reconciling opponent type processing as an optimal necessary step after the initialThree colour mechanisms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Royal Society of London. Series B. Biological Sciences"
+            },
+            "year": 1983
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2057671557"
+                        ],
+                        "name": "G. West",
+                        "slug": "G.-West",
+                        "structuredName": {
+                            "firstName": "Gerhard",
+                            "lastName": "West",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. West"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2972851"
+                        ],
+                        "name": "M. Brill",
+                        "slug": "M.-Brill",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Brill",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Brill"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 32020582,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "31a713829110da454d77446add46adbd3d734d9d",
+            "isKey": false,
+            "numCitedBy": 161,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Necessary and sufficient spectral conditions are presented for Von Kries chromatic adaptation to give color constancy. Von-Kries-invariant reflectance spectra are computed for illuminant spectral power distributions that are arbitrary linear combinations of the first three daylight phases. Experiments are suggested to test models of color constancy using computed spectra (either exact or approximate) within the illuminant-invariant framework."
+            },
+            "slug": "Necessary-and-sufficient-conditions-for-Von-Kries-West-Brill",
+            "title": {
+                "fragments": [],
+                "text": "Necessary and sufficient conditions for Von Kries chromatic adaptation to give color constancy"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "Von-Kries-invariant reflectance spectra are computed for illuminant spectral power distributions that are arbitrary linear combinations of the first three daylight phases to give color constancy."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Journal of mathematical biology"
+            },
+            "year": 1982
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1405795808"
+                        ],
+                        "name": "Gunther Wyszecki",
+                        "slug": "Gunther-Wyszecki",
+                        "structuredName": {
+                            "firstName": "Gunther",
+                            "lastName": "Wyszecki",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Gunther Wyszecki"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2070336752"
+                        ],
+                        "name": "W. Stiles",
+                        "slug": "W.-Stiles",
+                        "structuredName": {
+                            "firstName": "Walter",
+                            "lastName": "Stiles",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Stiles"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 59689850,
+            "fieldsOfStudy": [
+                "Art"
+            ],
+            "id": "0e341b2a181f71dea088dbba800e70262f91a79e",
+            "isKey": false,
+            "numCitedBy": 4238,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Physical Data. The Eye. Colorimetry. Photometry. Visual Equivalence and Visual Matching. Uniform Color Scales. Visual Thresholds. Theories and Models of Color Vision. Appendix. References. Author and Subject Indexes."
+            },
+            "slug": "Color-Science:-Concepts-and-Methods,-Quantitative-Wyszecki-Stiles",
+            "title": {
+                "fragments": [],
+                "text": "Color Science: Concepts and Methods, Quantitative Data and Formulae, 2nd Edition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 53,
+                "text": "Theories and Models of Color Vision and Visual Equivalence and Visual Matching are examined, as well as physical data, which confirm the importance of theseories and models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1967
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1797624"
+                        ],
+                        "name": "R. Berns",
+                        "slug": "R.-Berns",
+                        "structuredName": {
+                            "firstName": "Roy",
+                            "lastName": "Berns",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Berns"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153561961"
+                        ],
+                        "name": "K. H. Petersen",
+                        "slug": "K.-H.-Petersen",
+                        "structuredName": {
+                            "firstName": "Kelvin",
+                            "lastName": "Petersen",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. H. Petersen"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 120832770,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "b8295754172dc43b3220a2848294a8e808b9950d",
+            "isKey": false,
+            "numCitedBy": 71,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Spectrophotometers, as electro-mechanical-optical devices, perform at a finite level of accuracy. This accuracy is limited by such factors as monochromator design, detector linearity, and cost. Generally, both the diagnosis and correction of spectrophotometric errors require a number of calibrated standard reference materials and considerable effort and commitment on the part of the user. A technique using multiple linear regression has been developed, based on the measurement of several suitably chosen standard reference materials, to both diagnose and correct systematic spectrophotometric errors, including photometric zero errors photometric linear and nonlinear scale errors, wavelength linear and nonlinear scale errors, and bandwidth errors. The use of a single chromatic ceramic tile to correct systematic errors improved the colorimetric accuracy of a set of chromatic and neutral tiles by a factor of two for a typical industrial-oriented spectrophotometer. Greater improvement can be achieved by increasing the number of tiles and performing a separate regression at each measured wavelength., These techniques have been extremely useful in improving inter-instrument agreement for instruments with similar geometry."
+            },
+            "slug": "Empirical-modeling-of-systematic-spectrophotometric-Berns-Petersen",
+            "title": {
+                "fragments": [],
+                "text": "Empirical modeling of systematic spectrophotometric errors"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1988
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 2,
+            "methodology": 2
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 10,
+        "totalPages": 1
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Color-Constant-Color-Indexing-Funt-Finlayson/11c4c7af9938b05b366c93aea70ad4e5075f6148?sort=total-citations"
+}
