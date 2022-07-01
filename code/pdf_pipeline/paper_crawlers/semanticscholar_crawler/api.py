@@ -25,7 +25,7 @@ def send_request(url):
 
 @jcache
 def send_refs(pid, offset, referer):
-    print('xxxxxx')
+    print('sending request...')
     response = requests.get(
         url="https://www.semanticscholar.org/api/1/paper/%s/citations" % pid,
         params={
@@ -46,23 +46,40 @@ def send_refs(pid, offset, referer):
     return response.json()
 
 
+def safe_send_refs(pid, page_url, outfile):
+    try:
+        return send_refs(pid, page_url, outfile)
+    except Exception:
+        return None
+
+
+def default_empty_rsp(page_url, meta_info=None):
+    meta_info = meta_info or {}
+    return {
+        'links': [],
+        'meta_info': meta_info,
+        'pape_url': page_url,
+    }
+
+
 def download_ref_links(pid, page_url, outfile):
 
     links = []
 
-    meta_info = send_refs(pid, 0, page_url)
-    if 'citations' not in meta_info:
+    meta_info = safe_send_refs(pid, 0, page_url)
+    if not meta_info or 'citations' not in meta_info:
         print(meta_info)
-        return {
-            'links': [],
-            'meta_info': {},
-            'pape_url': page_url,
-        }
+        return default_empty_rsp(page_url, meta_info)
+
     links.extend(meta_info.pop('citations'))
     total_links = meta_info['totalCitations']
 
     for i in range(10, total_links, 10):
-        ret = send_refs(pid, i, page_url)
+        ret = safe_send_refs(pid, i, page_url)
+
+        if ret is None:
+            return default_empty_rsp(page_url)
+
         links.extend(ret['citations'])
 
     data = {
