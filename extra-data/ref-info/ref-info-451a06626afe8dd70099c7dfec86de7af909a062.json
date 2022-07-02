@@ -1,0 +1,3287 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2433269"
+                        ],
+                        "name": "Derek Hoiem",
+                        "slug": "Derek-Hoiem",
+                        "structuredName": {
+                            "firstName": "Derek",
+                            "lastName": "Hoiem",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Derek Hoiem"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145670946"
+                        ],
+                        "name": "M. Hebert",
+                        "slug": "M.-Hebert",
+                        "structuredName": {
+                            "firstName": "Martial",
+                            "lastName": "Hebert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hebert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 59,
+                                "start": 49
+                            }
+                        ],
+                        "text": "5, we also qualitatively compare several methods [9, 14, 1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 13
+                            }
+                        ],
+                        "text": "\u2019s algorithm [9] and color, texture, position, and perspective cues to estimate confidences for our surface labels."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 246,
+                                "start": 235
+                            }
+                        ],
+                        "text": "Once we decide how to parameterize the spatial layout, how do we estimate the parameters using image cues? Region-based local color, texture, and edge cues, often combined with segmentation or CRF inference have been used with success [9, 14, 22] for labeling pixels according to orientation or depth."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 13
+                            }
+                        ],
+                        "text": "\u2019s algorithm [9] (floor=green; left wall=red; middle wall=yellow; right wall=cyan; ceiling=blue;)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[9, 10] cannot estimate the depth of walls when their boundary is fully occluded."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 47,
+                                "start": 44
+                            }
+                        ],
+                        "text": "\u2019s [14] ordering constraints, intialised by [9]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 28
+                            }
+                        ],
+                        "text": "\u2019s surface layout algorithm [9], which was also trained on our dataset."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 29
+                            }
+                        ],
+                        "text": "\u2019s region labeling algorithm [9] and improves significantly further after re-estimation using cues from the surface label estimates (final)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 508,
+                                "start": 505
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 37206,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5276705d71e3dac961ab5d06b86a7b806cc9af64",
+            "isKey": false,
+            "numCitedBy": 718,
+            "numCiting": 67,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Humans have an amazing ability to instantly grasp the overall 3D structure of a scene\u2014ground orientation, relative positions of major landmarks, etc.\u2014even from a single image. This ability is completely missing in most popular recognition algorithms, which pretend that the world is flat and/or view it through a patch-sized peephole. Yet it seems very likely that having a grasp of this \u201csurface layout\u201d of a scene should be of great assistance for many tasks, including recognition, navigation, and novel view synthesis.In this paper, we take the first step towards constructing the surface layout, a labeling of the image intogeometric classes. Our main insight is to learn appearance-based models of these geometric classes, which coarsely describe the 3D scene orientation of each image region. Our multiple segmentation framework provides robust spatial support, allowing a wide variety of cues (e.g., color, texture, and perspective) to contribute to the confidence in each geometric label. In experiments on a large set of outdoor images, we evaluate the impact of the individual cues and design choices in our algorithm. We further demonstrate the applicability of our method to indoor images, describe potential applications, and discuss extensions to a more complete notion of surface layout."
+            },
+            "slug": "Recovering-Surface-Layout-from-an-Image-Hoiem-Efros",
+            "title": {
+                "fragments": [],
+                "text": "Recovering Surface Layout from an Image"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper takes the first step towards constructing the surface layout, a labeling of the image intogeometric classes, to learn appearance-based models of these geometric classes, which coarsely describe the 3D scene orientation of each image region."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144649144"
+                        ],
+                        "name": "O. Barinova",
+                        "slug": "O.-Barinova",
+                        "structuredName": {
+                            "firstName": "Olga",
+                            "lastName": "Barinova",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "O. Barinova"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2943115"
+                        ],
+                        "name": "V. Konushin",
+                        "slug": "V.-Konushin",
+                        "structuredName": {
+                            "firstName": "Vadim",
+                            "lastName": "Konushin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Konushin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145394475"
+                        ],
+                        "name": "A. Yakubenko",
+                        "slug": "A.-Yakubenko",
+                        "structuredName": {
+                            "firstName": "Anton",
+                            "lastName": "Yakubenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Yakubenko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2103412"
+                        ],
+                        "name": "KeeChang Lee",
+                        "slug": "KeeChang-Lee",
+                        "structuredName": {
+                            "firstName": "KeeChang",
+                            "lastName": "Lee",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "KeeChang Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716138"
+                        ],
+                        "name": "Hwasup Lim",
+                        "slug": "Hwasup-Lim",
+                        "structuredName": {
+                            "firstName": "Hwasup",
+                            "lastName": "Lim",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hwasup Lim"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1934937"
+                        ],
+                        "name": "A. Konushin",
+                        "slug": "A.-Konushin",
+                        "structuredName": {
+                            "firstName": "Anton",
+                            "lastName": "Konushin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Konushin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 59,
+                                "start": 49
+                            }
+                        ],
+                        "text": "5, we also qualitatively compare several methods [9, 14, 1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[1] is not valid for cluttered scenes."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 375,
+                                "start": 369
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 13
+                            }
+                        ],
+                        "text": "\u2019s algorithm [1] recovers the ground vertical boundary as a continuous polyline (thick red) and indicates wall faces with a white spidery mesh and thin red lines."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14620113,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "ea9b26aa83e344598d27d18b3e955532c9df8dff",
+            "isKey": true,
+            "numCitedBy": 88,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of estimating 3-d structure from a single still image of an outdoor urban scene. Our goal is to efficiently create 3-d models which are visually pleasant. We chose an appropriate 3-d model structure and formulate the task of 3-d reconstruction as model fitting problem. Our 3-d models are composed of a number of vertical walls and a ground plane, where ground-vertical boundary is a continuous polyline. We achieve computational efficiency by special preprocessing together with stepwise search of 3-d model parameters dividing the problem into two smaller sub-problems on chain graphs. The use of Conditional Random Field models for both problems allows to various cues. We infer orientation of vertical walls of 3-d model vanishing points."
+            },
+            "slug": "Fast-Automatic-Single-View-3-d-Reconstruction-of-Barinova-Konushin",
+            "title": {
+                "fragments": [],
+                "text": "Fast Automatic Single-View 3-d Reconstruction of Urban Scenes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "The goal is to efficiently create 3-d models which are visually pleasant and achieve computational efficiency by special preprocessing together with stepwise search of3-d model parameters dividing the problem into two smaller sub-problems on chain graphs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2433269"
+                        ],
+                        "name": "Derek Hoiem",
+                        "slug": "Derek-Hoiem",
+                        "structuredName": {
+                            "firstName": "Derek",
+                            "lastName": "Hoiem",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Derek Hoiem"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145670946"
+                        ],
+                        "name": "M. Hebert",
+                        "slug": "M.-Hebert",
+                        "structuredName": {
+                            "firstName": "Martial",
+                            "lastName": "Hebert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hebert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 219,
+                                "start": 216
+                            }
+                        ],
+                        "text": "5 feet above the floor (at about chest height), giving a complete projection matrix; alternative possible sources of information include the tendency of beds, tables and other objects to be at fairly regular heights [8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 2
+                            }
+                        ],
+                        "text": ", [8, 10, 2, 16, 24]) on combining object, depth, viewpoint, occlusion boundary, scene category, and/or surface orientation estimates."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6152006,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4081e007d7eced95cc618164e976a80d44ff5f4e",
+            "isKey": false,
+            "numCitedBy": 656,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Image understanding requires not only individually estimating elements of the visual world but also capturing the interplay among them. In this paper, we provide a framework for placing local object detection in the context of the overall 3D scene by modeling the interdependence of objects, surface orientations, and camera viewpoint. Most object detection methods consider all scales and locations in the image as equally likely. We show that with probabilistic estimates of 3D geometry, both in terms of surfaces and world coordinates, we can put objects into perspective and model the scale and location variance in the image. Our approach reflects the cyclical nature of the problem by allowing probabilistic object hypotheses to refine geometry and vice-versa. Our framework allows painless substitution of almost any object detector and is easily extended to include other aspects of image understanding. Our results confirm the benefits of our integrated approach."
+            },
+            "slug": "Putting-Objects-in-Perspective-Hoiem-Efros",
+            "title": {
+                "fragments": [],
+                "text": "Putting Objects in Perspective"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "This paper provides a framework for placing local object detection in the context of the overall 3D scene by modeling the interdependence of objects, surface orientations, and camera viewpoint by allowing probabilistic object hypotheses to refine geometry and vice-versa."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681995"
+                        ],
+                        "name": "Ashutosh Saxena",
+                        "slug": "Ashutosh-Saxena",
+                        "structuredName": {
+                            "firstName": "Ashutosh",
+                            "lastName": "Saxena",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ashutosh Saxena"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145718481"
+                        ],
+                        "name": "Min Sun",
+                        "slug": "Min-Sun",
+                        "structuredName": {
+                            "firstName": "Min",
+                            "lastName": "Sun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Min Sun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 246,
+                                "start": 235
+                            }
+                        ],
+                        "text": "Once we decide how to parameterize the spatial layout, how do we estimate the parameters using image cues? Region-based local color, texture, and edge cues, often combined with segmentation or CRF inference have been used with success [9, 14, 22] for labeling pixels according to orientation or depth."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 588,
+                                "start": 584
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1385875,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4a965ee6dcfc1ab12170af762e1d08e11b60ddb8",
+            "isKey": false,
+            "numCitedBy": 511,
+            "numCiting": 74,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of estimating detailed 3D structure from a single still image of an unstructured environment. Our goal is to create 3D models which are both quantitatively accurate as well as visually pleasing. For each small homogeneous patch in the image, we use a Markov random field (MRF) to infer a set of \"plane parameters\" that capture both the 3D location and 3D orientation of the patch. The MRF, trained via supervised learning, models both image depth cues as well as the relationships between different parts of the image. Inference in our model is tractable, and requires only solving a convex optimization problem. Other than assuming that the environment is made up of a number of small planes, our model makes no explicit assumptions about the structure of the scene; this enables the algorithm to capture much more detailed 3D structure than does prior art (such as Saxena et ah, 2005, Delage et ah, 2005, and Hoiem et el, 2005), and also give a much richer experience in the 3D flythroughs created using image-based rendering, even for scenes with significant non-vertical structure. Using this approach, we have created qualitatively correct 3D models for 64.9% of 588 images downloaded from the Internet, as compared to Hoiem et al.'s performance of 33.1%. Further, our models are quantitatively more accurate than either Saxena et al. or Hoiem et al."
+            },
+            "slug": "Learning-3-D-Scene-Structure-from-a-Single-Still-Saxena-Sun",
+            "title": {
+                "fragments": [],
+                "text": "Learning 3-D Scene Structure from a Single Still Image"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 66,
+                "text": "This work considers the problem of estimating detailed 3D structure from a single still image of an unstructured environment and uses a Markov random field (MRF) to infer a set of \"plane parameters\" that capture both the 3D location and 3D orientation of the patch."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2007 IEEE 11th International Conference on Computer Vision"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2115317745"
+                        ],
+                        "name": "David C. Lee",
+                        "slug": "David-C.-Lee",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Lee",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David C. Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145670946"
+                        ],
+                        "name": "M. Hebert",
+                        "slug": "M.-Hebert",
+                        "structuredName": {
+                            "firstName": "Martial",
+                            "lastName": "Hebert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hebert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733113"
+                        ],
+                        "name": "T. Kanade",
+                        "slug": "T.-Kanade",
+                        "structuredName": {
+                            "firstName": "Takeo",
+                            "lastName": "Kanade",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Kanade"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 444,
+                                "start": 440
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 980317,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3228234ab663758d7439d9ee8f30c8fb29db8e7f",
+            "isKey": false,
+            "numCitedBy": 245,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study the problem of generating plausible interpretations of a scene from a collection of line segments automatically extracted from a single indoor image. We show that we can recognize the three dimensional structure of the interior of a building, even in the presence of occluding objects. Several physically valid structure hypotheses are proposed by geometric reasoning and verified to find the best fitting model to line segments, which is then converted to a full 3D model. Our experiments demonstrate that our structure recovery from line segments is comparable with methods using full image appearance. Our approach shows how a set of rules describing geometric constraints between groups of segments can be used to prune scene interpretation hypotheses and to generate the most plausible interpretation."
+            },
+            "slug": "Geometric-reasoning-for-single-image-structure-Lee-Hebert",
+            "title": {
+                "fragments": [],
+                "text": "Geometric reasoning for single image structure recovery"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown how a set of rules describing geometric constraints between groups of segments can be used to prune scene interpretation hypotheses and to generate the most plausible interpretation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3203751"
+                        ],
+                        "name": "E. Delage",
+                        "slug": "E.-Delage",
+                        "structuredName": {
+                            "firstName": "Erick",
+                            "lastName": "Delage",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Delage"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1697141"
+                        ],
+                        "name": "Honglak Lee",
+                        "slug": "Honglak-Lee",
+                        "structuredName": {
+                            "firstName": "Honglak",
+                            "lastName": "Lee",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Honglak Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 375,
+                                "start": 369
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14075351,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1f4789a2effea966c8fd10491fe859cfc7607137",
+            "isKey": false,
+            "numCitedBy": 237,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "When we look at a picture, our prior knowledge about the world allows us to resolve some of the ambiguities that are inherent to monocular vision, and thereby infer 3d information about the scene. We also recognize different objects, decide on their orientations, and identify how they are connected to their environment. Focusing on the problem of autonomous 3d reconstruction of indoor scenes, in this paper we present a dynamic Bayesian network model capable of resolving some of these ambiguities and recovering 3d information for many images. Our model assumes a \"floorwall\" geometry on the scene and is trained to recognize the floor-wall boundary in each column of the image. When the image is produced under perspective geometry, we show that this model can be used for 3d reconstruction from a single image. To our knowledge, this was the first monocular approach to automatically recover 3d reconstructions from single indoor images."
+            },
+            "slug": "A-Dynamic-Bayesian-Network-Model-for-Autonomous-3D-Delage-Lee",
+            "title": {
+                "fragments": [],
+                "text": "A Dynamic Bayesian Network Model for Autonomous 3D Reconstruction from a Single Indoor Image"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 52,
+                "text": "This paper presents a dynamic Bayesian network model capable of resolving some of the ambiguities of monocular vision and recovering 3d information for many images and shows that this model can be used for 3d reconstruction from a single image."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2433269"
+                        ],
+                        "name": "Derek Hoiem",
+                        "slug": "Derek-Hoiem",
+                        "structuredName": {
+                            "firstName": "Derek",
+                            "lastName": "Hoiem",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Derek Hoiem"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145670946"
+                        ],
+                        "name": "M. Hebert",
+                        "slug": "M.-Hebert",
+                        "structuredName": {
+                            "firstName": "Martial",
+                            "lastName": "Hebert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hebert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[9, 10] cannot estimate the depth of walls when their boundary is fully occluded."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 2
+                            }
+                        ],
+                        "text": ", [8, 10, 2, 16, 24]) on combining object, depth, viewpoint, occlusion boundary, scene category, and/or surface orientation estimates."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5763563,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b7d60c907426cc69f9db7472df063c6de10f1a2d",
+            "isKey": false,
+            "numCitedBy": 173,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Image understanding involves analyzing many different aspects of the scene. In this paper, we are concerned with how these tasks can be combined in a way that improves the performance of each of them. Inspired by Barrow and Tenenbaum, we present a flexible framework for interfacing scene analysis processes using intrinsic images. Each intrinsic image is a registered map describing one characteristic of the scene. We apply this framework to develop an integrated 3D scene understanding system with estimates of surface orientations, occlusion boundaries, objects, camera viewpoint, and relative depth. Our experiments on a set of 300 outdoor images demonstrate that these tasks reinforce each other, and we illustrate a coherent scene understanding with automatically reconstructed 3D models."
+            },
+            "slug": "Closing-the-loop-in-scene-interpretation-Hoiem-Efros",
+            "title": {
+                "fragments": [],
+                "text": "Closing the loop in scene interpretation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper presents a flexible framework for interfacing scene analysis processes using intrinsic images, and applies this framework to develop an integrated 3D scene understanding system with estimates of surface orientations, occlusion boundaries, objects, camera viewpoint, and relative depth."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1799035"
+                        ],
+                        "name": "Erik B. Sudderth",
+                        "slug": "Erik-B.-Sudderth",
+                        "structuredName": {
+                            "firstName": "Erik",
+                            "lastName": "Sudderth",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Erik B. Sudderth"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143805211"
+                        ],
+                        "name": "A. Torralba",
+                        "slug": "A.-Torralba",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Torralba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Torralba"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768236"
+                        ],
+                        "name": "W. Freeman",
+                        "slug": "W.-Freeman",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Freeman",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Freeman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701607"
+                        ],
+                        "name": "A. Willsky",
+                        "slug": "A.-Willsky",
+                        "structuredName": {
+                            "firstName": "Alan",
+                            "lastName": "Willsky",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Willsky"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 2
+                            }
+                        ],
+                        "text": ", [8, 10, 2, 16, 24]) on combining object, depth, viewpoint, occlusion boundary, scene category, and/or surface orientation estimates."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14305678,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2e2a35ca0fe09d96130b0cf5dfad7af083560a71",
+            "isKey": false,
+            "numCitedBy": 76,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We develop an integrated, probabilistic model for the appearance and three-dimensional geometry of cluttered scenes. Object categories are modeled via distributions over the 3D location and appearance of visual features. Uncertainty in the number of object instances depicted in a particular image is then achieved via a transformed Dirichlet process. In contrast with image-based approaches to object recognition, we model scale variations as the perspective projection of objects in different 3D poses. To calibrate the underlying geometry, we incorporate binocular stereo images into the training process. A robust likelihood model accounts for outliers in matched stereo features, allowing effective learning of 3D object structure from partial 2D segmentations. Applied to a dataset of office scenes, our model detects objects at multiple scales via a coarse reconstruction of the corresponding 3D geometry."
+            },
+            "slug": "Depth-from-Familiar-Objects:-A-Hierarchical-Model-Sudderth-Torralba",
+            "title": {
+                "fragments": [],
+                "text": "Depth from Familiar Objects: A Hierarchical Model for 3D Scenes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "An integrated, probabilistic model for the appearance and three-dimensional geometry of cluttered scenes and a robust likelihood model accounts for outliers in matched stereo features, allowing effective learning of 3D object structure from partial 2D segmentations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'06)"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2140523441"
+                        ],
+                        "name": "Patrick Denis",
+                        "slug": "Patrick-Denis",
+                        "structuredName": {
+                            "firstName": "Patrick",
+                            "lastName": "Denis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Patrick Denis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1792404"
+                        ],
+                        "name": "J. Elder",
+                        "slug": "J.-Elder",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Elder",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Elder"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145337110"
+                        ],
+                        "name": "F. Estrada",
+                        "slug": "F.-Estrada",
+                        "structuredName": {
+                            "firstName": "Francisco",
+                            "lastName": "Estrada",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Estrada"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 84
+                            }
+                        ],
+                        "text": "Several works [3, 12, 20] address estimation of vanishing points from an image (see [5] for an excellent discussion)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1106113,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b982e9f51dcb5b5769813cb6cf1c541be2bf2e2c",
+            "isKey": false,
+            "numCitedBy": 223,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We address the problem of efficiently estimating the rotation of a camera relative to the canonical 3D Cartesian frame of an urban scene, under the so-called \"Manhattan World\" assumption [1,2]. While the problem has received considerable attention in recent years, it is unclear how current methods stack up in terms of accuracy and efficiency, and how they might best be improved. It is often argued that it is best to base estimation on all pixels in the image [2]. However, in this paper, we argue that in a sense, less can be more: that basing estimation on sparse, accurately localized edges, rather than dense gradient maps, permits the derivation of more accurate statistical models and leads to more efficient estimation. We also introduce and compare several different search techniques that have advantages over prior approaches. A cornerstone of the paper is the establishment of a new public groundtruth database which we use to derive required statistics and to evaluate and compare algorithms."
+            },
+            "slug": "Efficient-Edge-Based-Methods-for-Estimating-Frames-Denis-Elder",
+            "title": {
+                "fragments": [],
+                "text": "Efficient Edge-Based Methods for Estimating Manhattan Frames in Urban Imagery"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is argued that in a sense, less can be more: that basing estimation on sparse, accurately localized edges, rather than dense gradient maps, permits the derivation of more accurate statistical models and leads to more efficient estimation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143868587"
+                        ],
+                        "name": "A. Oliva",
+                        "slug": "A.-Oliva",
+                        "structuredName": {
+                            "firstName": "Aude",
+                            "lastName": "Oliva",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Oliva"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143805211"
+                        ],
+                        "name": "A. Torralba",
+                        "slug": "A.-Torralba",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Torralba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Torralba"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 218,
+                                "start": 214
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11664336,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "869171b2f56cfeaa9b81b2626cb4956fea590a57",
+            "isKey": false,
+            "numCitedBy": 6523,
+            "numCiting": 58,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we propose a computational model of the recognition of real world scenes that bypasses the segmentation and the processing of individual objects or regions. The procedure is based on a very low dimensional representation of the scene, that we term the Spatial Envelope. We propose a set of perceptual dimensions (naturalness, openness, roughness, expansion, ruggedness) that represent the dominant spatial structure of a scene. Then, we show that these dimensions may be reliably estimated using spectral and coarsely localized information. The model generates a multidimensional space in which scenes sharing membership in semantic categories (e.g., streets, highways, coasts) are projected closed together. The performance of the spatial envelope model shows that specific information about object shape or identity is not a requirement for scene categorization and that modeling a holistic representation of the scene informs about its probable semantic category."
+            },
+            "slug": "Modeling-the-Shape-of-the-Scene:-A-Holistic-of-the-Oliva-Torralba",
+            "title": {
+                "fragments": [],
+                "text": "Modeling the Shape of the Scene: A Holistic Representation of the Spatial Envelope"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "The performance of the spatial envelope model shows that specific information about object shape or identity is not a requirement for scene categorization and that modeling a holistic representation of the scene informs about its probable semantic category."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064563493"
+                        ],
+                        "name": "Feng Han",
+                        "slug": "Feng-Han",
+                        "structuredName": {
+                            "firstName": "Feng",
+                            "lastName": "Han",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Feng Han"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145380991"
+                        ],
+                        "name": "Song-Chun Zhu",
+                        "slug": "Song-Chun-Zhu",
+                        "structuredName": {
+                            "firstName": "Song-Chun",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Song-Chun Zhu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 331,
+                                "start": 320
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 253853,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "88da9026bbedf408aec54b158b456627818cacf9",
+            "isKey": false,
+            "numCitedBy": 112,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "It is common experience for human vision to perceive full 3D shape and scene from a single 2D image with the occluded parts \"filled-in\" by prior visual knowledge. We represent prior knowledge of 3D shapes and scenes by probabilistic models at two levels - both are defined on graphs. The first level model is built on a graph representation for single objects, and it is a mixture model for both man-made block objects such as trees and grasses. It assumes surface and boundary smoothness, 3D angle symmetry etc. The second level model is built on the relation graph of all objects in a scene. It assumes that objects should be supported for maximum stability with global bounding surfaces, such as ground, sky and walls. Given an input image, we extract the geometry and photometric structures through image segmentation and sketching, and represent them in a big graph. Then we partition the graph into subgraphs each being an object, infer the 3D shape and recover occluded surfaces, edges and vertices in each subgraph, and infer the scene structures between the recovered 3D sub-graphs. The inference algorithm samples from the prior model under the constraint that it reproduces the observed image/sketch under projective geometry."
+            },
+            "slug": "Bayesian-reconstruction-of-3D-shapes-and-scenes-a-Han-Zhu",
+            "title": {
+                "fragments": [],
+                "text": "Bayesian reconstruction of 3D shapes and scenes from a single image"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work represents prior knowledge of 3D shapes and scenes by probabilistic models at two levels - both are defined on graphs, and it assumes that objects should be supported for maximum stability with global bounding surfaces, such as ground, sky and walls."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "First IEEE International Workshop on Higher-Level Knowledge in 3D Modeling and Motion Analysis, 2003. HLK 2003."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2590936"
+                        ],
+                        "name": "Nico Cornelis",
+                        "slug": "Nico-Cornelis",
+                        "structuredName": {
+                            "firstName": "Nico",
+                            "lastName": "Cornelis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nico Cornelis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1789756"
+                        ],
+                        "name": "B. Leibe",
+                        "slug": "B.-Leibe",
+                        "structuredName": {
+                            "firstName": "B.",
+                            "lastName": "Leibe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Leibe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1804147"
+                        ],
+                        "name": "K. Cornelis",
+                        "slug": "K.-Cornelis",
+                        "structuredName": {
+                            "firstName": "Kurt",
+                            "lastName": "Cornelis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Cornelis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 2
+                            }
+                        ],
+                        "text": ", [8, 10, 2, 16, 24]) on combining object, depth, viewpoint, occlusion boundary, scene category, and/or surface orientation estimates."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1629440,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "26232149842de7b063f16e203eaad102e1b8cac0",
+            "isKey": false,
+            "numCitedBy": 239,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract\nSupplying realistically textured 3D city models at ground level promises to be useful for pre-visualizing upcoming traffic situations in car navigation systems. Because this pre-visualization can be rendered from the expected future viewpoints of the driver, the required maneuver will be more easily understandable. 3D city models can be reconstructed from the imagery recorded by surveying vehicles. The vastness of image material gathered by these vehicles, however, puts extreme demands on vision algorithms to ensure their practical usability. Algorithms need to be as fast as possible and should result in compact, memory efficient 3D city models for future ease of distribution and visualization. For the considered application, these are not contradictory demands. Simplified geometry assumptions can speed up vision algorithms while automatically guaranteeing compact geometry models. In this paper, we present a novel city modeling framework which builds upon this philosophy to create 3D content at high speed.\n\nObjects in the environment, such as cars and pedestrians, may however disturb the reconstruction, as they violate the simplified geometry assumptions, leading to visually unpleasant artifacts and degrading the visual realism of the resulting 3D city model. Unfortunately, such objects are prevalent in urban scenes. We therefore extend the reconstruction framework by integrating it with an object recognition module that automatically detects cars in the input video streams and localizes them in 3D. The two components of our system are tightly integrated and benefit from each other\u2019s continuous input. 3D reconstruction delivers geometric scene context, which greatly helps improve detection precision. The detected car locations, on the other hand, are used to instantiate virtual placeholder models which augment the visual realism of the reconstructed city model.\n"
+            },
+            "slug": "3D-Urban-Scene-Modeling-Integrating-Recognition-Cornelis-Leibe",
+            "title": {
+                "fragments": [],
+                "text": "3D Urban Scene Modeling Integrating Recognition and\u00a0Reconstruction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "A novel city modeling framework which builds upon this philosophy to create 3D content at high speed by integrating it with an object recognition module that automatically detects cars in the input video streams and localizes them in 3D."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756036"
+                        ],
+                        "name": "C. Rother",
+                        "slug": "C.-Rother",
+                        "structuredName": {
+                            "firstName": "Carsten",
+                            "lastName": "Rother",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Rother"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Several works [3, 12, 20] address estimation of vanishing points from an image (see [5] for an excellent discussion)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 56,
+                                "start": 52
+                            }
+                        ],
+                        "text": "In our implementation, we modify Rother\u2019s algorithm [20] for finding mutually orthogonal vanishing points with more robust voting and search schemes."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 67
+                            }
+                        ],
+                        "text": "2A) and group them into three mutually orthogonal vanishing points [20, 12, 3] (Fig."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 114
+                            }
+                        ],
+                        "text": "The location of the vanishing points provides camera calibration and a 3D reconstruction of the box up to a scale [7, 20]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 48
+                            }
+                        ],
+                        "text": "We also extend the linear voting scheme used in [20] to a more robust exponential voting scheme."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2048989,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "06d4a6e2c59b3c4bf5d7216d32e6e811eb843f43",
+            "isKey": true,
+            "numCitedBy": 265,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A man-made environment is characterized by a lot of parallel lines and a lot of orthogonal edges. In this article, a new method for detecting the three mutual orthogonal directions of such an environment is presented. Since realtime performance is not necessary for architectural application, like building reconstruction, a computationally more intensive approach was chosen. On the other hand, our approach is more rigorous than existing techniques, since the information given by the condition of three mutual orthogonal directions in the scene is identified and incorporated. Since knowledge about the camera geometry can be deduced from the vanishing points of three mutual orthogonal directions, we use this knowledge to reject falsely detected vanishing points. Results are presented from interpreting outdoor scenes of buildings."
+            },
+            "slug": "A-New-Approach-for-Vanishing-Point-Detection-in-Rother",
+            "title": {
+                "fragments": [],
+                "text": "A New Approach for Vanishing Point Detection in Architectural Environments"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "This approach is more rigorous than existing techniques, since the information given by the condition of three mutual orthogonal directions in the scene is identified and incorporated and used to reject falsely detected vanishing points."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "8436115"
+                        ],
+                        "name": "J. Coughlan",
+                        "slug": "J.-Coughlan",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Coughlan",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Coughlan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145081362"
+                        ],
+                        "name": "A. Yuille",
+                        "slug": "A.-Yuille",
+                        "structuredName": {
+                            "firstName": "Alan",
+                            "lastName": "Yuille",
+                            "middleNames": [
+                                "Loddon"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Yuille"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Several works [3, 12, 20] address estimation of vanishing points from an image (see [5] for an excellent discussion)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 67
+                            }
+                        ],
+                        "text": "2A) and group them into three mutually orthogonal vanishing points [20, 12, 3] (Fig."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14658103,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d0690e1129f652a836bd45c418b9335a38b4c841",
+            "isKey": false,
+            "numCitedBy": 404,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "When designing computer vision systems for the blind and visually impaired it is important to determine the orientation of the user relative to the scene. We observe that most indoor and outdoor (city) scenes are designed on a Manhattan three-dimensional grid. This Manhattan grid structure puts strong constraints on the intensity gradients in the image. We demonstrate an algorithm for detecting the orientation of the user in such scenes based on Bayesian inference using statistics which we have learnt in this domain. Our algorithm requires a single input image and does not involve pre-processing stages such as edge detection and Hough grouping. We demonstrate strong experimental results on a range of indoor and outdoor images. We also show that estimating the grid structure makes it significantly easier to detect target objects which are not aligned with the grid."
+            },
+            "slug": "Manhattan-World:-compass-direction-from-a-single-by-Coughlan-Yuille",
+            "title": {
+                "fragments": [],
+                "text": "Manhattan World: compass direction from a single image by Bayesian inference"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "An algorithm for detecting the orientation of the user in such scenes based on Bayesian inference using statistics which has been learnt in this domain is demonstrated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Seventh IEEE International Conference on Computer Vision"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2780241"
+                        ],
+                        "name": "V. Nedovic",
+                        "slug": "V.-Nedovic",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Nedovic",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Nedovic"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144638781"
+                        ],
+                        "name": "A. Smeulders",
+                        "slug": "A.-Smeulders",
+                        "structuredName": {
+                            "firstName": "Arnold",
+                            "lastName": "Smeulders",
+                            "middleNames": [
+                                "W.",
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Smeulders"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3251153"
+                        ],
+                        "name": "A. Redert",
+                        "slug": "A.-Redert",
+                        "structuredName": {
+                            "firstName": "Andr\u00e9",
+                            "lastName": "Redert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Redert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1720149"
+                        ],
+                        "name": "J. Geusebroek",
+                        "slug": "J.-Geusebroek",
+                        "structuredName": {
+                            "firstName": "Jan-Mark",
+                            "lastName": "Geusebroek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Geusebroek"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[17], the texture and edges on objects obscure the scene shape."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 205,
+                                "start": 201
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2522214,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6f8baea94aa3ebea087dad5e52ce51896ef39aaa",
+            "isKey": false,
+            "numCitedBy": 41,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recently, methods for estimating 3D scene geometry or absolute scene depth information from 2D image content have been proposed. However, general applicability of these methods in depth estimation may not be realizable, as inconsistencies may be introduced due to a large variety of possible pictorial content. We identify scene categorization as the first step towards efficient and robust depth estimation from single images. To that end, we describe a limited number of typical 3D scene geometries, called stages, each having a unique depth pattern and thus providing a specific context for stage objects. This type of scene information narrows down the possibilities with respect to individual objects' locations, scales and identities. We show how these stage types can be efficiently learned and how they can lead to robust extraction of depth information. Our results indicate that stages without much variation and object clutter can be detected robustly, with up to 60% success rate."
+            },
+            "slug": "Depth-Information-by-Stage-Classification-Nedovic-Smeulders",
+            "title": {
+                "fragments": [],
+                "text": "Depth Information by Stage Classification"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work describes a limited number of typical 3D scene geometries, called stages, each having a unique depth pattern and thus providing a specific context for stage objects, and shows how these stage types can be efficiently learned and how they can lead to robust extraction of depth information."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2007 IEEE 11th International Conference on Computer Vision"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695509"
+                        ],
+                        "name": "Takeshi Shakunaga",
+                        "slug": "Takeshi-Shakunaga",
+                        "structuredName": {
+                            "firstName": "Takeshi",
+                            "lastName": "Shakunaga",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Takeshi Shakunaga"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 287,
+                                "start": 279
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 33775608,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "d7f59de84dcf723867e71f73536559269877713e",
+            "isKey": false,
+            "numCitedBy": 17,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The author discusses the modeling of a 3-D indoor scene from a single view using a generic object model. It is assumed that an image is made by a well-calibrated camera, and that the camera height above the floor is known. The image is assumed to be a projection of a natural corridor scene from which a generic model is known, but the specific model is unknown. This system can model any corridor that satisfies the following conditions: (1) the corridor is a rectangular parallelepiped, (2) there are several lines along each axis of the rectangle parallelepiped, (3) there are not many parallel lines in directions other than along the principal axes, and (4) corridor height is within a known range. The system for 3-D modeling from a single view of such a corridor consists of a robust bottom-up image processing part and a top-down, model-based interpretation part. Experimental results show that specific corridor models can be recovered from a single view with an approximately 1% estimation error. >"
+            },
+            "slug": "3-D-Corridor-Modeling-from-a-Single-View-Under-Shakunaga",
+            "title": {
+                "fragments": [],
+                "text": "3-D Corridor Modeling from a Single View Under Natural Lighting Conditions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "Experimental results show that specific corridor models can be recovered from a single view with an approximately 1% estimation error."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35238678"
+                        ],
+                        "name": "D. Lowe",
+                        "slug": "D.-Lowe",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Lowe",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Lowe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1738591"
+                        ],
+                        "name": "T. Binford",
+                        "slug": "T.-Binford",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Binford",
+                            "middleNames": [
+                                "O."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Binford"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 189282,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f1e7a83cb07dec2aeb74f0e49fdde80186b80172",
+            "isKey": false,
+            "numCitedBy": 58,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A class of inferences is described which allows the recovery of three-dimensional structures from the two-dimensional curves in an image. Unlike most previous methods, these inferences do not require restrictive assumptions or prior knowledge regarding the scene. They are based on the assumption that the camera viewpoint and the positions of the illumination sources are independent of the objects in the scene. From these independence assumptions, it can be shown that many potential interpretations of image curves are highly improbable. By eliminating these improbable interpretations it is possible to segment the image into sets of related image features and derive many three-space relations."
+            },
+            "slug": "The-Recovery-of-Three-Dimensional-Structure-from-Lowe-Binford",
+            "title": {
+                "fragments": [],
+                "text": "The Recovery of Three-Dimensional Structure from Image Curves"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 74,
+                "text": "A class of inferences is described which allows the recovery of three-dimensional structures from the two-dimensional curves in an image and it can be shown that many potential interpretations of image curves are highly improbable."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1985
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1743020"
+                        ],
+                        "name": "J. Kosecka",
+                        "slug": "J.-Kosecka",
+                        "structuredName": {
+                            "firstName": "Jana",
+                            "lastName": "Kosecka",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Kosecka"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [],
+                        "name": "Wei Zhang",
+                        "slug": "Wei-Zhang",
+                        "structuredName": {
+                            "firstName": "Wei",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wei Zhang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Several works [3, 12, 20] address estimation of vanishing points from an image (see [5] for an excellent discussion)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 67
+                            }
+                        ],
+                        "text": "2A) and group them into three mutually orthogonal vanishing points [20, 12, 3] (Fig."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1413778,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d47bca050a09e69be810fd7c677ed5aefe66c797",
+            "isKey": false,
+            "numCitedBy": 369,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we describe a flexible approach for determining the relative orientation of the camera with respect to the scene. The main premise of the approach is the fact that in man-made environments, the majority of lines is aligned with the principal orthogonal directions of the world coordinate frame. We exploit this observation towards efficient detection and estimation of vanishing points, which provide strong constraints on camera parameters and relative orientation of the camera with respect to the scene.By combining efficient image processing techniques in the line detection and initialization stage we demonstrate that simultaneous grouping and estimation of vanishing directions can be achieved in the absence of internal parameters of the camera. Constraints between vanishing points are then used for partial calibration and relative rotation estimation. The algorithm has been tested in a variety of indoors and outdoors scenes and its efficiency and automation makes it amenable for implementation on robotic platforms."
+            },
+            "slug": "Video-Compass-Kosecka-Zhang",
+            "title": {
+                "fragments": [],
+                "text": "Video Compass"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 79,
+                "text": "A flexible approach for determining the relative orientation of the camera with respect to the scene based on the fact that in man-made environments, the majority of lines is aligned with the principal orthogonal directions of the world coordinate frame is described."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2107881808"
+                        ],
+                        "name": "Stella X. Yu",
+                        "slug": "Stella-X.-Yu",
+                        "structuredName": {
+                            "firstName": "Stella",
+                            "lastName": "Yu",
+                            "middleNames": [
+                                "X."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Stella X. Yu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145140331"
+                        ],
+                        "name": "Hao Zhang",
+                        "slug": "Hao-Zhang",
+                        "structuredName": {
+                            "firstName": "Hao",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hao Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143751119"
+                        ],
+                        "name": "Jitendra Malik",
+                        "slug": "Jitendra-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jitendra Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 402,
+                                "start": 398
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1187062,
+            "fieldsOfStudy": [
+                "Geology"
+            ],
+            "id": "47075aa3dfde4ae9b0498375fb7c27cc3d785bd5",
+            "isKey": false,
+            "numCitedBy": 77,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Inferring the 3D spatial layout from a single 2D image is a fundamental visual task. We formulate it as a grouping problem where edges are grouped into lines, quadrilaterals, and finally depth-ordered planes. We demonstrate that the 3D structure of planar objects in indoor scenes can be fast and accurately inferred without any learning or indexing."
+            },
+            "slug": "Inferring-spatial-layout-from-a-single-image-via-Yu-Zhang",
+            "title": {
+                "fragments": [],
+                "text": "Inferring spatial layout from a single image via depth-ordered grouping"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "It is demonstrated that the 3D structure of planar objects in indoor scenes can be fast and accurately inferred without any learning or indexing."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2096029103"
+                        ],
+                        "name": "P. Olivieri",
+                        "slug": "P.-Olivieri",
+                        "structuredName": {
+                            "firstName": "Paolo",
+                            "lastName": "Olivieri",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Olivieri"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2105857211"
+                        ],
+                        "name": "Maurizio Gatti",
+                        "slug": "Maurizio-Gatti",
+                        "structuredName": {
+                            "firstName": "Maurizio",
+                            "lastName": "Gatti",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Maurizio Gatti"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2990909"
+                        ],
+                        "name": "M. Straforini",
+                        "slug": "M.-Straforini",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Straforini",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Straforini"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145730992"
+                        ],
+                        "name": "V. Torre",
+                        "slug": "V.-Torre",
+                        "structuredName": {
+                            "firstName": "Vincent",
+                            "lastName": "Torre",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Torre"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 331,
+                                "start": 320
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 36302244,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e916c3e11c20bb9073421fac0656faaf8b67e75b",
+            "isKey": false,
+            "numCitedBy": 12,
+            "numCiting": 4,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The recovery of the 3D structure of indoor scenes from a single image is an important goal of machine vision Therefore, a simple and reliable solution to this problem will have a great influence on many tasks in robotics, such as the autonomous navigation of a mobile vehicle in indoor environments."
+            },
+            "slug": "A-method-for-the-3D-reconstruction-of-indoor-scenes-Olivieri-Gatti",
+            "title": {
+                "fragments": [],
+                "text": "A method for the 3D reconstruction of indoor scenes from monocular images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 59,
+                "text": "A simple and reliable solution to the recovery of the 3D structure of indoor scenes from a single image will have a great influence on many tasks in robotics, such as the autonomous navigation of a mobile vehicle in indoor environments."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145160921"
+                        ],
+                        "name": "Bryan C. Russell",
+                        "slug": "Bryan-C.-Russell",
+                        "structuredName": {
+                            "firstName": "Bryan",
+                            "lastName": "Russell",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bryan C. Russell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143805211"
+                        ],
+                        "name": "A. Torralba",
+                        "slug": "A.-Torralba",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Torralba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Torralba"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2056417995"
+                        ],
+                        "name": "K. Murphy",
+                        "slug": "K.-Murphy",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Murphy",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Murphy"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768236"
+                        ],
+                        "name": "W. Freeman",
+                        "slug": "W.-Freeman",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Freeman",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Freeman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 104
+                            }
+                        ],
+                        "text": "All experiments are performed on a dataset of 308 indoor images collected from the web and from LabelMe [21]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 127,
+                                "start": 120
+                            }
+                        ],
+                        "text": "Experiments and Results\nAll experiments are performed on a dataset of 308 indoor images collected from the web and from LabelMe [21]."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 1900911,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "092c275005ae49dc1303214f6d02d134457c7053",
+            "isKey": false,
+            "numCitedBy": 3076,
+            "numCiting": 82,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract\nWe seek to build a large collection of images with ground truth labels to be used for object detection and recognition research. Such data is useful for supervised learning and quantitative evaluation. To achieve this, we developed a web-based tool that allows easy image annotation and instant sharing of such annotations. Using this annotation tool, we have collected a large dataset that spans many object categories, often containing multiple instances over a wide variety of images. We quantify the contents of the dataset and compare against existing state of the art datasets used for object recognition and detection. Also, we show how to extend the dataset to automatically enhance object labels with WordNet, discover object parts, recover a depth ordering of objects in a scene, and increase the number of labels using minimal user supervision and images from the web.\n"
+            },
+            "slug": "LabelMe:-A-Database-and-Web-Based-Tool-for-Image-Russell-Torralba",
+            "title": {
+                "fragments": [],
+                "text": "LabelMe: A Database and Web-Based Tool for Image Annotation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A web-based tool that allows easy image annotation and instant sharing of such annotations is developed and a large dataset that spans many object categories, often containing multiple instances over a wide variety of images is collected."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739995"
+                        ],
+                        "name": "Y. Horry",
+                        "slug": "Y.-Horry",
+                        "structuredName": {
+                            "firstName": "Youichi",
+                            "lastName": "Horry",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Horry"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1794380"
+                        ],
+                        "name": "K. Anjyo",
+                        "slug": "K.-Anjyo",
+                        "structuredName": {
+                            "firstName": "Ken-ichi",
+                            "lastName": "Anjyo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Anjyo"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144050755"
+                        ],
+                        "name": "K. Arai",
+                        "slug": "K.-Arai",
+                        "structuredName": {
+                            "firstName": "Kiyoshi",
+                            "lastName": "Arai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Arai"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 287,
+                                "start": 279
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6914801,
+            "fieldsOfStudy": [
+                "Art"
+            ],
+            "id": "d30c530bfebfa6e6d31ccb2bd503ebb17845aab6",
+            "isKey": false,
+            "numCitedBy": 452,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A new method called TIP (Tour Into the Picture) is presented for easily making animations from one 2D picture or photograph of a scene. In TIP, animation is created from the viewpoint of a camera which can be three-dimensionally \"walked or flownthrough\" the 2D picture or photograph. To make such animation, conventional computer vision techniques cannot be applied in the 3D modeling process for the scene, using only a single 2D image. Instead a spidery mesh is employed in our method to obtain a simple scene model from the 2D image of the scene using a graphical user interface. Animation is thus easily generated without the need of multiple 2D images. Unlike existing methods, our method is not intended to construct a precise 3D scene model. The scene model is rather simple, and not fully 3D-structured. The modeling process starts by specifying the vanishing point in the 2D image. The background in the scene model then consists of at most five rectangles, whereas hierarchical polygons are used as a model for each foreground object. Furthermore a virtual camera is moved around the 3D scene model, with the viewing angle being freely controlled. This process is easily and effectively performed using the spidery mesh interface. We have obtained a wide variety of animated scenes which demonstrate the efficiency of TIP. CR"
+            },
+            "slug": "Tour-into-the-picture:-using-a-spidery-mesh-to-make-Horry-Anjyo",
+            "title": {
+                "fragments": [],
+                "text": "Tour into the picture: using a spidery mesh interface to make animation from a single image"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 76,
+                "text": "A new method called TIP (Tour Into the Picture) is presented for easily making animations from one 2D picture or photograph of a scene using a graphical user interface, which is not intended to construct a precise 3D scene model."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIGGRAPH"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "17173992"
+                        ],
+                        "name": "B. Wrobel",
+                        "slug": "B.-Wrobel",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Wrobel",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Wrobel"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 114
+                            }
+                        ],
+                        "text": "The location of the vanishing points provides camera calibration and a 3D reconstruction of the box up to a scale [7, 20]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 44793400,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "339093c7ed71919ce59a7e78979a77abd25bad0c",
+            "isKey": false,
+            "numCitedBy": 16324,
+            "numCiting": 222,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Downloading the book in this website lists can give you more advantages. It will show you the best book collections and completed collections. So many books can be found in this website. So, this is not only this multiple view geometry in computer vision. However, this book is referred to read because it is an inspiring book to give you more chance to get experiences and also thoughts. This is simple, read the soft file of the book and you get it."
+            },
+            "slug": "Multiple-View-Geometry-in-Computer-Vision-Wrobel",
+            "title": {
+                "fragments": [],
+                "text": "Multiple View Geometry in Computer Vision"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 56,
+                "text": "This book is referred to read because it is an inspiring book to give you more chance to get experiences and also thoughts and it will show the best book collections and completed collections."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "K\u00fcnstliche Intell."
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2109365947"
+                        ],
+                        "name": "Xiaoqing Liu",
+                        "slug": "Xiaoqing-Liu",
+                        "structuredName": {
+                            "firstName": "Xiaoqing",
+                            "lastName": "Liu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xiaoqing Liu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1922280"
+                        ],
+                        "name": "O. Veksler",
+                        "slug": "O.-Veksler",
+                        "structuredName": {
+                            "firstName": "Olga",
+                            "lastName": "Veksler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "O. Veksler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1804589"
+                        ],
+                        "name": "J. Samarabandu",
+                        "slug": "J.-Samarabandu",
+                        "structuredName": {
+                            "firstName": "Jagath",
+                            "lastName": "Samarabandu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Samarabandu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 59,
+                                "start": 49
+                            }
+                        ],
+                        "text": "5, we also qualitatively compare several methods [9, 14, 1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 246,
+                                "start": 235
+                            }
+                        ],
+                        "text": "Once we decide how to parameterize the spatial layout, how do we estimate the parameters using image cues? Region-based local color, texture, and edge cues, often combined with segmentation or CRF inference have been used with success [9, 14, 22] for labeling pixels according to orientation or depth."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[14] to label into floor, walls, and ceiling does not account for objects and has difficulty assigning the correct label to the occluded walls or floor."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 3
+                            }
+                        ],
+                        "text": "\u2019s [14] ordering constraints, intialised by [9]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 549,
+                                "start": 545
+                            }
+                        ],
+                        "text": "To recover the spatial layout of an image, we first need to answer: how should we parameterize the scene space? Existing parametrizations include: a predefined set of prototype global scene geometries [17]; a gist [18] of a scene describing its spatial characteristics; a 3D box [11, 23] or collection of 3D polyhedrals [6, 15, 19]; boundaries between ground and walls [1, 4]; depth-ordered planes [26]; constrained arrangements of corners [13]; a pixel labeling of approximate local surface orientations [9], possibly with ordering constraints [14]; or depth estimates at each pixel [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10593241,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7bc77adecc4140aa01847c5d33ecccf995df33b5",
+            "isKey": true,
+            "numCitedBy": 45,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the last decade, graph-cut optimization has been popular for a variety of pixel labeling problems. Typically graph-cut methods are used to incorporate a smoothness prior on a labeling. Recently several methods incorporated ordering constraints on labels for the application of object segmentation. An example of an ordering constraint is prohibiting a pixel with a ldquocar wheelrdquo label to be above a pixel with a ldquocar roofrdquo label. We observe that the commonly used graph-cut based alpha-expansion is more likely to get stuck in a local minimum when ordering constraints are used. For certain models with ordering constraints, we develop new graph-cut moves which we call order-preserving moves. Order-preserving moves act on all labels, unlike alpha-expansion. Although the global minimum is still not guaranteed, optimization with order-preserving moves performs significantly better than alpha-expansion. We evaluate order-preserving moves for the geometric class scene labeling (introduced by Hoiem et al.) where the goal is to assign each pixel a label such as ldquoskyrdquo, ldquogrounrdquo, etc., so ordering constraints arise naturally. In addition, we use order-preserving moves for certain simple shape priors in graphcut segmentation, which is a novel contribution in itself."
+            },
+            "slug": "Graph-cut-with-ordering-constraints-on-labels-and-Liu-Veksler",
+            "title": {
+                "fragments": [],
+                "text": "Graph cut with ordering constraints on labels and its applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "It is observed that the commonly used graph-cut based alpha-expansion is more likely to get stuck in a local minimum when ordering constraints are used, so order-preserving moves are developed, which are developed and used for certain simple shape priors in graphcut segmentation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1765700"
+                        ],
+                        "name": "Ioannis Tsochantaridis",
+                        "slug": "Ioannis-Tsochantaridis",
+                        "structuredName": {
+                            "firstName": "Ioannis",
+                            "lastName": "Tsochantaridis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ioannis Tsochantaridis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1680188"
+                        ],
+                        "name": "T. Joachims",
+                        "slug": "T.-Joachims",
+                        "structuredName": {
+                            "firstName": "Thorsten",
+                            "lastName": "Joachims",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Joachims"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143936663"
+                        ],
+                        "name": "Thomas Hofmann",
+                        "slug": "Thomas-Hofmann",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Hofmann",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Hofmann"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1783941"
+                        ],
+                        "name": "Y. Altun",
+                        "slug": "Y.-Altun",
+                        "structuredName": {
+                            "firstName": "Yasemin",
+                            "lastName": "Altun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Altun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 33
+                            }
+                        ],
+                        "text": "We propose a structured learning [25] approach to select the joint set of parameters that is most likely to maximize the similarity to the ground truth box based on global perspective cues."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 121
+                            }
+                        ],
+                        "text": "However if a denser sampling is performed, one would need to resort to other approximate methods like those described in [25]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 69
+                            }
+                        ],
+                        "text": "To solve this, we use the structured learning framework described in [25], which models the relationships between different outputs within the output space to better utilize the available training data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17671150,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dc97e7dbb821a4edfb5151bff4352655eedca9ee",
+            "isKey": true,
+            "numCitedBy": 2247,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning general functional dependencies between arbitrary input and output spaces is one of the key challenges in computational intelligence. While recent progress in machine learning has mainly focused on designing flexible and powerful input representations, this paper addresses the complementary issue of designing classification algorithms that can deal with more complex outputs, such as trees, sequences, or sets. More generally, we consider problems involving multiple dependent output variables, structured output spaces, and classification problems with class attributes. In order to accomplish this, we propose to appropriately generalize the well-known notion of a separation margin and derive a corresponding maximum-margin formulation. While this leads to a quadratic program with a potentially prohibitive, i.e. exponential, number of constraints, we present a cutting plane algorithm that solves the optimization problem in polynomial time for a large class of problems. The proposed method has important applications in areas such as computational biology, natural language processing, information retrieval/extraction, and optical character recognition. Experiments from various domains involving different types of output spaces emphasize the breadth and generality of our approach."
+            },
+            "slug": "Large-Margin-Methods-for-Structured-and-Output-Tsochantaridis-Joachims",
+            "title": {
+                "fragments": [],
+                "text": "Large Margin Methods for Structured and Interdependent Output Variables"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This paper proposes to appropriately generalize the well-known notion of a separation margin and derive a corresponding maximum-margin formulation and presents a cutting plane algorithm that solves the optimization problem in polynomial time for a large class of problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2056417995"
+                        ],
+                        "name": "K. Murphy",
+                        "slug": "K.-Murphy",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Murphy",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Murphy"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143805211"
+                        ],
+                        "name": "A. Torralba",
+                        "slug": "A.-Torralba",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Torralba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Torralba"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768236"
+                        ],
+                        "name": "W. Freeman",
+                        "slug": "W.-Freeman",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Freeman",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Freeman"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 2
+                            }
+                        ],
+                        "text": ", [8, 10, 2, 16, 24]) on combining object, depth, viewpoint, occlusion boundary, scene category, and/or surface orientation estimates."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 238926,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c8185a04652b9ff239d56958f2127e60bae850c5",
+            "isKey": false,
+            "numCitedBy": 33,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Graphical-Model-For-Recognizing-Scenes-and-Objects.-Murphy-Torralba",
+            "title": {
+                "fragments": [],
+                "text": "Graphical Model For Recognizing Scenes and Objects."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS 2003"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Shakunaga . 3 - d corridor scene modeling from a single view under natural lighting conditions"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PAMI"
+            },
+            "year": 1992
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 23,
+            "methodology": 4,
+            "result": 3
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 27,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Recovering-the-spatial-layout-of-cluttered-rooms-Hedau-Hoiem/451a06626afe8dd70099c7dfec86de7af909a062?sort=total-citations"
+}

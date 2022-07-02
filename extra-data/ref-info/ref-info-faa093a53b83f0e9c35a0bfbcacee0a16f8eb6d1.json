@@ -1,0 +1,3325 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3450996"
+                        ],
+                        "name": "Ryan Kiros",
+                        "slug": "Ryan-Kiros",
+                        "structuredName": {
+                            "firstName": "Ryan",
+                            "lastName": "Kiros",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ryan Kiros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145124475"
+                        ],
+                        "name": "R. Salakhutdinov",
+                        "slug": "R.-Salakhutdinov",
+                        "structuredName": {
+                            "firstName": "Ruslan",
+                            "lastName": "Salakhutdinov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Salakhutdinov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1804104"
+                        ],
+                        "name": "R. Zemel",
+                        "slug": "R.-Zemel",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Zemel",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Zemel"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 84
+                            }
+                        ],
+                        "text": "We perform experiments with our VSE++ and compare it to the original formulation of Kiros et al. (2014) (referred to as VSE), as well as state-of-the-art approaches."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 1072,
+                                "start": 91
+                            }
+                        ],
+                        "text": "We introduce a very simple change to the loss function used in the original formulation by Kiros et al. (2014), which leads to drastic improvements in the retrieval performance. In particular, the original paper uses the rank loss which computes the sum of violations across the negative training examples. Instead, we penalize the model according to the hardest negative examples. We then make several additional modifications according to the current best practices in image-caption retrieval. We showcase our model on the MS-COCO and Flickr30K datasets through comparisons and ablation studies. On MS-COCO, we improve caption retrieval by 21% in R@1 with respect to the original formulation. Our results outperform the state-of-the-art results by 8.8% in caption retrieval and 11.3% in image retrieval at R@1. On Flickr30K, we more than double R@1 as reported by Kiros et al. (2014) in both image and caption retrieval, and achieve near state-of-the-art performance. We further show that similar improvements also apply to the Order-embeddings by Vendrov et al. (2015) which builds on a similar loss function."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 245,
+                                "start": 226
+                            }
+                        ],
+                        "text": "We have shown that a new loss function that uses only violation incurred by hard negatives drastically improves performance over the typical loss that sums the violations across the negatives, typically used in previous work (Kiros et al. (2014); Vendrov et al. (2015))."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 224,
+                                "start": 134
+                            }
+                        ],
+                        "text": "Learning such embeddings using powerful neural networks has led to significant advancements in image-caption retrieval and generation Kiros et al. (2014); Karpathy & Fei-Fei (2015), video-to-text alignment Zhu et al. (2015), and question-answering Malinowski et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 153,
+                                "start": 134
+                            }
+                        ],
+                        "text": "Learning such embeddings using powerful neural networks has led to significant advancements in image-caption retrieval and generation Kiros et al. (2014); Karpathy & Fei-Fei (2015), video-to-text alignment Zhu et al. (2015), and question-answering Malinowski et al. (2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 24
+                            }
+                        ],
+                        "text": "We further note that in Kiros et al. (2014), the caption embedding is normalized, while the image embedding is not."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 33
+                            }
+                        ],
+                        "text": "Our work builds upon the work by Kiros et al. (2014), in which the authors use a rank loss to optimize the embedding."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 140,
+                                "start": 121
+                            }
+                        ],
+                        "text": "2https://github.com/ryankiros/visual-semantic-embedding\nFor the caption encoder, we use a GRU similar to the one used in Kiros et al. (2014)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 53
+                            }
+                        ],
+                        "text": "On Flickr30K, we more than double R@1 as reported by Kiros et al. (2014) in both image and caption retrieval, and achieve near state-of-the-art performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 46
+                            }
+                        ],
+                        "text": "Our work builds on Visual-Semantic Embeddings Kiros et al. (2014)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 22
+                            }
+                        ],
+                        "text": "The rank loss used in Kiros et al. (2014), Socher et al. (2014), and Karpathy & Fei-Fei (2015) is defined as follows:\n`(i, c) = \u2211 c\u0302 [\u03b1\u2212 s(i, c) + s(i, c\u0302)]+ + \u2211 i\u0302 [\u03b1\u2212 s(i, c) + s(\u0302i, c)]+ (3)\nwhere \u03b1 represents the margin, c\u0302 denotes a negative caption for the query image i, and i\u0302 a negative\u2026"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al. (2015), Socher et al. (2014) use a rank loss to learn the joint visual-semantic embedding."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 886,
+                                "start": 91
+                            }
+                        ],
+                        "text": "We introduce a very simple change to the loss function used in the original formulation by Kiros et al. (2014), which leads to drastic improvements in the retrieval performance. In particular, the original paper uses the rank loss which computes the sum of violations across the negative training examples. Instead, we penalize the model according to the hardest negative examples. We then make several additional modifications according to the current best practices in image-caption retrieval. We showcase our model on the MS-COCO and Flickr30K datasets through comparisons and ablation studies. On MS-COCO, we improve caption retrieval by 21% in R@1 with respect to the original formulation. Our results outperform the state-of-the-art results by 8.8% in caption retrieval and 11.3% in image retrieval at R@1. On Flickr30K, we more than double R@1 as reported by Kiros et al. (2014) in both image and caption retrieval, and achieve near state-of-the-art performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 109
+                            }
+                        ],
+                        "text": "Note that since we use SGD to learn our parameters, we take the max over each mini-batch (this is similar to Kiros et al. (2014) who compute the sum in Eq."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 91
+                            }
+                        ],
+                        "text": "We introduce a very simple change to the loss function used in the original formulation by Kiros et al. (2014), which leads to drastic improvements in the retrieval performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 83,
+                                "start": 64
+                            }
+                        ],
+                        "text": "This paper investigates the visual-semantic embeddings (VSE) of Kiros et al. (2014) for imagecaption retrieval."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 80
+                            }
+                        ],
+                        "text": "We define the similarity measure s(i, c) in the joint embedding space following Kiros et al. (2014)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 725,
+                                "start": 64
+                            }
+                        ],
+                        "text": "This paper investigates the visual-semantic embeddings (VSE) of Kiros et al. (2014) for imagecaption retrieval. We propose a set of simple modifications to the original formulation that prove to be extremely effective. In particular, we change the rank loss used in the original formulation to penalize the model according to the hardest negative training exemplars instead of averaging the individual violations across the negatives. This is a sensible modification because it is the hardest negative that affects nearest neighbor recall. We refer to this model as VSE++. We achieve further improvements by fine-tuning a more powerful network, exploiting more data, and employing a multi-crop trick from Klein et al. (2015). Our results on MS-COCO show a dramatic increase in caption retrieval performance over VSE."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 66,
+                                "start": 46
+                            }
+                        ],
+                        "text": "Our work builds on Visual-Semantic Embeddings Kiros et al. (2014). In what follows, we first define the task of image-caption retrieval and summarize the original model and its loss function."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 154,
+                                "start": 134
+                            }
+                        ],
+                        "text": "Learning such embeddings using powerful neural networks has led to significant advancements in image-caption retrieval and generation Kiros et al. (2014); Karpathy & Fei-Fei (2015), video-to-text alignment Zhu et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7732372,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2e36ea91a3c8fbff92be2989325531b4002e2afc",
+            "isKey": true,
+            "numCitedBy": 1055,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Inspired by recent advances in multimodal learning and machine translation, we introduce an encoder-decoder pipeline that learns (a): a multimodal joint embedding space with images and text and (b): a novel language model for decoding distributed representations from our space. Our pipeline effectively unifies joint image-text embedding models with multimodal neural language models. We introduce the structure-content neural language model that disentangles the structure of a sentence to its content, conditioned on representations produced by the encoder. The encoder allows one to rank images and sentences while the decoder can generate novel descriptions from scratch. Using LSTM to encode sentences, we match the state-of-the-art performance on Flickr8K and Flickr30K without using object detections. We also set new best results when using the 19-layer Oxford convolutional network. Furthermore we show that with linear encoders, the learned embedding space captures multimodal regularities in terms of vector space arithmetic e.g. *image of a blue car* - \"blue\" + \"red\" is near images of red cars. Sample captions generated for 800 images are made available for comparison."
+            },
+            "slug": "Unifying-Visual-Semantic-Embeddings-with-Multimodal-Kiros-Salakhutdinov",
+            "title": {
+                "fragments": [],
+                "text": "Unifying Visual-Semantic Embeddings with Multimodal Neural Language Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work introduces the structure-content neural language model that disentangles the structure of a sentence to its content, conditioned on representations produced by the encoder, and shows that with linear encoders, the learned embedding space captures multimodal regularities in terms of vector space arithmetic."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2170746"
+                        ],
+                        "name": "M. Hodosh",
+                        "slug": "M.-Hodosh",
+                        "structuredName": {
+                            "firstName": "Micah",
+                            "lastName": "Hodosh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hodosh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2052690705"
+                        ],
+                        "name": "Peter Young",
+                        "slug": "Peter-Young",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Young",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Peter Young"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3118681"
+                        ],
+                        "name": "J. Hockenmaier",
+                        "slug": "J.-Hockenmaier",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Hockenmaier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Hockenmaier"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 123,
+                                "start": 103
+                            }
+                        ],
+                        "text": "The task of image-caption retrieval is considered as a benchmark for image and language understanding (Hodosh et al. (2013))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 928608,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9814df8bd00ba999c4d1e305a7e9bca579dc7c75",
+            "isKey": false,
+            "numCitedBy": 924,
+            "numCiting": 102,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The ability to associate images with natural language sentences that describe what is depicted in them is a hallmark of image understanding, and a prerequisite for applications such as sentence-based image search. In analogy to image search, we propose to frame sentence-based image annotation as the task of ranking a given pool of captions. We introduce a new benchmark collection for sentence-based image description and search, consisting of 8,000 images that are each paired with five different captions which provide clear descriptions of the salient entities and events. We introduce a number of systems that perform quite well on this task, even though they are only based on features that can be obtained with minimal supervision. Our results clearly indicate the importance of training on multiple captions per image, and of capturing syntactic (word order-based) and semantic features of these captions. We also perform an in-depth comparison of human and automatic evaluation metrics for this task, and propose strategies for collecting human judgments cheaply and on a very large scale, allowing us to augment our collection with additional relevance judgments of which captions describe which image. Our analysis shows that metrics that consider the ranked list of results for each query image or sentence are significantly more robust than metrics that are based on a single response per query. Moreover, our study suggests that the evaluation of ranking-based image description systems may be fully automated."
+            },
+            "slug": "Framing-Image-Description-as-a-Ranking-Task:-Data,-Hodosh-Young",
+            "title": {
+                "fragments": [],
+                "text": "Framing Image Description as a Ranking Task: Data, Models and Evaluation Metrics (Extended Abstract)"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work proposes to frame sentence-based image annotation as the task of ranking a given pool of captions, and introduces a new benchmark collection, consisting of 8,000 images that are each paired with five different captions which provide clear descriptions of the salient entities and events."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IJCAI"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2210865"
+                        ],
+                        "name": "Ivan Vendrov",
+                        "slug": "Ivan-Vendrov",
+                        "structuredName": {
+                            "firstName": "Ivan",
+                            "lastName": "Vendrov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ivan Vendrov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3450996"
+                        ],
+                        "name": "Ryan Kiros",
+                        "slug": "Ryan-Kiros",
+                        "structuredName": {
+                            "firstName": "Ryan",
+                            "lastName": "Kiros",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ryan Kiros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37895334"
+                        ],
+                        "name": "S. Fidler",
+                        "slug": "S.-Fidler",
+                        "structuredName": {
+                            "firstName": "Sanja",
+                            "lastName": "Fidler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Fidler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2422559"
+                        ],
+                        "name": "R. Urtasun",
+                        "slug": "R.-Urtasun",
+                        "structuredName": {
+                            "firstName": "Raquel",
+                            "lastName": "Urtasun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Urtasun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 35,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Additionally, Vendrov et al. (2015) takes the absolute value of embeddings before computing the similarity measure."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 244,
+                                "start": 223
+                            }
+                        ],
+                        "text": "The image features are extracted by first resizing the image to 256\u00d7 256, then using either a single center crop of size 224\u00d7 224 or the mean of feature vectors for 10 crops of similar size as used by Klein et al. (2015) and Vendrov et al. (2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 268,
+                                "start": 247
+                            }
+                        ],
+                        "text": "We have shown that a new loss function that uses only violation incurred by hard negatives drastically improves performance over the typical loss that sums the violations across the negatives, typically used in previous work (Kiros et al. (2014); Vendrov et al. (2015))."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 84
+                            }
+                        ],
+                        "text": "In particular, we show results during training the VSE and VSE++ with ResNet152 and Order-embeddings using 10C+rV ."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 36
+                            }
+                        ],
+                        "text": "The formulation of Order-embeddings Vendrov et al. (2015), is very similar to VSE with a difference in the similarity measure."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 84,
+                                "start": 63
+                            }
+                        ],
+                        "text": "Works such as Karpathy & Fei-Fei (2015), Socher et al. (2014), Vendrov et al. (2015), Wang et al. (2017), Huang et al. (2016), Nam et al. (2016) use a similar loss to optimize more sophisticated models."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 70
+                            }
+                        ],
+                        "text": "In Table 3, we report the results when replacing the sum loss used in Order-embeddings to our max loss."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Order-embeddings use the asymmetric similarity measure s(i, c) = \u2212\u2016max(0, g(c;Wg, \u03b8\u03c8)\u2212 f(i;Wf , \u03b8\u03c6))\u20162."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 80
+                            }
+                        ],
+                        "text": "We further show that similar improvements also apply to the Order-embeddings by Vendrov et al. (2015) which builds on a similar loss function."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11440692,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "46b8cbcdff87b842c2c1d4a003c831f845096ba7",
+            "isKey": false,
+            "numCitedBy": 433,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Hypernymy, textual entailment, and image captioning can be seen as special cases of a single visual-semantic hierarchy over words, sentences, and images. In this paper we advocate for explicitly modeling the partial order structure of this hierarchy. Towards this goal, we introduce a general method for learning ordered representations, and show how it can be applied to a variety of tasks involving images and language. We show that the resulting representations improve performance over current approaches for hypernym prediction and image-caption retrieval."
+            },
+            "slug": "Order-Embeddings-of-Images-and-Language-Vendrov-Kiros",
+            "title": {
+                "fragments": [],
+                "text": "Order-Embeddings of Images and Language"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A general method for learning ordered representations is introduced, and it is shown that the resulting representations improve performance over current approaches for hypernym prediction and image-caption retrieval."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2143440503"
+                        ],
+                        "name": "Liwei Wang",
+                        "slug": "Liwei-Wang",
+                        "structuredName": {
+                            "firstName": "Liwei",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Liwei Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47002659"
+                        ],
+                        "name": "Yin Li",
+                        "slug": "Yin-Li",
+                        "structuredName": {
+                            "firstName": "Yin",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yin Li"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2145739230"
+                        ],
+                        "name": "Jing Huang",
+                        "slug": "Jing-Huang",
+                        "structuredName": {
+                            "firstName": "Jing",
+                            "lastName": "Huang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jing Huang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1749609"
+                        ],
+                        "name": "S. Lazebnik",
+                        "slug": "S.-Lazebnik",
+                        "structuredName": {
+                            "firstName": "Svetlana",
+                            "lastName": "Lazebnik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Lazebnik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 18,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Wang et al. (2017) propose an embedding network to fully replace the similarity measure used for the rank loss."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 86
+                            }
+                        ],
+                        "text": "Works such as Karpathy & Fei-Fei (2015), Socher et al. (2014), Vendrov et al. (2015), Wang et al. (2017), Huang et al. (2016), Nam et al. (2016) use a similar loss to optimize more sophisticated models."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 897596,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f865268b81eeb29d94775f22c6bc24dcc5e1b2e9",
+            "isKey": false,
+            "numCitedBy": 283,
+            "numCiting": 71,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Image-language matching tasks have recently attracted a lot of attention in the computer vision field. These tasks include image-sentence matching, i.e., given an image query, retrieving relevant sentences and vice versa, and region-phrase matching or visual grounding, i.e., matching a phrase to relevant regions. This paper investigates two-branch neural networks for learning the similarity between these two data modalities. We propose two network structures that produce different output representations. The first one, referred to as an embedding network, learns an explicit shared latent embedding space with a maximum-margin ranking loss and novel neighborhood constraints. Compared to standard triplet sampling, we perform improved neighborhood sampling that takes neighborhood information into consideration while constructing mini-batches. The second network structure, referred to as a similarity network, fuses the two branches via element-wise product and is trained with regression loss to directly predict a similarity score. Extensive experiments show that our networks achieve high accuracies for phrase localization on the Flickr30K Entities dataset and for bi-directional image-sentence retrieval on Flickr30K and MSCOCO datasets."
+            },
+            "slug": "Learning-Two-Branch-Neural-Networks-for-Image-Text-Wang-Li",
+            "title": {
+                "fragments": [],
+                "text": "Learning Two-Branch Neural Networks for Image-Text Matching Tasks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "This paper investigates two-branch neural networks for learning the similarity between image-sentence matching and region-phrase matching, and proposes two network structures that produce different output representations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2019
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145969200"
+                        ],
+                        "name": "Benjamin Klein",
+                        "slug": "Benjamin-Klein",
+                        "structuredName": {
+                            "firstName": "Benjamin",
+                            "lastName": "Klein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Benjamin Klein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3004979"
+                        ],
+                        "name": "Guy Lev",
+                        "slug": "Guy-Lev",
+                        "structuredName": {
+                            "firstName": "Guy",
+                            "lastName": "Lev",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Guy Lev"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2251827"
+                        ],
+                        "name": "Gil Sadeh",
+                        "slug": "Gil-Sadeh",
+                        "structuredName": {
+                            "firstName": "Gil",
+                            "lastName": "Sadeh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Gil Sadeh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145128145"
+                        ],
+                        "name": "Lior Wolf",
+                        "slug": "Lior-Wolf",
+                        "structuredName": {
+                            "firstName": "Lior",
+                            "lastName": "Wolf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lior Wolf"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 218,
+                                "start": 199
+                            }
+                        ],
+                        "text": "The image features are extracted by first resizing the image to 256\u00d7 256, then using either a single center crop of size 224\u00d7 224 or the mean of feature vectors for 10 crops of similar size as used by Klein et al. (2015) and Vendrov et al. (2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Klein et al. (2015) and Eisenschtat & Wolf (2016) use Canonical Correlation Analysis (CCA) to compute a linear projection for two views to a common space where the correlation of the transformed views is maximized."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 151,
+                                "start": 132
+                            }
+                        ],
+                        "text": "We achieve further improvements by fine-tuning a more powerful network, exploiting more data, and employing a multi-crop trick from Klein et al. (2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6180274,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "51239b320c73f3f2219286bf62f24d6763379328",
+            "isKey": false,
+            "numCitedBy": 251,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In recent years, the problem of associating a sentence with an image has gained a lot of attention. This work continues to push the envelope and makes further progress in the performance of image annotation and image search by a sentence tasks. In this work, we are using the Fisher Vector as a sentence representation by pooling the word2vec embedding of each word in the sentence. The Fisher Vector is typically taken as the gradients of the log-likelihood of descriptors, with respect to the parameters of a Gaussian Mixture Model (GMM). In this work we present two other Mixture Models and derive their Expectation-Maximization and Fisher Vector expressions. The first is a Laplacian Mixture Model (LMM), which is based on the Laplacian distribution. The second Mixture Model presented is a Hybrid Gaussian-Laplacian Mixture Model (HGLMM) which is based on a weighted geometric mean of the Gaussian and Laplacian distribution. Finally, by using the new Fisher Vectors derived from HGLMMs to represent sentences, we achieve state-of-the-art results for both the image annotation and the image search by a sentence tasks on four benchmarks: Pascal1K, Flickr8K, Flickr30K, and COCO."
+            },
+            "slug": "Associating-neural-word-embeddings-with-deep-image-Klein-Lev",
+            "title": {
+                "fragments": [],
+                "text": "Associating neural word embeddings with deep image representations using Fisher Vectors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work is using the Fisher Vector as a sentence representation by pooling the word2vec embedding of each word in the sentence by using the new Fisher Vectors derived from HGLMMs to represent sentences."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145478807"
+                        ],
+                        "name": "Mateusz Malinowski",
+                        "slug": "Mateusz-Malinowski",
+                        "structuredName": {
+                            "firstName": "Mateusz",
+                            "lastName": "Malinowski",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mateusz Malinowski"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34849128"
+                        ],
+                        "name": "Marcus Rohrbach",
+                        "slug": "Marcus-Rohrbach",
+                        "structuredName": {
+                            "firstName": "Marcus",
+                            "lastName": "Rohrbach",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcus Rohrbach"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739548"
+                        ],
+                        "name": "Mario Fritz",
+                        "slug": "Mario-Fritz",
+                        "structuredName": {
+                            "firstName": "Mario",
+                            "lastName": "Fritz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mario Fritz"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 272,
+                                "start": 248
+                            }
+                        ],
+                        "text": "Learning such embeddings using powerful neural networks has led to significant advancements in image-caption retrieval and generation Kiros et al. (2014); Karpathy & Fei-Fei (2015), video-to-text alignment Zhu et al. (2015), and question-answering Malinowski et al. (2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 738850,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bd7bd1d2945a58cdcc1797ba9698b8810fe68f60",
+            "isKey": false,
+            "numCitedBy": 519,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We address a question answering task on real-world images that is set up as a Visual Turing Test. By combining latest advances in image representation and natural language processing, we propose Neural-Image-QA, an end-to-end formulation to this problem for which all parts are trained jointly. In contrast to previous efforts, we are facing a multi-modal problem where the language output (answer) is conditioned on visual and natural language input (image and question). Our approach Neural-Image-QA doubles the performance of the previous best approach on this problem. We provide additional insights into the problem by analyzing how much information is contained only in the language part for which we provide a new human baseline. To study human consensus, which is related to the ambiguities inherent in this challenging task, we propose two novel metrics and collect additional answers which extends the original DAQUAR dataset to DAQUAR-Consensus."
+            },
+            "slug": "Ask-Your-Neurons:-A-Neural-Based-Approach-to-about-Malinowski-Rohrbach",
+            "title": {
+                "fragments": [],
+                "text": "Ask Your Neurons: A Neural-Based Approach to Answering Questions about Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 95,
+                "text": "This work addresses a question answering task on real-world images that is set up as a Visual Turing Test by combining latest advances in image representation and natural language processing and proposes Neural-Image-QA, an end-to-end formulation to this problem for which all parts are trained jointly."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2015 IEEE International Conference on Computer Vision (ICCV)"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1807606"
+                        ],
+                        "name": "Dahua Lin",
+                        "slug": "Dahua-Lin",
+                        "structuredName": {
+                            "firstName": "Dahua",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dahua Lin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37895334"
+                        ],
+                        "name": "S. Fidler",
+                        "slug": "S.-Fidler",
+                        "structuredName": {
+                            "firstName": "Sanja",
+                            "lastName": "Fidler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Fidler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144332826"
+                        ],
+                        "name": "Chen Kong",
+                        "slug": "Chen-Kong",
+                        "structuredName": {
+                            "firstName": "Chen",
+                            "lastName": "Kong",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chen Kong"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2422559"
+                        ],
+                        "name": "R. Urtasun",
+                        "slug": "R.-Urtasun",
+                        "structuredName": {
+                            "firstName": "Raquel",
+                            "lastName": "Urtasun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Urtasun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 213,
+                                "start": 54
+                            }
+                        ],
+                        "text": "We evaluate our method on the Microsoft COCO dataset (Lin et al. (2014b)) and the Flickr30K dataset (Young et al. (2014)). Flickr30K has a standard 30, 000 images for training. Following Karpathy & Fei-Fei (2015), we use 1000 images for validation and 1000 images for testing."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 54
+                            }
+                        ],
+                        "text": "We evaluate our method on the Microsoft COCO dataset (Lin et al. (2014b)) and the Flickr30K dataset (Young et al. (2014))."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 30,
+                                "start": 12
+                            }
+                        ],
+                        "text": "Older work (Lin et al. (2014a)) performed matching between words and objects based on classification scores."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 54
+                            }
+                        ],
+                        "text": "We evaluate our method on the Microsoft COCO dataset (Lin et al. (2014b)) and the Flickr30K dataset (Young et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 329,
+                                "start": 54
+                            }
+                        ],
+                        "text": "We evaluate our method on the Microsoft COCO dataset (Lin et al. (2014b)) and the Flickr30K dataset (Young et al. (2014)). Flickr30K has a standard 30, 000 images for training. Following Karpathy & Fei-Fei (2015), we use 1000 images for validation and 1000 images for testing. We also use the splits of Karpathy & Fei-Fei (2015) for MS-COCO."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1753262,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7afd833f484c8032e7fdc5f53188d2ebb0fb9934",
+            "isKey": false,
+            "numCitedBy": 137,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we tackle the problem of retrieving videos using complex natural language queries. Towards this goal, we first parse the sentential descriptions into a semantic graph, which is then matched to visual concepts using a generalized bipartite matching algorithm. Our approach exploits object appearance, motion and spatial relations, and learns the importance of each term using structure prediction. We demonstrate the effectiveness of our approach on a new dataset designed for semantic search in the context of autonomous driving, which exhibits complex and highly dynamic scenes with many objects. We show that our approach is able to locate a major portion of the objects described in the query with high accuracy, and improve the relevance in video retrieval."
+            },
+            "slug": "Visual-Semantic-Search:-Retrieving-Videos-via-Lin-Fidler",
+            "title": {
+                "fragments": [],
+                "text": "Visual Semantic Search: Retrieving Videos via Complex Textual Queries"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 54,
+                "text": "This paper first parse the sentential descriptions into a semantic graph, which is then matched to visual concepts using a generalized bipartite matching algorithm, and learns the importance of each term using structure prediction."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39353098"
+                        ],
+                        "name": "Kaiming He",
+                        "slug": "Kaiming-He",
+                        "structuredName": {
+                            "firstName": "Kaiming",
+                            "lastName": "He",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kaiming He"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1771551"
+                        ],
+                        "name": "X. Zhang",
+                        "slug": "X.-Zhang",
+                        "structuredName": {
+                            "firstName": "X.",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3080683"
+                        ],
+                        "name": "Shaoqing Ren",
+                        "slug": "Shaoqing-Ren",
+                        "structuredName": {
+                            "firstName": "Shaoqing",
+                            "lastName": "Ren",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Shaoqing Ren"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [],
+                        "name": "Jian Sun",
+                        "slug": "Jian-Sun",
+                        "structuredName": {
+                            "firstName": "Jian",
+                            "lastName": "Sun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jian Sun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 153,
+                                "start": 137
+                            }
+                        ],
+                        "text": "Let \u03c6(i; \u03b8\u03c6) \u2208 RD\u03c6 be the representation of the image (e.g. the representation before logits in VGG19 Simonyan & Zisserman (2014) or ResNet152 He et al. (2016))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 109,
+                                "start": 93
+                            }
+                        ],
+                        "text": "We experiment with two image encoders: VGG19 by Simonyan & Zisserman (2014) and ResNet152 by He et al. (2016)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 83
+                            }
+                        ],
+                        "text": "the representation before logits in VGG19 Simonyan & Zisserman (2014) or ResNet152 He et al. (2016))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 617,
+                                "start": 93
+                            }
+                        ],
+                        "text": "We experiment with two image encoders: VGG19 by Simonyan & Zisserman (2014) and ResNet152 by He et al. (2016). Previous works have extracted the image features mostly by pre-computing the FC7 features (the penultimate fully connected layer) of VGG19. We thus explicitly indicate methods that use ResNet152. The dimensionality of the image embedding, D\u03c6, is 4096 for VGG19 and 2048 for ResNet152. The image features are extracted by first resizing the image to 256\u00d7 256, then using either a single center crop of size 224\u00d7 224 or the mean of feature vectors for 10 crops of similar size as used by Klein et al. (2015) and Vendrov et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 643,
+                                "start": 93
+                            }
+                        ],
+                        "text": "We experiment with two image encoders: VGG19 by Simonyan & Zisserman (2014) and ResNet152 by He et al. (2016). Previous works have extracted the image features mostly by pre-computing the FC7 features (the penultimate fully connected layer) of VGG19. We thus explicitly indicate methods that use ResNet152. The dimensionality of the image embedding, D\u03c6, is 4096 for VGG19 and 2048 for ResNet152. The image features are extracted by first resizing the image to 256\u00d7 256, then using either a single center crop of size 224\u00d7 224 or the mean of feature vectors for 10 crops of similar size as used by Klein et al. (2015) and Vendrov et al. (2015). We refer to training with one center crop as 1C and training with 10 crops as 10C."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 93
+                            }
+                        ],
+                        "text": "We experiment with two image encoders: VGG19 by Simonyan & Zisserman (2014) and ResNet152 by He et al. (2016). Previous works have extracted the image features mostly by pre-computing the FC7 features (the penultimate fully connected layer) of VGG19."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206594692,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "isKey": true,
+            "numCitedBy": 95314,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8\u00d7 deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation."
+            },
+            "slug": "Deep-Residual-Learning-for-Image-Recognition-He-Zhang",
+            "title": {
+                "fragments": [],
+                "text": "Deep Residual Learning for Image Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 63,
+                "text": "This work presents a residual learning framework to ease the training of networks that are substantially deeper than those used previously, and provides comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39937384"
+                        ],
+                        "name": "Yan Huang",
+                        "slug": "Yan-Huang",
+                        "structuredName": {
+                            "firstName": "Yan",
+                            "lastName": "Huang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yan Huang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [],
+                        "name": "Wei Wang",
+                        "slug": "Wei-Wang",
+                        "structuredName": {
+                            "firstName": "Wei",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wei Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "123865558"
+                        ],
+                        "name": "Liang Wang",
+                        "slug": "Liang-Wang",
+                        "structuredName": {
+                            "firstName": "Liang",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Liang Wang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 207,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In Huang et al. (2016), the authors use a multi-modal context-modulated attention mechanism to compute the matching score between an image and a caption. Our work builds upon the work by Kiros et al. (2014), in which the authors use a rank loss to optimize the embedding."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 22,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In Huang et al. (2016), the authors use a multi-modal context-modulated attention mechanism to compute the matching score between an image and a caption."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 417,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In Huang et al. (2016), the authors use a multi-modal context-modulated attention mechanism to compute the matching score between an image and a caption. Our work builds upon the work by Kiros et al. (2014), in which the authors use a rank loss to optimize the embedding. Works such as Karpathy & Fei-Fei (2015), Socher et al. (2014), Vendrov et al. (2015), Wang et al. (2017), Huang et al. (2016), Nam et al. (2016) use a similar loss to optimize more sophisticated models."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 106
+                            }
+                        ],
+                        "text": "Works such as Karpathy & Fei-Fei (2015), Socher et al. (2014), Vendrov et al. (2015), Wang et al. (2017), Huang et al. (2016), Nam et al. (2016) use a similar loss to optimize more sophisticated models."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8039072,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e1b6735f6ecb09e1d83b0aa9d2cde42993ee2eb0",
+            "isKey": true,
+            "numCitedBy": 159,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Effective image and sentence matching depends on how to well measure their global visual-semantic similarity. Based on the observation that such a global similarity arises from a complex aggregation of multiple local similarities between pairwise instances of image (objects) and sentence (words), we propose a selective multimodal Long Short-Term Memory network (sm-LSTM) for instance-aware image and sentence matching. The sm-LSTM includes a multimodal context-modulated attention scheme at each timestep that can selectively attend to a pair of instances of image and sentence, by predicting pairwise instance-aware saliency maps for image and sentence. For selected pairwise instances, their representations are obtained based on the predicted saliency maps, and then compared to measure their local similarity. By similarly measuring multiple local similarities within a few timesteps, the sm-LSTM sequentially aggregates them with hidden states to obtain a final matching score as the desired global similarity. Extensive experiments show that our model can well match image and sentence with complex content, and achieve the state-of-the-art results on two public benchmark datasets."
+            },
+            "slug": "Instance-Aware-Image-and-Sentence-Matching-with-Huang-Wang",
+            "title": {
+                "fragments": [],
+                "text": "Instance-Aware Image and Sentence Matching with Selective Multimodal LSTM"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Extensive experiments show that the proposed selective multimodal Long Short-Term Memory network can well match image and sentence with complex content, and achieve the state-of-the-art results on two public benchmark datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34838386"
+                        ],
+                        "name": "K. Simonyan",
+                        "slug": "K.-Simonyan",
+                        "structuredName": {
+                            "firstName": "Karen",
+                            "lastName": "Simonyan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Simonyan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14124313,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "eb42cf88027de515750f230b23b1a057dc782108",
+            "isKey": false,
+            "numCitedBy": 62220,
+            "numCiting": 58,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this work we investigate the effect of the convolutional network depth on its accuracy in the large-scale image recognition setting. Our main contribution is a thorough evaluation of networks of increasing depth using an architecture with very small (3x3) convolution filters, which shows that a significant improvement on the prior-art configurations can be achieved by pushing the depth to 16-19 weight layers. These findings were the basis of our ImageNet Challenge 2014 submission, where our team secured the first and the second places in the localisation and classification tracks respectively. We also show that our representations generalise well to other datasets, where they achieve state-of-the-art results. We have made our two best-performing ConvNet models publicly available to facilitate further research on the use of deep visual representations in computer vision."
+            },
+            "slug": "Very-Deep-Convolutional-Networks-for-Large-Scale-Simonyan-Zisserman",
+            "title": {
+                "fragments": [],
+                "text": "Very Deep Convolutional Networks for Large-Scale Image Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 73,
+                "text": "This work investigates the effect of the convolutional network depth on its accuracy in the large-scale image recognition setting using an architecture with very small convolution filters, which shows that a significant improvement on the prior-art configurations can be achieved by pushing the depth to 16-19 weight layers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1844940337"
+                        ],
+                        "name": "Yukun Zhu",
+                        "slug": "Yukun-Zhu",
+                        "structuredName": {
+                            "firstName": "Yukun",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yukun Zhu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3450996"
+                        ],
+                        "name": "Ryan Kiros",
+                        "slug": "Ryan-Kiros",
+                        "structuredName": {
+                            "firstName": "Ryan",
+                            "lastName": "Kiros",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ryan Kiros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1804104"
+                        ],
+                        "name": "R. Zemel",
+                        "slug": "R.-Zemel",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Zemel",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Zemel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145124475"
+                        ],
+                        "name": "R. Salakhutdinov",
+                        "slug": "R.-Salakhutdinov",
+                        "structuredName": {
+                            "firstName": "Ruslan",
+                            "lastName": "Salakhutdinov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Salakhutdinov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2422559"
+                        ],
+                        "name": "R. Urtasun",
+                        "slug": "R.-Urtasun",
+                        "structuredName": {
+                            "firstName": "Raquel",
+                            "lastName": "Urtasun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Urtasun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143805211"
+                        ],
+                        "name": "A. Torralba",
+                        "slug": "A.-Torralba",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Torralba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Torralba"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37895334"
+                        ],
+                        "name": "S. Fidler",
+                        "slug": "S.-Fidler",
+                        "structuredName": {
+                            "firstName": "Sanja",
+                            "lastName": "Fidler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Fidler"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 62
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al. (2015), Socher et al. (2014) use a rank loss to learn the joint visual-semantic embedding."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 223,
+                                "start": 206
+                            }
+                        ],
+                        "text": "Learning such embeddings using powerful neural networks has led to significant advancements in image-caption retrieval and generation Kiros et al. (2014); Karpathy & Fei-Fei (2015), video-to-text alignment Zhu et al. (2015), and question-answering Malinowski et al. (2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6866988,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0e6824e137847be0599bb0032e37042ed2ef5045",
+            "isKey": false,
+            "numCitedBy": 1418,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Books are a rich source of both fine-grained information, how a character, an object or a scene looks like, as well as high-level semantics, what someone is thinking, feeling and how these states evolve through a story. This paper aims to align books to their movie releases in order to provide rich descriptive explanations for visual content that go semantically far beyond the captions available in the current datasets. To align movies and books we propose a neural sentence embedding that is trained in an unsupervised way from a large corpus of books, as well as a video-text neural embedding for computing similarities between movie clips and sentences in the book. We propose a context-aware CNN to combine information from multiple sources. We demonstrate good quantitative performance for movie/book alignment and show several qualitative examples that showcase the diversity of tasks our model can be used for."
+            },
+            "slug": "Aligning-Books-and-Movies:-Towards-Story-Like-by-Zhu-Kiros",
+            "title": {
+                "fragments": [],
+                "text": "Aligning Books and Movies: Towards Story-Like Visual Explanations by Watching Movies and Reading Books"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "To align movies and books, a neural sentence embedding that is trained in an unsupervised way from a large corpus of books, as well as a video-text neural embedding for computing similarities between movie clips and sentences in the book are proposed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2015 IEEE International Conference on Computer Vision (ICCV)"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3451681"
+                        ],
+                        "name": "Aviv Eisenschtat",
+                        "slug": "Aviv-Eisenschtat",
+                        "structuredName": {
+                            "firstName": "Aviv",
+                            "lastName": "Eisenschtat",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aviv Eisenschtat"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145128145"
+                        ],
+                        "name": "Lior Wolf",
+                        "slug": "Lior-Wolf",
+                        "structuredName": {
+                            "firstName": "Lior",
+                            "lastName": "Wolf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lior Wolf"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 7891208,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2616e0fbce43362a338acedcbb5cd80db7bbb7e5",
+            "isKey": false,
+            "numCitedBy": 135,
+            "numCiting": 60,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Linking two data sources is a basic building block in numerous computer vision problems. Canonical Correlation Analysis (CCA) achieves this by utilizing a linear optimizer in order to maximize the correlation between the two views. Recent work makes use of non-linear models, including deep learning techniques, that optimize the CCA loss in some feature space. In this paper, we introduce a novel, bi-directional neural network architecture for the task of matching vectors from two data sources. Our approach employs two tied neural network channels that project the two views into a common, maximally correlated space using the Euclidean loss. We show a direct link between the correlation-based loss and Euclidean loss, enabling the use of Euclidean loss for correlation maximization. To overcome common Euclidean regression optimization problems, we modify well-known techniques to our problem, including batch normalization and dropout. We show state of the art results on a number of computer vision matching tasks including MNIST image matching and sentence-image matching on the Flickr8k, Flickr30k and COCO datasets."
+            },
+            "slug": "Linking-Image-and-Text-with-2-Way-Nets-Eisenschtat-Wolf",
+            "title": {
+                "fragments": [],
+                "text": "Linking Image and Text with 2-Way Nets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A novel, bi-directional neural network architecture for the task of matching vectors from two data sources, enabling the use of Euclidean loss for correlation maximization and showing state of the art results on a number of computer vision matching tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34758272"
+                        ],
+                        "name": "Hyeonseob Nam",
+                        "slug": "Hyeonseob-Nam",
+                        "structuredName": {
+                            "firstName": "Hyeonseob",
+                            "lastName": "Nam",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hyeonseob Nam"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2577039"
+                        ],
+                        "name": "Jung-Woo Ha",
+                        "slug": "Jung-Woo-Ha",
+                        "structuredName": {
+                            "firstName": "Jung-Woo",
+                            "lastName": "Ha",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jung-Woo Ha"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2116929708"
+                        ],
+                        "name": "Jeonghee Kim",
+                        "slug": "Jeonghee-Kim",
+                        "structuredName": {
+                            "firstName": "Jeonghee",
+                            "lastName": "Kim",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeonghee Kim"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 144,
+                                "start": 127
+                            }
+                        ],
+                        "text": "Works such as Karpathy & Fei-Fei (2015), Socher et al. (2014), Vendrov et al. (2015), Wang et al. (2017), Huang et al. (2016), Nam et al. (2016) use a similar loss to optimize more sophisticated models."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 60
+                            }
+                        ],
+                        "text": "An attention mechanism on both image and caption is used by Nam et al. (2016), where the authors sequentially and selectively focus on a subset of words and image regions to compute the similarity."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 945386,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f651593fa6c83d717fc961482696a53b6fca5ab5",
+            "isKey": false,
+            "numCitedBy": 469,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose Dual Attention Networks (DANs) which jointly leverage visual and textual attention mechanisms to capture fine-grained interplay between vision and language. DANs attend to specific regions in images and words in text through multiple steps and gather essential information from both modalities. Based on this framework, we introduce two types of DANs for multimodal reasoning and matching, respectively. The reasoning model allows visual and textual attentions to steer each other during collaborative inference, which is useful for tasks such as Visual Question Answering (VQA). In addition, the matching model exploits the two attention mechanisms to estimate the similarity between images and sentences by focusing on their shared semantics. Our extensive experiments validate the effectiveness of DANs in combining vision and language, achieving the state-of-the-art performance on public benchmarks for VQA and image-text matching."
+            },
+            "slug": "Dual-Attention-Networks-for-Multimodal-Reasoning-Nam-Ha",
+            "title": {
+                "fragments": [],
+                "text": "Dual Attention Networks for Multimodal Reasoning and Matching"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 76,
+                "text": "This work proposes Dual Attention Networks which jointly leverage visual and textual attention mechanisms to capture fine-grained interplay between vision and language and introduces two types of DANs for multimodal reasoning and matching, respectively."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33493200"
+                        ],
+                        "name": "Tsung-Yi Lin",
+                        "slug": "Tsung-Yi-Lin",
+                        "structuredName": {
+                            "firstName": "Tsung-Yi",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tsung-Yi Lin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145854440"
+                        ],
+                        "name": "M. Maire",
+                        "slug": "M.-Maire",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Maire",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Maire"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50172592"
+                        ],
+                        "name": "Serge J. Belongie",
+                        "slug": "Serge-J.-Belongie",
+                        "structuredName": {
+                            "firstName": "Serge",
+                            "lastName": "Belongie",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Serge J. Belongie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48966748"
+                        ],
+                        "name": "James Hays",
+                        "slug": "James-Hays",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Hays",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Hays"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690922"
+                        ],
+                        "name": "P. Perona",
+                        "slug": "P.-Perona",
+                        "structuredName": {
+                            "firstName": "Pietro",
+                            "lastName": "Perona",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Perona"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1770537"
+                        ],
+                        "name": "D. Ramanan",
+                        "slug": "D.-Ramanan",
+                        "structuredName": {
+                            "firstName": "Deva",
+                            "lastName": "Ramanan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ramanan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3127283"
+                        ],
+                        "name": "Piotr Doll\u00e1r",
+                        "slug": "Piotr-Doll\u00e1r",
+                        "structuredName": {
+                            "firstName": "Piotr",
+                            "lastName": "Doll\u00e1r",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Piotr Doll\u00e1r"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699161"
+                        ],
+                        "name": "C. L. Zitnick",
+                        "slug": "C.-L.-Zitnick",
+                        "structuredName": {
+                            "firstName": "C.",
+                            "lastName": "Zitnick",
+                            "middleNames": [
+                                "Lawrence"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. L. Zitnick"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 54
+                            }
+                        ],
+                        "text": "We evaluate our method on the Microsoft COCO dataset (Lin et al. (2014b)) and the Flickr30K dataset (Young et al. (2014))."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 30,
+                                "start": 12
+                            }
+                        ],
+                        "text": "Older work (Lin et al. (2014a)) performed matching between words and objects based on classification scores."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14113767,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "71b7178df5d2b112d07e45038cb5637208659ff7",
+            "isKey": false,
+            "numCitedBy": 19778,
+            "numCiting": 59,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new dataset with the goal of advancing the state-of-the-art in object recognition by placing the question of object recognition in the context of the broader question of scene understanding. This is achieved by gathering images of complex everyday scenes containing common objects in their natural context. Objects are labeled using per-instance segmentations to aid in precise object localization. Our dataset contains photos of 91 objects types that would be easily recognizable by a 4 year old. With a total of 2.5 million labeled instances in 328k images, the creation of our dataset drew upon extensive crowd worker involvement via novel user interfaces for category detection, instance spotting and instance segmentation. We present a detailed statistical analysis of the dataset in comparison to PASCAL, ImageNet, and SUN. Finally, we provide baseline performance analysis for bounding box and segmentation detection results using a Deformable Parts Model."
+            },
+            "slug": "Microsoft-COCO:-Common-Objects-in-Context-Lin-Maire",
+            "title": {
+                "fragments": [],
+                "text": "Microsoft COCO: Common Objects in Context"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 91,
+                "text": "A new dataset with the goal of advancing the state-of-the-art in object recognition by placing the question of object recognition in the context of the broader question of scene understanding by gathering images of complex everyday scenes containing common objects in their natural context."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47316088"
+                        ],
+                        "name": "Priya Goyal",
+                        "slug": "Priya-Goyal",
+                        "structuredName": {
+                            "firstName": "Priya",
+                            "lastName": "Goyal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Priya Goyal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3127283"
+                        ],
+                        "name": "Piotr Doll\u00e1r",
+                        "slug": "Piotr-Doll\u00e1r",
+                        "structuredName": {
+                            "firstName": "Piotr",
+                            "lastName": "Doll\u00e1r",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Piotr Doll\u00e1r"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2983898"
+                        ],
+                        "name": "Ross B. Girshick",
+                        "slug": "Ross-B.-Girshick",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Girshick",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ross B. Girshick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34837514"
+                        ],
+                        "name": "P. Noordhuis",
+                        "slug": "P.-Noordhuis",
+                        "structuredName": {
+                            "firstName": "Pieter",
+                            "lastName": "Noordhuis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Noordhuis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2065373815"
+                        ],
+                        "name": "Lukasz Wesolowski",
+                        "slug": "Lukasz-Wesolowski",
+                        "structuredName": {
+                            "firstName": "Lukasz",
+                            "lastName": "Wesolowski",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lukasz Wesolowski"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717990"
+                        ],
+                        "name": "Aapo Kyrola",
+                        "slug": "Aapo-Kyrola",
+                        "structuredName": {
+                            "firstName": "Aapo",
+                            "lastName": "Kyrola",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aapo Kyrola"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3609856"
+                        ],
+                        "name": "Andrew Tulloch",
+                        "slug": "Andrew-Tulloch",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Tulloch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Tulloch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39978391"
+                        ],
+                        "name": "Yangqing Jia",
+                        "slug": "Yangqing-Jia",
+                        "structuredName": {
+                            "firstName": "Yangqing",
+                            "lastName": "Jia",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yangqing Jia"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39353098"
+                        ],
+                        "name": "Kaiming He",
+                        "slug": "Kaiming-He",
+                        "structuredName": {
+                            "firstName": "Kaiming",
+                            "lastName": "He",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kaiming He"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 53,
+                                "start": 50
+                            }
+                        ],
+                        "text": "Thus the gradient updates are no longer noisy and SGD may not be capable of jumping out of local minima."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 23
+                            }
+                        ],
+                        "text": "Note that since we use SGD to learn our parameters, we take the max over each mini-batch (this is similar to Kiros et al. (2014) who compute the sum in Eq."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 158,
+                                "start": 155
+                            }
+                        ],
+                        "text": "The main difference between the two formulations is thus the number of negative triplets that affect the loss at each step of stochastic gradient descent (SGD)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 94,
+                                "start": 75
+                            }
+                        ],
+                        "text": "A similar difficulty is observed when large mini-batches are used for SGD (Goyal et al. (2017))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13905106,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0d57ba12a6d958e178d83be4c84513f7e42b24e5",
+            "isKey": true,
+            "numCitedBy": 2229,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Deep learning thrives with large neural networks and large datasets. However, larger networks and larger datasets result in longer training times that impede research and development progress. Distributed synchronous SGD offers a potential solution to this problem by dividing SGD minibatches over a pool of parallel workers. Yet to make this scheme efficient, the per-worker workload must be large, which implies nontrivial growth in the SGD minibatch size. In this paper, we empirically show that on the ImageNet dataset large minibatches cause optimization difficulties, but when these are addressed the trained networks exhibit good generalization. Specifically, we show no loss of accuracy when training with large minibatch sizes up to 8192 images. To achieve this result, we adopt a hyper-parameter-free linear scaling rule for adjusting learning rates as a function of minibatch size and develop a new warmup scheme that overcomes optimization challenges early in training. With these simple techniques, our Caffe2-based system trains ResNet-50 with a minibatch size of 8192 on 256 GPUs in one hour, while matching small minibatch accuracy. Using commodity hardware, our implementation achieves ~90% scaling efficiency when moving from 8 to 256 GPUs. Our findings enable training visual recognition models on internet-scale data with high efficiency."
+            },
+            "slug": "Accurate,-Large-Minibatch-SGD:-Training-ImageNet-in-Goyal-Doll\u00e1r",
+            "title": {
+                "fragments": [],
+                "text": "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper empirically show that on the ImageNet dataset large minibatches cause optimization difficulties, but when these are addressed the trained networks exhibit good generalization and enable training visual recognition models on internet-scale data with high efficiency."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2354728"
+                        ],
+                        "name": "A. Karpathy",
+                        "slug": "A.-Karpathy",
+                        "structuredName": {
+                            "firstName": "Andrej",
+                            "lastName": "Karpathy",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Karpathy"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827616"
+                        ],
+                        "name": "Quoc V. Le",
+                        "slug": "Quoc-V.-Le",
+                        "structuredName": {
+                            "firstName": "Quoc",
+                            "lastName": "Le",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Quoc V. Le"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 81
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al. (2015), Socher et al. (2014) use a rank loss to learn the joint visual-semantic embedding."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 41
+                            }
+                        ],
+                        "text": "Works such as Karpathy & Fei-Fei (2015), Socher et al. (2014), Vendrov et al. (2015), Wang et al. (2017), Huang et al. (2016), Nam et al. (2016) use a similar loss to optimize more sophisticated models."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 63,
+                                "start": 43
+                            }
+                        ],
+                        "text": "The rank loss used in Kiros et al. (2014), Socher et al. (2014), and Karpathy & Fei-Fei (2015) is defined as follows:\n`(i, c) = \u2211 c\u0302 [\u03b1\u2212 s(i, c) + s(i, c\u0302)]+ + \u2211 i\u0302 [\u03b1\u2212 s(i, c) + s(\u0302i, c)]+ (3)\nwhere \u03b1 represents the margin, c\u0302 denotes a negative caption for the query image i, and i\u0302 a negative\u2026"
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 2317858,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0ca7d208ff8d81377e0eaa9723820aeae7a7322d",
+            "isKey": false,
+            "numCitedBy": 784,
+            "numCiting": 56,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Previous work on Recursive Neural Networks (RNNs) shows that these models can produce compositional feature vectors for accurately representing and classifying sentences or images. However, the sentence vectors of previous models cannot accurately represent visually grounded meaning. We introduce the DT-RNN model which uses dependency trees to embed sentences into a vector space in order to retrieve images that are described by those sentences. Unlike previous RNN-based models which use constituency trees, DT-RNNs naturally focus on the action and agents in a sentence. They are better able to abstract from the details of word order and syntactic expression. DT-RNNs outperform other recursive and recurrent neural networks, kernelized CCA and a bag-of-words baseline on the tasks of finding an image that fits a sentence description and vice versa. They also give more similar representations to sentences that describe the same image."
+            },
+            "slug": "Grounded-Compositional-Semantics-for-Finding-and-Socher-Karpathy",
+            "title": {
+                "fragments": [],
+                "text": "Grounded Compositional Semantics for Finding and Describing Images with Sentences"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The DT-RNN model, which uses dependency trees to embed sentences into a vector space in order to retrieve images that are described by those sentences, outperform other recursive and recurrent neural networks, kernelized CCA and a bag-of-words baseline on the tasks of finding an image that fits a sentence description and vice versa."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Transactions of the Association for Computational Linguistics"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1726807"
+                        ],
+                        "name": "Diederik P. Kingma",
+                        "slug": "Diederik-P.-Kingma",
+                        "structuredName": {
+                            "firstName": "Diederik",
+                            "lastName": "Kingma",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Diederik P. Kingma"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2503659"
+                        ],
+                        "name": "Jimmy Ba",
+                        "slug": "Jimmy-Ba",
+                        "structuredName": {
+                            "firstName": "Jimmy",
+                            "lastName": "Ba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jimmy Ba"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 230,
+                                "start": 80
+                            }
+                        ],
+                        "text": "We define the similarity measure s(i, c) in the joint embedding space following Kiros et al. (2014). Let \u03c6(i; \u03b8\u03c6) \u2208 R\u03c6 be the representation of the image (e.g. the representation before logits in VGG19 Simonyan & Zisserman (2014) or ResNet152 He et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 410,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al. (2015), Socher et al. (2014) use a rank loss to learn the joint visual-semantic embedding. Klein et al. (2015) and Eisenschtat & Wolf (2016) use Canonical Correlation Analysis (CCA) to compute a linear projection for two views to a common space where the correlation of the transformed views is maximized. Older work (Lin et al. (2014a)) performed matching between words and objects based on classification scores."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 80
+                            }
+                        ],
+                        "text": "We define the similarity measure s(i, c) in the joint embedding space following Kiros et al. (2014). Let \u03c6(i; \u03b8\u03c6) \u2208 R\u03c6 be the representation of the image (e."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 693,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al. (2015), Socher et al. (2014) use a rank loss to learn the joint visual-semantic embedding. Klein et al. (2015) and Eisenschtat & Wolf (2016) use Canonical Correlation Analysis (CCA) to compute a linear projection for two views to a common space where the correlation of the transformed views is maximized. Older work (Lin et al. (2014a)) performed matching between words and objects based on classification scores. Recent methods that learn visual-semantic embeddings propose new model architectures for computing the embedding vectors or computing the similarity score between the embedding vectors. Wang et al. (2017) propose an embedding network to fully replace the similarity measure used for the rank loss."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al. (2015), Socher et al. (2014) use a rank loss to learn the joint visual-semantic embedding."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 184,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al. (2015), Socher et al. (2014) use a rank loss to learn the joint visual-semantic embedding. Klein et al. (2015) and Eisenschtat & Wolf (2016) use Canonical Correlation Analysis (CCA) to compute a linear projection for two views to a common space where the correlation of the transformed views is maximized."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 864,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Works such as Kiros et al. (2014), Karpathy & Fei-Fei (2015), Zhu et al. (2015), Socher et al. (2014) use a rank loss to learn the joint visual-semantic embedding. Klein et al. (2015) and Eisenschtat & Wolf (2016) use Canonical Correlation Analysis (CCA) to compute a linear projection for two views to a common space where the correlation of the transformed views is maximized. Older work (Lin et al. (2014a)) performed matching between words and objects based on classification scores. Recent methods that learn visual-semantic embeddings propose new model architectures for computing the embedding vectors or computing the similarity score between the embedding vectors. Wang et al. (2017) propose an embedding network to fully replace the similarity measure used for the rank loss. An attention mechanism on both image and caption is used by Nam et al. (2016), where the authors sequentially and selectively focus on a subset of words and image regions to compute the similarity."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6628106,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "isKey": true,
+            "numCitedBy": 90052,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm."
+            },
+            "slug": "Adam:-A-Method-for-Stochastic-Optimization-Kingma-Ba",
+            "title": {
+                "fragments": [],
+                "text": "Adam: A Method for Stochastic Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "This work introduces Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments, and provides a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2052690705"
+                        ],
+                        "name": "Peter Young",
+                        "slug": "Peter-Young",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Young",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Peter Young"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2068187980"
+                        ],
+                        "name": "Alice Lai",
+                        "slug": "Alice-Lai",
+                        "structuredName": {
+                            "firstName": "Alice",
+                            "lastName": "Lai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alice Lai"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2170746"
+                        ],
+                        "name": "M. Hodosh",
+                        "slug": "M.-Hodosh",
+                        "structuredName": {
+                            "firstName": "Micah",
+                            "lastName": "Hodosh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hodosh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3118681"
+                        ],
+                        "name": "J. Hockenmaier",
+                        "slug": "J.-Hockenmaier",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Hockenmaier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Hockenmaier"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 120,
+                                "start": 101
+                            }
+                        ],
+                        "text": "We evaluate our method on the Microsoft COCO dataset (Lin et al. (2014b)) and the Flickr30K dataset (Young et al. (2014))."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3104920,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "44040913380206991b1991daf1192942e038fe31",
+            "isKey": false,
+            "numCitedBy": 1323,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose to use the visual denotations of linguistic expressions (i.e. the set of images they describe) to define novel denotational similarity metrics, which we show to be at least as beneficial as distributional similarities for two tasks that require semantic inference. To compute these denotational similarities, we construct a denotation graph, i.e. a subsumption hierarchy over constituents and their denotations, based on a large corpus of 30K images and 150K descriptive captions."
+            },
+            "slug": "From-image-descriptions-to-visual-denotations:-New-Young-Lai",
+            "title": {
+                "fragments": [],
+                "text": "From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 86,
+                "text": "This work proposes to use the visual denotations of linguistic expressions to define novel denotational similarity metrics, which are shown to be at least as beneficial as distributional similarities for two tasks that require semantic inference."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "TACL"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50136780"
+                        ],
+                        "name": "Milton C. Chew",
+                        "slug": "Milton-C.-Chew",
+                        "structuredName": {
+                            "firstName": "Milton",
+                            "lastName": "Chew",
+                            "middleNames": [
+                                "C."
+                            ],
+                            "suffix": "Jr."
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Milton C. Chew"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 85
+                            }
+                        ],
+                        "text": "A generalization of the central limit theorem to the truncated normal distributions (Johnson et al. (1970)) tells us that if there are enough samples, the distribution of the sum of the random variables will be normal."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 122828566,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "94fb8e97839f3dd4804e94008b2a03fe2841677d",
+            "isKey": false,
+            "numCitedBy": 270,
+            "numCiting": 1,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Distributions-in-Statistics:-Continuous-Univariate-Chew",
+            "title": {
+                "fragments": [],
+                "text": "Distributions in Statistics: Continuous Univariate Distributions-1 and 2"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1971
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 15,
+            "methodology": 11
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 19,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/VSE++:-Improved-Visual-Semantic-Embeddings-Faghri-Fleet/faa093a53b83f0e9c35a0bfbcacee0a16f8eb6d1?sort=total-citations"
+}

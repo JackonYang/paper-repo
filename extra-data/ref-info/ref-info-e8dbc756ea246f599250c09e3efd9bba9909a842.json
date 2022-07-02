@@ -1,0 +1,3053 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145970060"
+                        ],
+                        "name": "Ahmet Aker",
+                        "slug": "Ahmet-Aker",
+                        "structuredName": {
+                            "firstName": "Ahmet",
+                            "lastName": "Aker",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ahmet Aker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1718590"
+                        ],
+                        "name": "R. Gaizauskas",
+                        "slug": "R.-Gaizauskas",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Gaizauskas",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Gaizauskas"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 151,
+                                "start": 125
+                            }
+                        ],
+                        "text": "This intuition suggests that rather than representing object type conceptual models via corpus-derived language models as do Aker and Gaizauskas (2009), we do so instead using corpus-derived dependency patterns."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 36
+                            }
+                        ],
+                        "text": "The original summarizer reported in Aker and Gaizauskas (2009) uses the following features to score the sentences:\n\u2022 querySimilarity: Sentence similarity to the query (toponym) (cosine similarity over the vector representation of the sentence and the query)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 43
+                            }
+                        ],
+                        "text": "Following the general approach proposed by Aker and Gaizauskas (2009), in this paper we describe a method for automatic image captioning or caption enhancement starting with only a scene or subject type and a set of place names pertaining to an image \u2013 for example \u3008church, {St.\nPaul\u2019s,London}\u3009."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Aker and Gaizauskas (2009) have argued that humans appear to have a conceptual model of what is salient regarding a certain object type (e.g. church, bridge, etc.) and that this model informs their choice of what to say when describing an instance of this type."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 45
+                            }
+                        ],
+                        "text": "To compute the final score for each sentence Aker and Gaizauskas (2009) use a linear function with weighted features:\nSscore = ( n\u2211\ni=1\nfeaturei \u2217 weighti) (2)\nWe use the same approach, but whereas the feature weights they use are experimentally set rather than learned, we learn the weights using\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 208,
+                                "start": 182
+                            }
+                        ],
+                        "text": "When used as the sole feature for sentence ranking, dependency pattern models (DpMSim) produced summaries with higher ROUGE scores than those obtained using the features reported in Aker and Gaizauskas (2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Aker and Gaizauskas (2009) experimented with uni-gram and bi-gram language models to capture the features commonly used when describing an object type and used these to bias the sentence selection of the summarizer towards the sentences that contain these features."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 120,
+                                "start": 94
+                            }
+                        ],
+                        "text": "This sorted list is then used by the summarizer to generate the final summary as described in Aker and Gaizauskas (2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 62
+                            }
+                        ],
+                        "text": "We adopted the same overall approach to summarization used by Aker and Gaizauskas (2009) to generate the image descriptions."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Aker and Gaizauskas (2009) define an object type corpus as a collection of texts about a specific static object type such as church, bridge, etc. Objects can be named locations such as Eiffel Tower."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 68,
+                                "start": 42
+                            }
+                        ],
+                        "text": "Since our work aims to extend the work of Aker and Gaizauskas (2009) we reproduce their experiments with n-gram language models in the current setting so as to permit accurate comparison."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 166,
+                                "start": 140
+                            }
+                        ],
+                        "text": "We use DepCat to generate an automated summary by first including sentences containing the category \u201ctype\u201d, then \u201cyear\u201d and so on until the\n3In Aker and Gaizauskas (2009) this feature is called modelSimilarity.\nsummary length is violated."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15743676,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "63eebb0e38af403580b12c5ad8bd719221691d1f",
+            "isKey": false,
+            "numCitedBy": 16,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a novel approach to automatic captioning of toponym-referenced images. The automatic captioning procedure works by summarizing multiple web-documents that contain information related to an image\u2019s location. Our summarizer can generate both query-based and language model-biased multidocument summaries. The models are created from large numbers of existing articles pertaining to places of the same \u201cobject type\u201d. Evaluation relative to human written captions shows that when language models are used to bias the summarizer the summaries score more highly than the non-biased ones."
+            },
+            "slug": "Summary-Generation-for-Toponym-referenced-Images-Aker-Gaizauskas",
+            "title": {
+                "fragments": [],
+                "text": "Summary Generation for Toponym-referenced Images using Object Type Language Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A novel approach to automatic captioning of toponym-referenced images by summarizing multiple web-documents that contain information related to an image\u2019s location that can generate both query-based and language model-biased multidocument summaries."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "RANLP"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145970060"
+                        ],
+                        "name": "Ahmet Aker",
+                        "slug": "Ahmet-Aker",
+                        "structuredName": {
+                            "firstName": "Ahmet",
+                            "lastName": "Aker",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ahmet Aker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1718590"
+                        ],
+                        "name": "R. Gaizauskas",
+                        "slug": "R.-Gaizauskas",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Gaizauskas",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Gaizauskas"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2887802,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e2246e1023aacc0b0f66df542236e0c630ae5553",
+            "isKey": false,
+            "numCitedBy": 18,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "At present there is no publicly available data set to evaluate the performance of different summarization systems on the task of generating location-related extended image captions. In this paper we describe a corpus of human generated model captions in English and German. We have collected 932 model summaries in English from existing image descriptions and machine translated these summaries into German. We also performed post-editing on the translated German summaries to ensure high quality. Both English and German summaries are evaluated using a readability assessment as in DUC and TAC to assess their quality. Our model summaries performed similar to the ones reported in Dang (2005) and thus are suitable for evaluating automatic summarization systems on the task of generating image descriptions for location related images. In addition, we also investigated whether post-editing of machine-translated model summaries is necessary for automated ROUGE evaluations. We found a high correlation in ROUGE scores between post-edited and non-post-edited model summaries which indicates that the expensive process of post-editing is not necessary."
+            },
+            "slug": "Model-Summaries-for-Location-related-Images-Aker-Gaizauskas",
+            "title": {
+                "fragments": [],
+                "text": "Model Summaries for Location-related Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A corpus of human generated model captions in English and German is described and it is found that a high correlation in ROUGE scores between post-edited and non-post-edited model summaries which indicates that the expensive process of post-editing is not necessary."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "LREC"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717629"
+                        ],
+                        "name": "Yansong Feng",
+                        "slug": "Yansong-Feng",
+                        "structuredName": {
+                            "firstName": "Yansong",
+                            "lastName": "Feng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yansong Feng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1747893"
+                        ],
+                        "name": "Mirella Lapata",
+                        "slug": "Mirella-Lapata",
+                        "structuredName": {
+                            "firstName": "Mirella",
+                            "lastName": "Lapata",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mirella Lapata"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16408584,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f6ffc5d4e234c0f4f37b00492ae33cb5dfe65765",
+            "isKey": false,
+            "numCitedBy": 83,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The availability of databases of images labeled with keywords is necessary for developing and evaluating image annotation models. Dataset collection is however a costly and time consuming task. In this paper we exploit the vast resource of images available on the web. We create a database of pictures that are naturally embedded into news articles and propose to use their captions as a proxy for annotation keywords. Experimental results show that an image annotation model can be developed on this dataset alone without the overhead of manual annotation. We also demonstrate that the news article associated with the picture can be used to boost image annotation performance."
+            },
+            "slug": "Automatic-Image-Annotation-Using-Auxiliary-Text-Feng-Lapata",
+            "title": {
+                "fragments": [],
+                "text": "Automatic Image Annotation Using Auxiliary Text Information"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper creates a database of pictures that are naturally embedded into news articles and proposes to use their captions as a proxy for annotation keywords, showing that an image annotation model can be developed on this dataset alone without the overhead of manual annotation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48713956"
+                        ],
+                        "name": "R. Purves",
+                        "slug": "R.-Purves",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Purves",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Purves"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "31923954"
+                        ],
+                        "name": "A. Edwardes",
+                        "slug": "A.-Edwardes",
+                        "structuredName": {
+                            "firstName": "Alistair",
+                            "lastName": "Edwardes",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Edwardes"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144721996"
+                        ],
+                        "name": "M. Sanderson",
+                        "slug": "M.-Sanderson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Sanderson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Sanderson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1808423"
+                        ],
+                        "name": "G. Csurka",
+                        "slug": "G.-Csurka",
+                        "structuredName": {
+                            "firstName": "Gabriela",
+                            "lastName": "Csurka",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Csurka"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 167,
+                                "start": 147
+                            }
+                        ],
+                        "text": "However, Marsch & White (2003) argue that the content of an image and its immediate text have little semantic agreement and this can, according to Purves et al. (2008), be misleading to image retrieval."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10837960,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a1523b959a9edb0516538f2f3284205798d560ca",
+            "isKey": false,
+            "numCitedBy": 27,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Image retrieval, using either content or text-based techniques, does \nnot match up to the current quality of standard text retrieval. One possible \nreason for this mismatch is the semantic gap \u2013 the terms by which images are \nindexed do not accord with those imagined by users querying image databases. \nIn this paper we set out to describe how geography might help to index the \nwhere facet of the Pansofsky-Shatford matrix, which has previously been \nshown to accord well with the types of queries users make. We illustrate these \nideas with existing (e.g. identifying place names associated with a set of \ncoordinates) and novel (e.g. describing images using land cover data) \ntechniques to describe images and contend that such methods will become \ncentral as increasing numbers of images become georeferenced."
+            },
+            "slug": "Describing-the-where-\u2013-improving-image-annotation-Purves-Edwardes",
+            "title": {
+                "fragments": [],
+                "text": "Describing the where \u2013 improving image annotation and search through geography"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper describes how geography might help to index the where facet of the Pansofsky-Shatford matrix and argues that such methods will become central as increasing numbers of images become georeferenced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2117800912"
+                        ],
+                        "name": "X. Fan",
+                        "slug": "X.-Fan",
+                        "structuredName": {
+                            "firstName": "Xin",
+                            "lastName": "Fan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Fan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145970060"
+                        ],
+                        "name": "Ahmet Aker",
+                        "slug": "Ahmet-Aker",
+                        "structuredName": {
+                            "firstName": "Ahmet",
+                            "lastName": "Aker",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ahmet Aker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1686534"
+                        ],
+                        "name": "Martin Tomko",
+                        "slug": "Martin-Tomko",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Tomko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Martin Tomko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1970110"
+                        ],
+                        "name": "P. Smart",
+                        "slug": "P.-Smart",
+                        "structuredName": {
+                            "firstName": "Philip",
+                            "lastName": "Smart",
+                            "middleNames": [
+                                "David"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Smart"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144721996"
+                        ],
+                        "name": "M. Sanderson",
+                        "slug": "M.-Sanderson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Sanderson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Sanderson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1718590"
+                        ],
+                        "name": "R. Gaizauskas",
+                        "slug": "R.-Gaizauskas",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Gaizauskas",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Gaizauskas"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 878037,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "84598caf8981fbf59c5156ac8c1a5fed10a348b6",
+            "isKey": false,
+            "numCitedBy": 12,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Increasing quantities of images are indexed by GPS coordinates. However, it is difficult to search within such pictures. In this paper, we propose a solution to automatically generate captions (including place name, keywords and summary) from the web content based on image location information. The richer descriptions have great potential to help image organisation, indexing and search. The solution is realised through the synergetic techniques from Geographic Information System, Web IR and multi-document summarisation."
+            },
+            "slug": "Automatic-image-captioning-from-the-web-for-GPS-Fan-Aker",
+            "title": {
+                "fragments": [],
+                "text": "Automatic image captioning from the web for GPS photographs"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 55,
+                "text": "This paper proposes a solution to automatically generate captions (including place name, keywords and summary) from the web content based on image location information via synergetic techniques from Geographic Information System, Web IR and multi-document summarisation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MIR '10"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1797588"
+                        ],
+                        "name": "K. Deschacht",
+                        "slug": "K.-Deschacht",
+                        "structuredName": {
+                            "firstName": "Koen",
+                            "lastName": "Deschacht",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Deschacht"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145446752"
+                        ],
+                        "name": "Marie-Francine Moens",
+                        "slug": "Marie-Francine-Moens",
+                        "structuredName": {
+                            "firstName": "Marie-Francine",
+                            "lastName": "Moens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marie-Francine Moens"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10201935,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5d994a18440983067612ecc47a71b0f6bef808fe",
+            "isKey": false,
+            "numCitedBy": 87,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel approach to automatically annotate images using associated text. We detect and classify all entities (persons and objects) in the text after which we determine the salience (the importance of an entity in a text) and visualness (the extent to which an entity can be perceived visually) of these entities. We combine these measures to compute the probability that an entity is present in the image. The suitability of our approach was successfully tested on 50 image-text pairs of Yahoo! News."
+            },
+            "slug": "Text-Analysis-for-Automatic-Image-Annotation-Deschacht-Moens",
+            "title": {
+                "fragments": [],
+                "text": "Text Analysis for Automatic Image Annotation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "A novel approach to automatically annotate images using associated text that detects and classify all entities in the text and combines these measures to compute the probability that an entity is present in the image."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1781574"
+                        ],
+                        "name": "Chin-Yew Lin",
+                        "slug": "Chin-Yew-Lin",
+                        "structuredName": {
+                            "firstName": "Chin-Yew",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chin-Yew Lin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 84,
+                                "start": 73
+                            }
+                        ],
+                        "text": "To evaluate our approach we used two different assessment methods: ROUGE (Lin, 2004) and manual readability."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 128
+                            }
+                        ],
+                        "text": "In the first assessment we compared the automatically generated summaries against model summaries written by humans using ROUGE (Lin, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 964287,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "60b05f32c32519a809f21642ef1eb3eaf3848008",
+            "isKey": false,
+            "numCitedBy": 6943,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "ROUGE stands for Recall-Oriented Understudy for Gisting Evaluation. It includes measures to automatically determine the quality of a summary by comparing it to other (ideal) summaries created by humans. The measures count the number of overlapping units such as n-gram, word sequences, and word pairs between the computer-generated summary to be evaluated and the ideal summaries created by humans. This paper introduces four different ROUGE measures: ROUGE-N, ROUGE-L, ROUGE-W, and ROUGE-S included in the ROUGE summarization evaluation package and their evaluations. Three of them have been used in the Document Understanding Conference (DUC) 2004, a large-scale summarization evaluation sponsored by NIST."
+            },
+            "slug": "ROUGE:-A-Package-for-Automatic-Evaluation-of-Lin",
+            "title": {
+                "fragments": [],
+                "text": "ROUGE: A Package for Automatic Evaluation of Summaries"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Four different RouGE measures are introduced: ROUGE-N, ROUge-L, R OUGE-W, and ROUAGE-S included in the Rouge summarization evaluation package and their evaluations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL 2004"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3139133"
+                        ],
+                        "name": "Razvan C. Bunescu",
+                        "slug": "Razvan-C.-Bunescu",
+                        "structuredName": {
+                            "firstName": "Razvan",
+                            "lastName": "Bunescu",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Razvan C. Bunescu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1797655"
+                        ],
+                        "name": "R. Mooney",
+                        "slug": "R.-Mooney",
+                        "structuredName": {
+                            "firstName": "Raymond",
+                            "lastName": "Mooney",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Mooney"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5165854,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8a8832216fa59867aab8bb98270763fc2de3d8d8",
+            "isKey": false,
+            "numCitedBy": 949,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel approach to relation extraction, based on the observation that the information required to assert a relationship between two named entities in the same sentence is typically captured by the shortest path between the two entities in the dependency graph. Experiments on extracting top-level relations from the ACE (Automated Content Extraction) newspaper corpus show that the new shortest path dependency kernel outperforms a recent approach based on dependency tree kernels."
+            },
+            "slug": "A-Shortest-Path-Dependency-Kernel-for-Relation-Bunescu-Mooney",
+            "title": {
+                "fragments": [],
+                "text": "A Shortest Path Dependency Kernel for Relation Extraction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "Experiments on extracting top-level relations from the ACE (Automated Content Extraction) newspaper corpus show that the new shortest path dependency kernel outperforms a recent approach based on dependency tree kernels."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "HLT"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145602732"
+                        ],
+                        "name": "Kobus Barnard",
+                        "slug": "Kobus-Barnard",
+                        "structuredName": {
+                            "firstName": "Kobus",
+                            "lastName": "Barnard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kobus Barnard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2446509"
+                        ],
+                        "name": "P. D. Sahin",
+                        "slug": "P.-D.-Sahin",
+                        "structuredName": {
+                            "firstName": "Pinar",
+                            "lastName": "Sahin",
+                            "middleNames": [
+                                "Duygulu"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. D. Sahin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144016256"
+                        ],
+                        "name": "D. Forsyth",
+                        "slug": "D.-Forsyth",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Forsyth",
+                            "middleNames": [
+                                "Alexander"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Forsyth"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1737568"
+                        ],
+                        "name": "N. D. Freitas",
+                        "slug": "N.-D.-Freitas",
+                        "structuredName": {
+                            "firstName": "Nando",
+                            "lastName": "Freitas",
+                            "middleNames": [
+                                "de"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. D. Freitas"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1796335"
+                        ],
+                        "name": "D. Blei",
+                        "slug": "D.-Blei",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Blei",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Blei"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694621"
+                        ],
+                        "name": "Michael I. Jordan",
+                        "slug": "Michael-I.-Jordan",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jordan",
+                            "middleNames": [
+                                "I."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael I. Jordan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 216,
+                                "start": 196
+                            }
+                        ],
+                        "text": "\u2026the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 868535,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6a26268d2ba9d34e5b59ae6e5c11a83cdca1a85e",
+            "isKey": false,
+            "numCitedBy": 1760,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new approach for modeling multi-modal data sets, focusing on the specific case of segmented images with associated text. Learning the joint distribution of image regions and words has many applications. We consider in detail predicting words associated with whole images (auto-annotation) and corresponding to particular image regions (region naming). Auto-annotation might help organize and access large collections of images. Region naming is a model of object recognition as a process of translating image regions to words, much as one might translate from one language to another. Learning the relationships between image regions and semantic correlates (words) is an interesting example of multi-modal data mining, particularly because it is typically hard to apply data mining techniques to collections of images. We develop a number of models for the joint distribution of image regions and words, including several which explicitly learn the correspondence between regions and words. We study multi-modal and correspondence extensions to Hofmann's hierarchical clustering/aspect model, a translation model adapted from statistical machine translation (Brown et al.), and a multi-modal extension to mixture of latent Dirichlet allocation (MoM-LDA). All models are assessed using a large collection of annotated images of real scenes. We study in depth the difficult problem of measuring performance. For the annotation task, we look at prediction performance on held out data. We present three alternative measures, oriented toward different types of task. Measuring the performance of correspondence methods is harder, because one must determine whether a word has been placed on the right region of an image. We can use annotation performance as a proxy measure, but accurate measurement requires hand labeled data, and thus must occur on a smaller scale. We show results using both an annotation proxy, and manually labeled data."
+            },
+            "slug": "Matching-Words-and-Pictures-Barnard-Sahin",
+            "title": {
+                "fragments": [],
+                "text": "Matching Words and Pictures"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A new approach for modeling multi-modal data sets, focusing on the specific case of segmented images with associated text, is presented, and a number of models for the joint distribution of image regions and words are developed, including several which explicitly learn the correspondence between regions and Words."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1741453"
+                        ],
+                        "name": "A. Culotta",
+                        "slug": "A.-Culotta",
+                        "structuredName": {
+                            "firstName": "Aron",
+                            "lastName": "Culotta",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Culotta"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144431938"
+                        ],
+                        "name": "Jeffrey Scott Sorensen",
+                        "slug": "Jeffrey-Scott-Sorensen",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Sorensen",
+                            "middleNames": [
+                                "Scott"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeffrey Scott Sorensen"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 7395989,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "70a2fcfc4e78e8d6db23bf2922f18dd73162b644",
+            "isKey": false,
+            "numCitedBy": 865,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We extend previous work on tree kernels to estimate the similarity between the dependency trees of sentences. Using this kernel within a Support Vector Machine, we detect and classify relations between entities in the Automatic Content Extraction (ACE) corpus of news articles. We examine the utility of different features such as Wordnet hypernyms, parts of speech, and entity types, and find that the dependency tree kernel achieves a 20% F1 improvement over a \"bag-of-words\" kernel."
+            },
+            "slug": "Dependency-Tree-Kernels-for-Relation-Extraction-Culotta-Sorensen",
+            "title": {
+                "fragments": [],
+                "text": "Dependency Tree Kernels for Relation Extraction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 94,
+                "text": "This work extends previous work on tree kernels to estimate the similarity between the dependency trees of sentences, and uses this kernel within a Support Vector Machine to detect and classify relations between entities in the Automatic Content Extraction (ACE) corpus of news articles."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1686185"
+                        ],
+                        "name": "Kiyoshi Sudo",
+                        "slug": "Kiyoshi-Sudo",
+                        "structuredName": {
+                            "firstName": "Kiyoshi",
+                            "lastName": "Sudo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kiyoshi Sudo"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714612"
+                        ],
+                        "name": "S. Sekine",
+                        "slug": "S.-Sekine",
+                        "structuredName": {
+                            "firstName": "Satoshi",
+                            "lastName": "Sekine",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Sekine"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1788050"
+                        ],
+                        "name": "R. Grishman",
+                        "slug": "R.-Grishman",
+                        "structuredName": {
+                            "firstName": "Ralph",
+                            "lastName": "Grishman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Grishman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 170,
+                                "start": 153
+                            }
+                        ],
+                        "text": "In information extraction, for instance, dependency patterns have been used to extract relevant information from text resources (Yangarber et al., 2000; Sudo et al., 2001; Culotta and Sorensen, 2004; Stevenson and Greenwood, 2005; Bunescu and Mooney, 2005; Stevenson and Greenwood, 2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 56,
+                                "start": 38
+                            }
+                        ],
+                        "text": "As with the chain model introduced by Sudo et al. (2001) our relational patterns are concentrated on the verbs in the sentences and contain n+1 words (the verb and n words in direct or indirect relation with the verb)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1412479,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "91dbb9bc3081a32b257ec7d6afe5b0259f2b7f85",
+            "isKey": false,
+            "numCitedBy": 62,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "One of the central issues for information extraction is the cost of customization from one scenario to another. Research on the automated acquisition of patterns is important for portability and scalability. In this paper, we introduce Tree-Based Pattern representation where a pattern is denoted as a path in the dependency tree of a sentence. We outline the procedure to acquire Tree-Based Patterns in Japanese from un-annotated text. The system extracts the relevant sentences from the training data based on TF/IDF scoring and the common paths in the parse tree of relevant sentences are taken as extracted patterns."
+            },
+            "slug": "Automatic-Pattern-Acquisition-for-Japanese-Sudo-Sekine",
+            "title": {
+                "fragments": [],
+                "text": "Automatic Pattern Acquisition for Japanese Information Extraction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The procedure to acquire Tree-Based Patterns in Japanese from un-annotated text is outlined and the common paths in the parse tree of relevant sentences are taken as extracted patterns."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "HLT"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145602732"
+                        ],
+                        "name": "Kobus Barnard",
+                        "slug": "Kobus-Barnard",
+                        "structuredName": {
+                            "firstName": "Kobus",
+                            "lastName": "Barnard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kobus Barnard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144016256"
+                        ],
+                        "name": "D. Forsyth",
+                        "slug": "D.-Forsyth",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Forsyth",
+                            "middleNames": [
+                                "Alexander"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Forsyth"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13121800,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4e36d141e2964817c3d926c380793e404a3a3367",
+            "isKey": false,
+            "numCitedBy": 615,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a statistical model for organizing image collections which integrates semantic information provided by associate text and visual information provided by image features. The model is very promising for information retrieval tasks such as database browsing and searching for images based on text and/or image features. Furthermore, since the model learns relationships between text and image features, it can be used for novel applications such as associating words with pictures, and unsupervised learning for object recognition."
+            },
+            "slug": "Learning-the-semantics-of-words-and-pictures-Barnard-Forsyth",
+            "title": {
+                "fragments": [],
+                "text": "Learning the semantics of words and pictures"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The model is very promising for information retrieval tasks such as database browsing and searching for images based on text and/or image features, and can be used for novel applications such as associating words with pictures, and unsupervised learning for object recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Eighth IEEE International Conference on Computer Vision. ICCV 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3209949"
+                        ],
+                        "name": "Chikashi Nobata",
+                        "slug": "Chikashi-Nobata",
+                        "structuredName": {
+                            "firstName": "Chikashi",
+                            "lastName": "Nobata",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chikashi Nobata"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714612"
+                        ],
+                        "name": "S. Sekine",
+                        "slug": "S.-Sekine",
+                        "structuredName": {
+                            "firstName": "Satoshi",
+                            "lastName": "Sekine",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Sekine"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714134"
+                        ],
+                        "name": "H. Isahara",
+                        "slug": "H.-Isahara",
+                        "structuredName": {
+                            "firstName": "Hitoshi",
+                            "lastName": "Isahara",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Isahara"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1788050"
+                        ],
+                        "name": "R. Grishman",
+                        "slug": "R.-Grishman",
+                        "structuredName": {
+                            "firstName": "Ralph",
+                            "lastName": "Grishman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Grishman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 63,
+                                "start": 43
+                            }
+                        ],
+                        "text": "We are aware only of the work described in Nobata et al. (2002) who used dependency patterns in combination with other features to generate extracts in a single document summarization task."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7781824,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9174b0547bbb2a997352aad5e6650fb6b858affd",
+            "isKey": false,
+            "numCitedBy": 52,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We have introduced information extraction technique such as named entity tagging and pattern discovery to a summarization system based on sentence extraction technique, and evaluated the performance in the Document Understanding Conference 2001 (DUC-2001). We participated in the Single Document Summarization task in DUC-2001 and achieved one of the best performance in subjective evaluation of summarization results."
+            },
+            "slug": "Summarization-System-Integrated-with-Named-Entity-Nobata-Sekine",
+            "title": {
+                "fragments": [],
+                "text": "Summarization System Integrated with Named Entity Tagging and IE pattern Discovery"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 79,
+                "text": "This work has introduced information extraction technique such as named entity tagging and pattern discovery to a summarization system based on sentence extraction technique and achieved one of the best performance in subjective evaluation of summarization results."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "LREC"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3039512"
+                        ],
+                        "name": "R. Yangarber",
+                        "slug": "R.-Yangarber",
+                        "structuredName": {
+                            "firstName": "Roman",
+                            "lastName": "Yangarber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Yangarber"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1788050"
+                        ],
+                        "name": "R. Grishman",
+                        "slug": "R.-Grishman",
+                        "structuredName": {
+                            "firstName": "Ralph",
+                            "lastName": "Grishman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Grishman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46344929"
+                        ],
+                        "name": "P. Tapanainen",
+                        "slug": "P.-Tapanainen",
+                        "structuredName": {
+                            "firstName": "Pasi",
+                            "lastName": "Tapanainen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Tapanainen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40409744"
+                        ],
+                        "name": "Silja Huttunen",
+                        "slug": "Silja-Huttunen",
+                        "structuredName": {
+                            "firstName": "Silja",
+                            "lastName": "Huttunen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Silja Huttunen"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 151,
+                                "start": 129
+                            }
+                        ],
+                        "text": "In information extraction, for instance, dependency patterns have been used to extract relevant information from text resources (Yangarber et al., 2000; Sudo et al., 2001; Culotta and Sorensen, 2004; Stevenson and Greenwood, 2005; Bunescu and Mooney, 2005; Stevenson and Greenwood, 2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2344397,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "79398502f4dcc812cefcb944fc748b32998aec5c",
+            "isKey": false,
+            "numCitedBy": 261,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In developing an Information Extraction (IE) system for a new class of events or relations, one of the major tasks is identifying the many ways in which these events or relations may be expressed in text. This has generally involved the manual analysis and, in some cases, the annotation of large quantities of text involving these events. This paper presents an alternative approach, based on an automatic discovery procedure, EXDISCO, which identifies a set of relevant documents and a set of event patterns from un-annotaled text, starting from a small set of \"seed patterns.\" We evaluate EXDISCO by comparing the performance of discovered patterns against that of manually constructed systems on actual extraction tasks."
+            },
+            "slug": "Automatic-Acquisition-of-Domain-Knowledge-for-Yangarber-Grishman",
+            "title": {
+                "fragments": [],
+                "text": "Automatic Acquisition of Domain Knowledge for Information Extraction"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLING"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144324746"
+                        ],
+                        "name": "Mark Stevenson",
+                        "slug": "Mark-Stevenson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Stevenson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Stevenson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48960199"
+                        ],
+                        "name": "M. Greenwood",
+                        "slug": "M.-Greenwood",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Greenwood",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Greenwood"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 55989318,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "23200cb65981f58e6c0d634ad31d42235b33b5fd",
+            "isKey": false,
+            "numCitedBy": 33,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Several techniques for the automatic acquisition of Information Extraction (IE) systems have used dependency trees to form the basis of an extraction pattern representation. These approaches have used a variety of pattern models (schemes for representing IE patterns based on particular parts of the dependency analysis). An appropriate pattern model should be expressive enough to represent the information which is to be extracted from text without being overly complex. Previous investigations into the appropriateness of the currently proposed models have been limited. This paper compares a variety of pattern models, including ones which have been previously reported and variations of them. Each model is evaluated using existing data consisting of IE scenarios from two very different domains (newswire stories and biomedical journal articles). The models are analysed in terms of their ability to represent relevant information, number of patterns generated and performance on an IE scenario. It was found that the best performance was observed from two models which use the majority of relevant portions of the dependency tree without including irrelevant sections."
+            },
+            "slug": "Dependency-Pattern-Models-for-Information-Stevenson-Greenwood",
+            "title": {
+                "fragments": [],
+                "text": "Dependency Pattern Models for Information Extraction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This paper compares a variety of pattern models, including ones which have been previously reported and variations of them, and finds that the best performance was observed from two models which use the majority of relevant portions of the dependency tree without including irrelevant sections."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2059835924"
+                        ],
+                        "name": "Fei Song",
+                        "slug": "Fei-Song",
+                        "structuredName": {
+                            "firstName": "Fei",
+                            "lastName": "Song",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fei Song"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144456145"
+                        ],
+                        "name": "W. Bruce Croft",
+                        "slug": "W.-Bruce-Croft",
+                        "structuredName": {
+                            "firstName": "W.",
+                            "lastName": "Croft",
+                            "middleNames": [
+                                "Bruce"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Bruce Croft"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8264008,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c4327f800f44e641033bcf328aa94e3e642c9088",
+            "isKey": false,
+            "numCitedBy": 653,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Statistical language modeling has been successfully used for speech recognition, part-of-speech tagging, and syntactic parsing. Recently, it has also been applied to information retrieval. According to this new paradigm, each document is viewed as a language sample, and a query as a generation process. The retrieved documents are ranked based on the probabilities of producing a query from the corresponding language models of these documents. In this paper, we will present a new language model for information retrieval, which is based on a range of data smoothing techniques, including the Good-Turning estimate, curve-fitting functions, and model combinations. Our model is conceptually simple and intuitive, and can be easily extended to incorporate probabilities of phrases such as word pairs and word triples. The experiments with the Wall Street Journal and TREC4 data sets showed that the performance of our model is comparable to that of INQUERY and better than that of another language model for information retrieval. In particular, word pairs are shown to be useful in improving the retrieval performance."
+            },
+            "slug": "A-general-language-model-for-information-retrieval-Song-Croft",
+            "title": {
+                "fragments": [],
+                "text": "A general language model for information retrieval"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A new language model for information retrieval is presented, which is based on a range of data smoothing techniques, including the Good-Turning estimate, curve-fitting functions, and model combinations, and can be easily extended to incorporate probabilities of phrases such as word pairs and word triples."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CIKM '99"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2122755"
+                        ],
+                        "name": "H. Dang",
+                        "slug": "H.-Dang",
+                        "structuredName": {
+                            "firstName": "Hoa",
+                            "lastName": "Dang",
+                            "middleNames": [
+                                "Trang"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Dang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 91
+                            }
+                        ],
+                        "text": "Each criterion is scored on a five point scale with high scores indicating a better result (Dang, 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 61825275,
+            "fieldsOfStudy": [
+                "Materials Science"
+            ],
+            "id": "dc954000617ae982f83b7f1ed4bd72b95e38aa88",
+            "isKey": false,
+            "numCitedBy": 283,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The focus of DUC 2005 was on developing new evaluation methods that take into account variation in content in human-authored summaries. Therefore, DUC 2005 had a single user-oriented, question-focused summarization task that allowed the community to put some time and effort into helping with the new evaluation framework. The summarization task was to synthesize from a set of 25-50 documents a well-organized, fluent answer to a complex question. The relatively generous allowance of 250 words for each answer reveals how difficult it is for current summarization systems to produce fluent multi-document summaries."
+            },
+            "slug": "Overview-of-DUC-2005-Dang",
+            "title": {
+                "fragments": [],
+                "text": "Overview of DUC 2005"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 95,
+                "text": "The focus of DUC 2005 was on developing new evaluation methods that take into account variation in content in human-authored summaries, so there was a single user-oriented, question-focused summarization task that allowed the community to put some time and effort into helping with the new evaluation framework."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1943594"
+                        ],
+                        "name": "Jia-Yu Pan",
+                        "slug": "Jia-Yu-Pan",
+                        "structuredName": {
+                            "firstName": "Jia-Yu",
+                            "lastName": "Pan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jia-Yu Pan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "97598888"
+                        ],
+                        "name": "Hyung-Jeong Yang",
+                        "slug": "Hyung-Jeong-Yang",
+                        "structuredName": {
+                            "firstName": "Hyung-Jeong",
+                            "lastName": "Yang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hyung-Jeong Yang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2446509"
+                        ],
+                        "name": "P. D. Sahin",
+                        "slug": "P.-D.-Sahin",
+                        "structuredName": {
+                            "firstName": "Pinar",
+                            "lastName": "Sahin",
+                            "middleNames": [
+                                "Duygulu"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. D. Sahin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1702392"
+                        ],
+                        "name": "C. Faloutsos",
+                        "slug": "C.-Faloutsos",
+                        "structuredName": {
+                            "firstName": "Christos",
+                            "lastName": "Faloutsos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Faloutsos"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 234,
+                                "start": 218
+                            }
+                        ],
+                        "text": "\u2026the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2592435,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Economics"
+            ],
+            "id": "cc58597d33d5ff5a51d7810512e2b90b056840ca",
+            "isKey": false,
+            "numCitedBy": 120,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We examine the problem of automatic image captioning. Given a training set of captioned images, we want to discover correlations between image features and keywords, so that we can automatically find good keywords for a new image. We experiment thoroughly with multiple design alternatives on large datasets of various content styles, and our proposed methods achieve up to a 45% relative improvement on captioning accuracy over the state of the art."
+            },
+            "slug": "Automatic-image-captioning-Pan-Yang",
+            "title": {
+                "fragments": [],
+                "text": "Automatic image captioning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 81,
+                "text": "This work examines the problem of automatic image captioning and proposes methods to discover correlations between image features and keywords, so that it can automatically find good keywords for a new image."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2004 IEEE International Conference on Multimedia and Expo (ICME) (IEEE Cat. No.04TH8763)"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144795097"
+                        ],
+                        "name": "Mark Stevenson",
+                        "slug": "Mark-Stevenson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Stevenson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Stevenson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48960199"
+                        ],
+                        "name": "M. Greenwood",
+                        "slug": "M.-Greenwood",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Greenwood",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Greenwood"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6008231,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f30b903047284e8a253b2da38530b99b6db13317",
+            "isKey": false,
+            "numCitedBy": 197,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a novel algorithm for the acquisition of Information Extraction patterns. The approach makes the assumption that useful patterns will have similar meanings to those already identified as relevant. Patterns are compared using a variation of the standard vector space model in which information from an ontology is used to capture semantic similarity. Evaluation shows this algorithm performs well when compared with a previously reported document-centric approach."
+            },
+            "slug": "A-Semantic-Approach-to-IE-Pattern-Induction-Stevenson-Greenwood",
+            "title": {
+                "fragments": [],
+                "text": "A Semantic Approach to IE Pattern Induction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 95,
+                "text": "This paper presents a novel algorithm for the acquisition of Information Extraction patterns that makes the assumption that useful patterns will have similar meanings to those already identified as relevant."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2446509"
+                        ],
+                        "name": "P. D. Sahin",
+                        "slug": "P.-D.-Sahin",
+                        "structuredName": {
+                            "firstName": "Pinar",
+                            "lastName": "Sahin",
+                            "middleNames": [
+                                "Duygulu"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. D. Sahin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145602732"
+                        ],
+                        "name": "Kobus Barnard",
+                        "slug": "Kobus-Barnard",
+                        "structuredName": {
+                            "firstName": "Kobus",
+                            "lastName": "Barnard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kobus Barnard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2059257793"
+                        ],
+                        "name": "Jo\u00e3o Freitas",
+                        "slug": "Jo\u00e3o-Freitas",
+                        "structuredName": {
+                            "firstName": "Jo\u00e3o",
+                            "lastName": "Freitas",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jo\u00e3o Freitas"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144016256"
+                        ],
+                        "name": "D. Forsyth",
+                        "slug": "D.-Forsyth",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Forsyth",
+                            "middleNames": [
+                                "Alexander"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Forsyth"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 194,
+                                "start": 174
+                            }
+                        ],
+                        "text": "\u2026the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12561212,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6d9f55b445f36578802e7eef4393cfa914b11620",
+            "isKey": false,
+            "numCitedBy": 1765,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a model of object recognition as machine translation. In this model, recognition is a process of annotating image regions with words. Firstly, images are segmented into regions, which are classified into region types using a variety of features. A mapping between region types and keywords supplied with the images, is then learned, using a method based around EM. This process is analogous with learning a lexicon from an aligned bitext. For the implementation we describe, these words are nouns taken from a large vocabulary. On a large test set, the method can predict numerous words with high accuracy. Simple methods identify words that cannot be predicted well. We show how to cluster words that individually are difficult to predict into clusters that can be predicted well -- for example, we cannot predict the distinction between train and locomotive using the current set of features, but we can predict the underlying concept. The method is trained on a substantial collection of images. Extensive experimental results illustrate the strengths and weaknesses of the approach."
+            },
+            "slug": "Object-Recognition-as-Machine-Translation:-Learning-Sahin-Barnard",
+            "title": {
+                "fragments": [],
+                "text": "Object Recognition as Machine Translation: Learning a Lexicon for a Fixed Image Vocabulary"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work shows how to cluster words that individually are difficult to predict into clusters that can be predicted well, and cannot predict the distinction between train and locomotive using the current set of features, but can predict the underlying concept."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2122755"
+                        ],
+                        "name": "H. Dang",
+                        "slug": "H.-Dang",
+                        "structuredName": {
+                            "firstName": "Hoa",
+                            "lastName": "Dang",
+                            "middleNames": [
+                                "Trang"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Dang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 102
+                            }
+                        ],
+                        "text": "Conference (DUC) evaluation standards we used ROUGE 2 (R2) and ROUGE SU4 (RSU4) as evaluation metrics (Dang, 2006) ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 86831393,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "3388cb158cf41e9bd034bcf66aaeeb0c64a9982f",
+            "isKey": false,
+            "numCitedBy": 126,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The DUC 2006 summarization task was to synthesize from a set of 25 documents a wellorganized, uent answer to a complex question. The task and evaluation measures were basically the same as in DUC 2005, except that an additional ioveralli responsiveness measure was added which took into account both content and readability of the summary. The average performance of systems in 2006 was noticeably better than in 2005; systems achieved better focus on average, and many attempted to provide greater coherence to their summaries. The overall responsiveness metric showed that readability plays an important role in the perceived quality of the summaries."
+            },
+            "slug": "Overview-of-DUC-2006-Dang",
+            "title": {
+                "fragments": [],
+                "text": "Overview of DUC 2006"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "The DUC 2006 summarization task was to synthesize from a set of 25 documents a wellorganized, answer to a complex question, and the overall responsiveness metric showed that readability plays an important role in the perceived quality of the summaries."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145937262"
+                        ],
+                        "name": "Emily E. Marsh",
+                        "slug": "Emily-E.-Marsh",
+                        "structuredName": {
+                            "firstName": "Emily",
+                            "lastName": "Marsh",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Emily E. Marsh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46801555"
+                        ],
+                        "name": "M. White",
+                        "slug": "M.-White",
+                        "structuredName": {
+                            "firstName": "Marilyn",
+                            "lastName": "White",
+                            "middleNames": [
+                                "Domas"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. White"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 7774821,
+            "fieldsOfStudy": [
+                "Education"
+            ],
+            "id": "9e08d45e6073b7d05d67bc0b4c494e2c8305dab3",
+            "isKey": false,
+            "numCitedBy": 156,
+            "numCiting": 91,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The paper establishes a taxonomy of image\u2010text relationships that reflects the ways that images and text interact. It is applicable to all subject areas and document types. The taxonomy was developed to answer the research question: how does an illustration relate to the text with which it is associated, or, what are the functions of illustration? Developed in a two\u2010stage process \u2013 first, analysis of relevant research in children's literature, dictionary development, education, journalism, and library and information design and, second, subsequent application of the first version of the taxonomy to 954 image\u2010text pairs in 45 Web pages (pages with educational content for children, online newspapers, and retail business pages) \u2013 the taxonomy identifies 49 relationships and groups them in three categories according to the closeness of the conceptual relationship between image and text. The paper uses qualitative content analysis to illustrate use of the taxonomy to analyze four image\u2010text pairs in government publications and discusses the implications of the research for information retrieval and document design."
+            },
+            "slug": "A-taxonomy-of-relationships-between-images-and-text-Marsh-White",
+            "title": {
+                "fragments": [],
+                "text": "A taxonomy of relationships between images and text"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "The paper uses qualitative content analysis to illustrate use of the taxonomy to analyze four image\u2010text pairs in government publications and discusses the implications of the research for information retrieval and document design."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Documentation"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2333082"
+                        ],
+                        "name": "Y. Mori",
+                        "slug": "Y.-Mori",
+                        "structuredName": {
+                            "firstName": "Yasuhide",
+                            "lastName": "Mori",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Mori"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2079483"
+                        ],
+                        "name": "Hironobu Takahashi",
+                        "slug": "Hironobu-Takahashi",
+                        "structuredName": {
+                            "firstName": "Hironobu",
+                            "lastName": "Takahashi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hironobu Takahashi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1776022"
+                        ],
+                        "name": "R. Oka",
+                        "slug": "R.-Oka",
+                        "structuredName": {
+                            "firstName": "Ryu-ichi",
+                            "lastName": "Oka",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Oka"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 164,
+                                "start": 147
+                            }
+                        ],
+                        "text": "\u2026textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al.,\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14990756,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4a6ca78889085ff298813cba853644ddfaf2d1e8",
+            "isKey": false,
+            "numCitedBy": 27,
+            "numCiting": 4,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a method that relates images and words. This method is based on statistical learning from image databases with words. The method uses two processes. The first uniformly divides each image into sub-images. With this division, all words assigned to images are inherited by each sub-image. The second process clusters sub-images by vector quantization. These processes produce results which show that each sub-image can be correlated to a set of words, each of which is selected from words assigned to original images. After clustering, the voting probability of each word for a set of divided images is estimated. This is done for each cluster of the feature vector of sub-images. Experiments show that this method is effective."
+            },
+            "slug": "Automatic-word-assignment-to-images-based-on-image-Mori-Takahashi",
+            "title": {
+                "fragments": [],
+                "text": "Automatic word assignment to images based on image division and vector quantization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 55,
+                "text": "This method is based on statistical learning from image databases with words and produces results which show that each sub-image can be correlated to a set of words, each of which is selected from words assigned to original images."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700567"
+                        ],
+                        "name": "S. Satoh",
+                        "slug": "S.-Satoh",
+                        "structuredName": {
+                            "firstName": "Shin\u2019ichi",
+                            "lastName": "Satoh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Satoh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "24265259"
+                        ],
+                        "name": "Yuichi Nakamura",
+                        "slug": "Yuichi-Nakamura",
+                        "structuredName": {
+                            "firstName": "Yuichi",
+                            "lastName": "Nakamura",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yuichi Nakamura"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733113"
+                        ],
+                        "name": "T. Kanade",
+                        "slug": "T.-Kanade",
+                        "structuredName": {
+                            "firstName": "Takeo",
+                            "lastName": "Kanade",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Kanade"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 277,
+                                "start": 259
+                            }
+                        ],
+                        "text": "\u2026the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14592234,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Physics"
+            ],
+            "id": "fad265c5e322a6740009a12edc173860f5f516b1",
+            "isKey": false,
+            "numCitedBy": 311,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We developed Name-It, a system that associates faces and names in news videos. It processes information from the videos and can infer possible name candidates for a given face or locate a face in news videos by name. To accomplish this task, the system takes a multimodal video analysis approach: face sequence extraction and similarity evaluation from videos, name extraction from transcripts, and video-caption recognition."
+            },
+            "slug": "Name-It:-Naming-and-Detecting-Faces-in-News-Videos-Satoh-Nakamura",
+            "title": {
+                "fragments": [],
+                "text": "Name-It: Naming and Detecting Faces in News Videos"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 55,
+                "text": "Name-It, a system that associates faces and names in news videos, takes a multimodal video analysis approach: face sequence extraction and similarity evaluation from videos, name extraction from transcripts, and video-caption recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Multim."
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685538"
+                        ],
+                        "name": "Tamara L. Berg",
+                        "slug": "Tamara-L.-Berg",
+                        "structuredName": {
+                            "firstName": "Tamara",
+                            "lastName": "Berg",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tamara L. Berg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39668247"
+                        ],
+                        "name": "A. Berg",
+                        "slug": "A.-Berg",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Berg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Berg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34497462"
+                        ],
+                        "name": "Jaety Edwards",
+                        "slug": "Jaety-Edwards",
+                        "structuredName": {
+                            "firstName": "Jaety",
+                            "lastName": "Edwards",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jaety Edwards"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144016256"
+                        ],
+                        "name": "D. Forsyth",
+                        "slug": "D.-Forsyth",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Forsyth",
+                            "middleNames": [
+                                "Alexander"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Forsyth"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 296,
+                                "start": 279
+                            }
+                        ],
+                        "text": "\u2026the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 33948925,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ffc1f85e164eab23d49d48ea5988ed6961913fdd",
+            "isKey": false,
+            "numCitedBy": 36,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Whos-In-the-Picture-Berg-Berg",
+            "title": {
+                "fragments": [],
+                "text": "Whos In the Picture"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 296,
+                                "start": 279
+                            }
+                        ],
+                        "text": "\u2026the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 418,
+                                "start": 221
+                            }
+                        ],
+                        "text": "Other attempts towards automatic generation of image captions generate captions based on the immediate textual context of the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Whos in the Picture? In Advances in Neural Information Processing Systems 17: Proc"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Of The 2004 Conference. MIT Press."
+            },
+            "year": 2005
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 296,
+                                "start": 279
+                            }
+                        ],
+                        "text": "\u2026the image with or without consideration of image related features such as colour, shape or texture (Deschacht and Moens, 2007; Mori et al., 2000; Barnard and Forsyth, 2001; Duygulu et al., 2002; Barnard et al., 2003; Pan et al., 2004; Feng and Lapata, 2008; Satoh et al., 1999; Berg et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Whos in the Picture? In Advances in Neural Information Processing Systems 17: Proc. Of The 2004 Conference"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Whos in the Picture? In Advances in Neural Information Processing Systems 17: Proc. Of The 2004 Conference"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 140
+                            }
+                        ],
+                        "text": "Following the Document Understanding Conference (DUC) evaluation standards we used ROUGE 2 (R2) and ROUGE SU4 (RSU4) as evaluation metrics (Dang, 2006) ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Overview of DUC"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2006
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 140
+                            }
+                        ],
+                        "text": "Following the Document Understanding Conference (DUC) evaluation standards we used ROUGE 2 (R2) and ROUGE SU4 (RSU4) as evaluation metrics (Dang, 2006) ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Overview of DUC 2006. National Institute of Standards and Technology"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Overview of DUC 2006. National Institute of Standards and Technology"
+            },
+            "year": 2006
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 14,
+            "methodology": 8
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 29,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Generating-Image-Descriptions-Using-Dependency-Aker-Gaizauskas/e8dbc756ea246f599250c09e3efd9bba9909a842?sort=total-citations"
+}

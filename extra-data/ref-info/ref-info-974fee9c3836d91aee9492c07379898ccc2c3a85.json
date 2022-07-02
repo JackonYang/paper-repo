@@ -1,0 +1,3986 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3198578"
+                        ],
+                        "name": "J. Yedidia",
+                        "slug": "J.-Yedidia",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Yedidia",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Yedidia"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768236"
+                        ],
+                        "name": "W. Freeman",
+                        "slug": "W.-Freeman",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Freeman",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Freeman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144538257"
+                        ],
+                        "name": "Y. Weiss",
+                        "slug": "Y.-Weiss",
+                        "structuredName": {
+                            "firstName": "Y.",
+                            "lastName": "Weiss",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Weiss"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 13980420,
+            "fieldsOfStudy": [
+                "Medicine"
+            ],
+            "id": "3acaa12ea71ef5569b82d25c97ffbe3a16399de7",
+            "isKey": false,
+            "numCitedBy": 217,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This is anupdatedandexpandedversionof TR2000-26,but it is still in draft form. Beliefpropagation(BP)wasonlysupposedtowork for tree-likenetworksbutworks surprisinglywell in many applicationsinvolving networkswith loops,includingturbo codes.However, therehasbeenlittle understandingof thealgorithmor thenatureof thesolutionsit findsfor generalgraphs. We show that BP canonly converge to a stationarypoint of an approximatefree energy, known astheBethefreeenergy in statisticalphysics.This resultcharacterizes BP fixed-pointsand makes connectionswith variationalapproachesto approximate inference. More importantly, our analysislets us build on the progressmadein statistical physicssinceBethe\u2019 s approximationwasintroducedin 1935.Kikuchi andothershave shown how to constructmoreaccuratefree energy approximations,of which Bethe\u2019 s approximationis the simplest. Exploiting the insightsfrom our analysis,we derive generalizedbeliefpropagation(GBP)versionsof theseKikuchi approximations. These new messagepassingalgorithmscanbesignificantlymoreaccuratethanordinaryBP, at anadjustableincreasein complexity. We illustratesucha new GBPalgorithmon a grid Markov network andshow thatit givesmuchmoreaccuratemarginalprobabilities thanthosefoundusingordinaryBP. This work may not be copiedor reproducedin whole or in part for any commercialpurpose.Permissionto copy in wholeor in partwithoutpaymentof feeis grantedfor nonprofiteducational andresearchpurposesprovidedthatall such wholeor partialcopiesincludethefollowing: anoticethatsuchcopying is by permissionof MitsubishiElectricResearch Laboratories, Inc.;anacknowledgmentof theauthorsandindividualcontributionsto thework; andall applicableportions of thecopyright notice.Copying, reproduction,or republishingfor any otherpurposeshallrequirealicensewith payment of feeto MitsubishiElectricResearchLaboratories, Inc. All rightsreserved. Copyright c MitsubishiElectricResearchLaboratories, Inc., 2001 201Broadway, Cambridge,Massachusetts 02139 This is anupdatedandexpandedversionof TR2000-26,but is still in draft form asof its releaseon April 4, 2001.Smallfurtherupdate(section2.3)onMay 15,2001. ! \"$#% '& (\") * + ,. ' \" (\") .' /\" 0 ( & * 132547698;:<6=4?>A@CB D E<FGE<FG6 H$IKJML NPORQTSVUXW(Y(Z9[VY]\\ ^ Y`_ba=UXcdZ9e`f(g Hih O(N=Qkj`l mon W(p=f`qAr=Qts;uvr(N=QwuxsPytz(z {}|;~ \u007f ~9\u007f \u0080P\u0081\u0083\u0082M|`\u0084G\u0085\u0087\u0086 \u0088w\u0089R\u0082 \u008a\u008bFG\u008c\u008d\u008cGF\u008d6=\u008e\u0090\u008f\u0091@C\u00923\u0093tD D \u008e/6=4 H$IKJ\u0094L NPORQTSVUXW(Y`Z=[VY]\\ ^ Y`_ba=UXc\u0095Z=e`f`g Hih O(N9Q;j`l mKn W`pRf`qAr=Qts;uvr(N9Q}u\u0096s`y`N's \u0097 \u0084d|}|`\u0082\u0098\u0080'\u0099t\u0081\u0083\u0082\u0098|P\u0084\u009a\u0085\u0087\u0086 \u0088}\u0089=\u0082 B 6=F\u008d\u0093\u009b\u008a\u009cD F\u008d\u009d;\u009d ^ W`_\u009f\u009e= 9\u00a1Xf}U\u0098\u00a2=\u00a3wc\u0095f}pR\u00a3}f\u00a5\u00a4\u0098c\u0095\u00a6'cd\u00a7 \u0308c\u00a9W(p a ^ S\u0083fkU \u0308\u00ab(f}\u00ac\u0095f}\\(g'z'\u00ad(y\u009f\u00a2 W9Z=Y\u009f\u00aeMY`\u00ac\u00a9\u00ac SVf}UX\u00ab`fk\u00ac\u00a9fk\\`g ^ h l`z sPN`Otu \u0304Q]s(str mon W`p=f(qAy=QkOPu\u00b0r`z'N]u\u0096yPO'NPl {k\u00b1o|t\u007f 2x2 \u0304\u0081C\u0088w2k\u0086\u00873P|P\u0084\u009a \u0301\u03bc|P\u0085 |}{k\u0086 |;~=\u00b6 \u00b71 \u0327To`\u00bb91\u20444=1\u20442A3\u20444\u00bf\u00bb SVf}\u00ac\u0095c\u00a9f}\u00c0M\u009e=UXW`\u009eRY`e(Yt\u00a1Xc\u00a9W(p\u00c2\u00c1\u008dS mV\u00c3 [\u00c4Y`\u00a7\u00c5W`p=\u00ac\u0095\\/\u00a7 \u0308 =\u009e=\u009e\u00bfW(\u00a7 \u0308fkZ \u00a1XW![\u0083W(U \u0308\u00ab\u00c6\u00c0\u00c7W`U \u00a1 \u0308UXf}f}u\u009a\u00ac\u0095c\u0095\u00ab`f p=fw\u00a1\u0096[VW`UX\u00ab9\u00a7 a= 9\u00a1<[\u0083W(U \u0308\u00ab9\u00a73\u00a7 \u0308 =UX\u009e=U \u0308cd\u00a7 \u0308c\u00a9p=e(\u00ac\u00a9\\\u0098[\u0083fk\u00ac\u00a9\u00ac(c\u00a9pb_\u009fY`p \\\u0098YP\u009eR\u009e=\u00ac\u00a9cd\u00a3}YP\u00a1 \u0308c\u0095W`pR\u00a7\u00c8c\u00a9p \u00a6(W`\u00ac\u0095\u00a6'c\u0095p=e p=fw\u00a1\u0096[VW`UX\u00ab9\u00a70[\u00c9c\u00a9\u00a1 n \u00ac\u00a9W W(\u009eR\u00a7}gKc\u00a9pR\u00a3}\u00ac\u00a9 5Z9c\u00a9pRe\u00c6\u00a1X =UXa5W!\u00a3wW9Z9f;\u00a7}\u00ca/\u00aeMWt[\u0083fk\u00a6`f}U;gC\u00a1 n f}UXf n Y(\u00a7 a5fkf}p%\u00ac\u00a9c\u00a9\u00a1x\u00a1X\u00ac\u00a9f\u00cb =pRZ9fkUX\u00a7x\u00a1XY`pRZ9c\u0095p=e W`\u00c0 \u00a1 n f!YP\u00ac\u0095e`W(U \u0308c\u00a9\u00a1 n _\u00ccW(U\u009b\u00a1 n f\u00c6p5Yt\u00a1 \u0308 RU \u0308f\u00c6WP\u00c00\u00a1 n f \u00a7xW(\u00ac\u00a9 =\u00a1 \u0308c\u0095W`pR\u00a7\u00c4c\u00a9\u00a1\u00c9\u00cdRpRZ=\u00a7\u00c9\u00c0\u00c7W`U\u00c9e`fkp=f}U \u0304YP\u00ac\u00cee(UXY`\u009e n \u00a7k\u00ca \u00cf f \u00a7 n Wt[-\u00a1 n YP\u00a1\u009fS m \u00a3kYPp/W(p=\u00ac\u00a9\\ \u00a3}W`p \u00a6`fkU \u0308e(f\u009f\u00a1 \u0308W\u00c6Y\u00c6\u00a7\u0096\u00a1 \u0304Yt\u00a1Xc\u00a9W(pRYPUX\\\u00c6\u009e\u00bfW`c\u0095p'\u00a1\u00c5W`\u00c0MYPp YP\u009e=\u009eRU \u0308W]\u00d09c\u0095_\u009fYP\u00a1 \u0308fM\u00c0\u00c7U \u0308fkf\u0098fkp=f}UXe`\\(g'\u00ab p=Wt[\u00c9p Y`\u00a7\u0083\u00a1 n f\u00a5SVf}\u00a1 n fT\u00c0\u00c7UXf}fTf}p=fkU \u0308e(\\\u0091c\u00a9p \u00a7\u0096\u00a1 \u0304Yt\u00a1Xc\u0095\u00a7xu \u00a1 \u0308cd\u00a3}Y`\u00ac3\u009e n \\9\u00a7xcd\u00a3}\u00a7k\u00ca\u0083\u00d1 n cd\u00a7\u0094UXfk\u00a7 \u0308 =\u00ac\u00a9\u00a1M\u00a3 n YPU \u0304Y`\u00a3w\u00a1 \u0308fkU \u0308c\u0095\u00d2}f;\u00a7VS m \u00cd=\u00d09f;Z u\u009a\u009e\u00bfW`c\u0095p'\u00a1X\u00a7\u0094Y`pRZ _\u0091YP\u00ab`f;\u00a7 \u00a3wW(p=p=fk\u00a3w\u00a1 \u0308c\u0095W`pR\u00a7\u00c4[\u00c9c\u00a9\u00a1 n \u00a6tYPUXcdYt\u00a1 \u0308c\u0095W`p5YP\u00ac YP\u009e=\u009eRU \u0308W'Y`\u00a3 n f;\u00a7o\u00a1XW\u009fY`\u009e=\u009e=UXW]\u00d09c\u00a9_\u0091Yt\u00a1Xf\u0098c\u0095p9\u00c0\u00c7fkU \u0308fkpR\u00a3wf(\u00ca H W`UXf\u00a5c\u00a9_\u009f\u009e\u00bfW`U \u0308\u00a1XY`p(\u00a1X\u00ac\u00a9\\(g=W` RU\u0094YPpRY`\u00ac\u00a9\\9\u00a7 \u0308c\u0095\u00a7\u00c4\u00ac\u0095fw\u00a1 \u0304\u00a7\u00c9 R\u00a7\u00c9a= Rc\u00a9\u00acdZ W`p\u00d3\u00a1 n fb\u009e=U \u0308W(e`UXfk\u00a7X\u00a7K_\u0091Y(Z9f c\u00a9p/\u00a7x\u00a1XYP\u00a1 \u0308cd\u00a7\u0096\u00a1Xc\u0095\u00a3kYP\u00acA\u009e n \\9\u00a7 \u0308c\u0095\u00a3k\u00a70\u00a7xc\u0095pR\u00a3}f\u009bS\u0083f}\u00a1 n f(\u00d4 \u00a7\u00c5YP\u009e=\u009eRU \u0308W]\u00d09c\u0095_\u009fYP\u00a1 \u0308c\u0095W`p\u00c6[VY(\u00a7\u00a5c\u00a9p'\u00a1 \u0308UXW9Z9 R\u00a3}fkZ c\u00a9p Q;l`j'y9\u00ca<\u00d5\u00a5c\u0095\u00ab  R\u00a3 n cRY`pRZ\u009fWP\u00a1 n f}U \u0304\u00a7 n Y]\u00a6(f\u0094\u00a7 n Wt[\u00c9p n Wt[)\u00a1XW0\u00a3wW(pR\u00a7\u0096\u00a1XU \u0308 5\u00a3\u03bc\u00a1K_\u009fW`UXf\u0094Y`\u00a3wu \u00a3w =U \u0304Yt\u00a1XfK\u00c0\u00c7UXf}f\u00c4fkp=f}UXe`\\0Y`\u009e=\u009e=UXW]\u00d0 c\u0095_\u0091Yt\u00a1Xc\u00a9W(pR\u00a7}g]W`\u00c0R[ n cd\u00a3 n SVfw\u00a1 n f`\u00d4 \u00a7AYP\u009eR\u009e=U \u0308W]\u00d09c\u0095_\u0091Yt\u00a1 \u0308c\u0095W`p c\u0095\u00a7T\u00a1 n f\u009b\u00a7 \u0308c\u00a9_\u009f\u009e=\u00ac\u0095fk\u00a7x\u00a1k\u00ca I \u00d09\u009e=\u00ac\u0095W`c\u00a9\u00a1 \u0308c\u0095p=e\u00d3\u00a1 n f\u009fc\u0095pR\u00a7 \u0308c\u00a9e n \u00a1 \u0304\u00a7T\u00c0\u00c7U \u0308W(_\u00d6W` RU\u00a5Y`pRYP\u00ac\u0095\\9\u00a7xcd\u00a7kg3[\u0083f\u009fZ9f}u U \u0308c\u0095\u00a6`fVe`fkp=f}U \u0304YP\u00ac\u0095c\u0095\u00d2}fkZ0a5fk\u00ac\u00a9c\u0095fw\u00c0\u00bf\u009e=U \u0308W(\u009eRYPe'Yt\u00a1Xc\u00a9W(p\u00d7\u00c1G\u00d8\u00a5S m\u0083\u00c3 \u00a6(f}U \u0304\u00a7xc\u0095W`pR\u00a7\u00c8WP\u00c05\u00a1 n f;\u00a7xf\u00c9\u00d5\u00a5c\u0095\u00ab' 5\u00a3 n c YP\u009e=\u009eRU \u0308W]\u00d09c\u0095_\u009fYP\u00a1 \u0308c\u0095W`pR\u00a7k\u00ca \u00d1 n f;\u00a7xf\u00c6p=f}[\u00d9_\u009ffk\u00a7X\u00a7XYPe`fi\u009eRY`\u00a7X\u00a7xc\u0095p=e Y`\u00ac\u00a9e(W`UXc\u0087\u00a1 n _\u0091\u00a7\u00d7\u00a3kYPp\u00daa\u00bff \u00a7xc\u0095e`pRc\u0087\u00cd5\u00a3kYPp'\u00a1 \u0308\u00ac\u0095\\\u009b_\u009fW`UXf\u00a5Y`\u00a3}\u00a3} =U \u0304Yt\u00a1 \u0308fT\u00a1 n YPp W`U \u0304Z9c\u0095pRYPUX\\\u009bS m g=Yt\u00a1MYPp Y`Zt\u00db\u0096 R\u00a7\u0096\u00a1 \u0304YPa=\u00ac\u0095f\u00a5c\u00a9p=u \u00a3wUXfkY(\u00a7xf\u00a5c\u0095pi\u00a3wW(_ \u009eR\u00ac\u00a9f}\u00d0 c\u00a9\u00a1\u0096\\`\u00ca \u00cf fbc\u0095\u00ac\u00a9\u00ac\u0095 R\u00a7x\u00a1 \u0308U \u0304Yt\u00a1 \u0308f\u00c5\u00a7x R\u00a3 n Y\u0091pRf}[ \u00d8\u00a5S m YP\u00ac\u0095e`W(U \u0308c\u00a9\u00a1 n _\u00dcW`p Y0e(U \u0308cdZ H Y`U \u0308\u00ab(Wt\u00a6bp=f}\u00a1\u0096[\u0083W(U \u0308\u00ab\u009fYPpRZ\u00d7\u00a7 n Wt[1\u00a1 n Yt\u00a1Vc\u0087\u00a1\u00c4e`c\u0095\u00a6`f;\u00a7K_\u00c5 R\u00a3 n _\u009fW`UXfMY(\u00a3}\u00a3w RUXYP\u00a1 \u0308f _\u0091YPUXe`c\u0095pRYP\u00ac\u00ce\u009e=UXW`aRY`a=c\u0095\u00ac\u00a9c\u00a9\u00a1 \u0308c\u0095fk\u00a7V\u00a1 n YPp \u00a1 n W(\u00a7 \u0308f\u0098\u00c0\u00c7W( =pRZ  R\u00a7 \u0308c\u00a9pRe W(UXZ=c\u00a9pRY`U \u0308\\\u009bS m \u00ca \u00dd \u00de(\u00df \u00bb91\u20444=\u00e0\u00c9\u00e1M\u00e2M3\u20444\u00bf\u00bb=\u00e3x\u00e0 \u00df L W9\u00a3kYP\u00acM\u00e4 \u0308a5fk\u00ac\u00a9c\u0095fw\u00c0\u0083\u009e=U \u0308W(\u009eRYPe'Yt\u00a1Xc\u00a9W(pR\u00e5 \u00c1\u008dS m\u0083\u00c3 YP\u00ac\u0095e`W`UXc\u00a9\u00a1 n _\u0091\u00a7M\u00a7 \u0308 R\u00a3 n Y(\u00a7\u0094\u00a1 n W(\u00a7 \u0308f0c\u0095p(\u00a1XU \u0308W9Z9 5\u00a3wfkZ$a'\\ m f;YPUX\u00ac\u00c8YPUXf e` 5YPU \u0304YPp'\u00a1 \u0308fkfkZ \u00a1XW$\u00a3wW(p'\u00a6(f}UXe`fb\u00a1 \u0308W \u00a1 n f\u009b\u00a3wW`UXUXfk\u00a3\u03bc\u00a1\u00a5_\u0091YPUXe`c\u0095pRYP\u00acA\u009e\u00bfW(\u00a7x\u00a1 \u0308fkU \u0308c\u0095W`U\u00a5\u009e=UXW`a5YPa=c\u0095\u00ac\u00a9c\u00a9\u00a1 \u0308c\u0095fk\u00a7\u00a5c\u0095p\u00cb\u00a1 \u0308UXf}f}u\u009a\u00ac\u0095c\u00a9\u00ab(f e`U \u0304YP\u009e n c\u0095\u00a3kYP\u00ac5_ W9Z9fk\u00ac\u0095\u00a7k\u00caA\u00e6=W(U\u0083e(f}p=fkUXY`\u00acRp=f}\u00a1\u0096[\u0083W(U \u0308\u00ab9\u00a7A[\u00c9c\u00a9\u00a1 n \u00ac\u00a9W W`\u009e5\u00a7}g'\u00a1 n f\u0098\u00a7 \u0308c\u0087\u00a1X RYt\u00a1Xc\u00a9W(p\u00d7cd\u00a7K_\u00c5 R\u00a3 n \u00ac\u0095fk\u00a7X\u00a7\u0083\u00a3}\u00ac\u00a9f;YPU;\u00ca \u00e7 p1\u00a1 n fiW`pRf n YPpRZ3gMY!p  =_ba\u00bff}U\u00d3WP\u00c0 U \u0308f;\u00a7xf;YPU \u0304\u00a3 n f}U \u0304\u00a7 n Y]\u00a6(f f}_\u009f\u009e=c\u0095U \u0308cd\u00a3}Y`\u00ac\u00a9\u00ac\u0095\\)Z9fk_\u009fW`pR\u00a7x\u00a1 \u0308U \u0304Yt\u00a1XfkZ1e`W W9Z \u009e\u00bff}U \u0308\u00c0\u00c7W`UX_\u009fY`pR\u00a3wf\u0098\u00c0\u00c7W`U\u00c9S m YP\u00ac\u0095e`W`UXc\u00a9\u00a1 n _\u0091\u00a7VYP\u009e=\u009e=\u00ac\u0095c\u0095fkZ\u00d7\u00a1 \u0308W e`U \u0304YP\u009e n \u00a7\u0083[\u00c9c\u00a9\u00a1 n \u00ac\u00a9W W`\u009e5\u00a7}\u00ca \u00e7 p=f Z9U \u0304YP_\u0091Yt\u00a1Xc\u0095\u00a3\u0098\u00a3}Y(\u00a7xfTc\u0095\u00a7 \u00a1 n f\u00c9p=fkY`U\u0083\u00a2 n Y`p=p=W`p=u\u009a\u00ac\u0095c\u00a9_\u009fc\u00a9\u00a1o\u009e5fkUx\u00c0\u00c7W(U \u0308_\u0091Y`pR\u00a3wf\u00c4WP\u00c0\u00c4\u00e4 \u0308\u00d1< =UXa5W \u00a3}W Z=fk\u00a7X\u00e5=gP[ n W'\u00a7xf\u0094Z=fk\u00a3wW9Z9c\u0095p=e YP\u00ac\u0095e`W(U \u0308c\u00a9\u00a1 n _ c\u0095\u00a7 fk\u00e8' =c\u0095\u00a6tYP\u00ac\u0095f}p'\u00a1V\u00a1 \u0308W\u009fS m W`p Y0\u00ac\u0095W W`\u009e \\\u0091e`U \u0304YP\u009e n\u00c6\u00e9 j9g Q;O]\u00ea\u00b0\u00ca \u00e7 \u00a1 n f}U\u00c9\u00a7 \u0308 R\u00a3}\u00a3}fk\u00a7X\u00a7\u0096\u00c0\u00c7 R\u00ac\u00ce\u00a3kY`\u00a7 \u0308fk\u00a7\u0083c\u00a9p5\u00a3w\u00ac\u0095 RZ9f\u00a5\u00a3wW`_\u009f\u009e= =\u00a1 \u0308f}U \u00a6 c\u0095\u00a7 \u0308c\u0095W`p \u009e=UXW`a=\u00ac\u0095f}_\u0091\u00a7\u00c5YPpRZ!_\u009ffkZ=c\u0095\u00a3kYP\u00ac\u0083Z=c\u0095Y`e`W`p5\u00a7xcd\u00a7 \u00e9 j=gAN g\u0083Q]N;\u00eaV\u00a7 \u0308 =e(e`fk\u00a7x\u00a1 \u0308c\u0095p=e \u00a1 n f\u00d3\u00a7 \u0308 R\u00a3}\u00a3}fk\u00a7X\u00a70W`\u00c0\u00c9S m W(p \u00ac\u0095W'W(\u009e \\ie`U \u0304YP\u009e n \u00a7\u00a5c\u0095\u00a70p=WP\u00a10\u00ac\u0095c\u00a9_\u009fc\u00a9\u00a1 \u0308f;Z!\u00a1 \u0308W$\u00a3}W Z=c\u00a9p=e$Y`\u009e=\u009e=\u00ac\u0095c\u0095\u00a3kYt\u00a1Xc\u00a9W(pR\u00a7}\u00ca \u00e7 p\u00cb\u00a1 n f\u009bW`\u00a1 n fkU n Y`pRZ g<\u00c0\u00c7W`U0W`\u00a1 n fkU e`U \u0304YP\u009e n \u00a7V[\u00c9c\u0087\u00a1 n \u00ac\u0095W W`\u009eR\u00a7kg=S m _\u009fY]\\\u00d7e`c\u0095\u00a6`f\u00a5\u009e5W W(U\u00c9U \u0308f;\u00a7x =\u00ac\u00a9\u00a1X\u00a7\u00c4W(U\u00c4\u00c0\u008dYPc\u0095\u00ac\u00ce\u00a1 \u0308W\u009b\u00a3}W`p \u00a6`fkU \u0308e(f \u00e9 Q;N;\u00ea\u00b0\u00ca \u00e6=W(U Y e`fkp=f}U \u0304YP\u00ac\u0098e`U \u0304YP\u009e n gM\u00ac\u00a9c\u00a9\u00a1x\u00a1X\u00ac\u00a9f n Y(\u00a7\u00d7a\u00bff}fkp\u00c2 =pRZ=f}U \u0304\u00a7\u0096\u00a1XW'W9Z\u00daY`a5W( 9\u00a1\u00d3[ n Yt\u00a1 YP\u009e=\u009e=UXW]\u00d09c\u00a9_\u0091YP\u00a1 \u0308c\u0095W`p\u00daS m UXf}\u009e=UXfk\u00a7 \u0308f}p'\u00a1X\u00a7kgoYPp5Z n Wt[\u00dcc\u0087\u00a1\u0091_\u009fc\u00a9e n \u00a1 a\u00bff c\u00a9_\u009f\u009e=UXWt\u00a6`f;Z \u00ca \u00d1 n cd\u00a7 \u009eRYP\u009e\u00bff}U;\u00d4 \u00a7 e(W(YP\u00acVcd\u00a7 \u00a1 \u0308W\u00cb\u009e=U \u0308Wt\u00a6 cdZ9f\u00d3\u00a1 n YP\u00a1 =pRZ=f}U \u0304\u00a7\u0096\u00a1 \u0304YPpRZ9c\u0095p=e!YPpRZ c\u00a9p'\u00a1XU \u0308W9Z9 R\u00a3}f Y\u00cb\u00a7 \u0308fw\u00a1\u009fWP\u00c0Mp=fk[\u00dcYP\u00ac\u0095e`W(U \u0308c\u00a9\u00a1 n _\u009f\u00a7\u00c5UXfk\u00a7 \u0308 =\u00ac\u0087\u00a1Xc\u00a9pRei\u00c0\u00c7UXW`_\u00eb\u00a1 n Yt\u00a1\u0091 =pRZ=f}U \u0308u \u00a7x\u00a1XYPp5Z9c\u00a9pReR\u00ca \u00cf f\u00d7\u00a7 n Wt[ \u00a1 n Yt\u00a1 S m cd\u00a7 \u00a1 n f\u009f\u00cdRU \u0304\u00a7\u0096\u00a1bc\u0095p Y \u009e=UXW`e`UXfk\u00a7X\u00a7 \u0308c\u00a9W(piWP\u00c0\u00c4\u00ac\u0095W \u00a3kYP\u00aco_\u009ff;\u00a7 \u0308\u00a7XYPe(fwu\u00b0\u009eRY`\u00a7X\u00a7xc\u0095p=e YP\u00ac\u0095e`W(U \u0308c\u00a9\u00a1 n _\u009f\u00a7kg3f;Y`\u00a3 n e`c\u0095\u00a6'c\u0095p=e fk\u00e8' =c\u0095\u00a6tYP\u00ac\u0095f}p'\u00a10U \u0308f;\u00a7x R\u00ac\u0087\u00a1 \u0304\u00a7T\u00a1 \u0308W$Y \u00a3wW(U \u0308UXfk\u00a7 \u0308\u009e5W(pRZ9c\u0095p=e YP\u009e=\u009e=UXW]\u00d09c\u00a9_\u0091YP\u00a1 \u0308c\u0095W`p \u00c0\u00c7UXW`_ \u00a7x\u00a1XYt\u00a1Xc\u0095\u00a7x\u00a1 \u0308cd\u00a3}Y`\u00ac5\u009e n \\9\u00a7 \u0308c\u0095\u00a3k\u00a7V\u00ab'pRWt[\u00c9p\u00d7Y`\u00a7K\u00a1 n f \u00e4X\u00d5\u00a5c\u00a9\u00ab  R\u00a3 n cd\u00e50Y`\u009e=\u009e=UXW]\u00d0 c\u0095_\u0091Yt\u00a1Xc\u00a9W(p\u009f\u00a1 \u0308W\u00c5\u00a1 n f \u00d8Tc\u00a9aRaR\u00a7\u0083\u00c0\u00c7U \u0308fkf\u0098fkp=f}UXe`\\(\u00ca \u00d1 n f;\u00a7xf YP\u00ac\u0095e`W(U \u0308c\u00a9\u00a1 n _\u0091\u00a7 n Y]\u00a6`f\u00d3\u00a1 n f YP\u00a1x\u00a1XUXY(\u00a3\u03bc\u00a1 \u0308c\u0095\u00a6`f\u00d3\u009e=UXW`\u009e\u00bff}U \u0308\u00a1\u0096\\\u00cbW`\u00c0\u0098a\u00bff}c\u0095p=e\u00cb R\u00a7xfkUxuvY`Zt\u00db\u0096 R\u00a7\u0096\u00a1 \u0304YPa=\u00ac\u0095f`q\u00d3a \\ \u009eRY]\\'u c\u0095p=e\u00d7\u00a7 \u0308W`_\u009ff0Y`Z=Z=c\u0087\u00a1Xc\u00a9W(pRYP\u00ac7\u00a3wW`_\u009f\u009e= =\u00a1XYt\u00a1Xc\u00a9W(pRYP\u00ac<\u00a3wW(\u00a7x\u00a1kg5W`p=f\u00c5\u00a3}YPp W(a9\u00a1XY`c\u00a9p$\u00a3}W`pR\u00a7 \u0308cdZ9f}U \u0304YPa=\u00ac\u0095f\u00a5c\u00a9_\u009f\u009e=UXWt\u00a6`fk_\u009ff}p'\u00a1 c\u0095p \u00a1 n f$Y`\u00a3k\u00a3w =U \u0304Y`\u00a3}\\\u00cbW`\u00c0\u0098W(p=f`\u00d4 \u00a7\u009fYP\u009e=\u009e=UXW]\u00d09c\u00a9_\u0091YP\u00a1 \u0308c\u0095W`p3gKY`pRZ\u00ec\u00a3}YPp\u00ec\u00a7xW(_\u009ffw\u00a1 \u0308c\u0095_\u009ffk\u00a7\u009fW(a9\u00a1XY`c\u00a9p1Y\u00c6\u00a3}W`p \u00a6`fkU \u0308e(f}p'\u00a1 _\u009ffk\u00a7X\u00a7 \u0308Y`e`f}u\u009a\u009eRY(\u00a7 \u0308\u00a7 \u0308c\u0095p=e\u00c5Y`\u00ac\u00a9e(W`UXc\u0087\u00a1 n _\u00ed[ n f}p W(UXZ9c\u0095pRY`U \u0308\\\u009bS m Z9W fk\u00a7\u00c4p=W`\u00a1M\u00a3wW(p'\u00a6(f}UXe`f(\u00ca \u00ee \u00ef!\u00f0\u00c8\u00f1 \u00e3 \u00f03\u00f2\u00c5\u00f3 1\u20444=\u00e0 \u00f3 1\u204427\u00f4K1\u20442<\u00bb=\u00e3x\u00e0 \u00df\u00f6\u00f5\u0098\u00f7\u00c9\u00f0 \u00e1\u00c4\u00f8 \u00f3 \u00e0K\u00e3 \u00df \u00bb=o 1\u20442C1\u20444 \u00f0\u00c2\u00f9 \u00f0 1\u20444=\u00e0 \u00f4o1\u20444=1\u20442A\u00e1\u0098\u00e3 \u00f0\u00c8\u00df \u00bb \u00f3 \u00e0K\u00e3 \u00df \u00bb=o\u00cb\u00e0 \u00f2 \u00bb9\u00fa \u00f0?\u00ef!\u00f0 \u00bb9\u00fa \u00f0 \u00f2 1\u20444 \u00f03\u00f0%\u00f0<\u00df\u0094\u00f0 1\u20444=\u00f4o\u00fb \u00e6=W(U \u00a1 n f\u0091\u009e= =UX\u009e5W'\u00a7xf\u0091W`\u00c0\u00c4Y`pRYP\u00ac\u0095\\ \u00d2}c\u0095p=e YPpRZ!Z9f;\u00a7 \u0308\u00a3}U \u0308c\u0095a=c\u0095p=e S m [Vf\u009bY`\u00a7X\u00a7 \u0308 =_\u009ff\u00c5\u00a1 n Yt\u00a1\u00c5[\u0083f\u009bY`U \u0308f\u009fe`c\u0095\u00a6`fkp\u00cbY`p =pRZ=c\u00a9UXfk\u00a3w\u00a1 \u0308fkZ\u009fe(UXY`\u009e n cd\u00a3}Y`\u00ac9_ W9Z9fk\u00ac=WP\u00c03\u00fc\u00fdp=W9Z9f;\u00a7o[\u00c9c\u00a9\u00a1 n \u009eRY`c\u00a9UX[\u00c9c\u0095\u00a7 \u0308f\u00c4\u009e5W`\u00a1 \u0308fkp(\u00a1Xc\u0095Y`\u00ac\u0095\u00a7M\u00c1\u008dY \u009eRY`c\u00a9UX[\u00c9cd\u00a7xf H Y`U \u0308\u00ab(Wt\u00a6 J Y`pRZ9W`_\u00f6\u00e67c\u0095f}\u00acdZ \u00c3 \u00ca h p \\\u009be`U \u0304YP\u009e n c\u0095\u00a3kYP\u00ac\u00bf_\u009fW Z=f}\u00ac3\u00a3}Y`p\u00d7a\u00bff0\u00a3wW(p'\u00a6(f}U \u0308\u00a1 \u0308f;Z\u0091c\u00a9p'\u00a1XW\u00c5\u00a1 n cd\u00a7V\u00c0\u00c7W`UX_\u00eda5f}\u00c0\u00c7W`UXf\u00a5Z=W`c\u0095p=e c\u0095p9\u00c0\u00c7f}UXf}pR\u00a3}f\u00c4\u00a1 n UXW` Re n Y \u00a7x =c\u00a9\u00a1XY`a=\u00ac\u0095f\u0094\u00a3w\u00ac\u0095 R\u00a7\u0096\u00a1Xf}UXc\u00a9pRe WP\u00c0\u00cep=W9Z9fk\u00a7Ac\u0095p'\u00a1 \u0308W \u00acdYPUXe`fkU7pRW Z=fk\u00a7 \u00e9 Q]sk\u00ea\u00b0\u00caA\u00d1 n UXW` =e n \u00a1 n c\u0095\u00a7 \u00a1 \u0308U \u0304YPp5\u00a7\u0096\u00c0\u00c7W(U \u0308_\u0091Yt\u00a1Xc\u00a9W(p3g\u00c8W(p=f\u009b\u00a3}Y`p/YP\u009e=\u009eR\u00ac\u00a9\\\u00cbYP\u00ac\u0095\u00aco\u00a1 n f\u009bU \u0308f;\u00a7x R\u00ac\u0087\u00a1 \u0304\u00a7 c\u00a9p/\u00a1 n cd\u00a70\u009eRY`\u009e5fkU \u00a1 \u0308W\u00c6YPUXa=c\u0087\u00a1XUXY`U \u0308\\ie`U \u0304YP\u009e n cd\u00a3}Y`\u00ac _\u009fW9Z9f}\u00acd\u00a7Kc\u0095pR\u00a3}\u00ac\u00a9 RZ=c\u00a9p=eb\u00a1 n W'\u00a7xfM[\u00c9c\u0087\u00a1 n\u00d7n c\u0095e n fkUxu\u00b0W`U \u0304Z9fkUA\u009e5W`\u00a1 \u0308f}p'\u00a1Xc\u0095Y`\u00ac\u0095\u00a7k\u00ca \u00cf f\u0098[\u00c9c\u00a9\u00ac\u0095\u00ac5e(c\u00a9\u00a6(f\u0094fw\u00d09\u009e=\u00ac\u0095cd\u00a3wc\u00a9\u00a1\u0083fw\u00d0=Y`_ \u009eR\u00ac\u00a9f;\u00a7 WP\u00c07\u00a1 n c\u0095\u00a7\u00c4c\u0095p \u00ac\u0095YP\u00a1 \u0308f}U\u0094\u00a7 \u0308fk\u00a3w\u00a1 \u0308c\u0095W`pR\u00a7k\u00ca \u00d1 n f\u009f\u00a7\u0096\u00a1 \u0304Yt\u00a1Xf\u00c5W`\u00c0KfkY(\u00a3 n  =p=W(aR\u00a7xfkU \u0308\u00a6(fkZ p=W9Z9f \u00fe\u00c9cd\u00a7\u0098Z9fkp=WP\u00a1XfkZia'\\ \u00ff xg3Y`pRZ$[Vf\u00c5Y(\u00a7 \u0308\u00a7 \u0308 =_\u009ffbf;Y`\u00a3 n  Rp=W`a9u \u00a7 \u0308f}UX\u00a6`fkZ\u009fpRW Z=fMcd\u00a7\u0083\u00a3}W`p=p=f;\u00a3\u03bc\u00a1XfkZ\u009f\u00a1XW\u00c5YPp\u00d7W`aR\u00a7 \u0308f}UX\u00a6`f;Z\u009fp=W9Z9f x\u00caA\u00d1 n fK\u00db\u0096W(c\u00a9p'\u00a1V\u009e=U \u0308W(aRYPaRc\u00a9\u00ac\u0095c\u0087\u00a1\u0096\\\u009fZ9cd\u00a7\u0096\u00a1XU \u0308c\u0095a= 9\u00a1Xc\u00a9W(p \u00c0\u00c7 =pR\u00a3w\u00a1 \u0308c\u0095W`p cd\u00a7\u00c9e`c\u0095\u00a6`fkp\u00d7a \\ \u00c1\u00c7\u00ff x\u00ff  \u0308\u00ff \u00c3 Q \u00c1\u00c7\u00ff x\u00ff \u00c3 \u00c1\u008d\u00ff \u00c3 \u00c1\u0096Q \u00c3 [ n fkU \u0308f  \u0308\u00c1\u008d\u00ff \u00c3 c\u0095\u00a7T\u00a1 n f\u009f\u00ac\u00a9W9\u00a3}Y`\u00ac \u00e4xfk\u00a6'cdZ9fkpR\u00a3wf;\u00e5\u0091\u00c0\u00c7W`U pRW Z=f \u00fe \u0304g (\u00c1\u00c7\u00ff  \u0308\u00ff! \u00c3 cd\u00a7T\u00a1 n f\u0091\u00a3wW(_\u009f\u009eRYt\u00a1Xc\u00a9a=c\u0095\u00ac\u0095c\u0087\u00a1\u0096\\ _\u0091Yt\u00a1XU \u0308c\u00a9\u00d0\u009ba5f}\u00a1\u0096[\u0083fkf}p p=W9Z9fk\u00a7\u00c4\u00fe\u0083YPpRZ \"5g=YPpRZ c\u0095\u00a7\u00c9Y p=W(U \u0308_\u0091YP\u00ac\u0095c\u0095\u00d2kYt\u00a1Xc\u00a9W(p\u00d7\u00a3wW(pR\u00a7x\u00a1XYPp'\u00a1;\u00ca$#vp [ n YP\u00a1V\u00c0\u00c7W(\u00ac\u00a9\u00ac\u0095Wt[\u0094\u00a7kg [Vf\u00a5\u00a7 \u0308c\u0095_ \u009eR\u00ac\u00a9c\u00a9\u00c0\u00c7\\\u00d7p=W`\u00a1XYP\u00a1 \u0308c\u0095W`p YPpRZ [\u00c9UXc\u0087\u00a1Xf X\u00c1\u00c7\u00ff \u00c3 Y(\u00a7\u00c9\u00a7 n W(Ux\u00a1 n YPp5Z\u009b\u00c0\u00c7W(U X\u00c1\u00c7\u00ff \u00c3 \u00ca \u00d1 n f0\u00a7x\u00a1XY`pRZ=YPU \u0304Z\u00d7S m  =\u009e\u00ceZ=Yt\u00a1Xf U \u0308 R\u00ac\u00a9f;\u00a7\u00c9YPUXf`q % (\u00c1\u008d\u00ff! \u00c3'& (*),+.'\u00c1\u00c7\u00ff  \u0308\u00ff! \u00c3 X\u00c1\u00c7\u00ff \u00c3 /.0 21 3546 % / X\u00c1\u00c7\u00ff \u00c3 \u00c1GN \u00c3 7  \u0308\u00c1\u00c7\u00ff \u00c3'& (  \u0308\u00c1\u008d\u00ff \u00c3 /.0 21 3 % /  \u0308\u00c1\u008d\u00ff \u00c3 \u00c1\u008dj \u00c3 [ n fkU \u0308f ( Z=f}p=W`\u00a1 \u0308fk\u00a7\u00c4Y\u00c5p=W`UX_\u0091YP\u00ac\u0095c\u00a9\u00d2;Yt\u00a1Xc\u00a9W(p\u00d3\u00a3wW(pR\u00a7x\u00a1XYPp'\u00a1\u00c9YPpRZ\u00d3\u00fc/\u00c1\u00c7\u00fe \u00c3 8 \" _\u009ffkY`pR\u00a7\u00c9YP\u00ac\u0095\u00ac\u00cep=W9Z9fk\u00a7Vp=fkc\u00a9e n a\u00bfW`UXc\u0095p=e p=W9Z9f \u00fe \u0304g5f}\u00d09\u00a3}f}\u009e9\u00a1*\"5\u00caT\u00aeMf}UXf % \u00c5U \u0308f}\u00c0\u00c7f}U \u0304\u00a7\u00c9\u00a1XW\u009b\u00a1 n f\u00c5_\u009ffk\u00a7X\u00a7XYPe`f0\u00a1 n YP\u00a1Tp=W9Z9f \u00fe\u00c9\u00a7xfkpRZ=\u00a7M\u00a1 \u0308W\u00d3p=W9Z9f9\" Y`pRZ 7 7cd\u00a7K\u00a1 n f\u00a5a5"
+            },
+            "slug": "Bethe-free-energy,-Kikuchi-approximations,-and-Yedidia-Freeman",
+            "title": {
+                "fragments": [],
+                "text": "Bethe free energy, Kikuchi approximations, and belief propagation algorithms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 37,
+                "text": "It is shown that BP canonly converge to a stationarypoint of an approximatefree energy, known astheBethefreeenergy in statisticalphysics, as of its release on April 4, 2001."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145081362"
+                        ],
+                        "name": "A. Yuille",
+                        "slug": "A.-Yuille",
+                        "structuredName": {
+                            "firstName": "Alan",
+                            "lastName": "Yuille",
+                            "middleNames": [
+                                "Loddon"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Yuille"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145257017"
+                        ],
+                        "name": "Anand Rangarajan",
+                        "slug": "Anand-Rangarajan",
+                        "structuredName": {
+                            "firstName": "Anand",
+                            "lastName": "Rangarajan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anand Rangarajan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1668136,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ffb607e61e10a3bb54463b334aaf5ea9c7c04be6",
+            "isKey": false,
+            "numCitedBy": 1065,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The concave-convex procedure (CCCP) is a way to construct discrete-time iterative dynamical systems that are guaranteed to decrease global optimization and energy functions monotonically. This procedure can be applied to almost any optimization problem, and many existing algorithms can be interpreted in terms of it. In particular, we prove that all expectation-maximization algorithms and classes of Legendre minimization and variational bounding algorithms can be reexpressed in terms of CCCP. We show that many existing neural network and mean-field theory algorithms are also examples of CCCP. The generalized iterative scaling algorithm and Sinkhorn's algorithm can also be expressed as CCCP by changing variables. CCCP can be used both as a new way to understand, and prove the convergence of, existing optimization algorithms and as a procedure for generating new algorithms."
+            },
+            "slug": "The-Concave-Convex-Procedure-Yuille-Rangarajan",
+            "title": {
+                "fragments": [],
+                "text": "The Concave-Convex Procedure"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 36,
+                "text": "It is proved that all expectation-maximization algorithms and classes of Legendre minimization and variational bounding algorithms can be reexpressed in terms of CCCP."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1723150"
+                        ],
+                        "name": "R. McEliece",
+                        "slug": "R.-McEliece",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "McEliece",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. McEliece"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145852650"
+                        ],
+                        "name": "D. Mackay",
+                        "slug": "D.-Mackay",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Mackay",
+                            "middleNames": [
+                                "J.",
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Mackay"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2157745208"
+                        ],
+                        "name": "Jung-Fu Cheng",
+                        "slug": "Jung-Fu-Cheng",
+                        "structuredName": {
+                            "firstName": "Jung-Fu",
+                            "lastName": "Cheng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jung-Fu Cheng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In particular, it has been shown that the highly successful turbo codes (Berrou et al 1993) can also be interpreted in terms of BP ( McEliece et al 1998 )."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14553992,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "26d953005dd08a863c157b528bbabdf5671d18b6",
+            "isKey": false,
+            "numCitedBy": 1004,
+            "numCiting": 63,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe the close connection between the now celebrated iterative turbo decoding algorithm of Berrou et al. (1993) and an algorithm that has been well known in the artificial intelligence community for a decade, but which is relatively unknown to information theorists: Pearl's (1982) belief propagation algorithm. We see that if Pearl's algorithm is applied to the \"belief network\" of a parallel concatenation of two or more codes, the turbo decoding algorithm immediately results. Unfortunately, however, this belief diagram has loops, and Pearl only proved that his algorithm works when there are no loops, so an explanation of the experimental performance of turbo decoding is still lacking. However, we also show that Pearl's algorithm can be used to routinely derive previously known iterative, but suboptimal, decoding algorithms for a number of other error-control systems, including Gallager's (1962) low-density parity-check codes, serially concatenated codes, and product codes. Thus, belief propagation provides a very attractive general methodology for devising low-complexity iterative decoding algorithms for hybrid coded systems."
+            },
+            "slug": "Turbo-Decoding-as-an-Instance-of-Pearl's-\"Belief-McEliece-Mackay",
+            "title": {
+                "fragments": [],
+                "text": "Turbo Decoding as an Instance of Pearl's \"Belief Propagation\" Algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "It is shown that Pearl's algorithm can be used to routinely derive previously known iterative, but suboptimal, decoding algorithms for a number of other error-control systems, including Gallager's low-density parity-check codes, serially concatenated codes, and product codes."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE J. Sel. Areas Commun."
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2056417995"
+                        ],
+                        "name": "K. Murphy",
+                        "slug": "K.-Murphy",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Murphy",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Murphy"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "30400079"
+                        ],
+                        "name": "Yair Weiss",
+                        "slug": "Yair-Weiss",
+                        "structuredName": {
+                            "firstName": "Yair",
+                            "lastName": "Weiss",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yair Weiss"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694621"
+                        ],
+                        "name": "Michael I. Jordan",
+                        "slug": "Michael-I.-Jordan",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jordan",
+                            "middleNames": [
+                                "I."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael I. Jordan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Although BP has only been proven to converge for tree-like graphical models (Pearl 1988) it has been amazingly successful when applied to inference problems with closed loops (Freeman and Pasztor 1999, Frey 1998,  Murphy et al 1999 ) including these, particularly important, coding applications (Forney 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16462148,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "19908640236767427ebf0524dc3a4bb09d65145e",
+            "isKey": false,
+            "numCitedBy": 1774,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recently, researchers have demonstrated that \"loopy belief propagation\" -- the use of Pearl's polytree algorithm in a Bayesian network with loops -- can perform well in the context of error-correcting codes. The most dramatic instance of this is the near Shannon-limit performance of \"Turbo Codes\" -- codes whose decoding algorithm is equivalent to loopy belief propagation in a chain-structured Bayesian network. \n \nIn this paper we ask: is there something special about the error-correcting code context, or does loopy propagation work as an approximate inference scheme in a more general setting? We compare the marginals computed using loopy propagation to the exact ones in four Bayesian network architectures, including two real-world networks: ALARM and QMR. We find that the loopy beliefs often converge and when they do, they give a good approximation to the correct marginals. However, on the QMR network, the loopy beliefs oscillated and had no obvious relationship to the correct posteriors. We present some initial investigations into the cause of these oscillations, and show that some simple methods of preventing them lead to the wrong results."
+            },
+            "slug": "Loopy-Belief-Propagation-for-Approximate-Inference:-Murphy-Weiss",
+            "title": {
+                "fragments": [],
+                "text": "Loopy Belief Propagation for Approximate Inference: An Empirical Study"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper compares the marginals computed using loopy propagation to the exact ones in four Bayesian network architectures, including two real-world networks: ALARM and QMR, and finds that the loopy beliefs often converge and when they do, they give a good approximation to the correct marginals."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "UAI"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2488592"
+                        ],
+                        "name": "R. Brockett",
+                        "slug": "R.-Brockett",
+                        "structuredName": {
+                            "firstName": "Roger",
+                            "lastName": "Brockett",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Brockett"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678170728"
+                        ],
+                        "name": "J. Kosowsky",
+                        "slug": "J.-Kosowsky",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Kosowsky",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Kosowsky"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "This inner loop algorithm generalizes work by Kosowsky and Yuille (1994; Kosowsky, 1995), who used a result similar to theorem 3 to obtain an algorithm for solving the linear assignment problem. This relates to the Sinkhorn algorithm (Sinkhorn, 1964) (which converts positive matrices into doubly stochastic ones). Rangarajan, Gold, and Mjolsness (1996) applied this result to obtain double-loop algorithms for a range of optimization problems subject to linear constraints."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "This inner loop algorithm generalizes work by Kosowsky and Yuille (1994; Kosowsky, 1995), who used a result similar to theorem 3 to obtain an algorithm for solving the linear assignment problem."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 124769832,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "6bf81148c8bc4c9c5843b044f6b8269bc4722c09",
+            "isKey": false,
+            "numCitedBy": 2,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the past decade, there has been an explosion of interest in interior point methods and analog techniques such as neural networks. In this thesis, we focus upon the assignment problem and construct several provably convergent, interrelated iterative and continuous flows for finding the optimal assignment. \nWe begin by using statistical physics techniques to motivate the derivation of a general effective energy function for suspending combinatorial problems. This effective energy form may be compared with standard barrier function approaches to non-linear programming. \nFor the special case of the assignment problem, the optimal solution can always be recovered from a minimum of the effective energy and rigorous convergence bounds can be proved. Interestingly, in the zero temperature limit, extremized versions of the effective energy function reduce to standard formulations of the primal and dual linear programming problems. \nA number of different iterative and continuous algorithms may be used to minimize the effective energy and solve the assignment problem, including steepest descent and a temperature tracking method. Sinkhorn's classical iterative matrix algorithm for finding doubly stochastic matrix is shown to be equivalent to minimizing the effective energy. Moreover, our effective energy results may be used to derive a generalized version of Sinkhorn's method and to construct candidate continuous suspensions."
+            },
+            "slug": "Flows-suspending-iterative-algorithms-Brockett-Kosowsky",
+            "title": {
+                "fragments": [],
+                "text": "Flows suspending iterative algorithms"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678311"
+                        ],
+                        "name": "M. Welling",
+                        "slug": "M.-Welling",
+                        "structuredName": {
+                            "firstName": "Max",
+                            "lastName": "Welling",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Welling"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1725303"
+                        ],
+                        "name": "Y. Teh",
+                        "slug": "Y.-Teh",
+                        "structuredName": {
+                            "firstName": "Yee",
+                            "lastName": "Teh",
+                            "middleNames": [
+                                "Whye"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Teh"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 35876634,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "85d1de9b7ccd0c7cf5e716a1e04fab69f499d9bf",
+            "isKey": false,
+            "numCitedBy": 76,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Approximate-inference-in-Boltzmann-machines-Welling-Teh",
+            "title": {
+                "fragments": [],
+                "text": "Approximate inference in Boltzmann machines"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Artif. Intell."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2238368"
+                        ],
+                        "name": "M. Pretti",
+                        "slug": "M.-Pretti",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Pretti",
+                            "middleNames": [
+                                "Ant\u00f4nio",
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Pretti"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2393100"
+                        ],
+                        "name": "A. Pelizzola",
+                        "slug": "A.-Pelizzola",
+                        "structuredName": {
+                            "firstName": "Alessandro",
+                            "lastName": "Pelizzola",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Pelizzola"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 121845922,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bd7c0f206c174236d78aa54a959cc56a2d524677",
+            "isKey": false,
+            "numCitedBy": 13,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a new propagation algorithm for the minimization of the Bethe free energy for a generic lattice model with pair interactions. The algorithm turns out to be more stable than belief propagation, as it reaches a fixed point also for highly frustrated systems such as spin glasses, and faster than the provably convergent double loop algorithms."
+            },
+            "slug": "Stable-propagation-algorithm-for-the-minimization-Pretti-Pelizzola",
+            "title": {
+                "fragments": [],
+                "text": "Stable propagation algorithm for the minimization of the Bethe free energy"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 78,
+                "text": "A new propagation algorithm for the minimization of the Bethe free energy for a generic lattice model with pair interactions is proposed, which turns out to be more stable than belief propagation, and faster than the provably convergent double loop algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34890235"
+                        ],
+                        "name": "S. Ikeda",
+                        "slug": "S.-Ikeda",
+                        "structuredName": {
+                            "firstName": "Shiro",
+                            "lastName": "Ikeda",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Ikeda"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145876882"
+                        ],
+                        "name": "Toshiyuki TANAKA",
+                        "slug": "Toshiyuki-TANAKA",
+                        "structuredName": {
+                            "firstName": "Toshiyuki",
+                            "lastName": "TANAKA",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Toshiyuki TANAKA"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144362425"
+                        ],
+                        "name": "S. Amari",
+                        "slug": "S.-Amari",
+                        "structuredName": {
+                            "firstName": "Shun\u2010ichi",
+                            "lastName": "Amari",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Amari"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14412166,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ad989152220944545bd64be2b645ab206b7d8f98",
+            "isKey": false,
+            "numCitedBy": 75,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Since the proposal of turbo codes in 1993, many studies have appeared on this simple and new type of codes which give a powerful and practical performance of error correction. Although experimental results strongly support the efficacy of turbo codes, further theoretical analysis is necessary, which is not straightforward. It is pointed out that the iterative decoding algorithm of turbo codes shares essentially similar ideas with low-density parity-check (LDPC) codes, with Pearl's belief propagation algorithm applied to a cyclic belief diagram, and with the Bethe approximation in statistical physics. Therefore, the analysis of the turbo decoding algorithm will reveal the mystery of those similar iterative methods. In this paper, we recapture and extend the geometrical framework initiated by Richardson to the information geometrical framework of dual affine connections, focusing on both of the turbo and LDPC decoding algorithms. The framework helps our intuitive understanding of the algorithms and opens a new prospect of further analysis. We reveal some properties of these codes in the proposed framework, including the stability and error analysis. Based on the error analysis, we finally propose a correction term for improving the approximation."
+            },
+            "slug": "Information-geometry-of-turbo-and-low-density-codes-Ikeda-TANAKA",
+            "title": {
+                "fragments": [],
+                "text": "Information geometry of turbo and low-density parity-check codes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper recapture and extend the geometrical framework initiated by Richardson to the information geometricrical framework of dual affine connections, focusing on both of the turbo and LDPC decoding algorithms, and reveals some properties of these codes in the proposed framework, including the stability and error analysis."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Information Theory"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721860"
+                        ],
+                        "name": "M. Wainwright",
+                        "slug": "M.-Wainwright",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Wainwright",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Wainwright"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 1735253,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "38c47af4d89c318e40004258f1a7523a2f306ad9",
+            "isKey": false,
+            "numCitedBy": 80,
+            "numCiting": 165,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Stochastic processes de ned on graphs arise in a tremendous variety of elds, including statistical physics, signal processing, computer vision, arti cial intelligence, and information theory. The formalism of graphical models provides a useful language with which to formulate fundamental problems common to all of these elds, including estimation, model tting, and sampling. For graphs without cycles, known as trees, all of these problems are relatively well-understood, and can be solved e\u00c6ciently with algorithms whose complexity scales in a tractable manner with problem size. In contrast, these same problems present considerable challenges in general graphs with cycles. The focus of this thesis is the development and analysis of methods, both exact and approximate, for problems on graphs with cycles. Our contributions are in developing and analyzing techniques for estimation, as well as methods for computing upper and lower bounds on quantities of interest (e.g., marginal probabilities; partition functions). In order to do so, we make use of exponential representations of distributions, as well as insight from the associated information geometry and Legendre duality. Our results demonstrate the power of exponential representations for graphical models, as well as the utility of studying collections of modi ed problems de ned on trees embedded within the original graph with cycles. The speci c contributions of this thesis include the following. We develop a method for performing exact estimation of Gaussian processes on graphs with cycles by solving a sequence of modi ed problems on embedded spanning trees. We present the tree-based reparameterization framework for approximate estimation of discrete processes. This framework leads to a number of theoretical results on belief propagation and related algorithms, including characterizations of their xed points and the associated approximation error. Next we extend the notion of reparameterization to a much broader class of methods for approximate inference, including Kikuchi methods, and present results on their xed points and accuracy. Finally, we develop and analyze a novel class of upper bounds on the log partition function based on convex combinations of distributions in the exponential domain. In the special case of combining tree-structured distributions, the associated dual function gives an interesting perspective on the Bethe free energy. Thesis Supervisors: Alan S. Willsky and Tommi S. Jaakkola Title: Professors of Electrical Engineering and Computer Science"
+            },
+            "slug": "Stochastic-processes-on-graphs-with-cycles:-and-Wainwright",
+            "title": {
+                "fragments": [],
+                "text": "Stochastic processes on graphs with cycles: geometric and variational approaches"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A method for performing exact estimation of Gaussian processes on graphs with cycles by solving a sequence of modi ed problems on embedded spanning trees, and a tree-based reparameterization framework for approximate estimation of discrete processes are presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145081362"
+                        ],
+                        "name": "A. Yuille",
+                        "slug": "A.-Yuille",
+                        "structuredName": {
+                            "firstName": "Alan",
+                            "lastName": "Yuille",
+                            "middleNames": [
+                                "Loddon"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Yuille"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678170728"
+                        ],
+                        "name": "J. Kosowsky",
+                        "slug": "J.-Kosowsky",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Kosowsky",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Kosowsky"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "We can obtain the Bethe and Kikuchi free energies by allowing PA(.) to have different forms (though additional approximations are still required to get Bethe or Kikuchi unless the graph has no loops)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 89
+                            }
+                        ],
+                        "text": "It builds on results developed when studying mean-field theory (Kosowsky & Yuille, 1994; Yuille & Kosowsky, 1994; Rangarajan, Gold, & Mjolsness, 1996; Rangarajan, Yuille, Gold, & Mjolsness, 1996)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 5200734,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ed223a6a3f853a6720406d6c22680e02e3953b9c",
+            "isKey": false,
+            "numCitedBy": 135,
+            "numCiting": 47,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In recent years there has been significant interest in adapting techniques from statistical physics, in particular mean field theory, to provide deterministic heuristic algorithms for obtaining approximate solutions to optimization problems. Although these algorithms have been shown experimentally to be successful there has been little theoretical analysis of them. In this paper we demonstrate connections between mean field theory methods and other approaches, in particular, barrier function and interior point methods. As an explicit example, we summarize our work on the linear assignment problem. In this previous work we defined a number of algorithms, including deterministic annealing, for solving the assignment problem. We proved convergence, gave bounds on the convergence times, and showed relations to other optimization algorithms."
+            },
+            "slug": "Statistical-Physics-Algorithms-That-Converge-Yuille-Kosowsky",
+            "title": {
+                "fragments": [],
+                "text": "Statistical Physics Algorithms That Converge"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "Close connections are demonstrated between mean field theory methods and other approaches, in particular, barrier function and interior point methods, for obtaining approximate solutions to optimization problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145257017"
+                        ],
+                        "name": "Anand Rangarajan",
+                        "slug": "Anand-Rangarajan",
+                        "structuredName": {
+                            "firstName": "Anand",
+                            "lastName": "Rangarajan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anand Rangarajan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145081362"
+                        ],
+                        "name": "A. Yuille",
+                        "slug": "A.-Yuille",
+                        "structuredName": {
+                            "firstName": "Alan",
+                            "lastName": "Yuille",
+                            "middleNames": [
+                                "Loddon"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Yuille"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35380459"
+                        ],
+                        "name": "S. Gold",
+                        "slug": "S.-Gold",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Gold",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Gold"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1705072"
+                        ],
+                        "name": "E. Mjolsness",
+                        "slug": "E.-Mjolsness",
+                        "structuredName": {
+                            "firstName": "Eric",
+                            "lastName": "Mjolsness",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Mjolsness"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8775055,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a2aa39f6ef8017b232e85e5cda20c43e2464b4ad",
+            "isKey": false,
+            "numCitedBy": 34,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The softassign quadratic assignment algorithm has recently emerged as an effective strategy for a variety of optimization problems in pattern recognition and combinatorial optimization. While the effectiveness of the algorithm was demonstrated in thousands of simulations, there was no known proof of convergence. Here, we provide a proof of convergence for the most general form of the algorithm."
+            },
+            "slug": "A-Convergence-Proof-for-the-Softassign-Quadratic-Rangarajan-Yuille",
+            "title": {
+                "fragments": [],
+                "text": "A Convergence Proof for the Softassign Quadratic Assignment Algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 74,
+                "text": "A proof of convergence is provided for the most general form of the softassign quadratic assignment algorithm, which has recently emerged as an effective strategy for a variety of optimization problems in pattern recognition and combinatorial optimization."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678170728"
+                        ],
+                        "name": "J. Kosowsky",
+                        "slug": "J.-Kosowsky",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Kosowsky",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Kosowsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145081362"
+                        ],
+                        "name": "A. Yuille",
+                        "slug": "A.-Yuille",
+                        "structuredName": {
+                            "firstName": "Alan",
+                            "lastName": "Yuille",
+                            "middleNames": [
+                                "Loddon"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Yuille"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "This inner loop algorithm generalizes work by Kosowsky and Yuille (Kosowsky and Yuille 1994, Kosowsky 1995) who used a result similar to Theorem 3 to obtain an algorithm for solving the linear assignment problem. This relates to the Sinkhorn algorithm (Sinkhorn 1964) (which converts positive matrices into doubly stochastic ones.) Rangarajan et al (1996a) applied this result to obtain double loop algorithms for a range of optimization problems subject to linear constraints."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 64
+                            }
+                        ],
+                        "text": "It builds on results developed when studying mean-field theory (Kosowsky & Yuille, 1994; Yuille & Kosowsky, 1994; Rangarajan, Gold, & Mjolsness, 1996; Rangarajan, Yuille, Gold, & Mjolsness, 1996)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 6967348,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "429b1cf154d3d5e24d98b6d83f875cd91aab72fd",
+            "isKey": false,
+            "numCitedBy": 146,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "The-invisible-hand-algorithm:-Solving-the-problem-Kosowsky-Yuille",
+            "title": {
+                "fragments": [],
+                "text": "The invisible hand algorithm: Solving the assignment problem with statistical physics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1752732"
+                        ],
+                        "name": "T. Cover",
+                        "slug": "T.-Cover",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Cover",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Cover"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2115282352"
+                        ],
+                        "name": "Joy A. Thomas",
+                        "slug": "Joy-A.-Thomas",
+                        "structuredName": {
+                            "firstName": "Joy",
+                            "lastName": "Thomas",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Joy A. Thomas"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 165,
+                                "start": 142
+                            }
+                        ],
+                        "text": "It is predicted that this combination will enable the coding community to design practical codes which approach the Shannon performance limit (Cover and Thomas 1991) while requiring only limited computation."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 162,
+                                "start": 142
+                            }
+                        ],
+                        "text": "It is predicted that this combination will enable the coding community to design practical codes that approach the Shannon performance limit (Cover & Thomas, 1991) while requiring only limited computation."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 190432,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7dbdb4209626fd92d2436a058663206216036e68",
+            "isKey": false,
+            "numCitedBy": 42794,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Preface to the Second Edition. Preface to the First Edition. Acknowledgments for the Second Edition. Acknowledgments for the First Edition. 1. Introduction and Preview. 1.1 Preview of the Book. 2. Entropy, Relative Entropy, and Mutual Information. 2.1 Entropy. 2.2 Joint Entropy and Conditional Entropy. 2.3 Relative Entropy and Mutual Information. 2.4 Relationship Between Entropy and Mutual Information. 2.5 Chain Rules for Entropy, Relative Entropy, and Mutual Information. 2.6 Jensen's Inequality and Its Consequences. 2.7 Log Sum Inequality and Its Applications. 2.8 Data-Processing Inequality. 2.9 Sufficient Statistics. 2.10 Fano's Inequality. Summary. Problems. Historical Notes. 3. Asymptotic Equipartition Property. 3.1 Asymptotic Equipartition Property Theorem. 3.2 Consequences of the AEP: Data Compression. 3.3 High-Probability Sets and the Typical Set. Summary. Problems. Historical Notes. 4. Entropy Rates of a Stochastic Process. 4.1 Markov Chains. 4.2 Entropy Rate. 4.3 Example: Entropy Rate of a Random Walk on a Weighted Graph. 4.4 Second Law of Thermodynamics. 4.5 Functions of Markov Chains. Summary. Problems. Historical Notes. 5. Data Compression. 5.1 Examples of Codes. 5.2 Kraft Inequality. 5.3 Optimal Codes. 5.4 Bounds on the Optimal Code Length. 5.5 Kraft Inequality for Uniquely Decodable Codes. 5.6 Huffman Codes. 5.7 Some Comments on Huffman Codes. 5.8 Optimality of Huffman Codes. 5.9 Shannon-Fano-Elias Coding. 5.10 Competitive Optimality of the Shannon Code. 5.11 Generation of Discrete Distributions from Fair Coins. Summary. Problems. Historical Notes. 6. Gambling and Data Compression. 6.1 The Horse Race. 6.2 Gambling and Side Information. 6.3 Dependent Horse Races and Entropy Rate. 6.4 The Entropy of English. 6.5 Data Compression and Gambling. 6.6 Gambling Estimate of the Entropy of English. Summary. Problems. Historical Notes. 7. Channel Capacity. 7.1 Examples of Channel Capacity. 7.2 Symmetric Channels. 7.3 Properties of Channel Capacity. 7.4 Preview of the Channel Coding Theorem. 7.5 Definitions. 7.6 Jointly Typical Sequences. 7.7 Channel Coding Theorem. 7.8 Zero-Error Codes. 7.9 Fano's Inequality and the Converse to the Coding Theorem. 7.10 Equality in the Converse to the Channel Coding Theorem. 7.11 Hamming Codes. 7.12 Feedback Capacity. 7.13 Source-Channel Separation Theorem. Summary. Problems. Historical Notes. 8. Differential Entropy. 8.1 Definitions. 8.2 AEP for Continuous Random Variables. 8.3 Relation of Differential Entropy to Discrete Entropy. 8.4 Joint and Conditional Differential Entropy. 8.5 Relative Entropy and Mutual Information. 8.6 Properties of Differential Entropy, Relative Entropy, and Mutual Information. Summary. Problems. Historical Notes. 9. Gaussian Channel. 9.1 Gaussian Channel: Definitions. 9.2 Converse to the Coding Theorem for Gaussian Channels. 9.3 Bandlimited Channels. 9.4 Parallel Gaussian Channels. 9.5 Channels with Colored Gaussian Noise. 9.6 Gaussian Channels with Feedback. Summary. Problems. Historical Notes. 10. Rate Distortion Theory. 10.1 Quantization. 10.2 Definitions. 10.3 Calculation of the Rate Distortion Function. 10.4 Converse to the Rate Distortion Theorem. 10.5 Achievability of the Rate Distortion Function. 10.6 Strongly Typical Sequences and Rate Distortion. 10.7 Characterization of the Rate Distortion Function. 10.8 Computation of Channel Capacity and the Rate Distortion Function. Summary. Problems. Historical Notes. 11. Information Theory and Statistics. 11.1 Method of Types. 11.2 Law of Large Numbers. 11.3 Universal Source Coding. 11.4 Large Deviation Theory. 11.5 Examples of Sanov's Theorem. 11.6 Conditional Limit Theorem. 11.7 Hypothesis Testing. 11.8 Chernoff-Stein Lemma. 11.9 Chernoff Information. 11.10 Fisher Information and the Cram-er-Rao Inequality. Summary. Problems. Historical Notes. 12. Maximum Entropy. 12.1 Maximum Entropy Distributions. 12.2 Examples. 12.3 Anomalous Maximum Entropy Problem. 12.4 Spectrum Estimation. 12.5 Entropy Rates of a Gaussian Process. 12.6 Burg's Maximum Entropy Theorem. Summary. Problems. Historical Notes. 13. Universal Source Coding. 13.1 Universal Codes and Channel Capacity. 13.2 Universal Coding for Binary Sequences. 13.3 Arithmetic Coding. 13.4 Lempel-Ziv Coding. 13.5 Optimality of Lempel-Ziv Algorithms. Compression. Summary. Problems. Historical Notes. 14. Kolmogorov Complexity. 14.1 Models of Computation. 14.2 Kolmogorov Complexity: Definitions and Examples. 14.3 Kolmogorov Complexity and Entropy. 14.4 Kolmogorov Complexity of Integers. 14.5 Algorithmically Random and Incompressible Sequences. 14.6 Universal Probability. 14.7 Kolmogorov complexity. 14.9 Universal Gambling. 14.10 Occam's Razor. 14.11 Kolmogorov Complexity and Universal Probability. 14.12 Kolmogorov Sufficient Statistic. 14.13 Minimum Description Length Principle. Summary. Problems. Historical Notes. 15. Network Information Theory. 15.1 Gaussian Multiple-User Channels. 15.2 Jointly Typical Sequences. 15.3 Multiple-Access Channel. 15.4 Encoding of Correlated Sources. 15.5 Duality Between Slepian-Wolf Encoding and Multiple-Access Channels. 15.6 Broadcast Channel. 15.7 Relay Channel. 15.8 Source Coding with Side Information. 15.9 Rate Distortion with Side Information. 15.10 General Multiterminal Networks. Summary. Problems. Historical Notes. 16. Information Theory and Portfolio Theory. 16.1 The Stock Market: Some Definitions. 16.2 Kuhn-Tucker Characterization of the Log-Optimal Portfolio. 16.3 Asymptotic Optimality of the Log-Optimal Portfolio. 16.4 Side Information and the Growth Rate. 16.5 Investment in Stationary Markets. 16.6 Competitive Optimality of the Log-Optimal Portfolio. 16.7 Universal Portfolios. 16.8 Shannon-McMillan-Breiman Theorem (General AEP). Summary. Problems. Historical Notes. 17. Inequalities in Information Theory. 17.1 Basic Inequalities of Information Theory. 17.2 Differential Entropy. 17.3 Bounds on Entropy and Relative Entropy. 17.4 Inequalities for Types. 17.5 Combinatorial Bounds on Entropy. 17.6 Entropy Rates of Subsets. 17.7 Entropy and Fisher Information. 17.8 Entropy Power Inequality and Brunn-Minkowski Inequality. 17.9 Inequalities for Determinants. 17.10 Inequalities for Ratios of Determinants. Summary. Problems. Historical Notes. Bibliography. List of Symbols. Index."
+            },
+            "slug": "Elements-of-Information-Theory-Cover-Thomas",
+            "title": {
+                "fragments": [],
+                "text": "Elements of Information Theory"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The author examines the role of entropy, inequality, and randomness in the design of codes and the construction of codes in the rapidly changing environment."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1780381"
+                        ],
+                        "name": "Chunhua Shen",
+                        "slug": "Chunhua-Shen",
+                        "structuredName": {
+                            "firstName": "Chunhua",
+                            "lastName": "Shen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chunhua Shen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "5546141"
+                        ],
+                        "name": "A. V. Hengel",
+                        "slug": "A.-V.-Hengel",
+                        "structuredName": {
+                            "firstName": "Anton",
+                            "lastName": "Hengel",
+                            "middleNames": [
+                                "van",
+                                "den"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. V. Hengel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2699095"
+                        ],
+                        "name": "A. Dick",
+                        "slug": "A.-Dick",
+                        "structuredName": {
+                            "firstName": "Anthony",
+                            "lastName": "Dick",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Dick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1728401"
+                        ],
+                        "name": "M. Brooks",
+                        "slug": "M.-Brooks",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Brooks",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Brooks"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14316090,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3013b0d6710bf61d00ace6793f0b6afad544a40c",
+            "isKey": false,
+            "numCitedBy": 12,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel method for tracking the motion of an articulated structure in a video sequence. The analysis of articulated motion is challenging because of the potentially large number of degrees of freedom (DOFs) of an articulated body. For particle filter based algorithms, the number of samples required with high dimensional problems can be computationally prohibitive. To alleviate this problem, we represent the articulated object as an undirected graphical model (or Markov random field, MRF) in which soft constraints between adjacent subparts are captured by conditional probability distributions. The graphical model is extended across time frames to implement a tracker. The tracking algorithm can be interpreted as a belief inference procedure on a dynamic Bayesian network. The discretisation of the state vectors makes it possible to utilise the efficient belief propagation (BP) and mean field (MF) algorithms to reason in this network. Experiments on real video sequences demonstrate that the proposed method is computationally efficient and performs well in tracking the human body."
+            },
+            "slug": "2D-articulated-tracking-with-dynamic-Bayesian-Shen-Hengel",
+            "title": {
+                "fragments": [],
+                "text": "2D articulated tracking with dynamic Bayesian networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "A novel method for tracking the motion of an articulated structure in a video sequence that represents the articulated object as an undirected graphical model in which soft constraints between adjacent subparts are captured by conditional probability distributions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The Fourth International Conference onComputer and Information Technology, 2004. CIT '04."
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145257017"
+                        ],
+                        "name": "Anand Rangarajan",
+                        "slug": "Anand-Rangarajan",
+                        "structuredName": {
+                            "firstName": "Anand",
+                            "lastName": "Rangarajan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anand Rangarajan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35380459"
+                        ],
+                        "name": "S. Gold",
+                        "slug": "S.-Gold",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Gold",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Gold"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1705072"
+                        ],
+                        "name": "E. Mjolsness",
+                        "slug": "E.-Mjolsness",
+                        "structuredName": {
+                            "firstName": "Eric",
+                            "lastName": "Mjolsness",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Mjolsness"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "It builds on results developed when studying mean eld theory (Kosowsky and Yuille 1994, Yuille and Kosowsky 1994,  Rangarajan et al 1996a,  Rangarajan et al 1996b)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Mean eld theory algorithms can be very eectiv e on dicult optimization problems (e.g., see  Rangarajan et al 1996a )."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "This relates to the Sinkhorn algorithm (Sinkhorn 1964) (which converts positive matrices into doubly stochastic ones.)  Rangarajan et al (1996a)  applied this result to obtain double loop algorithms for a range of optimization problems subject to linear constraints."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "(This design was inuenced by the work of Rangarajan et al ( Rangarajan et al 1996a,  Rangarajan et al 1996b)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Rangarajan, Gold, and Mjolsness (1996) applied this result to obtain double-loop algorithms for a range of optimization problems subject to linear constraints."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 160519,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7b782c8204b8b8c86a088a443a948221a239ec26",
+            "isKey": true,
+            "numCitedBy": 95,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel optimizing network architecture with applications in vision, learning, pattern recognition, and combinatorial optimization. This architecture is constructed by combining the following techniques: (1) deterministic annealing, (2) self-amplification, (3) algebraic transformations, (4) clocked objectives, and (5) softassign. Deterministic annealing in conjunction with self-amplification avoids poor local minima and ensures that a vertex of the hypercube is reached. Algebraic transformations and clocked objectives help partition the relaxation into distinct phases. The problems considered have doubly stochastic matrix constraints or minor variations thereof. We introduce a new technique, softassign, which is used to satisfy this constraint. Experimental results on different problems are presented and discussed."
+            },
+            "slug": "A-Novel-Optimizing-Network-Architecture-with-Rangarajan-Gold",
+            "title": {
+                "fragments": [],
+                "text": "A Novel Optimizing Network Architecture with Applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 74,
+                "text": "A novel optimizing network architecture with applications in vision, learning, pattern recognition, and combinatorial optimization is presented and a new technique, softassign, is introduced, which is used to satisfy this constraint."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145430701"
+                        ],
+                        "name": "J. Pearl",
+                        "slug": "J.-Pearl",
+                        "structuredName": {
+                            "firstName": "Judea",
+                            "lastName": "Pearl",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Pearl"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 71
+                            }
+                        ],
+                        "text": "They related the highly successful belief propagation (BP) algorithms (Pearl, 1988) to variational methods from statistical physics and, in particular, to the Bethe and Kikuchi free energies (Domb & Green, 1972)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Belief propagation (Pearl, 1988) is equivalent to the sum-product algorithm developed by Gallager (1963) to decode low-density parity codes\nNeural Computation 14, 1691\u20131722 (2002) c\u00a9 2002 Massachusetts Institute of Technology\nDownloaded from\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 154,
+                                "start": 143
+                            }
+                        ],
+                        "text": "For a tree, the BP algorithm of equation 2.2 is guaranteed to converge, and the resulting {bi(xi)} will correspond to the posterior marginals (Pearl, 1988)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Although BP has been proven to converge only for tree-like graphical models (Pearl, 1988), it has been amazingly successful when applied to inference problems with closed loops (Freeman & Pasztor, 1999; Frey, 1998; Murphy, Weiss, & Jordan, 1999) including these particularly important coding\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 32583695,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "70ef29e6f0ce082bb8a47fd85b9bfb7cc0f20c93",
+            "isKey": true,
+            "numCitedBy": 18218,
+            "numCiting": 230,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From the Publisher: \nProbabilistic Reasoning in Intelligent Systems is a complete andaccessible account of the theoretical foundations and computational methods that underlie plausible reasoning under uncertainty. The author provides a coherent explication of probability as a language for reasoning with partial belief and offers a unifying perspective on other AI approaches to uncertainty, such as the Dempster-Shafer formalism, truth maintenance systems, and nonmonotonic logic. The author distinguishes syntactic and semantic approaches to uncertainty\u0097and offers techniques, based on belief networks, that provide a mechanism for making semantics-based systems operational. Specifically, network-propagation techniques serve as a mechanism for combining the theoretical coherence of probability theory with modern demands of reasoning-systems technology: modular declarative inputs, conceptually meaningful inferences, and parallel distributed computation. Application areas include diagnosis, forecasting, image interpretation, multi-sensor fusion, decision support systems, plan recognition, planning, speech recognition\u0097in short, almost every task requiring that conclusions be drawn from uncertain clues and incomplete information. \nProbabilistic Reasoning in Intelligent Systems will be of special interest to scholars and researchers in AI, decision theory, statistics, logic, philosophy, cognitive psychology, and the management sciences. Professionals in the areas of knowledge-based systems, operations research, engineering, and statistics will find theoretical and computational tools of immediate practical use. The book can also be used as an excellent text for graduate-level courses in AI, operations research, or applied probability."
+            },
+            "slug": "Probabilistic-reasoning-in-intelligent-systems-of-Pearl",
+            "title": {
+                "fragments": [],
+                "text": "Probabilistic reasoning in intelligent systems - networks of plausible inference"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The author provides a coherent explication of probability as a language for reasoning with partial belief and offers a unifying perspective on other AI approaches to uncertainty, such as the Dempster-Shafer formalism, truth maintenance systems, and nonmonotonic logic."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Morgan Kaufmann series in representation and reasoning"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768236"
+                        ],
+                        "name": "W. Freeman",
+                        "slug": "W.-Freeman",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Freeman",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Freeman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1891751"
+                        ],
+                        "name": "E. Pasztor",
+                        "slug": "E.-Pasztor",
+                        "structuredName": {
+                            "firstName": "Egon",
+                            "lastName": "Pasztor",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Pasztor"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2575670"
+                        ],
+                        "name": "Owen Carmichael",
+                        "slug": "Owen-Carmichael",
+                        "structuredName": {
+                            "firstName": "Owen",
+                            "lastName": "Carmichael",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Owen Carmichael"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 181,
+                                "start": 158
+                            }
+                        ],
+                        "text": "\u2026proven to converge only for tree-like graphical models (Pearl, 1988), it has been amazingly successful when applied to inference problems with closed loops (Freeman & Pasztor, 1999; Frey, 1998; Murphy, Weiss, & Jordan, 1999) including these particularly important coding applications (Forney, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Although BP has only been proven to converge for tree-like graphical models (Pearl 1988) it has been amazingly successful when applied to inference problems with closed loops ( Freeman and Pasztor 1999,  Frey 1998, Murphy et al 1999) including these, particularly important, coding applications (Forney 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1414109,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "861897df39716877fb1e03a7d09a234faca076e9",
+            "isKey": false,
+            "numCitedBy": 1220,
+            "numCiting": 82,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a learning-based method for low-level vision problems\u2014estimating scenes from images. We generate a synthetic world of scenes and their corresponding rendered images, modeling their relationships with a Markov network. Bayesian belief propagation allows us to efficiently find a local maximum of the posterior probability for the scene, given an image. We call this approach VISTA\u2014Vision by Image/Scene TrAining.We apply VISTA to the \u201csuper-resolution\u201d problem (estimating high frequency details from a low-resolution image), showing good results. To illustrate the potential breadth of the technique, we also apply it in two other problem domains, both simplified. We learn to distinguish shading from reflectance variations in a single image under particular lighting conditions. For the motion estimation problem in a \u201cblobs world\u201d, we show figure/ground discrimination, solution of the aperture problem, and filling-in arising from application of the same probabilistic machinery."
+            },
+            "slug": "Learning-Low-Level-Vision-Freeman-Pasztor",
+            "title": {
+                "fragments": [],
+                "text": "Learning Low-Level Vision"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "A learning-based method for low-level vision problems\u2014estimating scenes from images with Bayesian belief propagation, applied to the \u201csuper-resolution\u201d problem (estimating high frequency details from a low-resolution image), showing good results."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1770859"
+                        ],
+                        "name": "R. Gallager",
+                        "slug": "R.-Gallager",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Gallager",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Gallager"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 154,
+                                "start": 139
+                            }
+                        ],
+                        "text": "Belief propagation (Pearl 1988) is equivalent to the sum-product algorithm developed by Gallager to decode Low Density Parity Codes (LDPC) (Gallager 1963)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 89
+                            }
+                        ],
+                        "text": "Belief propagation (Pearl, 1988) is equivalent to the sum-product algorithm developed by Gallager (1963) to decode low-density parity codes\nNeural Computation 14, 1691\u20131722 (2002) c\u00a9 2002 Massachusetts Institute of Technology\nDownloaded from\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 339,
+                                "start": 335
+                            }
+                        ],
+                        "text": "Belief propagation (Pearl, 1988) is equivalent to the sum-product algorithm developed by Gallager (1963) to decode low-density parity codes\nNeural Computation 14, 1691\u20131722 (2002) c\u00a9 2002 Massachusetts Institute of Technology\nDownloaded from http://www.mitpressjournals.org/doi/pdfplus/10.1162/08997660260028674 by guest on 31 May 2021\n(LDPC)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 130,
+                                "start": 126
+                            }
+                        ],
+                        "text": "In recent years (see Forney, 2001, for a review), the coding community has shown great interest in sum-product algorithms and LDPCs."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 12709402,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "206f827fad201506c315d40c1469b41a45141893",
+            "isKey": true,
+            "numCitedBy": 10568,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A low-density parity-check code is a code specified by a parity-check matrix with the following properties: each column contains a small fixed number j \\geq 3 of l's and each row contains a small fixed number k > j of l's. The typical minimum distance of these codes increases linearly with block length for a fixed rate and fixed j . When used with maximum likelihood decoding on a sufficiently quiet binary-input symmetric channel, the typical probability of decoding error decreases exponentially with block length for a fixed rate and fixed j . A simple but nonoptimum decoding scheme operating directly from the channel a posteriori probabilities is described. Both the equipment complexity and the data-handling capacity in bits per second of this decoder increase approximately linearly with block length. For j > 3 and a sufficiently low rate, the probability of error using this decoder on a binary symmetric channel is shown to decrease at least exponentially with a root of the block length. Some experimental results show that the actual probability of decoding error is much smaller than this theoretical bound."
+            },
+            "slug": "Low-density-parity-check-codes-Gallager",
+            "title": {
+                "fragments": [],
+                "text": "Low-density parity-check codes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A simple but nonoptimum decoding scheme operating directly from the channel a posteriori probabilities is described and the probability of error using this decoder on a binary symmetric channel is shown to decrease at least exponentially with a root of the block length."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IRE Trans. Inf. Theory"
+            },
+            "year": 1962
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1691022"
+                        ],
+                        "name": "M. Opper",
+                        "slug": "M.-Opper",
+                        "structuredName": {
+                            "firstName": "Manfred",
+                            "lastName": "Opper",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Opper"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064612704"
+                        ],
+                        "name": "David Saad",
+                        "slug": "David-Saad",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Saad",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Saad"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "It can give exact solutions in situations where standard mean eld theory only gives poor solutions ( Weiss 2001 )."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "They are better approximations that standard mean eld theory and hence give better results on certain applications ( Weiss 2001 )."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 126384318,
+            "fieldsOfStudy": [
+                "Geology"
+            ],
+            "id": "e23a8bba1c14078b51157adb19c7b3beb7b30018",
+            "isKey": false,
+            "numCitedBy": 108,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This chapter contains sections titled: The setting: undirected graphs with pairwise potentuals, The algorithms, Simulation Results, Discussion, Acknowlegments, References"
+            },
+            "slug": "Comparing-the-Mean-Field-Method-and-Belief-for-in-Opper-Saad",
+            "title": {
+                "fragments": [],
+                "text": "Comparing the Mean Field Method and Belief Propagation for Approximate Inference in MRFs"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "95716490"
+                        ],
+                        "name": "Waugh",
+                        "slug": "Waugh",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "Waugh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Waugh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "100767079"
+                        ],
+                        "name": "Westervelt",
+                        "slug": "Westervelt",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "Westervelt",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Westervelt"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 124,
+                                "start": 100
+                            }
+                        ],
+                        "text": "Theorem 1 generalizes previous results by Marcus, Waugh, and Westervelt (Marcus & Westervelt, 1989; Waugh & Westervelt, 1993) on the convergence of discrete iterated neural networks."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1694297,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1fe2a83325d478514654537c4a66315ea06a6b8b",
+            "isKey": false,
+            "numCitedBy": 9,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We analyze the attractors of associative-memory neural networks in which analog neurons compete locally. These networks are well suited for a variety of feature-extraction, pattern-classification, and data-compression tasks. For networks storing a finite number of patterns, we present bifurcation diagrams for the pattern overlaps. For networks storing an extensive number of patterns, we present phase diagrams showing attractor types as a function of pattern-storage fraction and neuron-transfer-function steepness. We also report results for the storage capacity of k-winner associative memories in the limit of infinite neuron gain. Numerical investigations of computer-generated networks confirm the phase diagrams."
+            },
+            "slug": "Analog-neural-networks-with-local-competition.-II.-Waugh-Westervelt",
+            "title": {
+                "fragments": [],
+                "text": "Analog neural networks with local competition. II. Application to associative memory."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "The attractors of associative-memory neural networks in which analog neurons compete locally are analyzed, showing attractor types as a function of pattern-storage fraction and neuron-transfer-function steepness."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Physical review. E, Statistical physics, plasmas, fluids, and related interdisciplinary topics"
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2363971"
+                        ],
+                        "name": "J. Hertz",
+                        "slug": "J.-Hertz",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Hertz",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Hertz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46486898"
+                        ],
+                        "name": "A. Krogh",
+                        "slug": "A.-Krogh",
+                        "structuredName": {
+                            "firstName": "Anders",
+                            "lastName": "Krogh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krogh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50760571"
+                        ],
+                        "name": "R. Palmer",
+                        "slug": "R.-Palmer",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Palmer",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Palmer"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Statistical physics has long been a fruitful source of ideas for statistical inference ( Hertz, Krogh, Palmer 1991 )."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 38623065,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6c0cbbd275bb43e09f0527a31ddd61824eca295b",
+            "isKey": false,
+            "numCitedBy": 6517,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From the Publisher: \nThis book is a comprehensive introduction to the neural network models currently under intensive study for computational applications. It is a detailed, logically-developed treatment that covers the theory and uses of collective computational networks, including associative memory, feed forward networks, and unsupervised learning. It also provides coverage of neural network applications in a variety of problems of both theoretical and practical interest."
+            },
+            "slug": "Introduction-to-the-theory-of-neural-computation-Hertz-Krogh",
+            "title": {
+                "fragments": [],
+                "text": "Introduction to the theory of neural computation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This book is a detailed, logically-developed treatment that covers the theory and uses of collective computational networks, including associative memory, feed forward networks, and unsupervised learning."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The advanced book program"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "93170840"
+                        ],
+                        "name": "D. Landau",
+                        "slug": "D.-Landau",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Landau",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Landau"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 210,
+                                "start": 192
+                            }
+                        ],
+                        "text": "They related the highly successful belief propagation (BP) algorithms (Pearl, 1988) to variational methods from statistical physics and, in particular, to the Bethe and Kikuchi free energies (Domb & Green, 1972)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 23
+                            }
+                        ],
+                        "text": "The Bethe free energy (Domb & Green, 1972; Yedidia et al., 2000) is a variational technique from statistical physics."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 208,
+                                "start": 189
+                            }
+                        ],
+                        "text": "LETTER Communicated by Johnathan Yedidia\nCCCP Algorithms to Minimize the Bethe and Kikuchi Free Energies: Convergent Alternatives to Belief Propagation\nA. L. Yuille yuille@ski.org Smith-Kettlewell Eye Research Institute, San Francisco, CA 94115, U.S.A."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 55,
+                                "start": 37
+                            }
+                        ],
+                        "text": "The Bethe and Kikuchi free energies (Domb & Green, 1972) contain higher-order terms than the (factorized) mean-field free energies commonly used."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 25
+                            }
+                        ],
+                        "text": "The Kikuchi free energy (Domb & Green, 1972; Yedidia et al., 2000) is a generalization of the Bethe free energy, which enables us to include higherorder interactions."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9853868,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "3882b99d77f0560958a1332af0561e21180c9505",
+            "isKey": true,
+            "numCitedBy": 2826,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The examination of phase transitions and critical phenomena has dominated statistical physics for the latter half of this century--there is a great theoretical challenge in solving special statistical mechanical models. Additionally, beautiful experimental results have elucidated the singularities (critical behavior) that occur in phase transitions. Although a few spectacular successes in the exact solution of simple models have occurred, interesting systems have mostly proven to be intractable from the analytic perspective. Because many physically disparate systems show identical critical behavior, identifying and understanding general principles of universality and their relationship to microscopic symmetries are of fundamental importance"
+            },
+            "slug": "Phase-transitions-and-critical-phenomena-Landau",
+            "title": {
+                "fragments": [],
+                "text": "Phase transitions and critical phenomena"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 94,
+                "text": "The examination of phase transitions and critical phenomena has dominated statistical physics for the latter half of this century--there is a great theoretical challenge in solving special statistical mechanical models and beautiful experimental results have elucidated the singularities in phase transitions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Computing in Science & Engineering"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1795076"
+                        ],
+                        "name": "M. Arbib",
+                        "slug": "M.-Arbib",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Arbib",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Arbib"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 164,
+                                "start": 154
+                            }
+                        ],
+                        "text": "We obtain two algorithms by applying CCCP to the Bethe and Kikuchi free energies, respectively (CCCP is a procedure, introduced here, for obtaining discrete iterative algorithms by decomposing a cost function into a concave and a convex part)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 190,
+                                "start": 179
+                            }
+                        ],
+                        "text": "The mean-field approximation, which can be formulated as minimizing a (factorized) mean-field free energy, has been used to motivate algorithms for optimization and learning (see Arbib, 1995)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 161
+                            }
+                        ],
+                        "text": "Instead, we can apply variational methods where we seek an approximate solution by minimizing a free energy function to obtain a mean field-theory solution (see Arbib, 1995)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 67
+                            }
+                        ],
+                        "text": "Observe that the standard (factorized) mean-field free energy (see Arbib, 1995) can be obtained from the Bethe free energy by setting bij(xi, xj) = bi(xi)bj(xj),\u2200i, j."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16312222,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "501ffe07846b34c91b3dd6fdb4fc02f22087add2",
+            "isKey": true,
+            "numCitedBy": 3460,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A circular cribbage board having a circular base plate on which a circular counter disc, bearing a circular scale having 122 divisions numbered consecutively from 0, is mounted for rotation. A transparent cover plate which is fixedly mounted on the base plate over the counter plate and through which the counter disc scale can be viewed has an arcuate slot the length of which exposes thirty holes of a row of holes in the counter plate adjacent the circular scale thereon. A circular scale numbered from 0 to 30 is displayed on the cover plate adjacent the slot thereon so that a player to record his score, extends a pointed instrument into a hole of the counter disc adjacent a selected number on the cover plate and rotates the counter disc, until the instrument meets the end of the slot, the cumulative score of the player being indicated by comparing a registration mark on the cover plate with the counter disc scale."
+            },
+            "slug": "The-handbook-of-brain-theory-and-neural-networks-Arbib",
+            "title": {
+                "fragments": [],
+                "text": "The handbook of brain theory and neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "A circular cribbage board having a circular base plate on which a circular counter disc, bearing a circular scale having 122 divisions numbered consecutively from 0, is mounted for rotation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "A Bradford book"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1833925"
+                        ],
+                        "name": "C. Berrou",
+                        "slug": "C.-Berrou",
+                        "structuredName": {
+                            "firstName": "Claude",
+                            "lastName": "Berrou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Berrou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1870588"
+                        ],
+                        "name": "A. Glavieux",
+                        "slug": "A.-Glavieux",
+                        "structuredName": {
+                            "firstName": "Alain",
+                            "lastName": "Glavieux",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Glavieux"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2952051"
+                        ],
+                        "name": "P. Thitimajshima",
+                        "slug": "P.-Thitimajshima",
+                        "structuredName": {
+                            "firstName": "Punya",
+                            "lastName": "Thitimajshima",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Thitimajshima"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In particular, it has been shown that the highly successful turbo codes ( Berrou et al 1993 ) can also be interpreted in terms of BP (McEliece et al 1998)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17770377,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Business"
+            ],
+            "id": "3ba9baa534a8ea39a31c69e72ada959aaa6a4dc1",
+            "isKey": false,
+            "numCitedBy": 8239,
+            "numCiting": 2,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A new class of convolutional codes called turbo-codes, whose performances in terms of bit error rate (BER) are close to the Shannon limit, is discussed. The turbo-code encoder is built using a parallel concatenation of two recursive systematic convolutional codes, and the associated decoder, using a feedback decoding rule, is implemented as P pipelined identical elementary decoders.<<ETX>>"
+            },
+            "slug": "Near-Shannon-limit-error-correcting-coding-and-1-Berrou-Glavieux",
+            "title": {
+                "fragments": [],
+                "text": "Near Shannon limit error-correcting coding and decoding: Turbo-codes. 1"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "A new class of convolutional codes called turbo-codes, whose performances in terms of bit error rate (BER) are close to the Shannon limit, is discussed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of ICC '93 - IEEE International Conference on Communications"
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145430701"
+                        ],
+                        "name": "J. Pearl",
+                        "slug": "J.-Pearl",
+                        "structuredName": {
+                            "firstName": "Judea",
+                            "lastName": "Pearl",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Pearl"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 14
+                            }
+                        ],
+                        "text": "The mean-field approximation, which can be formulated as minimizing a (factorized) mean-field free energy, has been used to motivate algorithms for optimization and learning (see Arbib, 1995)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 154,
+                                "start": 143
+                            }
+                        ],
+                        "text": "For a tree, the BP algorithm of equation 2.2 is guaranteed to converge, and the resulting {bi(xi)} will correspond to the posterior marginals (Pearl, 1988)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Although BP has been proven to converge only for tree-like graphical models (Pearl, 1988), it has been amazingly successful when applied to inference problems with closed loops (Freeman & Pasztor, 1999; Frey, 1998; Murphy, Weiss, & Jordan, 1999) including these particularly important coding\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 71
+                            }
+                        ],
+                        "text": "They related the highly successful belief propagation (BP) algorithms (Pearl, 1988) to variational methods from statistical physics and, in particular, to the Bethe and Kikuchi free energies (Domb & Green, 1972)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Belief propagation (Pearl, 1988) is equivalent to the sum-product algorithm developed by Gallager (1963) to decode low-density parity codes\nNeural Computation 14, 1691\u20131722 (2002) c\u00a9 2002 Massachusetts Institute of Technology\nDownloaded from\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 57437891,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5bf6f01402e1648b7d1e6c9200ede6cb1af30123",
+            "isKey": true,
+            "numCitedBy": 4579,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Probabilistic-reasoning-in-intelligent-systems-Pearl",
+            "title": {
+                "fragments": [],
+                "text": "Probabilistic reasoning in intelligent systems"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1988
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1986184"
+                        ],
+                        "name": "G. Strang",
+                        "slug": "G.-Strang",
+                        "structuredName": {
+                            "firstName": "Gilbert",
+                            "lastName": "Strang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Strang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "11609445"
+                        ],
+                        "name": "L. Freund",
+                        "slug": "L.-Freund",
+                        "structuredName": {
+                            "firstName": "L.",
+                            "lastName": "Freund",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Freund"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally we observe that both the Bethe and Kikuchi free energies can be reformulated in terms of dual variables ( Strang 1986 )."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "which corresponds to the update equation (13) of Theorem 2. Substituting ~zt+1(f g) into Et+1(~zt+1) gives the dual energy function ^ Et+1( ) = Et+1(~zt+1( ). Since Et+1(~z) is convex, duality ensures that the dual ^ Et+1( ) is concave ( Strang 1986 ), and hence has a unique maximum which corresponds to the constraints being satise d. Setting @ ^"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 62132950,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "ac84c7e453c6848f5b873492e56f74d11bde71aa",
+            "isKey": false,
+            "numCitedBy": 1733,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Introduction to applied mathematics , Introduction to applied mathematics , \u0645\u0631\u06a9\u0632 \u0641\u0646\u0627\u0648\u0631\u06cc \u0627\u0637\u0644\u0627\u0639\u0627\u062a \u0648 \u0627\u0637\u0644\u0627\u0639 \u0631\u0633\u0627\u0646\u06cc \u06a9\u0634\u0627\u0648\u0631\u0632\u06cc"
+            },
+            "slug": "Introduction-to-applied-mathematics-Strang-Freund",
+            "title": {
+                "fragments": [],
+                "text": "Introduction to applied mathematics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1986
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1749650"
+                        ],
+                        "name": "B. Frey",
+                        "slug": "B.-Frey",
+                        "structuredName": {
+                            "firstName": "Brendan",
+                            "lastName": "Frey",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Frey"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 193,
+                                "start": 183
+                            }
+                        ],
+                        "text": "\u2026proven to converge only for tree-like graphical models (Pearl, 1988), it has been amazingly successful when applied to inference problems with closed loops (Freeman & Pasztor, 1999; Frey, 1998; Murphy, Weiss, & Jordan, 1999) including these particularly important coding applications (Forney, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 62488180,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "629cc74dcaf655feea40f64cd74617ac884ed0f8",
+            "isKey": false,
+            "numCitedBy": 621,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Probabilistic inference in graphical models pattern classification unsupervised learning data compression channel coding future research directions."
+            },
+            "slug": "Graphical-Models-for-Machine-Learning-and-Digital-Frey",
+            "title": {
+                "fragments": [],
+                "text": "Graphical Models for Machine Learning and Digital Communication"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 84,
+                "text": "Probabilistic inference in graphical models pattern classification unsupervised learning data compression channel coding future research directions and how this affects research directions is investigated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2091885188"
+                        ],
+                        "name": "Marcus",
+                        "slug": "Marcus",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "Marcus",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcus"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "100767079"
+                        ],
+                        "name": "Westervelt",
+                        "slug": "Westervelt",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "Westervelt",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Westervelt"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 66,
+                                "start": 63
+                            }
+                        ],
+                        "text": "The direct superregions and the direct subregions are shown in Figures 5 and 6."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 22
+                            }
+                        ],
+                        "text": "The grid was shown in Figure 1 (imagine a third dimension to get the 3D cube)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 31
+                            }
+                        ],
+                        "text": "The basic regions are shown in Figure 4 (other choices of basic regions are possible)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 30,
+                                "start": 27
+                            }
+                        ],
+                        "text": "For the 2D spin glass (see Figure 1), we can represent the messages (and later the\u03bb\u2019s from CCCP) by the nodes into which they flow (see Figure 2)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 338,
+                                "start": 335
+                            }
+                        ],
+                        "text": "If s is a direct subregion of r, then we define r\\s to be those nodes that are in r but not in s.\nDownloaded from http://www.mitpressjournals.org/doi/pdfplus/10.1162/08997660260028674 by guest on 31 May 2021\nCCCP Algorithms to Minimize the Bethe and Kikuchi Free Energies 1707\nWe illustrate these definitions on the 2D spin glass (see Figure 1)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 73
+                            }
+                        ],
+                        "text": "Theorem 1 generalizes previous results by Marcus, Waugh, and Westervelt (Marcus & Westervelt, 1989; Waugh & Westervelt, 1993) on the convergence of discrete iterated neural networks."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 209,
+                                "start": 206
+                            }
+                        ],
+                        "text": "There are horizontal and vertical connections between neighboring lattice sites, which we label as \u03c8Ei,Ei+1Eh(xEi, xEi+1Eh) and \u03c8Ei,Ei+1Ev(xEi, xEi+1Ev), respectively (i.e., linking node a to b and a to c in Figure 1)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 95
+                            }
+                        ],
+                        "text": "The forms of the solutions found by both algorithms (when BP converged) were very similar (see Figure 9) though we observed that BP tended to favor beliefs biased toward 0 or 1 while CCCP often gave beliefs closer to 0.5."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 175,
+                                "start": 172
+                            }
+                        ],
+                        "text": "During the first six iterations, the constraints were not always satisfied (recall we are using five iterations of the inner loop; see, for example, the top right panel of Figure 8), where the free energy appears to increase at iteration 5."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 68,
+                                "start": 65
+                            }
+                        ],
+                        "text": "Both gave similar results for the final Kikuchi free energy (See Figure 10)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 80,
+                                "start": 77
+                            }
+                        ],
+                        "text": "The algorithm can be illustrated geometrically by the reformulation shown in Figure 3."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 68,
+                                "start": 65
+                            }
+                        ],
+                        "text": "The solutions found by the two algorithms were very similar (see Figure 11)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 101
+                            }
+                        ],
+                        "text": "The CCCP algorithm converged rapidly with typically fewer than six iterations of the outer loop (see Figure 7 for 2D spin glass and Figure 8 for 3D spin glass)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 67
+                            }
+                        ],
+                        "text": "They can be thought of as the messages that flow into node Ei (see Figure 2)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 50
+                            }
+                        ],
+                        "text": "For example, in the 2D spin-glass network (see Figure 1), the variable i labels nodes on a 2D grid (see section 6)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 39969227,
+            "fieldsOfStudy": [
+                "Physics",
+                "Medicine"
+            ],
+            "id": "10b142806ef289156a06478cfa9bfc8ca43255ba",
+            "isKey": true,
+            "numCitedBy": 129,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Dynamics-of-iterated-map-neural-networks.-Marcus-Westervelt",
+            "title": {
+                "fragments": [],
+                "text": "Dynamics of iterated-map neural networks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Physical review. A, General physics"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 140,
+                                "start": 115
+                            }
+                        ],
+                        "text": "(In general, solving for Ezt+1 is, at worse, a convex minimization problem and can sometimes be done analytically; Yuille & Rangarajan, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 59
+                            }
+                        ],
+                        "text": "This procedure is very general and is developed further by Yuille and Rangarajan (2001) with applications to many other optimization problems."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 171,
+                                "start": 145
+                            }
+                        ],
+                        "text": "Yedidia et al. (2000) proved that the fixed points of the BP algorithm correspond to extrema of the Bethe free energy (with the linear constraints\nDownloaded from http://www.mitpressjournals.org/doi/pdfplus/10.1162/08997660260028674 by guest on 31 May 2021\nof equation 2.6)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 134,
+                                "start": 108
+                            }
+                        ],
+                        "text": "Instead, we can apply variational methods where we seek an approximate solution by minimizing a free energy function to obtain a mean field-theory solution (see Arbib, 1995)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 74,
+                                "start": 49
+                            }
+                        ],
+                        "text": "These algorithms will typically, but not always (Yuille & Rangarajan, 2001), require an inner and an outer loop."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 126,
+                                "start": 101
+                            }
+                        ],
+                        "text": "Indeed, many existing discrete-time iterative dynamical systems can be interpreted in terms of CCCP (Yuille & Rangarajan, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 197,
+                                "start": 171
+                            }
+                        ],
+                        "text": "For example, we may want to estimate the variables x\u22171, . . . , x \u2217 N, which are the\nDownloaded from http://www.mitpressjournals.org/doi/pdfplus/10.1162/08997660260028674 by guest on 31 May 2021\nmost probable states of a distribution P(x1, . . . , xN|y)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "The Concave Convex Principle (CCCP)"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The Concave Convex Principle (CCCP)"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 23
+                            }
+                        ],
+                        "text": "The Bethe free energy (Domb & Green, 1972; Yedidia et al., 2000) is a variational technique from statistical physics."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 210,
+                                "start": 192
+                            }
+                        ],
+                        "text": "They related the highly successful belief propagation (BP) algorithms (Pearl, 1988) to variational methods from statistical physics and, in particular, to the Bethe and Kikuchi free energies (Domb & Green, 1972)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 25
+                            }
+                        ],
+                        "text": "The Kikuchi free energy (Domb & Green, 1972; Yedidia et al., 2000) is a generalization of the Bethe free energy, which enables us to include higherorder interactions."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 55,
+                                "start": 37
+                            }
+                        ],
+                        "text": "The Bethe and Kikuchi free energies (Domb & Green, 1972) contain higher-order terms than the (factorized) mean-field free energies commonly used."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Phase transitions and critical phenomena (Vol"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1972
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "87075478"
+                        ],
+                        "name": "B. Beavis",
+                        "slug": "B.-Beavis",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Beavis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Beavis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "102424944"
+                        ],
+                        "name": "I. Dobbs",
+                        "slug": "I.-Dobbs",
+                        "structuredName": {
+                            "firstName": "Ian",
+                            "lastName": "Dobbs",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Dobbs"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 125692686,
+            "fieldsOfStudy": [
+                "Economics"
+            ],
+            "id": "7fe26ea9b2d662cebb559261f53df5e94f9f307a",
+            "isKey": false,
+            "numCitedBy": 31,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Optimization-and-Stability-Theory-for-Economic-AND-Beavis-Dobbs",
+            "title": {
+                "fragments": [],
+                "text": "Optimization and Stability Theory for Economic Analysis: DYNAMICS AND STABILITY"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "102566654"
+                        ],
+                        "name": "Richard Sinkhorn",
+                        "slug": "Richard-Sinkhorn",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Sinkhorn",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Richard Sinkhorn"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "We can obtain the Bethe and Kikuchi free energies by allowing PA(.) to have different forms (though additional approximations are still required to get Bethe or Kikuchi unless the graph has no loops)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 40
+                            }
+                        ],
+                        "text": "This relates to the Sinkhorn algorithm (Sinkhorn, 1964) (which converts positive matrices into doubly stochastic ones)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 120846714,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "441f33fab0614fa0696be54a046cbc692b7e70a2",
+            "isKey": false,
+            "numCitedBy": 830,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "A-Relationship-Between-Arbitrary-Positive-Matrices-Sinkhorn",
+            "title": {
+                "fragments": [],
+                "text": "A Relationship Between Arbitrary Positive Matrices and Doubly Stochastic Matrices"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1964
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "95716490"
+                        ],
+                        "name": "Waugh",
+                        "slug": "Waugh",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "Waugh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Waugh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "100767079"
+                        ],
+                        "name": "Westervelt",
+                        "slug": "Westervelt",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "Westervelt",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Westervelt"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 78
+                            }
+                        ],
+                        "text": "For example, in the 2D spin-glass network (see Figure 1), the variable i labels nodes on a 2D grid (see section 6)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 124,
+                                "start": 100
+                            }
+                        ],
+                        "text": "Theorem 1 generalizes previous results by Marcus, Waugh, and Westervelt (Marcus & Westervelt, 1989; Waugh & Westervelt, 1993) on the convergence of discrete iterated neural networks."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13001108,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Medicine"
+            ],
+            "id": "e92ecd9b2b11717181e1df98a9c73bc93a5bf135",
+            "isKey": false,
+            "numCitedBy": 31,
+            "numCiting": 49,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Analog-neural-networks-with-local-competition.-I.-Waugh-Westervelt",
+            "title": {
+                "fragments": [],
+                "text": "Analog neural networks with local competition. I. Dynamics and stability."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Physical review. E, Statistical physics, plasmas, fluids, and related interdisciplinary topics"
+            },
+            "year": 1993
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 38
+                            }
+                        ],
+                        "text": "These include Teh and Welling (2001), Wainwright, Jaakkola, and Willsky (2001), and Chiang and Forney (2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 37
+                            }
+                        ],
+                        "text": "Recent work by Yedidia, Freeman, and Weiss (2000) unified two approaches to statistical inference."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 236440661,
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Tree-Based Reparameterization Framework for Approximate Estimation of Stochastic Processes on Graphs With Cycles"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145782531"
+                        ],
+                        "name": "Y. Teh",
+                        "slug": "Y.-Teh",
+                        "structuredName": {
+                            "firstName": "Y",
+                            "lastName": "Teh",
+                            "middleNames": [
+                                "Tan"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Teh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678311"
+                        ],
+                        "name": "M. Welling",
+                        "slug": "M.-Welling",
+                        "structuredName": {
+                            "firstName": "Max",
+                            "lastName": "Welling",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Welling"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 14
+                            }
+                        ],
+                        "text": "These include Teh and Welling (2001), Wainwright, Jaakkola, and Willsky (2001), and Chiang and Forney (2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "These include  Teh and Welling (2001) , Wainwright, Jaakkola, and Willsky (2001), and Chiang and Forney (2001).,This is similar to the setup used in Yedidia et al. (2000) and  Teh and Welling (2001) ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 63
+                            }
+                        ],
+                        "text": "This is similar to the setup used in Yedidia et al. (2000) and Teh and Welling (2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16233062,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1b650b647047c94ddb276e0d9146db1aeff7a200",
+            "isKey": false,
+            "numCitedBy": 8,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Passing-and-Bouncing-Messages-for-Generalised-Teh-Welling",
+            "title": {
+                "fragments": [],
+                "text": "Passing and Bouncing Messages for Generalised Inference"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 14
+                            }
+                        ],
+                        "text": "These include Teh and Welling (2001), Wainwright, Jaakkola, and Willsky (2001), and Chiang and Forney (2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 11
+                            }
+                        ],
+                        "text": "(2000) and Teh and Welling (2001). We also implemented BP and GBP for comparison."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 63
+                            }
+                        ],
+                        "text": "This is similar to the setup used in Yedidia et al. (2000) and Teh and Welling (2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Passing and bouncing messages for generalized inference (Tech"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Rep. GCTU 2001-001)"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A Convergence Proof for the Softassign Quadratic assignment Problem"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of NIPS'96. Snowmass. Colorado"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Statistical Physics, Convex Optimization and the Sum Product Algorithm"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "LIDS Technical Report"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Codes on Graphs: News and Views"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Conference on Information Sciences and Systems"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Statistical physics, convex optimization and the sum product algorithm (LIDS Tech. Rep.). Cambridge, MA: Laboratory for Information and Decision Systems, MIT"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Downloaded from http://www.mitpressjournals.org/doi/pdf/10.1162/08997660260028674 by guest on"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Introduction to Applied Mathematics. Wellesley- Cambridge Press"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Introduction to Applied Mathematics. Wellesley- Cambridge Press"
+            },
+            "year": 1986
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Codes on Graphs : News and Views \u201d . 2001 Conference on Information Sciences and Systems"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A convergence proof for the softassign quadratic assignment problem"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "In Proceedings of NIPS\u201996"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 245,
+                                "start": 177
+                            }
+                        ],
+                        "text": "Although BP has been proven to converge only for tree-like graphical models (Pearl, 1988), it has been amazingly successful when applied to inference problems with closed loops (Freeman & Pasztor, 1999; Frey, 1998; Murphy, Weiss, & Jordan, 1999) including these particularly important coding applications (Forney, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 193,
+                                "start": 183
+                            }
+                        ],
+                        "text": "\u2026proven to converge only for tree-like graphical models (Pearl, 1988), it has been amazingly successful when applied to inference problems with closed loops (Freeman & Pasztor, 1999; Frey, 1998; Murphy, Weiss, & Jordan, 1999) including these particularly important coding applications (Forney, 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Graphical Models for Pattern Classification, Data Compression and Channel Coding"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Graphical Models for Pattern Classification, Data Compression and Channel Coding"
+            },
+            "year": 1998
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 18,
+            "methodology": 18,
+            "result": 3
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 44,
+        "totalPages": 5
+    },
+    "page_url": "https://www.semanticscholar.org/paper/CCCP-Algorithms-to-Minimize-the-Bethe-and-Kikuchi-Yuille/974fee9c3836d91aee9492c07379898ccc2c3a85?sort=total-citations"
+}

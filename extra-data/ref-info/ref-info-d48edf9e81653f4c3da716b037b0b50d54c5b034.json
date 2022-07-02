@@ -1,0 +1,2804 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "36181176"
+                        ],
+                        "name": "Mike D. Mintz",
+                        "slug": "Mike-D.-Mintz",
+                        "structuredName": {
+                            "firstName": "Mike",
+                            "lastName": "Mintz",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mike D. Mintz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "87299088"
+                        ],
+                        "name": "Steven Bills",
+                        "slug": "Steven-Bills",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Bills",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Steven Bills"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144621026"
+                        ],
+                        "name": "R. Snow",
+                        "slug": "R.-Snow",
+                        "structuredName": {
+                            "firstName": "Rion",
+                            "lastName": "Snow",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Snow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1746807"
+                        ],
+                        "name": "Dan Jurafsky",
+                        "slug": "Dan-Jurafsky",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Jurafsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dan Jurafsky"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 60,
+                                "start": 40
+                            }
+                        ],
+                        "text": "\u2019s model (like that of previous systems (Mintz et al., 2009)) assumes that relations do not overlap \u2014 there cannot exist two facts r(e1, e2) and q(e1, e2) that are both true for any pair of entities, e1 and e2."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 83
+                            }
+                        ],
+                        "text": "Additionally, their aggregate decisions make use of Mintzstyle aggregate features (Mintz et al., 2009), that collect evidence from multiple sentences, while we use\nonly the deterministic OR nodes."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 80,
+                                "start": 62
+                            }
+                        ],
+                        "text": "However, Riedel et al.\u2019s model (like that of previous systems (Mintz et al., 2009)) assumes that relations do not overlap \u2014 there cannot exist two facts r(e1, e2) and q(e1, e2) that are both true for any pair of entities, e1 and e2."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 82
+                            }
+                        ],
+                        "text": "Additionally, their aggregate decisions make use of Mintzstyle aggregate features (Mintz et al., 2009), that collect evidence from multiple sentences, while we use"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 131,
+                                "start": 112
+                            }
+                        ],
+                        "text": "We use the set of sentence-level features described by Riedel et al. (2010), which were originally de-\nveloped by Mintz et al. (2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Mintz et al. (2009) used Freebase facts to train 100 relational extractors on Wikipedia."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 24
+                            }
+                        ],
+                        "text": "We will make use of the Mintz et al. (2009) sentence-level features in the expeiments, as described in Section 7."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10910955,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d84b57362e2010f6f65357267df7e0157af30684",
+            "isKey": true,
+            "numCitedBy": 2480,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Modern models of relation extraction for tasks like ACE are based on supervised learning of relations from small hand-labeled corpora. We investigate an alternative paradigm that does not require labeled corpora, avoiding the domain dependence of ACE-style algorithms, and allowing the use of corpora of any size. Our experiments use Freebase, a large semantic database of several thousand relations, to provide distant supervision. For each pair of entities that appears in some Freebase relation, we find all sentences containing those entities in a large unlabeled corpus and extract textual features to train a relation classifier. Our algorithm combines the advantages of supervised IE (combining 400,000 noisy pattern features in a probabilistic classifier) and unsupervised IE (extracting large numbers of relations from large corpora of any domain). Our model is able to extract 10,000 instances of 102 relations at a precision of 67.6%. We also analyze feature performance, showing that syntactic parse features are particularly helpful for relations that are ambiguous or lexically distant in their expression."
+            },
+            "slug": "Distant-supervision-for-relation-extraction-without-Mintz-Bills",
+            "title": {
+                "fragments": [],
+                "text": "Distant supervision for relation extraction without labeled data"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work investigates an alternative paradigm that does not require labeled corpora, avoiding the domain dependence of ACE-style algorithms, and allowing the use of corpora of any size."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2110920850"
+                        ],
+                        "name": "Fei Wu",
+                        "slug": "Fei-Wu",
+                        "structuredName": {
+                            "firstName": "Fei",
+                            "lastName": "Wu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fei Wu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1780531"
+                        ],
+                        "name": "Daniel S. Weld",
+                        "slug": "Daniel-S.-Weld",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Weld",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Daniel S. Weld"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 204,
+                                "start": 201
+                            }
+                        ],
+                        "text": "Open IE systems, which perform selfsupervised learning of relation-independent extractors (e.g., Preemptive IE (Shinyama and Sekine, 2006), TEXTRUNNER (Banko et al., 2007; Banko and Etzioni, 2008) and WOE (Wu and Weld, 2010)) can scale to millions of documents, but don\u2019t output canonicalized relations."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 60,
+                                "start": 41
+                            }
+                        ],
+                        "text": ", 2007; Banko and Etzioni, 2008) and WOE (Wu and Weld, 2010)) can scale to millions of documents, but don\u2019t output canonicalized relations."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15015161,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "233d861338cfcd479b1d21897453fcc66418d5e1",
+            "isKey": false,
+            "numCitedBy": 648,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Information-extraction (IE) systems seek to distill semantic relations from natural-language text, but most systems use supervised learning of relation-specific examples and are thus limited by the availability of training data. Open IE systems such as TextRunner, on the other hand, aim to handle the unbounded number of relations found on the Web. But how well can these open systems perform? \n \nThis paper presents WOE, an open IE system which improves dramatically on TextRunner's precision and recall. The key to WOE's performance is a novel form of self-supervised learning for open extractors -- using heuristic matches between Wikipedia infobox attribute values and corresponding sentences to construct training data. Like TextRunner, WOE's extractor eschews lexicalized features and handles an unbounded set of semantic relations. WOE can operate in two modes: when restricted to POS tag features, it runs as quickly as TextRunner, but when set to use dependency-parse features its precision and recall rise even higher."
+            },
+            "slug": "Open-Information-Extraction-Using-Wikipedia-Wu-Weld",
+            "title": {
+                "fragments": [],
+                "text": "Open Information Extraction Using Wikipedia"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "WOE is presented, an open IE system which improves dramatically on TextRunner's precision and recall and is a novel form of self-supervised learning for open extractors -- using heuristic matches between Wikipedia infobox attribute values and corresponding sentences to construct training data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2566295"
+                        ],
+                        "name": "Raphael Hoffmann",
+                        "slug": "Raphael-Hoffmann",
+                        "structuredName": {
+                            "firstName": "Raphael",
+                            "lastName": "Hoffmann",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Raphael Hoffmann"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1799338"
+                        ],
+                        "name": "Congle Zhang",
+                        "slug": "Congle-Zhang",
+                        "structuredName": {
+                            "firstName": "Congle",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Congle Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1780531"
+                        ],
+                        "name": "Daniel S. Weld",
+                        "slug": "Daniel-S.-Weld",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Weld",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Daniel S. Weld"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 161,
+                                "start": 140
+                            }
+                        ],
+                        "text": "\u2026works well when the textual corpus is tightly aligned to the database contents (e.g., matching Wikipedia infoboxes to associated articles (Hoffmann et al., 2010)), Riedel et al. (2010) observe that the heuristic leads to noisy data and poor extraction performance when the method is\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 54
+                            }
+                        ],
+                        "text": ", matching Wikipedia infoboxes to associated articles (Hoffmann et al., 2010)), Riedel et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 22,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Hoffmann et al. (2010) describe a system similar to KYLIN, but which dynamically generates lexicons in order to handle sparse data, learning over 5000 Infobox relations with an average F1 score of 61%."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7856415,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bd298c1bcefcd7feb108111cd72758c265d16ee6",
+            "isKey": false,
+            "numCitedBy": 152,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many researchers are trying to use information extraction (IE) to create large-scale knowledge bases from natural language text on the Web. However, the primary approach (supervised learning of relation-specific extractors) requires manually-labeled training data for each relation and doesn't scale to the thousands of relations encoded in Web text. \n \nThis paper presents LUCHS, a self-supervised, relation-specific IE system which learns 5025 relations --- more than an order of magnitude greater than any previous approach --- with an average F1 score of 61%. Crucial to LUCHS's performance is an automated system for dynamic lexicon learning, which allows it to learn accurately from heuristically-generated training data, which is often noisy and sparse."
+            },
+            "slug": "Learning-5000-Relational-Extractors-Hoffmann-Zhang",
+            "title": {
+                "fragments": [],
+                "text": "Learning 5000 Relational Extractors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "LUCHS is presented, a self-supervised, relation-specific IE system which learns 5025 relations --- more than an order of magnitude greater than any previous approach --- with an average F1 score of 61%."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145941665"
+                        ],
+                        "name": "S. Riedel",
+                        "slug": "S.-Riedel",
+                        "structuredName": {
+                            "firstName": "Sebastian",
+                            "lastName": "Riedel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Riedel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1786422"
+                        ],
+                        "name": "Limin Yao",
+                        "slug": "Limin-Yao",
+                        "structuredName": {
+                            "firstName": "Limin",
+                            "lastName": "Yao",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Limin Yao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143753639"
+                        ],
+                        "name": "A. McCallum",
+                        "slug": "A.-McCallum",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "McCallum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. McCallum"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Riedel et al. (2010), combine weak supervision and multi-instance learning in a more sophisticated manner, training a graphical model, which assumes only that at least one of the matches between the arguments of a Freebase fact and sentences in the corpus is a true relational mention."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 78
+                            }
+                        ],
+                        "text": "\u2022 We present experiments showing that MULTIR outperforms a reimplementation of Riedel et al. (2010)\u2019s approach on both aggregate (corpus as a whole) and sentential extractions."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 26
+                            }
+                        ],
+                        "text": "We follow the approach of Riedel et al. (2010) for generating weak supervision data, computing features, and evaluating aggregate extraction."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 169,
+                                "start": 149
+                            }
+                        ],
+                        "text": "\u2026the textual corpus is tightly aligned to the database contents (e.g., matching Wikipedia infoboxes to associated articles (Hoffmann et al., 2010)), Riedel et al. (2010) observe that the heuristic leads to noisy data and poor extraction performance when the method is applied more broadly (e.g.,\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 30
+                            }
+                        ],
+                        "text": "We used the same data sets as Riedel et al. (2010) for weak supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 53
+                            }
+                        ],
+                        "text": "The systems include the original results reported by Riedel et al. (2010) as well as our new model (MULTIR)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 55
+                            }
+                        ],
+                        "text": "We use the set of sentence-level features described by Riedel et al. (2010), which were originally de-\nveloped by Mintz et al. (2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 147,
+                                "start": 128
+                            }
+                        ],
+                        "text": "To evaluate our algorithm, we first compare it to an existing approach for using multi-instance learning with weak supervision (Riedel et al., 2010), using the same data and features."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 26
+                            }
+                        ],
+                        "text": "Our implementation of the\nRiedel et al. (2010) approach required approximately 6 hours to train on NY Times 05-06 and 4 hours to test on the NY Times 07, each without preprocessing."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 72
+                            }
+                        ],
+                        "text": "Although their model includes variables to model sentential extraction, Riedel et al. (2010) did not report sentence level performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 68
+                            }
+                        ],
+                        "text": "This approach is related to the multi-instance learning approach of Riedel et al. (2010), in that both models include sentence-level and aggregate random variables."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 2386383,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e7e7b9a731678bf0494fe29cbebb42a822224cc6",
+            "isKey": true,
+            "numCitedBy": 1034,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Several recent works on relation extraction have been applying the distant supervision paradigm: instead of relying on annotated text to learn how to predict relations, they employ existing knowledge bases (KBs) as source of supervision. Crucially, these approaches are trained based on the assumption that each sentence which mentions the two related entities is an expression of the given relation. Here we argue that this leads to noisy patterns that hurt precision, in particular if the knowledge base is not directly related to the text we are working with. We present a novel approach to distant supervision that can alleviate this problem based on the following two ideas: First, we use a factor graph to explicitly model the decision whether two entities are related, and the decision whether this relation is mentioned in a given sentence; second, we apply constraint-driven semi-supervision to train this model without any knowledge about which sentences express the relations in our training KB. We apply our approach to extract relations from the New York Times corpus and use Freebase as knowledge base. When compared to a state-of-the-art approach for relation extraction under distant supervision, we achieve 31% error reduction."
+            },
+            "slug": "Modeling-Relations-and-Their-Mentions-without-Text-Riedel-Yao",
+            "title": {
+                "fragments": [],
+                "text": "Modeling Relations and Their Mentions without Labeled Text"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "A novel approach to distant supervision that can alleviate the problem of noisy patterns that hurt precision by using a factor graph and applying constraint-driven semi-supervision to train this model without any knowledge about which sentences express the relations in the authors' training KB."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECML/PKDD"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1786422"
+                        ],
+                        "name": "Limin Yao",
+                        "slug": "Limin-Yao",
+                        "structuredName": {
+                            "firstName": "Limin",
+                            "lastName": "Yao",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Limin Yao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145941665"
+                        ],
+                        "name": "S. Riedel",
+                        "slug": "S.-Riedel",
+                        "structuredName": {
+                            "firstName": "Sebastian",
+                            "lastName": "Riedel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Riedel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143753639"
+                        ],
+                        "name": "A. McCallum",
+                        "slug": "A.-McCallum",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "McCallum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. McCallum"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 17,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Yao et al. (2010) perform weak supervision, while using selectional preference constraints to a jointly reason about entity types."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7558249,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a3fa819575c78be3cbcc8aa394fd21a182dce669",
+            "isKey": false,
+            "numCitedBy": 147,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel approach to relation extraction that integrates information across documents, performs global inference and requires no labelled text. In particular, we tackle relation extraction and entity identification jointly. We use distant supervision to train a factor graph model for relation extraction based on an existing knowledge base (Freebase, derived in parts from Wikipedia). For inference we run an efficient Gibbs sampler that leads to linear time joint inference. We evaluate our approach both for an indomain (Wikipedia) and a more realistic out-of-domain (New York Times Corpus) setting. For the in-domain setting, our joint model leads to 4% higher precision than an isolated local approach, but has no advantage over a pipeline. For the out-of-domain data, we benefit strongly from joint modelling, and observe improvements in precision of 13% over the pipeline, and 15% over the isolated baseline."
+            },
+            "slug": "Collective-Cross-Document-Relation-Extraction-Data-Yao-Riedel",
+            "title": {
+                "fragments": [],
+                "text": "Collective Cross-Document Relation Extraction Without Labelled Data"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 88,
+                "text": "A novel approach to relation extraction is presented that integrates information across documents, performs global inference and requires no labelled text, and tackles relation extraction and entity identification jointly."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2110920850"
+                        ],
+                        "name": "Fei Wu",
+                        "slug": "Fei-Wu",
+                        "structuredName": {
+                            "firstName": "Fei",
+                            "lastName": "Wu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fei Wu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1780531"
+                        ],
+                        "name": "Daniel S. Weld",
+                        "slug": "Daniel-S.-Weld",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Weld",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Daniel S. Weld"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5588127,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0c236e611a90018e84d9de23d1cff241354079be",
+            "isKey": false,
+            "numCitedBy": 377,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The combined efforts of human volunteers have recently extracted numerous facts from Wikipedia, storing them as machine-harvestable object-attribute-value triples in Wikipedia infoboxes. Machine learning systems, such as Kylin, use these infoboxes as training data, accurately extracting even more semantic knowledge from natural language text. But in order to realize the full power of this information, it must be situated in a cleanly-structured ontology. This paper introduces KOG, an autonomous system for refining Wikipedia's infobox-class ontology towards this end. We cast the problem of ontology refinement as a machine learning problem and solve it using both SVMs and a more powerful joint-inference approach expressed in Markov Logic Networks. We present experiments demonstrating the superiority of the joint-inference approach and evaluating other aspects of our system. Using these techniques, we build a rich ontology, integrating Wikipedia's infobox-class schemata with WordNet. We demonstrate how the resulting ontology may be used to enhance Wikipedia with improved query processing and other features."
+            },
+            "slug": "Automatically-refining-the-wikipedia-infobox-Wu-Weld",
+            "title": {
+                "fragments": [],
+                "text": "Automatically refining the wikipedia infobox ontology"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 37,
+                "text": "KOG, an autonomous system for refining Wikipedia's infobox-class ontology, is introduced, using both SVMs and a more powerful joint-inference approach expressed in Markov Logic Networks to build a rich ontology."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "WWW"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2339397"
+                        ],
+                        "name": "Michele Banko",
+                        "slug": "Michele-Banko",
+                        "structuredName": {
+                            "firstName": "Michele",
+                            "lastName": "Banko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michele Banko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1725561"
+                        ],
+                        "name": "Michael J. Cafarella",
+                        "slug": "Michael-J.-Cafarella",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Cafarella",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael J. Cafarella"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144295318"
+                        ],
+                        "name": "S. Soderland",
+                        "slug": "S.-Soderland",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Soderland",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Soderland"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50452701"
+                        ],
+                        "name": "M. Broadhead",
+                        "slug": "M.-Broadhead",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Broadhead",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Broadhead"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1741101"
+                        ],
+                        "name": "Oren Etzioni",
+                        "slug": "Oren-Etzioni",
+                        "structuredName": {
+                            "firstName": "Oren",
+                            "lastName": "Etzioni",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oren Etzioni"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 140
+                            }
+                        ],
+                        "text": "Open IE systems, which perform selfsupervised learning of relation-independent extractors (e.g., Preemptive IE (Shinyama and Sekine, 2006), TEXTRUNNER (Banko et al., 2007; Banko and Etzioni, 2008) and WOE (Wu and Weld, 2010)) can scale to millions of documents, but don\u2019t output canonicalized relations."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 56
+                            }
+                        ],
+                        "text": ", Preemptive IE (Shinyama and Sekine, 2006), TEXTRUNNER (Banko et al., 2007; Banko and Etzioni, 2008) and WOE (Wu and Weld, 2010)) can scale to millions of documents, but don\u2019t output canonicalized relations."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 166,
+                                "start": 148
+                            }
+                        ],
+                        "text": "\u2026IE systems, which perform selfsupervised learning of relation-independent extractors (e.g., Preemptive IE (Shinyama and Sekine, 2006), TEXTRUNNER (Banko et al., 2007; Banko and Etzioni, 2008) and WOE (Wu and Weld, 2010)) can scale to millions of documents, but don\u2019t output canonicalized\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207169186,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "498bb0efad6ec15dd09d941fb309aa18d6df9f5f",
+            "isKey": false,
+            "numCitedBy": 2290,
+            "numCiting": 148,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Traditionally, Information Extraction (IE) has focused on satisfying precise, narrow, pre-specified requests from small homogeneous corpora (e.g., extract the location and time of seminars from a set of announcements). Shifting to a new domain requires the user to name the target relations and to manually create new extraction rules or hand-tag new training examples. This manual labor scales linearly with the number of target relations. This paper introduces Open IE (OIE), a new extraction paradigm where the system makes a single data-driven pass over its corpus and extracts a large set of relational tuples without requiring any human input. The paper also introduces TEXTRUNNER, a fully implemented, highly scalable OIE system where the tuples are assigned a probability and indexed to support efficient extraction and exploration via user queries. We report on experiments over a 9,000,000 Web page corpus that compare TEXTRUNNER with KNOWITALL, a state-of-the-art Web IE system. TEXTRUNNER achieves an error reduction of 33% on a comparable set of extractions. Furthermore, in the amount of time it takes KNOWITALL to perform extraction for a handful of pre-specified relations, TEXTRUNNER extracts a far broader set of facts reflecting orders of magnitude more relations, discovered on the fly. We report statistics on TEXTRUNNER\u2019s 11,000,000 highest probability tuples, and show that they contain over 1,000,000 concrete facts and over 6,500,000more abstract assertions."
+            },
+            "slug": "Open-Information-Extraction-from-the-Web-Banko-Cafarella",
+            "title": {
+                "fragments": [],
+                "text": "Open Information Extraction from the Web"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Open IE (OIE), a new extraction paradigm where the system makes a single data-driven pass over its corpus and extracts a large set of relational tuples without requiring any human input, is introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CACM"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2339397"
+                        ],
+                        "name": "Michele Banko",
+                        "slug": "Michele-Banko",
+                        "structuredName": {
+                            "firstName": "Michele",
+                            "lastName": "Banko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michele Banko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1741101"
+                        ],
+                        "name": "Oren Etzioni",
+                        "slug": "Oren-Etzioni",
+                        "structuredName": {
+                            "firstName": "Oren",
+                            "lastName": "Etzioni",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oren Etzioni"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 140
+                            }
+                        ],
+                        "text": "Open IE systems, which perform selfsupervised learning of relation-independent extractors (e.g., Preemptive IE (Shinyama and Sekine, 2006), TEXTRUNNER (Banko et al., 2007; Banko and Etzioni, 2008) and WOE (Wu and Weld, 2010)) can scale to millions of documents, but don\u2019t output canonicalized relations."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 56
+                            }
+                        ],
+                        "text": ", Preemptive IE (Shinyama and Sekine, 2006), TEXTRUNNER (Banko et al., 2007; Banko and Etzioni, 2008) and WOE (Wu and Weld, 2010)) can scale to millions of documents, but don\u2019t output canonicalized relations."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6983197,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6c8898cda9a1f13607e24306f6f64f20e0ff2ae7",
+            "isKey": false,
+            "numCitedBy": 409,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Traditional Information Extraction (IE) takes a relation name and hand-tagged examples of that relation as input. Open IE is a relationindependent extraction paradigm that is tailored to massive and heterogeneous corpora such as the Web. An Open IE system extracts a diverse set of relational tuples from text without any relation-specific input. How is Open IE possible? We analyze a sample of English sentences to demonstrate that numerous relationships are expressed using a compact set of relation-independent lexico-syntactic patterns, which can be learned by an Open IE system. What are the tradeoffs between Open IE and traditional IE? We consider this question in the context of two tasks. First, when the number of relations is massive, and the relations themselves are not pre-specified, we argue that Open IE is necessary. We then present a new model for Open IE called O-CRF and show that it achieves increased precision and nearly double the recall than the model employed by TEXTRUNNER, the previous stateof-the-art Open IE system. Second, when the number of target relations is small, and their names are known in advance, we show that O-CRF is able to match the precision of a traditional extraction system, though at substantially lower recall. Finally, we show how to combine the two types of systems into a hybrid that achieves higher precision than a traditional extractor, with comparable recall."
+            },
+            "slug": "The-Tradeoffs-Between-Open-and-Traditional-Relation-Banko-Etzioni",
+            "title": {
+                "fragments": [],
+                "text": "The Tradeoffs Between Open and Traditional Relation Extraction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A new model for Open IE called O-CRF is presented and it is shown that it achieves increased precision and nearly double the recall than the model employed by TEXTRUNNER, the previous stateof-the-art Open IE system."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144557047"
+                        ],
+                        "name": "M. Craven",
+                        "slug": "M.-Craven",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Craven",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Craven"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46573338"
+                        ],
+                        "name": "J. Kumlien",
+                        "slug": "J.-Kumlien",
+                        "structuredName": {
+                            "firstName": "Johan",
+                            "lastName": "Kumlien",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Kumlien"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 204,
+                                "start": 178
+                            }
+                        ],
+                        "text": "A more promising approach, often called \u201cweak\u201d or \u201cdistant\u201d supervision, creates its own training data by heuristically matching the contents of a database to corresponding text (Craven and Kumlien, 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2591187,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9c7f4412b8f0310a91334aed79b8553b2ad70908",
+            "isKey": false,
+            "numCitedBy": 663,
+            "numCiting": 79,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recently, there has been much effort in making databases for molecular biology more accessible and interoperable. However, information in text form, such as MEDLINE records, remains a greatly underutilized source of biological information. We have begun a research effort aimed at automatically mapping information from text sources into structured representations, such as knowledge bases. Our approach to this task is to use machine-learning methods to induce routines for extracting facts from text. We describe two learning methods that we have applied to this task--a statistical text classification method, and a relational learning method--and our initial experiments in learning such information-extraction routines. We also present an approach to decreasing the cost of learning information-extraction routines by learning from \"weakly\" labeled training data."
+            },
+            "slug": "Constructing-Biological-Knowledge-Bases-by-from-Craven-Kumlien",
+            "title": {
+                "fragments": [],
+                "text": "Constructing Biological Knowledge Bases by Extracting Information from Text Sources"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "A research effort aimed at automatically mapping information from text sources into structured representations, such as knowledge bases, is begun, to use machine-learning methods to induce routines for extracting facts from text."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ISMB"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3139133"
+                        ],
+                        "name": "Razvan C. Bunescu",
+                        "slug": "Razvan-C.-Bunescu",
+                        "structuredName": {
+                            "firstName": "Razvan",
+                            "lastName": "Bunescu",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Razvan C. Bunescu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1797655"
+                        ],
+                        "name": "R. Mooney",
+                        "slug": "R.-Mooney",
+                        "structuredName": {
+                            "firstName": "Raymond",
+                            "lastName": "Mooney",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Mooney"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Bunescu and Mooney (2007) connect weak supervision with multi-instance learning and extend their relational extraction kernel to this context."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3179848,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8dff21517f7ac744089a260dbc3e2f48649e3119",
+            "isKey": false,
+            "numCitedBy": 305,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new approach to relation extraction that requires only a handful of training examples. Given a few pairs of named entities known to exhibit or not exhibit a particular relation, bags of sentences containing the pairs are extracted from the web. We extend an existing relation extraction method to handle this weaker form of supervision, and present experimental results demonstrating that our approach can reliably extract relations from web documents."
+            },
+            "slug": "Learning-to-Extract-Relations-from-the-Web-using-Bunescu-Mooney",
+            "title": {
+                "fragments": [],
+                "text": "Learning to Extract Relations from the Web using Minimal Supervision"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "An existing relation extraction method is extended to handle this weaker form of supervision, and experimental results demonstrate that the approach can reliably extract relations from web documents."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3195933"
+                        ],
+                        "name": "Kedar Bellare",
+                        "slug": "Kedar-Bellare",
+                        "structuredName": {
+                            "firstName": "Kedar",
+                            "lastName": "Bellare",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kedar Bellare"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143753639"
+                        ],
+                        "name": "A. McCallum",
+                        "slug": "A.-McCallum",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "McCallum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. McCallum"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Bellare and McCallum (2007) used a database of BibTex records to train a CRF extractor on 12 bibliographic relations."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8597804,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e3de9fc30534fe6dd0cd4e5dcc391a24f5837f26",
+            "isKey": false,
+            "numCitedBy": 62,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Supervised machine learning algorithms for information extraction generally require large amounts of training data. In many cases where labeling training data is burdensome, there may, however, already exist an incomplete database relevant to the task at hand. Records from this database can be used to label text strings that express the same information. For tasks where text strings do not follow the same format or layout, and additionally may contain extra information, labeling the strings completely may be problematic. This paper presents a method for training extractors which fill in missing labels of a text sequence that is partially labeled using simple high-precision heuristics. Furthermore, we improve the algorithm by utilizing labeled fields from the database. In experiments with BibTeX records and research paper citation strings, we show a significant improvement in extraction accuracy over a baseline that only relies on the database for training data."
+            },
+            "slug": "Learning-Extractors-from-Unlabeled-Text-using-Bellare-McCallum",
+            "title": {
+                "fragments": [],
+                "text": "Learning Extractors from Unlabeled Text using Relevant Databases"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper presents a method for training extractors which fill in missing labels of a text sequence that is partially labeled using simple high-precision heuristics, and shows a significant improvement in extraction accuracy over a baseline that only relies on the database for training data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144295318"
+                        ],
+                        "name": "S. Soderland",
+                        "slug": "S.-Soderland",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Soderland",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Soderland"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145262164"
+                        ],
+                        "name": "David Fisher",
+                        "slug": "David-Fisher",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Fisher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Fisher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51080653"
+                        ],
+                        "name": "J. Aseltine",
+                        "slug": "J.-Aseltine",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Aseltine",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Aseltine"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1925215"
+                        ],
+                        "name": "W. Lehnert",
+                        "slug": "W.-Lehnert",
+                        "structuredName": {
+                            "firstName": "Wendy",
+                            "lastName": "Lehnert",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Lehnert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 57
+                            }
+                        ],
+                        "text": "Supervised-learning approaches to IE were introduced in (Soderland et al., 1995) and are too numerous to summarize here."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9168228,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8245f6099f547008522ebbe6fb813d8132085746",
+            "isKey": false,
+            "numCitedBy": 409,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "One of the central knowledge sources of an information extraction (IE) system IS a dictionary of linguistic patterns that can be used to identify references to relevant information in a text Automatic creation of conceptual dictionaries is important for portability and scalability of an IE system This paper describes CRYSTAL, a system which automatically induces a dictionary of \"concept-node definitions\" sufficient to identify relevant information from a training corpus Each of these concept-node definitions is generalized as far as possible without producing errors, so that a minimum number of dictionary entries cover the positive training instances Because it tests the accuracy of each proposed definition, CRYSTAL can often surpass human intuitions in creating reliable extraction rules."
+            },
+            "slug": "CRYSTAL:-Inducing-a-Conceptual-Dictionary-Soderland-Fisher",
+            "title": {
+                "fragments": [],
+                "text": "CRYSTAL: Inducing a Conceptual Dictionary"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "CRYSTAL is described, a system which automatically induces a dictionary of \"concept-node definitions\" sufficient to identify relevant information from a training corpus that can often surpass human intuitions in creating reliable extraction rules."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IJCAI"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2784228"
+                        ],
+                        "name": "J. Finkel",
+                        "slug": "J.-Finkel",
+                        "structuredName": {
+                            "firstName": "Jenny",
+                            "lastName": "Finkel",
+                            "middleNames": [
+                                "Rose"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Finkel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3050250"
+                        ],
+                        "name": "Trond Grenager",
+                        "slug": "Trond-Grenager",
+                        "structuredName": {
+                            "firstName": "Trond",
+                            "lastName": "Grenager",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trond Grenager"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 56
+                            }
+                        ],
+                        "text": "The data was first tagged with the Stanford NER system (Finkel et al., 2005) and then entity mentions were found by collecting each continuous phrase where words were tagged identically (i.e., as a person, location, or organization)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 55
+                            }
+                        ],
+                        "text": "The data was first tagged with the Stanford NER system (Finkel et al., 2005) and then entity mentions were found by collecting each continuous phrase where words were tagged identically (i."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10977241,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4f410ab5c8b12b34b38421241366ee456bbebab9",
+            "isKey": false,
+            "numCitedBy": 3246,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Most current statistical natural language processing models use only local features so as to permit dynamic programming in inference, but this makes them unable to fully account for the long distance structure that is prevalent in language use. We show how to solve this dilemma with Gibbs sampling, a simple Monte Carlo method used to perform approximate inference in factored probabilistic models. By using simulated annealing in place of Viterbi decoding in sequence models such as HMMs, CMMs, and CRFs, it is possible to incorporate non-local structure while preserving tractable inference. We use this technique to augment an existing CRF-based information extraction system with long-distance dependency models, enforcing label consistency and extraction template consistency constraints. This technique results in an error reduction of up to 9% over state-of-the-art systems on two established information extraction tasks."
+            },
+            "slug": "Incorporating-Non-local-Information-into-Extraction-Finkel-Grenager",
+            "title": {
+                "fragments": [],
+                "text": "Incorporating Non-local Information into Information Extraction Systems by Gibbs Sampling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "By using simulated annealing in place of Viterbi decoding in sequence models such as HMMs, CMMs, and CRFs, it is possible to incorporate non-local structure while preserving tractable inference."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1720988"
+                        ],
+                        "name": "Joakim Nivre",
+                        "slug": "Joakim-Nivre",
+                        "structuredName": {
+                            "firstName": "Joakim",
+                            "lastName": "Nivre",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Joakim Nivre"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1712813"
+                        ],
+                        "name": "Johan Hall",
+                        "slug": "Johan-Hall",
+                        "structuredName": {
+                            "firstName": "Johan",
+                            "lastName": "Hall",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Johan Hall"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145446170"
+                        ],
+                        "name": "Jens Nilsson",
+                        "slug": "Jens-Nilsson",
+                        "structuredName": {
+                            "firstName": "Jens",
+                            "lastName": "Nilsson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jens Nilsson"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 223,
+                                "start": 198
+                            }
+                        ],
+                        "text": "These include indicators for various lexical, part of speech, named entity, and dependency tree path properties of entity mentions in specific sentences, as computed with the Malt dependency parser (Nivre and Nilsson, 2004) and OpenNLP POS tagger1."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 974611,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b2fab36801910e460dc60524f731f5f0438553b4",
+            "isKey": false,
+            "numCitedBy": 261,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper reports the results of experiments using memory-based learning to guide a deterministic dependency parser for unrestricted natural language text. Using data from a small treebank of Swedish, memory-based classifiers for predicting the next action of the parser are constructed. The accuracy of a classifier as such is evaluated on held-out data derived from the treebank, and its performance as a parser guide is evaluated by parsing the held-out portion of the treebank. The evaluation shows that memory-based learning gives a significant improvement over a previous probabilistic model based on maximum conditional likelihood estimation and that the inclusion of lexical features improves the accuracy even further."
+            },
+            "slug": "Memory-Based-Dependency-Parsing-Nivre-Hall",
+            "title": {
+                "fragments": [],
+                "text": "Memory-Based Dependency Parsing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Evaluation shows that memory-based learning gives a significant improvement over a previous probabilistic model based on maximum conditional likelihood estimation and that the inclusion of lexical features improves the accuracy even further."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CoNLL"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143818235"
+                        ],
+                        "name": "Andrew Carlson",
+                        "slug": "Andrew-Carlson",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Carlson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Carlson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "31779043"
+                        ],
+                        "name": "J. Betteridge",
+                        "slug": "J.-Betteridge",
+                        "structuredName": {
+                            "firstName": "Justin",
+                            "lastName": "Betteridge",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Betteridge"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "16411658"
+                        ],
+                        "name": "B. Kisiel",
+                        "slug": "B.-Kisiel",
+                        "structuredName": {
+                            "firstName": "Bryan",
+                            "lastName": "Kisiel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Kisiel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1717452"
+                        ],
+                        "name": "Burr Settles",
+                        "slug": "Burr-Settles",
+                        "structuredName": {
+                            "firstName": "Burr",
+                            "lastName": "Settles",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Burr Settles"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1842532"
+                        ],
+                        "name": "Estevam Hruschka",
+                        "slug": "Estevam-Hruschka",
+                        "structuredName": {
+                            "firstName": "Estevam",
+                            "lastName": "Hruschka",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Estevam Hruschka"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40975594"
+                        ],
+                        "name": "Tom Michael Mitchell",
+                        "slug": "Tom-Michael-Mitchell",
+                        "structuredName": {
+                            "firstName": "Tom",
+                            "lastName": "Mitchell",
+                            "middleNames": [
+                                "Michael"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tom Michael Mitchell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 17
+                            }
+                        ],
+                        "text": "The NELL system (Carlson et al., 2010) can also be viewed as performing weak supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8423494,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f7312b8568d63bbbb239583ed282f46cdc40978d",
+            "isKey": false,
+            "numCitedBy": 1739,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider here the problem of building a never-ending language learner; that is, an intelligent computer agent that runs forever and that each day must (1) extract, or read, information from the web to populate a growing structured knowledge base, and (2) learn to perform this task better than on the previous day. In particular, we propose an approach and a set of design principles for such an agent, describe a partial implementation of such a system that has already learned to extract a knowledge base containing over 242,000 beliefs with an estimated precision of 74% after running for 67 days, and discuss lessons learned from this preliminary attempt to build a never-ending learning agent."
+            },
+            "slug": "Toward-an-Architecture-for-Never-Ending-Language-Carlson-Betteridge",
+            "title": {
+                "fragments": [],
+                "text": "Toward an Architecture for Never-Ending Language Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 52,
+                "text": "This work proposes an approach and a set of design principles for an intelligent computer agent that runs forever and describes a partial implementation of such a system that has already learned to extract a knowledge base containing over 242,000 beliefs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AAAI"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2110920850"
+                        ],
+                        "name": "Fei Wu",
+                        "slug": "Fei-Wu",
+                        "structuredName": {
+                            "firstName": "Fei",
+                            "lastName": "Wu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fei Wu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1780531"
+                        ],
+                        "name": "Daniel S. Weld",
+                        "slug": "Daniel-S.-Weld",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Weld",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Daniel S. Weld"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 141,
+                                "start": 122
+                            }
+                        ],
+                        "text": "The KYLIN system aplied weak supervision to learn relations from Wikipedia, treating infoboxes as the associated database (Wu and Weld, 2007); Wu et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1893204,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "57faa0e5f99442d1723d2c5ccb70b1461987a7ed",
+            "isKey": false,
+            "numCitedBy": 432,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Berners-Lee's compelling vision of a Semantic Web is hindered by a chicken-and-egg problem, which can be best solved by a bootstrapping method - creating enough structured data to motivate the development of applications. This paper argues that autonomously \"Semantifying Wikipedia\" is the best way to solve the problem. We choose Wikipedia as an initial data source, because it is comprehensive, not too large, high-quality, and contains enough manually-derived structure to bootstrap an autonomous, self-supervised process. We identify several types of structures which can be automatically enhanced in Wikipedia (e.g., link structure, taxonomic data, infoboxes, etc.), and we describea prototype implementation of a self-supervised, machine learning system which realizes our vision. Preliminary experiments demonstrate the high precision of our system's extracted data - in one case equaling that of humans."
+            },
+            "slug": "Autonomously-semantifying-wikipedia-Wu-Weld",
+            "title": {
+                "fragments": [],
+                "text": "Autonomously semantifying wikipedia"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper argues that autonomously \"Semantifying Wikipedia\" is the best way to solve the chicken-and-egg problem, and describes a prototype implementation of a self-supervised, machine learning system which realizes the vision."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CIKM '07"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2550658"
+                        ],
+                        "name": "Yusuke Shinyama",
+                        "slug": "Yusuke-Shinyama",
+                        "structuredName": {
+                            "firstName": "Yusuke",
+                            "lastName": "Shinyama",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yusuke Shinyama"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714612"
+                        ],
+                        "name": "S. Sekine",
+                        "slug": "S.-Sekine",
+                        "structuredName": {
+                            "firstName": "Satoshi",
+                            "lastName": "Sekine",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Sekine"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 16
+                            }
+                        ],
+                        "text": ", Preemptive IE (Shinyama and Sekine, 2006), TEXTRUNNER (Banko et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8186401,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "84364e5660d0db7fe4654febb1e8aba0399835b5",
+            "isKey": false,
+            "numCitedBy": 283,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We are trying to extend the boundary of Information Extraction (IE) systems. Existing IE systems require a lot of time and human effort to tune for a new scenario. Preemptive Information Extraction is an attempt to automatically create all feasible IE systems in advance without human intervention. We propose a technique called Unrestricted Relation Discovery that discovers all possible relations from texts and presents them as tables. We present a preliminary system that obtains reasonably good results."
+            },
+            "slug": "Preemptive-Information-Extraction-using-Relation-Shinyama-Sekine",
+            "title": {
+                "fragments": [],
+                "text": "Preemptive Information Extraction using Unrestricted Relation Discovery"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "A technique called Unrestricted Relation Discovery is proposed that discovers all possible relations from texts and presents them as tables in order to extend the boundary of Information Extraction systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NAACL"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1982950"
+                        ],
+                        "name": "Luke Zettlemoyer",
+                        "slug": "Luke-Zettlemoyer",
+                        "structuredName": {
+                            "firstName": "Luke",
+                            "lastName": "Zettlemoyer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Luke Zettlemoyer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143707112"
+                        ],
+                        "name": "M. Collins",
+                        "slug": "M.-Collins",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Collins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Collins"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 280,
+                                "start": 229
+                            }
+                        ],
+                        "text": "Instead, we make two approximations, described below, leading to a Perceptron-style additive (Collins, 2002) parameter update scheme which has been modified to reason about hidden variables, similar in style to the approaches of (Liang et al., 2006; Zettlemoyer and Collins, 2007), but adapted for our specific model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12728987,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "774113732db34ce0b797fc3dcceded811fb6edbc",
+            "isKey": false,
+            "numCitedBy": 448,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of learning to parse sentences to lambda-calculus representations of their underlying semantics and present an algorithm that learns a weighted combinatory categorial grammar (CCG). A key idea is to introduce non-standard CCG combinators that relax certain parts of the grammar\u2014for example allowing flexible word order, or insertion of lexical items\u2014 with learned costs. We also present a new, online algorithm for inducing a weighted CCG. Results for the approach on ATIS data show 86% F-measure in recovering fully correct semantic analyses and 95.9% F-measure by a partial-match criterion, a more than 5% improvement over the 90.3% partial-match figure reported by He and Young (2006)."
+            },
+            "slug": "Online-Learning-of-Relaxed-CCG-Grammars-for-Parsing-Zettlemoyer-Collins",
+            "title": {
+                "fragments": [],
+                "text": "Online Learning of Relaxed CCG Grammars for Parsing to Logical Form"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A key idea is to introduce non-standard CCG combinators that relax certain parts of the grammar\u2014for example allowing flexible word order, or insertion of lexical items\u2014 with learned costs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143753639"
+                        ],
+                        "name": "A. McCallum",
+                        "slug": "A.-McCallum",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "McCallum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. McCallum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144795030"
+                        ],
+                        "name": "Karl Schultz",
+                        "slug": "Karl-Schultz",
+                        "structuredName": {
+                            "firstName": "Karl",
+                            "lastName": "Schultz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Karl Schultz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34650964"
+                        ],
+                        "name": "Sameer Singh",
+                        "slug": "Sameer-Singh",
+                        "structuredName": {
+                            "firstName": "Sameer",
+                            "lastName": "Singh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sameer Singh"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 116,
+                                "start": 95
+                            }
+                        ],
+                        "text": "We also compare with SOLOR, a reimplementation of their algorithm, which we built in Factorie (McCallum et al., 2009), and will use later to evaluate sentential extraction."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3017946,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5648c0b82792274944fc5428e11cec0afe260092",
+            "isKey": false,
+            "numCitedBy": 233,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Discriminatively trained undirected graphical models have had wide empirical success, and there has been increasing interest in toolkits that ease their application to complex relational data. The power in relational models is in their repeated structure and tied parameters; at issue is how to define these structures in a powerful and flexible way. Rather than using a declarative language, such as SQL or first-order logic, we advocate using an imperative language to express various aspects of model structure, inference, and learning. By combining the traditional, declarative, statistical semantics of factor graphs with imperative definitions of their construction and operation, we allow the user to mix declarative and procedural domain knowledge, and also gain significant efficiencies. We have implemented such imperatively defined factor graphs in a system we call FACTORIE, a software library for an object-oriented, strongly-typed, functional language. In experimental comparisons to Markov Logic Networks on joint segmentation and coreference, we find our approach to be 3-15 times faster while reducing error by 20-25%\u2014achieving a new state of the art."
+            },
+            "slug": "FACTORIE:-Probabilistic-Programming-via-Defined-McCallum-Schultz",
+            "title": {
+                "fragments": [],
+                "text": "FACTORIE: Probabilistic Programming via Imperatively Defined Factor Graphs"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work advocates using an imperative language to express various aspects of model structure, inference, and learning, and implements imperatively defined factor graphs in a system called FACTORIE, a software library for an object-oriented, strongly-typed, functional language."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2075292388"
+                        ],
+                        "name": "P. Liang",
+                        "slug": "P.-Liang",
+                        "structuredName": {
+                            "firstName": "Percy",
+                            "lastName": "Liang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Liang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1398531195"
+                        ],
+                        "name": "A. Bouchard-C\u00f4t\u00e9",
+                        "slug": "A.-Bouchard-C\u00f4t\u00e9",
+                        "structuredName": {
+                            "firstName": "Alexandre",
+                            "lastName": "Bouchard-C\u00f4t\u00e9",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Bouchard-C\u00f4t\u00e9"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38666915"
+                        ],
+                        "name": "D. Klein",
+                        "slug": "D.-Klein",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Klein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Klein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685978"
+                        ],
+                        "name": "B. Taskar",
+                        "slug": "B.-Taskar",
+                        "structuredName": {
+                            "firstName": "Ben",
+                            "lastName": "Taskar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Taskar"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 280,
+                                "start": 229
+                            }
+                        ],
+                        "text": "Instead, we make two approximations, described below, leading to a Perceptron-style additive (Collins, 2002) parameter update scheme which has been modified to reason about hidden variables, similar in style to the approaches of (Liang et al., 2006; Zettlemoyer and Collins, 2007), but adapted for our specific model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 228,
+                                "start": 210
+                            }
+                        ],
+                        "text": "\u2026approximations, described below, leading to a Perceptron-style additive (Collins, 2002) parameter update scheme which has been modified to reason about hidden variables, similar in style to the approaches of (Liang et al., 2006; Zettlemoyer and Collins, 2007), but adapted for our specific model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1391785,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "10d21ca7728cb3dd15731accedda9ea711d8a0f4",
+            "isKey": false,
+            "numCitedBy": 317,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a perceptron-style discriminative approach to machine translation in which large feature sets can be exploited. Unlike discriminative reranking approaches, our system can take advantage of learned features in all stages of decoding. We first discuss several challenges to error-driven discriminative approaches. In particular, we explore different ways of updating parameters given a training example. We find that making frequent but smaller updates is preferable to making fewer but larger updates. Then, we discuss an array of features and show both how they quantitatively increase BLEU score and how they qualitatively interact on specific examples. One particular feature we investigate is a novel way to introduce learning into the initial phrase extraction process, which has previously been entirely heuristic."
+            },
+            "slug": "An-End-to-End-Discriminative-Approach-to-Machine-Liang-Bouchard-C\u00f4t\u00e9",
+            "title": {
+                "fragments": [],
+                "text": "An End-to-End Discriminative Approach to Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 67,
+                "text": "A perceptron-style discriminative approach to machine translation in which large feature sets can be exploited and a novel way to introduce learning into the initial phrase extraction process, which has previously been entirely heuristic."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144299726"
+                        ],
+                        "name": "Thomas G. Dietterich",
+                        "slug": "Thomas-G.-Dietterich",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Dietterich",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas G. Dietterich"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145914024"
+                        ],
+                        "name": "R. Lathrop",
+                        "slug": "R.-Lathrop",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Lathrop",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Lathrop"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1388700951"
+                        ],
+                        "name": "Tomas Lozano-Perez",
+                        "slug": "Tomas-Lozano-Perez",
+                        "structuredName": {
+                            "firstName": "Tomas",
+                            "lastName": "Lozano-Perez",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomas Lozano-Perez"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 179,
+                                "start": 156
+                            }
+                        ],
+                        "text": "Multi-instance learning was introduced in order to combat the problem of ambiguously-labeled training data when predicting the activity of different drugs (Dietterich et al., 1997)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7398727,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1c7d38f68fe1150895a186e30b60c02dd89a676a",
+            "isKey": false,
+            "numCitedBy": 2428,
+            "numCiting": 81,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Solving-the-Multiple-Instance-Problem-with-Dietterich-Lathrop",
+            "title": {
+                "fragments": [],
+                "text": "Solving the Multiple Instance Problem with Axis-Parallel Rectangles"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Artif. Intell."
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143707112"
+                        ],
+                        "name": "M. Collins",
+                        "slug": "M.-Collins",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Collins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Collins"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 93
+                            }
+                        ],
+                        "text": "Instead, we make two approximations, described below, leading to a Perceptron-style additive (Collins, 2002) parameter update scheme which has been modified to reason about hidden variables, similar in style to the approaches of (Liang et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10888973,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5a7958b418bceb48a315384568091ab1898b1640",
+            "isKey": false,
+            "numCitedBy": 2272,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe new algorithms for training tagging models, as an alternative to maximum-entropy models or conditional random fields (CRFs). The algorithms rely on Viterbi decoding of training examples, combined with simple additive updates. We describe theory justifying the algorithms through a modification of the proof of convergence of the perceptron algorithm for classification problems. We give experimental results on part-of-speech tagging and base noun phrase chunking, in both cases showing improvements over results for a maximum-entropy tagger."
+            },
+            "slug": "Discriminative-Training-Methods-for-Hidden-Markov-Collins",
+            "title": {
+                "fragments": [],
+                "text": "Discriminative Training Methods for Hidden Markov Models: Theory and Experiments with Perceptron Algorithms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Experimental results on part-of-speech tagging and base noun phrase chunking are given, in both cases showing improvements over results for a maximum-entropy tagger."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 17
+                            }
+                        ],
+                        "text": "The NELL system (Carlson et al., 2010) can also be viewed as performing weak supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Toward an architecture for neverending language learning"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI-10)."
+            },
+            "year": 2010
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 13,
+            "methodology": 12
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 23,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Knowledge-Based-Weak-Supervision-for-Information-of-Hoffmann-Zhang/d48edf9e81653f4c3da716b037b0b50d54c5b034?sort=total-citations"
+}

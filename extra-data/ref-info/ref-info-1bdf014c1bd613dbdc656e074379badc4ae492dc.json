@@ -1,0 +1,1905 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1734693"
+                        ],
+                        "name": "John C. Duchi",
+                        "slug": "John-C.-Duchi",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Duchi",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "John C. Duchi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34840427"
+                        ],
+                        "name": "Elad Hazan",
+                        "slug": "Elad-Hazan",
+                        "structuredName": {
+                            "firstName": "Elad",
+                            "lastName": "Hazan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Elad Hazan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "er explored for neural networks in Section 5. 3A real square root H12 only exists when is positive semi-de\ufb01nite. 3 A recent revival of interest in adaptive learning rates has been started by AdaGrad (Duchi et al., 2011). Adagrad collects information from the gradients across several parameter updates to tune the learning rate. This gives us the diagonal preconditioning matrix DA = ( P t rf 2 (t) ) 1=2 which relies o"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 538820,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "413c1142de9d91804d6d11c67ff3fed59c9fc279",
+            "isKey": false,
+            "numCitedBy": 8025,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new family of subgradient methods that dynamically incorporate knowledge of the geometry of the data observed in earlier iterations to perform more informative gradient-based learning. Metaphorically, the adaptation allows us to find needles in haystacks in the form of very predictive but rarely seen features. Our paradigm stems from recent advances in stochastic optimization and online learning which employ proximal functions to control the gradient steps of the algorithm. We describe and analyze an apparatus for adaptively modifying the proximal function, which significantly simplifies setting a learning rate and results in regret guarantees that are provably as good as the best proximal function that can be chosen in hindsight. We give several efficient algorithms for empirical risk minimization problems with common and important regularization functions and domain constraints. We experimentally study our theoretical analysis and show that adaptive subgradient methods outperform state-of-the-art, yet non-adaptive, subgradient algorithms."
+            },
+            "slug": "Adaptive-Subgradient-Methods-for-Online-Learning-Duchi-Hazan",
+            "title": {
+                "fragments": [],
+                "text": "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This work describes and analyze an apparatus for adaptively modifying the proximal function, which significantly simplifies setting a learning rate and results in regret guarantees that are provably as good as the best proximal functions that can be chosen in hindsight."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1792214"
+                        ],
+                        "name": "Daniel Povey",
+                        "slug": "Daniel-Povey",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Povey",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Daniel Povey"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6318468,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a98483785378bde7e2384a3035b2b501ee03654b",
+            "isKey": false,
+            "numCitedBy": 119,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we propose a second order optimization method to learn models where both the dimensionality of the parameter space and the number of training samples is high. In our method, we construct on each iteration a Krylov subspace formed by the gradient and an approximation to the Hessian matrix, and then use a subset of the training data samples to optimize over this subspace. As with the Hessian Free (HF) method of Martens (2010), the Hessian matrix is never explicitly constructed, and is computed using a subset of data. In practice, as in HF, we typically use a positive definite substitute for the Hessian matrix such as the Gauss-Newton matrix. We investigate the effectiveness of our proposed method on deep neural networks, and compare its performance to widely used methods such as stochastic gradient descent, conjugate gradient descent and L-BFGS, and also to HF. Our method leads to faster convergence than either L-BFGS or HF, and generally performs better than either of them in cross-validation accuracy. It is also simpler and more general than HF, as it does not require a positive semidefinite approximation of the Hessian matrix to work well nor the setting of a damping parameter. The chief drawback versus HF is the need for memory to store a basis for the Krylov subspace."
+            },
+            "slug": "Krylov-Subspace-Descent-for-Deep-Learning-Vinyals-Povey",
+            "title": {
+                "fragments": [],
+                "text": "Krylov Subspace Descent for Deep Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 91,
+                "text": "This paper proposes a second order optimization method to learn models where both the dimensionality of the parameter space and the number of training samples is high, and builds on each iteration a Krylov subspace formed by the gradient and an approximation to the Hessian matrix."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2921469"
+                        ],
+                        "name": "Yann Dauphin",
+                        "slug": "Yann-Dauphin",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "Dauphin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann Dauphin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1996134"
+                        ],
+                        "name": "Razvan Pascanu",
+                        "slug": "Razvan-Pascanu",
+                        "structuredName": {
+                            "firstName": "Razvan",
+                            "lastName": "Pascanu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Razvan Pascanu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1854385"
+                        ],
+                        "name": "\u00c7aglar G\u00fcl\u00e7ehre",
+                        "slug": "\u00c7aglar-G\u00fcl\u00e7ehre",
+                        "structuredName": {
+                            "firstName": "\u00c7aglar",
+                            "lastName": "G\u00fcl\u00e7ehre",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "\u00c7aglar G\u00fcl\u00e7ehre"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1979489"
+                        ],
+                        "name": "Kyunghyun Cho",
+                        "slug": "Kyunghyun-Cho",
+                        "structuredName": {
+                            "firstName": "Kyunghyun",
+                            "lastName": "Cho",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kyunghyun Cho"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "25769960"
+                        ],
+                        "name": "S. Ganguli",
+                        "slug": "S.-Ganguli",
+                        "structuredName": {
+                            "firstName": "Surya",
+                            "lastName": "Ganguli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Ganguli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "ng rate for SGD adaptively, both over time and for different parameters, and several methods have been proposed (see e.g. Schaul et al. (2013) and references therein). On the other hand, recent work (Dauphin et al., 2014; Choromanska et al., 2014) has brought theoretical and empirical evidence suggesting that local minima are with high probability not the main obstacle to optimizing large and deep neural networks, co"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": " However, a change of variables only exists3 when the Hessian H is positive semi-de\ufb01nite. This is a problem for non-convex loss surfaces where the Hessian might be inde\ufb01nite. In fact, recent studies (Dauphin et al., 2014; Choromanska et al., 2014) has shown that saddle points are dominating the optimization landscape of deep neural networks, implying that the Hessian is most likely inde\ufb01nite. In such a setting, H 1 n"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11657534,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "981ce6b655cc06416ff6bf7fac8c6c2076fd7fac",
+            "isKey": false,
+            "numCitedBy": 1075,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A central challenge to many fields of science and engineering involves minimizing non-convex error functions over continuous, high dimensional spaces. Gradient descent or quasi-Newton methods are almost ubiquitously used to perform such minimizations, and it is often thought that a main source of difficulty for these local methods to find the global minimum is the proliferation of local minima with much higher error than the global minimum. Here we argue, based on results from statistical physics, random matrix theory, neural network theory, and empirical evidence, that a deeper and more profound difficulty originates from the proliferation of saddle points, not local minima, especially in high dimensional problems of practical interest. Such saddle points are surrounded by high error plateaus that can dramatically slow down learning, and give the illusory impression of the existence of a local minimum. Motivated by these arguments, we propose a new approach to second-order optimization, the saddle-free Newton method, that can rapidly escape high dimensional saddle points, unlike gradient descent and quasi-Newton methods. We apply this algorithm to deep or recurrent neural network training, and provide numerical evidence for its superior optimization performance."
+            },
+            "slug": "Identifying-and-attacking-the-saddle-point-problem-Dauphin-Pascanu",
+            "title": {
+                "fragments": [],
+                "text": "Identifying and attacking the saddle point problem in high-dimensional non-convex optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This paper proposes a new approach to second-order optimization, the saddle-free Newton method, that can rapidly escape high dimensional saddle points, unlike gradient descent and quasi-Newton methods, and applies this algorithm to deep or recurrent neural network training, and provides numerical evidence for its superior optimization performance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145704247"
+                        ],
+                        "name": "James Martens",
+                        "slug": "James-Martens",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Martens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Martens"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35188630"
+                        ],
+                        "name": "George E. Dahl",
+                        "slug": "George-E.-Dahl",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Dahl",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "George E. Dahl"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "uilibration methods for high-dimensional non-convex problems. In these experiments, we consider the challenging optimization benchmark of training very deep neural networks. Following Martens (2010); Sutskever et al. (2013); Vinyals &amp; Povey (2011), we train deep auto-encoders which have to reconstruct their input under the constraint that one layer is very low-dimensional. This makes the reconstruction task dif\ufb01cult"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "mentum is used. Our results on MNIST show that the proposed ESGD method signi\ufb01cantly outperforms both RMSProp and Jacobi SGD. The difference in performance becomes especially notable after 250epochs. Sutskever et al. (2013) reported a performance of 2.1 of training MSE for SGD without momentum and we can see all adaptive learning rates improve on this result, with equilibration reaching 0.86. We observe a convergence sp"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10940950,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "aa7bfd2304201afbb19971ebde87b17e40242e91",
+            "isKey": true,
+            "numCitedBy": 3557,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Deep and recurrent neural networks (DNNs and RNNs respectively) are powerful models that were considered to be almost impossible to train using stochastic gradient descent with momentum. In this paper, we show that when stochastic gradient descent with momentum uses a well-designed random initialization and a particular type of slowly increasing schedule for the momentum parameter, it can train both DNNs and RNNs (on datasets with long-term dependencies) to levels of performance that were previously achievable only with Hessian-Free optimization. We find that both the initialization and the momentum are crucial since poorly initialized networks cannot be trained with momentum and well-initialized networks perform markedly worse when the momentum is absent or poorly tuned. \n \nOur success training these models suggests that previous attempts to train deep and recurrent neural networks from random initializations have likely failed due to poor initialization schemes. Furthermore, carefully tuned momentum methods suffice for dealing with the curvature issues in deep and recurrent network training objectives without the need for sophisticated second-order methods."
+            },
+            "slug": "On-the-importance-of-initialization-and-momentum-in-Sutskever-Martens",
+            "title": {
+                "fragments": [],
+                "text": "On the importance of initialization and momentum in deep learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown that when stochastic gradient descent with momentum uses a well-designed random initialization and a particular type of slowly increasing schedule for the momentum parameter, it can train both DNNs and RNNs to levels of performance that were previously achievable only with Hessian-Free optimization."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1996134"
+                        ],
+                        "name": "Razvan Pascanu",
+                        "slug": "Razvan-Pascanu",
+                        "structuredName": {
+                            "firstName": "Razvan",
+                            "lastName": "Pascanu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Razvan Pascanu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15085443,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e8f95ccfd13689f672c39dca3eccf1c484533bcc",
+            "isKey": false,
+            "numCitedBy": 280,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We evaluate natural gradient, an algorithm originally proposed in Amari (1997), for learning deep models. The contributions of this paper are as follows. We show the connection between natural gradient and three other recently proposed methods for training deep models: Hessian-Free (Martens, 2010), Krylov Subspace Descent (Vinyals and Povey, 2012) and TONGA (Le Roux et al., 2008). We describe how one can use unlabeled data to improve the generalization error obtained by natural gradient and empirically evaluate the robustness of the algorithm to the ordering of the training set compared to stochastic gradient descent. Finally we extend natural gradient to incorporate second order information alongside the manifold information and provide a benchmark of the new algorithm using a truncated Newton approach for inverting the metric matrix instead of using a diagonal approximation of it."
+            },
+            "slug": "Revisiting-Natural-Gradient-for-Deep-Networks-Pascanu-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Revisiting Natural Gradient for Deep Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is described how one can use unlabeled data to improve the generalization error obtained by natural gradient and empirically evaluate the robustness of the algorithm to the ordering of the training set compared to stochastic gradient descent."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144752689"
+                        ],
+                        "name": "David Edwin Carlson",
+                        "slug": "David-Edwin-Carlson",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Carlson",
+                            "middleNames": [
+                                "Edwin"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Edwin Carlson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678641"
+                        ],
+                        "name": "V. Cevher",
+                        "slug": "V.-Cevher",
+                        "structuredName": {
+                            "firstName": "Volkan",
+                            "lastName": "Cevher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Cevher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145006560"
+                        ],
+                        "name": "L. Carin",
+                        "slug": "L.-Carin",
+                        "structuredName": {
+                            "firstName": "Lawrence",
+                            "lastName": "Carin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Carin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "ction we uncover an unsuspected link between RMSProp and equilibration. RMSProp is an adaptative learning rate method that has found much success in practice (Tieleman &amp; Hinton,2012;Korjus et al.;Carlson et al., 2015).Tieleman &amp; Hinton(2012) propose to normalize the gradients by an exponential moving average of the magnitude of the gradient for each parameter: vt= vt 1 + (1 )(rf)2 (2) where 0 &lt;&lt;1 denote"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 18350577,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1272ed76c2fd9dd20bd75e24cc5a4166741297de",
+            "isKey": false,
+            "numCitedBy": 33,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Restricted Boltzmann Machines (RBMs) are widely used as building blocks for deep learning models. Learning typically proceeds by using stochastic gradient descent, and the gradients are estimated with sampling methods. However, the gradient estimation is a computational bottleneck, so better use of the gradients will speed up the descent algorithm. To this end, we rst derive upper bounds on the RBM cost function, then show that descent methods can have natural advantages by operating in the\u20181 and Shatten1 norm. We introduce a new method called \\Stochastic Spectral Descent\" that updates parameters in the normed space. Empirical results show dramatic improvements over stochastic gradient descent, and have only have a fractional increase on the per-iteration cost."
+            },
+            "slug": "Stochastic-Spectral-Descent-for-Restricted-Machines-Carlson-Cevher",
+            "title": {
+                "fragments": [],
+                "text": "Stochastic Spectral Descent for Restricted Boltzmann Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work derives upper bounds on the RBM cost function, then shows that descent methods can have natural advantages by operating in the\u20181 and Shatten1 norm and introduces a new method called \\Stochastic Spectral Descent that updates parameters in the normed space."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145704247"
+                        ],
+                        "name": "James Martens",
+                        "slug": "James-Martens",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Martens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Martens"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "he gradient is taken from either f10 4;10 5;10 6gwhile the exponential decay rate of RMSProp is taken from either f0:9;0:95g. The networks are initialized using the sparse initialization described in Martens (2010). We initialize 15 connections per neuron with a zero mean unit variance Gaussian and the others are set to zero. The minibatch size for all methods in 200. We do not make use of momentum in these exp"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "-linear Principal Component Analysis. The networks have up to 11 layers of sigmoidal hidden units and have on the order of a million parameters. We use the standard network architectures described in Martens (2010) for the MNIST and CURVES dataset. Both of these datasets have 784 input dimensions and 60,000 and 20,000 examples respectively. We tune the hyper-parameters of the optimization methods with random se"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "nditioner and equilibration methods for high-dimensional non-convex problems. In these experiments, we consider the challenging optimization benchmark of training very deep neural networks. Following Martens (2010); Sutskever et al. (2013); Vinyals &amp; Povey (2011), we train deep auto-encoders which have to reconstruct their input under the constraint that one layer is very low-dimensional. This makes the rec"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11154521,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4c46347fbc272b21468efe3d9af34b4b2bad6684",
+            "isKey": true,
+            "numCitedBy": 844,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We develop a 2nd-order optimization method based on the \"Hessian-free\" approach, and apply it to training deep auto-encoders. Without using pre-training, we obtain results superior to those reported by Hinton & Salakhutdinov (2006) on the same tasks they considered. Our method is practical, easy to use, scales nicely to very large datasets, and isn't limited in applicability to auto-encoders, or any specific model class. We also discuss the issue of \"pathological curvature\" as a possible explanation for the difficulty of deep-learning and how 2nd-order optimization, and our method in particular, effectively deals with it."
+            },
+            "slug": "Deep-learning-via-Hessian-free-optimization-Martens",
+            "title": {
+                "fragments": [],
+                "text": "Deep learning via Hessian-free optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "A 2nd-order optimization method based on the \"Hessian-free\" approach is developed, and applied to training deep auto-encoders, and results superior to those reported by Hinton & Salakhutdinov (2006) are obtained."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145704247"
+                        ],
+                        "name": "James Martens",
+                        "slug": "James-Martens",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Martens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Martens"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1754860"
+                        ],
+                        "name": "Kevin Swersky",
+                        "slug": "Kevin-Swersky",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Swersky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kevin Swersky"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8358390,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f15011bc9295f58d9ad44ae17dde191515dd48a1",
+            "isKey": false,
+            "numCitedBy": 53,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this work we develop Curvature Propagation (CP), a general technique for efficiently computing unbiased approximations of the Hessian of any function that is computed using a computational graph. At the cost of roughly two gradient evaluations, CP can give a rank-1 approximation of the whole Hessian, and can be repeatedly applied to give increasingly precise unbiased estimates of any or all of the entries of the Hessian. Of particular interest is the diagonal of the Hessian, for which no general approach is known to exist that is both efficient and accurate. We show in experiments that CP turns out to work well in practice, giving very accurate estimates of the Hessian of neural networks, for example, with a relatively small amount of work. We also apply CP to Score Matching, where a diagonal of a Hessian plays an integral role in the Score Matching objective, and where it is usually computed exactly using inefficient algorithms which do not scale to larger and more complex models."
+            },
+            "slug": "Estimating-the-Hessian-by-Back-propagating-Martens-Sutskever",
+            "title": {
+                "fragments": [],
+                "text": "Estimating the Hessian by Back-propagating Curvature"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 73,
+                "text": "Curvature Propagation is developed, a general technique for efficiently computing unbiased approximations of the Hessian of any function that is computed using a computational graph, and can be repeatedly applied to give increasingly precise unbiased estimates of any or all of the entries ofThe Hessian."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1725157"
+                        ],
+                        "name": "T. Schaul",
+                        "slug": "T.-Schaul",
+                        "structuredName": {
+                            "firstName": "Tom",
+                            "lastName": "Schaul",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Schaul"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2460849"
+                        ],
+                        "name": "Ioannis Antonoglou",
+                        "slug": "Ioannis-Antonoglou",
+                        "structuredName": {
+                            "firstName": "Ioannis",
+                            "lastName": "Antonoglou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ioannis Antonoglou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145824029"
+                        ],
+                        "name": "David Silver",
+                        "slug": "David-Silver",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Silver",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Silver"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14480911,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "92cd0912e3f2d609d607fa7a63cccd581062f628",
+            "isKey": false,
+            "numCitedBy": 86,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Optimization by stochastic gradient descent is an important component of many large-scale machine learning algorithms. A wide variety of such optimization algorithms have been devised; however, it is unclear whether these algorithms are robust and widely applicable across many different optimization landscapes. In this paper we develop a collection of unit tests for stochastic optimization. Each unit test rapidly evaluates an optimization algorithm on a small-scale, isolated, and well-understood difficulty, rather than in real-world scenarios where many such issues are entangled. Passing these unit tests is not sufficient, but absolutely necessary for any algorithms with claims to generality or robustness. We give initial quantitative and qualitative results on numerous established algorithms. The testing framework is open-source, extensible, and easy to apply to new algorithms."
+            },
+            "slug": "Unit-Tests-for-Stochastic-Optimization-Schaul-Antonoglou",
+            "title": {
+                "fragments": [],
+                "text": "Unit Tests for Stochastic Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "A collection of unit tests for stochastic optimization that rapidly evaluates an optimization algorithm on a small-scale, isolated, and well-understood difficulty, rather than in real-world scenarios where many such issues are entangled."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48799969"
+                        ],
+                        "name": "Matthew D. Zeiler",
+                        "slug": "Matthew-D.-Zeiler",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Zeiler",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthew D. Zeiler"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": " (2011) relies strongly on convexity to justify this method. This makes the application to neural networks dif\ufb01cult from a theoretical perspective. RMSProp (Tieleman &amp; Hinton, 2012) and AdaDelta (Zeiler, 2012) were follow-up methods introduced to be practical adaptive learning methods to train large neural networks. Although RMSProp has been shown to work very well (Schaul et al., 2013), there is not much "
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7365802,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8729441d734782c3ed532a7d2d9611b438c0a09a",
+            "isKey": false,
+            "numCitedBy": 5464,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel per-dimension learning rate method for gradient descent called ADADELTA. The method dynamically adapts over time using only first order information and has minimal computational overhead beyond vanilla stochastic gradient descent. The method requires no manual tuning of a learning rate and appears robust to noisy gradient information, different model architecture choices, various data modalities and selection of hyperparameters. We show promising results compared to other methods on the MNIST digit classification task using a single machine and on a large scale voice dataset in a distributed cluster environment."
+            },
+            "slug": "ADADELTA:-An-Adaptive-Learning-Rate-Method-Zeiler",
+            "title": {
+                "fragments": [],
+                "text": "ADADELTA: An Adaptive Learning Rate Method"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 93,
+                "text": "A novel per-dimension learning rate method for gradient descent called ADADELTA that dynamically adapts over time using only first order information and has minimal computational overhead beyond vanilla stochastic gradient descent is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49356152"
+                        ],
+                        "name": "H. Guggenheimer",
+                        "slug": "H.-Guggenheimer",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Guggenheimer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Guggenheimer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144397527"
+                        ],
+                        "name": "A. Edelman",
+                        "slug": "A.-Edelman",
+                        "structuredName": {
+                            "firstName": "Alan",
+                            "lastName": "Edelman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Edelman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144610701"
+                        ],
+                        "name": "Charles R. Johnson",
+                        "slug": "Charles-R.-Johnson",
+                        "structuredName": {
+                            "firstName": "Charles",
+                            "lastName": "Johnson",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Charles R. Johnson"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": " of the matrix, and can be quite loose for the extremely large matrices we consider. In this paper, we provide an alternative justi\ufb01cation using the following upper bound on the condition number from Guggenheimer et al. (1995): (H) &lt; 2 jdet Hj  kHk F p N  N (8) The proof in Guggenheimer et al. (1995) provides useful insight when we expect a tight upper bound to be tight: if all singular values, except for the smalles"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 124179116,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "ae0750ec2c0eacecf5300e41778f66d984d64e3f",
+            "isKey": false,
+            "numCitedBy": 34,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Linear systems can be ill conditioned, that is, the solution can be very sensitive to slight errors in the data or to round-off errors in calculating the solution. The condition number of a nonsingular matrix A measures the sensitivity of the solution of linear systems Ax = b to such errors. A large condition number indicates that either the computed solution may be unusable or it may need to be refined by iterative steps. All better computer programs for solving systems of linear equations provide estimates of the condition number of the coefficient matrix, but these estimates are based on advanced notions in linear algebra. The importance of the subject for users of \"canned\" computer programs makes it desirable to have an estimate of the condition number that can easily be computed and understood by students in an introductory course, though we recognize that high quality numerical estimators will be more accurate than any rule of thumb. We begin with a brief review of the definition and principal properties of the condition number of a nonsingular matrix. First, suppose A is an n X n symmetric positive definite matrix with (real) eigenvalues A: > A2 > ??? > A? > 0, and x is the solution of the system Ax = b. Then Mx|| Aj|8x||, so HSxIl < ||Sb||/An. Therefore if we set k(A) = XJXn then"
+            },
+            "slug": "A-Simple-Estimate-of-the-Condition-Number-of-a-Guggenheimer-Edelman",
+            "title": {
+                "fragments": [],
+                "text": "A Simple Estimate of the Condition Number of a Linear System"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739396"
+                        ],
+                        "name": "N. Schraudolph",
+                        "slug": "N.-Schraudolph",
+                        "structuredName": {
+                            "firstName": "Nicol",
+                            "lastName": "Schraudolph",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Schraudolph"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11017566,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ffa94bba647817fa5e8f8d3250fc977435b5ca76",
+            "isKey": false,
+            "numCitedBy": 275,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a generic method for iteratively approximating various second-order gradient steps-Newton, Gauss-Newton, Levenberg-Marquardt, and natural gradient-in linear time per iteration, using special curvature matrix-vector products that can be computed in O(n). Two recent acceleration techniques for on-line learning, matrix momentum and stochastic meta-descent (SMD), implement this approach. Since both were originally derived by very different routes, this offers fresh insight into their operation, resulting in further improvements to SMD."
+            },
+            "slug": "Fast-Curvature-Matrix-Vector-Products-for-Gradient-Schraudolph",
+            "title": {
+                "fragments": [],
+                "text": "Fast Curvature Matrix-Vector Products for Second-Order Gradient Descent"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 96,
+                "text": "A generic method for iteratively approximating various second-order gradient steps-Newton, Gauss- newton, Levenberg-Marquardt, and natural gradient-in linear time per iteration, using special curvature matrix-vector products that can be computed in O(n)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144315490"
+                        ],
+                        "name": "A. Sluis",
+                        "slug": "A.-Sluis",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Sluis",
+                            "middleNames": [
+                                "van",
+                                "der"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Sluis"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "e a good framework to get a better understanding of such adaptive learning rate methods. 4 Equilibration Equilibration is a preconditioning technique developed in the numerical mathematics community (Sluis, 1969). When solving a linear system Ax= bwith Gaussian Elimination, signi\ufb01cant round-off errors can be introduced when small numbers are added to big numbers (Datta, 2010). To circumvent this issue, it is "
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "refore signi\ufb01cantly reduce the condition number. Although we are not aware of any proofs that row equilibration improves the condition number, there are theoretical results that motivates its use. In Sluis (1969) it is shown that the condition number of a row equilibrated matrix is at most a factorp Nworse than the diagonal preconditioning matrix that optimally reduces the condition number. Note that the boun"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 55197309,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "d4b1a877c00f3fe88c961987e9da531fbd72affe",
+            "isKey": false,
+            "numCitedBy": 348,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Introduction In numerical linear algebra one meets condition numbers [[AII []A-11[ and similar quantities such as (max [a,i[)[[A-1H and [[Ai[[ [[A-l[], where A = (a,i) and A i is the /'-th column of A. The norms are very diverse. The problem then is to determine a rowand/or column-scaling of A which minimizes the quanti ty under consideration. I t is the purpose of this paper to specify a class of such quantities for which those scalings can be given explicitly. The results will be extensions of some results in [2]. They will also hold for non-square matrices. All proofs will be completely elementary. Also, in some cases where the minimizing scaling cannot be given explicitly, it can be said how far at most for a certain scaling the quanti ty under consideration may be away from its minimum."
+            },
+            "slug": "Condition-numbers-and-equilibration-of-matrices-Sluis",
+            "title": {
+                "fragments": [],
+                "text": "Condition numbers and equilibration of matrices"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1969
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48268669"
+                        ],
+                        "name": "C. Bekas",
+                        "slug": "C.-Bekas",
+                        "structuredName": {
+                            "firstName": "Costas",
+                            "lastName": "Bekas",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Bekas"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1788875"
+                        ],
+                        "name": "E. Kokiopoulou",
+                        "slug": "E.-Kokiopoulou",
+                        "structuredName": {
+                            "firstName": "Effrosini",
+                            "lastName": "Kokiopoulou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Kokiopoulou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1765199"
+                        ],
+                        "name": "Y. Saad",
+                        "slug": "Y.-Saad",
+                        "structuredName": {
+                            "firstName": "Yousef",
+                            "lastName": "Saad",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Saad"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "g rate and damping factor  D 0 for i= k!Kdo v \u02d8N(0;1) D D+ (Hv)2   prf() D=k+ end for low us to verify the claims that the equilibration preconditioner is better suited for non-convex problems.Bekas et al. (2007) show that the diagonal of a matrix can be recovered by the expression diag(H) = E[v Hv] (5) where v are random vectors with entries 1 and is the element-wise product. We use this estimator to precond"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9023598,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "bfdbe36894d3d02f061adf0df3da62cc55bc5d3c",
+            "isKey": false,
+            "numCitedBy": 159,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "An-estimator-for-the-diagonal-of-a-matrix-Bekas-Kokiopoulou",
+            "title": {
+                "fragments": [],
+                "text": "An estimator for the diagonal of a matrix"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3227028"
+                        ],
+                        "name": "Fr\u00e9d\u00e9ric Bastien",
+                        "slug": "Fr\u00e9d\u00e9ric-Bastien",
+                        "structuredName": {
+                            "firstName": "Fr\u00e9d\u00e9ric",
+                            "lastName": "Bastien",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fr\u00e9d\u00e9ric Bastien"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3087941"
+                        ],
+                        "name": "Pascal Lamblin",
+                        "slug": "Pascal-Lamblin",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Lamblin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pascal Lamblin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1996134"
+                        ],
+                        "name": "Razvan Pascanu",
+                        "slug": "Razvan-Pascanu",
+                        "structuredName": {
+                            "firstName": "Razvan",
+                            "lastName": "Pascanu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Razvan Pascanu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32837403"
+                        ],
+                        "name": "J. Bergstra",
+                        "slug": "J.-Bergstra",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Bergstra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Bergstra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153440022"
+                        ],
+                        "name": "Ian J. Goodfellow",
+                        "slug": "Ian-J.-Goodfellow",
+                        "structuredName": {
+                            "firstName": "Ian",
+                            "lastName": "Goodfellow",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ian J. Goodfellow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47944877"
+                        ],
+                        "name": "Arnaud Bergeron",
+                        "slug": "Arnaud-Bergeron",
+                        "structuredName": {
+                            "firstName": "Arnaud",
+                            "lastName": "Bergeron",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Arnaud Bergeron"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2065828537"
+                        ],
+                        "name": "Nicolas Bouchard",
+                        "slug": "Nicolas-Bouchard",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Bouchard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nicolas Bouchard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1393680089"
+                        ],
+                        "name": "David Warde-Farley",
+                        "slug": "David-Warde-Farley",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Warde-Farley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Warde-Farley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8180128,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "855d0f722d75cc56a66a00ede18ace96bafee6bd",
+            "isKey": false,
+            "numCitedBy": 1374,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Theano is a linear algebra compiler that optimizes a user's symbolically-specified mathematical computations to produce efficient low-level implementations. In this paper, we present new features and efficiency improvements to Theano, and benchmarks demonstrating Theano's performance relative to Torch7, a recently introduced machine learning library, and to RNNLM, a C++ library targeted at recurrent neural networks."
+            },
+            "slug": "Theano:-new-features-and-speed-improvements-Bastien-Lamblin",
+            "title": {
+                "fragments": [],
+                "text": "Theano: new features and speed improvements"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "New features and efficiency improvements to Theano are presented, and benchmarks demonstrating Theano's performance relative to Torch7, a recently introduced machine learning library, and to RNNLM, a C++ library targeted at recurrent neural networks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2984433"
+                        ],
+                        "name": "A. Bradley",
+                        "slug": "A.-Bradley",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Bradley",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Bradley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143873253"
+                        ],
+                        "name": "W. Murray",
+                        "slug": "W.-Murray",
+                        "structuredName": {
+                            "firstName": "Walter",
+                            "lastName": "Murray",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Murray"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 118680166,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "46b92e004e36cec7882f243c7f83d02d81b90250",
+            "isKey": false,
+            "numCitedBy": 3,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The condition number of a diagonally scaled matrix, for appropriately chosen scaling matrices, is often less than that of the original. Equilibration scales a matrix so that the scaled matrix's row and column norms are equal. Scaling can be approximate. We develop approximate equilibration algorithms for nonsymmetric and symmetric matrices having signed elements that access a matrix only by matrix-vector products."
+            },
+            "slug": "Matrix-Free-Approximate-Equilibration-Bradley-Murray",
+            "title": {
+                "fragments": [],
+                "text": "Matrix-Free Approximate Equilibration"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3216141"
+                        ],
+                        "name": "A. Choroma\u0144ska",
+                        "slug": "A.-Choroma\u0144ska",
+                        "structuredName": {
+                            "firstName": "Anna",
+                            "lastName": "Choroma\u0144ska",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Choroma\u0144ska"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39713408"
+                        ],
+                        "name": "Mikael Henaff",
+                        "slug": "Mikael-Henaff",
+                        "structuredName": {
+                            "firstName": "Mikael",
+                            "lastName": "Henaff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mikael Henaff"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143949035"
+                        ],
+                        "name": "Micha\u00ebl Mathieu",
+                        "slug": "Micha\u00ebl-Mathieu",
+                        "structuredName": {
+                            "firstName": "Micha\u00ebl",
+                            "lastName": "Mathieu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Micha\u00ebl Mathieu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3317660"
+                        ],
+                        "name": "G. B. Arous",
+                        "slug": "G.-B.-Arous",
+                        "structuredName": {
+                            "firstName": "G\u00e9rard",
+                            "lastName": "Arous",
+                            "middleNames": [
+                                "Ben"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. B. Arous"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "variables only exists3 when the Hessian H is positive semi-de\ufb01nite. This is a problem for non-convex loss surfaces where the Hessian might be inde\ufb01nite. In fact, recent studies (Dauphin et al., 2014; Choromanska et al., 2014) has shown that saddle points are dominating the optimization landscape of deep neural networks, implying that the Hessian is most likely inde\ufb01nite. In such a setting, H 1 not a valid preconditioner a"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "vely, both over time and for different parameters, and several methods have been proposed (see e.g. Schaul et al. (2013) and references therein). On the other hand, recent work (Dauphin et al., 2014; Choromanska et al., 2014) has brought theoretical and empirical evidence suggesting that local minima are with high probability not the main obstacle to optimizing large and deep neural networks, contrary to what was previous"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 40398496,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6d9cb3d3c0330a6c2f42d159a3a706b6b49744b2",
+            "isKey": false,
+            "numCitedBy": 135,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "The-Loss-Surface-of-Multilayer-Networks-Choroma\u0144ska-Henaff",
+            "title": {
+                "fragments": [],
+                "text": "The Loss Surface of Multilayer Networks"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34782608"
+                        ],
+                        "name": "G. Orr",
+                        "slug": "G.-Orr",
+                        "structuredName": {
+                            "firstName": "Genevieve",
+                            "lastName": "Orr",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Orr"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145034054"
+                        ],
+                        "name": "K. M\u00fcller",
+                        "slug": "K.-M\u00fcller",
+                        "structuredName": {
+                            "firstName": "Klaus-Robert",
+                            "lastName": "M\u00fcller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. M\u00fcller"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 20158889,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b87274e6d9aa4e6ba5148898aa92941617d2b6ed",
+            "isKey": false,
+            "numCitedBy": 2630,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Efficient-BackProp-LeCun-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Efficient BackProp"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks: Tricks of the Trade"
+            },
+            "year": 2012
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 4,
+            "methodology": 6
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 18,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/RMSProp-and-equilibrated-adaptive-learning-rates-Dauphin-Vries/1bdf014c1bd613dbdc656e074379badc4ae492dc?sort=total-citations"
+}

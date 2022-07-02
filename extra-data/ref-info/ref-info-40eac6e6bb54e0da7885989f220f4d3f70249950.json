@@ -1,0 +1,3771 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2983898"
+                        ],
+                        "name": "Ross B. Girshick",
+                        "slug": "Ross-B.-Girshick",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Girshick",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ross B. Girshick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7408951"
+                        ],
+                        "name": "Jeff Donahue",
+                        "slug": "Jeff-Donahue",
+                        "structuredName": {
+                            "firstName": "Jeff",
+                            "lastName": "Donahue",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeff Donahue"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153652147"
+                        ],
+                        "name": "J. Malik",
+                        "slug": "J.-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 191,
+                                "start": 188
+                            }
+                        ],
+                        "text": "Since the validation set is relatively small, we augment our detection set with 1000 bounding box annotated images per category from the ILSVRC2013 training set (following the protocol of [1])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 110
+                            }
+                        ],
+                        "text": "At test time we use our network to extract K + 1 scores per region proposal in an image (similar to the R-CNN [1] pipeline)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 11,
+                                "start": 8
+                            }
+                        ],
+                        "text": "(R-CNN) [1] demonstrated that adaptation, in the form of fine-tuning, is very important for transferring deep features from classification to detection and partially inspired our approach."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 59,
+                                "start": 56
+                            }
+                        ],
+                        "text": "Next, we split the ILSVRC2013 validation set in half as [1] did, producing two sets: val1 and val2."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 42,
+                                "start": 39
+                            }
+                        ],
+                        "text": "Following the Regionsbased CNN (R-CNN) [1] algorithm, we collect positive bounding boxes for each category in set B as well as a set of background boxes using a region proposal algorithm, such as selective search [23]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Pre-training on this dataset has been shown to be a very effective technique [8, 5, 1], both in terms of performance and in terms of limiting the amount of in-domain labeled data needed to successfully tune the network."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 9,
+                                "start": 6
+                            }
+                        ],
+                        "text": "R-CNN [1] showed that finetuning deep features on a large amount of bounding box labeled data significantly improves detection performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 28,
+                                "start": 25
+                            }
+                        ],
+                        "text": "In contrast to the R-CNN [1] model which trains SVMs on the extracted features from layer 7 and bounding box regression on the extracted features from layer 5, we directly use the final score vector to produce the prediction scores without either of the retraining steps."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 26
+                            }
+                        ],
+                        "text": "Recently, the R-CNN model [1] showed how to adapt an ImageNet classifier into a detector, but required bounding box data for all categories."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 189,
+                                "start": 183
+                            }
+                        ],
+                        "text": "To accomplish this goal, we use supervised convolutional neural networks (CNNs), which have recently been shown to perform well both for image classification [4] and object detection [1, 5]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 215827080,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2f4df08d9072fc2ac181b7fced6a245315ce05c8",
+            "isKey": false,
+            "numCitedBy": 17092,
+            "numCiting": 66,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Object detection performance, as measured on the canonical PASCAL VOC dataset, has plateaued in the last few years. The best-performing methods are complex ensemble systems that typically combine multiple low-level image features with high-level context. In this paper, we propose a simple and scalable detection algorithm that improves mean average precision (mAP) by more than 30% relative to the previous best result on VOC 2012 -- achieving a mAP of 53.3%. Our approach combines two key insights: (1) one can apply high-capacity convolutional neural networks (CNNs) to bottom-up region proposals in order to localize and segment objects and (2) when labeled training data is scarce, supervised pre-training for an auxiliary task, followed by domain-specific fine-tuning, yields a significant performance boost. Since we combine region proposals with CNNs, we call our method R-CNN: Regions with CNN features. We also present experiments that provide insight into what the network learns, revealing a rich hierarchy of image features. Source code for the complete system is available at http://www.cs.berkeley.edu/~rbg/rcnn."
+            },
+            "slug": "Rich-Feature-Hierarchies-for-Accurate-Object-and-Girshick-Donahue",
+            "title": {
+                "fragments": [],
+                "text": "Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "This paper proposes a simple and scalable detection algorithm that improves mean average precision (mAP) by more than 30% relative to the previous best result on VOC 2012 -- achieving a mAP of 53.3%."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2192178"
+                        ],
+                        "name": "Olga Russakovsky",
+                        "slug": "Olga-Russakovsky",
+                        "structuredName": {
+                            "firstName": "Olga",
+                            "lastName": "Russakovsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Olga Russakovsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153302678"
+                        ],
+                        "name": "Jia Deng",
+                        "slug": "Jia-Deng",
+                        "structuredName": {
+                            "firstName": "Jia",
+                            "lastName": "Deng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jia Deng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144914140"
+                        ],
+                        "name": "Hao Su",
+                        "slug": "Hao-Su",
+                        "structuredName": {
+                            "firstName": "Hao",
+                            "lastName": "Su",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hao Su"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2285165"
+                        ],
+                        "name": "J. Krause",
+                        "slug": "J.-Krause",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Krause",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Krause"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145031342"
+                        ],
+                        "name": "S. Satheesh",
+                        "slug": "S.-Satheesh",
+                        "structuredName": {
+                            "firstName": "Sanjeev",
+                            "lastName": "Satheesh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Satheesh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145423516"
+                        ],
+                        "name": "S. Ma",
+                        "slug": "S.-Ma",
+                        "structuredName": {
+                            "firstName": "Sean",
+                            "lastName": "Ma",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Ma"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3109481"
+                        ],
+                        "name": "Zhiheng Huang",
+                        "slug": "Zhiheng-Huang",
+                        "structuredName": {
+                            "firstName": "Zhiheng",
+                            "lastName": "Huang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhiheng Huang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2354728"
+                        ],
+                        "name": "A. Karpathy",
+                        "slug": "A.-Karpathy",
+                        "structuredName": {
+                            "firstName": "Andrej",
+                            "lastName": "Karpathy",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Karpathy"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2556428"
+                        ],
+                        "name": "A. Khosla",
+                        "slug": "A.-Khosla",
+                        "structuredName": {
+                            "firstName": "Aditya",
+                            "lastName": "Khosla",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Khosla"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145879842"
+                        ],
+                        "name": "Michael S. Bernstein",
+                        "slug": "Michael-S.-Bernstein",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Bernstein",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael S. Bernstein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39668247"
+                        ],
+                        "name": "A. Berg",
+                        "slug": "A.-Berg",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Berg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Berg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48004138"
+                        ],
+                        "name": "Li Fei-Fei",
+                        "slug": "Li-Fei-Fei",
+                        "structuredName": {
+                            "firstName": "Li",
+                            "lastName": "Fei-Fei",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Li Fei-Fei"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 66
+                            }
+                        ],
+                        "text": "Even the more recent ImageNet detection challenge dataset [3] has extended the set of annotated images, it only contains data for 200 categories."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 178,
+                                "start": 175
+                            }
+                        ],
+                        "text": "To accomplish this goal, we use supervised convolutional neural networks (CNN), which have recently been shown to perform well both for image classification [4] and object detection [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2930547,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e74f9b7f8eec6ba4704c206b93bc8079af3da4bd",
+            "isKey": false,
+            "numCitedBy": 25499,
+            "numCiting": 138,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The ImageNet Large Scale Visual Recognition Challenge is a benchmark in object category classification and detection on hundreds of object categories and millions of images. The challenge has been run annually from 2010 to present, attracting participation from more than fifty institutions. This paper describes the creation of this benchmark dataset and the advances in object recognition that have been possible as a result. We discuss the challenges of collecting large-scale ground truth annotation, highlight key breakthroughs in categorical object recognition, provide a detailed analysis of the current state of the field of large-scale image classification and object detection, and compare the state-of-the-art computer vision accuracy with human accuracy. We conclude with lessons learned in the 5\u00a0years of the challenge, and propose future directions and improvements."
+            },
+            "slug": "ImageNet-Large-Scale-Visual-Recognition-Challenge-Russakovsky-Deng",
+            "title": {
+                "fragments": [],
+                "text": "ImageNet Large Scale Visual Recognition Challenge"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "The creation of this benchmark dataset and the advances in object recognition that have been possible as a result are described, and the state-of-the-art computer vision accuracy with human accuracy is compared."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33200800"
+                        ],
+                        "name": "Karim Ali",
+                        "slug": "Karim-Ali",
+                        "structuredName": {
+                            "firstName": "Karim",
+                            "lastName": "Ali",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Karim Ali"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2903226"
+                        ],
+                        "name": "Kate Saenko",
+                        "slug": "Kate-Saenko",
+                        "structuredName": {
+                            "firstName": "Kate",
+                            "lastName": "Saenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kate Saenko"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[6] constructs positive bags from all object proposal regions in a weakly labeled image that is known to contain the object, and uses a version of MIL to learn an object detector."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11284256,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7feff9a8f31520310ce99ffd591178feacdd98bb",
+            "isKey": false,
+            "numCitedBy": 32,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Over the past years, Multiple Instance Learning (MIL) has proven to be an effective framework for learning with weakly labeled data. Applications of MIL to object detection, however, were limited to handling the uncertainties of manual annotations. In this paper, we propose a new MIL method for object detection that is capable of handling the noisier automatically obtained annotations. Our approach consists in first obtaining confidence estimates over the label space and, second, incorporating these estimates within a new Boosting procedure. We demonstrate the efficiency of our procedure on two detection tasks, namely, horse detection and pedestrian detection, where the training data is primarily annotated by a coarse area of interest detector. We show dramatic improvements over existing MIL methods. In both cases, we demonstrate that an efficient appearance model can be learned using our approach."
+            },
+            "slug": "Confidence-Rated-Multiple-Instance-Boosting-for-Ali-Saenko",
+            "title": {
+                "fragments": [],
+                "text": "Confidence-Rated Multiple Instance Boosting for Object Detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This paper proposes a new MIL method for object detection that is capable of handling the noisier automatically obtained annotations, and demonstrates the efficiency of the procedure on two detection tasks, namely, horse detection and pedestrian detection."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7408951"
+                        ],
+                        "name": "Jeff Donahue",
+                        "slug": "Jeff-Donahue",
+                        "structuredName": {
+                            "firstName": "Jeff",
+                            "lastName": "Donahue",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeff Donahue"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50196944"
+                        ],
+                        "name": "Judy Hoffman",
+                        "slug": "Judy-Hoffman",
+                        "structuredName": {
+                            "firstName": "Judy",
+                            "lastName": "Hoffman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Judy Hoffman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1679449"
+                        ],
+                        "name": "E. Rodner",
+                        "slug": "E.-Rodner",
+                        "structuredName": {
+                            "firstName": "Erik",
+                            "lastName": "Rodner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Rodner"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2903226"
+                        ],
+                        "name": "Kate Saenko",
+                        "slug": "Kate-Saenko",
+                        "structuredName": {
+                            "firstName": "Kate",
+                            "lastName": "Saenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kate Saenko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 58
+                            }
+                        ],
+                        "text": "These include variants for linear support vector machines [17, 18, 19], as well as adaptive latent SVMs [20] and adaptive exemplar SVM [21]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2680388,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "66da077a6c3b7da2062a846881b47b019b0bfbc3",
+            "isKey": false,
+            "numCitedBy": 157,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Most successful object classification and detection methods rely on classifiers trained on large labeled datasets. However, for domains where labels are limited, simply borrowing labeled data from existing datasets can hurt performance, a phenomenon known as \"dataset bias.\" We propose a general framework for adapting classifiers from \"borrowed\" data to the target domain using a combination of available labeled and unlabeled examples. Specifically, we show that imposing smoothness constraints on the classifier scores over the unlabeled data can lead to improved adaptation results. Such constraints are often available in the form of instance correspondences, e.g. when the same object or individual is observed simultaneously from multiple views, or tracked between video frames. In these cases, the object labels are unknown but can be constrained to be the same or similar. We propose techniques that build on existing domain adaptation methods by explicitly modeling these relationships, and demonstrate empirically that they improve recognition accuracy in two scenarios, multicategory image classification and object detection in video."
+            },
+            "slug": "Semi-supervised-Domain-Adaptation-with-Instance-Donahue-Hoffman",
+            "title": {
+                "fragments": [],
+                "text": "Semi-supervised Domain Adaptation with Instance Constraints"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is shown that imposing smoothness constraints on the classifier scores over the unlabeled data can lead to improved adaptation results, and this work proposes techniques that build on existing domain adaptation methods by explicitly modeling these relationships, and demonstrates empirically that they improve recognition accuracy."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3142556"
+                        ],
+                        "name": "Pierre Sermanet",
+                        "slug": "Pierre-Sermanet",
+                        "structuredName": {
+                            "firstName": "Pierre",
+                            "lastName": "Sermanet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pierre Sermanet"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2060028"
+                        ],
+                        "name": "D. Eigen",
+                        "slug": "D.-Eigen",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Eigen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Eigen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46447747"
+                        ],
+                        "name": "X. Zhang",
+                        "slug": "X.-Zhang",
+                        "structuredName": {
+                            "firstName": "Xiang",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143949035"
+                        ],
+                        "name": "Micha\u00ebl Mathieu",
+                        "slug": "Micha\u00ebl-Mathieu",
+                        "structuredName": {
+                            "firstName": "Micha\u00ebl",
+                            "lastName": "Mathieu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Micha\u00ebl Mathieu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2276554"
+                        ],
+                        "name": "R. Fergus",
+                        "slug": "R.-Fergus",
+                        "structuredName": {
+                            "firstName": "Rob",
+                            "lastName": "Fergus",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fergus"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Pre-training on this dataset has been shown to be a very effective technique [8, 5, 1], both in terms of performance and in terms of limiting the amount of in-domain labeled data needed to successfully tune the network."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 189,
+                                "start": 183
+                            }
+                        ],
+                        "text": "To accomplish this goal, we use supervised convolutional neural networks (CNNs), which have recently been shown to perform well both for image classification [4] and object detection [1, 5]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 4071727,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5507caf1210b6bfbd04fe02b2669bc14292e23a1",
+            "isKey": false,
+            "numCitedBy": 4353,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present an integrated framework for using Convolutional Networks for classification, localization and detection. We show how a multiscale and sliding window approach can be efficiently implemented within a ConvNet. We also introduce a novel deep learning approach to localization by learning to predict object boundaries. Bounding boxes are then accumulated rather than suppressed in order to increase detection confidence. We show that different tasks can be learned simultaneously using a single shared network. This integrated framework is the winner of the localization task of the ImageNet Large Scale Visual Recognition Challenge 2013 (ILSVRC2013) and obtained very competitive results for the detection and classifications tasks. In post-competition work, we establish a new state of the art for the detection task. Finally, we release a feature extractor from our best model called OverFeat."
+            },
+            "slug": "OverFeat:-Integrated-Recognition,-Localization-and-Sermanet-Eigen",
+            "title": {
+                "fragments": [],
+                "text": "OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "This integrated framework for using Convolutional Networks for classification, localization and detection is the winner of the localization task of the ImageNet Large Scale Visual Recognition Challenge 2013 and obtained very competitive results for the detection and classifications tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7408951"
+                        ],
+                        "name": "Jeff Donahue",
+                        "slug": "Jeff-Donahue",
+                        "structuredName": {
+                            "firstName": "Jeff",
+                            "lastName": "Donahue",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeff Donahue"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39978391"
+                        ],
+                        "name": "Yangqing Jia",
+                        "slug": "Yangqing-Jia",
+                        "structuredName": {
+                            "firstName": "Yangqing",
+                            "lastName": "Jia",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yangqing Jia"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50196944"
+                        ],
+                        "name": "Judy Hoffman",
+                        "slug": "Judy-Hoffman",
+                        "structuredName": {
+                            "firstName": "Judy",
+                            "lastName": "Hoffman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Judy Hoffman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2152329702"
+                        ],
+                        "name": "Ning Zhang",
+                        "slug": "Ning-Zhang",
+                        "structuredName": {
+                            "firstName": "Ning",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ning Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2368132"
+                        ],
+                        "name": "Eric Tzeng",
+                        "slug": "Eric-Tzeng",
+                        "structuredName": {
+                            "firstName": "Eric",
+                            "lastName": "Tzeng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Eric Tzeng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Pre-training on this dataset has been shown to be a very effective technique [8, 5, 1], both in terms of performance and in terms of limiting the amount of in-domain labeled data needed to successfully tune the network."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 70
+                            }
+                        ],
+                        "text": ", subcategory classification, scene classification, domain adaptation [8] and even image matching [9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6161478,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b8de958fead0d8a9619b55c7299df3257c624a96",
+            "isKey": false,
+            "numCitedBy": 4237,
+            "numCiting": 55,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We evaluate whether features extracted from the activation of a deep convolutional network trained in a fully supervised fashion on a large, fixed set of object recognition tasks can be repurposed to novel generic tasks. Our generic tasks may differ significantly from the originally trained tasks and there may be insufficient labeled or unlabeled data to conventionally train or adapt a deep architecture to the new tasks. We investigate and visualize the semantic clustering of deep convolutional features with respect to a variety of such tasks, including scene recognition, domain adaptation, and fine-grained recognition challenges. We compare the efficacy of relying on various network levels to define a fixed feature, and report novel results that significantly outperform the state-of-the-art on several important vision challenges. We are releasing DeCAF, an open-source implementation of these deep convolutional activation features, along with all associated network parameters to enable vision researchers to be able to conduct experimentation with deep representations across a range of visual concept learning paradigms."
+            },
+            "slug": "DeCAF:-A-Deep-Convolutional-Activation-Feature-for-Donahue-Jia",
+            "title": {
+                "fragments": [],
+                "text": "DeCAF: A Deep Convolutional Activation Feature for Generic Visual Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "DeCAF, an open-source implementation of deep convolutional activation features, along with all associated network parameters, are released to enable vision researchers to be able to conduct experimentation with deep representations across a range of visual concept learning paradigms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2133680"
+                        ],
+                        "name": "Hyun Oh Song",
+                        "slug": "Hyun-Oh-Song",
+                        "structuredName": {
+                            "firstName": "Hyun",
+                            "lastName": "Song",
+                            "middleNames": [
+                                "Oh"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hyun Oh Song"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2983898"
+                        ],
+                        "name": "Ross B. Girshick",
+                        "slug": "Ross-B.-Girshick",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Girshick",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ross B. Girshick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2594093"
+                        ],
+                        "name": "S. Jegelka",
+                        "slug": "S.-Jegelka",
+                        "structuredName": {
+                            "firstName": "Stefanie",
+                            "lastName": "Jegelka",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Jegelka"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2599292"
+                        ],
+                        "name": "J. Mairal",
+                        "slug": "J.-Mairal",
+                        "structuredName": {
+                            "firstName": "Julien",
+                            "lastName": "Mairal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Mairal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753355"
+                        ],
+                        "name": "Z. Harchaoui",
+                        "slug": "Z.-Harchaoui",
+                        "structuredName": {
+                            "firstName": "Za\u00efd",
+                            "lastName": "Harchaoui",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Z. Harchaoui"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 17
+                            }
+                        ],
+                        "text": "A similar method [7] learns detectors from PASCAL VOC images without bounding box"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17629679,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "680e3de379ca4613fbe5a5d0e09d3028ffaad573",
+            "isKey": false,
+            "numCitedBy": 245,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning to localize objects with minimal supervision is an important problem in computer vision, since large fully annotated datasets are extremely costly to obtain. In this paper, we propose a new method that achieves this goal with only image-level labels of whether the objects are present or not. Our approach combines a discriminative submodular cover problem for automatically discovering a set of positive object windows with a smoothed latent SVM formulation. The latter allows us to leverage efficient quasi-Newton optimization techniques. Our experiments demonstrate that the proposed approach provides a 50% relative improvement in mean average precision over the current state-of-the-art on PASCAL VOC 2007 detection."
+            },
+            "slug": "On-learning-to-localize-objects-with-minimal-Song-Girshick",
+            "title": {
+                "fragments": [],
+                "text": "On learning to localize objects with minimal supervision"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper proposes a new method that achieves this goal with only image-level labels of whether the objects are present or not, and combines a discriminative submodular cover problem for automatically discovering a set of positive object windows with a smoothed latent SVM formulation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3056091"
+                        ],
+                        "name": "M. Everingham",
+                        "slug": "M.-Everingham",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Everingham",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Everingham"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145715698"
+                        ],
+                        "name": "Christopher K. I. Williams",
+                        "slug": "Christopher-K.-I.-Williams",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Williams",
+                            "middleNames": [
+                                "K.",
+                                "I."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher K. I. Williams"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33652486"
+                        ],
+                        "name": "J. Winn",
+                        "slug": "J.-Winn",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Winn",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Winn"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 53,
+                                "start": 50
+                            }
+                        ],
+                        "text": "A similar method [6] learns detectors from PASCAL VOC images without bounding box labels."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 69
+                            }
+                        ],
+                        "text": "The introduction of detection challenge datasets, such as PASCAL VOC [2], have propelled progress by providing the research community a dataset with enough fully annotated images to train competitive models although only for 20 classes."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 4246903,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "82635fb63640ae95f90ee9bdc07832eb461ca881",
+            "isKey": false,
+            "numCitedBy": 11696,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The Pascal Visual Object Classes (VOC) challenge is a benchmark in visual object category recognition and detection, providing the vision and machine learning communities with a standard dataset of images and annotation, and standard evaluation procedures. Organised annually from 2005 to present, the challenge and its associated dataset has become accepted as the benchmark for object detection.This paper describes the dataset and evaluation procedure. We review the state-of-the-art in evaluated methods for both classification and detection, analyse whether the methods are statistically different, what they are learning from the images (e.g. the object or its context), and what the methods find easy or confuse. The paper concludes with lessons learnt in the three year history of the challenge, and proposes directions for future improvement and extension."
+            },
+            "slug": "The-Pascal-Visual-Object-Classes-(VOC)-Challenge-Everingham-Gool",
+            "title": {
+                "fragments": [],
+                "text": "The Pascal Visual Object Classes (VOC) Challenge"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "The state-of-the-art in evaluated methods for both classification and detection are reviewed, whether the methods are statistically different, what they are learning from the images, and what the methods find easy or confuse."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39353098"
+                        ],
+                        "name": "Kaiming He",
+                        "slug": "Kaiming-He",
+                        "structuredName": {
+                            "firstName": "Kaiming",
+                            "lastName": "He",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kaiming He"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1771551"
+                        ],
+                        "name": "X. Zhang",
+                        "slug": "X.-Zhang",
+                        "structuredName": {
+                            "firstName": "X.",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3080683"
+                        ],
+                        "name": "Shaoqing Ren",
+                        "slug": "Shaoqing-Ren",
+                        "structuredName": {
+                            "firstName": "Shaoqing",
+                            "lastName": "Ren",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Shaoqing Ren"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [],
+                        "name": "Jian Sun",
+                        "slug": "Jian-Sun",
+                        "structuredName": {
+                            "firstName": "Jian",
+                            "lastName": "Sun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jian Sun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 156,
+                                "start": 152
+                            }
+                        ],
+                        "text": "We have therefore also implemented and released a version of our algorithm running with fast region proposals [27] on a spatial pyramid pooling network [28], reducing our detection time down to half a second per image (from 4s per image) with nearly the same performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 436933,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cbb19236820a96038d000dc629225d36e0b6294a",
+            "isKey": false,
+            "numCitedBy": 4778,
+            "numCiting": 48,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Existing deep convolutional neural networks (CNNs) require a fixed-size (e.g., 224<inline-formula><tex-math>$\\times$ </tex-math><alternatives><inline-graphic xlink:type=\"simple\" xlink:href=\"he-ieq1-2389824.gif\"/></alternatives></inline-formula>224) input image. This requirement is \u201cartificial\u201d and may reduce the recognition accuracy for the images or sub-images of an arbitrary size/scale. In this work, we equip the networks with another pooling strategy, \u201cspatial pyramid pooling\u201d, to eliminate the above requirement. The new network structure, called SPP-net, can generate a fixed-length representation regardless of image size/scale. Pyramid pooling is also robust to object deformations. With these advantages, SPP-net should in general improve all CNN-based image classification methods. On the ImageNet 2012 dataset, we demonstrate that SPP-net boosts the accuracy of a variety of CNN architectures despite their different designs. On the Pascal VOC 2007 and Caltech101 datasets, SPP-net achieves state-of-the-art classification results using a single full-image representation and no fine-tuning. The power of SPP-net is also significant in object detection. Using SPP-net, we compute the feature maps from the entire image only once, and then pool features in arbitrary regions (sub-images) to generate fixed-length representations for training the detectors. This method avoids repeatedly computing the convolutional features. In processing test images, our method is 24-102 <inline-formula><tex-math>$\\times$</tex-math><alternatives><inline-graphic xlink:type=\"simple\" xlink:href=\"he-ieq2-2389824.gif\"/> </alternatives></inline-formula> faster than the R-CNN method, while achieving better or comparable accuracy on Pascal VOC 2007. In ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2014, our methods rank #2 in object detection and #3 in image classification among all 38 teams. This manuscript also introduces the improvement made for this competition."
+            },
+            "slug": "Spatial-Pyramid-Pooling-in-Deep-Convolutional-for-He-Zhang",
+            "title": {
+                "fragments": [],
+                "text": "Spatial Pyramid Pooling in Deep Convolutional Networks for Visual Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "This work equips the networks with another pooling strategy, \u201cspatial pyramid pooling\u201d, to eliminate the above requirement, and develops a new network structure, called SPP-net, which can generate a fixed-length representation regardless of image size/scale."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2470198"
+                        ],
+                        "name": "Jiaolong Xu",
+                        "slug": "Jiaolong-Xu",
+                        "structuredName": {
+                            "firstName": "Jiaolong",
+                            "lastName": "Xu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jiaolong Xu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39940699"
+                        ],
+                        "name": "Sebastian Ramos",
+                        "slug": "Sebastian-Ramos",
+                        "structuredName": {
+                            "firstName": "Sebastian",
+                            "lastName": "Ramos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sebastian Ramos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064388282"
+                        ],
+                        "name": "David V\u00e1zquez",
+                        "slug": "David-V\u00e1zquez",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "V\u00e1zquez",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David V\u00e1zquez"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3940956"
+                        ],
+                        "name": "A. Pe\u00f1a",
+                        "slug": "A.-Pe\u00f1a",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Pe\u00f1a",
+                            "middleNames": [
+                                "Manuel",
+                                "L\u00f3pez"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Pe\u00f1a"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 83,
+                                "start": 79
+                            }
+                        ],
+                        "text": "Each of these steps adds between 1-2mAP at high computation cost and using the SVMs removes the adaptation capacity of the system."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 51,
+                                "start": 47
+                            }
+                        ],
+                        "text": "In contrast to the RCNN [1] model which trains SVMs on the extracted features from layer 7 and bounding box regression on the extracted features from layer 5, we directly use the final score vector to produce the prediction scores without any retraining."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 99
+                            }
+                        ],
+                        "text": "These include variants for linear support vector machines [14, 15, 16], as well as adaptive latent SVMs [17] and adaptive exemplar SVM [18]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 60
+                            }
+                        ],
+                        "text": "1To achieve RCNN performance requires additionally learning SVMs on the activations of layer 7 and bounding box regression on the activations of layer 5."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 104
+                            }
+                        ],
+                        "text": "These include variants for linear support vector machines [17, 18, 19], as well as adaptive latent SVMs [20] and adaptive exemplar SVM [21]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1920011,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8cca8b3ae2f21d30e6cb3d4cab79f2c6dbc088b2",
+            "isKey": true,
+            "numCitedBy": 132,
+            "numCiting": 136,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The accuracy of object classifiers can significantly drop when the training data (source domain) and the application scenario (target domain) have inherent differences. Therefore, adapting the classifiers to the scenario in which they must operate is of paramount importance. We present novel domain adaptation (DA) methods for object detection. As proof of concept, we focus on adapting the state-of-the-art deformable part-based model (DPM) for pedestrian detection. We introduce an adaptive structural SVM (A-SSVM) that adapts a pre-learned classifier between different domains. By taking into account the inherent structure in feature space (e.g., the parts in a DPM), we propose a structure-aware A-SSVM (SA-SSVM). Neither A-SSVM nor SA-SSVM needs to revisit the source-domain training data to perform the adaptation. Rather, a low number of target-domain training examples (e.g., pedestrians) are used. To address the scenario where there are no target-domain annotated samples, we propose a self-adaptive DPM based on a self-paced learning (SPL) strategy and a Gaussian Process Regression (GPR). Two types of adaptation tasks are assessed: from both synthetic pedestrians and general persons (PASCAL VOC) to pedestrians imaged from an on-board camera. Results show that our proposals avoid accuracy drops as high as 15 points when comparing adapted and non-adapted detectors."
+            },
+            "slug": "Domain-Adaptation-of-Deformable-Part-Based-Models-Xu-Ramos",
+            "title": {
+                "fragments": [],
+                "text": "Domain Adaptation of Deformable Part-Based Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This work introduces an adaptive structural SVM (A-SSVM) that adapts a pre-learned classifier between different domains that avoids accuracy drops as high as 15 points when comparing adapted and non-adapted detectors."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3152281"
+                        ],
+                        "name": "Y. Aytar",
+                        "slug": "Y.-Aytar",
+                        "structuredName": {
+                            "firstName": "Yusuf",
+                            "lastName": "Aytar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Aytar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8406263,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4682fee7dc045aea7177d7f3bfe344aabf153bd5",
+            "isKey": false,
+            "numCitedBy": 347,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Our objective is transfer training of a discriminatively trained object category detector, in order to reduce the number of training images required. To this end we propose three transfer learning formulations where a template learnt previously for other categories is used to regularize the training of a new category. All the formulations result in convex optimization problems. Experiments (on PASCAL VOC) demonstrate significant performance gains by transfer learning from one class to another (e.g. motorbike to bicycle), including one-shot learning, specialization from class to a subordinate class (e.g. from quadruped to horse) and transfer using multiple components. In the case of multiple training samples it is shown that a detection performance approaching that of the state of the art can be achieved with substantially fewer training samples."
+            },
+            "slug": "Tabula-rasa:-Model-transfer-for-object-category-Aytar-Zisserman",
+            "title": {
+                "fragments": [],
+                "text": "Tabula rasa: Model transfer for object category detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This work proposes three transfer learning formulations where a template learnt previously for other categories is used to regularize the training of a new category, which result in convex optimization problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2011 International Conference on Computer Vision"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2433269"
+                        ],
+                        "name": "Derek Hoiem",
+                        "slug": "Derek-Hoiem",
+                        "structuredName": {
+                            "firstName": "Derek",
+                            "lastName": "Hoiem",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Derek Hoiem"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2918391"
+                        ],
+                        "name": "Yodsawalai Chodpathumwan",
+                        "slug": "Yodsawalai-Chodpathumwan",
+                        "structuredName": {
+                            "firstName": "Yodsawalai",
+                            "lastName": "Chodpathumwan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yodsawalai Chodpathumwan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2279233"
+                        ],
+                        "name": "Qieyun Dai",
+                        "slug": "Qieyun-Dai",
+                        "structuredName": {
+                            "firstName": "Qieyun",
+                            "lastName": "Dai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Qieyun Dai"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6650709,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9f877575217f0868f496a6123954b2ea933fb21e",
+            "isKey": false,
+            "numCitedBy": 444,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper shows how to analyze the influences of object characteristics on detection performance and the frequency and impact of different types of false positives. In particular, we examine effects of occlusion, size, aspect ratio, visibility of parts, viewpoint, localization error, and confusion with semantically similar objects, other labeled objects, and background. We analyze two classes of detectors: the Vedaldi et al. multiple kernel learning detector and different versions of the Felzenszwalb et al. detector. Our study shows that sensitivity to size, localization error, and confusion with similar objects are the most impactful forms of error. Our analysis also reveals that many different kinds of improvement are necessary to achieve large gains, making more detailed analysis essential for the progress of recognition research. By making our software and annotations available, we make it effortless for future researchers to perform similar analysis."
+            },
+            "slug": "Diagnosing-Error-in-Object-Detectors-Hoiem-Chodpathumwan",
+            "title": {
+                "fragments": [],
+                "text": "Diagnosing Error in Object Detectors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 75,
+                "text": "This paper shows how to analyze the influences of object characteristics on detection performance and the frequency and impact of different types of false positives, and shows that sensitivity to size, localization error, and confusion with similar objects are the most impactful forms of error."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1823362"
+                        ],
+                        "name": "J. Uijlings",
+                        "slug": "J.-Uijlings",
+                        "structuredName": {
+                            "firstName": "Jasper",
+                            "lastName": "Uijlings",
+                            "middleNames": [
+                                "R.",
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Uijlings"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756979"
+                        ],
+                        "name": "K. V. D. Sande",
+                        "slug": "K.-V.-D.-Sande",
+                        "structuredName": {
+                            "firstName": "Koen",
+                            "lastName": "Sande",
+                            "middleNames": [
+                                "E.",
+                                "A.",
+                                "van",
+                                "de"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. V. D. Sande"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695527"
+                        ],
+                        "name": "T. Gevers",
+                        "slug": "T.-Gevers",
+                        "structuredName": {
+                            "firstName": "Theo",
+                            "lastName": "Gevers",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Gevers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144638781"
+                        ],
+                        "name": "A. Smeulders",
+                        "slug": "A.-Smeulders",
+                        "structuredName": {
+                            "firstName": "Arnold",
+                            "lastName": "Smeulders",
+                            "middleNames": [
+                                "W.",
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Smeulders"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 217,
+                                "start": 213
+                            }
+                        ],
+                        "text": "Following the Regionsbased CNN (R-CNN) [1] algorithm, we collect positive bounding boxes for each category in set B as well as a set of background boxes using a region proposal algorithm, such as selective search [23]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 216077384,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "38b6540ddd5beebffd05047c78183f7575559fb2",
+            "isKey": false,
+            "numCitedBy": 4753,
+            "numCiting": 55,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper addresses the problem of generating possible object locations for use in object recognition. We introduce selective search which combines the strength of both an exhaustive search and segmentation. Like segmentation, we use the image structure to guide our sampling process. Like exhaustive search, we aim to capture all possible object locations. Instead of a single technique to generate possible object locations, we diversify our search and use a variety of complementary image partitionings to deal with as many image conditions as possible. Our selective search results in a small set of data-driven, class-independent, high quality locations, yielding 99\u00a0% recall and a Mean Average Best Overlap of 0.879 at 10,097 locations. The reduced number of locations compared to an exhaustive search enables the use of stronger machine learning techniques and stronger appearance models for object recognition. In this paper we show that our selective search enables the use of the powerful Bag-of-Words model for recognition. The selective search software is made publicly available (Software: http://disi.unitn.it/~uijlings/SelectiveSearch.html)."
+            },
+            "slug": "Selective-Search-for-Object-Recognition-Uijlings-Sande",
+            "title": {
+                "fragments": [],
+                "text": "Selective Search for Object Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 55,
+                "text": "This paper introduces selective search which combines the strength of both an exhaustive search and segmentation, and shows that its selective search enables the use of the powerful Bag-of-Words model for recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3152281"
+                        ],
+                        "name": "Y. Aytar",
+                        "slug": "Y.-Aytar",
+                        "structuredName": {
+                            "firstName": "Yusuf",
+                            "lastName": "Aytar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Aytar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688869"
+                        ],
+                        "name": "Andrew Zisserman",
+                        "slug": "Andrew-Zisserman",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Zisserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Zisserman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6944478,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3fc32a55db03af15228b5e141761b89a6475712f",
+            "isKey": false,
+            "numCitedBy": 45,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Content based image retrieval (CBIR), the problem of searching digital images in large databases according to their visual content, is a well established research area in computer vision. In this work we are particularly interested in retrieving subwindows of images which are similar to the given query image, i.e. the goal is detection rather than image level classification. The notion of similarity is defined as being the same object class but also having similar viewpoint (e.g. frontal, left-facing, rear etc.). A query image can be a part of an object (e.g. head of a side facing horse), a complete object (e.g. frontal car image), or a composition of objects (visual phrases, e.g. person riding a horse). For instance, given a query of a horse facing left, the aim is to retrieve any left facing horse (intra-class variation) which might be walking or running with different feet formations (exemplar deformation)."
+            },
+            "slug": "Enhancing-Exemplar-SVMs-using-Part-Level-Transfer-Aytar-Zisserman",
+            "title": {
+                "fragments": [],
+                "text": "Enhancing Exemplar SVMs using Part Level Transfer Regularization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "Content based image retrieval (CBIR) is particularly interested in retrieving subwindows of images which are similar to the given query image, i.e. the goal is detection rather than image level classification."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2146154794"
+                        ],
+                        "name": "Jun Yang",
+                        "slug": "Jun-Yang",
+                        "structuredName": {
+                            "firstName": "Jun",
+                            "lastName": "Yang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jun Yang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143634393"
+                        ],
+                        "name": "Rong Yan",
+                        "slug": "Rong-Yan",
+                        "structuredName": {
+                            "firstName": "Rong",
+                            "lastName": "Yan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rong Yan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7661726"
+                        ],
+                        "name": "Alexander Hauptmann",
+                        "slug": "Alexander-Hauptmann",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Hauptmann",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexander Hauptmann"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 58
+                            }
+                        ],
+                        "text": "These include variants for linear support vector machines [17, 18, 19], as well as adaptive latent SVMs [20] and adaptive exemplar SVM [21]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7263397,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5b4ecd2d39b4ee76fa231bf1362dcc9cb67fa036",
+            "isKey": false,
+            "numCitedBy": 677,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many multimedia applications can benefit from techniques for adapting existing classifiers to data with different distributions. One example is cross-domain video concept detection which aims to adapt concept classifiers across various video domains. In this paper, we explore two key problems for classifier adaptation: (1) how to transform existing classifier(s) into an effective classifier for a new dataset that only has a limited number of labeled examples, and (2) how to select the best existing classifier(s) for adaptation. For the first problem, we propose Adaptive Support Vector Machines (A-SVMs) as a general method to adapt one or more existing classifiers of any type to the new dataset. It aims to learn the \"delta function\" between the original and adapted classifier using an objective function similar to SVMs. For the second problem, we estimate the performance of each existing classifier on the sparsely-labeled new dataset by analyzing its score distribution and other meta features, and select the classifiers with the best estimated performance. The proposed method outperforms several baseline and competing methods in terms of classification accuracy and efficiency in cross-domain concept detection in the TRECVID corpus."
+            },
+            "slug": "Cross-domain-video-concept-detection-using-adaptive-Yang-Yan",
+            "title": {
+                "fragments": [],
+                "text": "Cross-domain video concept detection using adaptive svms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This paper proposes Adaptive Support Vector Machines (A-SVMs) as a general method to adapt one or more existing classifiers of any type to the new dataset and outperforms several baseline and competing methods in terms of classification accuracy and efficiency in cross-domain concept detection in the TRECVID corpus."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACM Multimedia"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50196944"
+                        ],
+                        "name": "Judy Hoffman",
+                        "slug": "Judy-Hoffman",
+                        "structuredName": {
+                            "firstName": "Judy",
+                            "lastName": "Hoffman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Judy Hoffman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1679449"
+                        ],
+                        "name": "E. Rodner",
+                        "slug": "E.-Rodner",
+                        "structuredName": {
+                            "firstName": "Erik",
+                            "lastName": "Rodner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Rodner"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7408951"
+                        ],
+                        "name": "Jeff Donahue",
+                        "slug": "Jeff-Donahue",
+                        "structuredName": {
+                            "firstName": "Jeff",
+                            "lastName": "Donahue",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeff Donahue"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2903226"
+                        ],
+                        "name": "Kate Saenko",
+                        "slug": "Kate-Saenko",
+                        "structuredName": {
+                            "firstName": "Kate",
+                            "lastName": "Saenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kate Saenko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 114
+                            }
+                        ],
+                        "text": ", feature space transformations [12], model adaptation approaches [13, 14] and joint feature and model adaptation [15, 16]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16496273,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "47b9ccff528dc4b104f13734f2f2f9b69a492553",
+            "isKey": false,
+            "numCitedBy": 268,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract: We present an algorithm that learns representations which explicitly compensate for domain mismatch and which can be efficiently realized as linear classifiers. Specifically, we form a linear transformation that maps features from the target (test) domain to the source (training) domain as part of training the classifier. We optimize both the transformation and classifier parameters jointly, and introduce an efficient cost function based on misclassification loss. Our method combines several features previously unavailable in a single algorithm: multi-class adaptation through representation learning, ability to map across heterogeneous feature spaces, and scalability to large datasets. We present experiments on several image datasets that demonstrate improved accuracy and computational advantages compared to previous approaches."
+            },
+            "slug": "Efficient-Learning-of-Domain-invariant-Image-Hoffman-Rodner",
+            "title": {
+                "fragments": [],
+                "text": "Efficient Learning of Domain-invariant Image Representations"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 75,
+                "text": "An algorithm that learns representations which explicitly compensate for domain mismatch and which can be efficiently realized as linear classifiers is presented, which combines several features previously unavailable in a single algorithm."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39978391"
+                        ],
+                        "name": "Yangqing Jia",
+                        "slug": "Yangqing-Jia",
+                        "structuredName": {
+                            "firstName": "Yangqing",
+                            "lastName": "Jia",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yangqing Jia"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1782282"
+                        ],
+                        "name": "Evan Shelhamer",
+                        "slug": "Evan-Shelhamer",
+                        "structuredName": {
+                            "firstName": "Evan",
+                            "lastName": "Shelhamer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Evan Shelhamer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7408951"
+                        ],
+                        "name": "Jeff Donahue",
+                        "slug": "Jeff-Donahue",
+                        "structuredName": {
+                            "firstName": "Jeff",
+                            "lastName": "Donahue",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeff Donahue"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3049736"
+                        ],
+                        "name": "Sergey Karayev",
+                        "slug": "Sergey-Karayev",
+                        "structuredName": {
+                            "firstName": "Sergey",
+                            "lastName": "Karayev",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sergey Karayev"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2117314646"
+                        ],
+                        "name": "Jonathan Long",
+                        "slug": "Jonathan-Long",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Long",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jonathan Long"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2983898"
+                        ],
+                        "name": "Ross B. Girshick",
+                        "slug": "Ross-B.-Girshick",
+                        "structuredName": {
+                            "firstName": "Ross",
+                            "lastName": "Girshick",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ross B. Girshick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1687120"
+                        ],
+                        "name": "S. Guadarrama",
+                        "slug": "S.-Guadarrama",
+                        "structuredName": {
+                            "firstName": "Sergio",
+                            "lastName": "Guadarrama",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Guadarrama"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 103
+                            }
+                        ],
+                        "text": "We implement our CNN architectures and execute all fine-tuning using the open source software package, Caffe [22], and plan to make our model definitions along with all hyperparameters publicly available upon acceptance of this paper."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 110
+                            }
+                        ],
+                        "text": "We implemented our CNN architectures and execute all fine-tuning using the open source software package Caffe [24] and have made our model definitions weights publicly available."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1799558,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6bdb186ec4726e00a8051119636d4df3b94043b5",
+            "isKey": false,
+            "numCitedBy": 13757,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Caffe provides multimedia scientists and practitioners with a clean and modifiable framework for state-of-the-art deep learning algorithms and a collection of reference models. The framework is a BSD-licensed C++ library with Python and MATLAB bindings for training and deploying general-purpose convolutional neural networks and other deep models efficiently on commodity architectures. Caffe fits industry and internet-scale media needs by CUDA GPU computation, processing over 40 million images a day on a single K40 or Titan GPU (approx 2 ms per image). By separating model representation from actual implementation, Caffe allows experimentation and seamless switching among platforms for ease of development and deployment from prototyping machines to cloud environments. Caffe is maintained and developed by the Berkeley Vision and Learning Center (BVLC) with the help of an active community of contributors on GitHub. It powers ongoing research projects, large-scale industrial applications, and startup prototypes in vision, speech, and multimedia."
+            },
+            "slug": "Caffe:-Convolutional-Architecture-for-Fast-Feature-Jia-Shelhamer",
+            "title": {
+                "fragments": [],
+                "text": "Caffe: Convolutional Architecture for Fast Feature Embedding"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "Caffe provides multimedia scientists and practitioners with a clean and modifiable framework for state-of-the-art deep learning algorithms and a collection of reference models for training and deploying general-purpose convolutional neural networks and other deep models efficiently on commodity architectures."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACM Multimedia"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1692670"
+                        ],
+                        "name": "B. Kulis",
+                        "slug": "B.-Kulis",
+                        "structuredName": {
+                            "firstName": "Brian",
+                            "lastName": "Kulis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Kulis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2903226"
+                        ],
+                        "name": "Kate Saenko",
+                        "slug": "Kate-Saenko",
+                        "structuredName": {
+                            "firstName": "Kate",
+                            "lastName": "Saenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kate Saenko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 32
+                            }
+                        ],
+                        "text": ", feature space transformations [12], model adaptation approaches [13, 14] and joint feature and model adaptation [15, 16]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7419723,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "feca3cf344320e3d14045c3dcc8a9975f39c8791",
+            "isKey": false,
+            "numCitedBy": 682,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In real-world applications, \u201cwhat you saw\u201d during training is often not \u201cwhat you get\u201d during deployment: the distribution and even the type and dimensionality of features can change from one dataset to the next. In this paper, we address the problem of visual domain adaptation for transferring object models from one dataset or visual domain to another. We introduce ARC-t, a flexible model for supervised learning of non-linear transformations between domains. Our method is based on a novel theoretical result demonstrating that such transformations can be learned in kernel space. Unlike existing work, our model is not restricted to symmetric transformations, nor to features of the same type and dimensionality, making it applicable to a significantly wider set of adaptation scenarios than previous methods. Furthermore, the method can be applied to categories that were not available during training. We demonstrate the ability of our method to adapt object recognition models under a variety of situations, such as differing imaging conditions, feature types and codebooks."
+            },
+            "slug": "What-you-saw-is-not-what-you-get:-Domain-adaptation-Kulis-Saenko",
+            "title": {
+                "fragments": [],
+                "text": "What you saw is not what you get: Domain adaptation using asymmetric kernel transforms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper introduces ARC-t, a flexible model for supervised learning of non-linear transformations between domains, based on a novel theoretical result demonstrating that such transformations can be learned in kernel space."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CVPR 2011"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48950628"
+                        ],
+                        "name": "N. Dalal",
+                        "slug": "N.-Dalal",
+                        "structuredName": {
+                            "firstName": "Navneet",
+                            "lastName": "Dalal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Dalal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1756114"
+                        ],
+                        "name": "B. Triggs",
+                        "slug": "B.-Triggs",
+                        "structuredName": {
+                            "firstName": "Bill",
+                            "lastName": "Triggs",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Triggs"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 60,
+                                "start": 56
+                            }
+                        ],
+                        "text": "Unlike the previously dominant features (SIFT [10], HOG [11]), deep CNN features can be learned for each specific task, but only if sufficient labeled training data are available."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 47
+                            }
+                        ],
+                        "text": "Unlike the previously dominant features (SIFT, HOG), deep CNN features can be learned for each specific task, but only if sufficient labeled training data are available."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 206590483,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cec734d7097ab6b1e60d95228ffd64248eb89d66",
+            "isKey": false,
+            "numCitedBy": 29265,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study the question of feature sets for robust visual object recognition; adopting linear SVM based human detection as a test case. After reviewing existing edge and gradient based descriptors, we show experimentally that grids of histograms of oriented gradient (HOG) descriptors significantly outperform existing feature sets for human detection. We study the influence of each stage of the computation on performance, concluding that fine-scale gradients, fine orientation binning, relatively coarse spatial binning, and high-quality local contrast normalization in overlapping descriptor blocks are all important for good results. The new approach gives near-perfect separation on the original MIT pedestrian database, so we introduce a more challenging dataset containing over 1800 annotated human images with a large range of pose variations and backgrounds."
+            },
+            "slug": "Histograms-of-oriented-gradients-for-human-Dalal-Triggs",
+            "title": {
+                "fragments": [],
+                "text": "Histograms of oriented gradients for human detection"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown experimentally that grids of histograms of oriented gradient (HOG) descriptors significantly outperform existing feature sets for human detection, and the influence of each stage of the computation on performance is studied."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152702479"
+                        ],
+                        "name": "P. Fischer",
+                        "slug": "P.-Fischer",
+                        "structuredName": {
+                            "firstName": "Philipp",
+                            "lastName": "Fischer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Fischer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2841331"
+                        ],
+                        "name": "A. Dosovitskiy",
+                        "slug": "A.-Dosovitskiy",
+                        "structuredName": {
+                            "firstName": "Alexey",
+                            "lastName": "Dosovitskiy",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Dosovitskiy"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1710872"
+                        ],
+                        "name": "T. Brox",
+                        "slug": "T.-Brox",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Brox",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Brox"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 98
+                            }
+                        ],
+                        "text": ", subcategory classification, scene classification, domain adaptation [8] and even image matching [9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9547593,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c91b38e27515f1fd224f093eef18e6ecc62ec58a",
+            "isKey": false,
+            "numCitedBy": 256,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Latest results indicate that features learned via convolutional neural networks outperform previous descriptors on classification tasks by a large margin. It has been shown that these networks still work well when they are applied to datasets or recognition tasks different from those they were trained on. However, descriptors like SIFT are not only used in recognition but also for many correspondence problems that rely on descriptor matching. In this paper we compare features from various layers of convolutional neural nets to standard SIFT descriptors. We consider a network that was trained on ImageNet and another one that was trained without supervision. Surprisingly, convolutional neural networks clearly outperform SIFT on descriptor matching. This paper has been merged with arXiv:1406.6909"
+            },
+            "slug": "Descriptor-Matching-with-Convolutional-Neural-a-to-Fischer-Dosovitskiy",
+            "title": {
+                "fragments": [],
+                "text": "Descriptor Matching with Convolutional Neural Networks: a Comparison to SIFT"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "This paper compares features from various layers of convolutional neural nets to standard SIFT descriptors and Surprisingly, convolutionAL neural networks clearly outperform SIFT on descriptor matching."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2125436"
+                        ],
+                        "name": "D. Goehring",
+                        "slug": "D.-Goehring",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Goehring",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Goehring"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50196944"
+                        ],
+                        "name": "Judy Hoffman",
+                        "slug": "Judy-Hoffman",
+                        "structuredName": {
+                            "firstName": "Judy",
+                            "lastName": "Hoffman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Judy Hoffman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1679449"
+                        ],
+                        "name": "E. Rodner",
+                        "slug": "E.-Rodner",
+                        "structuredName": {
+                            "firstName": "Erik",
+                            "lastName": "Rodner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Rodner"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2903226"
+                        ],
+                        "name": "Kate Saenko",
+                        "slug": "Kate-Saenko",
+                        "structuredName": {
+                            "firstName": "Kate",
+                            "lastName": "Saenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kate Saenko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 28,
+                                "start": 24
+                            }
+                        ],
+                        "text": "A related recent method [22] proposes a fast adaptation technique based on Linear Discriminant Analysis."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16409311,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "46ec7dd0c1652fc7fd317010be42b973df74a6f1",
+            "isKey": false,
+            "numCitedBy": 17,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the following paper, we present a framework for quickly training 2D object detectors for robotic perception. Our method can be used by robotics practitioners to quickly (under 30 seconds per object) build a large-scale real-time perception system. In particular, we show how to create new detectors on the fly using large-scale internet image databases, thus allowing a user to choose among thousands of available categories to build a detection system suitable for the particular robotic application. Furthermore, we show how to adapt these models to the current environment with just a few in-situ images. Experiments on existing 2D benchmarks evaluate the speed, accuracy, and flexibility of our system."
+            },
+            "slug": "Interactive-adaptation-of-real-time-object-Goehring-Hoffman",
+            "title": {
+                "fragments": [],
+                "text": "Interactive adaptation of real-time object detectors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This paper shows how to create new detectors on the fly using large-scale internet image databases, thus allowing a user to choose among thousands of available categories to build a detection system suitable for the particular robotic application."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE International Conference on Robotics and Automation (ICRA)"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2055900"
+                        ],
+                        "name": "Lixin Duan",
+                        "slug": "Lixin-Duan",
+                        "structuredName": {
+                            "firstName": "Lixin",
+                            "lastName": "Duan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lixin Duan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38188040"
+                        ],
+                        "name": "Dong Xu",
+                        "slug": "Dong-Xu",
+                        "structuredName": {
+                            "firstName": "Dong",
+                            "lastName": "Xu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dong Xu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1807998"
+                        ],
+                        "name": "I. Tsang",
+                        "slug": "I.-Tsang",
+                        "structuredName": {
+                            "firstName": "Ivor",
+                            "lastName": "Tsang",
+                            "middleNames": [
+                                "Wai-Hung"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Tsang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 114
+                            }
+                        ],
+                        "text": ", feature space transformations [12], model adaptation approaches [13, 14] and joint feature and model adaptation [15, 16]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 4908577,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e3edc9408ba82dd3a8194ace30bed5dd87c0d365",
+            "isKey": false,
+            "numCitedBy": 289,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a new learning method for heterogeneous domain adaptation (HDA), in which the data from the source domain and the target domain are represented by heterogeneous features with different dimensions. Using two different projection matrices, we first transform the data from two domains into a common subspace in order to measure the similarity between the data from two domains. We then propose two new feature mapping functions to augment the transformed data with their original features and zeros. The existing learning methods (e.g., SVM and SVR) can be readily incorporated with our newly proposed augmented feature representations to effectively utilize the data from both domains for HDA. Using the hinge loss function in SVM as an example, we introduce the detailed objective function in our method called Heterogeneous Feature Augmentation (HFA) for a linear case and also describe its kernelization in order to efficiently cope with the data with very high dimensions. Moreover, we also develop an alternating optimization algorithm to effectively solve the nontrivial optimization problem in our HFA method. Comprehensive experiments on two benchmark datasets clearly demonstrate that HFA outperforms the existing HDA methods."
+            },
+            "slug": "Learning-with-Augmented-Features-for-Heterogeneous-Duan-Xu",
+            "title": {
+                "fragments": [],
+                "text": "Learning with Augmented Features for Heterogeneous Domain Adaptation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 82,
+                "text": "A new learning method for heterogeneous domain adaptation (HDA), in which the data from the source domain and the target domain are represented by heterogeneous features with different dimensions, and it is demonstrated that HFA outperforms the existing HDA methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2562966"
+                        ],
+                        "name": "Philipp Kr\u00e4henb\u00fchl",
+                        "slug": "Philipp-Kr\u00e4henb\u00fchl",
+                        "structuredName": {
+                            "firstName": "Philipp",
+                            "lastName": "Kr\u00e4henb\u00fchl",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Philipp Kr\u00e4henb\u00fchl"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145231047"
+                        ],
+                        "name": "V. Koltun",
+                        "slug": "V.-Koltun",
+                        "structuredName": {
+                            "firstName": "Vladlen",
+                            "lastName": "Koltun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Koltun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 110
+                            }
+                        ],
+                        "text": "We have therefore also implemented and released a version of our algorithm running with fast region proposals [27] on a spatial pyramid pooling network [28], reducing our detection time down to half a second per image (from 4s per image) with nearly the same performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 939426,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ca73a2fc47f005a2ae1816f552b1be94d4607dc1",
+            "isKey": false,
+            "numCitedBy": 379,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present an approach for identifying a set of candidate objects in a given image. This set of candidates can be used for object recognition, segmentation, and other object-based image parsing tasks. To generate the proposals, we identify critical level sets in geodesic distance transforms computed for seeds placed in the image. The seeds are placed by specially trained classifiers that are optimized to discover objects. Experiments demonstrate that the presented approach achieves significantly higher accuracy than alternative approaches, at a fraction of the computational cost."
+            },
+            "slug": "Geodesic-Object-Proposals-Kr\u00e4henb\u00fchl-Koltun",
+            "title": {
+                "fragments": [],
+                "text": "Geodesic Object Proposals"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 84,
+                "text": "An approach for identifying a set of candidate objects in a given image that can be used for object recognition, segmentation, and other object-based image parsing tasks is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2146154794"
+                        ],
+                        "name": "Jun Yang",
+                        "slug": "Jun-Yang",
+                        "structuredName": {
+                            "firstName": "Jun",
+                            "lastName": "Yang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jun Yang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143634393"
+                        ],
+                        "name": "Rong Yan",
+                        "slug": "Rong-Yan",
+                        "structuredName": {
+                            "firstName": "Rong",
+                            "lastName": "Yan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rong Yan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7661726"
+                        ],
+                        "name": "Alexander Hauptmann",
+                        "slug": "Alexander-Hauptmann",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Hauptmann",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexander Hauptmann"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 74,
+                                "start": 66
+                            }
+                        ],
+                        "text": ", feature space transformations [12], model adaptation approaches [13, 14] and joint feature and model adaptation [15, 16]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14634523,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2177d348008172c28c167b8020ec824cdb810230",
+            "isKey": false,
+            "numCitedBy": 64,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many data mining applications can benefit from adapt- ing existing classifiers to new data with shifted distribu- tions. In this paper, we present Adaptive Support Vector Machine (Adapt-SVM) as an efficient model for adapting a SVM classifier trained from one dataset to a new dataset where only limited labeled examples are available. By in- troducing a new regularizer into SVM's objective function, Adapt-SVM aims to minimize both the classification error over the training examples, and the discrepancy between the adapted and original classifier. We also propose a selective sampling strategy based on the loss minimization principle to seed the most informative examples for classifier adap- tation. Experiments on an artificial classification task and on a benchmark video classification task shows that Adapt- SVM outperforms several baseline methods in terms of ac- curacy and/or efficiency."
+            },
+            "slug": "Adapting-SVM-Classifiers-to-Data-with-Shifted-Yang-Yan",
+            "title": {
+                "fragments": [],
+                "text": "Adapting SVM Classifiers to Data with Shifted Distributions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "This paper presents Adaptive Support Vector Machine (Adapt-SVM) as an efficient model for adapting a SVM classifier trained from one dataset to a new dataset where only limited labeled examples are available and proposes a selective sampling strategy based on the loss minimization principle to seed the most informative examples for classifier adap- tation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Seventh IEEE International Conference on Data Mining Workshops (ICDMW 2007)"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689089"
+                        ],
+                        "name": "M. Smucker",
+                        "slug": "M.-Smucker",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Smucker",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Smucker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144890574"
+                        ],
+                        "name": "James Allan",
+                        "slug": "James-Allan",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Allan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Allan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1750995"
+                        ],
+                        "name": "Ben Carterette",
+                        "slug": "Ben-Carterette",
+                        "structuredName": {
+                            "firstName": "Ben",
+                            "lastName": "Carterette",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ben Carterette"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 33
+                            }
+                        ],
+                        "text": "017 using a paired sample t-test [25])."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 5893582,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "3bf42fdbe24fe5aaa491266006d89bae53e99552",
+            "isKey": false,
+            "numCitedBy": 682,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Information retrieval (IR) researchers commonly use three tests of statistical significance: the Student's paired t-test, the Wilcoxon signed rank test, and the sign test. Other researchers have previously proposed using both the bootstrap and Fisher's randomization (permutation) test as non-parametric significance tests for IR but these tests have seen little use. For each of these five tests, we took the ad-hoc retrieval runs submitted to TRECs 3 and 5-8, and for each pair of runs, we measured the statistical significance of the difference in their mean average precision. We discovered that there is little practical difference between the randomization, bootstrap, and t tests. Both the Wilcoxon and sign test have a poor ability to detect significance and have the potential to lead to false detections of significance. The Wilcoxon and sign tests are simplified variants of the randomization test and their use should be discontinued for measuring the significance of a difference between means."
+            },
+            "slug": "A-comparison-of-statistical-significance-tests-for-Smucker-Allan",
+            "title": {
+                "fragments": [],
+                "text": "A comparison of statistical significance tests for information retrieval evaluation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "It is discovered that there is little practical difference between the randomization, bootstrap, and t tests and their use should be discontinued for measuring the significance of a difference between means."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CIKM '07"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1644050191"
+                        ],
+                        "name": "G. LoweDavid",
+                        "slug": "G.-LoweDavid",
+                        "structuredName": {
+                            "firstName": "G",
+                            "lastName": "LoweDavid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. LoweDavid"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 46
+                            }
+                        ],
+                        "text": "Unlike the previously dominant features (SIFT [10], HOG [11]), deep CNN features can be learned for each specific task, but only if sufficient labeled training data are available."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 174065,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4cab9c4b571761203ed4c3a4c5a07dd615f57a91",
+            "isKey": false,
+            "numCitedBy": 25505,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a method for extracting distinctive invariant features from images that can be used to perform reliable matching between different views of an object or scene. The features are ..."
+            },
+            "slug": "Distinctive-Image-Features-from-Scale-Invariant-LoweDavid",
+            "title": {
+                "fragments": [],
+                "text": "Distinctive Image Features from Scale-Invariant Keypoints"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "This paper presents a method for extracting distinctive invariant features from images that can be used to perform reliable matching between different views of an object or scene."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2004
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 109
+                            }
+                        ],
+                        "text": "We implement our CNN architectures and execute all fine-tuning using the open source software package, Caffe [22], and plan to make our model definitions along with all hyperparameters publicly available upon acceptance of this paper."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Caffe: An open source convolutional architecture for fast feature embedding"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "http://caffe.berkeleyvision.org/,"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 113
+                            }
+                        ],
+                        "text": ", feature space transformations [9], model adaptation approaches [10, 11] and joint feature and model adaptation [12, 13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Efficient learning of domaininvariant image representations"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "In Proc. ICLR,"
+            },
+            "year": 2013
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 13,
+            "methodology": 14
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 28,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/LSDA:-Large-Scale-Detection-through-Adaptation-Hoffman-Guadarrama/40eac6e6bb54e0da7885989f220f4d3f70249950?sort=total-citations"
+}

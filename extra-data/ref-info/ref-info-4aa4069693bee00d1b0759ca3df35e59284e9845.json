@@ -1,0 +1,3514 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2012435"
+                        ],
+                        "name": "M. Ganjoo",
+                        "slug": "M.-Ganjoo",
+                        "structuredName": {
+                            "firstName": "Milind",
+                            "lastName": "Ganjoo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Ganjoo"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[18], but that consistently yielded about half the accuracy of the rank loss model."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 28
+                            }
+                        ],
+                        "text": "More recently, Socher et al [18] presented a model for zero-shot learning where a deep neural network was first trained in an unsupervised manner from many images in order to obtain a rich image representation [3]; in parallel, a neural network language model [2] was trained in order to obtain embedding representations for thousands of common terms."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 90
+                            }
+                        ],
+                        "text": "We also experimented with an L2 loss between visual and label embeddings, as suggested by Socher et al. [18], but that consistently yielded about half the accuracy of the rank loss model."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 46
+                            }
+                        ],
+                        "text": "In contrast to previous attempts in this area [18], we have shown that our joint visual-semantic embedding model can be trained to give performance comparable to a state-of-the-art softmax based model on a flat object classification metric, while simultaneously making more semantically reasonable errors, as indicated by its improved performance on a hierarchical label metric."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 240,
+                                "start": 236
+                            }
+                        ],
+                        "text": "Their model differs from our proposed approach in several ways: first and foremost, the scale, as our model considers 1,000 known classes for the image model and up to 20,000 unknown classes, instead of respectively 8 and 2; second, in [18] there is an inherent trade-off between the quality of predictions for trained and outlier classes; third, by using a different visual model, different language model, and different training objective, we were able to train a single unified model that uses only embeddings."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2808203,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "755e9f43ce398ae8737366720c5f82685b0c253e",
+            "isKey": true,
+            "numCitedBy": 1172,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This work introduces a model that can recognize objects in images even if no training data is available for the object class. The only necessary knowledge about unseen visual categories comes from unsupervised text corpora. Unlike previous zero-shot learning models, which can only differentiate between unseen classes, our model can operate on a mixture of seen and unseen classes, simultaneously obtaining state of the art performance on classes with thousands of training images and reasonable performance on unseen classes. This is achieved by seeing the distributions of words in texts as a semantic space for understanding what objects look like. Our deep learning model does not require any manually defined semantic or visual features for either words or images. Images are mapped to be close to semantic word vectors corresponding to their classes, and the resulting image embeddings can be used to distinguish whether an image is of a seen or unseen class. We then use novelty detection methods to differentiate unseen classes from seen classes. We demonstrate two novelty detection strategies; the first gives high accuracy on unseen classes, while the second is conservative in its prediction of novelty and keeps the seen classes' accuracy high."
+            },
+            "slug": "Zero-Shot-Learning-Through-Cross-Modal-Transfer-Socher-Ganjoo",
+            "title": {
+                "fragments": [],
+                "text": "Zero-Shot Learning Through Cross-Modal Transfer"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "This work introduces a model that can recognize objects in images even if no training data is available for the object class, and uses novelty detection methods to differentiate unseen classes from seen classes."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144739074"
+                        ],
+                        "name": "Mohammad Norouzi",
+                        "slug": "Mohammad-Norouzi",
+                        "structuredName": {
+                            "firstName": "Mohammad",
+                            "lastName": "Norouzi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mohammad Norouzi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2047446108"
+                        ],
+                        "name": "Tomas Mikolov",
+                        "slug": "Tomas-Mikolov",
+                        "structuredName": {
+                            "firstName": "Tomas",
+                            "lastName": "Mikolov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomas Mikolov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751569"
+                        ],
+                        "name": "Samy Bengio",
+                        "slug": "Samy-Bengio",
+                        "structuredName": {
+                            "firstName": "Samy",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samy Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1789737"
+                        ],
+                        "name": "Jonathon Shlens",
+                        "slug": "Jonathon-Shlens",
+                        "structuredName": {
+                            "firstName": "Jonathon",
+                            "lastName": "Shlens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jonathon Shlens"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2279670"
+                        ],
+                        "name": "Andrea Frome",
+                        "slug": "Andrea-Frome",
+                        "structuredName": {
+                            "firstName": "Andrea",
+                            "lastName": "Frome",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrea Frome"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32131713"
+                        ],
+                        "name": "G. Corrado",
+                        "slug": "G.-Corrado",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Corrado",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Corrado"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49959210"
+                        ],
+                        "name": "J. Dean",
+                        "slug": "J.-Dean",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Dean",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Dean"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1926319,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "be2f5d8a7e6b415f1e22cee7dfd9be56b1afd8be",
+            "isKey": false,
+            "numCitedBy": 775,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract: Several recent publications have proposed methods for mapping images into continuous semantic embedding spaces. In some cases the embedding space is trained jointly with the image transformation. In other cases the semantic embedding space is established by an independent natural language processing task, and then the image transformation into that space is learned in a second stage. Proponents of these image embedding systems have stressed their advantages over the traditional \\nway{} classification framing of image understanding, particularly in terms of the promise for zero-shot learning -- the ability to correctly annotate images of previously unseen object categories. In this paper, we propose a simple method for constructing an image embedding system from any existing \\nway{} image classifier and a semantic word embedding model, which contains the $\\n$ class labels in its vocabulary. Our method maps images into the semantic embedding space via convex combination of the class label embedding vectors, and requires no additional training. We show that this simple and direct method confers many of the advantages associated with more complex image embedding schemes, and indeed outperforms state of the art methods on the ImageNet zero-shot learning task."
+            },
+            "slug": "Zero-Shot-Learning-by-Convex-Combination-of-Norouzi-Mikolov",
+            "title": {
+                "fragments": [],
+                "text": "Zero-Shot Learning by Convex Combination of Semantic Embeddings"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "A simple method for constructing an image embedding system from any existing image classifier and a semantic word embedding model, which contains the $\\n$ class labels in its vocabulary is proposed, which outperforms state of the art methods on the ImageNet zero-shot learning task."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145183709"
+                        ],
+                        "name": "J. Weston",
+                        "slug": "J.-Weston",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Weston",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weston"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751569"
+                        ],
+                        "name": "Samy Bengio",
+                        "slug": "Samy-Bengio",
+                        "structuredName": {
+                            "firstName": "Samy",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samy Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1746841"
+                        ],
+                        "name": "Nicolas Usunier",
+                        "slug": "Nicolas-Usunier",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Usunier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nicolas Usunier"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 84,
+                                "start": 80
+                            }
+                        ],
+                        "text": "We used a combination of dot-product similarity and hinge rank loss (similar to [20]) such that the model was trained to produce a higher dot-product similarity between the visual model output and the vector representation of the correct label than between the visual output and other randomly chosen text terms."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 48,
+                                "start": 44
+                            }
+                        ],
+                        "text": "One solution to this problem, termed WSABIE [20], is to train a joint embedding model of both images and labels, by employing an online learning-to-rank algorithm."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 35
+                            }
+                        ],
+                        "text": "Compared to the proposed approach, WSABIE only explored linear mappings from image features to the embedding space, and the available labels were only those provided in the image training set."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 157,
+                                "start": 153
+                            }
+                        ],
+                        "text": "One way of dealing with this issue is to respect the natural continuity of visual space instead of artificially partitioning it into disjoint categories [20]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7587705,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "aea0f946e8dcddb65cc2e907456c42453f246a50",
+            "isKey": false,
+            "numCitedBy": 420,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Image annotation datasets are becoming larger and larger, with tens of millions of images and tens of thousands of possible annotations. We propose a strongly performing method that scales to such datasets by simultaneously learning to optimize precision at k of the ranked list of annotations for a given image and learning a low-dimensional joint embedding space for both images and annotations. Our method both outperforms several baseline methods and, in comparison to them, is faster and consumes less memory. We also demonstrate how our method learns an interpretable model, where annotations with alternate spellings or even languages are close in the embedding space. Hence, even when our model does not predict the exact annotation given by a human labeler, it often predicts similar annotations, a fact that we try to quantify by measuring the newly introduced \u201csibling\u201d precision metric, where our method also obtains excellent results."
+            },
+            "slug": "Large-scale-image-annotation:-learning\u00a0to\u00a0rank-Weston-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Large scale image annotation: learning\u00a0to\u00a0rank with\u00a0joint word-image embeddings"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "This work proposes a strongly performing method that scales to image annotation datasets by simultaneously learning to optimize precision at k of the ranked list of annotations for a given image and learning a low-dimensional joint embedding space for both images and annotations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Machine Learning"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34849128"
+                        ],
+                        "name": "Marcus Rohrbach",
+                        "slug": "Marcus-Rohrbach",
+                        "structuredName": {
+                            "firstName": "Marcus",
+                            "lastName": "Rohrbach",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcus Rohrbach"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144421225"
+                        ],
+                        "name": "Michael Stark",
+                        "slug": "Michael-Stark",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Stark",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael Stark"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48920094"
+                        ],
+                        "name": "B. Schiele",
+                        "slug": "B.-Schiele",
+                        "structuredName": {
+                            "firstName": "Bernt",
+                            "lastName": "Schiele",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Schiele"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 59,
+                                "start": 55
+                            }
+                        ],
+                        "text": "As in [12], we include a result on a similar task from [17], though their work used a different set of 200 zero-shot classes."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 102
+                            }
+                        ],
+                        "text": "There has been other recent work showing impressive zero-shot performance on visual recognition tasks [12, 17, 16], however all of these rely on a curated source of semantic information for the labels: the WordNet hierarchy is used in [12] and [17], and [16] uses a knowledge base containing descriptive properties for each class."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14700310,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c30b9fb837e912ccf3919fdb64e9543fca57799e",
+            "isKey": false,
+            "numCitedBy": 312,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "While knowledge transfer (KT) between object classes has been accepted as a promising route towards scalable recognition, most experimental KT studies are surprisingly limited in the number of object classes considered. To support claims of KT w.r.t. scalability we thus advocate to evaluate KT in a large-scale setting. To this end, we provide an extensive evaluation of three popular approaches to KT on a recently proposed large-scale data set, the ImageNet Large Scale Visual Recognition Competition 2010 data set. In a first setting they are directly compared to one-vs-all classification often neglected in KT papers and in a second setting we evaluate their ability to enable zero-shot learning. While none of the KT methods can improve over one-vs-all classification they prove valuable for zero-shot learning, especially hierarchical and direct similarity based KT. We also propose and describe several extensions of the evaluated approaches that are necessary for this large-scale study."
+            },
+            "slug": "Evaluating-knowledge-transfer-and-zero-shot-in-a-Rohrbach-Stark",
+            "title": {
+                "fragments": [],
+                "text": "Evaluating knowledge transfer and zero-shot learning in a large-scale setting"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "An extensive evaluation of three popular approaches to KT on a recently proposed large-scale data set, the ImageNet Large Scale Visual Recognition Competition 2010 dataSet, finding none of the KT methods can improve over one-vs-all classification but prove valuable for zero-shot learning, especially hierarchical and direct similarity based KT."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CVPR 2011"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1752252"
+                        ],
+                        "name": "Mark Palatucci",
+                        "slug": "Mark-Palatucci",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Palatucci",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Palatucci"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48855558"
+                        ],
+                        "name": "D. Pomerleau",
+                        "slug": "D.-Pomerleau",
+                        "structuredName": {
+                            "firstName": "Dean",
+                            "lastName": "Pomerleau",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Pomerleau"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40975594"
+                        ],
+                        "name": "Tom Michael Mitchell",
+                        "slug": "Tom-Michael-Mitchell",
+                        "structuredName": {
+                            "firstName": "Tom",
+                            "lastName": "Mitchell",
+                            "middleNames": [
+                                "Michael"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tom Michael Mitchell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 7490338,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0f6911bc1e6abee8bbf9dd3f8d54d40466429da7",
+            "isKey": false,
+            "numCitedBy": 849,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of zero-shot learning, where the goal is to learn a classifier f : X \u2192 Y that must predict novel values of Y that were omitted from the training set. To achieve this, we define the notion of a semantic output code classifier (SOC) which utilizes a knowledge base of semantic properties of Y to extrapolate to novel classes. We provide a formalism for this type of classifier and study its theoretical properties in a PAC framework, showing conditions under which the classifier can accurately predict novel classes. As a case study, we build a SOC classifier for a neural decoding task and show that it can often predict words that people are thinking about from functional magnetic resonance images (fMRI) of their neural activity, even without training examples for those words."
+            },
+            "slug": "Zero-shot-Learning-with-Semantic-Output-Codes-Palatucci-Pomerleau",
+            "title": {
+                "fragments": [],
+                "text": "Zero-shot Learning with Semantic Output Codes"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A semantic output code classifier which utilizes a knowledge base of semantic properties of Y to extrapolate to novel classes and can often predict words that people are thinking about from functional magnetic resonance images of their neural activity, even without training examples for those words."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1879646"
+                        ],
+                        "name": "Thomas Deselaers",
+                        "slug": "Thomas-Deselaers",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Deselaers",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Deselaers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143865718"
+                        ],
+                        "name": "V. Ferrari",
+                        "slug": "V.-Ferrari",
+                        "structuredName": {
+                            "firstName": "Vittorio",
+                            "lastName": "Ferrari",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Ferrari"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 176,
+                                "start": 173
+                            }
+                        ],
+                        "text": "The gap that exists between the DeViSE model and softmax baseline on the hierarchical metric reflects the benefit of semantic information above and beyond visual similarity [8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 95
+                            }
+                        ],
+                        "text": "Visual similarity is strongly correlated with semantic similarity for nearby object categories [8], and the softmax model does leverage visual similarity between zero-shot and training images to make predictions that will be scored favorably (e."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1198168,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Psychology"
+            ],
+            "id": "6ce77f485677387a791f41c0f2130e84ce8a8a1d",
+            "isKey": false,
+            "numCitedBy": 159,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many computer vision approaches take for granted positive answers to questions such as \u201cAre semantic categories visually separable?\u201d and \u201cIs visual similarity correlated to semantic similarity?\u201d. In this paper, we study experimentally whether these assumptions hold and show parallels to questions investigated in cognitive science about the human visual system. The insights gained from our analysis enable building a novel distance function between images assessing whether they are from the same basic-level category. This function goes beyond direct visual distance as it also exploits semantic similarity measured through ImageNet. We demonstrate experimentally that it outperforms purely visual distances."
+            },
+            "slug": "Visual-and-semantic-similarity-in-ImageNet-Deselaers-Ferrari",
+            "title": {
+                "fragments": [],
+                "text": "Visual and semantic similarity in ImageNet"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "The insights gained from analysis enable building a novel distance function between images assessing whether they are from the same basic-level category, which goes beyond direct visual distance as it also exploits semantic similarity measured through ImageNet."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CVPR 2011"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1722052"
+                        ],
+                        "name": "Thomas Mensink",
+                        "slug": "Thomas-Mensink",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Mensink",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Mensink"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721683"
+                        ],
+                        "name": "J. Verbeek",
+                        "slug": "J.-Verbeek",
+                        "structuredName": {
+                            "firstName": "Jakob",
+                            "lastName": "Verbeek",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Verbeek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1723883"
+                        ],
+                        "name": "F. Perronnin",
+                        "slug": "F.-Perronnin",
+                        "structuredName": {
+                            "firstName": "Florent",
+                            "lastName": "Perronnin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Perronnin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1808423"
+                        ],
+                        "name": "G. Csurka",
+                        "slug": "G.-Csurka",
+                        "structuredName": {
+                            "firstName": "Gabriela",
+                            "lastName": "Csurka",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Csurka"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 60,
+                                "start": 56
+                            }
+                        ],
+                        "text": "Table 4: Flat hit@5 accuracy on the zero-shot task from [12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 4
+                            }
+                        ],
+                        "text": "The [12] model uses a curated hierarchy over labels for zero-shot classification, but without using this information, our model is close in performance on the 200 zero-shot class label task."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 6
+                            }
+                        ],
+                        "text": "As in [12], we include a result on a similar task from [17], though their work used a different set of 200 zero-shot classes."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 102
+                            }
+                        ],
+                        "text": "There has been other recent work showing impressive zero-shot performance on visual recognition tasks [12, 17, 16], however all of these rely on a curated source of semantic information for the labels: the WordNet hierarchy is used in [12] and [17], and [16] uses a knowledge base containing descriptive properties for each class."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 146
+                            }
+                        ],
+                        "text": "When the models can predict any of the 1000 labels, we achieve better accuracy, indicating DeViSE has less of a bias toward training classes than [12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 118
+                            }
+                        ],
+                        "text": "To provide a comparison with other work in zero-shot learning, we also directly compare to the zero-shot results from [12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9296691,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3a4a53fe47036ac89dad070ab87a9d8795b139b1",
+            "isKey": true,
+            "numCitedBy": 260,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We are interested in large-scale image classification and especially in the setting where images corresponding to new or existing classes are continuously added to the training set. Our goal is to devise classifiers which can incorporate such images and classes on-the-fly at (near) zero cost. We cast this problem into one of learning a metric which is shared across all classes and explore k-nearest neighbor (k-NN) and nearest class mean (NCM) classifiers. We learn metrics on the ImageNet 2010 challenge data set, which contains more than 1.2M training images of 1K classes. Surprisingly, the NCM classifier compares favorably to the more flexible k-NN classifier, and has comparable performance to linear SVMs. We also study the generalization performance, among others by using the learned metric on the ImageNet-10K dataset, and we obtain competitive performance. Finally, we explore zero-shot classification, and show how the zero-shot model can be combined very effectively with small training datasets."
+            },
+            "slug": "Metric-Learning-for-Large-Scale-Image-Generalizing-Mensink-Verbeek",
+            "title": {
+                "fragments": [],
+                "text": "Metric Learning for Large Scale Image Classification: Generalizing to New Classes at Near-Zero Cost"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "The goal is to devise classifiers which can incorporate images and classes on-the-fly at (near) zero cost and to explore k-nearest neighbor (k-NN) and nearest class mean (NCM) classifiers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2192178"
+                        ],
+                        "name": "Olga Russakovsky",
+                        "slug": "Olga-Russakovsky",
+                        "structuredName": {
+                            "firstName": "Olga",
+                            "lastName": "Russakovsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Olga Russakovsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153302678"
+                        ],
+                        "name": "Jia Deng",
+                        "slug": "Jia-Deng",
+                        "structuredName": {
+                            "firstName": "Jia",
+                            "lastName": "Deng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jia Deng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144914140"
+                        ],
+                        "name": "Hao Su",
+                        "slug": "Hao-Su",
+                        "structuredName": {
+                            "firstName": "Hao",
+                            "lastName": "Su",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hao Su"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2285165"
+                        ],
+                        "name": "J. Krause",
+                        "slug": "J.-Krause",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Krause",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Krause"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145031342"
+                        ],
+                        "name": "S. Satheesh",
+                        "slug": "S.-Satheesh",
+                        "structuredName": {
+                            "firstName": "Sanjeev",
+                            "lastName": "Satheesh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Satheesh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145423516"
+                        ],
+                        "name": "S. Ma",
+                        "slug": "S.-Ma",
+                        "structuredName": {
+                            "firstName": "Sean",
+                            "lastName": "Ma",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Ma"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3109481"
+                        ],
+                        "name": "Zhiheng Huang",
+                        "slug": "Zhiheng-Huang",
+                        "structuredName": {
+                            "firstName": "Zhiheng",
+                            "lastName": "Huang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhiheng Huang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2354728"
+                        ],
+                        "name": "A. Karpathy",
+                        "slug": "A.-Karpathy",
+                        "structuredName": {
+                            "firstName": "Andrej",
+                            "lastName": "Karpathy",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Karpathy"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2556428"
+                        ],
+                        "name": "A. Khosla",
+                        "slug": "A.-Khosla",
+                        "structuredName": {
+                            "firstName": "Aditya",
+                            "lastName": "Khosla",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Khosla"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145879842"
+                        ],
+                        "name": "Michael S. Bernstein",
+                        "slug": "Michael-S.-Bernstein",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Bernstein",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael S. Bernstein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39668247"
+                        ],
+                        "name": "A. Berg",
+                        "slug": "A.-Berg",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Berg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Berg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48004138"
+                        ],
+                        "name": "Li Fei-Fei",
+                        "slug": "Li-Fei-Fei",
+                        "structuredName": {
+                            "firstName": "Li",
+                            "lastName": "Fei-Fei",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Li Fei-Fei"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 161,
+                                "start": 154
+                            }
+                        ],
+                        "text": "The visual model architecture we employ is based on the winning model for the 1,000-class ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012 [11, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2930547,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e74f9b7f8eec6ba4704c206b93bc8079af3da4bd",
+            "isKey": false,
+            "numCitedBy": 25491,
+            "numCiting": 138,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The ImageNet Large Scale Visual Recognition Challenge is a benchmark in object category classification and detection on hundreds of object categories and millions of images. The challenge has been run annually from 2010 to present, attracting participation from more than fifty institutions. This paper describes the creation of this benchmark dataset and the advances in object recognition that have been possible as a result. We discuss the challenges of collecting large-scale ground truth annotation, highlight key breakthroughs in categorical object recognition, provide a detailed analysis of the current state of the field of large-scale image classification and object detection, and compare the state-of-the-art computer vision accuracy with human accuracy. We conclude with lessons learned in the 5\u00a0years of the challenge, and propose future directions and improvements."
+            },
+            "slug": "ImageNet-Large-Scale-Visual-Recognition-Challenge-Russakovsky-Deng",
+            "title": {
+                "fragments": [],
+                "text": "ImageNet Large Scale Visual Recognition Challenge"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "The creation of this benchmark dataset and the advances in object recognition that have been possible as a result are described, and the state-of-the-art computer vision accuracy with human accuracy is compared."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "International Journal of Computer Vision"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153302678"
+                        ],
+                        "name": "Jia Deng",
+                        "slug": "Jia-Deng",
+                        "structuredName": {
+                            "firstName": "Jia",
+                            "lastName": "Deng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jia Deng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144847596"
+                        ],
+                        "name": "Wei Dong",
+                        "slug": "Wei-Dong",
+                        "structuredName": {
+                            "firstName": "Wei",
+                            "lastName": "Dong",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wei Dong"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2040091191"
+                        ],
+                        "name": "Li-Jia Li",
+                        "slug": "Li-Jia-Li",
+                        "structuredName": {
+                            "firstName": "Li-Jia",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Li-Jia Li"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "94451829"
+                        ],
+                        "name": "K. Li",
+                        "slug": "K.-Li",
+                        "structuredName": {
+                            "firstName": "K.",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Li"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48004138"
+                        ],
+                        "name": "Li Fei-Fei",
+                        "slug": "Li-Fei-Fei",
+                        "structuredName": {
+                            "firstName": "Li",
+                            "lastName": "Fei-Fei",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Li Fei-Fei"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 109
+                            }
+                        ],
+                        "text": "While growing the number of labels and labeled images has improved the utility of visual recognition systems [7], scaling such systems beyond a limited number of discrete categories remains an unsolved problem."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 147
+                            }
+                        ],
+                        "text": "We trained this model with a softmax output layer, as described in [11], to predict one of 1,000 object categories from the ILSVRC 2012 1K dataset [7], and were able to reproduce their results."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 279,
+                                "start": 276
+                            }
+                        ],
+                        "text": "To quantify the performance of the model on zero-shot data, we constructed from our ImageNet 2011 21K zero-shot data three test data sets of increasing difficulty based on the image labels\u2019 tree distance from the training ILSVRC 2012 1K labels in the ImageNet label hierarchy [7]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 224,
+                                "start": 221
+                            }
+                        ],
+                        "text": "The text of the web pages was tokenized into a lexicon of roughly 155,000 single- and multi-word terms consisting of common English words and phrases as well as terms from commonly used visual object recognition datasets [7]."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 57246310,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1b47265245e8db53a553049dcb27ed3e495fd625",
+            "isKey": true,
+            "numCitedBy": 27403,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The explosion of image data on the Internet has the potential to foster more sophisticated and robust models and algorithms to index, retrieve, organize and interact with images and multimedia data. But exactly how such data can be harnessed and organized remains a critical problem. We introduce here a new database called \u201cImageNet\u201d, a large-scale ontology of images built upon the backbone of the WordNet structure. ImageNet aims to populate the majority of the 80,000 synsets of WordNet with an average of 500-1000 clean and full resolution images. This will result in tens of millions of annotated images organized by the semantic hierarchy of WordNet. This paper offers a detailed analysis of ImageNet in its current state: 12 subtrees with 5247 synsets and 3.2 million images in total. We show that ImageNet is much larger in scale and diversity and much more accurate than the current image datasets. Constructing such a large-scale database is a challenging task. We describe the data collection scheme with Amazon Mechanical Turk. Lastly, we illustrate the usefulness of ImageNet through three simple applications in object recognition, image classification and automatic object clustering. We hope that the scale, accuracy, diversity and hierarchical structure of ImageNet can offer unparalleled opportunities to researchers in the computer vision community and beyond."
+            },
+            "slug": "ImageNet:-A-large-scale-hierarchical-image-database-Deng-Dong",
+            "title": {
+                "fragments": [],
+                "text": "ImageNet: A large-scale hierarchical image database"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A new database called \u201cImageNet\u201d is introduced, a large-scale ontology of images built upon the backbone of the WordNet structure, much larger in scale and diversity and much more accurate than the current image datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CVPR"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751569"
+                        ],
+                        "name": "Samy Bengio",
+                        "slug": "Samy-Bengio",
+                        "structuredName": {
+                            "firstName": "Samy",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samy Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145183709"
+                        ],
+                        "name": "J. Weston",
+                        "slug": "J.-Weston",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Weston",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weston"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2529182"
+                        ],
+                        "name": "David Grangier",
+                        "slug": "David-Grangier",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Grangier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Grangier"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 164,
+                                "start": 161
+                            }
+                        ],
+                        "text": "This last step can be done efficiently using either a tree or a hashing technique, in order to be faster than the naive linear search approach (see for instance [1])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 312693,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a3ea706f6604a1e6e87c33d7a3b4b97b1bb338ef",
+            "isKey": false,
+            "numCitedBy": 347,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Multi-class classification becomes challenging at test time when the number of classes is very large and testing against every possible class can become computationally infeasible. This problem can be alleviated by imposing (or learning) a structure over the set of classes. We propose an algorithm for learning a tree-structure of classifiers which, by optimizing the overall tree loss, provides superior accuracy to existing tree labeling methods. We also propose a method that learns to embed labels in a low dimensional space that is faster than non-embedding approaches and has superior accuracy to existing embedding approaches. Finally we combine the two ideas resulting in the label embedding tree that outperforms alternative methods including One-vs-Rest while being orders of magnitude faster."
+            },
+            "slug": "Label-Embedding-Trees-for-Large-Multi-Class-Tasks-Bengio-Weston",
+            "title": {
+                "fragments": [],
+                "text": "Label Embedding Trees for Large Multi-Class Tasks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "An algorithm for learning a tree-structure of classifiers which, by optimizing the overall tree loss, provides superior accuracy to existing tree labeling methods and a method that learns to embed labels in a low dimensional space that is faster than non-embedding approaches and has superior accuracyto existing embedding approaches are proposed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144638694"
+                        ],
+                        "name": "Adam Coates",
+                        "slug": "Adam-Coates",
+                        "structuredName": {
+                            "firstName": "Adam",
+                            "lastName": "Coates",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Adam Coates"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 213,
+                                "start": 210
+                            }
+                        ],
+                        "text": "More recently, Socher et al [18] presented a model for zero-shot learning where a deep neural network was first trained in an unsupervised manner from many images in order to obtain a rich image representation [3]; in parallel, a neural network language model [2] was trained in order to obtain embedding representations for thousands of common terms."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 12132619,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6f568d757d2c1ab42f2006faa25690b74c3d2d44",
+            "isKey": false,
+            "numCitedBy": 600,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "While vector quantization (VQ) has been applied widely to generate features for visual recognition problems, much recent work has focused on more powerful methods. In particular, sparse coding has emerged as a strong alternative to traditional VQ approaches and has been shown to achieve consistently higher performance on benchmark datasets. Both approaches can be split into a training phase, where the system learns a dictionary of basis functions, and an encoding phase, where the dictionary is used to extract features from new inputs. In this work, we investigate the reasons for the success of sparse coding over VQ by decoupling these phases, allowing us to separate out the contributions of training and encoding in a controlled way. Through extensive experiments on CIFAR, NORB and Caltech 101 datasets, we compare several training and encoding schemes, including sparse coding and a form of VQ with a soft threshold activation function. Our results show not only that we can use fast VQ algorithms for training, but that we can just as well use randomly chosen exemplars from the training set. Rather than spend resources on training, we find it is more important to choose a good encoder\u2014which can often be a simple feed forward non-linearity. Our results include state-of-the-art performance on both CIFAR and NORB."
+            },
+            "slug": "The-Importance-of-Encoding-Versus-Training-with-and-Coates-Ng",
+            "title": {
+                "fragments": [],
+                "text": "The Importance of Encoding Versus Training with Sparse Coding and Vector Quantization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work investigates the reasons for the success of sparse coding over VQ by decoupling these phases, allowing us to separate out the contributions of training and encoding in a controlled way and shows not only that it can use fast VQ algorithms for training, but that they can just as well use randomly chosen exemplars from the training set."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064160"
+                        ],
+                        "name": "A. Krizhevsky",
+                        "slug": "A.-Krizhevsky",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Krizhevsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krizhevsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 100
+                            }
+                        ],
+                        "text": "multinomial logistic regression) that has as many units as the number of classes (see, for instance [11])."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 161,
+                                "start": 154
+                            }
+                        ],
+                        "text": "The visual model architecture we employ is based on the winning model for the 1,000-class ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012 [11, 6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 95
+                            }
+                        ],
+                        "text": "In parallel, we pre-train a state-of-the-art deep neural network for visual object recognition [11], complete with a traditional softmax output layer."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 66
+                            }
+                        ],
+                        "text": "Note that our softmax baseline results differ from the results in [11] due to a simplification in the evaluation procedure: [11] creates several distorted versions of each test image and aggregates the results for a final label, whereas in our experiments, we evaluate using only the original test image."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 74
+                            }
+                        ],
+                        "text": "Our softmax baseline is able to reproduce the performance of the model in [11] when evaluated with the same procedure."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 216,
+                                "start": 212
+                            }
+                        ],
+                        "text": "We compare DeViSE to two models that employ the same high-quality core vision model, but lack the semantic structure imparted by our language model: (1) a softmax baseline model \u2013 a state-of-the-art vision model [11] which employs a 1000-way softmax classifier; (2) a random embedding model \u2013 a version of our model that uses random unit-norm embedding vectors in place of those learned by the language model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 67
+                            }
+                        ],
+                        "text": "We trained this model with a softmax output layer, as described in [11], to predict one of 1,000 object categories from the ILSVRC 2012 1K dataset [7], and were able to reproduce their results."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 195908774,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "abd1c342495432171beb7ca8fd9551ef13cbd0ff",
+            "isKey": true,
+            "numCitedBy": 80945,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We trained a large, deep convolutional neural network to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes. On the test data, we achieved top-1 and top-5 error rates of 37.5% and 17.0%, respectively, which is considerably better than the previous state-of-the-art. The neural network, which has 60 million parameters and 650,000 neurons, consists of five convolutional layers, some of which are followed by max-pooling layers, and three fully connected layers with a final 1000-way softmax. To make training faster, we used non-saturating neurons and a very efficient GPU implementation of the convolution operation. To reduce overfitting in the fully connected layers we employed a recently developed regularization method called \"dropout\" that proved to be very effective. We also entered a variant of this model in the ILSVRC-2012 competition and achieved a winning top-5 test error rate of 15.3%, compared to 26.2% achieved by the second-best entry."
+            },
+            "slug": "ImageNet-classification-with-deep-convolutional-Krizhevsky-Sutskever",
+            "title": {
+                "fragments": [],
+                "text": "ImageNet classification with deep convolutional neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A large, deep convolutional neural network was trained to classify the 1.2 million high-resolution images in the ImageNet LSVRC-2010 contest into the 1000 different classes and employed a recently developed regularization method called \"dropout\" that proved to be very effective."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Commun. ACM"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49959210"
+                        ],
+                        "name": "J. Dean",
+                        "slug": "J.-Dean",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Dean",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Dean"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32131713"
+                        ],
+                        "name": "G. Corrado",
+                        "slug": "G.-Corrado",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Corrado",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Corrado"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3089272"
+                        ],
+                        "name": "R. Monga",
+                        "slug": "R.-Monga",
+                        "structuredName": {
+                            "firstName": "Rajat",
+                            "lastName": "Monga",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Monga"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118440152"
+                        ],
+                        "name": "Kai Chen",
+                        "slug": "Kai-Chen",
+                        "structuredName": {
+                            "firstName": "Kai",
+                            "lastName": "Chen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kai Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145139947"
+                        ],
+                        "name": "Matthieu Devin",
+                        "slug": "Matthieu-Devin",
+                        "structuredName": {
+                            "firstName": "Matthieu",
+                            "lastName": "Devin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthieu Devin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827616"
+                        ],
+                        "name": "Quoc V. Le",
+                        "slug": "Quoc-V.-Le",
+                        "structuredName": {
+                            "firstName": "Quoc",
+                            "lastName": "Le",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Quoc V. Le"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1715548"
+                        ],
+                        "name": "Mark Z. Mao",
+                        "slug": "Mark-Z.-Mao",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Mao",
+                            "middleNames": [
+                                "Z."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Z. Mao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1706809"
+                        ],
+                        "name": "Marc'Aurelio Ranzato",
+                        "slug": "Marc'Aurelio-Ranzato",
+                        "structuredName": {
+                            "firstName": "Marc'Aurelio",
+                            "lastName": "Ranzato",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marc'Aurelio Ranzato"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33666044"
+                        ],
+                        "name": "A. Senior",
+                        "slug": "A.-Senior",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Senior",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Senior"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2080690"
+                        ],
+                        "name": "P. Tucker",
+                        "slug": "P.-Tucker",
+                        "structuredName": {
+                            "firstName": "Paul",
+                            "lastName": "Tucker",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Tucker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143781496"
+                        ],
+                        "name": "Ke Yang",
+                        "slug": "Ke-Yang",
+                        "structuredName": {
+                            "firstName": "Ke",
+                            "lastName": "Yang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ke Yang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 122
+                            }
+                        ],
+                        "text": "The DeViSE model was trained by asynchronous stochastic gradient descent on a distributed computing platform described in [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 372467,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3127190433230b3dc1abd0680bb58dced4bcd90e",
+            "isKey": false,
+            "numCitedBy": 3026,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recent work in unsupervised feature learning and deep learning has shown that being able to train large models can dramatically improve performance. In this paper, we consider the problem of training a deep network with billions of parameters using tens of thousands of CPU cores. We have developed a software framework called DistBelief that can utilize computing clusters with thousands of machines to train large models. Within this framework, we have developed two algorithms for large-scale distributed training: (i) Downpour SGD, an asynchronous stochastic gradient descent procedure supporting a large number of model replicas, and (ii) Sandblaster, a framework that supports a variety of distributed batch optimization procedures, including a distributed implementation of L-BFGS. Downpour SGD and Sandblaster L-BFGS both increase the scale and speed of deep network training. We have successfully used our system to train a deep network 30x larger than previously reported in the literature, and achieves state-of-the-art performance on ImageNet, a visual object recognition task with 16 million images and 21k categories. We show that these same techniques dramatically accelerate the training of a more modestly- sized deep network for a commercial speech recognition service. Although we focus on and report performance of these methods as applied to training large neural networks, the underlying algorithms are applicable to any gradient-based machine learning algorithm."
+            },
+            "slug": "Large-Scale-Distributed-Deep-Networks-Dean-Corrado",
+            "title": {
+                "fragments": [],
+                "text": "Large Scale Distributed Deep Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper considers the problem of training a deep network with billions of parameters using tens of thousands of CPU cores and develops two algorithms for large-scale distributed training, Downpour SGD and Sandblaster L-BFGS, which increase the scale and speed of deep network training."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "36037226"
+                        ],
+                        "name": "R\u00e9jean Ducharme",
+                        "slug": "R\u00e9jean-Ducharme",
+                        "structuredName": {
+                            "firstName": "R\u00e9jean",
+                            "lastName": "Ducharme",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R\u00e9jean Ducharme"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "120247189"
+                        ],
+                        "name": "Pascal Vincent",
+                        "slug": "Pascal-Vincent",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Vincent",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pascal Vincent"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1909943744"
+                        ],
+                        "name": "Christian Janvin",
+                        "slug": "Christian-Janvin",
+                        "structuredName": {
+                            "firstName": "Christian",
+                            "lastName": "Janvin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christian Janvin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 263,
+                                "start": 260
+                            }
+                        ],
+                        "text": "More recently, Socher et al [18] presented a model for zero-shot learning where a deep neural network was first trained in an unsupervised manner from many images in order to obtain a rich image representation [3]; in parallel, a neural network language model [2] was trained in order to obtain embedding representations for thousands of common terms."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 221275765,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6c2b28f9354f667cd5bd07afc0471d8334430da7",
+            "isKey": false,
+            "numCitedBy": 6009,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A goal of statistical language modeling is to learn the joint probability function of sequences of words in a language. This is intrinsically difficult because of the curse of dimensionality: a word sequence on which the model will be tested is likely to be different from all the word sequences seen during training. Traditional but very successful approaches based on n-grams obtain generalization by concatenating very short overlapping sequences seen in the training set. We propose to fight the curse of dimensionality by learning a distributed representation for words which allows each training sentence to inform the model about an exponential number of semantically neighboring sentences. The model learns simultaneously (1) a distributed representation for each word along with (2) the probability function for word sequences, expressed in terms of these representations. Generalization is obtained because a sequence of words that has never been seen before gets high probability if it is made of words that are similar (in the sense of having a nearby representation) to words forming an already seen sentence. Training such large models (with millions of parameters) within a reasonable time is itself a significant challenge. We report on experiments using neural networks for the probability function, showing on two text corpora that the proposed approach significantly improves on state-of-the-art n-gram models, and that the proposed approach allows to take advantage of longer contexts."
+            },
+            "slug": "A-Neural-Probabilistic-Language-Model-Bengio-Ducharme",
+            "title": {
+                "fragments": [],
+                "text": "A Neural Probabilistic Language Model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work proposes to fight the curse of dimensionality by learning a distributed representation for words which allows each training sentence to inform the model about an exponential number of semantically neighboring sentences."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2047446108"
+                        ],
+                        "name": "Tomas Mikolov",
+                        "slug": "Tomas-Mikolov",
+                        "structuredName": {
+                            "firstName": "Tomas",
+                            "lastName": "Mikolov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomas Mikolov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118440152"
+                        ],
+                        "name": "Kai Chen",
+                        "slug": "Kai-Chen",
+                        "structuredName": {
+                            "firstName": "Kai",
+                            "lastName": "Chen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kai Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32131713"
+                        ],
+                        "name": "G. Corrado",
+                        "slug": "G.-Corrado",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Corrado",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Corrado"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49959210"
+                        ],
+                        "name": "J. Dean",
+                        "slug": "J.-Dean",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Dean",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Dean"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 69
+                            }
+                        ],
+                        "text": "The skip-gram text modeling architecture introduced by Mikolov et al [13, 14] has been shown to efficiently learn semantically-meaningful floating point representations of terms from unannotated text."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 16447573,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "87f40e6f3022adbc1f1905e3e506abad05a9964f",
+            "isKey": false,
+            "numCitedBy": 26053,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The recently introduced continuous Skip-gram model is an efficient method for learning high-quality distributed vector representations that capture a large number of precise syntactic and semantic word relationships. In this paper we present several extensions that improve both the quality of the vectors and the training speed. By subsampling of the frequent words we obtain significant speedup and also learn more regular word representations. We also describe a simple alternative to the hierarchical softmax called negative sampling. \n \nAn inherent limitation of word representations is their indifference to word order and their inability to represent idiomatic phrases. For example, the meanings of \"Canada\" and \"Air\" cannot be easily combined to obtain \"Air Canada\". Motivated by this example, we present a simple method for finding phrases in text, and show that learning good vector representations for millions of phrases is possible."
+            },
+            "slug": "Distributed-Representations-of-Words-and-Phrases-Mikolov-Sutskever",
+            "title": {
+                "fragments": [],
+                "text": "Distributed Representations of Words and Phrases and their Compositionality"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This paper presents a simple method for finding phrases in text, and shows that learning good vector representations for millions of phrases is possible and describes a simple alternative to the hierarchical softmax called negative sampling."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1803520"
+                        ],
+                        "name": "L. V. D. Maaten",
+                        "slug": "L.-V.-D.-Maaten",
+                        "structuredName": {
+                            "firstName": "Laurens",
+                            "lastName": "Maaten",
+                            "middleNames": [
+                                "van",
+                                "der"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. V. D. Maaten"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5855042,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1c46943103bd7b7a2c7be86859995a4144d1938b",
+            "isKey": false,
+            "numCitedBy": 22352,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new technique called \u201ct-SNE\u201d that visualizes high-dimensional data by giving each datapoint a location in a two or three-dimensional map. The technique is a variation of Stochastic Neighbor Embedding (Hinton and Roweis, 2002) that is much easier to optimize, and produces significantly better visualizations by reducing the tendency to crowd points together in the center of the map. t-SNE is better than existing techniques at creating a single map that reveals structure at many different scales. This is particularly important for high-dimensional data that lie on several different, but related, low-dimensional manifolds, such as images of objects from multiple classes seen from multiple viewpoints. For visualizing the structure of very large datasets, we show how t-SNE can use random walks on neighborhood graphs to allow the implicit structure of all of the data to influence the way in which a subset of the data is displayed. We illustrate the performance of t-SNE on a wide variety of datasets and compare it with many other non-parametric visualization techniques, including Sammon mapping, Isomap, and Locally Linear Embedding. The visualizations produced by t-SNE are significantly better than those produced by the other techniques on almost all of the datasets."
+            },
+            "slug": "Visualizing-Data-using-t-SNE-Maaten-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "Visualizing Data using t-SNE"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 84,
+                "text": "A new technique called t-SNE that visualizes high-dimensional data by giving each datapoint a location in a two or three-dimensional map, a variation of Stochastic Neighbor Embedding that is much easier to optimize, and produces significantly better visualizations by reducing the tendency to crowd points together in the center of the map."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2047446108"
+                        ],
+                        "name": "Tomas Mikolov",
+                        "slug": "Tomas-Mikolov",
+                        "structuredName": {
+                            "firstName": "Tomas",
+                            "lastName": "Mikolov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomas Mikolov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118440152"
+                        ],
+                        "name": "Kai Chen",
+                        "slug": "Kai-Chen",
+                        "structuredName": {
+                            "firstName": "Kai",
+                            "lastName": "Chen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kai Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32131713"
+                        ],
+                        "name": "G. Corrado",
+                        "slug": "G.-Corrado",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Corrado",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Corrado"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49959210"
+                        ],
+                        "name": "J. Dean",
+                        "slug": "J.-Dean",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Dean",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Dean"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5959482,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "330da625c15427c6e42ccfa3b747fb29e5835bf0",
+            "isKey": false,
+            "numCitedBy": 21882,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose two novel model architectures for computing continuous vector\nrepresentations of words from very large data sets. The quality of these\nrepresentations is measured in a word similarity task, and the results are\ncompared to the previously best performing techniques based on different types\nof neural networks. We observe large improvements in accuracy at much lower\ncomputational cost, i.e. it takes less than a day to learn high quality word\nvectors from a 1.6 billion words data set. Furthermore, we show that these\nvectors provide state-of-the-art performance on our test set for measuring\nsyntactic and semantic word similarities."
+            },
+            "slug": "Efficient-Estimation-of-Word-Representations-in-Mikolov-Chen",
+            "title": {
+                "fragments": [],
+                "text": "Efficient Estimation of Word Representations in Vector Space"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "Two novel model architectures for computing continuous vector representations of words from very large data sets are proposed and it is shown that these vectors provide state-of-the-art performance on the authors' test set for measuring syntactic and semantic word similarities."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2057272295"
+                        ],
+                        "name": "Frederic Morin",
+                        "slug": "Frederic-Morin",
+                        "structuredName": {
+                            "firstName": "Frederic",
+                            "lastName": "Morin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Frederic Morin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 84
+                            }
+                        ],
+                        "text": "Our skip-gram model used a hierarchical softmax layer for predicting adjacent terms [13, 12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1326925,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c19fbefdeead6a4154a22a9c8551a18b1530033a",
+            "isKey": false,
+            "numCitedBy": 942,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In recent years, variants of a neural network architecture for statistical language modeling have been proposed and successfully applied, e.g. in the language modeling component of speech recognizers. The main advantage of these architectures is that they learn an embedding for words (or other symbols) in a continuous space that helps to smooth the language model and provide good generalization even when the number of training examples is insufficient. However, these models are extremely slow in comparison to the more commonly used n-gram models, both for training and recognition. As an alternative to an importance sampling method proposed to speed-up training, we introduce a hierarchical decomposition of the conditional probabilities that yields a speed-up of about 200 both during training and recognition. The hierarchical decomposition is a binary hierarchical clustering constrained by the prior knowledge extracted from the WordNet semantic hierarchy."
+            },
+            "slug": "Hierarchical-Probabilistic-Neural-Network-Language-Morin-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Hierarchical Probabilistic Neural Network Language Model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "A hierarchical decomposition of the conditional probabilities that yields a speed-up of about 200 both during training and recognition, constrained by the prior knowledge extracted from the WordNet semantic hierarchy is introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2897313"
+                        ],
+                        "name": "Nitish Srivastava",
+                        "slug": "Nitish-Srivastava",
+                        "structuredName": {
+                            "firstName": "Nitish",
+                            "lastName": "Srivastava",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nitish Srivastava"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2064160"
+                        ],
+                        "name": "A. Krizhevsky",
+                        "slug": "A.-Krizhevsky",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Krizhevsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Krizhevsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145124475"
+                        ],
+                        "name": "R. Salakhutdinov",
+                        "slug": "R.-Salakhutdinov",
+                        "structuredName": {
+                            "firstName": "Ruslan",
+                            "lastName": "Salakhutdinov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Salakhutdinov"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14832074,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1366de5bb112746a555e9c0cd00de3ad8628aea8",
+            "isKey": false,
+            "numCitedBy": 6191,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "When a large feedforward neural network is trained on a small training set, it typically performs poorly on held-out test data. This \"overfitting\" is greatly reduced by randomly omitting half of the feature detectors on each training case. This prevents complex co-adaptations in which a feature detector is only helpful in the context of several other specific feature detectors. Instead, each neuron learns to detect a feature that is generally helpful for producing the correct answer given the combinatorially large variety of internal contexts in which it must operate. Random \"dropout\" gives big improvements on many benchmark tasks and sets new records for speech and object recognition."
+            },
+            "slug": "Improving-neural-networks-by-preventing-of-feature-Hinton-Srivastava",
+            "title": {
+                "fragments": [],
+                "text": "Improving neural networks by preventing co-adaptation of feature detectors"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39971338"
+                        ],
+                        "name": "Thomas L. Dean",
+                        "slug": "Thomas-L.-Dean",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Dean",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas L. Dean"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3154722"
+                        ],
+                        "name": "Mark A. Ruzon",
+                        "slug": "Mark-A.-Ruzon",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Ruzon",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark A. Ruzon"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2060304831"
+                        ],
+                        "name": "Mark E. Segal",
+                        "slug": "Mark-E.-Segal",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Segal",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark E. Segal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1789737"
+                        ],
+                        "name": "Jonathon Shlens",
+                        "slug": "Jonathon-Shlens",
+                        "structuredName": {
+                            "firstName": "Jonathon",
+                            "lastName": "Shlens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jonathon Shlens"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2259154"
+                        ],
+                        "name": "Sudheendra Vijayanarasimhan",
+                        "slug": "Sudheendra-Vijayanarasimhan",
+                        "structuredName": {
+                            "firstName": "Sudheendra",
+                            "lastName": "Vijayanarasimhan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sudheendra Vijayanarasimhan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1842163"
+                        ],
+                        "name": "J. Yagnik",
+                        "slug": "J.-Yagnik",
+                        "structuredName": {
+                            "firstName": "Jay",
+                            "lastName": "Yagnik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Yagnik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 215,
+                                "start": 212
+                            }
+                        ],
+                        "text": "Second, we believe that the 1-of-N (and nearly balanced) visual object classification problem is soon to be outmoded by practical visual object categorization systems that can handle very large numbers of labels [5] and the re-definition of valid label sets at test time."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2568065,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "774f67303ea4a3a94874f08cf9a9dacc69b40782",
+            "isKey": false,
+            "numCitedBy": 341,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many object detection systems are constrained by the time required to convolve a target image with a bank of filters that code for different aspects of an object's appearance, such as the presence of component parts. We exploit locality-sensitive hashing to replace the dot-product kernel operator in the convolution with a fixed number of hash-table probes that effectively sample all of the filter responses in time independent of the size of the filter bank. To show the effectiveness of the technique, we apply it to evaluate 100,000 deformable-part models requiring over a million (part) filters on multiple scales of a target image in less than 20 seconds using a single multi-core processor with 20GB of RAM. This represents a speed-up of approximately 20,000 times - four orders of magnitude - when compared with performing the convolutions explicitly on the same hardware. While mean average precision over the full set of 100,000 object classes is around 0.16 due in large part to the challenges in gathering training data and collecting ground truth for so many classes, we achieve a mAP of at least 0.20 on a third of the classes and 0.30 or better on about 20% of the classes."
+            },
+            "slug": "Fast,-Accurate-Detection-of-100,000-Object-Classes-Dean-Ruzon",
+            "title": {
+                "fragments": [],
+                "text": "Fast, Accurate Detection of 100,000 Object Classes on a Single Machine"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1734693"
+                        ],
+                        "name": "John C. Duchi",
+                        "slug": "John-C.-Duchi",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Duchi",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "John C. Duchi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34840427"
+                        ],
+                        "name": "Elad Hazan",
+                        "slug": "Elad-Hazan",
+                        "structuredName": {
+                            "firstName": "Elad",
+                            "lastName": "Hazan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Elad Hazan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 131,
+                                "start": 128
+                            }
+                        ],
+                        "text": "Adagrad per-parameter dynamic learning rates were utilized to keep gradients well scaled at the different layers of the network [9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 538820,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "413c1142de9d91804d6d11c67ff3fed59c9fc279",
+            "isKey": false,
+            "numCitedBy": 8025,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new family of subgradient methods that dynamically incorporate knowledge of the geometry of the data observed in earlier iterations to perform more informative gradient-based learning. Metaphorically, the adaptation allows us to find needles in haystacks in the form of very predictive but rarely seen features. Our paradigm stems from recent advances in stochastic optimization and online learning which employ proximal functions to control the gradient steps of the algorithm. We describe and analyze an apparatus for adaptively modifying the proximal function, which significantly simplifies setting a learning rate and results in regret guarantees that are provably as good as the best proximal function that can be chosen in hindsight. We give several efficient algorithms for empirical risk minimization problems with common and important regularization functions and domain constraints. We experimentally study our theoretical analysis and show that adaptive subgradient methods outperform state-of-the-art, yet non-adaptive, subgradient algorithms."
+            },
+            "slug": "Adaptive-Subgradient-Methods-for-Online-Learning-Duchi-Hazan",
+            "title": {
+                "fragments": [],
+                "text": "Adaptive Subgradient Methods for Online Learning and Stochastic Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This work describes and analyze an apparatus for adaptively modifying the proximal function, which significantly simplifies setting a learning rate and results in regret guarantees that are provably as good as the best proximal functions that can be chosen in hindsight."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33284234"
+                        ],
+                        "name": "Hemant Tyagi",
+                        "slug": "Hemant-Tyagi",
+                        "structuredName": {
+                            "firstName": "Hemant",
+                            "lastName": "Tyagi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hemant Tyagi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2619084"
+                        ],
+                        "name": "Bernd G\u00e4rtner",
+                        "slug": "Bernd-G\u00e4rtner",
+                        "structuredName": {
+                            "firstName": "Bernd",
+                            "lastName": "G\u00e4rtner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bernd G\u00e4rtner"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145343838"
+                        ],
+                        "name": "Andreas Krause",
+                        "slug": "Andreas-Krause",
+                        "structuredName": {
+                            "firstName": "Andreas",
+                            "lastName": "Krause",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andreas Krause"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Detailed descriptions of the generation of the ground truth lists, the hierarchical scoring metric, and train/validation/test dataset splits are provided in the Supplementary Materials."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 125257854,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c9fa385527ba3c7b6b497229d1a000a554cdc08c",
+            "isKey": false,
+            "numCitedBy": 572,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Advances-in-Neural-Information-Processing-Systems-Tyagi-G\u00e4rtner",
+            "title": {
+                "fragments": [],
+                "text": "Advances in Neural Information Processing Systems (NIPS)"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2014
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Hinton . Imagenet classification with deep convolutional neural networks"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "In NIPS"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 28,
+                                "start": 24
+                            }
+                        ],
+                        "text": "(b) t-SNE visualization [19] of a subset of the ILSVRC 2012 1K label embeddings learned using skip-gram."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Visualizing high-dimensional data using t-sne"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Journal of Machine Learning Research,"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Visualizing high-dimensional data using t-sne"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Journal of Machine Learning Research"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Detailed descriptions of the generation of the ground truth lists, the hierarchical scoring metric, and train/validation/test dataset splits are provided in the Supplementary Materials."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Ke Yang, and Andrew Y. Ng. Large scale distributed deep networks. In NIPS"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Ke Yang, and Andrew Y. Ng. Large scale distributed deep networks. In NIPS"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Zero-shot learning by convex combination of semantic embeddings. arXiv (to be submitted)"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Zero-shot learning by convex combination of semantic embeddings. arXiv (to be submitted)"
+            },
+            "year": 2013
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 9,
+            "methodology": 11,
+            "result": 4
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 27,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/DeViSE:-A-Deep-Visual-Semantic-Embedding-Model-Frome-Corrado/4aa4069693bee00d1b0759ca3df35e59284e9845?sort=total-citations"
+}

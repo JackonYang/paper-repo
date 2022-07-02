@@ -1,0 +1,2691 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690967"
+                        ],
+                        "name": "A. Blum",
+                        "slug": "A.-Blum",
+                        "structuredName": {
+                            "firstName": "Avrim",
+                            "lastName": "Blum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Blum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144135485"
+                        ],
+                        "name": "Tom. Mitchell",
+                        "slug": "Tom.-Mitchell",
+                        "structuredName": {
+                            "firstName": "Tom.",
+                            "lastName": "Mitchell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tom. Mitchell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Blum and Mitchell 98) give an example that illustrates just how powerful the second constraint can be."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 180,
+                                "start": 160
+                            }
+                        ],
+                        "text": "We now introduce a new algorithm for learning from unlabeled examples, which we will callDLCoTrain (DL stands for decision list, the termCotrain is taken from (Blum and Mitchell 98))."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 59
+                            }
+                        ],
+                        "text": "The first method builds on results from (Yarowsky 95) and (Blum and\nMitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 88
+                            }
+                        ],
+                        "text": "It may be more realistic to replace the second criteria with a softer one, for example (Blum and Mitchell 98) suggest the alternative\n1. f1(x1;i) = f2(x2;i) = yi for i = 1:::m 2."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 101
+                            }
+                        ],
+                        "text": "The first method uses a similar algorithm to that of (Yarowsky 95), with modifications motivated by (Blum and Mitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 16
+                            }
+                        ],
+                        "text": "Limitations of (Blum and Mitchell 98): While the assumptions of (Blum and Mitchell 98) are useful in developing both theoretical results and an intuition for the problem, the assumptions are quite limited."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 66,
+                                "start": 46
+                            }
+                        ],
+                        "text": "Recent results (e.g., (Yarowsky 95; Brill 95; Blum and Mitchell 98)) have suggested that unlabeled data can be used quite profitably in reducing the need for supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 26
+                            }
+                        ],
+                        "text": "In the cotraining case , (Blum and Mitchell 98) argue that the task should be to induce functionsf1 andf2 such that\n1. f1(x1;i) = f2(x2;i) = yi for i = 1:::m 2. f1(x1;i) = f2(x2;i) for i = m+ 1:::n So f1 andf2 must (1) correctly classify the la-\nbeled examples, and (2) must agree with each other on\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Blum and Mitchell 98) offer a promising formulation of redundancy, also prove some results about how the use of unlabeled examples can help classification, and suggest an objective function when training with unlabeled examples."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 92
+                            }
+                        ],
+                        "text": "The algorithm can be viewed as heuristically optimizing an objective function suggested by (Blum and Mitchell 98); empirically it is shown to be quite successful in optimizing this criterion."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 117,
+                                "start": 97
+                            }
+                        ],
+                        "text": "Our first algorithm is similar to Yarowsky\u2019s, but with some important modifications motivated by (Blum and Mitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 152,
+                                "start": 132
+                            }
+                        ],
+                        "text": "The second algorithm extends ideas from boosting algorithms, designed for supervised learning tasks, to the framework suggested by (Blum and Mitchell 98)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 151,
+                                "start": 131
+                            }
+                        ],
+                        "text": "In addition to a heuristic based on decision list learning, we also presented a boosting-like framework that builds on ideas from (Blum and Mitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Blum and Mitchell 98) describe learning in the following situation: Each example is represented by a feature vectorx drawn from a set of possible values (an instance space)X ."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Blum and Mitchell 98) go on to give PAC results for learning in the cotraining case."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207228399,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "278841ab0cb24c1abcb75e363aeed1fa741c8cc4",
+            "isKey": true,
+            "numCitedBy": 5471,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of using a large unlabeled sample to boost performance of a learning algorit,hrn when only a small set of labeled examples is available. In particular, we consider a problem setting motivated by the task of learning to classify web pages, in which the description of each example can be partitioned into two distinct views. For example, the description of a web page can be partitioned into the words occurring on that page, and the words occurring in hyperlinks t,hat point to that page. We assume that either view of the example would be sufficient for learning if we had enough labeled data, but our goal is to use both views together to allow inexpensive unlabeled data to augment, a much smaller set of labeled examples. Specifically, the presence of two distinct views of each example suggests strategies in which two learning algorithms are trained separately on each view, and then each algorithm\u2019s predictions on new unlabeled examples are used to enlarge the training set of the other. Our goal in this paper is to provide a PAC-style analysis for this setting, and, more broadly, a PAC-style framework for the general problem of learning from both labeled and unlabeled data. We also provide empirical results on real web-page data indicating that this use of unlabeled examples can lead to significant improvement of hypotheses in practice. *This research was supported in part by the DARPA HPKB program under contract F30602-97-1-0215 and by NSF National Young investigator grant CCR-9357793. Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. TO copy otherwise, to republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. COLT 98 Madison WI USA Copyright ACM 1998 l-58113-057--0/98/ 7...%5.00 92 Tom Mitchell School of Computer Science Carnegie Mellon University Pittsburgh, PA 15213-3891 mitchell+@cs.cmu.edu"
+            },
+            "slug": "Combining-labeled-and-unlabeled-data-with-Blum-Mitchell",
+            "title": {
+                "fragments": [],
+                "text": "Combining labeled and unlabeled data with co-training"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A PAC-style analysis is provided for a problem setting motivated by the task of learning to classify web pages, in which the description of each example can be partitioned into two distinct views, to allow inexpensive unlabeled data to augment, a much smaller set of labeled examples."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT' 98"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716301"
+                        ],
+                        "name": "R. Schapire",
+                        "slug": "R.-Schapire",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Schapire",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schapire"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 4
+                            }
+                        ],
+                        "text": "MH (Schapire and Singer 98) algorithm to the cotraining case."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 115,
+                                "start": 93
+                            }
+                        ],
+                        "text": "The second algorithm builds on a boosting algorithm called AdaBoost (Freund and Schapire 97; Schapire and Singer 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 64
+                            }
+                        ],
+                        "text": "Our derivation is slightly different from the one presented in (Schapire and Singer 98) as we restrict t to be positive."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 60
+                            }
+                        ],
+                        "text": "AdaBoost was first introduced in (Freund and Schapire 97); (Schapire and Singer 98) gave a generalization of AdaBoost which we will use in this paper."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 100
+                            }
+                        ],
+                        "text": "Several extensions of AdaBoost for multiclass problems have been suggested (Freund and Schapire 97; Schapire and Singer 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2329907,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9a9309e056272ff2076f447df8dbc536f46fc466",
+            "isKey": false,
+            "numCitedBy": 1920,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe several improvements to Freund and Schapire's AdaBoost boosting algorithm, particularly in a setting in which hypotheses may assign confidences to each of their predictions. We give a simplified analysis of AdaBoost in this setting, and we show how this analysis can be used to find improved parameter settings as well as a refined criterion for training weak hypotheses. We give a specific method for assigning confidences to the predictions of decision trees, a method closely related to one used by Quinlan. This method also suggests a technique for growing decision trees which turns out to be identical to one proposed by Kearns and Mansour. We focus next on how to apply the new boosting algorithms to multiclass classification problems, particularly to the multi-label case in which each example may belong to more than one class. We give two boosting methods for this problem, plus a third method based on output coding. One of these leads to a new method for handling the single-label case which is simpler but as effective as techniques suggested by Freund and Schapire. Finally, we give some experimental results comparing a few of the algorithms discussed in this paper."
+            },
+            "slug": "Improved-Boosting-Algorithms-Using-Confidence-rated-Schapire-Singer",
+            "title": {
+                "fragments": [],
+                "text": "Improved Boosting Algorithms Using Confidence-rated Predictions"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 92,
+                "text": "Several improvements to Freund and Schapire's AdaBoost boosting algorithm are described, particularly in a setting in which hypotheses may assign confidences to each of their predictions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT' 98"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716902"
+                        ],
+                        "name": "Marti A. Hearst",
+                        "slug": "Marti-A.-Hearst",
+                        "structuredName": {
+                            "firstName": "Marti",
+                            "lastName": "Hearst",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marti A. Hearst"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15763200,
+            "fieldsOfStudy": [
+                "Linguistics",
+                "Computer Science"
+            ],
+            "id": "dbfd191afbbc8317577cbc44afe7156df546e143",
+            "isKey": false,
+            "numCitedBy": 3647,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a method for the automatic acquisition of the hyponymy lexical relation from unrestricted text. Two goals motivate the approach: (i) avoidance of the need for pre-encoded knowledge and (ii) applicability across a wide range of text. We identify a set of lexico-syntactic patterns that are easily recognizable, that occur frequently and across text genre boundaries, and that indisputably indicate the lexical relation of interest. We describe a method for discovering these patterns and suggest that other lexical relations will also be acquirable in this way. A subset of the acquisition algorithm is implemented and the results are used to augment and critique the structure of a large hand-built thesaurus. Extensions and applications to areas such as information retrieval are suggested."
+            },
+            "slug": "Automatic-Acquisition-of-Hyponyms-from-Large-Text-Hearst",
+            "title": {
+                "fragments": [],
+                "text": "Automatic Acquisition of Hyponyms from Large Text Corpora"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A set of lexico-syntactic patterns that are easily recognizable, that occur frequently and across text genre boundaries, and that indisputably indicate the lexical relation of interest are identified."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLING"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1691993"
+                        ],
+                        "name": "E. Riloff",
+                        "slug": "E.-Riloff",
+                        "structuredName": {
+                            "firstName": "Ellen",
+                            "lastName": "Riloff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Riloff"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2068932662"
+                        ],
+                        "name": "J. Shepherd",
+                        "slug": "J.-Shepherd",
+                        "structuredName": {
+                            "firstName": "Jessica",
+                            "lastName": "Shepherd",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Shepherd"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 35,
+                                "start": 16
+                            }
+                        ],
+                        "text": "More recently, (Riloff and Jones 99) describe a method they term \u201cmutual bootstrapping\u201d for simultaneously constructing a lexicon and contextual extraction patterns."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Riloff and Jones 99) was brought to our attention as we were preparing the final version of this paper."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1437,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Linguistics"
+            ],
+            "id": "b3e9130ecab419f8267fccadf80c1ee2489be793",
+            "isKey": false,
+            "numCitedBy": 257,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Semantic knowledge can be a great asset to natural language processing systems, but it is usually hand-coded for each application. Although some semantic information is available in general-purpose knowledge bases such as WordNet and Cyc, many applications require domain-specific lexicons that represent words and categories for a particular topic. In this paper, we present a corpus-based method that can be used to build semantic lexicons for specific categories. The input to the system is a small set of seed words for a category and a representative text corpus. The output is a ranked list of words that are associated with the category. A user then reviews the top-ranked words and decides which ones should be entered in the semantic lexicon. In experiments with five categories, users typically found about 60 words per category in 10-15 minutes to build a core semantic lexicon."
+            },
+            "slug": "A-Corpus-Based-Approach-for-Building-Semantic-Riloff-Shepherd",
+            "title": {
+                "fragments": [],
+                "text": "A Corpus-Based Approach for Building Semantic Lexicons"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper presents a corpus-based method that can be used to build semantic lexicons for specific categories using a small set of seed words for a category and a representative text corpus."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716902"
+                        ],
+                        "name": "Marti A. Hearst",
+                        "slug": "Marti-A.-Hearst",
+                        "structuredName": {
+                            "firstName": "Marti",
+                            "lastName": "Hearst",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marti A. Hearst"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Hearst 92) describes a method for extracting hyponyms from a corpus (pairs of words in \u201cisa\u201d relations)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 62343871,
+            "fieldsOfStudy": [
+                "Linguistics",
+                "Computer Science"
+            ],
+            "id": "4f739d92813866af8f2a9734912c419bebd940fe",
+            "isKey": false,
+            "numCitedBy": 50,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a method for the automatic acquisition of the hyponymy lexical relation from unrestricted text. Two goals motivate the approach: (I) avoidance of the need for pre-encoded knowledge and (ii) applicability across a wide range of text. We identify a set of lexico-syntactic patterns that are easily recognizable, that occur frequently and across text genre boundaries, and that indisputably indicate the lexical relation of interest. We describe a method for discovering these patterns and suggest that other lexical relations will also be acquirable in this way. A subset of the acquisition algorithm is implemented and the results are used to augment and critique the structure of a large hand-built thesaurus. Extensions and applications To areas such as information retrieval are suggested."
+            },
+            "slug": "Automatic-Acquisition-of-Hyponyms-Hearst",
+            "title": {
+                "fragments": [],
+                "text": "Automatic Acquisition of Hyponyms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A set of lexico-syntactic patterns that are easily recognizable, that occur frequently and across text genre boundaries, and that indisputably indicate the lexical relation of interest are identified."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1703537"
+                        ],
+                        "name": "Y. Freund",
+                        "slug": "Y.-Freund",
+                        "structuredName": {
+                            "firstName": "Yoav",
+                            "lastName": "Freund",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Freund"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 19728033,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "121afb1502c90d510f64a0b3276a5454616a64e7",
+            "isKey": false,
+            "numCitedBy": 1285,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract We present an algorithm for improving the accuracy of algorithms for learning binary concepts. The improvement is achieved by combining a large number of hypotheses, each of which is generated by training the given learning algorithm on a different set of examples. Our algorithm is based on ideas presented by Schapire and represents an improvement over his results, The analysis of our algorithm provides general upper bounds on the resources required for learning in Valiant\u2032s polynomial PAC learning framework, which are the best general upper bounds known today. We show that the number of hypotheses that are combined by our algorithm is the smallest number possible. Other outcomes of our analysis are results regarding the representational power of threshold circuits, the relation between learnability and compression, and a method for parallelizing PAC learning algorithms. We provide extensions of our algorithms to cases in which the concepts are not binary and to the case where the accuracy of the learning algorithm depends on the distribution of the instances."
+            },
+            "slug": "Boosting-a-weak-learning-algorithm-by-majority-Freund",
+            "title": {
+                "fragments": [],
+                "text": "Boosting a weak learning algorithm by majority"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 79,
+                "text": "An algorithm for improving the accuracy of algorithms for learning binary concepts by combining a large number of hypotheses, each of which is generated by training the given learning algorithm on a different set of examples, is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT '90"
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1691993"
+                        ],
+                        "name": "E. Riloff",
+                        "slug": "E.-Riloff",
+                        "structuredName": {
+                            "firstName": "Ellen",
+                            "lastName": "Riloff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Riloff"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144494993"
+                        ],
+                        "name": "R. Jones",
+                        "slug": "R.-Jones",
+                        "structuredName": {
+                            "firstName": "R.",
+                            "lastName": "Jones",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Jones"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1053009,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "41e936981f5a2d55bfec0143e9a15e23ad96436b",
+            "isKey": false,
+            "numCitedBy": 890,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Information extraction systems usually require two dictionaries: a semantic lexicon and a dictionary of extraction patterns for the domain. We present a multilevel bootstrapping algorithm that generates both the semantic lexicon and extraction patterns simultaneously. As input, our technique requires only unannotated training texts and a handful of seed words for a category. We use a mutual bootstrapping technique to alternately select the best extraction pattern for the category and bootstrap its extractions into the semantic lexicon, which is the basis for selecting the next extraction pattern. To make this approach more robust, we add a second level of bootstrapping (metabootstrapping) that retains only the most reliable lexicon entries produced by mutual bootstrapping and then restarts the process. We evaluated this multilevel bootstrapping technique on a collection of corporate web pages and a corpus of terrorism news articles. The algorithm produced high-quality dictionaries for several semantic categories."
+            },
+            "slug": "Learning-Dictionaries-for-Information-Extraction-by-Riloff-Jones",
+            "title": {
+                "fragments": [],
+                "text": "Learning Dictionaries for Information Extraction by Multi-Level Bootstrapping"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "A multilevel bootstrapping algorithm is presented that generates both the semantic lexicon and extraction patterns simultaneously simultaneously and produces high-quality dictionaries for several semantic categories."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AAAI/IAAI"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1693517"
+                        ],
+                        "name": "David Yarowsky",
+                        "slug": "David-Yarowsky",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Yarowsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Yarowsky"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 12,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Yarowsky 95) describes an algorithm for word-sense disambiguation that exploits redundancy in contextual features, and gives impressive performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 17,
+                                "start": 6
+                            }
+                        ],
+                        "text": "The\n2(Yarowsky 95) describes the use of more sophisticated smoothing methods."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 41
+                            }
+                        ],
+                        "text": "The first method builds on results from (Yarowsky 95) and (Blum and\nMitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 54
+                            }
+                        ],
+                        "text": "The first method uses a similar algorithm to that of (Yarowsky 95), with modifications motivated by (Blum and Mitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 46
+                            }
+                        ],
+                        "text": "It was motivated by the observation that the (Yarowsky 95) algorithm added a very large number of rules in the first few iterations."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 88
+                            }
+                        ],
+                        "text": "The first unsupervised algorithm we describe is based on the decision list method from (Yarowsky 95)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 23
+                            }
+                        ],
+                        "text": "Recent results (e.g., (Yarowsky 95; Brill 95; Blum and Mitchell 98)) have suggested that unlabeled data can be used quite profitably in reducing the need for supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 46
+                            }
+                        ],
+                        "text": "We can now compare this algorithm to that of (Yarowsky 95)."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 157,
+                                "start": 146
+                            }
+                        ],
+                        "text": "\u2026York is always seen with the featurescontains(New) and\nLearning Algorithm Accuracy Accuracy (Clean) (Noise) Baseline 45.8% 41.8% EM 83.1% 75.8% (Yarowsky 95) 81.3% 74.1% Yarowsky-cautious 91.2% 83.2% DL-CoTrain 91.3% 83.3% CoBoost 91.1% 83.1%\nTable 2: Accuracy for different learning methods."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 137,
+                                "start": 126
+                            }
+                        ],
+                        "text": "The approach builds from an initial seed set for a category, and is quite similar to the decision list approach described in (Yarowsky 95)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1487550,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "944cba683d10d8c1a902e05cd68e32a9f47b372e",
+            "isKey": true,
+            "numCitedBy": 2536,
+            "numCiting": 48,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents an unsupervised learning algorithm for sense disambiguation that, when trained on unannotated English text, rivals the performance of supervised techniques that require time-consuming hand annotations. The algorithm is based on two powerful constraints---that words tend to have one sense per discourse and one sense per collocation---exploited in an iterative bootstrapping procedure. Tested accuracy exceeds 96%."
+            },
+            "slug": "Unsupervised-Word-Sense-Disambiguation-Rivaling-Yarowsky",
+            "title": {
+                "fragments": [],
+                "text": "Unsupervised Word Sense Disambiguation Rivaling Supervised Methods"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 90,
+                "text": "An unsupervised learning algorithm for sense disambiguation that, when trained on unannotated English text, rivals the performance of supervised techniques that require time-consuming hand annotations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739581"
+                        ],
+                        "name": "J. Lafferty",
+                        "slug": "J.-Lafferty",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Lafferty",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Lafferty"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6336008,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b03f43c5620bfc8993ea25dee20ce52a203ebcf7",
+            "isKey": false,
+            "numCitedBy": 91,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a framework for designing incremental learning algorithms derived from generalized entropy functionals. Our approach is based on the use of Bregman divergences together with the associated class of additive models constructed using the Legendre transform. A particular one-parameter family of Bregman divergences is shown to yield a family of loss functions that includes the log-likelihood criterion of logistic regression as a special case, and that closely approximates the exponential loss criterion used in the AdaBoost algorithms of Schapire et a/., as the natural parameter of the family varies. We also show how the quadratic approximation of the gain in Bregman divergence results in a weighted least-squares criterion. This leads to a family of incremental learning algorithms that builds upon and extends the recent interpretation of boosting in terms of additive models proposed by Friedman, Hastie, and Tibshirani."
+            },
+            "slug": "Additive-models,-boosting,-and-inference-for-Lafferty",
+            "title": {
+                "fragments": [],
+                "text": "Additive models, boosting, and inference for generalized divergences"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 90,
+                "text": "A framework for designing incremental learning algorithms derived from generalized entropy functionals based on the use of Bregman divergences together with the associated class of additive models constructed using the Legendre transform is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT '99"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1703537"
+                        ],
+                        "name": "Y. Freund",
+                        "slug": "Y.-Freund",
+                        "structuredName": {
+                            "firstName": "Yoav",
+                            "lastName": "Freund",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Freund"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716301"
+                        ],
+                        "name": "R. Schapire",
+                        "slug": "R.-Schapire",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Schapire",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schapire"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "AdaBoost finds a weighted combination of simple (weak) classifiers, where the weights are chosen to minimize a function that bounds the classification error on a set of training examples."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 23
+                            }
+                        ],
+                        "text": "This section describes AdaBoost, which is the basis for theCoBoostalgorithm."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 126,
+                                "start": 118
+                            }
+                        ],
+                        "text": "(8) can now be rewritten5 asnXi=1D1t (i) exp( ~yi 1th1t (x1;i)) ; which is of the same form as the functionZt used in AdaBoost."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 48,
+                                "start": 40
+                            }
+                        ],
+                        "text": "For a description of the application of AdaBoost to various NLP problems see the paper by Abney, Schapire, and Singer in this volume."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 56
+                            }
+                        ],
+                        "text": "The normalization factor plays an important role in the AdaBoost algorithm."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 12,
+                                "start": 4
+                            }
+                        ],
+                        "text": "The AdaBoost algorithm was developed for supervised learning."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "AdaBoost."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 93
+                            }
+                        ],
+                        "text": "For the moment we will assume that there are only two possible labels: eachyi is in f 1;+1g. AdaBoost is given access to aweak learningalgorithm, which\naccepts as input the training examples, along with a distribution over the instances."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 74,
+                                "start": 66
+                            }
+                        ],
+                        "text": "We then discuss how we adapt and generalize a boosting algorithm, AdaBoost, to the problem of named entity classification."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 91,
+                                "start": 69
+                            }
+                        ],
+                        "text": "The second algorithm builds on a boosting algorithm called AdaBoost (Freund and Schapire 97; Schapire and Singer 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 13
+                            }
+                        ],
+                        "text": "The input to AdaBoost is a set of training examplesh(x1; y1); : : : ; (xm; ym)i. Eachxi 2 2X is the set of features constituting theith example."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Ad-\naBoost."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 56,
+                                "start": 34
+                            }
+                        ],
+                        "text": "AdaBoost was first introduced in (Freund and Schapire 97); (Schapire and Singer 98) gave a generalization of AdaBoost which we will use in this paper."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 37,
+                                "start": 29
+                            }
+                        ],
+                        "text": "In this work we extended the AdaBoost."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 76
+                            }
+                        ],
+                        "text": "Several extensions of AdaBoost for multiclass problems have been suggested (Freund and Schapire 97; Schapire and Singer 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 105,
+                                "start": 97
+                            }
+                        ],
+                        "text": "To see this, note that the first two terms in the above equation correspond to the function that AdaBoost attempts to minimize in the standard supervised setting (Equ."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 6644398,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ccf5208521cb8c35f50ee8873df89294b8ed7292",
+            "isKey": true,
+            "numCitedBy": 13129,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the first part of the paper we consider the problem of dynamically apportioning resources among a set of options in a worst-case on-line framework. The model we study can be interpreted as a broad, abstract extension of the well-studied on-line prediction model to a general decision-theoretic setting. We show that the multiplicative weight-update Littlestone?Warmuth rule can be adapted to this model, yielding bounds that are slightly weaker in some cases, but applicable to a considerably more general class of learning problems. We show how the resulting learning algorithm can be applied to a variety of problems, including gambling, multiple-outcome prediction, repeated games, and prediction of points in Rn. In the second part of the paper we apply the multiplicative weight-update technique to derive a new boosting algorithm. This boosting algorithm does not require any prior knowledge about the performance of the weak learning algorithm. We also study generalizations of the new boosting algorithm to the problem of learning functions whose range, rather than being binary, is an arbitrary finite set or a bounded segment of the real line."
+            },
+            "slug": "A-decision-theoretic-generalization-of-on-line-and-Freund-Schapire",
+            "title": {
+                "fragments": [],
+                "text": "A decision-theoretic generalization of on-line learning and an application to boosting"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 61,
+                "text": "The model studied can be interpreted as a broad, abstract extension of the well-studied on-line prediction model to a general decision-theoretic setting, and it is shown that the multiplicative weight-update Littlestone?Warmuth rule can be adapted to this model, yielding bounds that are slightly weaker in some cases, but applicable to a considerably more general class of learning problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EuroCOLT"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2023469"
+                        ],
+                        "name": "D. Bikel",
+                        "slug": "D.-Bikel",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Bikel",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Bikel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "123937952"
+                        ],
+                        "name": "Scott Miller",
+                        "slug": "Scott-Miller",
+                        "structuredName": {
+                            "firstName": "Scott",
+                            "lastName": "Miller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Scott Miller"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35442155"
+                        ],
+                        "name": "R. Schwartz",
+                        "slug": "R.-Schwartz",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Schwartz",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schwartz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1732071"
+                        ],
+                        "name": "R. Weischedel",
+                        "slug": "R.-Weischedel",
+                        "structuredName": {
+                            "firstName": "Ralph",
+                            "lastName": "Weischedel",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Weischedel"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 115174,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e9292ba3230f01b9f6990362fdf06783b9347bf6",
+            "isKey": false,
+            "numCitedBy": 919,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a statistical, learned approach to finding names and other nonrecursive entities in text (as per the MUC-6 definition of the NE task), using a variant of the standard hidden Markov model. We present our justification for the problem and our approach, a detailed discussion of the model itself and finally the successful results of this new approach."
+            },
+            "slug": "Nymble:-a-High-Performance-Learning-Name-finder-Bikel-Miller",
+            "title": {
+                "fragments": [],
+                "text": "Nymble: a High-Performance Learning Name-finder"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "This paper presents a statistical, learned approach to finding names and other nonrecursive entities in text (as per the MUC-6 definition of the NE task), using a variant of the standard hidden Markov model."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ANLP"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143707112"
+                        ],
+                        "name": "M. Collins",
+                        "slug": "M.-Collins",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Collins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Collins"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 12615602,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3764baa7465201f054083d02b58fa75f883c4461",
+            "isKey": false,
+            "numCitedBy": 736,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes a new statistical parser which is based on probabilities of dependencies between head-words in the parse tree. Standard bigram probability estimation techniques are extended to calculate probabilities of dependencies between pairs of words. Tests using Wall Street Journal data show that the method performs at least as well as SPATTER (Magerman 95; Jelinek et al. 94), which has the best published results for a statistical parser on this task. The simplicity of the approach means the model trains on 40,000 sentences in under 15 minutes. With a beam search strategy parsing speed can be improved to over 200 sentences a minute with negligible loss in accuracy."
+            },
+            "slug": "A-New-Statistical-Parser-Based-on-Bigram-Lexical-Collins",
+            "title": {
+                "fragments": [],
+                "text": "A New Statistical Parser Based on Bigram Lexical Dependencies"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "A new statistical parser which is based on probabilities of dependencies between head-words in the parse tree, which trains on 40,000 sentences in under 15 minutes and can be improved to over 200 sentences a minute with negligible loss in accuracy."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1786259"
+                        ],
+                        "name": "S. Brin",
+                        "slug": "S.-Brin",
+                        "structuredName": {
+                            "firstName": "Sergey",
+                            "lastName": "Brin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Brin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6075461,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "92575a3c554353a27b2c0263ad7f8487d9102301",
+            "isKey": false,
+            "numCitedBy": 1235,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The World Wide Web is a vast resource for information. At the same time it is extremely distributed. A particular type of data such as restaurant lists may be scattered across thousands of independent information sources in many different formats. In this paper, we consider the problem of extracting a relation for such a data type from all of these sources automatically. We present a technique which exploits the duality between sets of patterns and relations to grow the target relation starting from a small sample. To test our technique we use it to extract a relation of (author,title) pairs from the World Wide Web."
+            },
+            "slug": "Extracting-Patterns-and-Relations-from-the-World-Brin",
+            "title": {
+                "fragments": [],
+                "text": "Extracting Patterns and Relations from the World Wide Web"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper presents a technique which exploits the duality between sets of patterns and relations to grow the target relation starting from a small sample and uses it to extract a relation of (author,title) pairs from the World Wide Web."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "WebDB"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2088917230"
+                        ],
+                        "name": "Matthew Berland",
+                        "slug": "Matthew-Berland",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Berland",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthew Berland"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1749837"
+                        ],
+                        "name": "Eugene Charniak",
+                        "slug": "Eugene-Charniak",
+                        "structuredName": {
+                            "firstName": "Eugene",
+                            "lastName": "Charniak",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Eugene Charniak"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 17767129,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9823d8c686227316e55ad42b44bcc3f17148b722",
+            "isKey": false,
+            "numCitedBy": 561,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a method for extracting parts of objects from wholes (e.g. \"speedometer\" from \"car\"). Given a very large corpus our method finds part words with 55% accuracy for the top 50 words as ranked by the system. The part list could be scanned by an end-user and added to an existing ontology (such as WordNet), or used as a part of a rough semantic lexicon."
+            },
+            "slug": "Finding-Parts-in-Very-Large-Corpora-Berland-Charniak",
+            "title": {
+                "fragments": [],
+                "text": "Finding Parts in Very Large Corpora"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 61,
+                "text": "A method for extracting parts of objects from wholes using a very large corpus with 55% accuracy for the top 50 words as ranked by the system is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145022783"
+                        ],
+                        "name": "E. Brill",
+                        "slug": "E.-Brill",
+                        "structuredName": {
+                            "firstName": "Eric",
+                            "lastName": "Brill",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Brill"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 36
+                            }
+                        ],
+                        "text": "Recent results (e.g., (Yarowsky 95; Brill 95; Blum and Mitchell 98)) have suggested that unlabeled data can be used quite profitably in reducing the need for supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 329483,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "aee623be6841f22355fb24f955368d7a98293666",
+            "isKey": false,
+            "numCitedBy": 256,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we describe an unsupervised learning algorithm for automatically training a rule-based part of speech tagger without using a manually tagged corpus. We compare this algorithm to the Baum-Welch algorithm, used for unsupervised training of stochastic taggers. Next, we show a method for combining unsupervised and supervised rule-based training algorithms to create a highly accurate tagger using only a small amount of manually tagged text1."
+            },
+            "slug": "Unsupervised-Learning-of-Disambiguation-Rules-for-Brill",
+            "title": {
+                "fragments": [],
+                "text": "Unsupervised Learning of Disambiguation Rules for Part of Speech Tagging"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 83,
+                "text": "An unsupervised learning algorithm for automatically training a rule-based part of speech tagger without using a manually tagged corpus is described and compared to the Baum-Welch algorithm, used for unsuper supervised training of stochastic taggers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "VLC@ACL"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1741124"
+                        ],
+                        "name": "L. Valiant",
+                        "slug": "L.-Valiant",
+                        "structuredName": {
+                            "firstName": "Leslie",
+                            "lastName": "Valiant",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Valiant"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 59712,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "10ddb646feddc12337b5a755c72e153e37088c02",
+            "isKey": false,
+            "numCitedBy": 4191,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Humans appear to be able to learn new concepts without needing to be programmed explicitly in any conventional sense. In this paper we regard learning as the phenomenon of knowledge acquisition in the absence of explicit programming. We give a precise methodology for studying this phenomenon from a computational viewpoint. It consists of choosing an appropriate information gathering mechanism, the learning protocol, and exploring the class of concepts that can be learnt using it in a reasonable (polynomial) number of steps. We find that inherent algorithmic complexity appears to set serious limits to the range of concepts that can be so learnt. The methodology and results suggest concrete principles for designing realistic learning systems."
+            },
+            "slug": "A-theory-of-the-learnable-Valiant",
+            "title": {
+                "fragments": [],
+                "text": "A theory of the learnable"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This paper regards learning as the phenomenon of knowledge acquisition in the absence of explicit programming, and gives a precise methodology for studying this phenomenon from a computational viewpoint."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "STOC '84"
+            },
+            "year": 1984
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35043531"
+                        ],
+                        "name": "A. Dempster",
+                        "slug": "A.-Dempster",
+                        "structuredName": {
+                            "firstName": "Arthur",
+                            "lastName": "Dempster",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Dempster"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7890796"
+                        ],
+                        "name": "N. Laird",
+                        "slug": "N.-Laird",
+                        "structuredName": {
+                            "firstName": "Nan",
+                            "lastName": "Laird",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Laird"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2235217"
+                        ],
+                        "name": "D. Rubin",
+                        "slug": "D.-Rubin",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Rubin",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Rubin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 4193919,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "d36efb9ad91e00faa334b549ce989bfae7e2907a",
+            "isKey": false,
+            "numCitedBy": 48406,
+            "numCiting": 134,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Vibratory power unit for vibrating conveyers and screens comprising an asynchronous polyphase motor, at least one pair of associated unbalanced masses disposed on the shaft of said motor, with the first mass of a pair of said unbalanced masses being rigidly fastened to said shaft and with said second mass of said pair being movably arranged relative to said first mass, means for controlling and regulating the conveying rate during conveyer operation by varying the rotational speed of said motor between predetermined minimum and maximum values, said second mass being movably outwardly by centrifugal force against the pressure of spring means, said spring means being prestressed in such a manner that said second mass is, at rotational motor speeds lower than said minimum speed, held in its initial position, and at motor speeds between said lower and upper values in positions which are radially offset with respect to the axis of said motor to an extent depending on the value of said rotational motor speed."
+            },
+            "slug": "Maximum-likelihood-from-incomplete-data-via-the-EM-Dempster-Laird",
+            "title": {
+                "fragments": [],
+                "text": "Maximum likelihood from incomplete data via the EM - algorithm plus discussions on the paper"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1977
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 12,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Yarowsky 95) describes an algorithm for word-sense disambiguation that exploits redundancy in contextual features, and gives impressive performance."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 17,
+                                "start": 6
+                            }
+                        ],
+                        "text": "The\n2(Yarowsky 95) describes the use of more sophisticated smoothing methods."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 41
+                            }
+                        ],
+                        "text": "The first method builds on results from (Yarowsky 95) and (Blum and\nMitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 54
+                            }
+                        ],
+                        "text": "The first method uses a similar algorithm to that of (Yarowsky 95), with modifications motivated by (Blum and Mitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 46
+                            }
+                        ],
+                        "text": "It was motivated by the observation that the (Yarowsky 95) algorithm added a very large number of rules in the first few iterations."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 88
+                            }
+                        ],
+                        "text": "The first unsupervised algorithm we describe is based on the decision list method from (Yarowsky 95)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 23
+                            }
+                        ],
+                        "text": "Recent results (e.g., (Yarowsky 95; Brill 95; Blum and Mitchell 98)) have suggested that unlabeled data can be used quite profitably in reducing the need for supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 46
+                            }
+                        ],
+                        "text": "We can now compare this algorithm to that of (Yarowsky 95)."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 157,
+                                "start": 146
+                            }
+                        ],
+                        "text": "\u2026York is always seen with the featurescontains(New) and\nLearning Algorithm Accuracy Accuracy (Clean) (Noise) Baseline 45.8% 41.8% EM 83.1% 75.8% (Yarowsky 95) 81.3% 74.1% Yarowsky-cautious 91.2% 83.2% DL-CoTrain 91.3% 83.3% CoBoost 91.1% 83.1%\nTable 2: Accuracy for different learning methods."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 137,
+                                "start": 126
+                            }
+                        ],
+                        "text": "The approach builds from an initial seed set for a category, and is quite similar to the decision list approach described in (Yarowsky 95)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "UnsupervisedWord SenseDisambiguation Rivaling Supervised Methods.In Proceedings of the 33rd Annual Meeting of the Association for Computational Linguistics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Blum and Mitchell 98) give an example that illustrates just how powerful the second constraint can be."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 180,
+                                "start": 160
+                            }
+                        ],
+                        "text": "We now introduce a new algorithm for learning from unlabeled examples, which we will callDLCoTrain (DL stands for decision list, the termCotrain is taken from (Blum and Mitchell 98))."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 59
+                            }
+                        ],
+                        "text": "The first method builds on results from (Yarowsky 95) and (Blum and\nMitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 88
+                            }
+                        ],
+                        "text": "It may be more realistic to replace the second criteria with a softer one, for example (Blum and Mitchell 98) suggest the alternative\n1. f1(x1;i) = f2(x2;i) = yi for i = 1:::m 2."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 101
+                            }
+                        ],
+                        "text": "The first method uses a similar algorithm to that of (Yarowsky 95), with modifications motivated by (Blum and Mitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 16
+                            }
+                        ],
+                        "text": "Limitations of (Blum and Mitchell 98): While the assumptions of (Blum and Mitchell 98) are useful in developing both theoretical results and an intuition for the problem, the assumptions are quite limited."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 66,
+                                "start": 46
+                            }
+                        ],
+                        "text": "Recent results (e.g., (Yarowsky 95; Brill 95; Blum and Mitchell 98)) have suggested that unlabeled data can be used quite profitably in reducing the need for supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 26
+                            }
+                        ],
+                        "text": "In the cotraining case , (Blum and Mitchell 98) argue that the task should be to induce functionsf1 andf2 such that\n1. f1(x1;i) = f2(x2;i) = yi for i = 1:::m 2. f1(x1;i) = f2(x2;i) for i = m+ 1:::n So f1 andf2 must (1) correctly classify the la-\nbeled examples, and (2) must agree with each other on\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Blum and Mitchell 98) offer a promising formulation of redundancy, also prove some results about how the use of unlabeled examples can help classification, and suggest an objective function when training with unlabeled examples."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 92
+                            }
+                        ],
+                        "text": "The algorithm can be viewed as heuristically optimizing an objective function suggested by (Blum and Mitchell 98); empirically it is shown to be quite successful in optimizing this criterion."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 117,
+                                "start": 97
+                            }
+                        ],
+                        "text": "Our first algorithm is similar to Yarowsky\u2019s, but with some important modifications motivated by (Blum and Mitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 152,
+                                "start": 132
+                            }
+                        ],
+                        "text": "The second algorithm extends ideas from boosting algorithms, designed for supervised learning tasks, to the framework suggested by (Blum and Mitchell 98)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 151,
+                                "start": 131
+                            }
+                        ],
+                        "text": "In addition to a heuristic based on decision list learning, we also presented a boosting-like framework that builds on ideas from (Blum and Mitchell 98)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Blum and Mitchell 98) describe learning in the following situation: Each example is represented by a feature vectorx drawn from a set of possible values (an instance space)X ."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Blum and Mitchell 98) go on to give PAC results for learning in the cotraining case."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Combining Labeled and"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714374"
+                        ],
+                        "name": "A. Joshi",
+                        "slug": "A.-Joshi",
+                        "structuredName": {
+                            "firstName": "Aravind",
+                            "lastName": "Joshi",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Joshi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145755155"
+                        ],
+                        "name": "Martha Palmer",
+                        "slug": "Martha-Palmer",
+                        "structuredName": {
+                            "firstName": "Martha",
+                            "lastName": "Palmer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Martha Palmer"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 84,
+                                "start": 74
+                            }
+                        ],
+                        "text": "971,746 sentences of New York Times text were parsed using the parser of (Collins 96).1 Word sequences that met the following criteria were then extracted as named entity examples: The word sequence was a sequence of consecutive proper nouns (words tagged as NNP or NNPS) within a noun phrase, and\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 63843361,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "a4c44f793a40915e4a7a8e066d35f95ff5eb480f",
+            "isKey": false,
+            "numCitedBy": 46,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "34th-Annual-Meeting-of-the-Association-for-Joshi-Palmer",
+            "title": {
+                "fragments": [],
+                "text": "34th Annual Meeting of the Association for Computational Linguistics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Extracting Patterns andRelations from theWorld Wide Web"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "WebDBWokshop at EDBT \u201998."
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 35,
+                                "start": 16
+                            }
+                        ],
+                        "text": "More recently, (Riloff and Jones 99) describe a method they term \u201cmutual bootstrapping\u201d for simultaneously constructing a lexicon and contextual extraction patterns."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Riloff and Jones 99) was brought to our attention as we were preparing the final version of this paper."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Learning Dictionaries for Infor"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Thoughts on hypothesis boosting. Unpublished manuscript"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Thoughts on hypothesis boosting. Unpublished manuscript"
+            },
+            "year": 1988
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 35,
+                                "start": 16
+                            }
+                        ],
+                        "text": "More recently, (Riloff and Jones 99) describe a method they term \u201cmutual bootstrapping\u201d for simultaneously constructing a lexicon and contextual extraction patterns."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Riloff and Jones 99) was brought to our attention as we were preparing the final version of this paper."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Learning Dictionaries for Info"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 36
+                            }
+                        ],
+                        "text": "Recent results (e.g., (Yarowsky 95; Brill 95; Blum and Mitchell 98)) have suggested that unlabeled data can be used quite profitably in reducing the need for supervision."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Unsupervised Learning of Disambiguation"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Thoughts on hypothesis boosting"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            }
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 11,
+            "methodology": 11,
+            "result": 3
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 26,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Unsupervised-Models-for-Named-Entity-Classification-Collins-Singer/1c0ece611643cfb8f3a23e4802c754ea583ebe37?sort=total-citations"
+}

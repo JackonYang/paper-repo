@@ -1,0 +1,3036 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1702066"
+                        ],
+                        "name": "Kenneth Heafield",
+                        "slug": "Kenneth-Heafield",
+                        "structuredName": {
+                            "firstName": "Kenneth",
+                            "lastName": "Heafield",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kenneth Heafield"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1755162"
+                        ],
+                        "name": "Philipp Koehn",
+                        "slug": "Philipp-Koehn",
+                        "structuredName": {
+                            "firstName": "Philipp",
+                            "lastName": "Koehn",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Philipp Koehn"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1784914"
+                        ],
+                        "name": "A. Lavie",
+                        "slug": "A.-Lavie",
+                        "structuredName": {
+                            "firstName": "Alon",
+                            "lastName": "Lavie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Lavie"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 39,
+                                "start": 18
+                            }
+                        ],
+                        "text": "In previous work (Heafield et al., 2012), we showed how to collapse probability and backoff into a single value without changing sentence-level probabilities."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11256747,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "37bd286d18965c943ca1937b7a13d4f8ad34d9b4",
+            "isKey": false,
+            "numCitedBy": 11,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Approximate search algorithms, such as cube pruning in syntactic machine translation, rely on the language model to estimate probabilities of sentence fragments. We contribute two changes that trade between accuracy of these estimates and memory, holding sentence-level scores constant. Common practice uses lower-order entries in an N-gram model to score the first few words of a fragment; this violates assumptions made by common smoothing strategies, including Kneser-Ney. Instead, we use a unigram model to score the first word, a bigram for the second, etc. This improves search at the expense of memory. Conversely, we show how to save memory by collapsing probability and backoff into a single value without changing sentence-level scores, at the expense of less accurate estimates for sentence fragments. These changes can be stacked, achieving better estimates with unchanged memory usage. In order to interpret changes in search accuracy, we adjust the pop limit so that accuracy is unchanged and report the change in CPU time. In a German-English Moses system with target-side syntax, improved estimates yielded a 63% reduction in CPU time; for a Hiero-style version, the reduction is 21%. The compressed language model uses 26% less RAM while equivalent search quality takes 27% more CPU. Source code is released as part of KenLM."
+            },
+            "slug": "Language-Model-Rest-Costs-and-Space-Efficient-Heafield-Koehn",
+            "title": {
+                "fragments": [],
+                "text": "Language Model Rest Costs and Space-Efficient Storage"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "Two changes are contributed that trade between accuracy of these estimates and memory, holding sentence-level scores constant, and show how to save memory by collapsing probability and backoff into a single value without changing sentence- level scores, at the expense of less accurate estimates for sentence fragments."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1702066"
+                        ],
+                        "name": "Kenneth Heafield",
+                        "slug": "Kenneth-Heafield",
+                        "structuredName": {
+                            "firstName": "Kenneth",
+                            "lastName": "Heafield",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kenneth Heafield"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8313873,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "883d1d06d857a85a0e64bb19f0b17d56f2cc9d7b",
+            "isKey": false,
+            "numCitedBy": 1173,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present KenLM, a library that implements two data structures for efficient language model queries, reducing both time and memory costs. The Probing data structure uses linear probing hash tables and is designed for speed. Compared with the widely-used SRILM, our Probing model is 2.4 times as fast while using 57% of the memory. The Trie data structure is a trie with bit-level packing, sorted records, interpolation search, and optional quantization aimed at lower memory consumption. Trie simultaneously uses less memory than the smallest lossless baseline and less CPU than the fastest baseline. Our code is open-source, thread-safe, and integrated into the Moses, cdec, and Joshua translation systems. This paper describes the several performance techniques used and presents benchmarks against alternative implementations."
+            },
+            "slug": "KenLM:-Faster-and-Smaller-Language-Model-Queries-Heafield",
+            "title": {
+                "fragments": [],
+                "text": "KenLM: Faster and Smaller Language Model Queries"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "KenLM is a library that implements two data structures for efficient language model queries, reducing both time and memory costs and is integrated into the Moses, cdec, and Joshua translation systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "WMT@EMNLP"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144251066"
+                        ],
+                        "name": "David Talbot",
+                        "slug": "David-Talbot",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Talbot",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Talbot"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2057788"
+                        ],
+                        "name": "M. Osborne",
+                        "slug": "M.-Osborne",
+                        "structuredName": {
+                            "firstName": "Miles",
+                            "lastName": "Osborne",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Osborne"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 27
+                            }
+                        ],
+                        "text": "Better compression methods (Guthrie and Hepple, 2010; Talbot and Osborne, 2007) and distributed language models (Brants et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 969780,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1375ffa728c1c7ae2b471fc2443d8342cfea84d1",
+            "isKey": false,
+            "numCitedBy": 87,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A Bloom filter (BF) is a randomised data structure for set membership queries. Its space requirements are significantly below lossless information-theoretic lower bounds but it produces false positives with some quantifiable probability. Here we explore the use of BFs for language modelling in statistical machine translation. We show how a BF containing n-grams can enable us to use much larger corpora and higher-order models complementing a conventional n-gram LM within an SMT system. We also consider (i) how to include approximate frequency information efficiently within a BF and (ii) how to reduce the error rate of these models by first checking for lower-order sub-sequences in candidate ngrams. Our solutions in both cases retain the one-sided error guarantees of the BF while takingadvantageof theZipf-likedistribution of word frequencies to reduce the space requirements."
+            },
+            "slug": "Randomised-Language-Modelling-for-Statistical-Talbot-Osborne",
+            "title": {
+                "fragments": [],
+                "text": "Randomised Language Modelling for Statistical Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 35,
+                "text": "It is shown how a BF containing n-grams can enable us to use much larger corpora and higher-order models complementing a conventional n- gram LM within an SMT system."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145599343"
+                        ],
+                        "name": "Mark Hopkins",
+                        "slug": "Mark-Hopkins",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Hopkins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Hopkins"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143823227"
+                        ],
+                        "name": "Jonathan May",
+                        "slug": "Jonathan-May",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "May",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jonathan May"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 38
+                            }
+                        ],
+                        "text": "Feature weights were retuned with PRO (Hopkins and May, 2011) for Czech-English and batch MIRA (Cherry and Foster, 2012) for French-English and Spanish-English because these worked best for the baseline."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 4534193,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a13d46125ef505d4e687e25ded74b794efc18323",
+            "isKey": false,
+            "numCitedBy": 298,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We offer a simple, effective, and scalable method for statistical machine translation parameter tuning based on the pairwise approach to ranking (Herbrich et al., 1999). Unlike the popular MERT algorithm (Och, 2003), our pairwise ranking optimization (PRO) method is not limited to a handful of parameters and can easily handle systems with thousands of features. Moreover, unlike recent approaches built upon the MIRA algorithm of Crammer and Singer (2003) (Watanabe et al., 2007; Chiang et al., 2008b), PRO is easy to implement. It uses off-the-shelf linear binary classifier software and can be built on top of an existing MERT framework in a matter of hours. We establish PRO's scalability and effectiveness by comparing it to MERT and MIRA and demonstrate parity on both phrase-based and syntax-based systems in a variety of language pairs, using large scale data scenarios."
+            },
+            "slug": "Tuning-as-Ranking-Hopkins-May",
+            "title": {
+                "fragments": [],
+                "text": "Tuning as Ranking"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Pro's scalability and effectiveness is established by comparing it to MERT and MIRA and parity is demonstrated on both phrase-based and syntax-based systems in a variety of language pairs, using large scale data scenarios."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "14902530"
+                        ],
+                        "name": "P. Nguyen",
+                        "slug": "P.-Nguyen",
+                        "structuredName": {
+                            "firstName": "Patrick",
+                            "lastName": "Nguyen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Nguyen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1800422"
+                        ],
+                        "name": "Jianfeng Gao",
+                        "slug": "Jianfeng-Gao",
+                        "structuredName": {
+                            "firstName": "Jianfeng",
+                            "lastName": "Gao",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jianfeng Gao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143817088"
+                        ],
+                        "name": "M. Mahajan",
+                        "slug": "M.-Mahajan",
+                        "structuredName": {
+                            "firstName": "Milind",
+                            "lastName": "Mahajan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Mahajan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 27
+                            }
+                        ],
+                        "text": "Jianfeng Gao clarified how MSRLM operates."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 83,
+                                "start": 78
+                            }
+                        ],
+                        "text": "Performance comparisons are omitted because we were unable to compile and run MSRLM on recent versions of Linux."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 7
+                            }
+                        ],
+                        "text": "MSRLM (Nguyen et al., 2007) aims to scalably estimate language models on a single machine."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 56830705,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "60b1cb7272fe1c7fc26948c6cfcb9d5094f83fb1",
+            "isKey": true,
+            "numCitedBy": 31,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "MSRLM is the release of our internal language modeling tool chain used in Microsoft Research. It was used in our submission for NIST MT 2006. The main difference with other freely available tools is that it was designed to scale to large amounts of data. We successfully built a language model on high end hardware on 40 billion words of web data within 8 hours. It only supports a minimal set of features. Large gigaword language models may be consumed in a first pass machine translation decoding without further processing. This document describes the implementation and usage of the tools summarily. It is our stated goal and hope that this release will be useful to the scientific community. The tool may not be used in a commercial product, or to build models used in a commercial product, or in for any commercial purpose. In addition, we require that you kindly cite this technical report when publishing results derived with this language model tool chain. This describes the LM tool which is available as: http://research.microsoft.com/research/downloads/details/78e26f9c-fc9a-44bb-80a769324c62df8c/details.aspx"
+            },
+            "slug": "MSRLM:-a-Scalable-Language-Modeling-Toolkit-Nguyen-Gao",
+            "title": {
+                "fragments": [],
+                "text": "MSRLM: a Scalable Language Modeling Toolkit"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 68,
+                "text": "MSRLM is the release of the authors' internal language modeling tool chain used in Microsoft Research, designed to scale to large amounts of data and only supports a minimal set of features."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145736272"
+                        ],
+                        "name": "David Guthrie",
+                        "slug": "David-Guthrie",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Guthrie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Guthrie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2695497"
+                        ],
+                        "name": "M. Hepple",
+                        "slug": "M.-Hepple",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Hepple",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hepple"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 27
+                            }
+                        ],
+                        "text": "Better compression methods (Guthrie and Hepple, 2010; Talbot and Osborne, 2007) and distributed language models (Brants et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1839061,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fc1ae71b79870a7a48f49a8d19a600561c5effaa",
+            "isKey": false,
+            "numCitedBy": 32,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present three novel methods of compactly storing very large n-gram language models. These methods use substantially less space than all known approaches and allow n-gram probabilities or counts to be retrieved in constant time, at speeds comparable to modern language modeling toolkits. Our basic approach generates an explicit minimal perfect hash function, that maps all n-grams in a model to distinct integers to enable storage of associated values. Extensions of this approach exploit distributional characteristics of n-gram data to reduce storage costs, including variable length coding of values and the use of tiered structures that partition the data for more efficient storage. We apply our approach to storing the full Google Web1T n-gram set and all 1-to-5 grams of the Gigaword newswire corpus. For the 1.5 billion n-grams of Gigaword, for example, we can store full count information at a cost of 1.66 bytes per n-gram (around 30% of the cost when using the current state-of-the-art approach), or quantized counts for 1.41 bytes per n-gram. For applications that are tolerant of a certain class of relatively innocuous errors (where unseen n-grams may be accepted as rare n-grams), we can reduce the latter cost to below 1 byte per n-gram."
+            },
+            "slug": "Storing-the-Web-in-Memory:-Space-Efficient-Language-Guthrie-Hepple",
+            "title": {
+                "fragments": [],
+                "text": "Storing the Web in Memory: Space Efficient Language Models with Constant Time Retrieval"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 93,
+                "text": "Three novel methods of compactly storing very large n-gram language models are presented, which use substantially less space than all known approaches and allow n- gram probabilities or counts to be retrieved in constant time, at speeds comparable to modern language modeling toolkits."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "102811815"
+                        ],
+                        "name": "Marcello Federico",
+                        "slug": "Marcello-Federico",
+                        "structuredName": {
+                            "firstName": "Marcello",
+                            "lastName": "Federico",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcello Federico"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1895952"
+                        ],
+                        "name": "N. Bertoldi",
+                        "slug": "N.-Bertoldi",
+                        "structuredName": {
+                            "firstName": "Nicola",
+                            "lastName": "Bertoldi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Bertoldi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3077970"
+                        ],
+                        "name": "M. Cettolo",
+                        "slug": "M.-Cettolo",
+                        "structuredName": {
+                            "firstName": "Mauro",
+                            "lastName": "Cettolo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Cettolo"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Compared with IRSTLM, our toolkit used 16.4% of the CPU time, 9.0% of the wall time, and 16.6% of the RAM."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 6,
+                                "start": 0
+                            }
+                        ],
+                        "text": "IRSTLM\u2019s splitting approximation took 2.5 times as much CPU and about one-third the memory (for a 3-way split) compared with normal IRSTLM."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 10
+                            }
+                        ],
+                        "text": "SRILM and IRSTLM were run until the test machine ran out of RAM (64 GB)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 8
+                            }
+                        ],
+                        "text": "IRSTLM (Federico et al., 2008) does not implement modified Kneser-Ney but rather an approximation dubbed \u201cimproved Kneser-Ney\u201d (or \u201cmodified shift-beta\u201d depending on the version)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 34745880,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "93f6dd2c761fdeac0af6d2253d57834439d7794f",
+            "isKey": true,
+            "numCitedBy": 361,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Research in speech recognition and machine translation is boosting the use of large scale n-gram language models. We present an open source toolkit that permits to efficiently handle language models with billions of n-grams on conventional machines. The IRSTLM toolkit supports distribution of ngram collection and smoothing over a computer cluster, language model compression through probability quantization, lazy-loading of huge language models from disk. IRSTLM has been so far successfully deployed with the Moses toolkit for statistical machine translation and with the FBK-irst speech recognition system. Efficiency of the tool is reported on a speech transcription task of Italian political speeches using a language model of 1.1 billion four-grams."
+            },
+            "slug": "IRSTLM:-an-open-source-toolkit-for-handling-large-Federico-Bertoldi",
+            "title": {
+                "fragments": [],
+                "text": "IRSTLM: an open source toolkit for handling large scale language models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "The IRSTLM toolkit supports distribution of ngram collection and smoothing over a computer cluster, language model compression through probability quantization, lazy-loading of huge language models from disk."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "INTERSPEECH"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145938140"
+                        ],
+                        "name": "Nadir Durrani",
+                        "slug": "Nadir-Durrani",
+                        "structuredName": {
+                            "firstName": "Nadir",
+                            "lastName": "Durrani",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nadir Durrani"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2259100"
+                        ],
+                        "name": "B. Haddow",
+                        "slug": "B.-Haddow",
+                        "structuredName": {
+                            "firstName": "Barry",
+                            "lastName": "Haddow",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Haddow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1702066"
+                        ],
+                        "name": "Kenneth Heafield",
+                        "slug": "Kenneth-Heafield",
+                        "structuredName": {
+                            "firstName": "Kenneth",
+                            "lastName": "Heafield",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kenneth Heafield"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1755162"
+                        ],
+                        "name": "Philipp Koehn",
+                        "slug": "Philipp-Koehn",
+                        "structuredName": {
+                            "firstName": "Philipp",
+                            "lastName": "Koehn",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Philipp Koehn"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 19
+                            }
+                        ],
+                        "text": ", 2007) submission (Durrani et al., 2013), which used all constrained data specified by the evaluation (7 billion tokens of English)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 196,
+                                "start": 176
+                            }
+                        ],
+                        "text": "\u2026and Spanish-English submissions to the 2013 Workshop on Machine Translation.8 Our baseline is the University of Edinburgh\u2019s phrase-based Moses (Koehn et al., 2007) submission (Durrani et al., 2013), which used all constrained data specified by the evaluation (7 billion tokens of English)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 9590996,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "22ec0fb11ab16d0ad1c41be81648a82348364162",
+            "isKey": false,
+            "numCitedBy": 45,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We validated various novel and recently proposed methods for statistical machine translation on 10 language pairs, using large data resources. We saw gains from optimizing parameters, training with sparse features, the operation sequence model, and domain adaptation techniques. We also report on utilizing a huge language model trained on 126 billion tokens. The annual machine translation evaluation campaign for European languages organized around the ACL Workshop on Statistical Machine Translation offers the opportunity to test recent advancements in machine translation in large data condition across several diverse language pairs. Building on our own developments and external contributions to the Moses open source toolkit, we carried out extensive experiments that, by early indications, led to a strong showing in the evaluation campaign. We would like to stress especially two contributions: the use of the new operation sequence model (Section 3) within Moses, and \u2014 in a separate unconstraint track submission \u2014 the use of a huge language model trained on 126 billion tokens with a new training tool (Section 4). 1 Initial System Development We start with systems (Haddow and Koehn, 2012) that we developed for the 2012 Workshop on Statistical Machine Translation (Callison-Burch et al., 2012). The notable features of these systems are: \u2022 Moses phrase-based models with mostly default settings \u2022 training on all available parallel data, including the large UN parallel data, the FrenchEnglish 109 parallel data and the LDC Gigaword data \u2022 very large tuning set consisting of the test sets from 2008-2010, with a total of 7,567 sentences per language \u2022 German\u2013English with syntactic prereordering (Collins et al., 2005), compound splitting (Koehn and Knight, 2003) and use of factored representation for a POS target sequence model (Koehn and Hoang, 2007) \u2022 English\u2013German with morphological target sequence model Note that while our final 2012 systems included subsampling of training data with modified Moore-Lewis filtering (Axelrod et al., 2011), we did not use such filtering at the starting point of our development. We will report on such filtering in Section 2. Moreover, our system development initially used the WMT 2012 data condition, since it took place throughout 2012, and we switched to WMT 2013 training data at a later stage. In this section, we report cased BLEU scores (Papineni et al., 2001) on newstest2011. 1.1 Factored Backoff (German\u2013English) We have consistently used factored models in past WMT systems for the German\u2013English language pairs to include POS and morphological target sequence models. But we did not use the factored decomposition of translation options into multiple mapping steps, since this usually lead to much slower systems with usually worse results. A good place, however, for factored decomposition is the handling of rare and unknown source words which have more frequent morphological variants (Koehn and Haddow, 2012a). Here, we used only factored backoff for unknown words, giving gains in BLEU of +.12 for German\u2013English. 1.2 Tuning with k-best MIRA In preparation for training with sparse features, we moved away from MERT which is known to fall"
+            },
+            "slug": "Edinburgh\u2019s-Machine-Translation-Systems-for-Pairs-Durrani-Haddow",
+            "title": {
+                "fragments": [],
+                "text": "Edinburgh\u2019s Machine Translation Systems for European Language Pairs"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 99,
+                "text": "The authors validated various novel and recently proposed methods for statistical machine translation on 10 language pairs, using large data resources, and saw gains from optimizing parameters, training with sparse features, the operation sequence model, and domain adaptation techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "WMT@ACL"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144507724"
+                        ],
+                        "name": "Colin Cherry",
+                        "slug": "Colin-Cherry",
+                        "structuredName": {
+                            "firstName": "Colin",
+                            "lastName": "Cherry",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Colin Cherry"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2458308"
+                        ],
+                        "name": "George F. Foster",
+                        "slug": "George-F.-Foster",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Foster",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "George F. Foster"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 119,
+                                "start": 96
+                            }
+                        ],
+                        "text": "Feature weights were retuned with PRO (Hopkins and May, 2011) for Czech-English and batch MIRA (Cherry and Foster, 2012) for French-English and Spanish-English because these worked best for the baseline."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6620232,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e33fee91f408d3f7a3e18bb7e6f974c66bd87057",
+            "isKey": false,
+            "numCitedBy": 408,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "There has been a proliferation of recent work on SMT tuning algorithms capable of handling larger feature sets than the traditional MERT approach. We analyze a number of these algorithms in terms of their sentence-level loss functions, which motivates several new approaches, including a Structured SVM. We perform empirical comparisons of eight different tuning strategies, including MERT, in a variety of settings. Among other results, we find that a simple and efficient batch version of MIRA performs at least as well as training online, and consistently outperforms other options."
+            },
+            "slug": "Batch-Tuning-Strategies-for-Statistical-Machine-Cherry-Foster",
+            "title": {
+                "fragments": [],
+                "text": "Batch Tuning Strategies for Statistical Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "It is found that a simple and efficient batch version of MIRA performs at least as well as training online, and consistently outperforms other options."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NAACL"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1982909"
+                        ],
+                        "name": "E. Whittaker",
+                        "slug": "E.-Whittaker",
+                        "structuredName": {
+                            "firstName": "E.",
+                            "lastName": "Whittaker",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Whittaker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681921"
+                        ],
+                        "name": "B. Raj",
+                        "slug": "B.-Raj",
+                        "structuredName": {
+                            "firstName": "Bhiksha",
+                            "lastName": "Raj",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Raj"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5726195,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2045f123894e01da8a82e0464fc23a6904bd4027",
+            "isKey": false,
+            "numCitedBy": 52,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes two techniques for reducing the size of statistical back-off gram language models in computer memory. Language model compression is achieved through a combination of quantizing language model probabilities and back-off weights and the pruning of parameters that are determined to be unnecessary after quantization. The recognition performance of the original and compressed language models is evaluated across three different language models and two different recognition tasks. The results show that the language models can be compressed by up to 60% of their original size with no significant loss in recognition performance. Moreover, the techniques that are described provide a principled method with which to compress language models further while minimising degradation in recognition performance."
+            },
+            "slug": "Quantization-based-language-model-compression-Whittaker-Raj",
+            "title": {
+                "fragments": [],
+                "text": "Quantization-based language model compression"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 79,
+                "text": "Two techniques for reducing the size of statistical back-off gram language models in computer memory through a combination of quantizing language model probabilities and back- off weights and the pruning of parameters that are determined to be unnecessary after quantization are described."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "INTERSPEECH"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1795942"
+                        ],
+                        "name": "Reinhard Kneser",
+                        "slug": "Reinhard-Kneser",
+                        "structuredName": {
+                            "firstName": "Reinhard",
+                            "lastName": "Kneser",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Reinhard Kneser"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145322333"
+                        ],
+                        "name": "H. Ney",
+                        "slug": "H.-Ney",
+                        "structuredName": {
+                            "firstName": "Hermann",
+                            "lastName": "Ney",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Ney"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 111,
+                                "start": 65
+                            }
+                        ],
+                        "text": "Relatively low perplexity has made modified Kneser-Ney smoothing (Kneser and Ney, 1995; Chen and Goodman, 1998) a popular choice for language modeling."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9685476,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9548ac30c113562a51e603dbbc8e9fa651cfd3ab",
+            "isKey": false,
+            "numCitedBy": 1792,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In stochastic language modeling, backing-off is a widely used method to cope with the sparse data problem. In case of unseen events this method backs off to a less specific distribution. In this paper we propose to use distributions which are especially optimized for the task of backing-off. Two different theoretical derivations lead to distributions which are quite different from the probability distributions that are usually used for backing-off. Experiments show an improvement of about 10% in terms of perplexity and 5% in terms of word error rate."
+            },
+            "slug": "Improved-backing-off-for-M-gram-language-modeling-Kneser-Ney",
+            "title": {
+                "fragments": [],
+                "text": "Improved backing-off for M-gram language modeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper proposes to use distributions which are especially optimized for the task of back-off, which are quite different from the probability distributions that are usually used for backing-off."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "1995 International Conference on Acoustics, Speech, and Signal Processing"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1762744"
+                        ],
+                        "name": "A. Stolcke",
+                        "slug": "A.-Stolcke",
+                        "structuredName": {
+                            "firstName": "Andreas",
+                            "lastName": "Stolcke",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Stolcke"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 6
+                            }
+                        ],
+                        "text": "SRILM (Stolcke, 2002) estimates modified Kneser-Ney models by storing n-grams in RAM."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 88,
+                                "start": 73
+                            }
+                        ],
+                        "text": "However, existing estimation methods require either large amounts of RAM (Stolcke, 2002) or machines (Brants et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1988103,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "399da68d3b97218b6c80262df7963baa89dcc71b",
+            "isKey": false,
+            "numCitedBy": 4997,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "SRILM is a collection of C++ libraries, executable programs, and helper scripts designed to allow both production of and experimentation with statistical language models for speech recognition and other applications. SRILM is freely available for noncommercial purposes. The toolkit supports creation and evaluation of a variety of language model types based on N-gram statistics, as well as several related tasks, such as statistical tagging and manipulation of N-best lists and word lattices. This paper summarizes the functionality of the toolkit and discusses its design and implementation, highlighting ease of rapid prototyping, reusability, and combinability of tools."
+            },
+            "slug": "SRILM-an-extensible-language-modeling-toolkit-Stolcke",
+            "title": {
+                "fragments": [],
+                "text": "SRILM - an extensible language modeling toolkit"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "The functionality of the SRILM toolkit is summarized and its design and implementation is discussed, highlighting ease of rapid prototyping, reusability, and combinability of tools."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "INTERSPEECH"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1784037"
+                        ],
+                        "name": "T. Brants",
+                        "slug": "T.-Brants",
+                        "structuredName": {
+                            "firstName": "T.",
+                            "lastName": "Brants",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Brants"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2054252"
+                        ],
+                        "name": "Ashok Popat",
+                        "slug": "Ashok-Popat",
+                        "structuredName": {
+                            "firstName": "Ashok",
+                            "lastName": "Popat",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ashok Popat"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2092025743"
+                        ],
+                        "name": "P. Xu",
+                        "slug": "P.-Xu",
+                        "structuredName": {
+                            "firstName": "Peng",
+                            "lastName": "Xu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Xu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2002316"
+                        ],
+                        "name": "F. Och",
+                        "slug": "F.-Och",
+                        "structuredName": {
+                            "firstName": "Franz",
+                            "lastName": "Och",
+                            "middleNames": [
+                                "Josef"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Och"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49959210"
+                        ],
+                        "name": "J. Dean",
+                        "slug": "J.-Dean",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Dean",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Dean"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 58,
+                                "start": 37
+                            }
+                        ],
+                        "text": ", 2012) or simpler smoothing methods (Brants et al., 2007)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 135,
+                                "start": 116
+                            }
+                        ],
+                        "text": "As a result, practitioners have chosen to use less data (Callison-Burch et al., 2012) or simpler smoothing methods (Brants et al., 2007)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 132,
+                                "start": 113
+                            }
+                        ],
+                        "text": "Better compression methods (Guthrie and Hepple, 2010; Talbot and Osborne, 2007) and distributed language models (Brants et al., 2007) could reduce hardware requirements."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Brants et al. (2007) contributed Stupid Backoff, a simpler form of smoothing calculated at runtime from counts."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Brants et al. (2007) showed how to estimate Kneser-Ney models with a series of five MapReduces (Dean and Ghemawat, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 102
+                            }
+                        ],
+                        "text": "However, existing estimation methods require either large amounts of RAM (Stolcke, 2002) or machines (Brants et al., 2007)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 633992,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ba786c46373892554b98df42df7af6f5da343c9d",
+            "isKey": true,
+            "numCitedBy": 533,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Systems, methods, and computer program products for machine translation are provided. In some implementations a system is provided. The system includes a language model including a collection of n-grams from a corpus, each n-gram having a corresponding relative frequency in the corpus and an order n corresponding to a number of tokens in the n-gram, each n-gram corresponding to a backoff n-gram having an order of n-1 and a collection of backoff scores, each backoff score associated with an n-gram, the backoff score determined as a function of a backoff factor and a relative frequency of a corresponding backoff n-gram in the corpus."
+            },
+            "slug": "Large-Language-Models-in-Machine-Translation-Brants-Popat",
+            "title": {
+                "fragments": [],
+                "text": "Large Language Models in Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 64,
+                "text": "Systems, methods, and computer program products for machine translation are provided for backoff score determination as a function of a backoff factor and a relative frequency of a corresponding backoff n-gram in the corpus."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763608"
+                        ],
+                        "name": "Chris Callison-Burch",
+                        "slug": "Chris-Callison-Burch",
+                        "structuredName": {
+                            "firstName": "Chris",
+                            "lastName": "Callison-Burch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chris Callison-Burch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1755162"
+                        ],
+                        "name": "Philipp Koehn",
+                        "slug": "Philipp-Koehn",
+                        "structuredName": {
+                            "firstName": "Philipp",
+                            "lastName": "Koehn",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Philipp Koehn"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1696402"
+                        ],
+                        "name": "Christof Monz",
+                        "slug": "Christof-Monz",
+                        "structuredName": {
+                            "firstName": "Christof",
+                            "lastName": "Monz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christof Monz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38842528"
+                        ],
+                        "name": "Matt Post",
+                        "slug": "Matt-Post",
+                        "structuredName": {
+                            "firstName": "Matt",
+                            "lastName": "Post",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matt Post"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1737285"
+                        ],
+                        "name": "Radu Soricut",
+                        "slug": "Radu-Soricut",
+                        "structuredName": {
+                            "firstName": "Radu",
+                            "lastName": "Soricut",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Radu Soricut"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1702974"
+                        ],
+                        "name": "Lucia Specia",
+                        "slug": "Lucia-Specia",
+                        "structuredName": {
+                            "firstName": "Lucia",
+                            "lastName": "Specia",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lucia Specia"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 56
+                            }
+                        ],
+                        "text": "As a result, practitioners have chosen to use less data (Callison-Burch et al., 2012) or simpler smoothing methods (Brants et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 84,
+                                "start": 57
+                            }
+                        ],
+                        "text": "As a result, practitioners have chosen to use less data (Callison-Burch et al., 2012) or simpler smoothing methods (Brants et al., 2007)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6470935,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Psychology"
+            ],
+            "id": "cd17f62533ed110e6b31979f18680a4c6feb15a5",
+            "isKey": false,
+            "numCitedBy": 349,
+            "numCiting": 84,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents the results of the WMT12 shared tasks, which included a translation task, a task for machine translation evaluation metrics, and a task for run-time estimation of machine translation quality. We conducted a large-scale manual evaluation of 103 machine translation systems submitted by 34 teams. We used the ranking of these systems to measure how strongly automatic metrics correlate with human judgments of translation quality for 12 evaluation metrics. We introduced a new quality estimation task this year, and evaluated submissions from 11 teams."
+            },
+            "slug": "Findings-of-the-2012-Workshop-on-Statistical-Callison-Burch-Koehn",
+            "title": {
+                "fragments": [],
+                "text": "Findings of the 2012 Workshop on Statistical Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "A large-scale manual evaluation of 103 machine translation systems submitted by 34 teams was conducted, which used the ranking of these systems to measure how strongly automatic metrics correlate with human judgments of translation quality for 12 evaluation metrics."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "WMT@NAACL-HLT"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1802969"
+                        ],
+                        "name": "Ciprian Chelba",
+                        "slug": "Ciprian-Chelba",
+                        "structuredName": {
+                            "firstName": "Ciprian",
+                            "lastName": "Chelba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ciprian Chelba"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1698491"
+                        ],
+                        "name": "J. Schalkwyk",
+                        "slug": "J.-Schalkwyk",
+                        "structuredName": {
+                            "firstName": "Johan",
+                            "lastName": "Schalkwyk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schalkwyk"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 101,
+                                "start": 75
+                            }
+                        ],
+                        "text": "Recently, Google estimated a pruned Kneser-Ney model on 230 billion words (Chelba and Schalkwyk, 2013), though no cost was provided."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 59871995,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "310d10bb2e769c045fab251c8fd664d1bb593be4",
+            "isKey": false,
+            "numCitedBy": 15,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Mobile is poised to become the predominant platform over which people access the World Wide Web. Recent developments in speech recognition and understanding, backed by high bandwidth coverage and high quality speech signal acquisition on smartphones and tablets are presenting the users with the choice of speaking their web search queries instead of typing them. A critical component of a speech recognition system targeting web search is the language model. The chapter presents an empirical exploration of the google.com query stream with the end goal of high quality statistical language modeling for mobile voice search. Our experiments show that after text normalization the query stream is not as \u201cwild\u201d as it seems at first sight. One can achieve out-of-vocabulary rates below 1% using a 1 million word vocabulary, and excellent n-gram hit ratios of 77/88% even at high orders such as \\( n=5/4\\), respectively. A more careful analysis shows that a significantly larger vocabulary (approx. 10 million words) may be required to guarantee at most 1% out-of-vocabulary rate for a large percentage (95%) of users. Using large scale, distributed language models can improve performance significantly\u2014up to 10% relative reductions in word-error-rate over conventional models used in speech recognition. We also find that the query stream is non-stationary, which means that adding more past training data beyond a certain point provides diminishing returns, and may even degrade performance slightly. Perhaps less surprisingly, we have shown that locale matters significantly for English query data across USA, Great Britain and Australia. In an attempt to leverage the speech data in voice search logs, we successfully build large-scale discriminative N-gram language models and derive small but significant gains in recognition performance."
+            },
+            "slug": "Empirical-Exploration-of-Language-Modeling-for-the-Chelba-Schalkwyk",
+            "title": {
+                "fragments": [],
+                "text": "Empirical Exploration of Language Modeling for the google.com Query Stream as Applied to Mobile Voice Search"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "In an attempt to leverage the speech data in voice search logs, this chapter successfully build large-scale discriminative N-gram language models and derive small but significant gains in recognition performance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1755162"
+                        ],
+                        "name": "Philipp Koehn",
+                        "slug": "Philipp-Koehn",
+                        "structuredName": {
+                            "firstName": "Philipp",
+                            "lastName": "Koehn",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Philipp Koehn"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152378023"
+                        ],
+                        "name": "Hieu T. Hoang",
+                        "slug": "Hieu-T.-Hoang",
+                        "structuredName": {
+                            "firstName": "Hieu",
+                            "lastName": "Hoang",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hieu T. Hoang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2539211"
+                        ],
+                        "name": "Alexandra Birch",
+                        "slug": "Alexandra-Birch",
+                        "structuredName": {
+                            "firstName": "Alexandra",
+                            "lastName": "Birch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexandra Birch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763608"
+                        ],
+                        "name": "Chris Callison-Burch",
+                        "slug": "Chris-Callison-Burch",
+                        "structuredName": {
+                            "firstName": "Chris",
+                            "lastName": "Callison-Burch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chris Callison-Burch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "102811815"
+                        ],
+                        "name": "Marcello Federico",
+                        "slug": "Marcello-Federico",
+                        "structuredName": {
+                            "firstName": "Marcello",
+                            "lastName": "Federico",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcello Federico"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1895952"
+                        ],
+                        "name": "N. Bertoldi",
+                        "slug": "N.-Bertoldi",
+                        "structuredName": {
+                            "firstName": "Nicola",
+                            "lastName": "Bertoldi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Bertoldi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46898156"
+                        ],
+                        "name": "Brooke Cowan",
+                        "slug": "Brooke-Cowan",
+                        "structuredName": {
+                            "firstName": "Brooke",
+                            "lastName": "Cowan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Brooke Cowan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2529583"
+                        ],
+                        "name": "Wade Shen",
+                        "slug": "Wade-Shen",
+                        "structuredName": {
+                            "firstName": "Wade",
+                            "lastName": "Shen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wade Shen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2055137469"
+                        ],
+                        "name": "C. Moran",
+                        "slug": "C.-Moran",
+                        "structuredName": {
+                            "firstName": "Christine",
+                            "lastName": "Moran",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Moran"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1983801"
+                        ],
+                        "name": "R. Zens",
+                        "slug": "R.-Zens",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Zens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Zens"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1745899"
+                        ],
+                        "name": "Chris Dyer",
+                        "slug": "Chris-Dyer",
+                        "structuredName": {
+                            "firstName": "Chris",
+                            "lastName": "Dyer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chris Dyer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143832874"
+                        ],
+                        "name": "Ondrej Bojar",
+                        "slug": "Ondrej-Bojar",
+                        "structuredName": {
+                            "firstName": "Ondrej",
+                            "lastName": "Bojar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ondrej Bojar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2057195055"
+                        ],
+                        "name": "Alexandra Constantin",
+                        "slug": "Alexandra-Constantin",
+                        "structuredName": {
+                            "firstName": "Alexandra",
+                            "lastName": "Constantin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexandra Constantin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2082901914"
+                        ],
+                        "name": "Evan Herbst",
+                        "slug": "Evan-Herbst",
+                        "structuredName": {
+                            "firstName": "Evan",
+                            "lastName": "Herbst",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Evan Herbst"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 794019,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4ee2eab4c298c1824a9fb8799ad8eed21be38d21",
+            "isKey": false,
+            "numCitedBy": 5929,
+            "numCiting": 74,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe an open-source toolkit for statistical machine translation whose novel contributions are (a) support for linguistically motivated factors, (b) confusion network decoding, and (c) efficient data formats for translation models and language models. In addition to the SMT decoder, the toolkit also includes a wide variety of tools for training, tuning and applying the system to many translation tasks."
+            },
+            "slug": "Moses:-Open-Source-Toolkit-for-Statistical-Machine-Koehn-Hoang",
+            "title": {
+                "fragments": [],
+                "text": "Moses: Open Source Toolkit for Statistical Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 94,
+                "text": "An open-source toolkit for statistical machine translation whose novel contributions are support for linguistically motivated factors, confusion network decoding, and efficient data formats for translation models and language models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3323275"
+                        ],
+                        "name": "Kishore Papineni",
+                        "slug": "Kishore-Papineni",
+                        "structuredName": {
+                            "firstName": "Kishore",
+                            "lastName": "Papineni",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kishore Papineni"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1781292"
+                        ],
+                        "name": "S. Roukos",
+                        "slug": "S.-Roukos",
+                        "structuredName": {
+                            "firstName": "Salim",
+                            "lastName": "Roukos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Roukos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144582029"
+                        ],
+                        "name": "T. Ward",
+                        "slug": "T.-Ward",
+                        "structuredName": {
+                            "firstName": "Todd",
+                            "lastName": "Ward",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Ward"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2587983"
+                        ],
+                        "name": "Wei-Jing Zhu",
+                        "slug": "Wei-Jing-Zhu",
+                        "structuredName": {
+                            "firstName": "Wei-Jing",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wei-Jing Zhu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 48
+                            }
+                        ],
+                        "text": "The improvement is remarkably consistent at 0.8 BLEU point in each language pair."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 12,
+                                "start": 8
+                            }
+                        ],
+                        "text": "Uncased BLEU scores on the 2013 test set are shown in Table 2."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 25
+                            }
+                        ],
+                        "text": "It placed first by BLEU (Papineni et al., 2002) among constrained submissions in each language pair we consider."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11080756,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d7da009f457917aa381619facfa5ffae9329a6e9",
+            "isKey": true,
+            "numCitedBy": 16625,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Human evaluations of machine translation are extensive but expensive. Human evaluations can take months to finish and involve human labor that can not be reused. We propose a method of automatic machine translation evaluation that is quick, inexpensive, and language-independent, that correlates highly with human evaluation, and that has little marginal cost per run. We present this method as an automated understudy to skilled human judges which substitutes for them when there is need for quick or frequent evaluations."
+            },
+            "slug": "Bleu:-a-Method-for-Automatic-Evaluation-of-Machine-Papineni-Roukos",
+            "title": {
+                "fragments": [],
+                "text": "Bleu: a Method for Automatic Evaluation of Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This work proposes a method of automatic machine translation evaluation that is quick, inexpensive, and language-independent, that correlates highly with human evaluation, and that has little marginal cost per run."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1755162"
+                        ],
+                        "name": "Philipp Koehn",
+                        "slug": "Philipp-Koehn",
+                        "structuredName": {
+                            "firstName": "Philipp",
+                            "lastName": "Koehn",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Philipp Koehn"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 65
+                            }
+                        ],
+                        "text": ", 2011), removing markup, selecting English, splitting sentences (Koehn, 2005), deduplicating, tokenizing (Koehn et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 38407095,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "694b3c58712deefb59502847ba1b52b192c413e5",
+            "isKey": false,
+            "numCitedBy": 3397,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We collected a corpus of parallel text in 11 languages from the proceedings of the European Parliament, which are published on the web. This corpus has found widespread use in the NLP community. Here, we focus on its acquisition and its application as training data for statistical machine translation (SMT). We trained SMT systems for 110 language pairs, which reveal interesting clues into the challenges ahead."
+            },
+            "slug": "Europarl:-A-Parallel-Corpus-for-Statistical-Machine-Koehn",
+            "title": {
+                "fragments": [],
+                "text": "Europarl: A Parallel Corpus for Statistical Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 63,
+                "text": "A corpus of parallel text in 11 languages from the proceedings of the European Parliament is collected and its acquisition and application as training data for statistical machine translation (SMT) is focused on."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MTSUMMIT"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35229948"
+                        ],
+                        "name": "S. Katz",
+                        "slug": "S.-Katz",
+                        "structuredName": {
+                            "firstName": "Slava",
+                            "lastName": "Katz",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Katz"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 40
+                            }
+                        ],
+                        "text": "Backoff-smoothed n-gram language models (Katz, 1987) assign probability to a word wn in context wn\u22121 1 according to the recursive equation"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6555412,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b0130277677e5b915d5cd86b3afafd77fd08eb2e",
+            "isKey": false,
+            "numCitedBy": 1908,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The description of a novel type of m-gram language model is given. The model offers, via a nonlinear recursive procedure, a computation and space efficient solution to the problem of estimating probabilities from sparse data. This solution compares favorably to other proposed methods. While the method has been developed for and successfully implemented in the IBM Real Time Speech Recognizers, its generality makes it applicable in other areas where the problem of estimating probabilities from sparse data arises."
+            },
+            "slug": "Estimation-of-probabilities-from-sparse-data-for-of-Katz",
+            "title": {
+                "fragments": [],
+                "text": "Estimation of probabilities from sparse data for the language model component of a speech recognizer"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "The model offers, via a nonlinear recursive procedure, a computation and space efficient solution to the problem of estimating probabilities from sparse data, and compares favorably to other proposed methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Acoust. Speech Signal Process."
+            },
+            "year": 1987
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3114123"
+                        ],
+                        "name": "G. Cormack",
+                        "slug": "G.-Cormack",
+                        "structuredName": {
+                            "firstName": "Gordon",
+                            "lastName": "Cormack",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Cormack"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689089"
+                        ],
+                        "name": "M. Smucker",
+                        "slug": "M.-Smucker",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Smucker",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Smucker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751287"
+                        ],
+                        "name": "C. Clarke",
+                        "slug": "C.-Clarke",
+                        "structuredName": {
+                            "firstName": "Charles",
+                            "lastName": "Clarke",
+                            "middleNames": [
+                                "L.",
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Clarke"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11861526,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "38612e346fdf3158c32c16058f7e8820a8f0325e",
+            "isKey": false,
+            "numCitedBy": 333,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The TREC 2009 web ad hoc and relevance feedback tasks used a new document collection, the ClueWeb09 dataset, which was crawled from the general web in early 2009. This dataset contains 1 billion web pages, a substantial fraction of which are spam\u2014pages designed to deceive search engines so as to deliver an unwanted payload. We examine the effect of spam on the results of the TREC 2009 web ad hoc and relevance feedback tasks, which used the ClueWeb09 dataset. We show that a simple content-based classifier with minimal training is efficient enough to rank the \u201cspamminess\u201d of every page in the dataset using a standard personal computer in 48 hours, and effective enough to yield significant and substantive improvements in the fixed-cutoff precision (estP10) as well as rank measures (estR-Precision, StatMAP, MAP) of nearly all submitted runs. Moreover, using a set of \u201choneypot\u201d queries the labeling of training data may be reduced to an entirely automatic process. The results of classical information retrieval methods are particularly enhanced by filtering\u2014from among the worst to among the best."
+            },
+            "slug": "Efficient-and-effective-spam-filtering-and-for-web-Cormack-Smucker",
+            "title": {
+                "fragments": [],
+                "text": "Efficient and effective spam filtering and re-ranking for large web datasets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown that a simple content-based classifier with minimal training is efficient enough to rank the \u201cspamminess\u201d of every page in the ClueWeb09 dataset using a standard personal computer in 48 hours, and effective enough to yield significant and substantive improvements in the fixed-cutoff precision as well as rank measures of nearly all submitted runs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Information Retrieval"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1725956"
+                        ],
+                        "name": "J. Vitter",
+                        "slug": "J.-Vitter",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Vitter",
+                            "middleNames": [
+                                "Scott"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Vitter"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Abello and Vitter (1999) modeled these costs and derived an optimal strategy: use fixed-size read buffers (one for each block being merged) and set arity to the number of buffers that fit in RAM."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5908059,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2348f24ba2e11ba904b45011c97422e9c61b4bff",
+            "isKey": false,
+            "numCitedBy": 151,
+            "numCiting": 214,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Data sets in large applications are often too massive to fit completely inside the computer's internal memory. The resulting input/ output communication (or I/O) between fast internal memory and slower external memory (such as disks) can be a major performance bottleneck. In this tutorial, we survey the state of the art in the design and analysis of external memory algorithms (also known as EM algorithms or out-of-core algorithms or I/O algorithms). External memory algorithms are often designed using the parallel disk model (PDM). The three machine-independent measures of an algorithm's performance in PDM are the number of I/O operations performed, the CPU time, and the amount of disk space used. PDM allows for multiple disks (or disk arrays) and parallel CPUs, and it can be generalized to handle cache hierarchies, hierarchical memory, and tertiary storage. \n \nWe discuss a variety of problems and show how to solve them efficiently in external memory. Programming tools and environments are available for simplifying the programming task. Experiments on some newly developed algorithms for spatial databases incorporating these paradigms, implemented using TPIE (Transparent Parallel I/O programming Environment), show significant speedups over popular methods."
+            },
+            "slug": "External-memory-algorithms-Vitter",
+            "title": {
+                "fragments": [],
+                "text": "External memory algorithms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This tutorial surveys the state of the art in the design and analysis of external memory algorithms (also known as EM algorithms or out-of-core algorithms or I/O algorithms), and discusses a variety of problems and shows how to solve them efficiently in external memory."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PODS '98"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152460580"
+                        ],
+                        "name": "R. Dementiev",
+                        "slug": "R.-Dementiev",
+                        "structuredName": {
+                            "firstName": "Roman",
+                            "lastName": "Dementiev",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Dementiev"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701377"
+                        ],
+                        "name": "Lutz Kettner",
+                        "slug": "Lutz-Kettner",
+                        "structuredName": {
+                            "firstName": "Lutz",
+                            "lastName": "Kettner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lutz Kettner"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144376533"
+                        ],
+                        "name": "P. Sanders",
+                        "slug": "P.-Sanders",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Sanders",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Sanders"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To further reduce the costs of merge sort, we implemented pipelining (Dementiev et al., 2008)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2102151,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dcc97f8b7930e9c53d34bab083e7a8c4f0944b75",
+            "isKey": false,
+            "numCitedBy": 168,
+            "numCiting": 120,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present the software library STXXL that is an implementation of the C++ standard template library (STL) for processing huge data sets that can fit only on hard disks. It supports parallel disks, overlapping between disk I/O and computation and it is the first I/O\u2010efficient algorithm library that supports the pipelining technique that can save more than half of the I/Os. STXXL has been applied both in academic and industrial environments for a range of problems including text processing, graph algorithms, computational geometry, Gaussian elimination, visualization, and analysis of microscopic images, differential cryptographic analysis, etc. The performance of STXXL and its applications are evaluated on synthetic and real\u2010world inputs. We present the design of the library, how its performance features are supported, and demonstrate how the library integrates with STL. Copyright \u00a9 2007 John Wiley & Sons, Ltd."
+            },
+            "slug": "STXXL:-standard-template-library-for-XXL-data-sets-Dementiev-Kettner",
+            "title": {
+                "fragments": [],
+                "text": "STXXL: standard template library for XXL data sets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "The software library STXXL is presented, an implementation of the C++ standard template library (STL) for processing huge data sets that can fit only on hard disks and it is the first I/O\u2010efficient algorithm library that supports the pipelining technique that can save more than half of the I/Os."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Softw. Pract. Exp."
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1909942"
+                        ],
+                        "name": "D. Bitton",
+                        "slug": "D.-Bitton",
+                        "structuredName": {
+                            "firstName": "Dina",
+                            "lastName": "Bitton",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Bitton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1765659"
+                        ],
+                        "name": "D. DeWitt",
+                        "slug": "D.-DeWitt",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "DeWitt",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. DeWitt"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 44
+                            }
+                        ],
+                        "text": "Merge sort also combines identical N -grams (Bitton and DeWitt, 1983)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6580727,
+            "fieldsOfStudy": [
+                "Biology"
+            ],
+            "id": "354b01cf8ca4c56f65153e42c6042fe0ccbc7aaa",
+            "isKey": false,
+            "numCitedBy": 211,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The issue of duplicate elimination for large data files in which many occurrences of the same record may appear is addressed. A comprehensive cost analysis of the duplicate elimination operation is presented. This analysis is based on a combinatorial model developed for estimating the size of intermediate runs produced by a modified merge-sort procedure. The performance of this modified merge-sort procedure is demonstrated to be significantly superior to the standard duplicate elimination technique of sorting followed by a sequential pass to locate duplicate records. The results can also be used to provide critical input to a query optimizer in a relational database system."
+            },
+            "slug": "Duplicate-record-elimination-in-large-data-files-Bitton-DeWitt",
+            "title": {
+                "fragments": [],
+                "text": "Duplicate record elimination in large data files"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 98,
+                "text": "The issue of duplicate elimination for large data files in which many occurrences of the same record may appear is addressed and a comprehensive cost analysis of the duplicate elimination operation is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "TODS"
+            },
+            "year": 1983
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1643845523"
+                        ],
+                        "name": "F. ChenStanley",
+                        "slug": "F.-ChenStanley",
+                        "structuredName": {
+                            "firstName": "F",
+                            "lastName": "ChenStanley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. ChenStanley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1643789739"
+                        ],
+                        "name": "GoodmanJoshua",
+                        "slug": "GoodmanJoshua",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "GoodmanJoshua",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "GoodmanJoshua"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 48
+                            }
+                        ],
+                        "text": "These are used to compute closed-form estimates (Chen and Goodman, 1998) of discounts Dn(k)"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 111,
+                                "start": 65
+                            }
+                        ],
+                        "text": "Relatively low perplexity has made modified Kneser-Ney smoothing (Kneser and Ney, 1995; Chen and Goodman, 1998) a popular choice for language modeling."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 215842252,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d4e8bed3b50a035e1eabad614fe4218a34b3b178",
+            "isKey": false,
+            "numCitedBy": 2861,
+            "numCiting": 87,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We survey the most widely-used algorithms for smoothing models for language n -gram modeling. We then present an extensive empirical comparison of several of these smoothing techniques, including t..."
+            },
+            "slug": "An-empirical-study-of-smoothing-techniques-for-ChenStanley-GoodmanJoshua",
+            "title": {
+                "fragments": [],
+                "text": "An empirical study of smoothing techniques for language modeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 90,
+                "text": "A survey of the most widely-used algorithms for smoothing models for language n -gram modeling and an extensive empirical comparison of several of these smoothing techniques are presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32113594"
+                        ],
+                        "name": "R. Appuswamy",
+                        "slug": "R.-Appuswamy",
+                        "structuredName": {
+                            "firstName": "Raja",
+                            "lastName": "Appuswamy",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Appuswamy"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2903620"
+                        ],
+                        "name": "C. Gkantsidis",
+                        "slug": "C.-Gkantsidis",
+                        "structuredName": {
+                            "firstName": "Christos",
+                            "lastName": "Gkantsidis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Gkantsidis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2317049"
+                        ],
+                        "name": "D. Narayanan",
+                        "slug": "D.-Narayanan",
+                        "structuredName": {
+                            "firstName": "Dushyanth",
+                            "lastName": "Narayanan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Narayanan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3142736"
+                        ],
+                        "name": "O. Hodson",
+                        "slug": "O.-Hodson",
+                        "structuredName": {
+                            "firstName": "Orion",
+                            "lastName": "Hodson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "O. Hodson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51974515"
+                        ],
+                        "name": "Ant Rowstron",
+                        "slug": "Ant-Rowstron",
+                        "structuredName": {
+                            "firstName": "Ant",
+                            "lastName": "Rowstron",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ant Rowstron"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 23,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Appuswamy et al. (2013) identify several problems with the scaleout approach of distributed computation and put forward several scenarios in which a single machine scale-up approach is more cost effective in terms of both raw performance and performance per dollar."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 75
+                            }
+                        ],
+                        "text": "Our code currently runs on a single machine while MapReduce targets clusters."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 888765,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "926f6bad589e2555097be97d82de8b0b4d5fb306",
+            "isKey": false,
+            "numCitedBy": 13,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the last decade we have seen a huge deployment of cheap clusters to run data analytics workloads. The conventional wisdom in industry and academia is that scaling out using a cluster is better for these workloads than scaling up by adding more resources to a single server. Popular analytics infrastructures such as Hadoop are aimed at such a cluster scale-out environment, and in today\u2019s world nobody gets fired for adopting a cluster solution. Is this the right approach? Our measurements as well as other recent work shows that the majority of real-world analytic jobs process less than 100GB of input, but popular infrastructures such as Hadoop/MapReduce were originally designed for petascale processing. We claim that a single \u201cscale-up\u201d server can process each of these jobs and do as well or better than a cluster in terms of performance, cost, power, and server density. Is it time to consider the \u201ccommon case\u201d for \u201cbig data\u201d analytics to be the single-server rather than the cluster case? If so, this has implications for data center hardware as well as software architectures. Unfortunately widely used platforms such as Hadoop perform poorly in a scale-up configuration. We describe several modifications to the Hadoop runtime to address this problem. These changes are transparent, do not require any changes to application code, and do not compromise scale-out performance. However they do significantly improve Hadoop\u2019s scale-up performance. We present a broad evaluation across 11 representative Hadoop jobs that shows scale-up to be competitive in all cases and significantly better in some cases, than scale-out. Our evaluation considers raw performance, as well as performance per dollar and per watt."
+            },
+            "slug": "Nobody-ever-got-fired-for-buying-a-cluster-Appuswamy-Gkantsidis",
+            "title": {
+                "fragments": [],
+                "text": "Nobody ever got fired for buying a cluster"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A broad evaluation across 11 representative Hadoop jobs shows scale-up to be competitive in all cases and significantly better in some cases, than scale-out, as well as performance per dollar and per watt."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2013
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Radu Soricut, and Lucia Specia. 2012. Findings of the 2012 workshop on statistical machine translation"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Seventh Workshop on Statistical Machine Translation"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Calculating Discounts Summary statistics are collected while adjusting counts: s n (a) = number of n-grams with adjusted count a. Chen and Goodman discount n (a) = a \u2212 (a + 1)s n (1)s n (a + 1"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Discounts Summary statistics are collected while adjusting counts: s n (a) = number of n-grams with adjusted count a Backup Slides"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Discounts Summary statistics are collected while adjusting counts: s n (a) = number of n-grams with adjusted count a Backup Slides"
+            }
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 13,
+            "methodology": 10
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 28,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Scalable-Modified-Kneser-Ney-Language-Model-Heafield-Pouzyrevsky/774e560a2cadcb84f4b1def7b152e5398b062efb?sort=total-citations"
+}

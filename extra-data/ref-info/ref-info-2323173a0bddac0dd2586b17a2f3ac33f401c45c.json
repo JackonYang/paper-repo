@@ -1,0 +1,2711 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1682878"
+                        ],
+                        "name": "A. Gionis",
+                        "slug": "A.-Gionis",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Gionis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Gionis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688317"
+                        ],
+                        "name": "P. Indyk",
+                        "slug": "P.-Indyk",
+                        "structuredName": {
+                            "firstName": "Piotr",
+                            "lastName": "Indyk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Indyk"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "84095744"
+                        ],
+                        "name": "R. Motwani",
+                        "slug": "R.-Motwani",
+                        "structuredName": {
+                            "firstName": "Rajeev",
+                            "lastName": "Motwani",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Motwani"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1578969,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2e74388f55f2cc704c4de410578887a53a9433b0",
+            "isKey": false,
+            "numCitedBy": 3454,
+            "numCiting": 71,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The nearestor near-neighbor query problems arise in a large variety of database applications, usually in the context of similarity searching. Of late, there has been increasing interest in building search/index structures for performing similarity search over high-dimensional data, e.g., image databases, document collections, time-series databases, and genome databases. Unfortunately, all known techniques for solving this problem fall prey to the \\curse of dimensionality.\" That is, the data structures scale poorly with data dimensionality; in fact, if the number of dimensions exceeds 10 to 20, searching in k-d trees and related structures involves the inspection of a large fraction of the database, thereby doing no better than brute-force linear search. It has been suggested that since the selection of features and the choice of a distance metric in typical applications is rather heuristic, determining an approximate nearest neighbor should su ce for most practical purposes. In this paper, we examine a novel scheme for approximate similarity search based on hashing. The basic idea is to hash the points Supported by NAVY N00014-96-1-1221 grant and NSF Grant IIS-9811904. Supported by Stanford Graduate Fellowship and NSF NYI Award CCR-9357849. Supported by ARO MURI Grant DAAH04-96-1-0007, NSF Grant IIS-9811904, and NSF Young Investigator Award CCR9357849, with matching funds from IBM, Mitsubishi, Schlumberger Foundation, Shell Foundation, and Xerox Corporation. Permission to copy without fee all or part of this material is granted provided that the copies are not made or distributed for direct commercial advantage, the VLDB copyright notice and the title of the publication and its date appear, and notice is given that copying is by permission of the Very Large Data Base Endowment. To copy otherwise, or to republish, requires a fee and/or special permission from the Endowment. Proceedings of the 25th VLDB Conference, Edinburgh, Scotland, 1999. from the database so as to ensure that the probability of collision is much higher for objects that are close to each other than for those that are far apart. We provide experimental evidence that our method gives signi cant improvement in running time over other methods for searching in highdimensional spaces based on hierarchical tree decomposition. Experimental results also indicate that our scheme scales well even for a relatively large number of dimensions (more than 50)."
+            },
+            "slug": "Similarity-Search-in-High-Dimensions-via-Hashing-Gionis-Indyk",
+            "title": {
+                "fragments": [],
+                "text": "Similarity Search in High Dimensions via Hashing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Experimental results indicate that the novel scheme for approximate similarity search based on hashing scales well even for a relatively large number of dimensions, and provides experimental evidence that the method gives improvement in running time over other methods for searching in highdimensional spaces based on hierarchical tree decomposition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "VLDB"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48686588"
+                        ],
+                        "name": "David A. White",
+                        "slug": "David-A.-White",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "White",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David A. White"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144938740"
+                        ],
+                        "name": "R. Jain",
+                        "slug": "R.-Jain",
+                        "structuredName": {
+                            "firstName": "Ramesh",
+                            "lastName": "Jain",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Jain"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 13940620,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "64ed98154d639ec284077590819115a717f374ce",
+            "isKey": false,
+            "numCitedBy": 218,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Efficient indexing support is essential to allow content-based image and video databases using similarity-based retrieval to scale to large databases (tens of thousands up to millions of images). In this paper, we take an in depth look at this problem. One of the major difficulties in solving this problem is the high dimension (6-100) of the feature vectors that are used to represent objects. We provide an overview of the work in computational geometry on this problem and highlight the results we found are most useful in practice, including the use of approximate nearest neighbor algorithms. We also present a variant of the optimized k-d tree we call the VAM k-d tree, and provide algorithms to create an optimized R-tree we call the VAMSplit R-tree. We found that the VAMSplit R-tree provided better overall performance than all competing structures we tested for main memory and secondary memory applications. We observed large improvements in performance relative to the R*-tree and SS-tree in secondary memory applications, and modest improvements relative to optimized k-d tree variants."
+            },
+            "slug": "Similarity-indexing:-algorithms-and-performance-White-Jain",
+            "title": {
+                "fragments": [],
+                "text": "Similarity indexing: algorithms and performance"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 37,
+                "text": "The VAMSplit R-tree provided better overall performance than all competing structures the authors tested for main memory and secondary memory applications, and modest improvements relative to optimized k-d tree variants."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Electronic Imaging"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "84095744"
+                        ],
+                        "name": "R. Motwani",
+                        "slug": "R.-Motwani",
+                        "structuredName": {
+                            "firstName": "Rajeev",
+                            "lastName": "Motwani",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Motwani"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688317"
+                        ],
+                        "name": "P. Indyk",
+                        "slug": "P.-Indyk",
+                        "structuredName": {
+                            "firstName": "Piotr",
+                            "lastName": "Indyk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Indyk"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 118296533,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "e94834dfad28453fac1ed72c131779029a818da2",
+            "isKey": false,
+            "numCitedBy": 102,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Consider the following problem: given a database of points in a multidimensional space, construct a data structure which given any query point finds the database point(s) closest to it. This problem, called nearest neighbor search has been of great importance to several areas of computer science, including pattern recognition, databases, vector compression, computational statistics and data mining. Many of the above applications involve data sets whose size and dimensionality are very large. Therefore, it is crucial to design algorithms which scale well with the database size as well as with the dimension. \nThe nearest neighbor problem is an example of a large class of proximity problems. Apart from the nearest neighbor, the class contains problems like closest pair, diameter (or furthest pair), minimum spanning tree and clustering problems. In the latter case the goal is to find a partition of points into k clusters, in order to minimize a certain function. Example functions are: the sum of the distances from each point to its nearest cluster representative (this problem is called k-median), the maximum such distance (k-center), the sum of all distances between points in same clusters (k-clustering), etc. \nSince these problems are ubiquitous, they have been investigated in computer science for a long while (e.g., in computational geometry). As a result of this research effort, many efficient solutions have been discovered for the case when the points lie in a space of small dimension. Unfortunately, their running time grows exponentially with the dimension. \nIn this thesis we show that it is in fact possible to obtain efficient algorithms for the aforementioned problems, if we are satisfied with answers which are approximate. The running time of our algorithms for the aforementioned problems has only polynomial dependence on the dimension, and sublinear (for the nearest neighbor problem) or subquadratic (for the closest pair, minimum spanning tree, clustering etc.) dependence on the number of input points. These results hold for a wide range of metrics, including Euclidean, Manhattan or maximum norms and Hausdorff metrics; some of the results hold even for general metrics. We support our theoretical results with their experimental evaluation."
+            },
+            "slug": "High-Dimensional-Computational-Geometry-Motwani-Indyk",
+            "title": {
+                "fragments": [],
+                "text": "High-Dimensional Computational Geometry"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "This thesis shows that it is in fact possible to obtain efficient algorithms for the nearest neighbor problem and a wide range of metrics, including Euclidean, Manhattan or maximum norms and Hausdorff metrics; some of the results hold even for general metrics."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1731948"
+                        ],
+                        "name": "Paul A. Viola",
+                        "slug": "Paul-A.-Viola",
+                        "structuredName": {
+                            "firstName": "Paul",
+                            "lastName": "Viola",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Paul A. Viola"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145319478"
+                        ],
+                        "name": "Michael J. Jones",
+                        "slug": "Michael-J.-Jones",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jones",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael J. Jones"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2715202,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "dc6ea0e30e46163b706f2f8bdc9c67ca87f83d63",
+            "isKey": false,
+            "numCitedBy": 17887,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes a machine learning approach for visual object detection which is capable of processing images extremely rapidly and achieving high detection rates. This work is distinguished by three key contributions. The first is the introduction of a new image representation called the \"integral image\" which allows the features used by our detector to be computed very quickly. The second is a learning algorithm, based on AdaBoost, which selects a small number of critical visual features from a larger set and yields extremely efficient classifiers. The third contribution is a method for combining increasingly more complex classifiers in a \"cascade\" which allows background regions of the image to be quickly discarded while spending more computation on promising object-like regions. The cascade can be viewed as an object specific focus-of-attention mechanism which unlike previous approaches provides statistical guarantees that discarded regions are unlikely to contain the object of interest. In the domain of face detection the system yields detection rates comparable to the best previous systems. Used in real-time applications, the detector runs at 15 frames per second without resorting to image differencing or skin color detection."
+            },
+            "slug": "Rapid-object-detection-using-a-boosted-cascade-of-Viola-Jones",
+            "title": {
+                "fragments": [],
+                "text": "Rapid object detection using a boosted cascade of simple features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "A machine learning approach for visual object detection which is capable of processing images extremely rapidly and achieving high detection rates and the introduction of a new image representation called the \"integral image\" which allows the features used by the detector to be computed very quickly."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153630277"
+                        ],
+                        "name": "R. Weber",
+                        "slug": "R.-Weber",
+                        "structuredName": {
+                            "firstName": "Roger",
+                            "lastName": "Weber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Weber"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1734200"
+                        ],
+                        "name": "H. Schek",
+                        "slug": "H.-Schek",
+                        "structuredName": {
+                            "firstName": "Hans-J\u00f6rg",
+                            "lastName": "Schek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Schek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1831218"
+                        ],
+                        "name": "S. Blott",
+                        "slug": "S.-Blott",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Blott",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Blott"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8109758,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "63eaeb0c48175065ffd096aad10aed712c6d7bbb",
+            "isKey": false,
+            "numCitedBy": 1734,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "For similarity search in high-dimensional vector spaces (or \u2018HDVSs\u2019), researchers have proposed a number of new methods (or adaptations of existing methods) based, in the main, on data-space partitioning. However, the performance of these methods generally degrades as dimensionality increases. Although this phenomenon-known as the \u2018dimensional curse\u2019-is well known, little or no quantitative a.nalysis of the phenomenon is available. In this paper, we provide a detailed analysis of partitioning and clustering techniques for similarity search in HDVSs. We show formally that these methods exhibit linear complexity at high dimensionality, and that existing methods are outperformed on average by a simple sequential scan if the number of dimensions exceeds around 10. Consequently, we come up with an alternative organization based on approximations to make the unavoidable sequential scan as fast as possible. We describe a simple vector approximation scheme, called VA-file, and report on an experimental evaluation of this and of two tree-based index methods (an R*-tree and an X-tree)."
+            },
+            "slug": "A-Quantitative-Analysis-and-Performance-Study-for-Weber-Schek",
+            "title": {
+                "fragments": [],
+                "text": "A Quantitative Analysis and Performance Study for Similarity-Search Methods in High-Dimensional Spaces"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "It is shown formally that partitioning and clustering techniques for similarity search in HDVSs exhibit linear complexity at high dimensionality, and that existing methods are outperformed on average by a simple sequential scan if the number of dimensions exceeds around 10."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "VLDB"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3318118"
+                        ],
+                        "name": "G\u00edsli R. Hjaltason",
+                        "slug": "G\u00edsli-R.-Hjaltason",
+                        "structuredName": {
+                            "firstName": "G\u00edsli",
+                            "lastName": "Hjaltason",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G\u00edsli R. Hjaltason"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1719385"
+                        ],
+                        "name": "H. Samet",
+                        "slug": "H.-Samet",
+                        "structuredName": {
+                            "firstName": "Hanan",
+                            "lastName": "Samet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Samet"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 18292101,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "09083065a4c4d42a98e7f44e947c6dbeaeb9293a",
+            "isKey": false,
+            "numCitedBy": 235,
+            "numCiting": 47,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Complex data types-such as images, documents, DNA sequences, etc.-are becoming increasingly important in modern database applications. A typical query in many of these applications seeks to find objects that are similar to some target object, where (dis)similarity is defined by some distance function. Often, the cost of evaluating the distance between two objects is very high. Thus, the number of distance evaluations should be kept at a minimum, while (ideally) maintaining the quality of the result. One way to approach this goal is to embed the data objects in a vector space so that the distances of the embedded objects approximates the actual distances. Thus, queries can be performed (for the most part) on the embedded objects. We are especially interested in examining the issue of whether or not the embedding methods will ensure that no relevant objects are left out. Particular attention is paid to the SparseMap, FastMap, and MetricMap embedding methods. SparseMap is a variant of Lipschitz embeddings, while FastMap and MetricMap are inspired by dimension reduction methods for Euclidean spaces. We show that, in general, none of these embedding methods guarantee that queries on the embedded objects have no false dismissals, while also demonstrating the limited cases in which the guarantee does hold. Moreover, we describe a variant of SparseMap that allows queries with no false dismissals. In addition, we show that with FastMap and MetricMap, the distances of the embedded objects can be much greater than the actual distances. This makes it impossible (or at least impractical) to modify FastMap and MetricMap to guarantee no false dismissals."
+            },
+            "slug": "Properties-of-Embedding-Methods-for-Similarity-in-Hjaltason-Samet",
+            "title": {
+                "fragments": [],
+                "text": "Properties of Embedding Methods for Similarity Searching in Metric Spaces"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "It is shown that with FastMap and MetricMap, the distances of the embedded objects can be much greater than the actual distances, which makes it impossible (or at least impractical) to modify Fast map andmetricMap to guarantee no false dismissals."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763295"
+                        ],
+                        "name": "J. Tenenbaum",
+                        "slug": "J.-Tenenbaum",
+                        "structuredName": {
+                            "firstName": "Joshua",
+                            "lastName": "Tenenbaum",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Tenenbaum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2094778056"
+                        ],
+                        "name": "V. De Silva",
+                        "slug": "V.-De-Silva",
+                        "structuredName": {
+                            "firstName": "Vin",
+                            "lastName": "De Silva",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. De Silva"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46657367"
+                        ],
+                        "name": "J. Langford",
+                        "slug": "J.-Langford",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Langford",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Langford"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 221338160,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3537fcd0ff99a3b3cb3d279012df826358420556",
+            "isKey": false,
+            "numCitedBy": 12182,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Scientists working with large volumes of high-dimensional data, such as global climate patterns, stellar spectra, or human gene distributions, regularly confront the problem of dimensionality reduction: finding meaningful low-dimensional structures hidden in their high-dimensional observations. The human brain confronts the same problem in everyday perception, extracting from its high-dimensional sensory inputs-30,000 auditory nerve fibers or 10(6) optic nerve fibers-a manageably small number of perceptually relevant features. Here we describe an approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global geometry of a data set. Unlike classical techniques such as principal component analysis (PCA) and multidimensional scaling (MDS), our approach is capable of discovering the nonlinear degrees of freedom that underlie complex natural observations, such as human handwriting or images of a face under different viewing conditions. In contrast to previous algorithms for nonlinear dimensionality reduction, ours efficiently computes a globally optimal solution, and, for an important class of data manifolds, is guaranteed to converge asymptotically to the true structure."
+            },
+            "slug": "A-global-geometric-framework-for-nonlinear-Tenenbaum-Silva",
+            "title": {
+                "fragments": [],
+                "text": "A global geometric framework for nonlinear dimensionality reduction."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "An approach to solving dimensionality reduction problems that uses easily measured local metric information to learn the underlying global geometry of a data set and efficiently computes a globally optimal solution, and is guaranteed to converge asymptotically to the true structure."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Science"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145328899"
+                        ],
+                        "name": "K. Chakrabarti",
+                        "slug": "K.-Chakrabarti",
+                        "structuredName": {
+                            "firstName": "Kaushik",
+                            "lastName": "Chakrabarti",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Chakrabarti"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144156242"
+                        ],
+                        "name": "S. Mehrotra",
+                        "slug": "S.-Mehrotra",
+                        "structuredName": {
+                            "firstName": "Sharad",
+                            "lastName": "Mehrotra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Mehrotra"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 434647,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f08735a3f0d19888e843b9c5b5208b441fd4e158",
+            "isKey": false,
+            "numCitedBy": 269,
+            "numCiting": 67,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many emerging application domains require database systems to support efficient access over highly multidimensional datasets. The current state-of-the-art technique to indexing high dimensional data is to first reduce the dimensionality of the data using Principal Component Analysis and then indexing the reduceddimensionality space using a multidimensional index structure. The above technique, referred to as global dimensionality reduction (GDR), works well when the data set is globally correlated, i.e. most of the variation in the data can be captured by a few dimensions. In practice, datasets are often not globally correlated. In such cases, reducing the data dimensionality using GDR causes significant loss of distance information resulting in a large number of false positives and hence a high query cost. Even when a global correlation does not exist, there may exist subsets of data that are locally correlated. In this paper, we propose a technique called Local Dimensionality Reduction (LDR) that tries to find local correlations in the data and performs dimensionality reduction on the locally correlated clusters of data individually. We develop an index structure that exploits the correlated clusters to efficiently support point, range and k-nearest neighbor queries over high dimensional datasets. Our experiments on synthetic as well as real-life datasets show that our technique (1) reduces the dimensionality of the data with significantly lower loss in distance information compared to GDR and (2) significantly outperforms the GDR, original space indexing and linear scan techniques in terms of the query cost for both synthetic and real-life datasets. This work was supported by NSF CAREER award IIS-9734300, and in part by the Army Research Laboratory under Cooperative Agreement No. DAAL01-96-2-0003. Permission to copy without fee all or part of this material is granted provided that the copies are not made or distributed for direct commercial advantage, the VLDB copyright notice and the title of the publication and its date appear, and notice is given that copying is by permission of the Very Large Data Base Endowment. To copy otherwise, or to republish, requires a fee and/or special permission from the Endowment. Proceedings of the 26th VLDB Conference, Cairo, Egypt, 2000."
+            },
+            "slug": "Local-Dimensionality-Reduction:-A-New-Approach-to-Chakrabarti-Mehrotra",
+            "title": {
+                "fragments": [],
+                "text": "Local Dimensionality Reduction: A New Approach to Indexing High Dimensional Spaces"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "Local Dimensionality Reduction (LDR) is proposed that tries to find local correlations in the data and performs dimensionality reduction on the locally correlated clusters of data individually and an index structure is developed that exploits the correlated clusters to efficiently support point, range and k-nearest neighbor queries over high dimensional datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "VLDB"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3139667"
+                        ],
+                        "name": "\u00d6. E\u011fecio\u011flu",
+                        "slug": "\u00d6.-E\u011fecio\u011flu",
+                        "structuredName": {
+                            "firstName": "\u00d6mer",
+                            "lastName": "E\u011fecio\u011flu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "\u00d6. E\u011fecio\u011flu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1787789"
+                        ],
+                        "name": "H. Ferhatosmano\u011flu",
+                        "slug": "H.-Ferhatosmano\u011flu",
+                        "structuredName": {
+                            "firstName": "Hakan",
+                            "lastName": "Ferhatosmano\u011flu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Ferhatosmano\u011flu"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 1281860,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "657396c13e8b78a389551baedc082323fa24bd26",
+            "isKey": false,
+            "numCitedBy": 15,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Developing efficient ways for dimensionality reduction is crucial for the query performance in multimedia databases. For approximation queries a careful analysis must be performed on the approximation quality of the dimensionality reduction technique. Besides having the lower-bound property, we expect the techniques to have good quality of distance measures when the similarity distance between two feature vectors is approximated by some notion of distance between two lower dimensional transformed vectors. Thus it is desirable to develop techniques which have accurate approximations to the original similarity distance when we eschew the lower-bound property. In this paper, we develop dynamic dimensionality reduction based on the approximation of the standard inner-product. The method uses the power symmetric functions of the components of the vectors, which are powers of the p-norms of the vectors for p = 1,2,.., m. The number m of such norms used is a parameter of the algorithm whose simplest instance gives a first-order approximation implied by the Cauchy-Schwarz inequality. We show how to compute fixed coefficients that work as universal weights based on the moments of the probability density function assumed for the distribution of the components of the input vectors in the data set. If the distribution of the components of the vectors is not known we show how the method can be adapted to work dynamically by incremental adjustment of the parameters. The experiments conducted on various distributions show that with this technique the similarity between two objects in high dimensional space can be accurately approximated by a significantly lower dimensional representation."
+            },
+            "slug": "Dynamic-Dimensionality-Reduction-and-Similarity-by-E\u011fecio\u011flu-Ferhatosmano\u011flu",
+            "title": {
+                "fragments": [],
+                "text": "Dynamic Dimensionality Reduction and Similarity Distance Computation by Inner Product Approximations"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper develops dynamic dimensionality reduction based on the approximation of the standard inner-product using the power symmetric functions of the components of the vectors and shows how the method can be adapted to work dynamically by incremental adjustment of the parameters."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CIKM 1999"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1702392"
+                        ],
+                        "name": "C. Faloutsos",
+                        "slug": "C.-Faloutsos",
+                        "structuredName": {
+                            "firstName": "Christos",
+                            "lastName": "Faloutsos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Faloutsos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2457943"
+                        ],
+                        "name": "King-Ip Lin",
+                        "slug": "King-Ip-Lin",
+                        "structuredName": {
+                            "firstName": "King-Ip",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "King-Ip Lin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1387511,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d86648cb3ec497347d6e918116003b0e42910694",
+            "isKey": false,
+            "numCitedBy": 1170,
+            "numCiting": 92,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A very promising idea for fast searching in traditional and multimedia databases is to map objects into points in k-d space, using k feature-extraction functions, provided by a domain expert [25]. Thus, we can subsequently use highly fine-tuned spatial access methods (SAMs), to answer several types of queries, including the 'Query By Example' type (which translates to a range query); the 'all pairs' query (which translates to a spatial join [8]); the nearest-neighbor or best-match query, etc.However, designing feature extraction functions can be hard. It is relatively easier for a domain expert to assess the similarity/distance of two objects. Given only the distance information though, it is not obvious how to map objects into points.This is exactly the topic of this paper. We describe a fast algorithm to map objects into points in some k-dimensional space (k is user-defined), such that the dis-similarities are preserved. There are two benefits from this mapping: (a) efficient retrieval, in conjunction with a SAM, as discussed before and (b) visualization and data-mining: the objects can now be plotted as points in 2-d or 3-d space, revealing potential clusters, correlations among attributes and other regularities that data-mining is looking for.We introduce an older method from pattern recognition, namely, Multi-Dimensional Scaling (MDS) [51]; although unsuitable for indexing, we use it as yardstick for our method. Then, we propose a much faster algorithm to solve the problem in hand, while in addition it allows for indexing. Experiments on real and synthetic data indeed show that the proposed algorithm is significantly faster than MDS, (being linear, as opposed to quadratic, on the database size N), while it manages to preserve distances and the overall structure of the data-set."
+            },
+            "slug": "FastMap:-a-fast-algorithm-for-indexing,-data-mining-Faloutsos-Lin",
+            "title": {
+                "fragments": [],
+                "text": "FastMap: a fast algorithm for indexing, data-mining and visualization of traditional and multimedia datasets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A fast algorithm to map objects into points in some k-dimensional space (k is user-defined), such that the dis-similarities are preserved, and this method is introduced from pattern recognition, namely, Multi-Dimensional Scaling (MDS)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIGMOD '95"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699100"
+                        ],
+                        "name": "M. Vlachos",
+                        "slug": "M.-Vlachos",
+                        "structuredName": {
+                            "firstName": "Michail",
+                            "lastName": "Vlachos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Vlachos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1836901"
+                        ],
+                        "name": "Marios Hadjieleftheriou",
+                        "slug": "Marios-Hadjieleftheriou",
+                        "structuredName": {
+                            "firstName": "Marios",
+                            "lastName": "Hadjieleftheriou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marios Hadjieleftheriou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1736832"
+                        ],
+                        "name": "D. Gunopulos",
+                        "slug": "D.-Gunopulos",
+                        "structuredName": {
+                            "firstName": "Dimitrios",
+                            "lastName": "Gunopulos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Gunopulos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50543766"
+                        ],
+                        "name": "Eamonn J. Keogh",
+                        "slug": "Eamonn-J.-Keogh",
+                        "structuredName": {
+                            "firstName": "Eamonn",
+                            "lastName": "Keogh",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Eamonn J. Keogh"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1329726,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "43767cdb51b09a203f7b97444b0a47bf307028e7",
+            "isKey": false,
+            "numCitedBy": 399,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Although most time-series data mining research has concentrated on providing solutions for a single distance function, in this work we motivate the need for a single index structure that can support multiple distance measures. Our specific area of interest is the efficient retrieval and analysis of trajectory similarities. Trajectory datasets are very common in environmental applications, mobility experiments, video surveillance and are especially important for the discovery of certain biological patterns. Our primary similarity measure is based on the Longest Common Subsequence (LCSS) model, that offers enhanced robustness, particularly for noisy data, which are encountered very often in real world applications. However, our index is able to accommodate other distance measures as well, including the ubiquitous Euclidean distance, and the increasingly popular Dynamic Time Warping (DTW). While other researchers have advocated one or other of these similarity measures, a major contribution of our work is the ability to support all these measures without the need to restructure the index. Our framework guarantees no false dismissals and can also be tailored to provide much faster response time at the expense of slightly reduced precision/recall. The experimental results demonstrate that our index can help speed-up the computation of expensive similarity measures such as the LCSS and the DTW."
+            },
+            "slug": "Indexing-multi-dimensional-time-series-with-support-Vlachos-Hadjieleftheriou",
+            "title": {
+                "fragments": [],
+                "text": "Indexing multi-dimensional time-series with support for multiple distance measures"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 56,
+                "text": "The experimental results demonstrate that the index motivated by the need for a single index structure that can support multiple distance measures can help speed-up the computation of expensive similarity measures such as the LCSS and the DTW."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "KDD '03"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2490189"
+                        ],
+                        "name": "Gregory Shakhnarovich",
+                        "slug": "Gregory-Shakhnarovich",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Shakhnarovich",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Gregory Shakhnarovich"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1731948"
+                        ],
+                        "name": "Paul A. Viola",
+                        "slug": "Paul-A.-Viola",
+                        "structuredName": {
+                            "firstName": "Paul",
+                            "lastName": "Viola",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Paul A. Viola"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2051403,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3e1556aea42601df3f457ad43dfb059498931a33",
+            "isKey": false,
+            "numCitedBy": 906,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Example-based methods are effective for parameter estimation problems when the underlying system is simple or the dimensionality of the input is low. For complex and high-dimensional problems such as pose estimation, the number of required examples and the computational complexity rapidly become prohibitively high. We introduce a new algorithm that learns a set of hashing functions that efficiently index examples relevant to a particular estimation task. Our algorithm extends locality-sensitive hashing, a recently developed method to find approximate neighbors in time sublinear in the number of examples. This method depends critically on the choice of hash functions that are optimally relevant to a particular estimation problem. Experiments demonstrate that the resulting algorithm, which we call parameter-sensitive hashing, can rapidly and accurately estimate the articulated pose of human figures from a large database of example images."
+            },
+            "slug": "Fast-pose-estimation-with-parameter-sensitive-Shakhnarovich-Viola",
+            "title": {
+                "fragments": [],
+                "text": "Fast pose estimation with parameter-sensitive hashing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A new algorithm is introduced that learns a set of hashing functions that efficiently index examples relevant to a particular estimation task, and can rapidly and accurately estimate the articulated pose of human figures from a large database of example images."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Ninth IEEE International Conference on Computer Vision"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721062"
+                        ],
+                        "name": "N. Koudas",
+                        "slug": "N.-Koudas",
+                        "structuredName": {
+                            "firstName": "Nick",
+                            "lastName": "Koudas",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Koudas"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1693070"
+                        ],
+                        "name": "B. Ooi",
+                        "slug": "B.-Ooi",
+                        "structuredName": {
+                            "firstName": "Beng",
+                            "lastName": "Ooi",
+                            "middleNames": [
+                                "Chin"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Ooi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1724393"
+                        ],
+                        "name": "H. Shen",
+                        "slug": "H.-Shen",
+                        "structuredName": {
+                            "firstName": "Heng",
+                            "lastName": "Shen",
+                            "middleNames": [
+                                "Tao"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Shen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699730"
+                        ],
+                        "name": "A. Tung",
+                        "slug": "A.-Tung",
+                        "structuredName": {
+                            "firstName": "Anthony",
+                            "lastName": "Tung",
+                            "middleNames": [
+                                "K.",
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Tung"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 764380,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1c454fb47e63266853e6530a5827d302c5f5c865",
+            "isKey": false,
+            "numCitedBy": 48,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recent advances in research fields like multimedia and bioinformatics have brought about a new generation of hyper-dimensional databases which can contain hundreds or even thousands of dimensions. Such hyper-dimensional databases pose significant problems to existing high-dimensional indexing techniques which have been developed for indexing databases with (commonly) less than a hundred dimensions. To support efficient querying and retrieval on hyper-dimensional databases, we propose a methodology called local digital coding (LDC) which can support k-nearest neighbors (KNN) queries on hyper-dimensional databases and yet co-exist with ubiquitous indices, such as B+-trees. LDC extracts a simple bitmap representation called digital code(DC) for each point in the database. Pruning during KNN search is performed by dynamically selecting only a subset of the bits from the DC based on which subsequent comparisons are performed. In doing so, expensive operations involved in computing L-norm distance functions between hyper-dimensional data can be avoided. Extensive experiments are conducted to show that our methodology offers significant performance advantages over other existing indexing methods on both real life and synthetic hyper-dimensional datasets."
+            },
+            "slug": "LDC:-enabling-search-by-partial-distance-in-a-space-Koudas-Ooi",
+            "title": {
+                "fragments": [],
+                "text": "LDC: enabling search by partial distance in a hyper-dimensional space"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This work proposes a methodology called local digital coding (LDC) which can support k-nearest neighbors (KNN) queries on hyper-dimensional databases and yet co-exist with ubiquitous indices, such as B+-trees."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings. 20th International Conference on Data Engineering"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1686303"
+                        ],
+                        "name": "E. Tuncel",
+                        "slug": "E.-Tuncel",
+                        "structuredName": {
+                            "firstName": "Ertem",
+                            "lastName": "Tuncel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Tuncel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1787789"
+                        ],
+                        "name": "H. Ferhatosmano\u011flu",
+                        "slug": "H.-Ferhatosmano\u011flu",
+                        "structuredName": {
+                            "firstName": "Hakan",
+                            "lastName": "Ferhatosmano\u011flu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Ferhatosmano\u011flu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143629177"
+                        ],
+                        "name": "K. Rose",
+                        "slug": "K.-Rose",
+                        "structuredName": {
+                            "firstName": "Kenneth",
+                            "lastName": "Rose",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Rose"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11126642,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "947552cece7baae126b02d0f56316420463bfd9b",
+            "isKey": false,
+            "numCitedBy": 65,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we introduce a novel indexing technique based on efficient compression of the feature space for approximate similarity searching in large multimedia databases. Its main novelty is that state-of-the-art tools from the discipline of data compression are adopted to optimize the complexity-performance tradeoff in large data sets. The design procedure optimizes the query access time by jointly accounting for both database distribution and query statistics. We achieve efficient compression by using appropriate vector quantization (VQ) techniques, namely, multi-stage VQ and split-VQ, which are especially suited for limited memory applications. We partition the data set using the accumulated query history, and each partition of data points is separately compressed using a vector quantizer tailored to its distribution. The employed VQ techniques inherently provide a spectrum of points to choose from on the time/accuracy plane. This property is especially crucial for large multimedia databases where I/O time is a bottleneck, because it offers the flexibility to trade time for better accuracy. Our experiments demonstrate speedups of 20 to 35 over a VA-file technique that has been adapted for approximate nearest neighbor searching."
+            },
+            "slug": "VQ-index:-an-index-structure-for-similarity-in-Tuncel-Ferhatosmano\u011flu",
+            "title": {
+                "fragments": [],
+                "text": "VQ-index: an index structure for similarity searching in multimedia databases"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 80,
+                "text": "A novel indexing technique based on efficient compression of the feature space for approximate similarity searching in large multimedia databases using state-of-the-art tools from the discipline of data compression to optimize the complexity-performance tradeoff in large data sets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MULTIMEDIA '02"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1734077"
+                        ],
+                        "name": "Yasushi Sakurai",
+                        "slug": "Yasushi-Sakurai",
+                        "structuredName": {
+                            "firstName": "Yasushi",
+                            "lastName": "Sakurai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yasushi Sakurai"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740865"
+                        ],
+                        "name": "M. Yoshikawa",
+                        "slug": "M.-Yoshikawa",
+                        "structuredName": {
+                            "firstName": "M.",
+                            "lastName": "Yoshikawa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Yoshikawa"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1687545"
+                        ],
+                        "name": "S. Uemura",
+                        "slug": "S.-Uemura",
+                        "structuredName": {
+                            "firstName": "Shunsuke",
+                            "lastName": "Uemura",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Uemura"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2350449"
+                        ],
+                        "name": "Haruhiko Kojima",
+                        "slug": "Haruhiko-Kojima",
+                        "structuredName": {
+                            "firstName": "Haruhiko",
+                            "lastName": "Kojima",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Haruhiko Kojima"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 10762047,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5b70145497f499898408be21f0523d084c6dff99",
+            "isKey": false,
+            "numCitedBy": 238,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a novel index structure, A-tree (Approximation tree), for similarity search of high-dimensional data. The basic idea of the A-tree is the introduction of Virtual Bounding Rectangles (VBRs), which contain and approximate MBRs and data objects. VBRs can be represented rather compactly, and thus affect the tree configuration both quantitatively and qualitatively. Firstly, since tree nodes can install large number of entries of VBRs, fanout of nodes becomes large, thus leads to fast search. More importantly, we have a free hand in arranging MBRs and VBRs in tree nodes. In the A-trees, nodes contain entries of an MBR and its children VBRs. Therefore, by fetching a node of an A-tree, we can obtain the information of exact position of a parent MBR and approximate position of its children. We have performed experiments using both synthetic and real data sets. For the real data sets, the A-tree outperforms the SR-tree and the VA-File in all range of dimensionality up to 64 dimension, which is the highest dimension in our experiments. The A-tree achieves 77.3% (77.7%, resp.) savings in page accesses compared to the SR-tree (the VA-File, resp.) for 64-dimensional real data."
+            },
+            "slug": "The-A-tree:-An-Index-Structure-for-High-Dimensional-Sakurai-Yoshikawa",
+            "title": {
+                "fragments": [],
+                "text": "The A-tree: An Index Structure for High-Dimensional Spaces Using Relative Approximation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 64,
+                "text": "A novel index structure, A-tree (Approximation tree), for similarity search of high-dimensional data, which outperforms the SR-tree and the VA-File in all range of dimensionality up to 64 dimension, which is the highest dimension in the authors' experiments."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "VLDB"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2108419680"
+                        ],
+                        "name": "Xiong Wang",
+                        "slug": "Xiong-Wang",
+                        "structuredName": {
+                            "firstName": "Xiong",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xiong Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "29829232"
+                        ],
+                        "name": "J. Wang",
+                        "slug": "J.-Wang",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Wang",
+                            "middleNames": [
+                                "Tsong-Li"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2457943"
+                        ],
+                        "name": "King-Ip Lin",
+                        "slug": "King-Ip-Lin",
+                        "structuredName": {
+                            "firstName": "King-Ip",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "King-Ip Lin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695878"
+                        ],
+                        "name": "D. Shasha",
+                        "slug": "D.-Shasha",
+                        "structuredName": {
+                            "firstName": "Dennis",
+                            "lastName": "Shasha",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Shasha"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694805"
+                        ],
+                        "name": "B. Shapiro",
+                        "slug": "B.-Shapiro",
+                        "structuredName": {
+                            "firstName": "Bruce",
+                            "lastName": "Shapiro",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Shapiro"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1698666"
+                        ],
+                        "name": "Kaizhong Zhang",
+                        "slug": "Kaizhong-Zhang",
+                        "structuredName": {
+                            "firstName": "Kaizhong",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kaizhong Zhang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15536346,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "038dac16d990b1d3fd48e1d5a2fa901d90b51110",
+            "isKey": false,
+            "numCitedBy": 67,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract. In this paper we present an index structure, called MetricMap, that takes a set of objects and a distance metric and then maps those objects to a k-dimensional space in such a way that the distances among objects are approximately preserved. The index structure is a useful tool for clustering and visualization in data-intensive applications, because it replaces expensive distance calculations by sum-of-square calculations. This can make clustering in large databases with expensive distance metrics practical. We compare the index structure with another data mining index structure, FastMap, recently proposed by Faloutsos and Lin, according to two criteria: relative error and clustering accuracy. For relative error, we show that (i) FastMap gives a lower relative error than MetricMap for Euclidean distances, (ii) MetricMap gives a lower relative error than FastMap for non-Euclidean distances (i.e., general distance metrics), and (iii) combining the two reduces the error yet further. A similar result is obtained when comparing the accuracy of clustering. These results hold for different data sizes. The main qualitative conclusion is that these two index structures capture complementary information about distance metrics and therefore can be used together to great benefit. The net effect is that multi-day computations can be done in minutes."
+            },
+            "slug": "An-Index-Structure-for-Data-Mining-and-Clustering-Wang-Wang",
+            "title": {
+                "fragments": [],
+                "text": "An Index Structure for Data Mining and Clustering"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 75,
+                "text": "An index structure that takes a set of objects and a distance metric and then maps those objects to a k-dimensional space in such a way that the distances among objects are approximately preserved is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Knowledge and Information Systems"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49673312"
+                        ],
+                        "name": "Chen Li",
+                        "slug": "Chen-Li",
+                        "structuredName": {
+                            "firstName": "Chen",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chen Li"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33794424"
+                        ],
+                        "name": "E. Chang",
+                        "slug": "E.-Chang",
+                        "structuredName": {
+                            "firstName": "Edward",
+                            "lastName": "Chang",
+                            "middleNames": [
+                                "Y."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Chang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1398574232"
+                        ],
+                        "name": "H. Garcia-Molina",
+                        "slug": "H.-Garcia-Molina",
+                        "structuredName": {
+                            "firstName": "Hector",
+                            "lastName": "Garcia-Molina",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Garcia-Molina"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1683556"
+                        ],
+                        "name": "G. Wiederhold",
+                        "slug": "G.-Wiederhold",
+                        "structuredName": {
+                            "firstName": "Gio",
+                            "lastName": "Wiederhold",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Wiederhold"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11931665,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "eede1a2e109d988f2fdbfee20fa39014614f6328",
+            "isKey": false,
+            "numCitedBy": 141,
+            "numCiting": 115,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a clustering and indexing paradigm (called Clindex) for high-dimensional search spaces. The scheme is designed for approximate similarity searches, where one would like to find many of the data points near a target point, but where one can tolerate missing a few near points. For such searches, our scheme can find near points with high recall in very few IOs and perform significantly better than other approaches. Our scheme is based on finding clusters and, then, building a simple but efficient index for them. We analyze the trade-offs involved in clustering and building such an index structure, and present extensive experimental results."
+            },
+            "slug": "Clustering-for-Approximate-Similarity-Search-in-Li-Chang",
+            "title": {
+                "fragments": [],
+                "text": "Clustering for Approximate Similarity Search in High-Dimensional Spaces"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 54,
+                "text": "A clustering and indexing paradigm for high-dimensional search spaces based on finding clusters and building a simple but efficient index for them, which can find near points with high recall in very few IOs and perform significantly better than other approaches."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Knowl. Data Eng."
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "9330607"
+                        ],
+                        "name": "S. Roweis",
+                        "slug": "S.-Roweis",
+                        "structuredName": {
+                            "firstName": "Sam",
+                            "lastName": "Roweis",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Roweis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1796044"
+                        ],
+                        "name": "L. Saul",
+                        "slug": "L.-Saul",
+                        "structuredName": {
+                            "firstName": "Lawrence",
+                            "lastName": "Saul",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Saul"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5987139,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "afcd6da7637ddeef6715109aca248da7a24b1c65",
+            "isKey": false,
+            "numCitedBy": 13981,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many areas of science depend on exploratory data analysis and visualization. The need to analyze large amounts of multivariate data raises the fundamental problem of dimensionality reduction: how to discover compact representations of high-dimensional data. Here, we introduce locally linear embedding (LLE), an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high-dimensional inputs. Unlike clustering methods for local dimensionality reduction, LLE maps its inputs into a single global coordinate system of lower dimensionality, and its optimizations do not involve local minima. By exploiting the local symmetries of linear reconstructions, LLE is able to learn the global structure of nonlinear manifolds, such as those generated by images of faces or documents of text."
+            },
+            "slug": "Nonlinear-dimensionality-reduction-by-locally-Roweis-Saul",
+            "title": {
+                "fragments": [],
+                "text": "Nonlinear dimensionality reduction by locally linear embedding."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "Locally linear embedding (LLE) is introduced, an unsupervised learning algorithm that computes low-dimensional, neighborhood-preserving embeddings of high-dimensional inputs that learns the global structure of nonlinear manifolds."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Science"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153630277"
+                        ],
+                        "name": "R. Weber",
+                        "slug": "R.-Weber",
+                        "structuredName": {
+                            "firstName": "Roger",
+                            "lastName": "Weber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Weber"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145635095"
+                        ],
+                        "name": "Klemens B\u00f6hm",
+                        "slug": "Klemens-B\u00f6hm",
+                        "structuredName": {
+                            "firstName": "Klemens",
+                            "lastName": "B\u00f6hm",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Klemens B\u00f6hm"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11538340,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ddd96a960984a8cb889fa3fb88fc1c686d50d132",
+            "isKey": false,
+            "numCitedBy": 96,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In many situations, users would readily accept an approximate query result if evaluation of the query becomes faster. In this article, we investigate approximate evaluation techniques based on the VA-File for Nearest-Neighbor Search (NN-Search). The VA-File contains approximations of feature points. These approximations frequently suffice to eliminate the vast majority of points in a first phase. Then, a second phase identifies the NN by computing exact distances of all remaining points. To develop approximate query-evaluation techniques, we proceed in two steps: first, we derive an analytic model for VA-File based NN-search. This is to investigate the relationship between approximation granularity, effectiveness of the filtering step and search performance. In more detail, we develop formulae for the distribution of the error of the bounds and the duration of the different phases of query evaluation. Based on these results, we develop different approximate query evaluation techniques. The first one adapts the bounds to have a more rigid filtering, the second one skips computation of the exact distances. Experiments show that these techniques have the desired effect: for instance, when allowing for a small but specific reduction of result quality, we observed a speedup of 7 in 50-NN search."
+            },
+            "slug": "Trading-Quality-for-Time-with-Nearest-Neighbor-Weber-B\u00f6hm",
+            "title": {
+                "fragments": [],
+                "text": "Trading Quality for Time with Nearest Neighbor Search"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 53,
+                "text": "This article investigates approximate evaluation techniques based on the VA-File for Nearest-Neighbor Search (NN-Search) and develops different approximate query evaluation techniques that have the desired effect when allowing for a small but specific reduction of result quality."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EDBT"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763086"
+                        ],
+                        "name": "Alexei A. Efros",
+                        "slug": "Alexei-A.-Efros",
+                        "structuredName": {
+                            "firstName": "Alexei",
+                            "lastName": "Efros",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexei A. Efros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39668247"
+                        ],
+                        "name": "A. Berg",
+                        "slug": "A.-Berg",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Berg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Berg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "10771328"
+                        ],
+                        "name": "Greg Mori",
+                        "slug": "Greg-Mori",
+                        "structuredName": {
+                            "firstName": "Greg",
+                            "lastName": "Mori",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Greg Mori"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143751119"
+                        ],
+                        "name": "Jitendra Malik",
+                        "slug": "Jitendra-Malik",
+                        "structuredName": {
+                            "firstName": "Jitendra",
+                            "lastName": "Malik",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jitendra Malik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1350374,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "804d86dd7ab3498266922244e73a88c1add5a6ab",
+            "isKey": false,
+            "numCitedBy": 1470,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Our goal is to recognize human action at a distance, at resolutions where a whole person may be, say, 30 pixels tall. We introduce a novel motion descriptor based on optical flow measurements in a spatiotemporal volume for each stabilized human figure, and an associated similarity measure to be used in a nearest-neighbor framework. Making use of noisy optical flow measurements is the key challenge, which is addressed by treating optical flow not as precise pixel displacements, but rather as a spatial pattern of noisy measurements which are carefully smoothed and aggregated to form our spatiotemporal motion descriptor. To classify the action being performed by a human figure in a query sequence, we retrieve nearest neighbor(s) from a database of stored, annotated video sequences. We can also use these retrieved exemplars to transfer 2D/3D skeletons onto the figures in the query sequence, as well as two forms of data-based action synthesis \"do as I do\" and \"do as I say\". Results are demonstrated on ballet, tennis as well as football datasets."
+            },
+            "slug": "Recognizing-action-at-a-distance-Efros-Berg",
+            "title": {
+                "fragments": [],
+                "text": "Recognizing action at a distance"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "A novel motion descriptor based on optical flow measurements in a spatiotemporal volume for each stabilized human figure is introduced, and an associated similarity measure to be used in a nearest-neighbor framework is introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Ninth IEEE International Conference on Computer Vision"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2057992754"
+                        ],
+                        "name": "Byoung-Kee Yi",
+                        "slug": "Byoung-Kee-Yi",
+                        "structuredName": {
+                            "firstName": "Byoung-Kee",
+                            "lastName": "Yi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Byoung-Kee Yi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145531067"
+                        ],
+                        "name": "H. Jagadish",
+                        "slug": "H.-Jagadish",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Jagadish",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Jagadish"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1702392"
+                        ],
+                        "name": "C. Faloutsos",
+                        "slug": "C.-Faloutsos",
+                        "structuredName": {
+                            "firstName": "Christos",
+                            "lastName": "Faloutsos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Faloutsos"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8365573,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0cc0f11e591e2629dfcdc9d1db75f00e34dff6ae",
+            "isKey": false,
+            "numCitedBy": 736,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Fast similarity searching in large time sequence databases has typically used Euclidean distance as a dissimilarity metric. However, for several applications, including matching of voice, audio and medical signals (e.g., electrocardiograms), one is required to permit local accelerations and decelerations in the rate of sequences, leading to a popular, field tested dissimilarity metric called the \"time warping\" distance. From the indexing viewpoint, this metric presents two major challenges: (a) it does not lead to any natural indexable \"features\", and (b) comparing two sequences requires time quadratic in the sequence length. To address each problem, we propose to use: (a) a modification of the so called \"FastMap\", to map sequences into points, with little compromise of \"recall\" (typically zero); and (b) a fast linear test, to help us discard quickly many of the false alarms that FastMap will typically introduce. Using both ideas in cascade, our proposed method achieved up to an order of magnitude speed-up over sequential scanning on both real and synthetic datasets."
+            },
+            "slug": "Efficient-retrieval-of-similar-time-sequences-under-Yi-Jagadish",
+            "title": {
+                "fragments": [],
+                "text": "Efficient retrieval of similar time sequences under time warping"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This work proposes a modification of the so called \"FastMap\", to map sequences into points, with little compromise of \"recall\" (typically zero), and a fast linear test, to help to discard quickly many of the false alarms that FastMap will typically introduce."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings 14th International Conference on Data Engineering"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1720747"
+                        ],
+                        "name": "V. Athitsos",
+                        "slug": "V.-Athitsos",
+                        "structuredName": {
+                            "firstName": "Vassilis",
+                            "lastName": "Athitsos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Athitsos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1749590"
+                        ],
+                        "name": "S. Sclaroff",
+                        "slug": "S.-Sclaroff",
+                        "structuredName": {
+                            "firstName": "Stan",
+                            "lastName": "Sclaroff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Sclaroff"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 10005005,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0b9213651d939b8195b0f4225fe409af6459effb",
+            "isKey": false,
+            "numCitedBy": 453,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A method is proposed that can generate a ranked list of plausible three-dimensional hand configurations that best match an input image. Hand pose estimation is formulated as an image database indexing problem, where the closest matches for an input hand image are retrieved from a large database of synthetic hand images. In contrast to previous approaches, the system can function in the presence of clutter, thanks to two novel clutter-tolerant indexing methods. First, a computationally efficient approximation of the image-to-model chamfer distance is obtained by embedding binary edge images into a high-dimensional Euclidean space. Second, a general-purpose, probabilistic line matching method identifies those line segment correspondences between model and input images that are the least likely to have occurred by chance. The performance of this clutter tolerant approach is demonstrated in quantitative experiments with hundreds of real hand images."
+            },
+            "slug": "Estimating-3D-hand-pose-from-a-cluttered-image-Athitsos-Sclaroff",
+            "title": {
+                "fragments": [],
+                "text": "Estimating 3D hand pose from a cluttered image"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 75,
+                "text": "A method is proposed that can generate a ranked list of plausible three-dimensional hand configurations that best match an input image that can function in the presence of clutter, thanks to two novel clutter-tolerant indexing methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2003 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2003. Proceedings."
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1722243"
+                        ],
+                        "name": "N. Linial",
+                        "slug": "N.-Linial",
+                        "structuredName": {
+                            "firstName": "Nathan",
+                            "lastName": "Linial",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Linial"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "13826372"
+                        ],
+                        "name": "E. London",
+                        "slug": "E.-London",
+                        "structuredName": {
+                            "firstName": "Eran",
+                            "lastName": "London",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. London"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144147174"
+                        ],
+                        "name": "Yuri Rabinovich",
+                        "slug": "Yuri-Rabinovich",
+                        "structuredName": {
+                            "firstName": "Yuri",
+                            "lastName": "Rabinovich",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yuri Rabinovich"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5071936,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "826ad9d93afd1826a1b4146c88c1476cef5835df",
+            "isKey": false,
+            "numCitedBy": 997,
+            "numCiting": 195,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "AbstractIn this paper we explore some implications of viewing graphs asgeometric objects. This approach offers a new perspective on a number of graph-theoretic and algorithmic problems. There are several ways to model graphs geometrically and our main concern here is with geometric representations that respect themetric of the (possibly weighted) graph. Given a graphG we map its vertices to a normed space in an attempt to (i) keep down the dimension of the host space, and (ii) guarantee a smalldistortion, i.e., make sure that distances between vertices inG closely match the distances between their geometric images.In this paper we develop efficient algorithms for embedding graphs low-dimensionally with a small distortion. Further algorithmic applications include:\u2022A simple, unified approach to a number of problems on multicommodity flows, including the Leighton-Rao Theorem [37] and some of its extensions. We solve an open question in this area, showing that the max-flow vs. min-cut gap in thek-commodities problem isO(logk). Our new deterministic polynomial-time algorithm finds a (nearly tight) cut meeting this bound.\u2022For graphs embeddable in low-dimensional spaces with a small distortion, we can find low-diameter decompositions (in the sense of [7] and [43]). The parameters of the decomposition depend only on the dimension and the distortion and not on the size of the graph.\u2022In graphs embedded this way, small balancedseparators can be found efficiently.\nGiven faithful low-dimensional representations of statistical data, it is possible to obtain meaningful and efficientclustering. This is one of the most basic tasks in pattern-recognition. For the (mostly heuristic) methods used in the practice of pattern-recognition, see [20], especially chapter 6.Our studies of multicommodity flows also imply that every embedding of (the metric of) ann-vertex, constant-degree expander into a Euclidean space (of any dimension) has distortion \u03a9(logn). This result is tight, and closes a gap left open by Bourgain [12]."
+            },
+            "slug": "The-geometry-of-graphs-and-some-of-its-algorithmic-Linial-London",
+            "title": {
+                "fragments": [],
+                "text": "The geometry of graphs and some of its algorithmic applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "Efficient algorithms for embedding graphs low-dimensionally with a small distortion, and a new deterministic polynomial-time algorithm that finds a (nearly tight) cut meeting this bound."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comb."
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "102988395"
+                        ],
+                        "name": "H. Gabriela",
+                        "slug": "H.-Gabriela",
+                        "structuredName": {
+                            "firstName": "Hristescu",
+                            "lastName": "Gabriela",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Gabriela"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153707929"
+                        ],
+                        "name": "F. Mart\u00edn",
+                        "slug": "F.-Mart\u00edn",
+                        "structuredName": {
+                            "firstName": "F.",
+                            "lastName": "Mart\u00edn",
+                            "middleNames": [
+                                "D\u00edaz"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Mart\u00edn"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 10633300,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8b2f97e42c0571c3dfd6c1697c5e364644d3b539",
+            "isKey": false,
+            "numCitedBy": 97,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Similarity searching in protein sequence databases is a standard technique for biologists dealing with a newly sequenced protein. Exhaustive search in such databases is prohibitive because of the large sizes of these database and because pairwise comparisons are slow. Heuristic techniques, such as FASTA and BLAST, are useful because they are fast and accurate, though it has been shown that exhaustive search is more accurate. Therefore, there are times when one would like to perform an exhaustive search. We propose an efficient method, called SparseMap, for preprocessing a database of proteins to support efficient similarity searches using expensive but sensitive distance functions, such as those based on Smith-Waterman similarity. Our method is based on a Low-dimensional Euclidean Embedding approach. We compare our method with other embedding approaches, and show that our method is faster and produces embeddings which preserve more biological information about the proteins, such as pairwise distance and biological clusters."
+            },
+            "slug": "Cluster-preserving-Embedding-of-Proteins-Gabriela-Mart\u00edn",
+            "title": {
+                "fragments": [],
+                "text": "Cluster-preserving Embedding of Proteins"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work proposes an efficient method, called SparseMap, for preprocessing a database of proteins to support efficient similarity searches using expensive but sensitive distance functions, such as those based on Smith-Waterman similarity, based on a Low-dimensional Euclidean Embedding approach."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701332"
+                        ],
+                        "name": "P. Zezula",
+                        "slug": "P.-Zezula",
+                        "structuredName": {
+                            "firstName": "Pavel",
+                            "lastName": "Zezula",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Zezula"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3078415"
+                        ],
+                        "name": "P. Savino",
+                        "slug": "P.-Savino",
+                        "structuredName": {
+                            "firstName": "Pasquale",
+                            "lastName": "Savino",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Savino"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144514871"
+                        ],
+                        "name": "Giuseppe Amato",
+                        "slug": "Giuseppe-Amato",
+                        "structuredName": {
+                            "firstName": "Giuseppe",
+                            "lastName": "Amato",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Giuseppe Amato"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3187322"
+                        ],
+                        "name": "F. Rabitti",
+                        "slug": "F.-Rabitti",
+                        "structuredName": {
+                            "firstName": "Fausto",
+                            "lastName": "Rabitti",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Rabitti"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 28112514,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "15d74a3d26f5c9a336dcd41aa56fd24db2761e4a",
+            "isKey": false,
+            "numCitedBy": 123,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract. Motivated by the urgent need to improve the efficiency of similarity queries, approximate similarity retrieval is investigated in the environment of a metric tree index called the M-tree. Three different approximation techniques are proposed, which show how to forsake query precision for improved performance. Measures are defined that can quantify the improvements in performance efficiency and the quality of approximations. The proposed approximation techniques are then tested on various synthetic and real-life files. The evidence obtained from the experiments confirms our hypothesis that a high-quality approximated similarity search can be performed at a much lower cost than that needed to obtain the exact results. The proposed approximation techniques are scalable and appear to be independent of the metric used. Extensions of these techniques to the environments of other similarity search indexes are also discussed."
+            },
+            "slug": "Approximate-similarity-retrieval-with-M-trees-Zezula-Savino",
+            "title": {
+                "fragments": [],
+                "text": "Approximate similarity retrieval with M-trees"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "The evidence obtained confirms the hypothesis that a high-quality approximated similarity search can be performed at a much lower cost than that needed to obtain the exact results."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The VLDB Journal"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1696931"
+                        ],
+                        "name": "H. Barrow",
+                        "slug": "H.-Barrow",
+                        "structuredName": {
+                            "firstName": "Harry",
+                            "lastName": "Barrow",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Barrow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144592244"
+                        ],
+                        "name": "J. Tenenbaum",
+                        "slug": "J.-Tenenbaum",
+                        "structuredName": {
+                            "firstName": "Jay",
+                            "lastName": "Tenenbaum",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Tenenbaum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1764443"
+                        ],
+                        "name": "R. Bolles",
+                        "slug": "R.-Bolles",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Bolles",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Bolles"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "11843441"
+                        ],
+                        "name": "H. C. Wolf",
+                        "slug": "H.-C.-Wolf",
+                        "structuredName": {
+                            "firstName": "Helen",
+                            "lastName": "Wolf",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. C. Wolf"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1621080,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "358a97112cc60d6bfefb352b863fec8a86a39e28",
+            "isKey": false,
+            "numCitedBy": 873,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Parametric correspondence is a technique for matching images to a three dimensional symbolic reference map. An analytic camera model is used to predict the location and appearance of landmarks in the image, generating a projection for an assumed viewpoint. Correspondence is achieved by adjusting the parameters of the camera model until the appearances of the landmarks optimally match a symbolic description extracted from the image. \n \nThe matching of image and map features is performed rapidly by a new technique, called \"chamfer matching\", that compares the shapes of two collections of shape fragments, at a cost proportional to linear dimension, rather than area. These two techniques permit the matching of spatially extensive features on the basis of shape, which reduces the risk of ambiguous matches and the dependence on viewing conditions inherent in conventional image based correlation matching."
+            },
+            "slug": "Parametric-Correspondence-and-Chamfer-Matching:-Two-Barrow-Tenenbaum",
+            "title": {
+                "fragments": [],
+                "text": "Parametric Correspondence and Chamfer Matching: Two New Techniques for Image Matching"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "The matching of image and map features is performed rapidly by a new technique, called \"chamfer matching\", that compares the shapes of two collections of shape fragments, at a cost proportional to linear dimension, rather than area."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IJCAI"
+            },
+            "year": 1977
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144905887"
+                        ],
+                        "name": "Forrest W. Young",
+                        "slug": "Forrest-W.-Young",
+                        "structuredName": {
+                            "firstName": "Forrest",
+                            "lastName": "Young",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Forrest W. Young"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 118177421,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "ef09026250f3b4018228bdf84897207cf35ca6f5",
+            "isKey": false,
+            "numCitedBy": 462,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Contents: F.W. Young, Part I:History. Introduction. History. F.W. Young, Part II:Theory. Data Theory. Axiomatic Foundations. Unweighted Distance Models. Weighted Distance Models. Part III:Applications. J.A. Cameron, Nuclear Physics: Pattern Recognition in Nuclear Gamma-ray Spectra. L.M. Collins, Sociometry: Deriving Sociograms via Asymmetric Multidimensional Scaling. D.L. Hoffman, W.D. Perreault, Jr., Market Research: Consumer Preference and Perception. D.V. Easterling, Political Science: Using the Generalized Euclidian Model to Study Ideological Shifts in the U.S. Senate. M.R. Jones, R. MacCallum, Psychology: An Application of Principal Directions Scaling to Auditory Pattern Perception. B.H. Forsyth, Psychology: The Subjective Attributes of Natural Categories -- An Application of a Constrained Generalized Euclidian Model."
+            },
+            "slug": "Multidimensional-Scaling:-History,-Theory,-and-Young",
+            "title": {
+                "fragments": [],
+                "text": "Multidimensional Scaling: History, Theory, and Applications"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1987
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753210"
+                        ],
+                        "name": "Trevor Darrell",
+                        "slug": "Trevor-Darrell",
+                        "structuredName": {
+                            "firstName": "Trevor",
+                            "lastName": "Darrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Trevor Darrell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "21472040"
+                        ],
+                        "name": "Irfan Essa",
+                        "slug": "Irfan-Essa",
+                        "structuredName": {
+                            "firstName": "Irfan",
+                            "lastName": "Essa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Irfan Essa"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144994682"
+                        ],
+                        "name": "A. Pentland",
+                        "slug": "A.-Pentland",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Pentland",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Pentland"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1726034,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Psychology"
+            ],
+            "id": "67852293a05e4e9da899e99ba109a81b2af7fca4",
+            "isKey": false,
+            "numCitedBy": 131,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Hand and face gestures are modeled using an appearance-based approach in which patterns are represented as a vector of similarity scores to a set of view models defined in space and time. These view models are learned from examples using unsupervised clustering techniques. A supervised teaming paradigm is then used to interpolate view scores into a task-dependent coordinate system appropriate for recognition and control tasks. We apply this analysis to the problem of context-specific gesture interpolation and recognition, and demonstrate real-time systems which perform these tasks."
+            },
+            "slug": "Task-Specific-Gesture-Analysis-in-Real-Time-Using-Darrell-Essa",
+            "title": {
+                "fragments": [],
+                "text": "Task-Specific Gesture Analysis in Real-Time Using Interpolated Views"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This work applies an appearance-based approach to the problem of context-specific gesture interpolation and recognition, and demonstrates real-time systems which perform these tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48758908"
+                        ],
+                        "name": "J. Bourgain",
+                        "slug": "J.-Bourgain",
+                        "structuredName": {
+                            "firstName": "Jean",
+                            "lastName": "Bourgain",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Bourgain"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 121649019,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "d2dd4b7b18d49235bf708ea0718cb2850ac0da27",
+            "isKey": false,
+            "numCitedBy": 684,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "It is shown that anyn point metric space is up to logn lipeomorphic to a subset of Hilbert space. We also exhibit an example of ann point metric space which cannot be embedded in Hilbert space with distortion less than (logn)/(log logn), showing that the positive result is essentially best possible. The methods used are of probabilistic nature. For instance, to construct our example, we make use of random graphs."
+            },
+            "slug": "On-lipschitz-embedding-of-finite-metric-spaces-in-Bourgain",
+            "title": {
+                "fragments": [],
+                "text": "On lipschitz embedding of finite metric spaces in Hilbert space"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1985
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 29519355,
+            "fieldsOfStudy": [],
+            "id": "fbf53b024b3d67f8f1af43823ae459501fe28598",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Dimensionality Reduction for Similarity Searching in Dynamic Databases"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Vis. Image Underst."
+            },
+            "year": 1999
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 12646365,
+            "fieldsOfStudy": [],
+            "id": "14e53403a0055dbe5faaf9f1f3be96ca0e692a4d",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Improved Boosting Algorithms using Confidence-Rated Predictions"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLT"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Similarity indexing: Algorithms and performance. In Storage and Retrieval for Image and Video Databases (SPIE), pages"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1996
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {},
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 32,
+        "totalPages": 4
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Nearest-Neighbor-Methods-in-Learning-and-Vision:-Shakhnarovich-Darrell/2323173a0bddac0dd2586b17a2f3ac33f401c45c?sort=total-citations"
+}

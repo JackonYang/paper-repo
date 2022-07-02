@@ -1,0 +1,3319 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827616"
+                        ],
+                        "name": "Quoc V. Le",
+                        "slug": "Quoc-V.-Le",
+                        "structuredName": {
+                            "firstName": "Quoc",
+                            "lastName": "Le",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Quoc V. Le"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 156,
+                                "start": 133
+                            }
+                        ],
+                        "text": "Seq2Seq Learning can be expressed in a probabilistic view as maximizing the likelihood (or some other evaluation metrics (Shen et al., 2015)) of observing the output (target) sequence given an input (source) sequence."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 133,
+                                "start": 110
+                            }
+                        ],
+                        "text": "RNN-based Encoder-Decoder is successfully applied to real world Seq2Seq tasks, first by Cho et al. (2014) and Sutskever et al. (2014), and then by (Vinyals and Le, 2015; Vinyals et al., 2015a)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7961699,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cea967b59209c6be22829699f05b8b1ac4dc092d",
+            "isKey": false,
+            "numCitedBy": 14881,
+            "numCiting": 55,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Deep Neural Networks (DNNs) are powerful models that have achieved excellent performance on difficult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, we present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Our method uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Our main result is that on an English to French translation task from the WMT-14 dataset, the translations produced by the LSTM achieve a BLEU score of 34.8 on the entire test set, where the LSTM's BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did not have difficulty on long sentences. For comparison, a phrase-based SMT system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which is close to the previous state of the art. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, we found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM's performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier."
+            },
+            "slug": "Sequence-to-Sequence-Learning-with-Neural-Networks-Sutskever-Vinyals",
+            "title": {
+                "fragments": [],
+                "text": "Sequence to Sequence Learning with Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper presents a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure, and finds that reversing the order of the words in all source sentences improved the LSTM's performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39067762"
+                        ],
+                        "name": "Meire Fortunato",
+                        "slug": "Meire-Fortunato",
+                        "structuredName": {
+                            "firstName": "Meire",
+                            "lastName": "Fortunato",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Meire Fortunato"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3111912"
+                        ],
+                        "name": "Navdeep Jaitly",
+                        "slug": "Navdeep-Jaitly",
+                        "structuredName": {
+                            "firstName": "Navdeep",
+                            "lastName": "Jaitly",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Navdeep Jaitly"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 191,
+                                "start": 170
+                            }
+                        ],
+                        "text": "RNN-based Encoder-Decoder is successfully applied to real world Seq2Seq tasks, first by Cho et al. (2014) and Sutskever et al. (2014), and then by (Vinyals and Le, 2015; Vinyals et al., 2015a)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 213,
+                                "start": 192
+                            }
+                        ],
+                        "text": "\u2026achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al., 2015b), Text Summarization (Rush et al., 2015) and Dialogue Systems (Vinyals and Le, 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 57
+                            }
+                        ],
+                        "text": "In addition to the difference with ours in application, (Vinyals et al., 2015a) cannot predict outside of the set of input sequence, while COPYNET can naturally combine generating and copying."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 263,
+                                "start": 246
+                            }
+                        ],
+                        "text": "Recently, neural network-based sequence-tosequence learning (Seq2Seq) has achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al., 2015b), Text Summarization (Rush et al., 2015) and Dialogue Systems (Vinyals and Le, 2015)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 71
+                            }
+                        ],
+                        "text": "Our work is partially inspired by the recent work of Pointer Networks (Vinyals et al., 2015a), in which a pointer mechanism (quite similar with the proposed copying mechanism) is used to predict the output sequence directly from the input."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5692837,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9653d5c2c7844347343d073bbedd96e05d52f69b",
+            "isKey": true,
+            "numCitedBy": 1706,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a new neural architecture to learn the conditional probability of an output sequence with elements that are discrete tokens corresponding to positions in an input sequence. Such problems cannot be trivially addressed by existent approaches such as sequence-to-sequence [1] and Neural Turing Machines [2], because the number of target classes in each step of the output depends on the length of the input, which is variable. Problems such as sorting variable sized sequences, and various combinatorial optimization problems belong to this class. Our model solves the problem of variable size output dictionaries using a recently proposed mechanism of neural attention. It differs from the previous attention attempts in that, instead of using attention to blend hidden units of an encoder to a context vector at each decoder step, it uses attention as a pointer to select a member of the input sequence as the output. We call this architecture a Pointer Net (Ptr-Net). We show Ptr-Nets can be used to learn approximate solutions to three challenging geometric problems - finding planar convex hulls, computing Delaunay triangulations, and the planar Travelling Salesman Problem - using training examples alone. Ptr-Nets not only improve over sequence-to-sequence with input attention, but also allow us to generalize to variable size output dictionaries. We show that the learnt models generalize beyond the maximum lengths they were trained on. We hope our results on these tasks will encourage a broader exploration of neural learning for discrete problems."
+            },
+            "slug": "Pointer-Networks-Vinyals-Fortunato",
+            "title": {
+                "fragments": [],
+                "text": "Pointer Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "A new neural architecture to learn the conditional probability of an output sequence with elements that are discrete tokens corresponding to positions in an input sequence using a recently proposed mechanism of neural attention, called Ptr-Nets, which improves over sequence-to-sequence with input attention, but also allows it to generalize to variable size output dictionaries."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3335364"
+                        ],
+                        "name": "Dzmitry Bahdanau",
+                        "slug": "Dzmitry-Bahdanau",
+                        "structuredName": {
+                            "firstName": "Dzmitry",
+                            "lastName": "Bahdanau",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dzmitry Bahdanau"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1979489"
+                        ],
+                        "name": "Kyunghyun Cho",
+                        "slug": "Kyunghyun-Cho",
+                        "structuredName": {
+                            "firstName": "Kyunghyun",
+                            "lastName": "Cho",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kyunghyun Cho"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 49
+                            }
+                        ],
+                        "text": "It is similar with the canonical RNN-decoder in (Bahdanau et al., 2014), with however the following important differences\n\u2022 Prediction: COPYNET predicts words based on a mixed probabilistic model of two modes, namely the generate-mode and the copymode, where the latter picks words from the source\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 31
+                            }
+                        ],
+                        "text": "Adding the attention mechanism (Bahdanau et al., 2014) to Seq2Seq, first proposed for automatic alignment in machine translation, has led to significant improvement on the performance of various tasks (Shang et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 35,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Note that in (Bahdanau et al., 2014) the source sentence is encoded with a Bi-directional RNN, making each hidden state h\u03c4 aware of the contextual information from both ends."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 170,
+                                "start": 149
+                            }
+                        ],
+                        "text": "\u2026achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al., 2015b), Text Summarization (Rush et al., 2015) and Dialogue Systems (Vinyals and Le, 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 53,
+                                "start": 32
+                            }
+                        ],
+                        "text": "Adding the attention mechanism (Bahdanau et al., 2014) to Seq2Seq, first proposed for automatic alignment in machine translation, has led to significant improvement on the performance of various tasks (Shang et al., 2015; Rush et al., 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 244,
+                                "start": 203
+                            }
+                        ],
+                        "text": "Recently, neural network-based sequence-tosequence learning (Seq2Seq) has achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 118
+                            }
+                        ],
+                        "text": "The score of each mode is calculated:\nGenerate-Mode: The same scoring function as in the generic RNN encoder-decoder (Bahdanau et al., 2014) is used, i.e.\n\u03c8g(yt = vi) = v>i Wost, vi \u2208 V \u222a UNK (7)\nwhere Wo \u2208 R(N+1)\u00d7ds and vi is the one-hot indicator vector for vi.\nCopy-Mode: The score for \u201ccopying\u201d\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 57
+                            }
+                        ],
+                        "text": "The attention mechanism was first introduced to Seq2Seq (Bahdanau et al., 2014) to release the burden of summarizing the entire source into a fixed-length vector as context."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 42,
+                                "start": 21
+                            }
+                        ],
+                        "text": "Encoder: Same as in (Bahdanau et al., 2014), a bi-directional RNN is used to transform the source sequence into a series of hidden states with equal length, with each hidden state ht corresponding to word xt."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 48
+                            }
+                        ],
+                        "text": "It is similar with the canonical RNN-decoder in (Bahdanau et al., 2014), with however the following important differences \u2022 Prediction: COPYNET predicts words based on a mixed probabilistic model of two modes, namely the generate-mode and the copymode, where the latter picks words from the source sequence (see Section 3."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 79
+                            }
+                        ],
+                        "text": "Generate-Mode: The same scoring function as in the generic RNN encoder-decoder (Bahdanau et al., 2014) is used, i."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11212020,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fa72afa9b2cbc8f0d7b05d52548906610ffbb9c5",
+            "isKey": true,
+            "numCitedBy": 19346,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition."
+            },
+            "slug": "Neural-Machine-Translation-by-Jointly-Learning-to-Bahdanau-Cho",
+            "title": {
+                "fragments": [],
+                "text": "Neural Machine Translation by Jointly Learning to Align and Translate"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and it is proposed to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1979489"
+                        ],
+                        "name": "Kyunghyun Cho",
+                        "slug": "Kyunghyun-Cho",
+                        "structuredName": {
+                            "firstName": "Kyunghyun",
+                            "lastName": "Cho",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kyunghyun Cho"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3158246"
+                        ],
+                        "name": "Bart van Merrienboer",
+                        "slug": "Bart-van-Merrienboer",
+                        "structuredName": {
+                            "firstName": "Bart",
+                            "lastName": "Merrienboer",
+                            "middleNames": [
+                                "van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bart van Merrienboer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1854385"
+                        ],
+                        "name": "\u00c7aglar G\u00fcl\u00e7ehre",
+                        "slug": "\u00c7aglar-G\u00fcl\u00e7ehre",
+                        "structuredName": {
+                            "firstName": "\u00c7aglar",
+                            "lastName": "G\u00fcl\u00e7ehre",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "\u00c7aglar G\u00fcl\u00e7ehre"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3335364"
+                        ],
+                        "name": "Dzmitry Bahdanau",
+                        "slug": "Dzmitry-Bahdanau",
+                        "structuredName": {
+                            "firstName": "Dzmitry",
+                            "lastName": "Bahdanau",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dzmitry Bahdanau"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2076086"
+                        ],
+                        "name": "Fethi Bougares",
+                        "slug": "Fethi-Bougares",
+                        "structuredName": {
+                            "firstName": "Fethi",
+                            "lastName": "Bougares",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fethi Bougares"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144518416"
+                        ],
+                        "name": "Holger Schwenk",
+                        "slug": "Holger-Schwenk",
+                        "structuredName": {
+                            "firstName": "Holger",
+                            "lastName": "Schwenk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Holger Schwenk"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 105,
+                                "start": 88
+                            }
+                        ],
+                        "text": "RNN-based Encoder-Decoder is successfully applied to real world Seq2Seq tasks, first by Cho et al. (2014) and Sutskever et al. (2014), and then by (Vinyals and Le, 2015; Vinyals et al., 2015a)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 161,
+                                "start": 145
+                            }
+                        ],
+                        "text": "\u2026(Seq2Seq) has achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al., 2015b), Text Summarization (Rush et al., 2015) and Dialogue Systems\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 48,
+                                "start": 45
+                            }
+                        ],
+                        "text": "For a fair comparison, we use bi-directional GRU for encoder and another GRU for decoder for all Seq2Seq models, with hidden layer size = 300 and word embedding dimension = 150."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 124,
+                                "start": 108
+                            }
+                        ],
+                        "text": "In practice it is found that gated RNN alternatives such as LSTM (Hochreiter and Schmidhuber, 1997) or GRU (Cho et al., 2014) often perform much better than vanilla ones."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 202,
+                                "start": 183
+                            }
+                        ],
+                        "text": "Recently, neural network-based sequence-tosequence learning (Seq2Seq) has achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al., 2015b), Text Summarization (Rush et al., 2015) and Dialogue Systems (Vinyals and Le, 2015)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 244,
+                                "start": 203
+                            }
+                        ],
+                        "text": "Recently, neural network-based sequence-tosequence learning (Seq2Seq) has achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5590763,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "isKey": true,
+            "numCitedBy": 15052,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we propose a novel neural network model called RNN Encoder\u2010 Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixedlength vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder\u2010Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases."
+            },
+            "slug": "Learning-Phrase-Representations-using-RNN-for-Cho-Merrienboer",
+            "title": {
+                "fragments": [],
+                "text": "Learning Phrase Representations using RNN Encoder\u2013Decoder for Statistical Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "Qualitatively, the proposed RNN Encoder\u2010Decoder model learns a semantically and syntactically meaningful representation of linguistic phrases."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1821711"
+                        ],
+                        "name": "Thang Luong",
+                        "slug": "Thang-Luong",
+                        "structuredName": {
+                            "firstName": "Thang",
+                            "lastName": "Luong",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thang Luong"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827616"
+                        ],
+                        "name": "Quoc V. Le",
+                        "slug": "Quoc-V.-Le",
+                        "structuredName": {
+                            "firstName": "Quoc",
+                            "lastName": "Le",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Quoc V. Le"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2563432"
+                        ],
+                        "name": "Wojciech Zaremba",
+                        "slug": "Wojciech-Zaremba",
+                        "structuredName": {
+                            "firstName": "Wojciech",
+                            "lastName": "Zaremba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wojciech Zaremba"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Luong et al. (2015) introduced a heuristics to postprocess the translated sentence using annotations on the source sentence."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "predict outside of the set of input sequence, while COPYNET can naturally combine generating and copying. COPYNET is also related to the effort to solve the OOV problem in neural machine translation. Luong et al. (2015) introduced a heuristics to postprocess the translated sentence using annotations on the source sentence. In contrast COPYNET addresses the OOV problem in a more systemic way with an end-to-end model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1245593,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1956c239b3552e030db1b78951f64781101125ed",
+            "isKey": false,
+            "numCitedBy": 679,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Neural Machine Translation (NMT) is a new approach to machine translation that has shown promising results that are comparable to traditional approaches. A significant weakness in conventional NMT systems is their inability to correctly translate very rare words: end-to-end NMTs tend to have relatively small vocabularies with a single unk symbol that represents every possible out-of-vocabulary (OOV) word. In this paper, we propose and implement an effective technique to address this problem. We train an NMT system on data that is augmented by the output of a word alignment algorithm, allowing the NMT system to emit, for each OOV word in the target sentence, the position of its corresponding word in the source sentence. This information is later utilized in a post-processing step that translates every OOV word using a dictionary. Our experiments on the WMT\u201914 English to French translation task show that this method provides a substantial improvement of up to 2.8 BLEU points over an equivalent NMT system that does not use this technique. With 37.5 BLEU points, our NMT system is the first to surpass the best result achieved on a WMT\u201914 contest task."
+            },
+            "slug": "Addressing-the-Rare-Word-Problem-in-Neural-Machine-Luong-Sutskever",
+            "title": {
+                "fragments": [],
+                "text": "Addressing the Rare Word Problem in Neural Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This paper proposes and implements an effective technique to address the problem of end-to-end neural machine translation's inability to correctly translate very rare words, and is the first to surpass the best result achieved on a WMT\u201914 contest task."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1854385"
+                        ],
+                        "name": "\u00c7aglar G\u00fcl\u00e7ehre",
+                        "slug": "\u00c7aglar-G\u00fcl\u00e7ehre",
+                        "structuredName": {
+                            "firstName": "\u00c7aglar",
+                            "lastName": "G\u00fcl\u00e7ehre",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "\u00c7aglar G\u00fcl\u00e7ehre"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3103594"
+                        ],
+                        "name": "Sungjin Ahn",
+                        "slug": "Sungjin-Ahn",
+                        "structuredName": {
+                            "firstName": "Sungjin",
+                            "lastName": "Ahn",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sungjin Ahn"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701451"
+                        ],
+                        "name": "Ramesh Nallapati",
+                        "slug": "Ramesh-Nallapati",
+                        "structuredName": {
+                            "firstName": "Ramesh",
+                            "lastName": "Nallapati",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ramesh Nallapati"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145218984"
+                        ],
+                        "name": "Bowen Zhou",
+                        "slug": "Bowen-Zhou",
+                        "structuredName": {
+                            "firstName": "Bowen",
+                            "lastName": "Zhou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bowen Zhou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 22,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Gulcehre et al. (2016) proposed a pointing method to handle the OOV words for summarization and MT."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 969555,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "aa5b35dcf8b024f5352db73cc3944e8fad4f3793",
+            "isKey": false,
+            "numCitedBy": 450,
+            "numCiting": 65,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The problem of rare and unknown words is an important issue that can potentially influence the performance of many NLP systems, including both the traditional count-based and the deep learning models. We propose a novel way to deal with the rare and unseen words for the neural network models using attention. Our model uses two softmax layers in order to predict the next word in conditional language models: one predicts the location of a word in the source sentence, and the other predicts a word in the shortlist vocabulary. At each time-step, the decision of which softmax layer to use choose adaptively made by an MLP which is conditioned on the context.~We motivate our work from a psychological evidence that humans naturally have a tendency to point towards objects in the context or the environment when the name of an object is not known.~We observe improvements on two tasks, neural machine translation on the Europarl English to French parallel corpora and text summarization on the Gigaword dataset using our proposed model."
+            },
+            "slug": "Pointing-the-Unknown-Words-G\u00fcl\u00e7ehre-Ahn",
+            "title": {
+                "fragments": [],
+                "text": "Pointing the Unknown Words"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A novel way to deal with the rare and unseen words for the neural network models using attention is proposed using attention, which uses two softmax layers in order to predict the next word in conditional language models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827616"
+                        ],
+                        "name": "Quoc V. Le",
+                        "slug": "Quoc-V.-Le",
+                        "structuredName": {
+                            "firstName": "Quoc",
+                            "lastName": "Le",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Quoc V. Le"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 75
+                            }
+                        ],
+                        "text": "In this experiment we follow the work on neural dialogue model proposed in (Shang et al., 2015; Vinyals and Le, 2015; Sordoni et al., 2015), and test COPYNET on single-turn dialogue."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12300158,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "85315b64a4c73cb86f156ef5b0a085d6ebc8a65d",
+            "isKey": false,
+            "numCitedBy": 1518,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Conversational modeling is an important task in natural language understanding and machine intelligence. Although previous approaches exist, they are often restricted to specific domains (e.g., booking an airline ticket) and require hand-crafted rules. In this paper, we present a simple approach for this task which uses the recently proposed sequence to sequence framework. Our model converses by predicting the next sentence given the previous sentence or sentences in a conversation. The strength of our model is that it can be trained end-to-end and thus requires much fewer hand-crafted rules. We find that this straightforward model can generate simple conversations given a large conversational training dataset. Our preliminary results suggest that, despite optimizing the wrong objective function, the model is able to converse well. It is able extract knowledge from both a domain specific dataset, and from a large, noisy, and general domain dataset of movie subtitles. On a domain-specific IT helpdesk dataset, the model can find a solution to a technical problem via conversations. On a noisy open-domain movie transcript dataset, the model can perform simple forms of common sense reasoning. As expected, we also find that the lack of consistency is a common failure mode of our model."
+            },
+            "slug": "A-Neural-Conversational-Model-Vinyals-Le",
+            "title": {
+                "fragments": [],
+                "text": "A Neural Conversational Model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A simple approach to conversational modeling which uses the recently proposed sequence to sequence framework, and is able to extract knowledge from both a domain specific dataset, and from a large, noisy, and general domain dataset of movie subtitles."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3308557"
+                        ],
+                        "name": "S. Hochreiter",
+                        "slug": "S.-Hochreiter",
+                        "structuredName": {
+                            "firstName": "Sepp",
+                            "lastName": "Hochreiter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Hochreiter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 60
+                            }
+                        ],
+                        "text": "In practice it is found that gated RNN alternatives such as LSTM (Hochreiter and Schmidhuber, 1997) or GRU (Cho et al., 2014) often perform much better than vanilla ones."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 65
+                            }
+                        ],
+                        "text": "In practice it is found that gated RNN alternatives such as LSTM (Hochreiter and Schmidhuber, 1997) or GRU (Cho et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1915014,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "44d2abe2175df8153f465f6c39b68b76a0d40ab9",
+            "isKey": false,
+            "numCitedBy": 51707,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms."
+            },
+            "slug": "Long-Short-Term-Memory-Hochreiter-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "Long Short-Term Memory"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A novel, efficient, gradient based method called long short-term memory (LSTM) is introduced, which can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50812138"
+                        ],
+                        "name": "Lifeng Shang",
+                        "slug": "Lifeng-Shang",
+                        "structuredName": {
+                            "firstName": "Lifeng",
+                            "lastName": "Shang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lifeng Shang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "11955007"
+                        ],
+                        "name": "Zhengdong Lu",
+                        "slug": "Zhengdong-Lu",
+                        "structuredName": {
+                            "firstName": "Zhengdong",
+                            "lastName": "Lu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhengdong Lu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49404233"
+                        ],
+                        "name": "Hang Li",
+                        "slug": "Hang-Li",
+                        "structuredName": {
+                            "firstName": "Hang",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hang Li"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 193,
+                                "start": 154
+                            }
+                        ],
+                        "text": ", 2014) to Seq2Seq, first proposed for automatic alignment in machine translation, has led to significant improvement on the performance of various tasks (Shang et al., 2015; Rush et al., 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 94,
+                                "start": 76
+                            }
+                        ],
+                        "text": "In this experiment we follow the work on neural dialogue model proposed in (Shang et al., 2015; Vinyals and Le, 2015; Sordoni et al., 2015), and test COPYNET on single-turn dialogue."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 220,
+                                "start": 202
+                            }
+                        ],
+                        "text": "Adding the attention mechanism (Bahdanau et al., 2014) to Seq2Seq, first proposed for automatic alignment in machine translation, has led to significant improvement on the performance of various tasks (Shang et al., 2015; Rush et al., 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7356547,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ba49d3823d43515e447296ca4e1e55d3f1fd8c4d",
+            "isKey": false,
+            "numCitedBy": 997,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose Neural Responding Machine (NRM), a neural network-based response generator for Short-Text Conversation. NRM takes the general encoder-decoder framework: it formalizes the generation of response as a decoding process based on the latent representation of the input text, while both encoding and decoding are realized with recurrent neural networks (RNN). The NRM is trained with a large amount of one-round conversation data collected from a microblogging service. Empirical study shows that NRM can generate grammatically correct and content-wise appropriate responses to over 75% of the input text, outperforming state-of-the-arts in the same setting, including retrieval-based and SMT-based models."
+            },
+            "slug": "Neural-Responding-Machine-for-Short-Text-Shang-Lu",
+            "title": {
+                "fragments": [],
+                "text": "Neural Responding Machine for Short-Text Conversation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Empirical study shows that NRM can generate grammatically correct and content-wise appropriate responses to over 75% of the input text, outperforming state-of-the-arts in the same setting, including retrieval-based and SMT-based models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40527594"
+                        ],
+                        "name": "Lukasz Kaiser",
+                        "slug": "Lukasz-Kaiser",
+                        "structuredName": {
+                            "firstName": "Lukasz",
+                            "lastName": "Kaiser",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lukasz Kaiser"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2060101052"
+                        ],
+                        "name": "Terry Koo",
+                        "slug": "Terry-Koo",
+                        "structuredName": {
+                            "firstName": "Terry",
+                            "lastName": "Koo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Terry Koo"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1754497"
+                        ],
+                        "name": "Slav Petrov",
+                        "slug": "Slav-Petrov",
+                        "structuredName": {
+                            "firstName": "Slav",
+                            "lastName": "Petrov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Slav Petrov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 191,
+                                "start": 170
+                            }
+                        ],
+                        "text": "RNN-based Encoder-Decoder is successfully applied to real world Seq2Seq tasks, first by Cho et al. (2014) and Sutskever et al. (2014), and then by (Vinyals and Le, 2015; Vinyals et al., 2015a)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 213,
+                                "start": 192
+                            }
+                        ],
+                        "text": "\u2026achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al., 2015b), Text Summarization (Rush et al., 2015) and Dialogue Systems (Vinyals and Le, 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 57
+                            }
+                        ],
+                        "text": "In addition to the difference with ours in application, (Vinyals et al., 2015a) cannot predict outside of the set of input sequence, while COPYNET can naturally combine generating and copying."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 263,
+                                "start": 246
+                            }
+                        ],
+                        "text": "Recently, neural network-based sequence-tosequence learning (Seq2Seq) has achieved remarkable success in various natural language processing (NLP) tasks, including but not limited to Machine Translation (Cho et al., 2014; Bahdanau et al., 2014), Syntactic Parsing (Vinyals et al., 2015b), Text Summarization (Rush et al., 2015) and Dialogue Systems (Vinyals and Le, 2015)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 27
+                            }
+                        ],
+                        "text": ", 2014), Syntactic Parsing (Vinyals et al., 2015b), Text Summarization (Rush et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 71
+                            }
+                        ],
+                        "text": "Our work is partially inspired by the recent work of Pointer Networks (Vinyals et al., 2015a), in which a pointer mechanism (quite similar with the proposed copying mechanism) is used to predict the output sequence directly from the input."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14223,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "47570e7f63e296f224a0e7f9a0d08b0de3cbaf40",
+            "isKey": true,
+            "numCitedBy": 845,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Syntactic constituency parsing is a fundamental problem in natural language processing and has been the subject of intensive research and engineering for decades. As a result, the most accurate parsers are domain specific, complex, and inefficient. In this paper we show that the domain agnostic attention-enhanced sequence-to-sequence model achieves state-of-the-art results on the most widely used syntactic constituency parsing dataset, when trained on a large synthetic corpus that was annotated using existing parsers. It also matches the performance of standard parsers when trained only on a small human-annotated dataset, which shows that this model is highly data-efficient, in contrast to sequence-to-sequence models without the attention mechanism. Our parser is also fast, processing over a hundred sentences per second with an unoptimized CPU implementation."
+            },
+            "slug": "Grammar-as-a-Foreign-Language-Vinyals-Kaiser",
+            "title": {
+                "fragments": [],
+                "text": "Grammar as a Foreign Language"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "The domain agnostic attention-enhanced sequence-to-sequence model achieves state-of-the-art results on the most widely used syntactic constituency parsing dataset, when trained on a large synthetic corpus that was annotated using existing parsers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2531268"
+                        ],
+                        "name": "Alexander M. Rush",
+                        "slug": "Alexander-M.-Rush",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Rush",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexander M. Rush"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3295092"
+                        ],
+                        "name": "S. Chopra",
+                        "slug": "S.-Chopra",
+                        "structuredName": {
+                            "firstName": "Sumit",
+                            "lastName": "Chopra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Chopra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145183709"
+                        ],
+                        "name": "J. Weston",
+                        "slug": "J.-Weston",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Weston",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weston"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1918428,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5082a1a13daea5c7026706738f8528391a1e6d59",
+            "isKey": false,
+            "numCitedBy": 2108,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Summarization based on text extraction is inherently limited, but generation-style abstractive methods have proven challenging to build. In this work, we propose a fully data-driven approach to abstractive sentence summarization. Our method utilizes a local attention-based model that generates each word of the summary conditioned on the input sentence. While the model is structurally simple, it can easily be trained end-to-end and scales to a large amount of training data. The model shows significant performance gains on the DUC-2004 shared task compared with several strong baselines."
+            },
+            "slug": "A-Neural-Attention-Model-for-Abstractive-Sentence-Rush-Chopra",
+            "title": {
+                "fragments": [],
+                "text": "A Neural Attention Model for Abstractive Sentence Summarization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This work proposes a fully data-driven approach to abstractive sentence summarization by utilizing a local attention-based model that generates each word of the summary conditioned on the input sentence."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33968873"
+                        ],
+                        "name": "Baotian Hu",
+                        "slug": "Baotian-Hu",
+                        "structuredName": {
+                            "firstName": "Baotian",
+                            "lastName": "Hu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Baotian Hu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144159781"
+                        ],
+                        "name": "Qingcai Chen",
+                        "slug": "Qingcai-Chen",
+                        "structuredName": {
+                            "firstName": "Qingcai",
+                            "lastName": "Chen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Qingcai Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3184623"
+                        ],
+                        "name": "Fangze Zhu",
+                        "slug": "Fangze-Zhu",
+                        "structuredName": {
+                            "firstName": "Fangze",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fangze Zhu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 85
+                            }
+                        ],
+                        "text": "It has been recently formulated as a Seq2Seq learning problem in (Rush et al., 2015; Hu et al., 2015), which essentially gives abstractive summarization since the summary is generated based on a representation of the document."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Hu et al. (2015) reports that the performance of a word-based model is inferior to a character-based\n1www.sina.com 2https://pypi.python.org/pypi/jieba\none."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 165,
+                                "start": 148
+                            }
+                        ],
+                        "text": ", 2015), we evaluate the test performance with the commonly used ROUGE-1, ROUGE-2 and ROUGE-L (Lin, 2004), and compare it against the two models in (Hu et al., 2015), which are essentially canonical Encoder-Decoder and its variant with attention."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 26
+                            }
+                        ],
+                        "text": "Following the setting of (Hu et al., 2015) we use Part I as the training set and and the subset of Part III scored from 3 to 5 as the testing set."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 135,
+                                "start": 120
+                            }
+                        ],
+                        "text": "We set the vocabulary size to 3,000 (+C) and 10,000 (+W) respectively, which are much smaller than those for models in (Hu et al., 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 11
+                            }
+                        ],
+                        "text": "Following (Hu et al., 2015), we evaluate the test performance with the commonly used ROUGE-1, ROUGE-2 and ROUGE-L (Lin, 2004), and compare it against the two models in (Hu et al., 2015), which are essentially canonical Encoder-Decoder and its variant with attention."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 120,
+                                "start": 104
+                            }
+                        ],
+                        "text": "One possible explanation is that a wordbased model, even with a much larger vocabulary (50,000 words in Hu et al. (2015)), still has a large proportion of OOVs due to the large number of entity names in the summary data and the mistakes in word segmentation."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 27,
+                                "start": 10
+                            }
+                        ],
+                        "text": "Following (Hu et al., 2015), we evaluate the test performance with the commonly used ROUGE-1, ROUGE-2 and ROUGE-L (Lin, 2004), and compare it against the two models in (Hu et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 72
+                            }
+                        ],
+                        "text": "Dataset: We evaluate our model on the recently published LCSTS dataset (Hu et al., 2015), a large scale dataset for short text summarization."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11597846,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b122a828f5fee3c6afc54e70f41b00184d6383fc",
+            "isKey": true,
+            "numCitedBy": 204,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Automatic text summarization is widely regarded as the highly difficult problem, partially because of the lack of large text summarization data set. Due to the great challenge of constructing the large scale summaries for full text, in this paper, we introduce a large corpus of Chinese short text summarization dataset constructed from the Chinese microblogging website Sina Weibo, which is released to the public {this http URL}. This corpus consists of over 2 million real Chinese short texts with short summaries given by the author of each text. We also manually tagged the relevance of 10,666 short summaries with their corresponding short texts. Based on the corpus, we introduce recurrent neural network for the summary generation and achieve promising results, which not only shows the usefulness of the proposed corpus for short text summarization research, but also provides a baseline for further research on this topic."
+            },
+            "slug": "LCSTS:-A-Large-Scale-Chinese-Short-Text-Dataset-Hu-Chen",
+            "title": {
+                "fragments": [],
+                "text": "LCSTS: A Large Scale Chinese Short Text Summarization Dataset"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A large corpus of Chinese short text summarization dataset constructed from the Chinese microblogging website Sina Weibo is introduced and recurrent neural network is introduced for the summary generation and promising results are achieved."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2006889"
+                        ],
+                        "name": "Karol Kurach",
+                        "slug": "Karol-Kurach",
+                        "structuredName": {
+                            "firstName": "Karol",
+                            "lastName": "Kurach",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Karol Kurach"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2206490"
+                        ],
+                        "name": "Marcin Andrychowicz",
+                        "slug": "Marcin-Andrychowicz",
+                        "structuredName": {
+                            "firstName": "Marcin",
+                            "lastName": "Andrychowicz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcin Andrychowicz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 115,
+                                "start": 96
+                            }
+                        ],
+                        "text": "Unlike the explicit design for hybrid addressing in Neural Turing Machine (Graves et al., 2014; Kurach et al., 2015), COPYNET is more subtle: it provides the archi-\ntecture that can facilitate some particular locationbased addressing and lets the model figure out the details from the training data\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 116,
+                                "start": 74
+                            }
+                        ],
+                        "text": "Unlike the explicit design for hybrid addressing in Neural Turing Machine (Graves et al., 2014; Kurach et al., 2015), COPYNET is more subtle: it provides the archi-"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 52
+                            }
+                        ],
+                        "text": "Unlike the explicit design for hybrid addressing in Neural Turing Machine (Graves et al., 2014; Kurach et al., 2015), COPYNET is more subtle: it provides the archi-\ntecture that can facilitate some particular locationbased addressing and lets the model figure out the details from the training data for specific tasks."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 1174466,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a2499dd426c46c645ee805d7594b6687547c72d4",
+            "isKey": false,
+            "numCitedBy": 134,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract: In this paper, we propose and investigate a new neural network architecture called Neural Random Access Machine. It can manipulate and dereference pointers to an external variable-size random-access memory. The model is trained from pure input-output examples using backpropagation. \nWe evaluate the new model on a number of simple algorithmic tasks whose solutions require pointer manipulation and dereferencing. Our results show that the proposed model can learn to solve algorithmic tasks of such type and is capable of operating on simple data structures like linked-lists and binary trees. For easier tasks, the learned solutions generalize to sequences of arbitrary length. Moreover, memory access during inference can be done in a constant time under some assumptions."
+            },
+            "slug": "Neural-Random-Access-Machines-Kurach-Andrychowicz",
+            "title": {
+                "fragments": [],
+                "text": "Neural Random Access Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The proposed model can learn to solve algorithmic tasks of such type and is capable of operating on simple data structures like linked-lists and binary trees and generalize to sequences of arbitrary length."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ERCIM News"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1941442"
+                        ],
+                        "name": "Jianpeng Cheng",
+                        "slug": "Jianpeng-Cheng",
+                        "structuredName": {
+                            "firstName": "Jianpeng",
+                            "lastName": "Cheng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jianpeng Cheng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1747893"
+                        ],
+                        "name": "Mirella Lapata",
+                        "slug": "Mirella-Lapata",
+                        "structuredName": {
+                            "firstName": "Mirella",
+                            "lastName": "Lapata",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mirella Lapata"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "cation tasks, where shortcuts are built between layers for the direct carrying of information. Recently, we noticed some parallel efforts towards modeling mechanisms similar to or related to copying. Cheng and Lapata (2016) devised a neural summarization model with the ability to extract words/sentences from the source. Gulcehre et al. (2016) proposed a pointing method to handle the OOV words for summarization and MT. I"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1499080,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "29a294eaec7b485245aa21d994f7300f6b5da8fc",
+            "isKey": false,
+            "numCitedBy": 603,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Traditional approaches to extractive summarization rely heavily on humanengineered features. In this work we propose a data-driven approach based on neural networks and continuous sentence features. We develop a general framework for single-document summarization composed of a hierarchical document encoder and an attention-based extractor. This architecture allows us to develop different classes of summarization models which can extract sentences or words. We train our models on large scale corpora containing hundreds of thousands of document-summary pairs 1 . Experimental results on two summarization datasets demonstrate that our models obtain results comparable to the state of the art without any access to linguistic annotation."
+            },
+            "slug": "Neural-Summarization-by-Extracting-Sentences-and-Cheng-Lapata",
+            "title": {
+                "fragments": [],
+                "text": "Neural Summarization by Extracting Sentences and Words"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work develops a general framework for single-document summarization composed of a hierarchical document encoder and an attention-based extractor that allows for different classes of summarization models which can extract sentences or words."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39353098"
+                        ],
+                        "name": "Kaiming He",
+                        "slug": "Kaiming-He",
+                        "structuredName": {
+                            "firstName": "Kaiming",
+                            "lastName": "He",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kaiming He"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1771551"
+                        ],
+                        "name": "X. Zhang",
+                        "slug": "X.-Zhang",
+                        "structuredName": {
+                            "firstName": "X.",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "X. Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3080683"
+                        ],
+                        "name": "Shaoqing Ren",
+                        "slug": "Shaoqing-Ren",
+                        "structuredName": {
+                            "firstName": "Shaoqing",
+                            "lastName": "Ren",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Shaoqing Ren"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [],
+                        "name": "Jian Sun",
+                        "slug": "Jian-Sun",
+                        "structuredName": {
+                            "firstName": "Jian",
+                            "lastName": "Sun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jian Sun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 95
+                            }
+                        ],
+                        "text": "Similar ideas are proposed for training very deep neural networks in (Srivastava et al., 2015; He et al., 2015) for classification tasks, where shortcuts are built between layers for the direct carrying of information."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206594692,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2c03df8b48bf3fa39054345bafabfeff15bfd11d",
+            "isKey": false,
+            "numCitedBy": 95380,
+            "numCiting": 61,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Deeper neural networks are more difficult to train. We present a residual learning framework to ease the training of networks that are substantially deeper than those used previously. We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers - 8\u00d7 deeper than VGG nets [40] but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers. The depth of representations is of central importance for many visual recognition tasks. Solely due to our extremely deep representations, we obtain a 28% relative improvement on the COCO object detection dataset. Deep residual nets are foundations of our submissions to ILSVRC & COCO 2015 competitions1, where we also won the 1st places on the tasks of ImageNet detection, ImageNet localization, COCO detection, and COCO segmentation."
+            },
+            "slug": "Deep-Residual-Learning-for-Image-Recognition-He-Zhang",
+            "title": {
+                "fragments": [],
+                "text": "Deep Residual Learning for Image Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 63,
+                "text": "This work presents a residual learning framework to ease the training of networks that are substantially deeper than those used previously, and provides comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1781574"
+                        ],
+                        "name": "Chin-Yew Lin",
+                        "slug": "Chin-Yew-Lin",
+                        "structuredName": {
+                            "firstName": "Chin-Yew",
+                            "lastName": "Lin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chin-Yew Lin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 105,
+                                "start": 94
+                            }
+                        ],
+                        "text": ", 2015), we evaluate the test performance with the commonly used ROUGE-1, ROUGE-2 and ROUGE-L (Lin, 2004), and compare it against the two models in (Hu et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 106
+                            }
+                        ],
+                        "text": "Following (Hu et al., 2015), we evaluate the test performance with the commonly used ROUGE-1, ROUGE-2 and ROUGE-L (Lin, 2004), and compare it against the two models in (Hu et al., 2015), which are essentially canonical Encoder-Decoder and its variant with attention."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 964287,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "60b05f32c32519a809f21642ef1eb3eaf3848008",
+            "isKey": false,
+            "numCitedBy": 6943,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "ROUGE stands for Recall-Oriented Understudy for Gisting Evaluation. It includes measures to automatically determine the quality of a summary by comparing it to other (ideal) summaries created by humans. The measures count the number of overlapping units such as n-gram, word sequences, and word pairs between the computer-generated summary to be evaluated and the ideal summaries created by humans. This paper introduces four different ROUGE measures: ROUGE-N, ROUGE-L, ROUGE-W, and ROUGE-S included in the ROUGE summarization evaluation package and their evaluations. Three of them have been used in the Document Understanding Conference (DUC) 2004, a large-scale summarization evaluation sponsored by NIST."
+            },
+            "slug": "ROUGE:-A-Package-for-Automatic-Evaluation-of-Lin",
+            "title": {
+                "fragments": [],
+                "text": "ROUGE: A Package for Automatic Evaluation of Summaries"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Four different RouGE measures are introduced: ROUGE-N, ROUge-L, R OUGE-W, and ROUAGE-S included in the Rouge summarization evaluation package and their evaluations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL 2004"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2589625"
+                        ],
+                        "name": "Shiqi Shen",
+                        "slug": "Shiqi-Shen",
+                        "structuredName": {
+                            "firstName": "Shiqi",
+                            "lastName": "Shen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Shiqi Shen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145161801"
+                        ],
+                        "name": "Yong Cheng",
+                        "slug": "Yong-Cheng",
+                        "structuredName": {
+                            "firstName": "Yong",
+                            "lastName": "Cheng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yong Cheng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37985966"
+                        ],
+                        "name": "Zhongjun He",
+                        "slug": "Zhongjun-He",
+                        "structuredName": {
+                            "firstName": "Zhongjun",
+                            "lastName": "He",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhongjun He"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48692318"
+                        ],
+                        "name": "W. He",
+                        "slug": "W.-He",
+                        "structuredName": {
+                            "firstName": "W.",
+                            "lastName": "He",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. He"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40354707"
+                        ],
+                        "name": "Hua Wu",
+                        "slug": "Hua-Wu",
+                        "structuredName": {
+                            "firstName": "Hua",
+                            "lastName": "Wu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hua Wu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753344"
+                        ],
+                        "name": "Maosong Sun",
+                        "slug": "Maosong-Sun",
+                        "structuredName": {
+                            "firstName": "Maosong",
+                            "lastName": "Sun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Maosong Sun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144090485"
+                        ],
+                        "name": "Yang Liu",
+                        "slug": "Yang-Liu",
+                        "structuredName": {
+                            "firstName": "Yang",
+                            "lastName": "Liu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yang Liu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 122
+                            }
+                        ],
+                        "text": "Seq2Seq Learning can be expressed in a probabilistic view as maximizing the likelihood (or some other evaluation metrics (Shen et al., 2015)) of observing the output (target) sequence given an input (source) sequence."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3913537,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9f2a8e923965b23c11066a2ead79658208f1fae1",
+            "isKey": false,
+            "numCitedBy": 376,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose minimum risk training for end-to-end neural machine translation. Unlike conventional maximum likelihood estimation, minimum risk training is capable of optimizing model parameters directly with respect to arbitrary evaluation metrics, which are not necessarily differentiable. Experiments show that our approach achieves significant improvements over maximum likelihood estimation on a state-of-the-art neural machine translation system across various languages pairs. Transparent to architectures, our approach can be applied to more neural networks and potentially benefit more NLP tasks."
+            },
+            "slug": "Minimum-Risk-Training-for-Neural-Machine-Shen-Cheng",
+            "title": {
+                "fragments": [],
+                "text": "Minimum Risk Training for Neural Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 53,
+                "text": "Experiments show that the proposed minimum risk training approach achieves significant improvements over maximum likelihood estimation on a state-of-the-art neural machine translation system across various languages pairs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2041695"
+                        ],
+                        "name": "Alessandro Sordoni",
+                        "slug": "Alessandro-Sordoni",
+                        "structuredName": {
+                            "firstName": "Alessandro",
+                            "lastName": "Sordoni",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alessandro Sordoni"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1947267"
+                        ],
+                        "name": "Michel Galley",
+                        "slug": "Michel-Galley",
+                        "structuredName": {
+                            "firstName": "Michel",
+                            "lastName": "Galley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michel Galley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2325985"
+                        ],
+                        "name": "Michael Auli",
+                        "slug": "Michael-Auli",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Auli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael Auli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3125776"
+                        ],
+                        "name": "Chris Brockett",
+                        "slug": "Chris-Brockett",
+                        "structuredName": {
+                            "firstName": "Chris",
+                            "lastName": "Brockett",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chris Brockett"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40608686"
+                        ],
+                        "name": "Yangfeng Ji",
+                        "slug": "Yangfeng-Ji",
+                        "structuredName": {
+                            "firstName": "Yangfeng",
+                            "lastName": "Ji",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yangfeng Ji"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49501003"
+                        ],
+                        "name": "Margaret Mitchell",
+                        "slug": "Margaret-Mitchell",
+                        "structuredName": {
+                            "firstName": "Margaret",
+                            "lastName": "Mitchell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Margaret Mitchell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143619007"
+                        ],
+                        "name": "Jian-Yun Nie",
+                        "slug": "Jian-Yun-Nie",
+                        "structuredName": {
+                            "firstName": "Jian-Yun",
+                            "lastName": "Nie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jian-Yun Nie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1800422"
+                        ],
+                        "name": "Jianfeng Gao",
+                        "slug": "Jianfeng-Gao",
+                        "structuredName": {
+                            "firstName": "Jianfeng",
+                            "lastName": "Gao",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jianfeng Gao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "83415753"
+                        ],
+                        "name": "W. Dolan",
+                        "slug": "W.-Dolan",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Dolan",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Dolan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 118
+                            }
+                        ],
+                        "text": "In this experiment we follow the work on neural dialogue model proposed in (Shang et al., 2015; Vinyals and Le, 2015; Sordoni et al., 2015), and test COPYNET on single-turn dialogue."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 94285,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5247a6e3a60ff0381355e66bfc313bf27512ae0c",
+            "isKey": false,
+            "numCitedBy": 814,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a novel response generation system that can be trained end to end on large quantities of unstructured Twitter conversations. A neural network architecture is used to address sparsity issues that arise when integrating contextual information into classic statistical models, allowing the system to take into account previous dialog utterances. Our dynamic-context generative models show consistent gains over both context-sensitive and non-context-sensitive Machine Translation and Information Retrieval baselines."
+            },
+            "slug": "A-Neural-Network-Approach-to-Context-Sensitive-of-Sordoni-Galley",
+            "title": {
+                "fragments": [],
+                "text": "A Neural Network Approach to Context-Sensitive Generation of Conversational Responses"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A neural network architecture is used to address sparsity issues that arise when integrating contextual information into classic statistical models, allowing the system to take into account previous dialog utterances."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NAACL"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2100612"
+                        ],
+                        "name": "R. Srivastava",
+                        "slug": "R.-Srivastava",
+                        "structuredName": {
+                            "firstName": "Rupesh",
+                            "lastName": "Srivastava",
+                            "middleNames": [
+                                "Kumar"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Srivastava"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3035541"
+                        ],
+                        "name": "Klaus Greff",
+                        "slug": "Klaus-Greff",
+                        "structuredName": {
+                            "firstName": "Klaus",
+                            "lastName": "Greff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Klaus Greff"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 93,
+                                "start": 70
+                            }
+                        ],
+                        "text": "Similar ideas are proposed for training very deep neural networks in (Srivastava et al., 2015; He et al., 2015) for classification tasks, where shortcuts are built between layers for the direct carrying of information."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14786967,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e0945081b5b87187a53d4329cf77cd8bff635795",
+            "isKey": false,
+            "numCitedBy": 1152,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "There is plenty of theoretical and empirical evidence that depth of neural networks is a crucial ingredient for their success. However, network training becomes more difficult with increasing depth and training of very deep networks remains an open problem. In this extended abstract, we introduce a new architecture designed to ease gradient-based training of very deep networks. We refer to networks with this architecture as highway networks, since they allow unimpeded information flow across several layers on information highways. The architecture is characterized by the use of gating units which learn to regulate the flow of information through a network. Highway networks with hundreds of layers can be trained directly using stochastic gradient descent and with a variety of activation functions, opening up the possibility of studying extremely deep and efficient architectures."
+            },
+            "slug": "Highway-Networks-Srivastava-Greff",
+            "title": {
+                "fragments": [],
+                "text": "Highway Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A new architecture designed to ease gradient-based training of very deep networks, characterized by the use of gating units which learn to regulate the flow of information through a network is introduced."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753223"
+                        ],
+                        "name": "A. Graves",
+                        "slug": "A.-Graves",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Graves",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Graves"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "89504302"
+                        ],
+                        "name": "Greg Wayne",
+                        "slug": "Greg-Wayne",
+                        "structuredName": {
+                            "firstName": "Greg",
+                            "lastName": "Wayne",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Greg Wayne"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1841008"
+                        ],
+                        "name": "Ivo Danihelka",
+                        "slug": "Ivo-Danihelka",
+                        "structuredName": {
+                            "firstName": "Ivo",
+                            "lastName": "Danihelka",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ivo Danihelka"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 94,
+                                "start": 75
+                            }
+                        ],
+                        "text": "Unlike the explicit design for hybrid addressing in Neural Turing Machine (Graves et al., 2014; Kurach et al., 2015), COPYNET is more subtle: it provides the archi-\ntecture that can facilitate some particular locationbased addressing and lets the model figure out the details from the training data\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 116,
+                                "start": 74
+                            }
+                        ],
+                        "text": "Unlike the explicit design for hybrid addressing in Neural Turing Machine (Graves et al., 2014; Kurach et al., 2015), COPYNET is more subtle: it provides the archi-"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 52
+                            }
+                        ],
+                        "text": "Unlike the explicit design for hybrid addressing in Neural Turing Machine (Graves et al., 2014; Kurach et al., 2015), COPYNET is more subtle: it provides the archi-\ntecture that can facilitate some particular locationbased addressing and lets the model figure out the details from the training data for specific tasks."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 15299054,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c3823aacea60bc1f2cabb9283144690a3d015db5",
+            "isKey": false,
+            "numCitedBy": 1634,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We extend the capabilities of neural networks by coupling them to external memory resources, which they can interact with by attentional processes. The combined system is analogous to a Turing Machine or Von Neumann architecture but is differentiable end-toend, allowing it to be efficiently trained with gradient descent. Preliminary results demonstrate that Neural Turing Machines can infer simple algorithms such as copying, sorting, and associative recall from input and output examples."
+            },
+            "slug": "Neural-Turing-Machines-Graves-Wayne",
+            "title": {
+                "fragments": [],
+                "text": "Neural Turing Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A combined system is analogous to a Turing Machine or Von Neumann architecture but is differentiable end-toend, allowing it to be efficiently trained with gradient descent."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2583077"
+                        ],
+                        "name": "P. Nurmi",
+                        "slug": "P.-Nurmi",
+                        "structuredName": {
+                            "firstName": "Petteri",
+                            "lastName": "Nurmi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Nurmi"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 94,
+                                "start": 65
+                            }
+                        ],
+                        "text": "(4) different from the canonical definition of the mixture model (McLachlan and Basford, 1988)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5320375,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "69344e15d9b0721ceb7f195bfa8b3ce0369395c4",
+            "isKey": false,
+            "numCitedBy": 236,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Mixture models are an interesting and flexible model family. The different uses of mixture models include for example generative component models, clustering and density estimation. Moreover, mixture models have been successfully used in various kinds of tasks such as modelling failure rate data, clustering teaching behaviour and in general for modelling large heterogeneous populations. The first step, when using mixture models, is to define a suitable model for the data. Next the parameter of the model must be estimated from data. This phase is called parameter estimation or parameter learning. Another important task is finding the number of subpopulations that the data supports and this problem is called model learning. In this paper we will discuss both issues and cover the basic methods. We also introduce some modern methods and give numerous examples."
+            },
+            "slug": "Mixture-Models-Nurmi",
+            "title": {
+                "fragments": [],
+                "text": "Mixture Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper discusses both issues and cover the basic methods of mixture models, and introduces some modern methods and gives numerous examples."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690163"
+                        ],
+                        "name": "G. McLachlan",
+                        "slug": "G.-McLachlan",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "McLachlan",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. McLachlan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2410937"
+                        ],
+                        "name": "K. Basford",
+                        "slug": "K.-Basford",
+                        "structuredName": {
+                            "firstName": "Kaye",
+                            "lastName": "Basford",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Basford"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 119405289,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "034a70c9fbe8e0075f5a5b3a7b06bdf7d3cab4a1",
+            "isKey": false,
+            "numCitedBy": 2074,
+            "numCiting": 1,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "General Introduction Introduction History of Mixture Models Background to the General Classification Problem Mixture Likelihood Approach to Clustering Identifiability Likelihood Estimation for Mixture Models via EM Algorithm Start Values for EMm Algorithm Properties of Likelihood Estimators for Mixture Models Information Matrix for Mixture Models Tests for the Number of Components in a Mixture Partial Classification of the Data Classification Likelihood Approach to Clustering Mixture Models with Normal Components Likelihood Estimation for a Mixture of Normal Distribution Normal Homoscedastic Components Asymptotic Relative Efficiency of the Mixture Likelihood Approach Expected and Observed Information Matrices Assessment of Normality for Component Distributions: Partially Classified Data Assessment of Typicality: Partially Classified Data Assessment of Normality and Typicality: Unclassified Data Robust Estimation for Mixture Models Applications of Mixture Models to Two-Way Data Sets Introduction Clustering of Hemophilia Data Outliers in Darwin's Data Clustering of Rare Events Latent Classes of Teaching Styles Estimation of Mixing Proportions Introduction Likelihood Estimation Discriminant Analysis Estimator Asymptotic Relative Efficiency of Discriminant Analysis Estimator Moment Estimators Minimum Distance Estimators Case Study Homogeneity of Mixing Proportions Assessing the Performance of the Mixture Likelihood Approach to Clustering Introduction Estimators of the Allocation Rates Bias Correction of the Estimated Allocation Rates Estimated Allocation Rates of Hemophilia Data Estimated Allocation Rates for Simulated Data Other Methods of Bias Corrections Bias Correction for Estimated Posterior Probabilities Partitioning of Treatment Means in ANOVA Introduction Clustering of Treatment Means by the Mixture Likelihood Approach Fitting of a Normal Mixture Model to a RCBD with Random Block Effects Some Other Methods of Partitioning Treatment Means Example 1 Example 2 Example 3 Example 4 Mixture Likelihood Approach to the Clustering of Three-Way Data Introduction Fitting a Normal Mixture Model to Three-Way Data Clustering of Soybean Data Multidimensional Scaling Approach to the Analysis of Soybean Data References Appendix"
+            },
+            "slug": "Mixture-models-:-inference-and-applications-to-McLachlan-Basford",
+            "title": {
+                "fragments": [],
+                "text": "Mixture models : inference and applications to clustering"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "The Mixture Likelihood Approach to Clustering and the Case Study Homogeneity of Mixing Proportions Assessing the Performance of the Mixture likelihood approach toClustering."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1988
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 13,
+            "methodology": 14,
+            "result": 1
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 22,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Incorporating-Copying-Mechanism-in-Learning-Gu-Lu/ba30df190664193514d1d309cb673728ed48f449?sort=total-citations"
+}

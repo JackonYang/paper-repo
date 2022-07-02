@@ -1,0 +1,4052 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3257930"
+                        ],
+                        "name": "Bill MacCartney",
+                        "slug": "Bill-MacCartney",
+                        "structuredName": {
+                            "firstName": "Bill",
+                            "lastName": "MacCartney",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bill MacCartney"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "pplied syntactic-semantic tree kernels for recognizing textual entailment. Because inference is essentially a logic problem, methods based on formal logic (Clark and Harrison, 2009) or natural logic (MacCartney, 2009) have also been proposed. A comprehensive review on existing work on natural language inference can be found in (Sammons et al., 2011). The work most relevant to ours is the recently proposed neural a"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "e of the art, achieving an accuracy of 86.1% on the test data. 1 Introduction Natural language inference (NLI) is the problem of determining whether from a sentence P one can infer another sentence H(MacCartney, 2009). Here P is called the premise and Hthe hypothesis. NLI is a fundamentally important problem that has applications in many tasks including question answering, semantic search and automatic text summar"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 61771282,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8314f8eef3b64054bfc00607507a92de92fb7c85",
+            "isKey": true,
+            "numCitedBy": 151,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Inference has been a central topic in artificial intelligence from the start, but while automatic methods for formal deduction have advanced tremendously, comparatively little progress has been made on the problem of natural language inference (NLI), that is, determining whether a natural language hypothesis h can justifiably be inferred from a natural language premise p. The challenges of NLI are quite different from those encountered in formal deduction: the emphasis is on informal reasoning, lexical semantic knowledge, and variability of linguistic expression. \nThis dissertation explores a range of approaches to NLI, beginning with methods which are robust but approximate, and proceeding to progressively more precise approaches. \nWe first develop a baseline system based on overlap between bags of words. Despite its extreme simplicity, this model achieves surprisingly good results on a standard NLI evaluation, the PASCAL RTE Challenge. However, its effectiveness is limited by its failure to represent semantic structure. \nTo remedy this lack, we next introduce the Stanford RTE system, which uses typed dependency trees as a proxy for semantic structure, and seeks a low-cost alignment between trees for p and h, using a cost model which incorporates both lexical and structural matching costs. This system is typical of a category of approaches to NLI based on approximate graph matching. We argue, however, that such methods work best when the entailment decision is based, not merely on the degree of alignment, but also on global features of the aligned \u2329p, h\u232a pair motivated by semantic theory. \nSeeking still greater precision, we devote the largest part of the dissertation to developing an approach to NLI based on a model of natural logic. We greatly extend past work in natural logic, which has focused solely on semantic containment and monotonicity, to incorporate both semantic exclusion and implicativity. Our system decomposes an inference problem into a sequence of atomic edits which transforms p into h; predicts a lexical entailment relation for each edit using a statistical classifier; propagates these relations upward through a syntax tree according to semantic properties of intermediate nodes; and composes the resulting entailment relations across the edit sequence. \nFinally, we address the problem of alignment for NLI, by developing a model of phrase-based alignment inspired by analogous work in machine translation, including an alignment scoring function, inference algorithms for finding good alignments, and training algorithms for choosing feature weights."
+            },
+            "slug": "Natural-language-inference-Manning-MacCartney",
+            "title": {
+                "fragments": [],
+                "text": "Natural language inference"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This dissertation explores a range of approaches to NLI, beginning with methods which are robust but approximate, and proceeding to progressively more precise approaches, and greatly extends past work in natural logic to incorporate both semantic exclusion and implicativity."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3644767"
+                        ],
+                        "name": "Samuel R. Bowman",
+                        "slug": "Samuel-R.-Bowman",
+                        "structuredName": {
+                            "firstName": "Samuel",
+                            "lastName": "Bowman",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samuel R. Bowman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32301760"
+                        ],
+                        "name": "Gabor Angeli",
+                        "slug": "Gabor-Angeli",
+                        "structuredName": {
+                            "firstName": "Gabor",
+                            "lastName": "Angeli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Gabor Angeli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144922861"
+                        ],
+                        "name": "Christopher Potts",
+                        "slug": "Christopher-Potts",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Potts",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher Potts"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 164,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Besides the work by Bowman et al. (2015) themselves and by Rockt\u00e4schel et al. (2016), there are two other studies which used the SNLI corpus. Vendrov et al. (2015) used a Skip-Thought model proposed by Kiros et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Besides the work by Bowman et al. (2015) themselves and by Rockt\u00e4schel et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 114,
+                                "start": 94
+                            }
+                        ],
+                        "text": "Although the neural attention model by Rockta\u0308schel et al. (2016) achieved better results than Bowman et al. (2015), we see two limitations."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 34,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, Bowman et al. (2015) experimented with a lexical-"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 222,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Besides the work by Bowman et al. (2015) themselves and by Rockt\u00e4schel et al. (2016), there are two other studies which used the SNLI corpus. Vendrov et al. (2015) used a Skip-Thought model proposed by Kiros et al. (2015) to the NLI task and reported an accuracy of 81."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Bowman et al. (2015) achieved an accuracy of 77.6% when long short-term memory (LSTM) networks were used to obtain the sentence embeddings."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, Bowman et al. (2015) experimented with a lexicalized classifier-based method, which only uses lexical information and achieves an accuracy of 78.2% on the SNLI corpus."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Besides the work by Bowman et al. (2015) themselves and by Rockt\u00e4schel et al. (2016), there are two other studies which used the SNLI corpus."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 308,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Besides the work by Bowman et al. (2015) themselves and by Rockt\u00e4schel et al. (2016), there are two other studies which used the SNLI corpus. Vendrov et al. (2015) used a Skip-Thought model proposed by Kiros et al. (2015) to the NLI task and reported an accuracy of 81.5% on the test data. Mou et al. (2015) used treebased CNN encoders to obtain sentence embeddings and achieved an accuracy of 82."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 40,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Besides the work by Bowman et al. (2015) themselves and by Rockta\u0308schel et al. (2016), there are two other studies which used the SNLI corpus."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 36
+                            }
+                        ],
+                        "text": "(2016) achieved better results than Bowman et al. (2015), we see two limitations."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 30,
+                                "start": 10
+                            }
+                        ],
+                        "text": "Recently, Bowman et al. (2015) released the Stanford Natural Language Inference (SNLI) corpus for the purpose of encouraging more learning-centered approaches to NLI."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Bowman et al. (2015) tested a straightforward architecture of deep neural networks for NLI."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 45
+                            }
+                        ],
+                        "text": "This follows the same data partition used by Bowman et al. (2015) in their experiments."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14604520,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f04df4e20a18358ea2f689b4c129781628ef7fc1",
+            "isKey": true,
+            "numCitedBy": 2521,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Understanding entailment and contradiction is fundamental to understanding natural language, and inference about entailment and contradiction is a valuable testing ground for the development of semantic representations. However, machine learning research in this area has been dramatically limited by the lack of large-scale resources. To address this, we introduce the Stanford Natural Language Inference corpus, a new, freely available collection of labeled sentence pairs, written by humans doing a novel grounded task based on image captioning. At 570K pairs, it is two orders of magnitude larger than all other resources of its type. This increase in scale allows lexicalized classifiers to outperform some sophisticated existing entailment models, and it allows a neural network-based model to perform competitively on natural language inference benchmarks for the first time."
+            },
+            "slug": "A-large-annotated-corpus-for-learning-natural-Bowman-Angeli",
+            "title": {
+                "fragments": [],
+                "text": "A large annotated corpus for learning natural language inference"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The Stanford Natural Language Inference corpus is introduced, a new, freely available collection of labeled sentence pairs, written by humans doing a novel grounded task based on image captioning, which allows a neural network-based model to perform competitively on natural language inference benchmarks for the first time."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3257930"
+                        ],
+                        "name": "Bill MacCartney",
+                        "slug": "Bill-MacCartney",
+                        "structuredName": {
+                            "firstName": "Bill",
+                            "lastName": "MacCartney",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bill MacCartney"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1947267"
+                        ],
+                        "name": "Michel Galley",
+                        "slug": "Michel-Galley",
+                        "structuredName": {
+                            "firstName": "Michel",
+                            "lastName": "Galley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michel Galley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 45
+                            }
+                        ],
+                        "text": ", 2009), perform explicit sentence alignment (MacCartney et al., 2008) or use formal logic (Clark and Harrison, 2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 234,
+                                "start": 211
+                            }
+                        ],
+                        "text": "Existing solutions to NLI range from shallow approaches based on lexical similarities (Glickman et al., 2005) to advanced methods that consider syntax (Mehdad et al., 2009), perform explicit sentence alignment (MacCartney et al., 2008) or use formal logic (Clark and Harrison, 2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1922162,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "581f4e8d74b9ffa3d1e4fbbac8d8742de79cb6c2",
+            "isKey": false,
+            "numCitedBy": 121,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The alignment problem---establishing links between corresponding phrases in two related sentences---is as important in natural language inference (NLI) as it is in machine translation (MT). But the tools and techniques of MT alignment do not readily transfer to NLI, where one cannot assume semantic equivalence, and for which large volumes of bitext are lacking. We present a new NLI aligner, the MANLI system, designed to address these challenges. It uses a phrase-based alignment representation, exploits external lexical resources, and capitalizes on a new set of supervised training data. We compare the performance of MANLI to existing NLI and MT aligners on an NLI alignment task over the well-known Recognizing Textual Entailment data. We show that MANLI significantly outperforms existing aligners, achieving gains of 6.2% in F1 over a representative NLI aligner and 10.5% over GIZA++."
+            },
+            "slug": "A-Phrase-Based-Alignment-Model-for-Natural-Language-MacCartney-Galley",
+            "title": {
+                "fragments": [],
+                "text": "A Phrase-Based Alignment Model for Natural Language Inference"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The MANLI system is presented, a new NLI aligner designed to address the alignment problem, which uses a phrase-based alignment representation, exploits external lexical resources, and capitalizes on a new set of supervised training data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2620211"
+                        ],
+                        "name": "Tim Rockt\u00e4schel",
+                        "slug": "Tim-Rockt\u00e4schel",
+                        "structuredName": {
+                            "firstName": "Tim",
+                            "lastName": "Rockt\u00e4schel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tim Rockt\u00e4schel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1864353"
+                        ],
+                        "name": "Edward Grefenstette",
+                        "slug": "Edward-Grefenstette",
+                        "structuredName": {
+                            "firstName": "Edward",
+                            "lastName": "Grefenstette",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Edward Grefenstette"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2910877"
+                        ],
+                        "name": "K. Hermann",
+                        "slug": "K.-Hermann",
+                        "structuredName": {
+                            "firstName": "Karl",
+                            "lastName": "Hermann",
+                            "middleNames": [
+                                "Moritz"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Hermann"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2367821"
+                        ],
+                        "name": "Tom\u00e1s Kocisk\u00fd",
+                        "slug": "Tom\u00e1s-Kocisk\u00fd",
+                        "structuredName": {
+                            "firstName": "Tom\u00e1s",
+                            "lastName": "Kocisk\u00fd",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tom\u00e1s Kocisk\u00fd"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685771"
+                        ],
+                        "name": "P. Blunsom",
+                        "slug": "P.-Blunsom",
+                        "structuredName": {
+                            "firstName": "Phil",
+                            "lastName": "Blunsom",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Blunsom"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 239,
+                                "start": 214
+                            }
+                        ],
+                        "text": "Around 12.1K of them cannot be found in word2vec but only around 4.1K of them cannot be found in GloVe.\nthe number of parameters we need to update, and as it turns out, we can still achieve better performance than Rockta\u0308schel et al. (2016)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Rockta\u0308schel et al. (2016) showed that the neural attention model could help derive a better representation of the premise to be used to match\nthe hypothesis, whereas in our work we also use it to derive representations of the premise that are used to sequentially match the words in the hypothesis."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 64,
+                                "start": 39
+                            }
+                        ],
+                        "text": "Although the neural attention model by Rockta\u0308schel et al. (2016) achieved better results than Bowman et al. (2015), we see two limitations."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 120,
+                                "start": 95
+                            }
+                        ],
+                        "text": "The work most relevant to ours is the recently proposed neural attention model-based method by Rockta\u0308schel et al. (2016), which we have detailed in previous sections."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 141,
+                                "start": 116
+                            }
+                        ],
+                        "text": "Figure 1 gives an overview of our model in contrast to the model by Rockta\u0308schel\n2Strictly speaking, in the model by Rockta\u0308schel et al. (2016), htN encodes both the premise and the hypothesis because the two sentences are chained."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 130,
+                                "start": 105
+                            }
+                        ],
+                        "text": "Besides the difference of the LSTM architecture, we also introduce a few other changes from the model by Rockta\u0308schel et al. (2016)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 75
+                            }
+                        ],
+                        "text": "To ensure fair comparison, besides comparing with the accuracy reported by Rockta\u0308schel et al. (2016), we also re-implemented their model and report the performance of our implementation."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 18
+                            }
+                        ],
+                        "text": "First, similar to Rockta\u0308schel et al. (2016), we process the premise and the hypothesis using two LSTMs, but we do not feed the last cell state of the premise to the LSTM of the hypothesis."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 78
+                            }
+                        ],
+                        "text": "The differences between our implementation and the original implementation by Rockta\u0308schel et al. (2016) are the following: (1) We also add a NULL token to the premise for matching."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 47,
+                                "start": 22
+                            }
+                        ],
+                        "text": "A more recent work by Rockta\u0308schel et al. (2016) improved the performance by applying a neural attention model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 107,
+                                "start": 82
+                            }
+                        ],
+                        "text": "While there are different variations of LSTMs, here we present the one adopted by Rockta\u0308schel et al. (2016)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 43
+                            }
+                        ],
+                        "text": "The second limitation is that the model by Rockt\u00e4schel et al. (2016) does not explicitly allow"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 37
+                            }
+                        ],
+                        "text": "This is the same as what was done by Rockta\u0308schel et al. (2016)."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 207,
+                                "start": 182
+                            }
+                        ],
+                        "text": "Specifically, the following models are implemented and tested in our experiments: \u2022 Word-by-word attention (d = 150): This is\nour implementation of the word-by-word attention model by Rockta\u0308schel et al. (2016), where we set the dimension of the hidden states to 150."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 18
+                            }
+                        ],
+                        "text": "First, similar to Rockt\u00e4schel et al. (2016), we process the premise and the hypothesis using two LSTMs, but we do not feed the last cell state of the premise to the LSTM of the hypothesis."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 68,
+                                "start": 43
+                            }
+                        ],
+                        "text": "The second limitation is that the model by Rockta\u0308schel et al. (2016) does not explicitly allow us to place more emphasis on the more important matching results between the premise and the hypothesis and down-weight the less critical ones."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 53
+                            }
+                        ],
+                        "text": "The main idea of the word-by-word attention model by Rockt\u00e4schel et al. (2016) is to introduce a series of attention-weighted combinations of the hidden states of the premise, where each combination is for a particular word in the hypothesis."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 51,
+                                "start": 26
+                            }
+                        ],
+                        "text": "Based on a recent work by Rockta\u0308schel et al. (2016), we first used neural attention models to derive attention-weighted vector representations of the premise."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 84,
+                                "start": 59
+                            }
+                        ],
+                        "text": "Besides the work by Bowman et al. (2015) themselves and by Rockta\u0308schel et al. (2016), there are two other studies which used the SNLI corpus."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Rockta\u0308schel et al. (2016) then used this haN , which represents the\n1We present the word-by-word attention model by Rockta\u0308schel et al. (2016) in a different way but the underlying model is the same."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Rockta\u0308schel et al. (2016) further built an RNN model over {ak}Nk=1 by defining the following hidden states:\nhak = ak + tanh(V ahak\u22121), (5)\nwhere Va \u2208 Rd\u00d7d is a weight matrix to be learned."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 53
+                            }
+                        ],
+                        "text": "The main idea of the word-by-word attention model by Rockta\u0308schel et al. (2016) is to introduce a series of attention-weighted combinations of the hidden states of the premise, where each combination is for a particular word in the hypothesis."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 97
+                            }
+                        ],
+                        "text": "(2) If we compare our mLSTM model with our implementation of the word-by-word attention model by Rockta\u0308schel et al. (2016) under the same setting with d = 150, we can see that our performance on the test data (85.7"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 51
+                            }
+                        ],
+                        "text": "We then review the word-by-word attention model by Rockt\u00e4schel et al. (2016), which is their best performing model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 51
+                            }
+                        ],
+                        "text": "We then review the word-by-word attention model by\nRockta\u0308schel et al. (2016), which is their best performing model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 126,
+                                "start": 101
+                            }
+                        ],
+                        "text": "Methods for comparison: We mainly want to compare our model with the word-by-word attention model by Rockta\u0308schel et al. (2016) because this model achieved the state-of-the-art performance on the SNLI corpus."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Rockt\u00e4schel et al. (2016) further built an RNN model over {ak}k=1 by defining the following hidden states:"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Rockt\u00e4schel et al. (2016) then used this hN , which represents the"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 48,
+                                "start": 22
+                            }
+                        ],
+                        "text": "A more recent work by Rockt\u00e4schel et al. (2016) improved the performance by applying a neural attention model."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 46
+                            }
+                        ],
+                        "text": "Figure 1: The top figure depicts the model by Rockt\u00e4schel et al. (2016) and the bottom figure depicts our model."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 61,
+                                "start": 35
+                            }
+                        ],
+                        "text": "Strictly speaking, in the model by Rockt\u00e4schel et al. (2016), hN encodes both the premise and the hypothesis because the two sentences are chained."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Rockta\u0308schel et al. (2016) first used two LSTMs to process the premise and the hypothesis, respectively, but initialized the second LSTM (for the hypothesis) with the last cell state of the first LSTM (for the premise)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 131,
+                                "start": 105
+                            }
+                        ],
+                        "text": "Besides the difference of the LSTM architecture, we also introduce a few other changes from the model by Rockt\u00e4schel et al. (2016). First, we insert a special word NULL to the premise, and we allow words in the hypothesis to be aligned with this NULL."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2135897,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2846e83d405cbe3bf2f0f3b5f635dd8b3c680c45",
+            "isKey": true,
+            "numCitedBy": 669,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "While most approaches to automatically recognizing entailment relations have used classifiers employing hand engineered features derived from complex natural language processing pipelines, in practice their performance has been only slightly better than bag-of-word pair classifiers using only lexical similarity. The only attempt so far to build an end-to-end differentiable neural network for entailment failed to outperform such a simple similarity classifier. In this paper, we propose a neural model that reads two sentences to determine entailment using long short-term memory units. We extend this model with a word-by-word neural attention mechanism that encourages reasoning over entailments of pairs of words and phrases. Furthermore, we present a qualitative analysis of attention weights produced by this model, demonstrating such reasoning capabilities. On a large entailment dataset this model outperforms the previous best neural model and a classifier with engineered features by a substantial margin. It is the first generic end-to-end differentiable system that achieves state-of-the-art accuracy on a textual entailment dataset."
+            },
+            "slug": "Reasoning-about-Entailment-with-Neural-Attention-Rockt\u00e4schel-Grefenstette",
+            "title": {
+                "fragments": [],
+                "text": "Reasoning about Entailment with Neural Attention"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This paper proposes a neural model that reads two sentences to determine entailment using long short-term memory units and extends this model with a word-by-word neural attention mechanism that encourages reasoning over entailments of pairs of words and phrases, and presents a qualitative analysis of attention weights produced by this model."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48323507"
+                        ],
+                        "name": "Peter Clark",
+                        "slug": "Peter-Clark",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Clark",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Peter Clark"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143878270"
+                        ],
+                        "name": "P. Harrison",
+                        "slug": "P.-Harrison",
+                        "structuredName": {
+                            "firstName": "Philip",
+                            "lastName": "Harrison",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Harrison"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 80
+                            }
+                        ],
+                        "text": "Because inference is essentially a logic problem, methods based on formal logic (Clark and Harrison, 2009) or natural logic (MacCartney, 2009) have also been proposed."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 256,
+                                "start": 81
+                            }
+                        ],
+                        "text": "Because inference is essentially a logic problem, methods based on formal logic (Clark and Harrison, 2009) or natural logic (MacCartney, 2009) have also been proposed. A comprehensive review on existing work can be found in the book by Dagan et al. (2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 18690019,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f6d37a305fb900a56de5ddcd1095ec1ba5c8f157",
+            "isKey": false,
+            "numCitedBy": 25,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "For this year's RTE challenge we have continued to pursue a (somewhat) \"logical\" approach to recognizing entailment, in which our system, called BLUE (Boeing Language Understanding Engine) first creates a logic-based representation of a text T and then performs simple inference (using WordNet and the DIRT inference rule database) to try and infer a hypothesis H. The overall system can be viewed as comprising of three main elements: parsing, WordNet, and DIRT, built on top of a simple baseline of bag-of-words comparison. Ablation studies suggest that WordNet substantially improves the accuracy scores, while, somewhat suprisingly, parsing and DIRT only marginally improve the accuracy scores. We illustrate and discuss these results. Overall, BLUE's reasoning is sometimes insightful but sometimes nonsensical, the primary challenges being noise in the knowledge sources, lack of world knowledge, and the difficulty of accurate syntactic and semantic analysis. Despite these challenges, we argue that forming semantic representations is a necessary first step towards the larger goal of machine reading, and worthy of further exploration. Our best scores were 61.5% (2 way), 54.7% (3 way), and F=0.29 (Search Pilot)."
+            },
+            "slug": "An-Inference-Based-Approach-to-Recognizing-Clark-Harrison",
+            "title": {
+                "fragments": [],
+                "text": "An Inference-Based Approach to Recognizing Entailment"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is argued that forming semantic representations is a necessary first step towards the larger goal of machine reading, and worthy of further exploration."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "TAC"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3149169"
+                        ],
+                        "name": "M. Sammons",
+                        "slug": "M.-Sammons",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Sammons",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Sammons"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 86
+                            }
+                        ],
+                        "text": "A comprehensive review on existing work on natural language inference can be found in (Sammons et al., 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1039941,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2b55d2bb7b0ca68d318602bf54dad1677ec2e475",
+            "isKey": false,
+            "numCitedBy": 38,
+            "numCiting": 95,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Since 2005, researchers have worked on a broad task called Recognizing Textual Entailment (RTE), which is designed to focus efforts on general textual inference capabilities, but without constraining participants to use a specific representation or reasoning approach. There have been promising developments in this sub-field of Natural Language Processing (NLP), with systems showing steady improvement, and investigations of a range of approaches to the problem. A number of researchers appear to have converged on some defining characteristics of the problem, and on characteristics of practical approaches to solving it. RTE solutions have been shown to be of practical use in other NLP applications, and other grand Natural Language Understanding (NLU) challenges, such as Learning by Reading [27] and Machine Reading [43] have emerged that will require similar problems to be solved. It is an exciting time to be working in this area. Textual Inference is a key capability for improving performance in a wide range of NLP tasks, particularly those which can benefit from integrating background knowledge. Performance of Question-Answering systems, which can be thought of as potentially the next generation of search engines, is limited, especially outside the class of factoid questions; and the task of extracting facts of interest (such as \u201cPeople who have worked for Company X\u201d) from a collection of plain text documents (such as newspaper articles) may require significant abstraction, synthesis, and application of world knowledge on the part of a human reader \u2013 and therefore"
+            },
+            "slug": "Recognizing-Textual-Entailment-Sammons",
+            "title": {
+                "fragments": [],
+                "text": "Recognizing Textual Entailment"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "A number of researchers appear to have converged on some defining characteristics of the problem, and on characteristics of practical approaches to solving it, which are an exciting time to be working in this area."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3335364"
+                        ],
+                        "name": "Dzmitry Bahdanau",
+                        "slug": "Dzmitry-Bahdanau",
+                        "structuredName": {
+                            "firstName": "Dzmitry",
+                            "lastName": "Bahdanau",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dzmitry Bahdanau"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1979489"
+                        ],
+                        "name": "Kyunghyun Cho",
+                        "slug": "Kyunghyun-Cho",
+                        "structuredName": {
+                            "firstName": "Kyunghyun",
+                            "lastName": "Cho",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kyunghyun Cho"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 145,
+                                "start": 124
+                            }
+                        ],
+                        "text": "Neural attention models have recently been applied to some natural language processing tasks including machine translation (Bahdanau et al., 2015), abstractive summarization (Rush et al., 2015) and question answering (Hermann et al., 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 267,
+                                "start": 124
+                            }
+                        ],
+                        "text": "Neural attention models have recently been applied to some natural language processing tasks including machine translation (Bahdanau et al., 2015), abstractive summarization (Rush et al., 2015) and question answering (Hermann et al., 2015). Rockt\u00e4schel et al. (2016) showed that the neural attention model could help derive a better representation of the premise to be used to match the hypothesis, whereas in our work we also use it to derive representations of the premise that are used to sequentially match the words in the hypothesis."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 63,
+                                "start": 40
+                            }
+                        ],
+                        "text": "Our presentation is close to the one by Bahdanau et al. (2015), with our attention vectors a corresponding to the context vectors c in their paper."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 146,
+                                "start": 123
+                            }
+                        ],
+                        "text": "Neural attention models have recently been applied to some natural language processing tasks including machine translation (Bahdanau et al., 2015), abstractive summarization (Rush et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 40
+                            }
+                        ],
+                        "text": "Our presentation is close to the one by Bahdanau et al. (2015), with our attention vectors a corresponding to the context vectors c in their paper.\nwhole premise, together with htN , which can be approximately regarded as an aggregated representation of the hypothesis2, to predict the label y."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11212020,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fa72afa9b2cbc8f0d7b05d52548906610ffbb9c5",
+            "isKey": true,
+            "numCitedBy": 19347,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Neural machine translation is a recently proposed approach to machine translation. Unlike the traditional statistical machine translation, the neural machine translation aims at building a single neural network that can be jointly tuned to maximize the translation performance. The models proposed recently for neural machine translation often belong to a family of encoder-decoders and consists of an encoder that encodes a source sentence into a fixed-length vector from which a decoder generates a translation. In this paper, we conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and propose to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly. With this new approach, we achieve a translation performance comparable to the existing state-of-the-art phrase-based system on the task of English-to-French translation. Furthermore, qualitative analysis reveals that the (soft-)alignments found by the model agree well with our intuition."
+            },
+            "slug": "Neural-Machine-Translation-by-Jointly-Learning-to-Bahdanau-Cho",
+            "title": {
+                "fragments": [],
+                "text": "Neural Machine Translation by Jointly Learning to Align and Translate"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is conjecture that the use of a fixed-length vector is a bottleneck in improving the performance of this basic encoder-decoder architecture, and it is proposed to extend this by allowing a model to automatically (soft-)search for parts of a source sentence that are relevant to predicting a target word, without having to form these parts as a hard segment explicitly."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3450996"
+                        ],
+                        "name": "Ryan Kiros",
+                        "slug": "Ryan-Kiros",
+                        "structuredName": {
+                            "firstName": "Ryan",
+                            "lastName": "Kiros",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ryan Kiros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1844940337"
+                        ],
+                        "name": "Yukun Zhu",
+                        "slug": "Yukun-Zhu",
+                        "structuredName": {
+                            "firstName": "Yukun",
+                            "lastName": "Zhu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yukun Zhu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145124475"
+                        ],
+                        "name": "R. Salakhutdinov",
+                        "slug": "R.-Salakhutdinov",
+                        "structuredName": {
+                            "firstName": "Ruslan",
+                            "lastName": "Salakhutdinov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Salakhutdinov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1804104"
+                        ],
+                        "name": "R. Zemel",
+                        "slug": "R.-Zemel",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Zemel",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Zemel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2422559"
+                        ],
+                        "name": "R. Urtasun",
+                        "slug": "R.-Urtasun",
+                        "structuredName": {
+                            "firstName": "Raquel",
+                            "lastName": "Urtasun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Urtasun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143805211"
+                        ],
+                        "name": "A. Torralba",
+                        "slug": "A.-Torralba",
+                        "structuredName": {
+                            "firstName": "Antonio",
+                            "lastName": "Torralba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Torralba"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37895334"
+                        ],
+                        "name": "S. Fidler",
+                        "slug": "S.-Fidler",
+                        "structuredName": {
+                            "firstName": "Sanja",
+                            "lastName": "Fidler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Fidler"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 60
+                            }
+                        ],
+                        "text": "Vendrov et al. (2015) used a Skip-Thought model proposed by Kiros et al. (2015) to the NLI task and reported an accuracy of 81.5% on the test data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9126867,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6e795c6e9916174ae12349f5dc3f516570c17ce8",
+            "isKey": true,
+            "numCitedBy": 1928,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe an approach for unsupervised learning of a generic, distributed sentence encoder. Using the continuity of text from books, we train an encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage. Sentences that share semantic and syntactic properties are thus mapped to similar vector representations. We next introduce a simple vocabulary expansion method to encode words that were not seen as part of training, allowing us to expand our vocabulary to a million words. After training our model, we extract and evaluate our vectors with linear models on 8 tasks: semantic relatedness, paraphrase detection, image-sentence ranking, question-type classification and 4 benchmark sentiment and subjectivity datasets. The end result is an off-the-shelf encoder that can produce highly generic sentence representations that are robust and perform well in practice."
+            },
+            "slug": "Skip-Thought-Vectors-Kiros-Zhu",
+            "title": {
+                "fragments": [],
+                "text": "Skip-Thought Vectors"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 93,
+                "text": "The approach for unsupervised learning of a generic, distributed sentence encoder is described, using the continuity of text from books to train an encoder-decoder model that tries to reconstruct the surrounding sentences of an encoded passage."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143845796"
+                        ],
+                        "name": "Jeffrey Pennington",
+                        "slug": "Jeffrey-Pennington",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Pennington",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeffrey Pennington"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 47
+                            }
+                        ],
+                        "text": "We present the word-by-word attention model by Rockt\u00e4schel et al. (2016) in a different way but the underlying model is the same."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 97
+                            }
+                        ],
+                        "text": "Around 12.1K of them cannot be found in word2vec but only around 4.1K of them cannot be found in GloVe.\nthe number of parameters we need to update, and as it turns out, we can still achieve better performance than Rockta\u0308schel et al. (2016)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 24
+                            }
+                        ],
+                        "text": "The main reason is that GloVe covers more words in the SNLI corpus than word2vec3."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 128,
+                                "start": 123
+                            }
+                        ],
+                        "text": "Third, for words which do not have pre-trained word embeddings, we take the average of the embeddings of all the words (in GloVe) surrounding the unseen word within a window size of 9 (4 on the left and 4 on the right) as an approximation of the embedding of this unseen word."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 39
+                            }
+                        ],
+                        "text": "Although the neural attention model by Rockt\u00e4schel et al. (2016) achieved better results than Bowman et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 45
+                            }
+                        ],
+                        "text": "(3) For word representation, we also use the GloVe word embeddings and we do not update the word embeddings."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 74,
+                                "start": 51
+                            }
+                        ],
+                        "text": "Second, we use word embeddings trained from GloVe (Pennington et al., 2014) instead of word2vec vectors."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1957433,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f37e1b62a767a307c046404ca96bc140b3e68cb5",
+            "isKey": true,
+            "numCitedBy": 22548,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recent methods for learning vector space representations of words have succeeded in capturing fine-grained semantic and syntactic regularities using vector arithmetic, but the origin of these regularities has remained opaque. We analyze and make explicit the model properties needed for such regularities to emerge in word vectors. The result is a new global logbilinear regression model that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods. Our model efficiently leverages statistical information by training only on the nonzero elements in a word-word cooccurrence matrix, rather than on the entire sparse matrix or on individual context windows in a large corpus. The model produces a vector space with meaningful substructure, as evidenced by its performance of 75% on a recent word analogy task. It also outperforms related models on similarity tasks and named entity recognition."
+            },
+            "slug": "GloVe:-Global-Vectors-for-Word-Representation-Pennington-Socher",
+            "title": {
+                "fragments": [],
+                "text": "GloVe: Global Vectors for Word Representation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A new global logbilinear regression model that combines the advantages of the two major model families in the literature: global matrix factorization and local context window methods and produces a vector space with meaningful substructure."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38956216"
+                        ],
+                        "name": "Lili Mou",
+                        "slug": "Lili-Mou",
+                        "structuredName": {
+                            "firstName": "Lili",
+                            "lastName": "Mou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lili Mou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47447639"
+                        ],
+                        "name": "Rui Men",
+                        "slug": "Rui-Men",
+                        "structuredName": {
+                            "firstName": "Rui",
+                            "lastName": "Men",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rui Men"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1410115257"
+                        ],
+                        "name": "Ge Li",
+                        "slug": "Ge-Li",
+                        "structuredName": {
+                            "firstName": "Ge",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ge Li"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118039966"
+                        ],
+                        "name": "Yan Xu",
+                        "slug": "Yan-Xu",
+                        "structuredName": {
+                            "firstName": "Yan",
+                            "lastName": "Xu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yan Xu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2156144568"
+                        ],
+                        "name": "Lu Zhang",
+                        "slug": "Lu-Zhang",
+                        "structuredName": {
+                            "firstName": "Lu",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lu Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2055863231"
+                        ],
+                        "name": "Rui Yan",
+                        "slug": "Rui-Yan",
+                        "structuredName": {
+                            "firstName": "Rui",
+                            "lastName": "Yan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rui Yan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700880"
+                        ],
+                        "name": "Zhi Jin",
+                        "slug": "Zhi-Jin",
+                        "structuredName": {
+                            "firstName": "Zhi",
+                            "lastName": "Jin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhi Jin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 95
+                            }
+                        ],
+                        "text": "The work most relevant to ours is the recently proposed neural attention model-based method by Rockt\u00e4schel et al. (2016), which we have detailed in previous sections."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 17,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Mou et al. (2015) used treebased CNN encoders to obtain sentence embeddings and achieved an accuracy of 82.1%."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1313283,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "81bd1081df12c554f5b577677eb1a3975f728476",
+            "isKey": true,
+            "numCitedBy": 29,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recognizing entailment and contradiction between two sentences has wide applications in NLP. Traditional methods include featurerich classifiers or formal reasoning. However, they are usually limited in terms of accuracy and scope. Recently, the renewed prosperity of neural networks has made many improvements in a variety of NLP tasks. In our previous work, the tree-based convolutional neural network (TBCNN) has achieved high performance in several sentence-level classification tasks. But whether TBCNN is applicable to the recognition of entailment and contradiction between two sentences remains unknown. In this paper, we propose TBCNN-pair model to recognize entailment/contradiction. Experimental results on a large dataset verify the rationale of using TBCNN as the sentencelevel model; leveraging additional heuristics like element-wise product/difference further improves the accuracy. Our model outperforms previously published results by a large margin."
+            },
+            "slug": "Recognizing-Entailment-and-Contradiction-by-Mou-Men",
+            "title": {
+                "fragments": [],
+                "text": "Recognizing Entailment and Contradiction by Tree-based Convolution"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "Experimental results on a large dataset verify the rationale of using TBCNN as the sentencelevel model; leveraging additional heuristics like element-wise product/difference further improves the accuracy."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2531268"
+                        ],
+                        "name": "Alexander M. Rush",
+                        "slug": "Alexander-M.-Rush",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Rush",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexander M. Rush"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3295092"
+                        ],
+                        "name": "S. Chopra",
+                        "slug": "S.-Chopra",
+                        "structuredName": {
+                            "firstName": "Sumit",
+                            "lastName": "Chopra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Chopra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145183709"
+                        ],
+                        "name": "J. Weston",
+                        "slug": "J.-Weston",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Weston",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weston"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 54,
+                                "start": 35
+                            }
+                        ],
+                        "text": ", 2015), abstractive summarization (Rush et al., 2015) and question answering (Hermann et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 192,
+                                "start": 175
+                            }
+                        ],
+                        "text": "Neural attention models have recently been applied to some natural language processing tasks including machine translation (Bahdanau et al., 2015), abstractive summarization (Rush et al., 2015) and question answering (Hermann et al., 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1918428,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5082a1a13daea5c7026706738f8528391a1e6d59",
+            "isKey": false,
+            "numCitedBy": 2108,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Summarization based on text extraction is inherently limited, but generation-style abstractive methods have proven challenging to build. In this work, we propose a fully data-driven approach to abstractive sentence summarization. Our method utilizes a local attention-based model that generates each word of the summary conditioned on the input sentence. While the model is structurally simple, it can easily be trained end-to-end and scales to a large amount of training data. The model shows significant performance gains on the DUC-2004 shared task compared with several strong baselines."
+            },
+            "slug": "A-Neural-Attention-Model-for-Abstractive-Sentence-Rush-Chopra",
+            "title": {
+                "fragments": [],
+                "text": "A Neural Attention Model for Abstractive Sentence Summarization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "This work proposes a fully data-driven approach to abstractive sentence summarization by utilizing a local attention-based model that generates each word of the summary conditioned on the input sentence."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48188880"
+                        ],
+                        "name": "M. Marelli",
+                        "slug": "M.-Marelli",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Marelli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Marelli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2644577"
+                        ],
+                        "name": "S. Menini",
+                        "slug": "S.-Menini",
+                        "structuredName": {
+                            "firstName": "Stefano",
+                            "lastName": "Menini",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Menini"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145283199"
+                        ],
+                        "name": "Marco Baroni",
+                        "slug": "Marco-Baroni",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Baroni",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marco Baroni"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2486762"
+                        ],
+                        "name": "L. Bentivogli",
+                        "slug": "L.-Bentivogli",
+                        "structuredName": {
+                            "firstName": "Luisa",
+                            "lastName": "Bentivogli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bentivogli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145040726"
+                        ],
+                        "name": "R. Bernardi",
+                        "slug": "R.-Bernardi",
+                        "structuredName": {
+                            "firstName": "Raffaella",
+                            "lastName": "Bernardi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Bernardi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2713535"
+                        ],
+                        "name": "Roberto Zamparelli",
+                        "slug": "Roberto-Zamparelli",
+                        "structuredName": {
+                            "firstName": "Roberto",
+                            "lastName": "Zamparelli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Roberto Zamparelli"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 75
+                            }
+                        ],
+                        "text": "Indeed some preliminary experiments applying our mLSTM to the SICK corpus (Marelli et al., 2014), a smaller textual entailment benchmark data set, did not give very good results."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 762228,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c333778104f648c385b4631f7b4a859787e9d3d3",
+            "isKey": false,
+            "numCitedBy": 496,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Shared and internationally recognized benchmarks are fundamental for the development of any computational system. We aim to help the research community working on compositional distributional semantic models (CDSMs) by providing SICK (Sentences Involving Compositional Knowldedge), a large size English benchmark tailored for them. SICK consists of about 10,000 English sentence pairs that include many examples of the lexical, syntactic and semantic phenomena that CDSMs are expected to account for, but do not require dealing with other aspects of existing sentential data sets (idiomatic multiword expressions, named entities, telegraphic language) that are not within the scope of CDSMs. By means of crowdsourcing techniques, each pair was annotated for two crucial semantic tasks: relatedness in meaning (with a 5-point rating scale as gold score) and entailment relation between the two elements (with three possible gold labels: entailment, contradiction, and neutral). The SICK data set was used in SemEval-2014 Task 1, and it freely available for research purposes."
+            },
+            "slug": "A-SICK-cure-for-the-evaluation-of-compositional-Marelli-Menini",
+            "title": {
+                "fragments": [],
+                "text": "A SICK cure for the evaluation of compositional distributional semantic models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "This work aims to help the research community working on compositional distributional semantic models (CDSMs) by providing SICK (Sentences Involving Compositional Knowldedge), a large size English benchmark tailored for them."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "LREC"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2910877"
+                        ],
+                        "name": "K. Hermann",
+                        "slug": "K.-Hermann",
+                        "structuredName": {
+                            "firstName": "Karl",
+                            "lastName": "Hermann",
+                            "middleNames": [
+                                "Moritz"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Hermann"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2367821"
+                        ],
+                        "name": "Tom\u00e1s Kocisk\u00fd",
+                        "slug": "Tom\u00e1s-Kocisk\u00fd",
+                        "structuredName": {
+                            "firstName": "Tom\u00e1s",
+                            "lastName": "Kocisk\u00fd",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tom\u00e1s Kocisk\u00fd"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1864353"
+                        ],
+                        "name": "Edward Grefenstette",
+                        "slug": "Edward-Grefenstette",
+                        "structuredName": {
+                            "firstName": "Edward",
+                            "lastName": "Grefenstette",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Edward Grefenstette"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2311318"
+                        ],
+                        "name": "Lasse Espeholt",
+                        "slug": "Lasse-Espeholt",
+                        "structuredName": {
+                            "firstName": "Lasse",
+                            "lastName": "Espeholt",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lasse Espeholt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2062879616"
+                        ],
+                        "name": "Will Kay",
+                        "slug": "Will-Kay",
+                        "structuredName": {
+                            "firstName": "Will",
+                            "lastName": "Kay",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Will Kay"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2573615"
+                        ],
+                        "name": "Mustafa Suleyman",
+                        "slug": "Mustafa-Suleyman",
+                        "structuredName": {
+                            "firstName": "Mustafa",
+                            "lastName": "Suleyman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mustafa Suleyman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685771"
+                        ],
+                        "name": "P. Blunsom",
+                        "slug": "P.-Blunsom",
+                        "structuredName": {
+                            "firstName": "Phil",
+                            "lastName": "Blunsom",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Blunsom"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 238,
+                                "start": 218
+                            }
+                        ],
+                        "text": "Neural attention models have recently been applied to some natural language processing tasks including machine translation (Bahdanau et al., 2015), abstractive summarization (Rush et al., 2015) and question answering (Hermann et al., 2015)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6203757,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d1505c6123c102e53eb19dff312cb25cea840b72",
+            "isKey": false,
+            "numCitedBy": 2433,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Teaching machines to read natural language documents remains an elusive challenge. Machine reading systems can be tested on their ability to answer questions posed on the contents of documents that they have seen, but until now large scale training and test datasets have been missing for this type of evaluation. In this work we define a new methodology that resolves this bottleneck and provides large scale supervised reading comprehension data. This allows us to develop a class of attention based deep neural networks that learn to read real documents and answer complex questions with minimal prior knowledge of language structure."
+            },
+            "slug": "Teaching-Machines-to-Read-and-Comprehend-Hermann-Kocisk\u00fd",
+            "title": {
+                "fragments": [],
+                "text": "Teaching Machines to Read and Comprehend"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "A new methodology is defined that resolves this bottleneck and provides large scale supervised reading comprehension data that allows a class of attention based deep neural networks that learn to read real documents and answer complex questions with minimal prior knowledge of language structure to be developed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3308557"
+                        ],
+                        "name": "S. Hochreiter",
+                        "slug": "S.-Hochreiter",
+                        "structuredName": {
+                            "firstName": "Sepp",
+                            "lastName": "Hochreiter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Hochreiter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 39
+                            }
+                        ],
+                        "text": "LSTM: Let us first briefly review LSTM (Hochreiter and Schmidhuber, 1997)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 434,
+                                "start": 40
+                            }
+                        ],
+                        "text": "LSTM: Let us first briefly review LSTM (Hochreiter and Schmidhuber, 1997). LSTM is a special form of recurrent neural networks (RNNs), which process sequence data. LSTM uses a few gate vectors at each position to control the passing of information along the sequence and thus improves the modeling of long-range dependencies. While there are different variations of LSTMs, here we present the one adopted by Rockt\u00e4schel et al. (2016). Specifically, let us use X = (x1,x2, ."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1915014,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "44d2abe2175df8153f465f6c39b68b76a0d40ab9",
+            "isKey": false,
+            "numCitedBy": 51714,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms."
+            },
+            "slug": "Long-Short-Term-Memory-Hochreiter-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "Long Short-Term Memory"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A novel, efficient, gradient based method called long short-term memory (LSTM) is introduced, which can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38956216"
+                        ],
+                        "name": "Lili Mou",
+                        "slug": "Lili-Mou",
+                        "structuredName": {
+                            "firstName": "Lili",
+                            "lastName": "Mou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lili Mou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47447639"
+                        ],
+                        "name": "Rui Men",
+                        "slug": "Rui-Men",
+                        "structuredName": {
+                            "firstName": "Rui",
+                            "lastName": "Men",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rui Men"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1410115257"
+                        ],
+                        "name": "Ge Li",
+                        "slug": "Ge-Li",
+                        "structuredName": {
+                            "firstName": "Ge",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ge Li"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118039966"
+                        ],
+                        "name": "Yan Xu",
+                        "slug": "Yan-Xu",
+                        "structuredName": {
+                            "firstName": "Yan",
+                            "lastName": "Xu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yan Xu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2156144568"
+                        ],
+                        "name": "Lu Zhang",
+                        "slug": "Lu-Zhang",
+                        "structuredName": {
+                            "firstName": "Lu",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lu Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2055863231"
+                        ],
+                        "name": "Rui Yan",
+                        "slug": "Rui-Yan",
+                        "structuredName": {
+                            "firstName": "Rui",
+                            "lastName": "Yan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Rui Yan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700880"
+                        ],
+                        "name": "Zhi Jin",
+                        "slug": "Zhi-Jin",
+                        "structuredName": {
+                            "firstName": "Zhi",
+                            "lastName": "Jin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhi Jin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 17,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Mou et al. (2015) used treebased CNN encoders to obtain sentence embeddings and achieved an accuracy of 82.1%."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7454072,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ea407573bfcd39f9a478fe33cf6ce0ee1780a5f0",
+            "isKey": true,
+            "numCitedBy": 286,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we propose the TBCNN-pair model to recognize entailment and contradiction between two sentences. In our model, a tree-based convolutional neural network (TBCNN) captures sentence-level semantics; then heuristic matching layers like concatenation, element-wise product/difference combine the information in individual sentences. Experimental results show that our model outperforms existing sentence encoding-based approaches by a large margin."
+            },
+            "slug": "Natural-Language-Inference-by-Tree-Based-and-Mou-Men",
+            "title": {
+                "fragments": [],
+                "text": "Natural Language Inference by Tree-Based Convolution and Heuristic Matching"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 52,
+                "text": "This model, a tree-based convolutional neural network (TBCNN) captures sentence-level semantics; then heuristic matching layers like concatenation, element-wise product/difference combine the information in individual sentences."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2971978"
+                        ],
+                        "name": "Y. Wilks",
+                        "slug": "Y.-Wilks",
+                        "structuredName": {
+                            "firstName": "Yorick",
+                            "lastName": "Wilks",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Wilks"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 142,
+                                "start": 124
+                            }
+                        ],
+                        "text": "Because inference is essentially a logic problem, methods based on formal logic (Clark and Harrison, 2009) or natural logic (MacCartney, 2009) have also been proposed."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 159,
+                                "start": 141
+                            }
+                        ],
+                        "text": "Natural language inference (NLI) is the problem of determining whether from a premise sentence P one can infer another hypothesis sentence H (MacCartney, 2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 60246043,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "02e5cae2cb6f7cd290de44ad144a55fcde12c2ec",
+            "isKey": false,
+            "numCitedBy": 154,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The paper describes the way in which a Preference Semantics system for natural language analysis and generation tackles a difficult class of anaphoric inference problems (finding the correct referent for an English pronoun in context): those requiring either analysis (conceptual) knowledge of a complex sort, or requiring weak inductive knowledge of the course of events in the real world. The method employed converts all available knowledge to a canonical template form and endeavors to create chains of non-deductive inferences from the unknowns to the possible referents. Its method of selecting among possible chains of inferences is consistent with the overall principle of \"semantic preference\" used to set up the original meaning representation, of which these anaphoric inference procedures are a manipulation."
+            },
+            "slug": "Natural-language-inference.-Wilks",
+            "title": {
+                "fragments": [],
+                "text": "Natural language inference."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "The paper describes the way in which a Preference Semantics system for natural language analysis and generation tackles a difficult class of anaphoric inference problems (finding the correct referent for an English pronoun in context)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1973
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2263803"
+                        ],
+                        "name": "Yashar Mehdad",
+                        "slug": "Yashar-Mehdad",
+                        "structuredName": {
+                            "firstName": "Yashar",
+                            "lastName": "Mehdad",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yashar Mehdad"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1719404"
+                        ],
+                        "name": "Alessandro Moschitti",
+                        "slug": "Alessandro-Moschitti",
+                        "structuredName": {
+                            "firstName": "Alessandro",
+                            "lastName": "Moschitti",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alessandro Moschitti"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2337426"
+                        ],
+                        "name": "Fabio Massimo Zanzotto",
+                        "slug": "Fabio-Massimo-Zanzotto",
+                        "structuredName": {
+                            "firstName": "Fabio",
+                            "lastName": "Zanzotto",
+                            "middleNames": [
+                                "Massimo"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fabio Massimo Zanzotto"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, Mehdad et al. (2009) applied syntactic-semantic tree kernels for recognizing textual entailment."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 70,
+                                "start": 49
+                            }
+                        ],
+                        "text": ", 2005) to advanced methods that consider syntax (Mehdad et al., 2009), perform explicit sentence alignment (MacCartney et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 171,
+                                "start": 152
+                            }
+                        ],
+                        "text": "Existing solutions to NLI range from shallow approaches based on lexical similarities (Glickman et al., 2005) to advanced methods that consider syntax (Mehdad et al., 2009), perform explicit sentence alignment (MacCartney et al., 2008) or use formal logic (Clark and Harrison, 2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 16111000,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7e3bb72e679d99f0436fae11affda000a171bb1a",
+            "isKey": false,
+            "numCitedBy": 15,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we describe the SemKer system participating to the fifth Recognizing of Textual Entailment (RTE5) challenge. The major novelty with respect to the systems with which we participated to the previous challenges is the use of semantic knowledge based on Wikipedia. More specifically, we used it to enrich the similarity measure between pairs of text and hypothesis (i.e. the tree kernel for text and hypothesis pairs), with a lexical similarity (i.e. the similarity between the leaves of the trees. The results show the benefit of this added semantic information."
+            },
+            "slug": "SemKer:-Syntactic/Semantic-Kernels-for-Recognizing-Mehdad-Moschitti",
+            "title": {
+                "fragments": [],
+                "text": "SemKer: Syntactic/Semantic Kernels for Recognizing Textual Entailment"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "The SemKer system participating to the fifth Recognizing of Textual Entailment (RTE5) challenge is described, which uses semantic knowledge based on Wikipedia to enrich the similarity measure between pairs of text and hypothesis."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "TAC"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2267212"
+                        ],
+                        "name": "Juri Ganitkevitch",
+                        "slug": "Juri-Ganitkevitch",
+                        "structuredName": {
+                            "firstName": "Juri",
+                            "lastName": "Ganitkevitch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Juri Ganitkevitch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7536576"
+                        ],
+                        "name": "Benjamin Van Durme",
+                        "slug": "Benjamin-Van-Durme",
+                        "structuredName": {
+                            "firstName": "Benjamin",
+                            "lastName": "Durme",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Benjamin Van Durme"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763608"
+                        ],
+                        "name": "Chris Callison-Burch",
+                        "slug": "Chris-Callison-Burch",
+                        "structuredName": {
+                            "firstName": "Chris",
+                            "lastName": "Callison-Burch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chris Callison-Burch"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 117,
+                                "start": 92
+                            }
+                        ],
+                        "text": "A future direction would be to incorporate other resources such as the paraphrase database (Ganitkevitch et al., 2013) into the learning process so that such prior knowledge can be utilized."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6067240,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ef12383f516840ec1ec998cd5921dfc6e197c9b2",
+            "isKey": false,
+            "numCitedBy": 691,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present the 1.0 release of our paraphrase database, PPDB. Its English portion, PPDB:Eng, contains over 220 million paraphrase pairs, consisting of 73 million phrasal and 8 million lexical paraphrases, as well as 140 million paraphrase patterns, which capture many meaning-preserving syntactic transformations. The paraphrases are extracted from bilingual parallel corpora totaling over 100 million sentence pairs and over 2 billion English words. We also release PPDB:Spa, a collection of 196 million Spanish paraphrases. Each paraphrase pair in PPDB contains a set of associated scores, including paraphrase probabilities derived from the bitext data and a variety of monolingual distributional similarity scores computed from the Google n-grams and the Annotated Gigaword corpus. Our release includes pruning tools that allow users to determine their own precision/recall tradeoff."
+            },
+            "slug": "PPDB:-The-Paraphrase-Database-Ganitkevitch-Durme",
+            "title": {
+                "fragments": [],
+                "text": "PPDB: The Paraphrase Database"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 84,
+                "text": "The 1.0 release of the paraphrase database, PPDB, contains over 220 million paraphrase pairs, consisting of 73 million phrasal and 8 million lexical paraphrases, as well as 140million paraphrase patterns, which capture many meaning-preserving syntactic transformations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NAACL"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2210865"
+                        ],
+                        "name": "Ivan Vendrov",
+                        "slug": "Ivan-Vendrov",
+                        "structuredName": {
+                            "firstName": "Ivan",
+                            "lastName": "Vendrov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ivan Vendrov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3450996"
+                        ],
+                        "name": "Ryan Kiros",
+                        "slug": "Ryan-Kiros",
+                        "structuredName": {
+                            "firstName": "Ryan",
+                            "lastName": "Kiros",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ryan Kiros"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37895334"
+                        ],
+                        "name": "S. Fidler",
+                        "slug": "S.-Fidler",
+                        "structuredName": {
+                            "firstName": "Sanja",
+                            "lastName": "Fidler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Fidler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2422559"
+                        ],
+                        "name": "R. Urtasun",
+                        "slug": "R.-Urtasun",
+                        "structuredName": {
+                            "firstName": "Raquel",
+                            "lastName": "Urtasun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Urtasun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 21,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Vendrov et al. (2015) used a Skip-Thought model proposed by Kiros et al. (2015) to the NLI task and reported an accuracy of 81.5% on the test data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11440692,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "46b8cbcdff87b842c2c1d4a003c831f845096ba7",
+            "isKey": true,
+            "numCitedBy": 434,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Hypernymy, textual entailment, and image captioning can be seen as special cases of a single visual-semantic hierarchy over words, sentences, and images. In this paper we advocate for explicitly modeling the partial order structure of this hierarchy. Towards this goal, we introduce a general method for learning ordered representations, and show how it can be applied to a variety of tasks involving images and language. We show that the resulting representations improve performance over current approaches for hypernym prediction and image-caption retrieval."
+            },
+            "slug": "Order-Embeddings-of-Images-and-Language-Vendrov-Kiros",
+            "title": {
+                "fragments": [],
+                "text": "Order-Embeddings of Images and Language"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A general method for learning ordered representations is introduced, and it is shown that the resulting representations improve performance over current approaches for hypernym prediction and image-caption retrieval."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753223"
+                        ],
+                        "name": "A. Graves",
+                        "slug": "A.-Graves",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Graves",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Graves"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 196,
+                                "start": 182
+                            }
+                        ],
+                        "text": "\u2022 mLSTM with bi-LSTM sentence modeling (d = 150): This is the same as the model above except that when we derive the hidden states hj and h t k of the two sentences, we use bi-LSTMs (Graves, 2012) instead of LSTMs."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2118350,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a97b5db17acc731ef67321832dbbaf5766153135",
+            "isKey": false,
+            "numCitedBy": 1748,
+            "numCiting": 220,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recurrent neural networks are powerful sequence learners. They are able to incorporate context information in a flexible way, and are robust to localised distortions of the input data. These properties make them well suited to sequence labelling, where input sequences are transcribed with streams of labels. The aim of this thesis is to advance the state-of-the-art in supervised sequence labelling with recurrent networks. Its two main contributions are (1) a new type of output layer that allows recurrent networks to be trained directly for sequence labelling tasks where the alignment between the inputs and the labels is unknown, and (2) an extension of the long short-term memory network architecture to multidimensional data, such as images and video sequences."
+            },
+            "slug": "Supervised-Sequence-Labelling-with-Recurrent-Neural-Graves",
+            "title": {
+                "fragments": [],
+                "text": "Supervised Sequence Labelling with Recurrent Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A new type of output layer that allows recurrent networks to be trained directly for sequence labelling tasks where the alignment between the inputs and the labels is unknown, and an extension of the long short-term memory network architecture to multidimensional data, such as images and video sequences."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Studies in Computational Intelligence"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1726807"
+                        ],
+                        "name": "Diederik P. Kingma",
+                        "slug": "Diederik-P.-Kingma",
+                        "structuredName": {
+                            "firstName": "Diederik",
+                            "lastName": "Kingma",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Diederik P. Kingma"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2503659"
+                        ],
+                        "name": "Jimmy Ba",
+                        "slug": "Jimmy-Ba",
+                        "structuredName": {
+                            "firstName": "Jimmy",
+                            "lastName": "Ba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jimmy Ba"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 56,
+                                "start": 35
+                            }
+                        ],
+                        "text": "Parameters: We use the Adam method (Kingma and Ba, 2014) with hyperparameters \u03b21 set to 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6628106,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a6cb366736791bcccc5c8639de5a8f9636bf87e8",
+            "isKey": false,
+            "numCitedBy": 90126,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm."
+            },
+            "slug": "Adam:-A-Method-for-Stochastic-Optimization-Kingma-Ba",
+            "title": {
+                "fragments": [],
+                "text": "Adam: A Method for Stochastic Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "This work introduces Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments, and provides a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7465342"
+                        ],
+                        "name": "Ido Dagan",
+                        "slug": "Ido-Dagan",
+                        "structuredName": {
+                            "firstName": "Ido",
+                            "lastName": "Dagan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ido Dagan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2807469"
+                        ],
+                        "name": "Oren Glickman",
+                        "slug": "Oren-Glickman",
+                        "structuredName": {
+                            "firstName": "Oren",
+                            "lastName": "Glickman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oren Glickman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1712352"
+                        ],
+                        "name": "B. Magnini",
+                        "slug": "B.-Magnini",
+                        "structuredName": {
+                            "firstName": "Bernardo",
+                            "lastName": "Magnini",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Magnini"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 156,
+                                "start": 138
+                            }
+                        ],
+                        "text": "There has been much interest in NLI in the past decade, especially surround-\ning the PASCAL Recognizing Textual Entailment (RTE) Challenge (Dagan et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 157,
+                                "start": 137
+                            }
+                        ],
+                        "text": "There has been much interest in NLI in the past decade, especially surrounding the PASCAL Recognizing Textual Entailment (RTE) Challenge (Dagan et al., 2005)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8587959,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "de794d50713ea5f91a7c9da3d72041e2f5ef8452",
+            "isKey": false,
+            "numCitedBy": 1763,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents the Third PASCAL Recognising Textual Entailment Challenge (RTE-3), providing an overview of the dataset creating methodology and the submitted systems. In creating this year's dataset, a number of longer texts were introduced to make the challenge more oriented to realistic scenarios. Additionally, a pool of resources was offered so that the participants could share common tools. A pilot task was also set up, aimed at differentiating unknown entailments from identified contradictions and providing justifications for overall system decisions. 26 participants submitted 44 runs, using different approaches and generally presenting new entailment models and achieving higher scores than in the previous challenges."
+            },
+            "slug": "The-PASCAL-Recognising-Textual-Entailment-Challenge-Dagan-Glickman",
+            "title": {
+                "fragments": [],
+                "text": "The PASCAL Recognising Textual Entailment Challenge"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "This paper presents the Third PASCAL Recognising Textual Entailment Challenge (RTE-3), providing an overview of the dataset creating methodology and the submitted systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MLCW"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7465342"
+                        ],
+                        "name": "Ido Dagan",
+                        "slug": "Ido-Dagan",
+                        "structuredName": {
+                            "firstName": "Ido",
+                            "lastName": "Dagan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ido Dagan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144590225"
+                        ],
+                        "name": "D. Roth",
+                        "slug": "D.-Roth",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Roth",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Roth"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3149169"
+                        ],
+                        "name": "M. Sammons",
+                        "slug": "M.-Sammons",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Sammons",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Sammons"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2337426"
+                        ],
+                        "name": "Fabio Massimo Zanzotto",
+                        "slug": "Fabio-Massimo-Zanzotto",
+                        "structuredName": {
+                            "firstName": "Fabio",
+                            "lastName": "Zanzotto",
+                            "middleNames": [
+                                "Massimo"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fabio Massimo Zanzotto"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 68
+                            }
+                        ],
+                        "text": "A comprehensive review on existing work can be found in the book by Dagan et al. (2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 61205942,
+            "fieldsOfStudy": [
+                "Art"
+            ],
+            "id": "e9cb15132afd04ae93ba693044fd73f6746f58c4",
+            "isKey": false,
+            "numCitedBy": 271,
+            "numCiting": 213,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "* List of Figures* List of Tables* Preface* Acknowledgments* Textual Entailment* Architectures and Approaches* Alignment, Classification, and Learning* Case Studies* Knowledge Acquisition for Textual Entailment* Research Directions in RTE* Bibliography* Authors' Biographies"
+            },
+            "slug": "Recognizing-Textual-Entailment:-Models-and-Dagan-Roth",
+            "title": {
+                "fragments": [],
+                "text": "Recognizing Textual Entailment: Models and Applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This book discusses the development of knowledge acquisition techniques in the field of text-based learning and discusses their applications in the context of education and research."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Recognizing Textual Entailment: Models and Applications"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2807469"
+                        ],
+                        "name": "Oren Glickman",
+                        "slug": "Oren-Glickman",
+                        "structuredName": {
+                            "firstName": "Oren",
+                            "lastName": "Glickman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oren Glickman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7465342"
+                        ],
+                        "name": "Ido Dagan",
+                        "slug": "Ido-Dagan",
+                        "structuredName": {
+                            "firstName": "Ido",
+                            "lastName": "Dagan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ido Dagan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145200175"
+                        ],
+                        "name": "Moshe Koppel",
+                        "slug": "Moshe-Koppel",
+                        "structuredName": {
+                            "firstName": "Moshe",
+                            "lastName": "Koppel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Moshe Koppel"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 47,
+                                "start": 24
+                            }
+                        ],
+                        "text": "on lexical similarities (Glickman et al., 2005) to advanced methods that consider syntax (Mehdad et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 87
+                            }
+                        ],
+                        "text": "Existing solutions to NLI range from shallow approaches based on lexical similarities (Glickman et al., 2005) to advanced methods that consider syntax (Mehdad et al., 2009), perform explicit sentence alignment (MacCartney et al., 2008) or use formal logic (Clark and Harrison, 2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 18932093,
+            "fieldsOfStudy": [
+                "Philosophy"
+            ],
+            "id": "5b615430893b698341d9da67f1bf7c8a72fc9b4f",
+            "isKey": false,
+            "numCitedBy": 89,
+            "numCiting": 4,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper proposes a general probabilistic setting that formalizes the notion of textual entailment. In addition we describe a concrete model for lexical entailment based on web co-occurrence statistics in a bag of words representation."
+            },
+            "slug": "Web-Based-Probabilistic-Textual-Entailment-Glickman-Dagan",
+            "title": {
+                "fragments": [],
+                "text": "Web Based Probabilistic Textual Entailment"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 81,
+                "text": "A general probabilistic setting that formalizes the notion of textual entailment and a concrete model for lexical entailment based on web co-occurrence statistics in a bag of words representation are proposed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2005
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Antonio Torralba, and Sanja Fidler. 2015. Skip-thought vectors"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Advances in Neural Information Processing Systems"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Hochreiter and Schmidhuber1997] Sepp Hochreiter and J\u00fcrgen Schmidhuber. 1997. Long short-term memory"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Sanja Fidler, and Raquel Urtasun. 2015. Orderembeddings of images and language"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Sanja Fidler, and Raquel Urtasun. 2015. Orderembeddings of images and language"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Recognizing textual entailment. Multilingual Natural Language Applications: From Theory to Practice"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Recognizing textual entailment. Multilingual Natural Language Applications: From Theory to Practice"
+            },
+            "year": 2011
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 14,
+            "methodology": 17,
+            "result": 4
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 28,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Learning-Natural-Language-Inference-with-LSTM-Wang-Jiang/596c882de006e4bb4a93f1fa08a5dd467bee060a?sort=total-citations"
+}

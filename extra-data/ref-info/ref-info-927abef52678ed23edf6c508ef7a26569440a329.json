@@ -1,0 +1,2295 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48213604"
+                        ],
+                        "name": "Scott W. Bennett",
+                        "slug": "Scott-W.-Bennett",
+                        "structuredName": {
+                            "firstName": "Scott",
+                            "lastName": "Bennett",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Scott W. Bennett"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2939759"
+                        ],
+                        "name": "Chinatsu Aone",
+                        "slug": "Chinatsu-Aone",
+                        "structuredName": {
+                            "firstName": "Chinatsu",
+                            "lastName": "Aone",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chinatsu Aone"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1357335,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "73271ae1f06becab789e66e69005db3e5cc78a14",
+            "isKey": false,
+            "numCitedBy": 58,
+            "numCiting": 10,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes RoboTag, an advanced prototype for a machine learningbased multilingual information extraction system. First, we describe a general client/server architecture used in learning from observation. Then we give a detailed description of our novel decision-tree tagging approach. RoboTag performance for the proper noun tagging task in English and Japanese is compared against humantagged keys and to the best hand-coded pattern performance (as reported in the MUC and MET evaluation results). Related work and future directions are presented. 1 I n t r o d u c t i o n The ability to tag proper names such as organization, person, and place names in multilingual texts has great value for tasks like information extraction, information retrieval, and machine translation (Aone, Charocopos, and Gorlinsky, 1997). The most successful systems currently rely on handcoded patterns to identify the desired names in texts (Adv, 1995; Def, 1996). This approach achieves its best performance using different handcoded rule sets for each language/domain pair. Several of these systems have improved in ease of use, particularly in the speed of the write pattern/evaluate performance/refine pattern loop which plays the central role in the development process. One approach in name tagging is to assist in the creation of hand-coded rules by making it easier for the developer to mark parts of the name and its surrounding context to include in the pattern. This boosts productivity in hand-coding rules but still requires a significant amount of effort by the developer to identify key parts of the pattern. A step up from this is to determine how to generalize the rule so that it is more broadly applicable or to suggest to the developer which parts of the context have highvalue for inclusion in the pattern. Nevertheless, a skilled developer with a thorough knowledge of the particular pattern language is still essential. Our goal in developing RoboTag was to make it possible for an end-user to build a tagging system simply by giving examples of what should be tagged, rather than requiring the user to understand a pattern language. RoboTag uses a machine learning algorithm to discover features that the training examples have in common. This knowledge is used to construct a tagging procedure that can find additional, previously unseen examples for extraction. It was important (for the confidence of our users) that the tagging procedure induced by the system be easily explained in terms of how it makes its decisions. This was one of the factors that led us to consider using decision trees (Quinlan, 1993) as a key component of the system. Other potential learning or statistical approaches for a problem like this (e.g., Neural Nets or Hidden Markov Models) did not offer this advantage. The RoboTag system is particularly well instrumented for exploration of different learning system parameters and inspection of the induced tagging procedures. First, we discuss the overall architecture for the l~oboTag system. Next, we focus on the machine learning algorithm employed for tag learning. We then present experimental results which compare RoboTag to both human-tagged keys and to the best hand-coded rule systems. Lastly, related work and future directions are discussed. 2 RoboTag Architecture RoboTag design was motivated by our goal of developing an interactive learning system. The system had to process a large number of texts as well as provide the ability to visualize learning results and allow feedback to the learning system. To this end, RoboTag was designed as a client/server architecture. The client interface is an enhancement of a manual annotation tool. The interface works with multiple languages and includes support for both singleand double-byte coding schemes. We focus on English and Japanese in this paper. The server por-"
+            },
+            "slug": "Learning-to-Tag-Multilingual-Texts-Through-Bennett-Aone",
+            "title": {
+                "fragments": [],
+                "text": "Learning to Tag Multilingual Texts Through Observation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 75,
+                "text": "This paper describes RoboTag, an advanced prototype for a machine learningbased multilingual information extraction system, and describes a general client/server architecture used in learning from observation and presents experimental results which compare RoboTag to both human-tagged keys and to the best hand-coded rule systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32183233"
+                        ],
+                        "name": "Andrew Borthwick",
+                        "slug": "Andrew-Borthwick",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Borthwick",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrew Borthwick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144360624"
+                        ],
+                        "name": "J. Sterling",
+                        "slug": "J.-Sterling",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Sterling",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Sterling"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685296"
+                        ],
+                        "name": "Eugene Agichtein",
+                        "slug": "Eugene-Agichtein",
+                        "structuredName": {
+                            "firstName": "Eugene",
+                            "lastName": "Agichtein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Eugene Agichtein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1788050"
+                        ],
+                        "name": "R. Grishman",
+                        "slug": "R.-Grishman",
+                        "structuredName": {
+                            "firstName": "Ralph",
+                            "lastName": "Grishman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Grishman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 17353402,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "497355583d46f1bdd3487f4a59133fa5d246b798",
+            "isKey": false,
+            "numCitedBy": 274,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes a new system called \\Maximum Entropy Named Entity\" or \\MENE\" (pronounced \\meanie\") which was NYU's entrant in the MUC-7 named entity evaluation. By working within the framework of maximum entropy theory and utilizing a exible object-based architecture, the system is able to make use of an extraordinarily diverse range of knowledge sources in making its tagging decisions. These knowledge sources include capitalization features, lexical features and features indicating the current type of text (i.e. headline or main body). It makes use of a broad array of dictionaries of useful single or multi-word terms such as rst names, company names, and corporate su xes. These dictionaries required no manual editing and were either downloaded from the web or were simply \\obvious\" lists entered by hand."
+            },
+            "slug": "NYU:-Description-of-the-MENE-Named-Entity-System-as-Borthwick-Sterling",
+            "title": {
+                "fragments": [],
+                "text": "NYU: Description of the MENE Named Entity System as Used in MUC-7"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "This paper describes a new system called \\Maximum Entropy Named Entity\" or \\MENE\" (pronounced \\meanie\") which was NYU's entrant in the MUC-7 named entity evaluation and is able to make use of an extraordinarily diverse range of knowledge sources in making its tagging decisions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MUC"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1732071"
+                        ],
+                        "name": "R. Weischedel",
+                        "slug": "R.-Weischedel",
+                        "structuredName": {
+                            "firstName": "Ralph",
+                            "lastName": "Weischedel",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Weischedel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3227843"
+                        ],
+                        "name": "M. Meteer",
+                        "slug": "M.-Meteer",
+                        "structuredName": {
+                            "firstName": "Marie",
+                            "lastName": "Meteer",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Meteer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35442155"
+                        ],
+                        "name": "R. Schwartz",
+                        "slug": "R.-Schwartz",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Schwartz",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Schwartz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1744313"
+                        ],
+                        "name": "L. Ramshaw",
+                        "slug": "L.-Ramshaw",
+                        "structuredName": {
+                            "firstName": "Lance",
+                            "lastName": "Ramshaw",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Ramshaw"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2452408"
+                        ],
+                        "name": "Jeff Palmucci",
+                        "slug": "Jeff-Palmucci",
+                        "structuredName": {
+                            "firstName": "Jeff",
+                            "lastName": "Palmucci",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jeff Palmucci"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6838726,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6a94da952fb8ffc77881028081e90efb494f1c5d",
+            "isKey": false,
+            "numCitedBy": 329,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From spring 1990 through fall 1991, we performed a battery of small experiments to test the effectiveness of supplementing knowledge-based techniques with probabilistic models. This paper reports our experiments in predicting parts of speech of highly ambiguous words, predicting the intended interpretation of an utterance when more than one interpretation satisfies all known syntactic and semantic constraints, and learning caseframe informationfor verbsfrom example uses.From these experiments, we are convinced that probabilistic models based on annotated corpora can effectively reduce the ambiguity in processing text and can be used to acquire lexical informationfrom a corpus, by supplementing knowledge-based techniques.Based on the results of those experiments, we have constructed a new natural language system (PLUM) for extracting data from text, e.g., newswire text."
+            },
+            "slug": "Coping-with-Ambiguity-and-Unknown-Words-through-Weischedel-Meteer",
+            "title": {
+                "fragments": [],
+                "text": "Coping with Ambiguity and Unknown Words through Probabilistic Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 57,
+                "text": "A new natural language system (PLUM) is constructed for extracting data from text, e.g., newswire text, based on results of experiments in predicting parts of speech of highly ambiguous words, predicting the intended interpretation of an utterance when more than one interpretation satisfies all known syntactic and semantic constraints."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CL"
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2214048"
+                        ],
+                        "name": "Damaris M. Ayuso",
+                        "slug": "Damaris-M.-Ayuso",
+                        "structuredName": {
+                            "firstName": "Damaris",
+                            "lastName": "Ayuso",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Damaris M. Ayuso"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2248665"
+                        ],
+                        "name": "S. Boisen",
+                        "slug": "S.-Boisen",
+                        "structuredName": {
+                            "firstName": "Sean",
+                            "lastName": "Boisen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Boisen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "20866393"
+                        ],
+                        "name": "Heidi Fox",
+                        "slug": "Heidi-Fox",
+                        "structuredName": {
+                            "firstName": "Heidi",
+                            "lastName": "Fox",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Heidi Fox"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1793645"
+                        ],
+                        "name": "H. Gish",
+                        "slug": "H.-Gish",
+                        "structuredName": {
+                            "firstName": "Herbert",
+                            "lastName": "Gish",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Gish"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2319612"
+                        ],
+                        "name": "R. Ingria",
+                        "slug": "R.-Ingria",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Ingria",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Ingria"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1732071"
+                        ],
+                        "name": "R. Weischedel",
+                        "slug": "R.-Weischedel",
+                        "structuredName": {
+                            "firstName": "Ralph",
+                            "lastName": "Weischedel",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Weischedel"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Most current techniques for named entity recognition are based on handcrafting finite state patterns to recognize names, dates, etc. (Appelt et al., 1995;  Weischedel, 1995 )."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": " Bennett et al. (1997)  use binary decision trees for the NE task."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 53771606,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f82c3dd34684a54a6df2f57d6dcf07460897acb1",
+            "isKey": false,
+            "numCitedBy": 75,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Traditional approaches to the problem of extracting data from texts have emphasized hand-crafted linguistic knowledge. In contrast, BBN's PLUM system (Probabilistic Language Understanding Model) was developed as part of a DARPA-funded research effort on integrating probabilistic language models with more traditional linguistic techniques. Our research and development goals are\u2022 more rapid development of new applications,\u2022 the ability to train (and re-train) systems based on user markings of correct and incorrect output,\u2022 more accurate selection among interpretations when more than one is found, and\u2022 more robust partial interpretation when no complete interpretation can be found."
+            },
+            "slug": "BBN:-description-of-the-PLUM-system-as-used-for-Ayuso-Boisen",
+            "title": {
+                "fragments": [],
+                "text": "BBN: description of the PLUM system as used for MUC-4"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "BBN's PLUM system (Probabilistic Language Understanding Model) was developed as part of a DARPA-funded research effort on integrating probabilistic language models with more traditional linguistic techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MUC"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49233326"
+                        ],
+                        "name": "R. Merchant",
+                        "slug": "R.-Merchant",
+                        "structuredName": {
+                            "firstName": "Roberta",
+                            "lastName": "Merchant",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Merchant"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2417157"
+                        ],
+                        "name": "M. E. Okurowski",
+                        "slug": "M.-E.-Okurowski",
+                        "structuredName": {
+                            "firstName": "Mary",
+                            "lastName": "Okurowski",
+                            "middleNames": [
+                                "Ellen"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. E. Okurowski"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2867844"
+                        ],
+                        "name": "Nancy A. Chinchor",
+                        "slug": "Nancy-A.-Chinchor",
+                        "structuredName": {
+                            "firstName": "Nancy",
+                            "lastName": "Chinchor",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nancy A. Chinchor"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Finally, the \u201cBest Rules\u201d result in the Mixed Case Spanish was reported anonymously in ( Merchant, Okurowski, & Chinchor, 1996 )."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 43571051,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "b0e34eb05a744bff2a6cfe6702c2918d39b1c73a",
+            "isKey": false,
+            "numCitedBy": 35,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In November, 1996, the Message Understanding Conference-6 (MUC-6) evaluation of named entity identification demonstrated that systems are approaching human performance on English language texts [10]. Informal and anonymous, the MET provided a new opportunity to assess progress on the same task in Spanish, Japanese, and Chinese. Preliminary results indicate that MET systems in all three languages performed comparably to those of the MUC-6 evaluation in English."
+            },
+            "slug": "The-Multilingual-Entity-Task-(MET)-Overview-Merchant-Okurowski",
+            "title": {
+                "fragments": [],
+                "text": "The Multilingual Entity Task (MET) Overview"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 36,
+                "text": "Preliminary results indicate that MET systems in all three languages performed comparably to those of the MUC-6 evaluation in English."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "TIPSTER"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2359882"
+                        ],
+                        "name": "George R. Krupka",
+                        "slug": "George-R.-Krupka",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Krupka",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "George R. Krupka"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 17492055,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6fd398dcb4c0a20de0d10c7a30b36fa8e1b24ead",
+            "isKey": false,
+            "numCitedBy": 93,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "SRA used the combination of two systems for the MUC-6 tasks: NameTag\u2122, a commercial software product that recognizes proper names and other key phrases in text; and HASTEN, an experimental text extraction system that has been under development for only one year. For the Named Entity task, SRA adapted a subset of NameTag's capabilities to the MUC-6 specification. For the Template Element task, SRA fed the full results of NameTag into HASTEN, which performed additional processing to extract and generate the organization and person templates. For the Scenario Template task, SRA fed NameTag's results into HASTEN, which used its full extraction capabilities to extract and generate the management succession templates. Figure 1 illustrates the contribution of each system to the MUC-6 tasks. Due to the relative complexity of the scenario template task, this paper will focus on HASTEN and the experimental results for scenario extraction, and will provide brief descriptions of NameTag and the other tasks."
+            },
+            "slug": "SRA:-description-of-the-SRA-system-as-used-for-Krupka",
+            "title": {
+                "fragments": [],
+                "text": "SRA: description of the SRA system as used for MUC-6"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Due to the relative complexity of the scenario template task, this paper will focus on HASTEN and the experimental results for scenario extraction, and will provide brief descriptions of NameTag and the other tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MUC"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2757028"
+                        ],
+                        "name": "J. Aberdeen",
+                        "slug": "J.-Aberdeen",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Aberdeen",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Aberdeen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "5416402"
+                        ],
+                        "name": "J. Burger",
+                        "slug": "J.-Burger",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Burger",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Burger"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1786957"
+                        ],
+                        "name": "David S. Day",
+                        "slug": "David-S.-Day",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Day",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David S. Day"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145148360"
+                        ],
+                        "name": "L. Hirschman",
+                        "slug": "L.-Hirschman",
+                        "structuredName": {
+                            "firstName": "Lynette",
+                            "lastName": "Hirschman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Hirschman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2066645774"
+                        ],
+                        "name": "Patricia Robinson",
+                        "slug": "Patricia-Robinson",
+                        "structuredName": {
+                            "firstName": "Patricia",
+                            "lastName": "Robinson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Patricia Robinson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2200382"
+                        ],
+                        "name": "M. Vilain",
+                        "slug": "M.-Vilain",
+                        "structuredName": {
+                            "firstName": "Marc",
+                            "lastName": "Vilain",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Vilain"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "However, Brill\u2019s transformation-based learning algorithm (Brill, 1995) has been applied to the NE problem, as outlined in Aberdeen et al. (1995). Performance thus far reported lags that of IdentiFinder by about 10 F-measure points."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12788399,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "14fee4e396303e9eb00beff50ee018ca9f7aff1a",
+            "isKey": false,
+            "numCitedBy": 194,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "As with several other veteran MUC participants, MITRE's Alembic system has undergone a major transformation in the past two years. The genesis of this transformation occurred during a dinner conversation at the last MUC conference, MUC-5. At that time, several of us reluctantly admitted that our major impediment towards improved performance was reliance on then-standard linguistic models of syntax. We knew we would need an alternative to traditional linguistic grammars, even to the somewhat non-traditional categorial pseudo-parser we had in place at the time. The problem was, which alternative?"
+            },
+            "slug": "MITRE:-description-of-the-Alembic-system-used-for-Aberdeen-Burger",
+            "title": {
+                "fragments": [],
+                "text": "MITRE: description of the Alembic system used for MUC-6"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "As with several other veteran MUC participants, MITRE's Alembic system has undergone a major transformation in the past two years."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MUC"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2244184"
+                        ],
+                        "name": "Kenneth Ward Church",
+                        "slug": "Kenneth-Ward-Church",
+                        "structuredName": {
+                            "firstName": "Kenneth",
+                            "lastName": "Church",
+                            "middleNames": [
+                                "Ward"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kenneth Ward Church"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 189,
+                                "start": 150
+                            }
+                        ],
+                        "text": "In recent years, hidden Markov models (HMM\u2019s) have enjoyed great success in other textual classification problems\u2014most notably part-of-speech tagging (Church, 1988; Weischedel et al., 1993)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3166885,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a7e084fe51a40eeaaf79bf0b78e837d5bc4a8e10",
+            "isKey": false,
+            "numCitedBy": 1058,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A program that tags each word in an input sentence with the most likely part of speech has been written. The program uses a linear-time dynamic programming algorithm to find an assignment of parts of speech to words that optimizes the product of (a) lexical probabilities (probability of observing part of speech i given word i) and (b) contextual probabilities (probability of observing part of speech i given n following parts of speech). Program performance is encouraging; a 400-word sample is presented and is judged to be 99.5% correct.<<ETX>>"
+            },
+            "slug": "A-Stochastic-Parts-Program-and-Noun-Phrase-Parser-Church",
+            "title": {
+                "fragments": [],
+                "text": "A Stochastic Parts Program and Noun Phrase Parser for Unrestricted Text"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 73,
+                "text": "A program that tags each word in an input sentence with the most likely part of speech has been written and performance is encouraging; a 400-word sample is presented and is judged to be 99.5% correct."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ANLP"
+            },
+            "year": 1988
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2867844"
+                        ],
+                        "name": "Nancy A. Chinchor",
+                        "slug": "Nancy-A.-Chinchor",
+                        "structuredName": {
+                            "firstName": "Nancy",
+                            "lastName": "Chinchor",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nancy A. Chinchor"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 9357263,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3eb7d7d7217c74f41fddf738bf62a73e7d3a2e00",
+            "isKey": false,
+            "numCitedBy": 30,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The results of the MUC-6 evaluation must be analyzed to determine whether close scores significantly distinguish systems or whether the differences in those scores are a matter of chance. In order to do such an analysis, a method of computer intensive hypothesis testing was developed by SAIC for the MUC-3 results and has been used for distinguishing MUC scores since that time. The implementation of this method for the MUC evaluations was first described in [1] and later the concepts behind the statistical model were explained in a more understandable manner in [2]. This paper gives the results of the statistical testing for the three MUC-6 tasks where a single metric could be associated with a system's performance."
+            },
+            "slug": "Statistical-Significance-of-MUC-6-Results-Chinchor",
+            "title": {
+                "fragments": [],
+                "text": "Statistical Significance of MUC-6 Results"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "The results of the statistical testing for the three MUC-6 tasks where a single metric could be associated with a system's performance are given."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MUC"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1697386"
+                        ],
+                        "name": "D. Appelt",
+                        "slug": "D.-Appelt",
+                        "structuredName": {
+                            "firstName": "Douglas",
+                            "lastName": "Appelt",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Appelt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3187096"
+                        ],
+                        "name": "Jerry R. Hobbs",
+                        "slug": "Jerry-R.-Hobbs",
+                        "structuredName": {
+                            "firstName": "Jerry",
+                            "lastName": "Hobbs",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jerry R. Hobbs"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143626545"
+                        ],
+                        "name": "J. Bear",
+                        "slug": "J.-Bear",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Bear",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Bear"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "26701145"
+                        ],
+                        "name": "David J. Israel",
+                        "slug": "David-J.-Israel",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Israel",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David J. Israel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1709723"
+                        ],
+                        "name": "M. Kameyama",
+                        "slug": "M.-Kameyama",
+                        "structuredName": {
+                            "firstName": "Megumi",
+                            "lastName": "Kameyama",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Kameyama"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144891293"
+                        ],
+                        "name": "David L. Martin",
+                        "slug": "David-L.-Martin",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Martin",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David L. Martin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34670558"
+                        ],
+                        "name": "Karen L. Myers",
+                        "slug": "Karen-L.-Myers",
+                        "structuredName": {
+                            "firstName": "Karen",
+                            "lastName": "Myers",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Karen L. Myers"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145340591"
+                        ],
+                        "name": "M. Tyson",
+                        "slug": "M.-Tyson",
+                        "structuredName": {
+                            "firstName": "Mabry",
+                            "lastName": "Tyson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Tyson"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5803393,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "12b3afe2f27750062868e4d60f8f56290296cef1",
+            "isKey": false,
+            "numCitedBy": 168,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "SRI International participated in the MUC-6 evaluation using the latest version of SRI's FASTUS system [1]. The FASTUS system was originally developed for participation in the MUC-4 evaluation [3] in 1992, and the performance of FASTUS in MUC-4 helped demonstrate the viability of finite state technologies in constrained natural-language understanding tasks. The system has undergone significant revision since MUC-4, and it is safe to say that the current system does not share a single line of code with the original. The fundamental ideas behind FASTUS, however, are retained in the current system: an architecture consisting of cascaded finite state transducers, each providing an additional level of analysis of the input, together with merging of the final results."
+            },
+            "slug": "SRI-International-FASTUS-SystemMUC-6-Test-Results-Appelt-Hobbs",
+            "title": {
+                "fragments": [],
+                "text": "SRI International FASTUS SystemMUC-6 Test Results and Analysis"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 61,
+                "text": "SRI International participated in the MUC-6 evaluation using the latest version of SRI's FASTUS system, an architecture consisting of cascaded finite state transducers, each providing an additional level of analysis of the input, together with merging of the final results."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MUC"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1644031891"
+                        ],
+                        "name": "WeischedelRalph",
+                        "slug": "WeischedelRalph",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "WeischedelRalph",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "WeischedelRalph"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1644053665"
+                        ],
+                        "name": "SchwartzRichard",
+                        "slug": "SchwartzRichard",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "SchwartzRichard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "SchwartzRichard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1644053565"
+                        ],
+                        "name": "PalmucciJeff",
+                        "slug": "PalmucciJeff",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "PalmucciJeff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "PalmucciJeff"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1643823873"
+                        ],
+                        "name": "MeteerMarie",
+                        "slug": "MeteerMarie",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "MeteerMarie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "MeteerMarie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1644053939"
+                        ],
+                        "name": "RamshawLance",
+                        "slug": "RamshawLance",
+                        "structuredName": {
+                            "firstName": "",
+                            "lastName": "RamshawLance",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "RamshawLance"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 215902625,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ec70ef24e627bc93c30b94a7dcd5f6e957983770",
+            "isKey": false,
+            "numCitedBy": 65,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From spring 1990 through fall 1991, we performed a battery of small experiments to test the effectiveness of supplementing knowledge-based techniques with probabilistic models. This paper reports o..."
+            },
+            "slug": "Coping-with-ambiguity-and-unknown-words-through-WeischedelRalph-SchwartzRichard",
+            "title": {
+                "fragments": [],
+                "text": "Coping with ambiguity and unknown words through probabilistic models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 91,
+                "text": "From spring 1990 through fall 1991, a battery of small experiments were performed to test the effectiveness of supplementing knowledge-based techniques with probabilistic models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145022783"
+                        ],
+                        "name": "E. Brill",
+                        "slug": "E.-Brill",
+                        "structuredName": {
+                            "firstName": "Eric",
+                            "lastName": "Brill",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Brill"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 134248,
+            "fieldsOfStudy": [
+                "Materials Science"
+            ],
+            "id": "2b2eb4a9bb146e3ffaa0b025fba0ed14240c683f",
+            "isKey": false,
+            "numCitedBy": 1821,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A method of injection molding wherein a pair of separable mold plates are initially urged together and fluid plastic is injected into a mold cavity formed between the mold plates to form an article. The injection pressure of the fluid plastic is utilized to generate forces sufficient to overcome the internal forces urging the mold plates apart and thus hold the mold plates together until the material being molded solidifies either by cooling, chemical reaction or phase change."
+            },
+            "slug": "Transformation-Based-Error-Driven-Learning-and-A-in-Brill",
+            "title": {
+                "fragments": [],
+                "text": "Transformation-Based Error-Driven Learning and Natural Language Processing: A Case Study in Part-of-Speech Tagging"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 94,
+                "text": "Injection molding wherein a pair of separable mold plates are initially urged together and fluid plastic is injected into a mold cavity formed between the mold plates to form an article."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Linguistics"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46443206"
+                        ],
+                        "name": "V. Savicki",
+                        "slug": "V.-Savicki",
+                        "structuredName": {
+                            "firstName": "Victor",
+                            "lastName": "Savicki",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Savicki"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "66647905"
+                        ],
+                        "name": "Dawn Lingenfelter",
+                        "slug": "Dawn-Lingenfelter",
+                        "structuredName": {
+                            "firstName": "Dawn",
+                            "lastName": "Lingenfelter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dawn Lingenfelter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47317149"
+                        ],
+                        "name": "Merle Kelley",
+                        "slug": "Merle-Kelley",
+                        "structuredName": {
+                            "firstName": "Merle",
+                            "lastName": "Kelley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Merle Kelley"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 144890560,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "ee7a942dc1ab10ffcfeed5754d59d37a975e8f8c",
+            "isKey": false,
+            "numCitedBy": 142,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This study focuses on group gender composition and the seeming relatedness between gender roles and group process functions described as task and maintenance, as found on the Internet. The sample was drawn from randomly selected set of 27 online discussion groups from both the Internet and from commercial information services (e.g. Compuserv) using the ProjectH dataset. The 2692 valid messages were coded for language content (fact, apology, first person flaming, status, etc.) that has been related to gender role in other research. Each message was also coded regarding the gender of its author. Results held with the conventional impression that men far outnumber women as participants in online discussion groups. However, results were mixed in regard to the relation of language patterns and group gender composition. Gender composition was related to patterns of computer mediated communication in this context. However, there were an unexpectedly high proportion of participants of indeterminate gender in this dataset, it is difficult to test the hypotheses with precision. However, the sample is comprised of \u201creal-life\u201d groups, so what is lost in experimental control is compensated for in generalization to other uncontrolled settings."
+            },
+            "slug": "Gender-Language-Style-and-Group-Composition-in-Savicki-Lingenfelter",
+            "title": {
+                "fragments": [],
+                "text": "Gender Language Style and Group Composition in Internet Discussion Groups"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1712517"
+                        ],
+                        "name": "L. Rabiner",
+                        "slug": "L.-Rabiner",
+                        "structuredName": {
+                            "firstName": "Lawrence",
+                            "lastName": "Rabiner",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Rabiner"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 13618539,
+            "fieldsOfStudy": [
+                "Geology"
+            ],
+            "id": "8fe2ea0a67954f1380b3387e3262f1cdb9f9b3e5",
+            "isKey": false,
+            "numCitedBy": 24804,
+            "numCiting": 98,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The fabric comprises a novel type of netting which will have particular utility in screening out mosquitoes and like insects and pests. The fabric is defined of voids having depth as well as width and length. The fabric is usable as a material from which to form clothing for wear, or bed coverings, or sleeping bags, etc., besides use simply as a netting."
+            },
+            "slug": "A-Tutorial-on-Hidden-Markov-Models-and-Selected-Rabiner",
+            "title": {
+                "fragments": [],
+                "text": "A Tutorial on Hidden Markov Models and Selected Applications"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "The fabric comprises a novel type of netting which will have particular utility in screening out mosquitoes and like insects and pests."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143965467"
+                        ],
+                        "name": "G. Burnett",
+                        "slug": "G.-Burnett",
+                        "structuredName": {
+                            "firstName": "Gary",
+                            "lastName": "Burnett",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Burnett"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2058554377"
+                        ],
+                        "name": "H. Buerkle",
+                        "slug": "H.-Buerkle",
+                        "structuredName": {
+                            "firstName": "Harry",
+                            "lastName": "Buerkle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Buerkle"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 13508115,
+            "fieldsOfStudy": [
+                "Environmental Science"
+            ],
+            "id": "6e1d069e566044dd7677fc4c8caab5fdbd95dc6a",
+            "isKey": false,
+            "numCitedBy": 128,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Burnett's (2000) typology of information exchange in virtual communities attempts to provide a framework for examining the range of activities undertaken by participants in such communities. This study is the first in a series to apply the typology to specific virtual communities, in an effort to assess its accuracy against the day-to-day interactions to be found in two online communities. Through a comparison of these two communities using the typology, revisions to the typology are proposed which will allow it to reflect more accurately activities found within the communities. By providing a metric through which to address such questions, the revised typology will allow a richer understanding of virtual communities as social information environments."
+            },
+            "slug": "Information-Exchange-in-Virtual-Communities:-A-Burnett-Buerkle",
+            "title": {
+                "fragments": [],
+                "text": "Information Exchange in Virtual Communities: A Comparative Study"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 52,
+                "text": "This study is the first in a series to apply the typology of information exchange in virtual communities to specific virtual communities, in an effort to assess its accuracy against the day-to-day interactions to be found in two online communities."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Comput. Mediat. Commun."
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145500689"
+                        ],
+                        "name": "A. Viterbi",
+                        "slug": "A.-Viterbi",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Viterbi",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Viterbi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Using the Viterbi algorithm ( Viterbi, 1967 ), we efficiently search the entire space of all possible name-class assignments, maximizing the numerator of Equation 3.2, Pr( W, NC)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15843983,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "145c0b53514b02bdc3dadfb2e1cea124f2abd99b",
+            "isKey": true,
+            "numCitedBy": 5209,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The probability of error in decoding an optimal convolutional code transmitted over a memoryless channel is bounded from above and below as a function of the constraint length of the code. For all but pathological channels the bounds are asymptotically (exponentially) tight for rates above R_{0} , the computational cutoff rate of sequential decoding. As a function of constraint length the performance of optimal convolutional codes is shown to be superior to that of block codes of the same length, the relative improvement increasing with rate. The upper bound is obtained for a specific probabilistic nonsequential decoding algorithm which is shown to be asymptotically optimum for rates above R_{0} and whose performance bears certain similarities to that of sequential decoding algorithms."
+            },
+            "slug": "Error-bounds-for-convolutional-codes-and-an-optimum-Viterbi",
+            "title": {
+                "fragments": [],
+                "text": "Error bounds for convolutional codes and an asymptotically optimum decoding algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The upper bound is obtained for a specific probabilistic nonsequential decoding algorithm which is shown to be asymptotically optimum for rates above R_{0} and whose performance bears certain similarities to that of sequential decoding algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Inf. Theory"
+            },
+            "year": 1967
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32642690"
+                        ],
+                        "name": "P. Klemm",
+                        "slug": "P.-Klemm",
+                        "structuredName": {
+                            "firstName": "Paula",
+                            "lastName": "Klemm",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Klemm"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2071320947"
+                        ],
+                        "name": "M. Hurst",
+                        "slug": "M.-Hurst",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Hurst",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hurst"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "16088070"
+                        ],
+                        "name": "S. Dearholt",
+                        "slug": "S.-Dearholt",
+                        "structuredName": {
+                            "firstName": "Sandra",
+                            "lastName": "Dearholt",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Dearholt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1396348974"
+                        ],
+                        "name": "S. Trone",
+                        "slug": "S.-Trone",
+                        "structuredName": {
+                            "firstName": "Sarah",
+                            "lastName": "Trone",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Trone"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 24867506,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "481c539a468d13345bfe4f3bbc68132c7e418278",
+            "isKey": false,
+            "numCitedBy": 222,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The role of community-based cancer support groups (CSGs) in helping people cope with cancer is well known. Recently, online CSGs have become a viable alternative to traditional CSGs. The purposes of this study were to determine if categories of responses on Internet cancer support groups (ICSGs) differ when the majority of the participants were of a single gender, and whether response categories seen on gender-specific ICSGs were different than those on ICSGs used equally by men and women. A line-by-line analysis of postings on prostate, breast, and mixed ICSGs were analyzed and responses categorized. Four categories (information giving/seeking; encouragement/support; personal opinion; and personal experience) accounted for approximately 80% of responses across the groups. Information giving/seeking was ranked first in the prostate group, and personal experience took priority in the breast group. Men were more than twice as likely to give information and women more than twice as likely to give encouragement and support. One category (prayer), identified in the mixed group, was lacking in the prostate and breast groups, and an activism category was added to the prostate group. Categorical responses differed by gender (chi 2 = 79.40, P < .0001). Attention should be given to facilitating the entry of underserved groups into ICSGs. Future research should explore the relationship between ICSG membership and variables such as depression, survival time, and quality of life."
+            },
+            "slug": "Gender-differences-on-Internet-cancer-support-Klemm-Hurst",
+            "title": {
+                "fragments": [],
+                "text": "Gender differences on Internet cancer support groups."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 35,
+                "text": "Categorical responses differed by gender (chi 2 = 79.40, P < .0001), and attention should be given to facilitating the entry of underserved groups into ICSGs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Computers in nursing"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2620384"
+                        ],
+                        "name": "B. Sundheim",
+                        "slug": "B.-Sundheim",
+                        "structuredName": {
+                            "firstName": "Beth",
+                            "lastName": "Sundheim",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Sundheim"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 86808326,
+            "fieldsOfStudy": [
+                "Psychology"
+            ],
+            "id": "43cf2cffde870af5bff6d1c54b39ae850a032c12",
+            "isKey": false,
+            "numCitedBy": 52,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Named-entity-task-definition,-version-2.1-Sundheim",
+            "title": {
+                "fragments": [],
+                "text": "Named entity task definition, version 2.1"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1732071"
+                        ],
+                        "name": "R. Weischedel",
+                        "slug": "R.-Weischedel",
+                        "structuredName": {
+                            "firstName": "Ralph",
+                            "lastName": "Weischedel",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Weischedel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2214048"
+                        ],
+                        "name": "Damaris M. Ayuso",
+                        "slug": "Damaris-M.-Ayuso",
+                        "structuredName": {
+                            "firstName": "Damaris",
+                            "lastName": "Ayuso",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Damaris M. Ayuso"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2248665"
+                        ],
+                        "name": "S. Boisen",
+                        "slug": "S.-Boisen",
+                        "structuredName": {
+                            "firstName": "Sean",
+                            "lastName": "Boisen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Boisen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "20866393"
+                        ],
+                        "name": "Heidi Fox",
+                        "slug": "Heidi-Fox",
+                        "structuredName": {
+                            "firstName": "Heidi",
+                            "lastName": "Fox",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Heidi Fox"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2319612"
+                        ],
+                        "name": "R. Ingria",
+                        "slug": "R.-Ingria",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Ingria",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Ingria"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153330102"
+                        ],
+                        "name": "Tomoyoshi Matsukawa",
+                        "slug": "Tomoyoshi-Matsukawa",
+                        "structuredName": {
+                            "firstName": "Tomoyoshi",
+                            "lastName": "Matsukawa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomoyoshi Matsukawa"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145030811"
+                        ],
+                        "name": "C. Papageorgiou",
+                        "slug": "C.-Papageorgiou",
+                        "structuredName": {
+                            "firstName": "Constantine",
+                            "lastName": "Papageorgiou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Papageorgiou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47051488"
+                        ],
+                        "name": "D. MacLaughlin",
+                        "slug": "D.-MacLaughlin",
+                        "structuredName": {
+                            "firstName": "Dawn",
+                            "lastName": "MacLaughlin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. MacLaughlin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39558581"
+                        ],
+                        "name": "Masaichiro Kitagawa",
+                        "slug": "Masaichiro-Kitagawa",
+                        "structuredName": {
+                            "firstName": "Masaichiro",
+                            "lastName": "Kitagawa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Masaichiro Kitagawa"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2113529902"
+                        ],
+                        "name": "Tsutomu Sakai",
+                        "slug": "Tsutomu-Sakai",
+                        "structuredName": {
+                            "firstName": "Tsutomu",
+                            "lastName": "Sakai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tsutomu Sakai"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50017558"
+                        ],
+                        "name": "J. Abe",
+                        "slug": "J.-Abe",
+                        "structuredName": {
+                            "firstName": "June",
+                            "lastName": "Abe",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Abe"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3386879"
+                        ],
+                        "name": "Hiroto Hosihi",
+                        "slug": "Hiroto-Hosihi",
+                        "structuredName": {
+                            "firstName": "Hiroto",
+                            "lastName": "Hosihi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hiroto Hosihi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48356794"
+                        ],
+                        "name": "Y. Miyamoto",
+                        "slug": "Y.-Miyamoto",
+                        "structuredName": {
+                            "firstName": "Yoichi",
+                            "lastName": "Miyamoto",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Miyamoto"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "123937952"
+                        ],
+                        "name": "Scott Miller",
+                        "slug": "Scott-Miller",
+                        "structuredName": {
+                            "firstName": "Scott",
+                            "lastName": "Miller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Scott Miller"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 871522,
+            "fieldsOfStudy": [
+                "Education"
+            ],
+            "id": "ae682bd026492882e8509e9d7556686bd1487bc6",
+            "isKey": false,
+            "numCitedBy": 28,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper provides a quick summary of our technical approach, which has been developing since 1991 and wa s first fielded in MUC-3 . First a quick review of what is new is provided, then a walkthrough of system components . Perhaps most interesting is out analysis, following the walkthrough, of what we learned through MUC-6 and o f what directions we would take now to break the performance barriers of cur rent information extraction technology."
+            },
+            "slug": "BBN:-description-of-the-PLUM-system-as-used-for-Weischedel-Ayuso",
+            "title": {
+                "fragments": [],
+                "text": "BBN: description of the PLUM system as used for MUC-5"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 78,
+                "text": "This paper provides a quick summary of the technical approach to information extraction, which has been developing since 1991 and was first fielded in MUC-3 and is followed by a walkthrough of system components."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MUC"
+            },
+            "year": 1993
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "/ Communities in cyberspace. London: Routledge. -1999. -Pp. 222-239. 3. Rheingold H. The virtual community: Finding connection in a computerized world"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Klemm P. Gender differences on Internet cancer support"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 465,
+                                "start": 449
+                            }
+                        ],
+                        "text": ", when is The Wall Street Journal an artifact, and when is it an organization? When is White House an organization, and when a location? Are branch offices of a bank an organization? Is a street name a location? Should yesterday and last Tuesday be labeled dates? Is mid-morning a time? In order to achieve human annotator consistency, guidelines with numerous special cases have been defined for the Seventh Message Understanding Conference, MUC-7 (Chinchor, 1998)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "MUC-7 named entity task definition dry run version, version"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Seventh Message Understanding Conference (MUC-7) (to appear)"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "The economics of online cooperation [ \u0422\u0435\u043a\u0441\u0442 ] / M . A . Smith , P . Kollock"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 87
+                            }
+                        ],
+                        "text": "Finally, the \u201cBest Rules\u201d result in the Mixed Case Spanish was reported anonymously in (Merchant et al., 1996) ."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "The multilingual entity task overview"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Tipster Text Program Phase II (pp. 445\u2013447)"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "MUC-7 Named Entity Task Definition Dry Run Version, Version 3 Proceedings of the Seventh Message Understanding Conference (MUC-7) (to appear)"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MUC-7 Named Entity Task Definition Dry Run Version, Version 3 Proceedings of the Seventh Message Understanding Conference (MUC-7) (to appear)"
+            },
+            "year": 1997
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 4,
+            "methodology": 3
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 24,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/An-Algorithm-that-Learns-What's-in-a-Name-Bikel-Schwartz/927abef52678ed23edf6c508ef7a26569440a329?sort=total-citations"
+}

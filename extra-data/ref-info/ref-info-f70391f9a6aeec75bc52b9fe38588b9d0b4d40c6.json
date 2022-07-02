@@ -1,0 +1,2689 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1821711"
+                        ],
+                        "name": "Thang Luong",
+                        "slug": "Thang-Luong",
+                        "structuredName": {
+                            "firstName": "Thang",
+                            "lastName": "Luong",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thang Luong"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 297,
+                                "start": 279
+                            }
+                        ],
+                        "text": "\u2026a context-sensitive morphological RNN.\nPreviously, (Lazaridou et al., 2013) had used compositional distributional semantic models, originally designed to learn meanings of phrases, to derive representations for complex words, in which the base unit is the morpheme, similar to (Luong et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 23
+                            }
+                        ],
+                        "text": "With a few exceptions (Luong et al., 2013), work on learning of representations for NLP has focused exclusively on the word level."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 18
+                            }
+                        ],
+                        "text": "But, as noted by (Luong et al., 2013), their models can only combine a stem with an affix and do not support recursive morpheme composition."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 22,
+                                "start": 4
+                            }
+                        ],
+                        "text": "In (Luong et al., 2013) they also choose to operate at the morpheme level, assuming access to a dictionary of morphemic analyses of words."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 229,
+                                "start": 209
+                            }
+                        ],
+                        "text": ", 2013) had used compositional distributional semantic models, originally designed to learn meanings of phrases, to derive representations for complex words, in which the base unit is the morpheme, similar to (Luong et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 192,
+                                "start": 174
+                            }
+                        ],
+                        "text": "Recent work has showed that large improvements in terms of model accuracy can be obtained by performing unsupervised pre-training of word embeddings (Collobert et al., 2011; Luong et al., 2013; Zheng et al., 2013; Socher et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 12
+                            }
+                        ],
+                        "text": ", 2011) and (Luong et al., 2013), we lowercase all words and substitute each numerical digit by a 0 (for instance, 1967 becomes 0000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 56,
+                                "start": 38
+                            }
+                        ],
+                        "text": "Like in (Collobert et al., 2011) and (Luong et al., 2013), we lowercase all words and substitute each numerical digit by a 0 (for instance, 1967 becomes 0000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14276764,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "53ab89807caead278d3deb7b6a4180b277d3cb77",
+            "isKey": true,
+            "numCitedBy": 794,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Vector-space word representations have been very successful in recent years at improving performance across a variety of NLP tasks. However, common to most existing work, words are regarded as independent entities without any explicit relationship among morphologically related words being modeled. As a result, rare and complex words are often poorly estimated, and all unknown words are represented in a rather crude way using only one or a few vectors. This paper addresses this shortcoming by proposing a novel model that is capable of building representations for morphologically complex words from their morphemes. We combine recursive neural networks (RNNs), where each morpheme is a basic unit, with neural language models (NLMs) to consider contextual information in learning morphologicallyaware word representations. Our learned models outperform existing word representations by a good margin on word similarity tasks across many datasets, including a new dataset we introduce focused on rare words to complement existing ones in an interesting way."
+            },
+            "slug": "Better-Word-Representations-with-Recursive-Neural-Luong-Socher",
+            "title": {
+                "fragments": [],
+                "text": "Better Word Representations with Recursive Neural Networks for Morphology"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper combines recursive neural networks, where each morpheme is a basic unit, with neural language models to consider contextual information in learning morphologicallyaware word representations and proposes a novel model capable of building representations for morphologically complex words from their morphemes."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CoNLL"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2152196565"
+                        ],
+                        "name": "Xiaoqing Zheng",
+                        "slug": "Xiaoqing-Zheng",
+                        "structuredName": {
+                            "firstName": "Xiaoqing",
+                            "lastName": "Zheng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xiaoqing Zheng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118024416"
+                        ],
+                        "name": "Hanyang Chen",
+                        "slug": "Hanyang-Chen",
+                        "structuredName": {
+                            "firstName": "Hanyang",
+                            "lastName": "Chen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hanyang Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118717461"
+                        ],
+                        "name": "Tianyu Xu",
+                        "slug": "Tianyu-Xu",
+                        "structuredName": {
+                            "firstName": "Tianyu",
+                            "lastName": "Xu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tianyu Xu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 212,
+                                "start": 194
+                            }
+                        ],
+                        "text": "Recent work has showed that large improvements in terms of model accuracy can be obtained by performing unsupervised pre-training of word embeddings (Collobert et al., 2011; Luong et al., 2013; Zheng et al., 2013; Socher et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12586316,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5ee9bed324a4f0716554409dc367df3beeb27b44",
+            "isKey": false,
+            "numCitedBy": 292,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This study explores the feasibility of performing Chinese word segmentation (CWS) and POS tagging by deep learning. We try to avoid task-specific feature engineering, and use deep layers of neural networks to discover relevant features to the tasks. We leverage large-scale unlabeled data to improve internal representation of Chinese characters, and use these improved representations to enhance supervised word segmentation and POS tagging models. Our networks achieved close to state-of-theart performance with minimal computational cost. We also describe a perceptron-style algorithm for training the neural networks, as an alternative to maximum-likelihood method, to speed up the training process and make the learning algorithm easier to be implemented."
+            },
+            "slug": "Deep-Learning-for-Chinese-Word-Segmentation-and-POS-Zheng-Chen",
+            "title": {
+                "fragments": [],
+                "text": "Deep Learning for Chinese Word Segmentation and POS Tagging"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "This study explores the feasibility of performing Chinese word segmentation and POS tagging by deep learning, and describes a perceptron-style algorithm for training the neural networks, as an alternative to maximum-likelihood method to speed up the training process and make the learning algorithm easier to be implemented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2939803"
+                        ],
+                        "name": "Ronan Collobert",
+                        "slug": "Ronan-Collobert",
+                        "structuredName": {
+                            "firstName": "Ronan",
+                            "lastName": "Collobert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronan Collobert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145183709"
+                        ],
+                        "name": "J. Weston",
+                        "slug": "J.-Weston",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Weston",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weston"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "21432929"
+                        ],
+                        "name": "Michael Karlen",
+                        "slug": "Michael-Karlen",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Karlen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael Karlen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2645384"
+                        ],
+                        "name": "K. Kavukcuoglu",
+                        "slug": "K.-Kavukcuoglu",
+                        "structuredName": {
+                            "firstName": "Koray",
+                            "lastName": "Kavukcuoglu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Kavukcuoglu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46283650"
+                        ],
+                        "name": "P. Kuksa",
+                        "slug": "P.-Kuksa",
+                        "structuredName": {
+                            "firstName": "Pavel",
+                            "lastName": "Kuksa",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Kuksa"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 9
+                            }
+                        ],
+                        "text": "Like in (Collobert et al., 2011), we use a prediction scheme that takes into account the sentence structure."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 91
+                            }
+                        ],
+                        "text": "The result of our system for the WSJ corpus is similar to the ones of (Manning, 2011) and (Collobert et al., 2011), and very competitive with the result of (S\u00f8gaard, 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 23
+                            }
+                        ],
+                        "text": "In the same way as in (Collobert et al., 2011), we interpret the sentence score (5) as a conditional probability over a path."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 30
+                            }
+                        ],
+                        "text": "(Manning, 2011; S\u00f8gaard, 2011; Collobert et al., 2011)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 150
+                            }
+                        ],
+                        "text": "Recent work has showed that large improvements in terms of model accuracy can be obtained by performing unsupervised pre-training of word embeddings (Collobert et al., 2011; Luong et al., 2013; Zheng et al., 2013; Socher et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 9
+                            }
+                        ],
+                        "text": "Like in (Collobert et al., 2011) and (Luong et al., 2013), we lowercase all words and substitute each numerical digit by a 0 (for instance, 1967 becomes 0000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 67,
+                                "start": 45
+                            }
+                        ],
+                        "text": "Our work was mainly inspired by the work of (Collobert et al., 2011) which has the specific goal of avoiding task-specific engineering of features for standard natural language processing tasks, while still achieving good results."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 351666,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bc1022b031dc6c7019696492e8116598097a8c12",
+            "isKey": true,
+            "numCitedBy": 6658,
+            "numCiting": 108,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a unified neural network architecture and learning algorithm that can be applied to various natural language processing tasks including part-of-speech tagging, chunking, named entity recognition, and semantic role labeling. This versatility is achieved by trying to avoid task-specific engineering and therefore disregarding a lot of prior knowledge. Instead of exploiting man-made input features carefully optimized for each task, our system learns internal representations on the basis of vast amounts of mostly unlabeled training data. This work is then used as a basis for building a freely available tagging system with good performance and minimal computational requirements."
+            },
+            "slug": "Natural-Language-Processing-(Almost)-from-Scratch-Collobert-Weston",
+            "title": {
+                "fragments": [],
+                "text": "Natural Language Processing (Almost) from Scratch"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 95,
+                "text": "A unified neural network architecture and learning algorithm that can be applied to various natural language processing tasks including part-of-speech tagging, chunking, named entity recognition, and semantic role labeling is proposed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2166511"
+                        ],
+                        "name": "R. Socher",
+                        "slug": "R.-Socher",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Socher",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Socher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144661918"
+                        ],
+                        "name": "John Bauer",
+                        "slug": "John-Bauer",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Bauer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "John Bauer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 233,
+                                "start": 214
+                            }
+                        ],
+                        "text": "Recent work has showed that large improvements in terms of model accuracy can be obtained by performing unsupervised pre-training of word embeddings (Collobert et al., 2011; Luong et al., 2013; Zheng et al., 2013; Socher et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14687186,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "acc4e56c44771ebf69302a06af51498aeb0a6ac8",
+            "isKey": false,
+            "numCitedBy": 900,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Natural language parsing has typically been done with small sets of discrete categories such as NP and VP, but this representation does not capture the full syntactic nor semantic richness of linguistic phrases, and attempts to improve on this by lexicalizing phrases or splitting categories only partly address the problem at the cost of huge feature spaces and sparseness. Instead, we introduce a Compositional Vector Grammar (CVG), which combines PCFGs with a syntactically untied recursive neural network that learns syntactico-semantic, compositional vector representations. The CVG improves the PCFG of the Stanford Parser by 3.8% to obtain an F1 score of 90.4%. It is fast to train and implemented approximately as an efficient reranker it is about 20% faster than the current Stanford factored parser. The CVG learns a soft notion of head words and improves performance on the types of ambiguities that require semantic information such as PP attachments."
+            },
+            "slug": "Parsing-with-Compositional-Vector-Grammars-Socher-Bauer",
+            "title": {
+                "fragments": [],
+                "text": "Parsing with Compositional Vector Grammars"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "A Compositional Vector Grammar (CVG), which combines PCFGs with a syntactically untied recursive neural network that learns syntactico-semantic, compositional vector representations and improves performance on the types of ambiguities that require semantic information such as PP attachments."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 13232120,
+            "fieldsOfStudy": [
+                "Linguistics"
+            ],
+            "id": "55b40dfe432f26fda35669fd257cf521faff0c7a",
+            "isKey": false,
+            "numCitedBy": 377,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "I examine what would be necessary to move part-of-speech tagging performance from its current level of about 97.3% token accuracy (56% sentence accuracy) to close to 100% accuracy. I suggest that it must still be possible to greatly increase tagging performance and examine some useful improvements that have recently been made to the Stanford Part-of-Speech Tagger. However, an error analysis of some of the remaining errors suggests that there is limited further mileage to be had either from better machine learning or better features in a discriminative sequence classifier. The prospects for further gains from semisupervised learning also seem quite limited. Rather, I suggest and begin to demonstrate that the largest opportunity for further progress comes from improving the taxonomic basis of the linguistic resources from which taggers are trained. That is, from improved descriptive linguistics. However, I conclude by suggesting that there are also limits to this process. The status of some words may not be able to be adequately captured by assigning them to one of a small number of categories. While conventions can be used in such cases to improve tagging consistency, they lack a strong linguistic basis."
+            },
+            "slug": "Part-of-Speech-Tagging-from-97-to-100:-Is-It-Time-Manning",
+            "title": {
+                "fragments": [],
+                "text": "Part-of-Speech Tagging from 97% to 100%: Is It Time for Some Linguistics?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "It is suggested and demonstrated that the largest opportunity for further progress comes from improving the taxonomic basis of the linguistic resources from which taggers are trained, that is, from improved descriptive linguistics."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CICLing"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "36037226"
+                        ],
+                        "name": "R\u00e9jean Ducharme",
+                        "slug": "R\u00e9jean-Ducharme",
+                        "structuredName": {
+                            "firstName": "R\u00e9jean",
+                            "lastName": "Ducharme",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R\u00e9jean Ducharme"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "120247189"
+                        ],
+                        "name": "Pascal Vincent",
+                        "slug": "Pascal-Vincent",
+                        "structuredName": {
+                            "firstName": "Pascal",
+                            "lastName": "Vincent",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Pascal Vincent"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1909943744"
+                        ],
+                        "name": "Christian Janvin",
+                        "slug": "Christian-Janvin",
+                        "structuredName": {
+                            "firstName": "Christian",
+                            "lastName": "Janvin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christian Janvin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 174,
+                                "start": 154
+                            }
+                        ],
+                        "text": "The deep neural network we propose extends Collobert et al.\u2019s (2011) neural network architecture, which is a variant of the architecture first proposed by Bengio et al. (2003)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 155
+                            }
+                        ],
+                        "text": "The first layer of the network transforms words into realvalued feature vectors (embeddings) that capture morphological, syntactic and semantic information about the words."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 221275765,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6c2b28f9354f667cd5bd07afc0471d8334430da7",
+            "isKey": false,
+            "numCitedBy": 6011,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A goal of statistical language modeling is to learn the joint probability function of sequences of words in a language. This is intrinsically difficult because of the curse of dimensionality: a word sequence on which the model will be tested is likely to be different from all the word sequences seen during training. Traditional but very successful approaches based on n-grams obtain generalization by concatenating very short overlapping sequences seen in the training set. We propose to fight the curse of dimensionality by learning a distributed representation for words which allows each training sentence to inform the model about an exponential number of semantically neighboring sentences. The model learns simultaneously (1) a distributed representation for each word along with (2) the probability function for word sequences, expressed in terms of these representations. Generalization is obtained because a sequence of words that has never been seen before gets high probability if it is made of words that are similar (in the sense of having a nearby representation) to words forming an already seen sentence. Training such large models (with millions of parameters) within a reasonable time is itself a significant challenge. We report on experiments using neural networks for the probability function, showing on two text corpora that the proposed approach significantly improves on state-of-the-art n-gram models, and that the proposed approach allows to take advantage of longer contexts."
+            },
+            "slug": "A-Neural-Probabilistic-Language-Model-Bengio-Ducharme",
+            "title": {
+                "fragments": [],
+                "text": "A Neural Probabilistic Language Model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work proposes to fight the curse of dimensionality by learning a distributed representation for words which allows each training sentence to inform the model about an exponential number of semantically neighboring sentences."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3259253"
+                        ],
+                        "name": "Kristina Toutanova",
+                        "slug": "Kristina-Toutanova",
+                        "structuredName": {
+                            "firstName": "Kristina",
+                            "lastName": "Toutanova",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kristina Toutanova"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38666915"
+                        ],
+                        "name": "D. Klein",
+                        "slug": "D.-Klein",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Klein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Klein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14835360,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "eb42a490cf4f186d3383c92963817d100afd81e2",
+            "isKey": false,
+            "numCitedBy": 3438,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new part-of-speech tagger that demonstrates the following ideas: (i) explicit use of both preceding and following tag contexts via a dependency network representation, (ii) broad use of lexical features, including jointly conditioning on multiple consecutive words, (iii) effective use of priors in conditional loglinear models, and (iv) fine-grained modeling of unknown word features. Using these ideas together, the resulting tagger gives a 97.24% accuracy on the Penn Treebank WSJ, an error reduction of 4.4% on the best previous single automatically learned tagging result."
+            },
+            "slug": "Feature-Rich-Part-of-Speech-Tagging-with-a-Cyclic-Toutanova-Klein",
+            "title": {
+                "fragments": [],
+                "text": "Feature-Rich Part-of-Speech Tagging with a Cyclic Dependency Network"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 82,
+                "text": "A new part-of-speech tagger is presented that demonstrates the following ideas: explicit use of both preceding and following tag contexts via a dependency network representation, broad use of lexical features, and effective use of priors in conditional loglinear models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NAACL"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2047446108"
+                        ],
+                        "name": "Tomas Mikolov",
+                        "slug": "Tomas-Mikolov",
+                        "structuredName": {
+                            "firstName": "Tomas",
+                            "lastName": "Mikolov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomas Mikolov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2118440152"
+                        ],
+                        "name": "Kai Chen",
+                        "slug": "Kai-Chen",
+                        "structuredName": {
+                            "firstName": "Kai",
+                            "lastName": "Chen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kai Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32131713"
+                        ],
+                        "name": "G. Corrado",
+                        "slug": "G.-Corrado",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Corrado",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Corrado"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49959210"
+                        ],
+                        "name": "J. Dean",
+                        "slug": "J.-Dean",
+                        "structuredName": {
+                            "firstName": "Jeffrey",
+                            "lastName": "Dean",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Dean"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 244,
+                                "start": 224
+                            }
+                        ],
+                        "text": "In our experiments, we perform unsupervised learning of word-level embeddings using the word2vec tool1, which implements the continuous bag-of-words and skip-gram architectures for computing vector representations of words (Mikolov et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5959482,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "330da625c15427c6e42ccfa3b747fb29e5835bf0",
+            "isKey": false,
+            "numCitedBy": 21889,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose two novel model architectures for computing continuous vector\nrepresentations of words from very large data sets. The quality of these\nrepresentations is measured in a word similarity task, and the results are\ncompared to the previously best performing techniques based on different types\nof neural networks. We observe large improvements in accuracy at much lower\ncomputational cost, i.e. it takes less than a day to learn high quality word\nvectors from a 1.6 billion words data set. Furthermore, we show that these\nvectors provide state-of-the-art performance on our test set for measuring\nsyntactic and semantic word similarities."
+            },
+            "slug": "Efficient-Estimation-of-Word-Representations-in-Mikolov-Chen",
+            "title": {
+                "fragments": [],
+                "text": "Efficient Estimation of Word Representations in Vector Space"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "Two novel model architectures for computing continuous vector representations of words from very large data sets are proposed and it is shown that these vectors provide state-of-the-art performance on the authors' test set for measuring syntactic and semantic word similarities."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2672644"
+                        ],
+                        "name": "Angeliki Lazaridou",
+                        "slug": "Angeliki-Lazaridou",
+                        "structuredName": {
+                            "firstName": "Angeliki",
+                            "lastName": "Lazaridou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Angeliki Lazaridou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48188880"
+                        ],
+                        "name": "M. Marelli",
+                        "slug": "M.-Marelli",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Marelli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Marelli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2713535"
+                        ],
+                        "name": "Roberto Zamparelli",
+                        "slug": "Roberto-Zamparelli",
+                        "structuredName": {
+                            "firstName": "Roberto",
+                            "lastName": "Zamparelli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Roberto Zamparelli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145283199"
+                        ],
+                        "name": "Marco Baroni",
+                        "slug": "Marco-Baroni",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Baroni",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marco Baroni"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 150
+                            }
+                        ],
+                        "text": "\u2026a language model neural network that utilizes surrounding words context, creating what they call a context-sensitive morphological RNN.\nPreviously, (Lazaridou et al., 2013) had used compositional distributional semantic models, originally designed to learn meanings of phrases, to derive\u2026"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 249,
+                                "start": 233
+                            }
+                        ],
+                        "text": "They show that the quality of the embeddings they propose is improved when they combine the RNNs with a language model neural network that utilizes surrounding words context, creating what they call a context-sensitive morphological RNN.\nPreviously, (Lazaridou et al., 2013) had used compositional distributional semantic models, originally designed to learn meanings of phrases, to derive representations for complex words, in which the base unit is the morpheme, similar to (Luong et al., 2013)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 7371294,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Linguistics"
+            ],
+            "id": "b4fcb3921b42d156a812484dcabf60c3f4410d42",
+            "isKey": false,
+            "numCitedBy": 102,
+            "numCiting": 51,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Speakers of a language can construct an unlimited number of new words through morphological derivation. This is a major cause of data sparseness for corpus-based approaches to lexical semantics, such as distributional semantic models of word meaning. We adapt compositional methods originally developed for phrases to the task of deriving the distributional meaning of morphologically complex words from their parts. Semantic representations constructed in this way beat a strong baseline and can be of higher quality than representations directly constructed from corpus data. Our results constitute a novel evaluation of the proposed composition methods, in which the full additive model achieves the best performance, and demonstrate the usefulness of a compositional morphology component in distributional semantics."
+            },
+            "slug": "Compositional-ly-Derived-Representations-of-Complex-Lazaridou-Marelli",
+            "title": {
+                "fragments": [],
+                "text": "Compositional-ly Derived Representations of Morphologically Complex Words in Distributional Semantics"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work adapts compositional methods originally developed for phrases to the task of deriving the distributional meaning of morphologically complex words from their parts, and demonstrates the usefulness of a compositional morphology component in distributional semantics."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1734174"
+                        ],
+                        "name": "M. Marcus",
+                        "slug": "M.-Marcus",
+                        "structuredName": {
+                            "firstName": "Mitchell",
+                            "lastName": "Marcus",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Marcus"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2424234"
+                        ],
+                        "name": "Beatrice Santorini",
+                        "slug": "Beatrice-Santorini",
+                        "structuredName": {
+                            "firstName": "Beatrice",
+                            "lastName": "Santorini",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Beatrice Santorini"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2063206"
+                        ],
+                        "name": "Mary Ann Marcinkiewicz",
+                        "slug": "Mary-Ann-Marcinkiewicz",
+                        "structuredName": {
+                            "firstName": "Mary",
+                            "lastName": "Marcinkiewicz",
+                            "middleNames": [
+                                "Ann"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mary Ann Marcinkiewicz"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 87,
+                                "start": 68
+                            }
+                        ],
+                        "text": "We use the Wall Street Journal (WSJ) portion of the Penn Treebank4 (Marcus et al., 1993) for English POS tagging."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 252796,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0b44fcbeea9415d400c5f5789d6b892b6f98daff",
+            "isKey": false,
+            "numCitedBy": 8177,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract : As a result of this grant, the researchers have now published oil CDROM a corpus of over 4 million words of running text annotated with part-of- speech (POS) tags, with over 3 million words of that material assigned skeletal grammatical structure. This material now includes a fully hand-parsed version of the classic Brown corpus. About one half of the papers at the ACL Workshop on Using Large Text Corpora this past summer were based on the materials generated by this grant."
+            },
+            "slug": "Building-a-Large-Annotated-Corpus-of-English:-The-Marcus-Santorini",
+            "title": {
+                "fragments": [],
+                "text": "Building a Large Annotated Corpus of English: The Penn Treebank"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 80,
+                "text": "As a result of this grant, the researchers have now published on CDROM a corpus of over 4 million words of running text annotated with part-of- speech (POS) tags, which includes a fully hand-parsed version of the classic Brown corpus."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CL"
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2939803"
+                        ],
+                        "name": "Ronan Collobert",
+                        "slug": "Ronan-Collobert",
+                        "structuredName": {
+                            "firstName": "Ronan",
+                            "lastName": "Collobert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronan Collobert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 87
+                            }
+                        ],
+                        "text": "The log-likelihood in Equation 7 can be computed efficiently using dynamic programming (Collobert, 2011)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 182,
+                                "start": 167
+                            }
+                        ],
+                        "text": "The backpropagation algorithm is a natural choice to efficiently compute gradients of network architectures such as the one proposed in this work (Lecun et al., 1998; Collobert, 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 266,
+                                "start": 251
+                            }
+                        ],
+                        "text": "Taking the log, we arrive at the following conditional log-probability:\nlog p ( [t]N1 |[w]N1 , \u03b8 ) = S ( [w]N1 , [t] N 1 , \u03b8 ) \u2212\nlog  \u2211 \u2200[u]N1 \u2208TN eS([w] N 1 ,[u] N 1 ,\u03b8)  (7)\nThe log-likelihood in Equation 7 can be computed efficiently using dynamic programming (Collobert, 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 134,
+                                "start": 119
+                            }
+                        ],
+                        "text": "Usually, when a task needs morphological or word shape information, the knowledge is included as handcrafted features (Collobert, 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11135765,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d6d931fe9bfe7223165b14ec85d79d56e406e38a",
+            "isKey": true,
+            "numCitedBy": 186,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a new fast purely discriminative algorithm for natural language parsing, based on a \u201cdeep\u201d recurrent convolutional graph transformer network (GTN). Assuming a decomposition of a parse tree into a stack of \u201clevels\u201d, the network predicts a level of the tree taking into account predictions of previous levels. Using only few basic text features which leverage word representations from Collobert and Weston (2008), we show similar performance (in F1 score) to existing pure discriminative parsers and existing \u201cbenchmark\u201d parsers (like Collins parser, probabilistic context-free grammars based), with a huge speed advantage."
+            },
+            "slug": "Deep-Learning-for-Efficient-Discriminative-Parsing-Collobert",
+            "title": {
+                "fragments": [],
+                "text": "Deep Learning for Efficient Discriminative Parsing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 96,
+                "text": "A new fast purely discriminative algorithm for natural language parsing, based on a \u201cdeep\u201d recurrent convolutional graph transformer network (GTN) and assuming a decomposition of a parse tree into a stack of \"levels\u201d, the network predicts a level of the tree taking into account predictions of previous levels."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1790831"
+                        ],
+                        "name": "C. D. Santos",
+                        "slug": "C.-D.-Santos",
+                        "structuredName": {
+                            "firstName": "C\u00edcero",
+                            "lastName": "Santos",
+                            "middleNames": [
+                                "Nogueira",
+                                "dos"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. D. Santos"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "8756311"
+                        ],
+                        "name": "R. Milidi\u00fa",
+                        "slug": "R.-Milidi\u00fa",
+                        "structuredName": {
+                            "firstName": "Ruy",
+                            "lastName": "Milidi\u00fa",
+                            "middleNames": [
+                                "Luiz"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Milidi\u00fa"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2116028"
+                        ],
+                        "name": "Ra\u00fal P. Renter\u00eda",
+                        "slug": "Ra\u00fal-P.-Renter\u00eda",
+                        "structuredName": {
+                            "firstName": "Ra\u00fal",
+                            "lastName": "Renter\u00eda",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ra\u00fal P. Renter\u00eda"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 27,
+                                "start": 4
+                            }
+                        ],
+                        "text": "In (dos Santos et al., 2008), the authors use Entropy Guided Transformation Learning, a learning strategy which combines Decision Trees and Transformation-Based Learning."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 50
+                            }
+                        ],
+                        "text": "We use the same training/test partitions used by (dos Santos et al., 2008)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 37985417,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cdf113ac623610c39897655195ce6d11e1269af9",
+            "isKey": false,
+            "numCitedBy": 36,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Entropy Guided Transformation Learning (ETL) is a new machine learning strategy that combines the advantages of Decision Trees (DT) and Transformation Based Learning (TBL). In this work, we apply the ETL framework to Portuguese Part-of-Speech Taggging. We use two different corpora: Mac-Morpho and Tycho Brahae. ETL achieves the best results reported so far for Machine Learning based POS tagging of both corpora. ETL provides a new training strategy that accelerates transformation learning. For the Mac-Morpho corpus this corresponds to a factor of three speedup. ETL shows accuracies of 96.75% and 96.64% for Mac-Morpho and Tycho Brahae, respectively."
+            },
+            "slug": "Portuguese-Part-of-Speech-Tagging-Using-Entropy-Santos-Milidi\u00fa",
+            "title": {
+                "fragments": [],
+                "text": "Portuguese Part-of-Speech Tagging Using Entropy Guided Transformation Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work applies the ETL framework to Portuguese Part-of-Speech Taggging and achieves the best results reported so far for Machine Learning based POS tagging of both corpora."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PROPOR"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1724972"
+                        ],
+                        "name": "A. Waibel",
+                        "slug": "A.-Waibel",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Waibel",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Waibel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40396597"
+                        ],
+                        "name": "Toshiyuki Hanazawa",
+                        "slug": "Toshiyuki-Hanazawa",
+                        "structuredName": {
+                            "firstName": "Toshiyuki",
+                            "lastName": "Hanazawa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Toshiyuki Hanazawa"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "9243990"
+                        ],
+                        "name": "K. Shikano",
+                        "slug": "K.-Shikano",
+                        "structuredName": {
+                            "firstName": "Kiyohiro",
+                            "lastName": "Shikano",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Shikano"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49464494"
+                        ],
+                        "name": "Kevin J. Lang",
+                        "slug": "Kevin-J.-Lang",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Lang",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kevin J. Lang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 120,
+                                "start": 100
+                            }
+                        ],
+                        "text": "In order to tackle this problem we use a convolutional approach, which has been first introduced by Waibel et al. (1989)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 299,
+                                "start": 297
+                            }
+                        ],
+                        "text": "\u2026the vector xn is processed by two usual neural network layers, which extract one more level of representation and compute the scores:\ns(xn) = W 2h(W 1xn + b 1) + b2 (4)\nwhere matrices W 1 \u2208 Rhlu\u00d7kwrd(dwrd+clu) and W 2 \u2208 R|T |\u00d7hlu , and vectors b1 \u2208 Rhlu and b2 \u2208 R|T | are parameters to be learned."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9563026,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cd62c9976534a6a2096a38244f6cbb03635a127e",
+            "isKey": false,
+            "numCitedBy": 2787,
+            "numCiting": 92,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The authors present a time-delay neural network (TDNN) approach to phoneme recognition which is characterized by two important properties: (1) using a three-layer arrangement of simple computing units, a hierarchy can be constructed that allows for the formation of arbitrary nonlinear decision surfaces, which the TDNN learns automatically using error backpropagation; and (2) the time-delay arrangement enables the network to discover acoustic-phonetic features and the temporal relationships between them independently of position in time and therefore not blurred by temporal shifts in the input. As a recognition task, the speaker-dependent recognition of the phonemes B, D, and G in varying phonetic contexts was chosen. For comparison, several discrete hidden Markov models (HMM) were trained to perform the same task. Performance evaluation over 1946 testing tokens from three speakers showed that the TDNN achieves a recognition rate of 98.5% correct while the rate obtained by the best of the HMMs was only 93.7%. >"
+            },
+            "slug": "Phoneme-recognition-using-time-delay-neural-Waibel-Hanazawa",
+            "title": {
+                "fragments": [],
+                "text": "Phoneme recognition using time-delay neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "The authors present a time-delay neural network (TDNN) approach to phoneme recognition which is characterized by two important properties: using a three-layer arrangement of simple computing units, a hierarchy can be constructed that allows for the formation of arbitrary nonlinear decision surfaces, which the TDNN learns automatically using error backpropagation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Acoust. Speech Signal Process."
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49610089"
+                        ],
+                        "name": "Andrei Alexandrescu",
+                        "slug": "Andrei-Alexandrescu",
+                        "structuredName": {
+                            "firstName": "Andrei",
+                            "lastName": "Alexandrescu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Andrei Alexandrescu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1783839"
+                        ],
+                        "name": "Katrin Kirchhoff",
+                        "slug": "Katrin-Kirchhoff",
+                        "structuredName": {
+                            "firstName": "Katrin",
+                            "lastName": "Kirchhoff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Katrin Kirchhoff"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 31,
+                                "start": 1
+                            }
+                        ],
+                        "text": "(Alexandrescu & Kirchhoff, 2006) present a factored neural language model where each word is represented as a vector of features such as stems, morphological tags and cases."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 937826,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a73ae2ce1cfafae61238b3fdb1bbb61093962b4d",
+            "isKey": false,
+            "numCitedBy": 98,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new type of neural probabilistic language model that learns a mapping from both words and explicit word features into a continuous space that is then used for word prediction. Additionally, we investigate several ways of deriving continuous word representations for unknown words from those of known words. The resulting model significantly reduces perplexity on sparse-data tasks when compared to standard backoff models, standard neural language models, and factored language models."
+            },
+            "slug": "Factored-Neural-Language-Models-Alexandrescu-Kirchhoff",
+            "title": {
+                "fragments": [],
+                "text": "Factored Neural Language Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 79,
+                "text": "A new type of neural probabilistic language model is presented that learns a mapping from both words and explicit word features into a continuous space that is then used for word prediction and significantly reduces perplexity on sparse-data tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NAACL"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1718246"
+                        ],
+                        "name": "S. Alu\u00edsio",
+                        "slug": "S.-Alu\u00edsio",
+                        "structuredName": {
+                            "firstName": "Sandra",
+                            "lastName": "Alu\u00edsio",
+                            "middleNames": [
+                                "Maria"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Alu\u00edsio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2529579"
+                        ],
+                        "name": "J. Pelizzoni",
+                        "slug": "J.-Pelizzoni",
+                        "structuredName": {
+                            "firstName": "Jorge",
+                            "lastName": "Pelizzoni",
+                            "middleNames": [
+                                "Marques"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Pelizzoni"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2071354929"
+                        ],
+                        "name": "Ana Raquel Marchi",
+                        "slug": "Ana-Raquel-Marchi",
+                        "structuredName": {
+                            "firstName": "Ana",
+                            "lastName": "Marchi",
+                            "middleNames": [
+                                "Raquel"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ana Raquel Marchi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145976738"
+                        ],
+                        "name": "Luc\u00e9lia de Oliveira",
+                        "slug": "Luc\u00e9lia-de-Oliveira",
+                        "structuredName": {
+                            "firstName": "Luc\u00e9lia",
+                            "lastName": "Oliveira",
+                            "middleNames": [
+                                "de"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Luc\u00e9lia de Oliveira"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144502960"
+                        ],
+                        "name": "R. Manenti",
+                        "slug": "R.-Manenti",
+                        "structuredName": {
+                            "firstName": "Regiana",
+                            "lastName": "Manenti",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Manenti"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2387160"
+                        ],
+                        "name": "Vanessa Marquiaf\u00e1vel",
+                        "slug": "Vanessa-Marquiaf\u00e1vel",
+                        "structuredName": {
+                            "firstName": "Vanessa",
+                            "lastName": "Marquiaf\u00e1vel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Vanessa Marquiaf\u00e1vel"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 42,
+                                "start": 23
+                            }
+                        ],
+                        "text": "The Mac-Morpho corpus (Alu\u0131\u0301sio et al., 2003) contains around 1.2 million manually tagged words."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 45,
+                                "start": 22
+                            }
+                        ],
+                        "text": "The Mac-Morpho corpus (Alu\u0131\u0301sio et al., 2003) contains around 1."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 40852451,
+            "fieldsOfStudy": [
+                "Linguistics"
+            ],
+            "id": "0fb942cbdaacc810d516951f62e01908e069a4fc",
+            "isKey": true,
+            "numCitedBy": 50,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article identifies and addresses the major linguistic/conceptual, as opposed to logistic, issues faced in the morphosyntactic tagging of MAC-Morpho, a 1.1 million word Brazilian Portuguese corpus of newspaper articles that has been developed in the Lacio-Web Project. Rather than simply presenting the annotated corpus and describing its tagset, we elaborate on the criteria for establishing the tagset and analyze some interesting cases amongst the linguistic problems we faced in this work."
+            },
+            "slug": "An-Account-of-the-Challenge-of-Tagging-a-Reference-Alu\u00edsio-Pelizzoni",
+            "title": {
+                "fragments": [],
+                "text": "An Account of the Challenge of Tagging a Reference Corpus for Brazilian Portuguese"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 84,
+                "text": "The major linguistic/conceptual, as opposed to logistic, issues faced in the morphosyntactic tagging of MAC-Morpho, a 1.1 million word Brazilian Portuguese corpus of newspaper articles that has been developed in the Lacio-Web Project are addressed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PROPOR"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721248"
+                        ],
+                        "name": "P. Haffner",
+                        "slug": "P.-Haffner",
+                        "structuredName": {
+                            "firstName": "Patrick",
+                            "lastName": "Haffner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Haffner"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 165,
+                                "start": 147
+                            }
+                        ],
+                        "text": "The backpropagation algorithm is a natural choice to efficiently compute gradients of network architectures such as the one proposed in this work (Lecun et al., 1998; Collobert, 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14542261,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "isKey": false,
+            "numCitedBy": 35270,
+            "numCiting": 248,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day."
+            },
+            "slug": "Gradient-based-learning-applied-to-document-LeCun-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Gradient-based learning applied to document recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task, and Convolutional neural networks are shown to outperform all other techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proc. IEEE"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700187"
+                        ],
+                        "name": "Anders S\u00f8gaard",
+                        "slug": "Anders-S\u00f8gaard",
+                        "structuredName": {
+                            "firstName": "Anders",
+                            "lastName": "S\u00f8gaard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anders S\u00f8gaard"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 28,
+                                "start": 16
+                            }
+                        ],
+                        "text": "(Manning, 2011; S\u00f8gaard, 2011; Collobert et al., 2011)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 169,
+                                "start": 157
+                            }
+                        ],
+                        "text": "The result of our system for the WSJ corpus is similar to the ones of (Manning, 2011) and (Collobert et al., 2011), and very competitive with the result of (S\u00f8gaard, 2011)."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 4
+                            }
+                        ],
+                        "text": "In (S\u00f8gaard, 2011), the author uses a semi-supervised version of the condensed nearest neighbor algorithm."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 28873816,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2a6626dadb6b624011c39270cc7678ac98e162a3",
+            "isKey": false,
+            "numCitedBy": 67,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper introduces a new training set condensation technique designed for mixtures of labeled and unlabeled data. It finds a condensed set of labeled and unlabeled data points, typically smaller than what is obtained using condensed nearest neighbor on the labeled data only, and improves classification accuracy. We evaluate the algorithm on semi-supervised part-of-speech tagging and present the best published result on the Wall Street Journal data set."
+            },
+            "slug": "Semi-supervised-condensed-nearest-neighbor-for-S\u00f8gaard",
+            "title": {
+                "fragments": [],
+                "text": "Semi-supervised condensed nearest neighbor for part-of-speech tagging"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 63,
+                "text": "A new training set condensation technique designed for mixtures of labeled and unlabeled data, which improves classification accuracy and evaluates the algorithm on semi-supervised part-of-speech tagging."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 65
+                            }
+                        ],
+                        "text": "A generalization of this learning rate schedule is\npresented in (Bengio, 2012)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10808461,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "522e90b9fccfd3c1c0603359eb04757d770c1ab5",
+            "isKey": false,
+            "numCitedBy": 1673,
+            "numCiting": 138,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning algorithms related to artificial neural networks and in particular for Deep Learning may seem to involve many bells and whistles, called hyper-parameters. This chapter is meant as a practical guide with recommendations for some of the most commonly used hyperparameters, in particular in the context of learning algorithms based on back-propagated gradient and gradient-based optimization. It also discusses how to deal with the fact that more interesting results can be obtained when allowing one to adjust many hyper-parameters. Overall, it describes elements of the practice used to successfully and efficiently train and debug large-scale and often deep multi-layer neural networks. It closes with open questions about the training difficulties observed with deeper architectures."
+            },
+            "slug": "Practical-Recommendations-for-Gradient-Based-of-Bengio",
+            "title": {
+                "fragments": [],
+                "text": "Practical Recommendations for Gradient-Based Training of Deep Architectures"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "Overall, this chapter describes elements of the practice used to successfully and efficiently train and debug large-scale and often deep multi-layer neural networks and closes with open questions about the training difficulties observed with deeper architectures."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks: Tricks of the Trade"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145500689"
+                        ],
+                        "name": "A. Viterbi",
+                        "slug": "A.-Viterbi",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Viterbi",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Viterbi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 10
+                            }
+                        ],
+                        "text": "Using the Viterbi (1967) algorithm, we can infer the predicted sentence tags [t\u2217]N1 , which are the ones composing the path that leads to the maximal score:\n[t\u2217]N1 = argmax [t]N1 \u2208TN\nS ( [w]N1 , [t] N 1 , \u03b8 ) (6)"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Using the Viterbi (1967) algorithm, we can infer the predicted sentence tags [t]1 , which are the ones composing the path that leads to the maximal score:"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15843983,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "145c0b53514b02bdc3dadfb2e1cea124f2abd99b",
+            "isKey": false,
+            "numCitedBy": 5209,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The probability of error in decoding an optimal convolutional code transmitted over a memoryless channel is bounded from above and below as a function of the constraint length of the code. For all but pathological channels the bounds are asymptotically (exponentially) tight for rates above R_{0} , the computational cutoff rate of sequential decoding. As a function of constraint length the performance of optimal convolutional codes is shown to be superior to that of block codes of the same length, the relative improvement increasing with rate. The upper bound is obtained for a specific probabilistic nonsequential decoding algorithm which is shown to be asymptotically optimum for rates above R_{0} and whose performance bears certain similarities to that of sequential decoding algorithms."
+            },
+            "slug": "Error-bounds-for-convolutional-codes-and-an-optimum-Viterbi",
+            "title": {
+                "fragments": [],
+                "text": "Error bounds for convolutional codes and an asymptotically optimum decoding algorithm"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The upper bound is obtained for a specific probabilistic nonsequential decoding algorithm which is shown to be asymptotically optimum for rates above R_{0} and whose performance bears certain similarities to that of sequential decoding algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Inf. Theory"
+            },
+            "year": 1967
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": ", Vincent , Pascal , and Janvin , Christian . A neural probabilistic language model"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Journal of Machine Learning Reseach"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "We use Theano\u2019s automatic differentiation capabilities in order to implement the backpropagation algorithm."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 131,
+                                "start": 110
+                            }
+                        ],
+                        "text": "In order to perform our experiments, we implement the proposed CharWNN architecture using the\nTheano library (Bergstra et al., 2010)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Theano: a CPU and GPU math expression compiler"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Python for Scientific Computing Conference (SciPy)"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Entropy Guided Feature Generation for Structure Learning"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PhD thesis, Pontif\u0131\u0301cia Universidade Cato\u0301lica do Rio de Janeiro,"
+            },
+            "year": 2012
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": ", Pascal , Pascanu , Razvan , Desjardins , Guillaume , Turian , Joseph , Warde - Farley , David , and Ben - gio , Yoshua . Theano : a CPU and GPU math expression compiler"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the Python for Scientific Computing Conference ( SciPy )"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Semisupervised condensed nearest neighbor for part-of-speech tagging"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "In Proceedings of the Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: Short Papers,"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Fernandes , Eraldo Lu\u0131\u0301s Rezende . Entropy Guided Feature Generation for Structure Learning"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            }
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 9,
+            "methodology": 12,
+            "result": 2
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 25,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Learning-Character-level-Representations-for-Santos-Zadrozny/f70391f9a6aeec75bc52b9fe38588b9d0b4d40c6?sort=total-citations"
+}

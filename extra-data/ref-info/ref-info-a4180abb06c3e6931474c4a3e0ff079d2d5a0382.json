@@ -1,0 +1,1512 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "103288752"
+                        ],
+                        "name": "L. H. Miller",
+                        "slug": "L.-H.-Miller",
+                        "structuredName": {
+                            "firstName": "Leslie",
+                            "lastName": "Miller",
+                            "middleNames": [
+                                "Haynes"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. H. Miller"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 120586317,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "18e0d657dd538e03f8ea5c9f4e6934c1b8cfd019",
+            "isKey": false,
+            "numCitedBy": 365,
+            "numCiting": 9,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract A simple method for testing the probability that a set of numbers is a sample from a known distribution consists of comparing the empirical cumulative distribution function of the sample, S n (x), with the known cumulative distribution function F(x). Both D n = maximum {S n (x) \u2013 F{x)} and D n * = maximum | S n (x) \u2013 F(x) | are random variables, independent of the special form of F(x), if F(x) is continuous. This paper contains more extensive tables of the percentage points in the distributions of D n and D n * than have been published previously. These values are obtained by empirical modification of a known asymptotic formula. * This study was supported in part by funds granted to Ohio State University by the Research Foundation for aid in fundamental research. The author acknowledges the assistance of Nelson Prentiss, Vincent Donato, Milton Glanz, and Richard Thomas in carrying out numerical computations."
+            },
+            "slug": "Table-of-Percentage-Points-of-Kolmogorov-Statistics-Miller",
+            "title": {
+                "fragments": [],
+                "text": "Table of Percentage Points of Kolmogorov Statistics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1956
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2477489"
+                        ],
+                        "name": "L. Devroye",
+                        "slug": "L.-Devroye",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Devroye",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Devroye"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 45
+                            }
+                        ],
+                        "text": "\" A better choice for the classroom might be Rubinstein's (1981) less ambitious but more detailed text."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 160,
+                                "start": 146
+                            }
+                        ],
+                        "text": "For example, although chapters 3 and 4 on nonuniform random variate generation are quite good, much more is presented in the encyclopedic work of Devroye (1986)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 14
+                            }
+                        ],
+                        "text": "pedic work of Devroye (1986). In the book's later chapters, Ripley's style"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6898695,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "6733e22b52d8a86988a36be7404cd38fd5b8a66f",
+            "isKey": true,
+            "numCitedBy": 3705,
+            "numCiting": 88,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This is a survey of the main methods in non-uniform random variate generation, and highlights recent research on the subject. Classical paradigms such as inversion, rejection, guide tables, and transformations are reviewed. We provide information on the expected time complexity of various algorithms, before addressing modern topics such as indirectly specified distributions, random processes, and Markov chain methods. Authors\u2019 address: School of Computer Science, McGill University, 3480 University Street, Montreal, Canada H3A 2K6. The authors\u2019 research was sponsored by NSERC Grant A3456 and FCAR Grant 90-ER-0291. 1. The main paradigms The purpose of this chapter is to review the main methods for generating random variables, vectors and processes. Classical workhorses such as the inversion method, the rejection method and table methods are reviewed in section 1. In section 2, we discuss the expected time complexity of various algorithms, and give a few examples of the design of generators that are uniformly fast over entire families of distributions. In section 3, we develop a few universal generators, such as generators for all log concave distributions on the real line. Section 4 deals with random variate generation when distributions are indirectly specified, e.g, via Fourier coefficients, characteristic functions, the moments, the moment generating function, distributional identities, infinite series or Kolmogorov measures. Random processes are briefly touched upon in section 5. Finally, the latest developments in Markov chain methods are discussed in section 6. Some of this work grew from Devroye (1986a), and we are carefully documenting work that was done since 1986. More recent references can be found in the book by H\u00f6rmann, Leydold and Derflinger (2004). Non-uniform random variate generation is concerned with the generation of random variables with certain distributions. Such random variables are often discrete, taking values in a countable set, or absolutely continuous, and thus described by a density. The methods used for generating them depend upon the computational model one is working with, and upon the demands on the part of the output. For example, in a ram (random access memory) model, one accepts that real numbers can be stored and operated upon (compared, added, multiplied, and so forth) in one time unit. Furthermore, this model assumes that a source capable of producing an i.i.d. (independent identically distributed) sequence of uniform [0, 1] random variables is available. This model is of course unrealistic, but designing random variate generators based on it has several advantages: first of all, it allows one to disconnect the theory of non-uniform random variate generation from that of uniform random variate generation, and secondly, it permits one to plan for the future, as more powerful computers will be developed that permit ever better approximations of the model. Algorithms designed under finite approximation limitations will have to be redesigned when the next generation of computers arrives. For the generation of discrete or integer-valued random variables, which includes the vast area of the generation of random combinatorial structures, one can adhere to a clean model, the pure bit model, in which each bit operation takes one time unit, and storage can be reported in terms of bits. Typically, one now assumes that an i.i.d. sequence of independent perfect bits is available. In this model, an elegant information-theoretic theory can be derived. For example, Knuth and Yao (1976) showed that to generate a random integer X described by the probability distribution {X = n} = pn, n \u2265 1, any method must use an expected number of bits greater than the binary entropy of the distribution, \u2211"
+            },
+            "slug": "Non-Uniform-Random-Variate-Generation-Devroye",
+            "title": {
+                "fragments": [],
+                "text": "Non-Uniform Random Variate Generation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 60,
+                "text": "This chapter reviews the main methods for generating random variables, vectors and processes in non-uniform random variate generation, and provides information on the expected time complexity of various algorithms before addressing modern topics such as indirectly specified distributions, random processes, and Markov chain methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1986
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2484831"
+                        ],
+                        "name": "A. Odoni",
+                        "slug": "A.-Odoni",
+                        "structuredName": {
+                            "firstName": "Amedeo",
+                            "lastName": "Odoni",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Odoni"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145334636"
+                        ],
+                        "name": "Emily Roth",
+                        "slug": "Emily-Roth",
+                        "structuredName": {
+                            "firstName": "Emily",
+                            "lastName": "Roth",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Emily Roth"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 207240489,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "4300b00ad81328e3d132afb2f2d93cf9d56a951c",
+            "isKey": false,
+            "numCitedBy": 142,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper examines the transient behavior of infinite-capacity, single-server, Markovian queueing systems. It estimates Q ( t ), the expected number of customers in queue at time t , by numerically solving the sets of simultaneous, first-order differential equations that describe these systems. Empirical results have been drawn from these observations. For small values of t , the behavior of Q ( t ) is strongly influenced by the initial state of the queueing system. For systems with deterministic initial conditions, one can roughly predict which of a small set of patterns this behavior will follow. After an initial period of time and independently of initial conditions, Q ( t ) approaches Q (\u221e) in a manner that can be approximated through a decaying exponential function. On the basis of experimental evidence, we have developed an expression that provides a good approximation to the observed values of the time constant associated with this exponential function. This expression can also be used to determine an upper bound for the amount of time required until Q ( t ) is close to Q (\u221e)."
+            },
+            "slug": "An-Empirical-Investigation-of-the-Transient-of-Odoni-Roth",
+            "title": {
+                "fragments": [],
+                "text": "An Empirical Investigation of the Transient Behavior of Stationary Queueing Systems"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "An expression is developed that provides a good approximation to the observed values of the time constant associated with this exponential function that can be used to determine an upper bound for the amount of time required until Q ( t ) is close to Q (\u221e)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Oper. Res."
+            },
+            "year": 1983
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2024442"
+                        ],
+                        "name": "D. Fisher",
+                        "slug": "D.-Fisher",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Fisher",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Fisher"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2859622"
+                        ],
+                        "name": "Donna L. Saisi",
+                        "slug": "Donna-L.-Saisi",
+                        "structuredName": {
+                            "firstName": "Donna",
+                            "lastName": "Saisi",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Donna L. Saisi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39652599"
+                        ],
+                        "name": "W. Goldstein",
+                        "slug": "W.-Goldstein",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Goldstein",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Goldstein"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 34015195,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "80284981ac620bbdf16918598e955ed41766d41b",
+            "isKey": false,
+            "numCitedBy": 43,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Stochastic-pert-networks:-OP-diagrams,-critical-and-Fisher-Saisi",
+            "title": {
+                "fragments": [],
+                "text": "Stochastic pert networks: OP diagrams, critical paths and the project completion time"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Oper. Res."
+            },
+            "year": 1985
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2550392"
+                        ],
+                        "name": "B. Efron",
+                        "slug": "B.-Efron",
+                        "structuredName": {
+                            "firstName": "Bradley",
+                            "lastName": "Efron",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Efron"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 227312712,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "24f3e29d9feab95e78f3f47364c4edbae34adfd2",
+            "isKey": false,
+            "numCitedBy": 8062,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We discuss the following problem given a random sample X = (X 1, X 2,\u2026, X n) from an unknown probability distribution F, estimate the sampling distribution of some prespecified random variable R(X, F), on the basis of the observed data x. (Standard jackknife theory gives an approximate mean and variance in the case R(X, F) = \\(\\theta \\left( {\\hat F} \\right) - \\theta \\left( F \\right)\\), \u03b8 some parameter of interest.) A general method, called the \u201cbootstrap\u201d, is introduced, and shown to work satisfactorily on a variety of estimation problems. The jackknife is shown to be a linear approximation method for the bootstrap. The exposition proceeds by a series of examples: variance of the sample median, error rates in a linear discriminant analysis, ratio estimation, estimating regression parameters, etc."
+            },
+            "slug": "Bootstrap-Methods:-Another-Look-at-the-Jackknife-Efron",
+            "title": {
+                "fragments": [],
+                "text": "Bootstrap Methods: Another Look at the Jackknife"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1979
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678771"
+                        ],
+                        "name": "P. Bickel",
+                        "slug": "P.-Bickel",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Bickel",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Bickel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2934481"
+                        ],
+                        "name": "K. Doksum",
+                        "slug": "K.-Doksum",
+                        "structuredName": {
+                            "firstName": "Kjell",
+                            "lastName": "Doksum",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Doksum"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 241,
+                                "start": 214
+                            }
+                        ],
+                        "text": "However, researchers who intend to use this book to help them adapt simulation techniques to their own fields need a solid background in undergraduate mathematics and an understanding of statistics at the level of Bickel and Doksum's (1977) graduate text."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 120450474,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "92d92fd3de1af6a46e8cd9ca841d5433e659179f",
+            "isKey": false,
+            "numCitedBy": 1456,
+            "numCiting": 67,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "(NOTE: Each chapter concludes with Problems and Complements, Notes, and References.) 1. Statistical Models, Goals, and Performance Criteria. Data, Models, Parameters, and Statistics. Bayesian Models. The Decision Theoretic Framework. Prediction. Sufficiency. Exponential Families. 2. Methods of Estimation. Basic Heuristics of Estimation. Minimum Contrast Estimates and Estimating Equations. Maximum Likelihood in Multiparameter Exponential Families. Algorithmic Issues. 3. Measures of Performance. Introduction. Bayes Procedures. Minimax Procedures. Unbiased Estimation and Risk Inequalities. Nondecision Theoretic Criteria. 4. Testing and Confidence Regions. Introduction. Choosing a Test Statistic: The Neyman-Pearson Lemma. Uniformly Most Powerful Tests and Monotone Likelihood Ratio Models. Confidence Bounds, Intervals and Regions. The Duality between Confidence Regions and Tests. Uniformly Most Accurate Confidence Bounds. Frequentist and Bayesian Formulations. Prediction Intervals. Likelihood Ratio Procedures. 5. Asymptotic Approximations. Introduction: The Meaning and Uses of Asymptotics. Consistency. First- and Higher-Order Asymptotics: The Delta Method with Applications. Asymptotic Theory in One Dimension. Asymptotic Behavior and Optimality of the Posterior Distribution. 6. Inference in the Multiparameter Case. Inference for Gaussian Linear Models. Asymptotic Estimation Theory in p Dimensions. Large Sample Tests and Confidence Regions. Large Sample Methods for Discrete Data. Generalized Linear Models. Robustness Properties and Semiparametric Models. Appendix A: A Review of Basic Probability Theory. The Basic Model. Elementary Properties of Probability Models. Discrete Probability Models. Conditional Probability and Independence. Compound Experiments. Bernoulli and Multinomial Trials, Sampling with and without Replacement. Probabilities on Euclidean Space. Random Variables and Vectors: Transformations. Independence of Random Variables and Vectors. The Expectation of a Random Variable. Moments. Moment and Cumulant Generating Functions. Some Classical Discrete and Continuous Distributions. Modes of Convergence of Random Variables and Limit Theorems. Further Limit Theorems and Inequalities. Poisson Process. Appendix B: Additional Topics in Probability and Analysis. Conditioning by a Random Variable or Vector. Distribution Theory for Transformations of Random Vectors. Distribution Theory for Samples from a Normal Population. The Bivariate Normal Distribution. Moments of Random Vectors and Matrices. The Multivariate Normal Distribution. Convergence for Random Vectors: Op and Op Notation. Multivariate Calculus. Convexity and Inequalities. Topics in Matrix Theory and Elementary Hilbert Space Theory. Appendix C: Tables. The Standard Normal Distribution. Auxiliary Table of the Standard Normal Distribution. t Distribution Critical Values. X 2 Distribution Critical Values. F Distribution Critical Values. Index."
+            },
+            "slug": "Mathematical-Statistics:-Basic-Ideas-and-Selected-Bickel-Doksum",
+            "title": {
+                "fragments": [],
+                "text": "Mathematical Statistics: Basic Ideas and Selected Topics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1977
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1719168"
+                        ],
+                        "name": "W. Grassmann",
+                        "slug": "W.-Grassmann",
+                        "structuredName": {
+                            "firstName": "Winfried",
+                            "lastName": "Grassmann",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Grassmann"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 27000169,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "165b7108a22813f706c133e79e4048e639889e56",
+            "isKey": false,
+            "numCitedBy": 285,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Transient-solutions-in-Markovian-Queueing-Systems-Grassmann",
+            "title": {
+                "fragments": [],
+                "text": "Transient solutions in Markovian Queueing Systems"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Oper. Res."
+            },
+            "year": 1977
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "6776423"
+                        ],
+                        "name": "B. Margolin",
+                        "slug": "B.-Margolin",
+                        "structuredName": {
+                            "firstName": "Barry",
+                            "lastName": "Margolin",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Margolin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "103118315"
+                        ],
+                        "name": "Herbert S. Winokur",
+                        "slug": "Herbert-S.-Winokur",
+                        "structuredName": {
+                            "firstName": "Herbert",
+                            "lastName": "Winokur",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Herbert S. Winokur"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 123307327,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "e6e823691f503d0bb7b01847233d33fbf570c24f",
+            "isKey": false,
+            "numCitedBy": 37,
+            "numCiting": 10,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract Formulae for the first two moments of the order statistics from a geometric distribution are presented in closed form. Brief illustrative tables of the first two moments of the order statistics from a geometric distribution are included and two related dice games are discussed. The distribution of the range of a set of independent observations from a geometric distribution is presented in closed form. A system of redundant components which performs a given task repetitively at discrete times and its statistical equivalent, an inverse sampling scheme, are studied. The distribution of the number of stages until the scheme terminates or the system fails is shown to be identical to the distribution of a specific order statistic from a geometric distribution. A Markov chain formulation is presented which facilitates certain system reliability and cost analyses."
+            },
+            "slug": "Exact-Moments-of-the-Order-Statistics-of-the-and-to-Margolin-Winokur",
+            "title": {
+                "fragments": [],
+                "text": "Exact Moments of the Order Statistics of the Geometric Distribution and Their Relation to Inverse Sampling and Reliability of Redundant Systems"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1967
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "9999888"
+                        ],
+                        "name": "W. Kelton",
+                        "slug": "W.-Kelton",
+                        "structuredName": {
+                            "firstName": "W.",
+                            "lastName": "Kelton",
+                            "middleNames": [
+                                "David"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Kelton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714607"
+                        ],
+                        "name": "A. Law",
+                        "slug": "A.-Law",
+                        "structuredName": {
+                            "firstName": "Averill",
+                            "lastName": "Law",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Law"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 45512061,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "0dac46ec9c073a2db9d11cc5ac593cd4ca8959e7",
+            "isKey": false,
+            "numCitedBy": 88,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Although the transient behavior of a queueing system is often of interest, available analytical results are usually quite restricted or are very complicated. We consider the M/M/s queue with an arbitrary number of customers present at time zero. We obtain probabilities in a relatively simple closed form that can be used to evaluate exactly several measures of system performance, including the expected delay in queue of each arriving customer. A numerical examination is carried out to see how the choice of initial condition affects the nature of convergence of the expected delays to their steady-state values. We also discuss the implications of these results for the initialization of steady-state simulations."
+            },
+            "slug": "The-Transient-Behavior-of-the-M/M/s-Queue,-with-for-Kelton-Law",
+            "title": {
+                "fragments": [],
+                "text": "The Transient Behavior of the M/M/s Queue, with Implications for Steady-State Simulation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "Probabilities of the M/M/s queue with an arbitrary number of customers present at time zero are obtained in a relatively simple closed form that can be used to evaluate exactly several measures of system performance, including the expected delay in queue of each arriving customer."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Oper. Res."
+            },
+            "year": 1985
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2757017"
+                        ],
+                        "name": "G. Marsaglia",
+                        "slug": "G.-Marsaglia",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Marsaglia",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Marsaglia"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 30098699,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "9a81cfe7f4a6d27b52a5beec18414aa7528347c3",
+            "isKey": false,
+            "numCitedBy": 507,
+            "numCiting": 1,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract : Most of the world's computer centers use congruential random number generators. This note points out that such random number generators produce points in 2,3,4,... dimensions which are too regular for many Monte Carlo calculations. The trouble is that the points fall exactly on a lattice with quite a gross structure. The paper gives details of the degree of regularity of such generators in terms of sets of relatively few parallel hyperplanes which contain all of the points produced by the generator."
+            },
+            "slug": "Random-numbers-fall-mainly-in-the-planes.-Marsaglia",
+            "title": {
+                "fragments": [],
+                "text": "Random numbers fall mainly in the planes."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 50,
+                "text": "The paper gives details of the degree of regularity of congruential random number generators in terms of sets of relatively few parallel hyperplanes which contain all of the points produced by the generator."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the National Academy of Sciences of the United States of America"
+            },
+            "year": 1968
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2856152"
+                        ],
+                        "name": "E. Parzen",
+                        "slug": "E.-Parzen",
+                        "structuredName": {
+                            "firstName": "Emanuel",
+                            "lastName": "Parzen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Parzen"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 123276280,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "00d00421e23f26a649cc09b02eccfcb0521f00c3",
+            "isKey": false,
+            "numCitedBy": 14,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Probability Theory as the Study of Mathematical Models of Random Phenomena. Basic Probability Theory. Independence and Dependence. Numerical-Valued Random Phenomena. Mean and Variance of a Probability Law. Normal, Poisson, and Related Probability Laws. Random Variables. Expectation of a Random Variable. Sums of Independent Random Variables. Sequences of Random Variables. Tables. Answers to Odd-Numbered Exercises. Index."
+            },
+            "slug": "Modern-Probability-Theory-And-Its-Applications-Parzen",
+            "title": {
+                "fragments": [],
+                "text": "Modern Probability Theory And Its Applications"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1960
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "9999888"
+                        ],
+                        "name": "W. Kelton",
+                        "slug": "W.-Kelton",
+                        "structuredName": {
+                            "firstName": "W.",
+                            "lastName": "Kelton",
+                            "middleNames": [
+                                "David"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Kelton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15517003,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "7624c4c11a4f11c0caf766c0dc41103028193535",
+            "isKey": false,
+            "numCitedBy": 39,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The transient probabilistic structure of M/Em/1 and Em/M/1 queues initialized in an arbitrary deterministic state is derived in discrete time. Computational algorithms for obtaining the required probabilities are provided, and their application in calculating a variety of system performance measures is illustrated. The results are used to investigate the question of initializing simulations of systems such as these to promote rapid convergence to steady state, if that is the object of the simulation. These results are consistent with earlier studies for transient queueing systems, such as the M/M/s, but allow greater flexibility in specification of interarrival or service-time models inherent in the Erlang distributions."
+            },
+            "slug": "Transient-exponential-Erlang-queues-and-simulation-Kelton",
+            "title": {
+                "fragments": [],
+                "text": "Transient exponential-Erlang queues and steady-state simulation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "The transient probabilistic structure of M/Em/1 and Em/M/1 queues initialized in an arbitrary deterministic state is derived in discrete time and is used to investigate the question of initializing simulations of systems such as these to promote rapid convergence to steady state."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CACM"
+            },
+            "year": 1985
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "122866578"
+                        ],
+                        "name": "J. J. Martin",
+                        "slug": "J.-J.-Martin",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Martin",
+                            "middleNames": [
+                                "J.",
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. J. Martin"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 120276581,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "814e0bdaeb047aef17a70b1e20aee6e8aa066b3d",
+            "isKey": false,
+            "numCitedBy": 211,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Let there be associated with each arc of a directed, acyclic network a random variable, conveniently referred to as the arc passage time. It is assumed that the arc passage times are independent and have a finite range. A method is presented for the efficient computation of the density function of the passage time from source to sink of this network, under the restriction that the arc density functions are polynomials. In particular, an algorithm is described that reduces a series-parallel network to a single arc whose density function is that of the time through the original network. The specialization of this algorithm to the class of polynomial density functions leads to a detailed examination of the convolution operation for polynomials. Finally, a method is presented whereby any directed, acyclic network can be transformed to series-parallel form, permitting application of a modified version of the series-parallel algorithm. These techniques are used to find the probability that an arc is on the critical path and a numerical example is presented."
+            },
+            "slug": "Distribution-of-the-Time-Through-a-Directed,-Martin",
+            "title": {
+                "fragments": [],
+                "text": "Distribution of the Time Through a Directed, Acyclic Network"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "An algorithm is described that reduces a series-parallel network to a single arc whose density function is that of the time through the original network, and a method is presented whereby any directed, acyclic network can be transformed to series-Parallel form, permitting application of a modified version of the series- parallel algorithm."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1965
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35064932"
+                        ],
+                        "name": "R. Rubinstein",
+                        "slug": "R.-Rubinstein",
+                        "structuredName": {
+                            "firstName": "Reuven",
+                            "lastName": "Rubinstein",
+                            "middleNames": [
+                                "Y."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Rubinstein"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 39230485,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "0367b5c4eca7bef6245ec183648f9aec18da91a6",
+            "isKey": false,
+            "numCitedBy": 2476,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From the Publisher: \nProvides the first simultaneous coverage of the statistical aspects of simulation and Monte Carlo methods, their commonalities and their differences for the solution of a wide spectrum of engineering and scientific problems. Contains standard material usually considered in Monte Carlo simulation as well as new material such as variance reduction techniques, regenerative simulation, and Monte Carlo optimization."
+            },
+            "slug": "Simulation-and-the-Monte-Carlo-method-Rubinstein",
+            "title": {
+                "fragments": [],
+                "text": "Simulation and the Monte Carlo method"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Wiley series in probability and mathematical statistics"
+            },
+            "year": 1981
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "4905393"
+                        ],
+                        "name": "E. Gehan",
+                        "slug": "E.-Gehan",
+                        "structuredName": {
+                            "firstName": "Edmund",
+                            "lastName": "Gehan",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Gehan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8385578,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "4148066e5f8658549bcbb59dda2b6808b2ae16cf",
+            "isKey": false,
+            "numCitedBy": 3250,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "H2: F1(t) F2(t) (t F2(t) (t < T). The asymptotic efficiency of the test relative to the efficient parametric test when the distributions are exponential is at least 0 75 and increases with degree of censoring. When Ho is true, the test is not seriously affected by real differences in the percentage censored in the two groups. Some comparisons are made for five cases of varying degrees of censoring and tying between probabilities from the exact test and those from the proposed test and these suggest the test is appropriate under certain conditions when the sample size is five in each group. A worked example is presented and some discussion is given to further problems."
+            },
+            "slug": "A-GENERALIZED-WILCOXON-TEST-FOR-COMPARING-SAMPLES.-Gehan",
+            "title": {
+                "fragments": [],
+                "text": "A GENERALIZED WILCOXON TEST FOR COMPARING ARBITRARILY SINGLY-CENSORED SAMPLES."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "Some comparisons are made for five cases of varying degrees of censoring and tying between probabilities from the exact test and those from the proposed test and these suggest the test is appropriate under certain conditions when the sample size is five in each group."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Biometrika"
+            },
+            "year": 1965
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32091965"
+                        ],
+                        "name": "W. Woodward",
+                        "slug": "W.-Woodward",
+                        "structuredName": {
+                            "firstName": "Wayne",
+                            "lastName": "Woodward",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Woodward"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "29966996"
+                        ],
+                        "name": "H. L. Gray",
+                        "slug": "H.-L.-Gray",
+                        "structuredName": {
+                            "firstName": "Henry",
+                            "lastName": "Gray",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. L. Gray"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 120193110,
+            "fieldsOfStudy": [
+                "Sociology"
+            ],
+            "id": "02f13f81ebc28b246479241cae07d9c740c5dfa0",
+            "isKey": false,
+            "numCitedBy": 72,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract This paper investigates an extension of the partial autocorrelation function, which we call the generalized partial autocorrelation function. These generalized partial autocorrelations, which are not true correlations except when p = 0, are useful in examining the relationship between the S array method of Gray, Kelley, and McIntire (1978) and the Box-Jenkins approach to ARMA model identification. Also, the generalized partial autocorrelation is shown to be a useful model identification tool to be used along with the S array. Also discussed is a reformating of the S array into a shifted S array that the authors believe is easier to use in practice than the S array. The methods of this paper are illustrated by means of examples, including an analysis of the Makridakis (1978) metals series data."
+            },
+            "slug": "On-the-Relationship-between-the-S-Array-and-the-of-Woodward-Gray",
+            "title": {
+                "fragments": [],
+                "text": "On the Relationship between the S Array and the Box-Jenkins Method of ARMA Model Identification"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1981
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144212195"
+                        ],
+                        "name": "D. Young",
+                        "slug": "D.-Young",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Young",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Young"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 121313926,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "d62b8701225f508fbeeb344d2a2b2f832ca315b9",
+            "isKey": false,
+            "numCitedBy": 26,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "SUMMARY The order statistics of independent random variables each having the same negative binomial distribution are discussed. Recurrence relations for probability generating functions and moments of the distributions of the order statistics are given. These have been used to provide tables of the expected values of the order statistics. Finally, two limiting distributions are presented and moment approximations based on one of them are evaluated."
+            },
+            "slug": "The-order-statistics-of-the-negative-binomial-Young",
+            "title": {
+                "fragments": [],
+                "text": "The order statistics of the negative binomial distribution"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1970
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1746144"
+                        ],
+                        "name": "C. D. Pegden",
+                        "slug": "C.-D.-Pegden",
+                        "structuredName": {
+                            "firstName": "Claude",
+                            "lastName": "Pegden",
+                            "middleNames": [
+                                "Dennis"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. D. Pegden"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2442825"
+                        ],
+                        "name": "M. Rosenshine",
+                        "slug": "M.-Rosenshine",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Rosenshine",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Rosenshine"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 62634549,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "08d78acdd81345c73d94b311f53de2d4f82fcaaf",
+            "isKey": false,
+            "numCitedBy": 68,
+            "numCiting": 2,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "New results are obtained for the single server queue with Poisson arrivals and exponential service times. A closed form solution involving only finite sums is obtained for the probability that exactly i arrivals and j services occur over a time interval of length t in a queueing system that is idle at the beginning of the interval. Since many applications of queueing theory involve queues which are emptied and restarted periodically and thus not susceptible to analysis using the well-known equilibrium results, there are many potential applications for results obtained. Some ways in which the results obtained may be applied are discussed."
+            },
+            "slug": "Some-New-Results-for-the-M/M/1-Queue-Pegden-Rosenshine",
+            "title": {
+                "fragments": [],
+                "text": "Some New Results for the M/M/1 Queue"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 98,
+                "text": "New results are obtained for the single server queue with Poisson arrivals and exponential service times and a closed form solution involving only finite sums is obtained."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1982
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2585740"
+                        ],
+                        "name": "B. Arnold",
+                        "slug": "B.-Arnold",
+                        "structuredName": {
+                            "firstName": "Barry",
+                            "lastName": "Arnold",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Arnold"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 123814726,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "07e93cf079e1372d6d52168bd8e41e4bd8bccd8b",
+            "isKey": false,
+            "numCitedBy": 30,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Let X,, X2, \", X,, be independent identically distributed positive integervalued random variables with order statistics X,:,,, X2:, -, X:,. If the X,'s have a geometric distribution then the conditional distribution of X,k,,, X,:,, given Xk, ,,Xk:, >0 is the same as the distribution of Xl:,_k. Also the random variable X2:, X,:,, is independent of the event [X,:, = 1]. Under mild conditions each of these two properties characterizes the geometric distribution. CHARACTERIZATION; GEOMETRIC DISTRIBUTION; ORDER STATISTICS"
+            },
+            "slug": "TWO-CHARACTERIZATIONS-OF-THE-GEOMETRIC-DISTRIBUTION-Arnold",
+            "title": {
+                "fragments": [],
+                "text": "TWO CHARACTERIZATIONS OF THE GEOMETRIC DISTRIBUTION"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1980
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "31498084"
+                        ],
+                        "name": "J. Lieblein",
+                        "slug": "J.-Lieblein",
+                        "structuredName": {
+                            "firstName": "Julius",
+                            "lastName": "Lieblein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Lieblein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "98377133"
+                        ],
+                        "name": "M. Zelen",
+                        "slug": "M.-Zelen",
+                        "structuredName": {
+                            "firstName": "Marvin",
+                            "lastName": "Zelen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Zelen"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 9770202,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "e6fca6ad75ec7d7d4404d48ec62615707d6137ae",
+            "isKey": false,
+            "numCitedBy": 385,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Fatigue is an important factor in determining the service life of ball bearings. Bearing manufacturers are therefore constantly engaged in fatigue-testing operations in order to obtain information relating fatigue life to load and other factors. Several of the larger manufacturers have recently pooled their test data in a cooperative effort to set up uniform and standardized ball-bearing application formulas, which would benefit the many users of antifriction bearings. These data were compiled by the American Standards Association, which subsequently requested that the National Bureau of Standards perform the necessary analyses. This paper summarizes the principal results of the analyses undertaken by the Bureau, and describes the statistical procedures used in the investigation."
+            },
+            "slug": "Statistical-Investigation-of-the-Fatigue-Life-of-Lieblein-Zelen",
+            "title": {
+                "fragments": [],
+                "text": "Statistical Investigation of the Fatigue Life of Deep-Groove Ball Bearings"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This paper summarizes the principal results of the analyses undertaken by the National Bureau of Standards, and describes the statistical procedures used in the investigation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1956
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "71537826"
+                        ],
+                        "name": "S. K. Park",
+                        "slug": "S.-K.-Park",
+                        "structuredName": {
+                            "firstName": "S.",
+                            "lastName": "Park",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. K. Park"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2113625634"
+                        ],
+                        "name": "K. Miller",
+                        "slug": "K.-Miller",
+                        "structuredName": {
+                            "firstName": "Keith",
+                            "lastName": "Miller",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Miller"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 207575300,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d18f3a94ee43131ed45da653a660a1efb2365102",
+            "isKey": false,
+            "numCitedBy": 1339,
+            "numCiting": 49,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Practical and theoretical issues are presented concerning the design, implementation, and use of a good, minimal standard random number generator that will port to virtually all systems."
+            },
+            "slug": "Random-number-generators:-good-ones-are-hard-to-Park-Miller",
+            "title": {
+                "fragments": [],
+                "text": "Random number generators: good ones are hard to find"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "Practical and theoretical issues are presented concerning the design, implementation, and use of a good, minimal standard random number generator that will port to virtually all systems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CACM"
+            },
+            "year": 1988
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46878135"
+                        ],
+                        "name": "Mark E. Johnson",
+                        "slug": "Mark-E.-Johnson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Johnson",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark E. Johnson"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 124621101,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "9ad3cd8f9a60b9424f751af608f871980616208c",
+            "isKey": false,
+            "numCitedBy": 347,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Multivariate-Statistical-Simulation:-Johnson",
+            "title": {
+                "fragments": [],
+                "text": "Multivariate Statistical Simulation: Johnson/Multivariate"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1987
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 120008803,
+            "fieldsOfStudy": [],
+            "id": "1da875857ae93fd1a412b814269f92635227ba06",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Monte Carlo Simulation in Statistical Physics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1988
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52496784"
+                        ],
+                        "name": "I. W. Burr",
+                        "slug": "I.-W.-Burr",
+                        "structuredName": {
+                            "firstName": "Irving",
+                            "lastName": "Burr",
+                            "middleNames": [
+                                "Wingate"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. W. Burr"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 119672371,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "1e6302622f9a61f3cbe41ce1023f3d44ff49218e",
+            "isKey": false,
+            "numCitedBy": 13,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Calculation-of-Exact-Sampling-Distribution-of-from-Burr",
+            "title": {
+                "fragments": [],
+                "text": "Calculation of Exact Sampling Distribution of Ranges from a Discrete Population"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1955
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 2
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 24,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Stochastic-simulation-Ripley/a4180abb06c3e6931474c4a3e0ff079d2d5a0382?sort=total-citations"
+}

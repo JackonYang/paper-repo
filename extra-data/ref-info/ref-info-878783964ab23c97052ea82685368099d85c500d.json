@@ -1,0 +1,2963 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2146665979"
+                        ],
+                        "name": "Jun Wu",
+                        "slug": "Jun-Wu",
+                        "structuredName": {
+                            "firstName": "Jun",
+                            "lastName": "Wu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jun Wu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2803071"
+                        ],
+                        "name": "S. Khudanpur",
+                        "slug": "S.-Khudanpur",
+                        "structuredName": {
+                            "firstName": "Sanjeev",
+                            "lastName": "Khudanpur",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Khudanpur"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 220,
+                                "start": 148
+                            }
+                        ],
+                        "text": "Finally, it should be noted that in the current implementation, we have not applied any of the possible optimizations that appear in the literature (Lafferty and Suhm, 1996; Wu and Khudanpur, 2000; Lafferty et al., 2001) to speed up normalization of the probability distributionq."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14484036,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "92b99542f27ce2e899326ac167a07ee35991cfee",
+            "isKey": false,
+            "numCitedBy": 38,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Maximum entropy language modeling techniques combine di erent sources of statistical dependence, such as syntactic relationships, topic cohesiveness and collocation frequency, in a uni ed and e ective language model. These techniques however are also computationally very intensive, particularly during model estimation, compared to the more prevalent alternative of interpolating several simple models, each capturing one type of dependency. In this paper we present ways which signi cantly reduce this complexity by reorganizing the required computations. We show that in case of a model with N -gram constraints, each iteration of the parameter estimation algorithm requires the same amount of computation as estimating a comparable back-o N -gram model. In general, the computational cost of each iteration in model estimation is linear in the number of distinct \\histories\" seen in the training corpus, times a model-class dependent factor. The reorganization focuses mainly on reducing this multiplicative factor from the size of the vocabulary to the average number of words seen following a history. A 15-fold speed-up has been observed by using this method in estimating a language model that incorporates syntactic head-word constraints, nonterminal-label constraints and topic-unigram constraints with N -grams for the Switchboard corpus. This model achieves a perplexity reduction of 13% and a word error rate reduction of 1.5% absolute compared to a trigram model."
+            },
+            "slug": "Efficient-training-methods-for-maximum-entropy-Wu-Khudanpur",
+            "title": {
+                "fragments": [],
+                "text": "Efficient training methods for maximum entropy language modeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper shows that in case of a model with N -gram constraints, each iteration of the parameter estimation algorithm requires the same amount of computation as estimating a comparable back-o N-gram model, and presents ways to reduce this complexity by reorganizing the required computations."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "INTERSPEECH"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2714577"
+                        ],
+                        "name": "S. D. Pietra",
+                        "slug": "S.-D.-Pietra",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Pietra",
+                            "middleNames": [
+                                "Della"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. D. Pietra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39944066"
+                        ],
+                        "name": "V. D. Pietra",
+                        "slug": "V.-D.-Pietra",
+                        "structuredName": {
+                            "firstName": "Vincent",
+                            "lastName": "Pietra",
+                            "middleNames": [
+                                "J.",
+                                "Della"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. D. Pietra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739581"
+                        ],
+                        "name": "J. Lafferty",
+                        "slug": "J.-Lafferty",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Lafferty",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Lafferty"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 78
+                            }
+                        ],
+                        "text": "To avoid this slowed convergence and the need for a correction feature, Della Pietra et al. (1997) propose anImproved Iterative Scaling(IIS) algorithm, whose update rule is the solution to the equation:\nEp[ f ] = \u2211 w,x p(w)q(k)(x|w) f (x)exp(M(x)\u03b4(k))\nwhereM(x) is the sum of the feature values for\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "To avoid this slowed convergence and the need for a correction feature, Della Pietra et al. (1997) propose an Improved Iterative Scaling (IIS) algorithm, whose update rule is the solution to the equation:"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 72
+                            }
+                        ],
+                        "text": "To avoid this slowed convergence and the need for a correction feature, Della Pietra et al. (1997) propose anImproved Iterative Scaling(IIS) algorithm, whose update rule is the solution to the equation:\nEp[ f ] = \u2211 w,x p(w)q(k)(x|w) f (x)exp(M(x)\u03b4(k))\nwhereM(x) is the sum of the feature values for an eventx in the training data."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 982,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b951b9f78b98a186ba259027996a48e4189d37e5",
+            "isKey": false,
+            "numCitedBy": 1305,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a technique for constructing random fields from a set of training samples. The learning paradigm builds increasingly complex fields by allowing potential functions, or features, that are supported by increasingly large subgraphs. Each feature has a weight that is trained by minimizing the Kullback-Leibler divergence between the model and the empirical distribution of the training data. A greedy algorithm determines how features are incrementally added to the field and an iterative scaling algorithm is used to estimate the optimal values of the weights. The random field models and techniques introduced in this paper differ from those common to much of the computer vision literature in that the underlying random fields are non-Markovian and have a large number of parameters that must be estimated. Relations to other learning approaches, including decision trees, are given. As a demonstration of the method, we describe its application to the problem of automatic word classification in natural language processing."
+            },
+            "slug": "Inducing-Features-of-Random-Fields-Pietra-Pietra",
+            "title": {
+                "fragments": [],
+                "text": "Inducing Features of Random Fields"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The random field models and techniques introduced in this paper differ from those common to much of the computer vision literature in that the underlying random fields are non-Markovian and have a large number of parameters that must be estimated."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1793475"
+                        ],
+                        "name": "A. Ratnaparkhi",
+                        "slug": "A.-Ratnaparkhi",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ratnaparkhi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ratnaparkhi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1734174"
+                        ],
+                        "name": "M. Marcus",
+                        "slug": "M.-Marcus",
+                        "structuredName": {
+                            "firstName": "Mitchell",
+                            "lastName": "Marcus",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Marcus"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In natural language processing, recent years have seen ME techniques used for sentence boundary detection, part of speech tagging, parse selection and ambiguity resolution, and stochastic attribute-value grammars, to name just a few applications (Abney, 1997; Berger et al., 1996; Ratnaparkhi, 1998; Johnson et al., 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2600845,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b49db3ac26d96b6c5c081dc6c2cc24da93e633f1",
+            "isKey": false,
+            "numCitedBy": 554,
+            "numCiting": 89,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This thesis demonstrates that several important kinds of natural language ambiguities can be resolved to state-of-the-art accuracies using a single statistical modeling technique based on the principle of maximum entropy. \nWe discuss the problems of sentence boundary detection, part-of-speech tagging, prepositional phrase attachment, natural language parsing, and text categorization under the maximum entropy framework. In practice, we have found that maximum entropy models offer the following advantages: \nState-of-the-art accuracy. The probability models for all of the tasks discussed perform at or near state-of-the-art accuracies, or outperform competing learning algorithms when trained and tested under similar conditions. Methods which outperform those presented here require much more supervision in the form of additional human involvement or additional supporting resources. \nKnowledge-poor features. The facts used to model the data, or features, are linguistically very simple, or \"knowledge-poor\", but yet succeed in approximating complex linguistic relationships. \nReusable software technology. The mathematics of the maximum entropy framework are essentially independent of any particular task, and a single software implementation can be used for all of the probability models in this thesis. \nThe experiments in this thesis suggest that experimenters can obtain state-of-the-art accuracies on a wide range of natural language tasks, with little task-specific effort, by using maximum entropy probability models."
+            },
+            "slug": "Maximum-entropy-models-for-natural-language-Ratnaparkhi-Marcus",
+            "title": {
+                "fragments": [],
+                "text": "Maximum entropy models for natural language ambiguity resolution"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "This thesis demonstrates that several important kinds of natural language ambiguities can be resolved to state-of-the-art accuracies using a single statistical modeling technique based on the principle of maximum entropy."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1710580"
+                        ],
+                        "name": "A. Berger",
+                        "slug": "A.-Berger",
+                        "structuredName": {
+                            "firstName": "Adam",
+                            "lastName": "Berger",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Berger"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2714577"
+                        ],
+                        "name": "S. D. Pietra",
+                        "slug": "S.-D.-Pietra",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Pietra",
+                            "middleNames": [
+                                "Della"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. D. Pietra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39944066"
+                        ],
+                        "name": "V. D. Pietra",
+                        "slug": "V.-D.-Pietra",
+                        "structuredName": {
+                            "firstName": "Vincent",
+                            "lastName": "Pietra",
+                            "middleNames": [
+                                "J.",
+                                "Della"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. D. Pietra"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 73
+                            }
+                        ],
+                        "text": "We continue until successive improvements fail to yield a sufficiently large decrease in the divergence."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 248,
+                                "start": 229
+                            }
+                        ],
+                        "text": "\u2026recent years have seen ME techniques used for sentence boundary detection, part of speech tagging, parse selection and ambiguity resolution, and stochastic attribute-value grammars, to name just a few applications (Abney, 1997; Berger et al., 1996; Ratnaparkhi, 1998; Johnson et al., 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 73
+                            }
+                        ],
+                        "text": "A conditional maximum entropy modelq\u03b8(x|w) for p has the parametric form (Berger et al., 1996; Chi, 1998;\nJohnson et al., 1999): q\u03b8(x|w) = exp ( \u03b8T f (x) ) \u2211y\u2208Y(w) exp(\u03b8T f (y))\n(1)\nwhere\u03b8 is a d-dimensional parameter vector and \u03b8T f (x) is the inner product of the parameter vector and a feature\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1085832,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "fb486e03369a64de2d5b0df86ec0a7b55d3907db",
+            "isKey": false,
+            "numCitedBy": 3452,
+            "numCiting": 42,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The concept of maximum entropy can be traced back along multiple threads to Biblical times. Only recently, however, have computers become powerful enough to permit the widescale application of this concept to real world problems in statistical estimation and pattern recognition. In this paper, we describe a method for statistical modeling based on maximum entropy. We present a maximum-likelihood approach for automatically constructing maximum entropy models and describe how to implement this approach efficiently, using as examples several problems in natural language processing."
+            },
+            "slug": "A-Maximum-Entropy-Approach-to-Natural-Language-Berger-Pietra",
+            "title": {
+                "fragments": [],
+                "text": "A Maximum Entropy Approach to Natural Language Processing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A maximum-likelihood approach for automatically constructing maximum entropy models is presented and how to implement this approach efficiently is described, using as examples several problems in natural language processing."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Comput. Linguistics"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739581"
+                        ],
+                        "name": "J. Lafferty",
+                        "slug": "J.-Lafferty",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Lafferty",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Lafferty"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1705598"
+                        ],
+                        "name": "B. Suhm",
+                        "slug": "B.-Suhm",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Suhm",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Suhm"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 172,
+                                "start": 149
+                            }
+                        ],
+                        "text": "Finally, it should be noted that in the current implementation, we have not applied any of the possible optimizations that appear in the literature (Lafferty and Suhm, 1996; Wu and Khudanpur, 2000; Lafferty et al., 2001) to speed up normalization of the probability distributionq."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2824259,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0555dccd4f243fe6d353e8d0af4f161882694b1f",
+            "isKey": false,
+            "numCitedBy": 36,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The maximum entropy method has recently been successfully introduced to a variety of natural language applications. In each of these applications, however, the power of the maximum entropy method is achieved at the cost of a considerable increase in computational requirements. In this paper we present a technique, closely related to the classical cluster expansion from statistical mechanics, for reducing the computational demands necessary to calculate conditional maximum entropy language models."
+            },
+            "slug": "Cluster-Expansions-and-Iterative-Scaling-for-Models-Lafferty-Suhm",
+            "title": {
+                "fragments": [],
+                "text": "Cluster Expansions and Iterative Scaling for Maximum Entropy Language Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper presents a technique, closely related to the classical cluster expansion from statistical mechanics, for reducing the computational demands necessary to calculate conditional maximum entropy language models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35551590"
+                        ],
+                        "name": "Steven P. Abney",
+                        "slug": "Steven-P.-Abney",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Abney",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Steven P. Abney"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In natural language processing, recent years have seen ME techniques used for sentence boundary detection, part of speech tagging, parse selection and ambiguity resolution, and stochastic attribute-value grammars, to name just a few applications (Abney, 1997; Berger et al., 1996; Ratnaparkhi, 1998; Johnson et al., 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 227,
+                                "start": 216
+                            }
+                        ],
+                        "text": "\u2026recent years have seen ME techniques used for sentence boundary detection, part of speech tagging, parse selection and ambiguity resolution, and stochastic attribute-value grammars, to name just a few applications (Abney, 1997; Berger et al., 1996; Ratnaparkhi, 1998; Johnson et al., 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5361885,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "61dffff2116f3543e71d536a18308fa4fc5e53c3",
+            "isKey": false,
+            "numCitedBy": 236,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Probabilistic analogues of regular and context-free grammars are well known in computational linguistics, and currently the subject of intensive research. To date, however, no satisfactory probabilistic analogue of attribute-value grammars has been proposed: previous attempts have failed to define an adequate parameter-estimation algorithm.In the present paper, I define stochastic attribute-value grammars and give an algorithm for computing the maximum-likelihood estimate of their parameters. The estimation algorithm is adapted from Della Pietra, Della Pietra, and Lafferty (1995). To estimate model parameters, it is necessary to compute the expectations of certain functions under random fields. In the application discussed by Della Pietra, Della Pietra, and Lafferty (representing English orthographic constraints), Gibbs sampling can be used to estimate the needed expectations. The fact that attribute-value grammars generate constrained languages makes Gibbs sampling inapplicable, but I show that sampling can be done using the more general Metropolis-Hastings algorithm."
+            },
+            "slug": "Stochastic-Attribute-Value-Grammars-Abney",
+            "title": {
+                "fragments": [],
+                "text": "Stochastic Attribute-Value Grammars"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "Stochastic attribute-value grammars are defined and an algorithm for computing the maximum-likelihood estimate of their parameters is given and it is shown that sampling can be done using the more general Metropolis-Hastings algorithm."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CL"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2057788"
+                        ],
+                        "name": "M. Osborne",
+                        "slug": "M.-Osborne",
+                        "structuredName": {
+                            "firstName": "Miles",
+                            "lastName": "Osborne",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Osborne"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 165,
+                                "start": 150
+                            }
+                        ],
+                        "text": "The \u2018summary\u2019 dataset is part of a sentence extraction task (Osborne, to appear), and the \u2018shallow\u2019 dataset is drawn from a text chunking application (Osborne, 2002)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7353825,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8f54b66017b99c4ee525e91f389f9f6417cf2e88",
+            "isKey": false,
+            "numCitedBy": 158,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A maximum entropy classifier can be used to extract sentences from documents. Experiments using technical documents show that such a classifier tends to treat features in a categorical manner. This results in performance that is worse than when extracting sentences using a naive Bayes classifier. Addition of an optimised prior to the maximum entropy classifier improves performance over and above that of naive Bayes (even when naive Bayes is also extended with a similar prior). Further experiments show that, should we have at our disposal extremely informative features, then maximum entropy is able to yield excellent results. Naive Bayes, in contrast, cannot exploit these features and so fundamentally limits sentence extraction performance."
+            },
+            "slug": "Using-maximum-entropy-for-sentence-extraction-Osborne",
+            "title": {
+                "fragments": [],
+                "text": "Using maximum entropy for sentence extraction"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "Experiments show that, should the authors have at their disposal extremely informative features, then maximum entropy is able to yield excellent results and, in contrast, naive Bayes cannot exploit these features and so fundamentally limits sentence extraction performance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL 2002"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739581"
+                        ],
+                        "name": "J. Lafferty",
+                        "slug": "J.-Lafferty",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Lafferty",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Lafferty"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143753639"
+                        ],
+                        "name": "A. McCallum",
+                        "slug": "A.-McCallum",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "McCallum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. McCallum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "113414328"
+                        ],
+                        "name": "Fernando Pereira",
+                        "slug": "Fernando-Pereira",
+                        "structuredName": {
+                            "firstName": "Fernando",
+                            "lastName": "Pereira",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fernando Pereira"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 219,
+                                "start": 198
+                            }
+                        ],
+                        "text": "Finally, it should be noted that in the current implementation, we have not applied any of the possible optimizations that appear in the literature (Lafferty and Suhm, 1996; Wu and Khudanpur, 2000; Lafferty et al., 2001) to speed up normalization of the probability distributionq."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 219683473,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f4ba954b0412773d047dc41231c733de0c1f4926",
+            "isKey": false,
+            "numCitedBy": 13411,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present conditional random fields , a framework for building probabilistic models to segment and label sequence data. Conditional random fields offer several advantages over hidden Markov models and stochastic grammars for such tasks, including the ability to relax strong independence assumptions made in those models. Conditional random fields also avoid a fundamental limitation of maximum entropy Markov models (MEMMs) and other discriminative Markov models based on directed graphical models, which can be biased towards states with few successor states. We present iterative parameter estimation algorithms for conditional random fields and compare the performance of the resulting models to HMMs and MEMMs on synthetic and natural-language data."
+            },
+            "slug": "Conditional-Random-Fields:-Probabilistic-Models-for-Lafferty-McCallum",
+            "title": {
+                "fragments": [],
+                "text": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work presents iterative parameter estimation algorithms for conditional random fields and compares the performance of the resulting models to HMMs and MEMMs on synthetic and natural-language data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "103256587"
+                        ],
+                        "name": "Stuart Gonan",
+                        "slug": "Stuart-Gonan",
+                        "structuredName": {
+                            "firstName": "Stuart",
+                            "lastName": "Gonan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Stuart Gonan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3140471"
+                        ],
+                        "name": "Zhiyi Chi",
+                        "slug": "Zhiyi-Chi",
+                        "structuredName": {
+                            "firstName": "Zhiyi",
+                            "lastName": "Chi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhiyi Chi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "One modification we can make to avoids this problem is to consider conditional probability distributions instead (Berger et al., 1996; Chi, 1998; Johnson et al., 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 118064335,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "887a8ee15f13026dd2b58f5609311a2e9478e875",
+            "isKey": false,
+            "numCitedBy": 27,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This thesis is a collection of essays on probability models for complex systems. \nChapter 1 is an introduction to the thesis. The main point made here is the importance of probabilistic modeling to complex problems of machine perception. \nChapter 2 studies minimum complexity regression. The results include: (1) weak consistency of the regression, (2) divergence of estimates in $L\\sp2$-norm with an arbitrary complexity assignment, and (3) condition on complexity measure to ensure strong consistency. \nChapter 3 proposes compositionality as a general principle for probabilistic modeling. The main issues covered here are: (1) existence of general compositional probability measures, (2) subsystems of compositional systems, and (3) Gibbs representation of compositional probabilities. \nChapter 4 and 5 establish some useful properties of probabilistic context-free grammars (PCFGs). The following problems are discussed: (1) consistency of estimated PCFGs, (2) finiteness of entropy, momentum, etc, of estimated PCFGs, (3) branching rates and re-normalization of inconsistent PCFGs, and (4) identifiability of parameters of PCFGs. \nChapter 6 proposes a probabilistic feature based model for languages. Issues dealt with in the chapter include: (1) formulation of such grammars using maximum entropy principle, (2) modified maximum-likelihood type scheme for parameter estimation, (3) a novel pseudo-likelihood type estimation which is more efficient for sentence analysis. \nChapter 7 develops a novel model on the origin of scale invariance of natural images. After presenting the evidence of scale invariance, the chapter goes on to: (1) argue for a 1/$r\\sp3$ law of size of object, (2) establish a 2D Poisson model on the origin of scale invariance, and (3) show numerical simulation results for this model. \nChapter 8 is a theoretical extension of Chapter 7. A general approach to construct scale and translation invariant distributions using wavelet expansion is formulated and applied to construct scale and translation invariant distributions on the spaces of generalized functions and functions defined on the whole integer lattice."
+            },
+            "slug": "Probability-models-for-complex-systems-Gonan-Chi",
+            "title": {
+                "fragments": [],
+                "text": "Probability models for complex systems"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2057788"
+                        ],
+                        "name": "M. Osborne",
+                        "slug": "M.-Osborne",
+                        "structuredName": {
+                            "firstName": "Miles",
+                            "lastName": "Osborne",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Osborne"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 160,
+                                "start": 147
+                            }
+                        ],
+                        "text": "The \u2018summary\u2019 dataset is part of a sentence extraction task (Osborne, to appear), and the \u2018shallow\u2019 dataset is drawn from a text chunking application (Osborne, 2002)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14300033,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f903dba9799d1f7f8414891bdc8a5a79b1ecb6fb",
+            "isKey": false,
+            "numCitedBy": 18,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Shallow parsers are usually assumed to be trained on noise-free material, drawn from the same distribution as the testing material. However, when either the training set is noisy or else drawn from a different distributions, performance may be degraded. Using the parsed Wall Street Journal, we investigate the performance of four shallow parsers (maximum entropy, memory-based learning, N-grams and ensemble learning) trained using various types of artificially noisy material. Our first set of results show that shallow parsers are surprisingly robust to synthetic noise, with performance gradually decreasing as the rate of noise increases. Further results show that no single shallow parser performs best in all noise situations. Final results show that simple, parser-specific extensions can improve noise-tolerance. Our second set of results addresses the question of whether naturally occurring disfluencies undermines performance more than does a change in distribution. Results using the parsed Switchboard corpus suggest that, although naturally occurring disfluencies might harm performance, differences in distribution between the training set and the testing set are more significant."
+            },
+            "slug": "Shallow-Parsing-using-Noisy-and-Non-Stationary-Osborne",
+            "title": {
+                "fragments": [],
+                "text": "Shallow Parsing using Noisy and Non-Stationary Training Material"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This work investigates the performance of four shallow parsers trained using various types of artificially noisy material and shows that they are surprisingly robust to synthetic noise, and addresses the question of whether naturally occurring disfluencies undermines performance more than does a change in distribution."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Mach. Learn. Res."
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2096070"
+                        ],
+                        "name": "J. Shewchuk",
+                        "slug": "J.-Shewchuk",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Shewchuk",
+                            "middleNames": [
+                                "Richard"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Shewchuk"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6491967,
+            "fieldsOfStudy": [
+                "Chemistry"
+            ],
+            "id": "70000f7791ab8519429ce939bc897738a05939c3",
+            "isKey": false,
+            "numCitedBy": 2496,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The Conjugate Gradient Method is the most prominent iterative method for solving sparse systems of linear equations. Unfortunately, many textbook treatments of the topic are written so that even their own authors would be mystified, if they bothered to read their own writing. For this reason, an understanding of the method has been reserved for the elite brilliant few who have painstakingly decoded the mumblings of their forebears. Nevertheless, the Conjugate Gradient Method is a composite of simple, elegant ideas that almost anyone can understand. Of course, a reader as intelligent as yourself will learn them almost effortlessly. The idea of quadratic forms is introduced and used to derive the methods of Steepest Descent, Conjugate Directions, and Conjugate Gradients. Eigenvectors are explained and used to examine the convergence of the Jacobi Method, Steepest Descent, and Conjugate Gradients. Other topics include preconditioning and the nonlinear Conjugate Gradient Method. I have taken pains to make this article easy to read. Sixty-two illustrations are provided. Dense prose is avoided. Concepts are explained in several different ways. Most equations are coupled with an intuitive interpretation."
+            },
+            "slug": "An-Introduction-to-the-Conjugate-Gradient-Method-Shewchuk",
+            "title": {
+                "fragments": [],
+                "text": "An Introduction to the Conjugate Gradient Method Without the Agonizing Pain"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145033312"
+                        ],
+                        "name": "S. Benson",
+                        "slug": "S.-Benson",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Benson",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Benson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763017"
+                        ],
+                        "name": "L. McInnes",
+                        "slug": "L.-McInnes",
+                        "structuredName": {
+                            "firstName": "Lois",
+                            "lastName": "McInnes",
+                            "middleNames": [
+                                "Curfman"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. McInnes"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144241870"
+                        ],
+                        "name": "J. J. Mor\u00e9",
+                        "slug": "J.-J.-Mor\u00e9",
+                        "structuredName": {
+                            "firstName": "Jorge",
+                            "lastName": "Mor\u00e9",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. J. Mor\u00e9"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1134,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8f3899c8726d8316dabb2d5152be73a2a572b371",
+            "isKey": false,
+            "numCitedBy": 39,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We analyze the performance and scalabilty of algorithms for the solution of large optimization problems on high-performance parallel architectures. Our case study uses the GPCG (gradient projection, conjugate gradient) algorithm for solving bound-constrained convex quadratic problems. Our implementation of the GPCG algorithm within the Toolkit for Advanced Optimization (TAO) is available for a wide range of high-performance architectures and has been tested on problems with over 2.5 million variables. We analyze the performance as a function of the number of variables, the number of free variables, and the preconditioner. In addition, we discuss how the software design facilitates algorithmic comparisons."
+            },
+            "slug": "A-case-study-in-the-performance-and-scalability-of-Benson-McInnes",
+            "title": {
+                "fragments": [],
+                "text": "A case study in the performance and scalability of optimization algorithms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This case study uses the GPCG (gradient projection, conjugate gradient) algorithm for solving bound-constrained convex quadratic problems and analyzes the performance as a function of the number of variables, thenumber of free variables, and the preconditioner."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "TOMS"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152465203"
+                        ],
+                        "name": "Mark Johnson",
+                        "slug": "Mark-Johnson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Johnson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Johnson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3194361"
+                        ],
+                        "name": "S. Geman",
+                        "slug": "S.-Geman",
+                        "structuredName": {
+                            "firstName": "Stuart",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Geman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47428006"
+                        ],
+                        "name": "S. Canon",
+                        "slug": "S.-Canon",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Canon",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Canon"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3140471"
+                        ],
+                        "name": "Zhiyi Chi",
+                        "slug": "Zhiyi-Chi",
+                        "structuredName": {
+                            "firstName": "Zhiyi",
+                            "lastName": "Chi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhiyi Chi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3289329"
+                        ],
+                        "name": "S. Riezler",
+                        "slug": "S.-Riezler",
+                        "structuredName": {
+                            "firstName": "Stefan",
+                            "lastName": "Riezler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Riezler"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 56
+                            }
+                        ],
+                        "text": "Many features are nearly \u2018pseudo-minimal\u2019 in the sense of Johnson et al. (1999), and so receive weights approaching\u2212\u221e."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "While all parameter estimation algorithms we will consider take the same general form, the method for computing the updates\u03b4(k) at each search step differs substantially."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 289,
+                                "start": 269
+                            }
+                        ],
+                        "text": "\u2026recent years have seen ME techniques used for sentence boundary detection, part of speech tagging, parse selection and ambiguity resolution, and stochastic attribute-value grammars, to name just a few applications (Abney, 1997; Berger et al., 1996; Ratnaparkhi, 1998; Johnson et al., 1999)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 105
+                            }
+                        ],
+                        "text": "A conditional maximum entropy modelq\u03b8(x|w) for p has the parametric form (Berger et al., 1996; Chi, 1998;\nJohnson et al., 1999): q\u03b8(x|w) = exp ( \u03b8T f (x) ) \u2211y\u2208Y(w) exp(\u03b8T f (y))\n(1)\nwhere\u03b8 is a d-dimensional parameter vector and \u03b8T f (x) is the inner product of the parameter vector and a feature\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17435621,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "463dbd690d912b23d29b7581fb6b253b36f50394",
+            "isKey": true,
+            "numCitedBy": 233,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Log-linear models provide a statistically sound framework for Stochastic \"Unification-Based\" Grammars (SUBGs) and stochastic versions of other kinds of grammars. We describe two computationally-tractable ways of estimating the parameters of such grammars from a training corpus of syntactic analyses, and apply these to estimate a stochastic version of Lexical-Functional Grammar."
+            },
+            "slug": "Estimators-for-Stochastic-\"Unification-Based\"-Johnson-Geman",
+            "title": {
+                "fragments": [],
+                "text": "Estimators for Stochastic \"Unification-Based\" Grammars"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "Two computationally-tractable ways of estimating the parameters of Stochastic \"Unification-Based\" Grammars from a training corpus of syntactic analyses are described and applied to estimate a stochastic version of Lexical-Functional Grammar."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34958152"
+                        ],
+                        "name": "E. Dolan",
+                        "slug": "E.-Dolan",
+                        "structuredName": {
+                            "firstName": "Elizabeth",
+                            "lastName": "Dolan",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Dolan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144241870"
+                        ],
+                        "name": "J. J. Mor\u00e9",
+                        "slug": "J.-J.-Mor\u00e9",
+                        "structuredName": {
+                            "firstName": "Jorge",
+                            "lastName": "Mor\u00e9",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. J. Mor\u00e9"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 221338315,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ca093a519c3299883544bd1e83e6977891e7cfe2",
+            "isKey": false,
+            "numCitedBy": 40,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The COPS test set provides a modest selection of difficult nonlinearly constrained optimization problems from applications in optimal design, fluid dynamics, parameter estimation, and optimal control. In this report we describe version 2.0 of the COPS problems. The formulation and discretization of the original problems have been streamlined and improved. We have also added new problems. The presentation of COPS follows the original report, but the description of the problems has been streamlined. For each problem we discuss the formulation of the problem and the structural data in Table 0.1 on the formulation. The aim of presenting this data is to provide an approximate idea of the size and sparsity of the problem. We also include the results of computational experiments with the LANCELOT, LOQO, MINOS, and SNOPT solvers. These computational experiments differ from the original results in that we have deleted problems that were considered to be too easy. Moreover, in the current version of the computational experiments, each problem is tested with four variations. An important difference between this report and the original report is that the tables that present the computational experiments are generated automatically from the testing script. This is explained in more detail in the report."
+            },
+            "slug": "Benchmarking-optimization-software-with-COPS.-Dolan-Mor\u00e9",
+            "title": {
+                "fragments": [],
+                "text": "Benchmarking optimization software with COPS."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This report describes version 2.0 of the COPS problems, and includes the results of computational experiments with the LANCELOT, LOQO, MINOS, and SNOPT solvers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35206065"
+                        ],
+                        "name": "E. Jaynes",
+                        "slug": "E.-Jaynes",
+                        "structuredName": {
+                            "firstName": "Edwin",
+                            "lastName": "Jaynes",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Jaynes"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 157,
+                                "start": 145
+                            }
+                        ],
+                        "text": "\u2026log p(x|w) q\u03b8(x|w)\nor, equivalently, which maximize the log likelihood:\nL(\u03b8) = \u2211 w,x p(w,x) logq\u03b8(x|w) (2)\nThe gradient of the log likelihood function, or the vector of its first derivatives with respect to the parameter\u03b8 is:\nG(\u03b8) = Ep[ f ]\u2212Eq\u03b8 [ f ] (3)\nSince the likelihood function (2) is\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17870175,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "08b67692bc037eada8d3d7ce76cc70994e7c8116",
+            "isKey": false,
+            "numCitedBy": 10876,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Treatment of the predictive aspect of statistical mechanics as a form of statistical inference is extended to the density-matrix formalism and applied to a discussion of the relation between irreversibility and information loss. A principle of \"statistical complementarity\" is pointed out, according to which the empirically verifiable probabilities of statistical mechanics necessarily correspond to incomplete predictions. A preliminary discussion is given of the second law of thermodynamics and of a certain class of irreversible processes, in an approximation equivalent to that of the semiclassical theory of radiation."
+            },
+            "slug": "Information-Theory-and-Statistical-Mechanics-Jaynes",
+            "title": {
+                "fragments": [],
+                "text": "Information Theory and Statistical Mechanics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1957
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49979232"
+                        ],
+                        "name": "S. Balay",
+                        "slug": "S.-Balay",
+                        "structuredName": {
+                            "firstName": "Satish",
+                            "lastName": "Balay",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Balay"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1703559"
+                        ],
+                        "name": "W. Gropp",
+                        "slug": "W.-Gropp",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Gropp",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Gropp"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763017"
+                        ],
+                        "name": "L. McInnes",
+                        "slug": "L.-McInnes",
+                        "structuredName": {
+                            "firstName": "Lois",
+                            "lastName": "McInnes",
+                            "middleNames": [
+                                "Curfman"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. McInnes"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40563778"
+                        ],
+                        "name": "Barry F. Smith",
+                        "slug": "Barry-F.-Smith",
+                        "structuredName": {
+                            "firstName": "Barry",
+                            "lastName": "Smith",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Barry F. Smith"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 56520908,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5b54329e22a8c08fd0ee7d21c8dd89b592be8539",
+            "isKey": false,
+            "numCitedBy": 2028,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Parallel numerical software based on the message passing model is enormously complicated. This paper introduces a set of techniques to manage the complexity, while maintaining high efficiency and ease of use. The PETSc 2.0 package uses object-oriented programming to conceal the details of the message passing, without concealing the parallelism, in a high-quality set of numerical software libraries. In fact, the programming model used by PETSc is also the most appropriate for NUMA shared-memory machines, since they require the same careful attention to memory hierarchies as do distributed-memory machines. Thus, the concepts discussed are appropriate for all scalable computing systems. The PETSc libraries provide many of the data structures and numerical kernels required for the scalable solution of PDEs, offering performance portability."
+            },
+            "slug": "Efficient-Management-of-Parallelism-in-Numerical-Balay-Gropp",
+            "title": {
+                "fragments": [],
+                "text": "Efficient Management of Parallelism in Object-Oriented Numerical Software Libraries"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 37,
+                "text": "The concepts discussed are appropriate for all scalable computing systems and provide many of the data structures and numerical kernels required for the scalable solution of PDEs, offering performance portability."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SciTools"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2784955"
+                        ],
+                        "name": "J. Nocedal",
+                        "slug": "J.-Nocedal",
+                        "structuredName": {
+                            "firstName": "Jorge",
+                            "lastName": "Nocedal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Nocedal"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5221242,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5208afb37094460312d4815f7d8b0299b7611912",
+            "isKey": false,
+            "numCitedBy": 68,
+            "numCiting": 86,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper reviews advances in Newton quasi Newton and conjugate gradi ent methods for large scale optimization It also describes several packages developed during the last ten years and illustrates their performance on some practical problems Much attention is given to the concept of partial separa bility which is gaining importance with the arrival of automatic di erentiation tools and of optimization software that fully exploits its properties"
+            },
+            "slug": "Large-Scale-Unconstrained-Optimization-Nocedal",
+            "title": {
+                "fragments": [],
+                "text": "Large Scale Unconstrained Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 98,
+                "text": "This paper reviews advances in Newton quasi Newton and conjugate gradi ent methods for large scale optimization and describes several packages developed during the last ten years and illustrates their performance on some practical problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145033312"
+                        ],
+                        "name": "S. Benson",
+                        "slug": "S.-Benson",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Benson",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Benson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1763017"
+                        ],
+                        "name": "L. McInnes",
+                        "slug": "L.-McInnes",
+                        "structuredName": {
+                            "firstName": "Lois",
+                            "lastName": "McInnes",
+                            "middleNames": [
+                                "Curfman"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. McInnes"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144241870"
+                        ],
+                        "name": "J. J. Mor\u00e9",
+                        "slug": "J.-J.-Mor\u00e9",
+                        "structuredName": {
+                            "firstName": "Jorge",
+                            "lastName": "Mor\u00e9",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. J. Mor\u00e9"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3018158"
+                        ],
+                        "name": "J. Sarich",
+                        "slug": "J.-Sarich",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Sarich",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Sarich"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 208,
+                                "start": 189
+                            }
+                        ],
+                        "text": "For the other optimization techniques, we used TAO (the \u201cToolkit for Advanced Optimization\u201d), a library layered on top of the foundation of PETSc for solving nonlinear optimization problems (Benson et al., 2002)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 59817029,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ce5c17a5884497840a2bbf0529ae43a6c8c94a5e",
+            "isKey": false,
+            "numCitedBy": 60,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The Toolkit for Advanced Optimization (TAO) focuses on the design and implementation of component-based optimization software for the solution of large-scale optimization applications on high-performance architectures. Their approach is motivated by the scattered support for parallel computations and lack of reuse of linear algebra software in currently available optimization software. The TAO design allows the reuse of toolkits that provide lower-level support (parallel sparse matrix data structures, preconditioners, solvers), and thus they are able to build on top of these toolkits instead of having to redevelop code. The advantages in terms of efficiency and development time are significant. The TAO design philosophy uses object-oriented techniques of data and state encapsulation, abstract classes, and limited inheritance to create a flexible optimization toolkit. This chapter provides a short introduction to the design philosophy by describing the objectives in TAO and the importance of this design. Since a major concern in the TAO project is the performance and scalability of optimization algorithms on large problems, they also present some performance results."
+            },
+            "slug": "TAO-users-manual.-Benson-McInnes",
+            "title": {
+                "fragments": [],
+                "text": "TAO users manual."
+            },
+            "tldr": {
+                "abstractSimilarityScore": 54,
+                "text": "The Toolkit for Advanced Optimization design philosophy uses object-oriented techniques of data and state encapsulation, abstract classes, and limited inheritance to create a flexible optimization toolkit that allows the reuse of toolkits that provide lower-level support."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144254013"
+                        ],
+                        "name": "G. Bouma",
+                        "slug": "G.-Bouma",
+                        "structuredName": {
+                            "firstName": "Gosse",
+                            "lastName": "Bouma",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Bouma"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143715131"
+                        ],
+                        "name": "Gertjan van Noord",
+                        "slug": "Gertjan-van-Noord",
+                        "structuredName": {
+                            "firstName": "Gertjan",
+                            "lastName": "Noord",
+                            "middleNames": [
+                                "van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Gertjan van Noord"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145804005"
+                        ],
+                        "name": "Robert Malouf",
+                        "slug": "Robert-Malouf",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Malouf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Robert Malouf"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "The \u2018rules\u2019 and \u2018lex\u2019 datasets are examples of stochastic attribute value grammars, one with a small set of SCFG-like features, and with with a very large set of fine-grained lexical features (Bouma et al., 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15025069,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9442a24d6b6d28f35602b504be4336beda365002",
+            "isKey": false,
+            "numCitedBy": 241,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Alpino is a wide-coverage computational analyzer of Dutch which aims at accurate, full, parsing of unrestricted text. We describe the head-driven lexicalized grammar and the lexical component, which has been derived from existing resources. The grammar produces dependency structures, thus providing a reasonably abstract and theory-neutral level of linguistic representation. An important aspect of wide-coverage parsing is robustness and disambiguation. The dependency relations encoded in the dependency structures have been used to develop and evaluate both hand-coded and statistical disambiguation methods."
+            },
+            "slug": "Alpino:-Wide-coverage-Computational-Analysis-of-Bouma-Noord",
+            "title": {
+                "fragments": [],
+                "text": "Alpino: Wide-coverage Computational Analysis of Dutch"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 98,
+                "text": "Alpino is a wide-coverage computational analyzer of Dutch which aims at accurate, full, parsing of unrestricted text and describes the head-driven lexicalized grammar and the lexical component, which has been derived from existing resources."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CLIN"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2157892296"
+                        ],
+                        "name": "D. K. Smith",
+                        "slug": "D.-K.-Smith",
+                        "structuredName": {
+                            "firstName": "D.",
+                            "lastName": "Smith",
+                            "middleNames": [
+                                "K.",
+                                "Skip"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. K. Smith"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 138,
+                                "start": 113
+                            }
+                        ],
+                        "text": "For algorithmic details and theoretical analysis of first and second order methods, see, e.g., Nocedal (1997) or Nocedal and Wright (1999).\ndoes not reflect the actual behavior on actual problems."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 189864167,
+            "fieldsOfStudy": [
+                "Business"
+            ],
+            "id": "bf86896c23300a46b7fc76298e365984c0b05105",
+            "isKey": false,
+            "numCitedBy": 10989,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "no exception. MRP II and JIT=TQC in purchasing and supplier education are covered in Chapter 15. Without proper education MRP II and JIT=TQC will not be successful and will not generate their true bene\u00aets. Suppliers are key to the success of MRP II and JIT=TQC. They therefore need to understand these disciplines. Purchasing in the 21st century is going to be marked by continuous changes, by who can gain the competitive edge \u00aerst, who will be the most \u0304exible and who will build the best supplier relationships. This will only be achieved by following the process as described in Schorr in a step by step fashion. An organization must however be willing to, as Schorr states in Chapter 16, `create the spark, ignite change'! Only then can it happen! If you really want to know something about purchasing then this is the book to read. It is most de\u00aenitely relevant and more importantly up to date. It will certainly be a handy reference book for a course on purchasing."
+            },
+            "slug": "Numerical-Optimization-Smith",
+            "title": {
+                "fragments": [],
+                "text": "Numerical Optimization"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Oper. Res. Soc."
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34958152"
+                        ],
+                        "name": "E. Dolan",
+                        "slug": "E.-Dolan",
+                        "structuredName": {
+                            "firstName": "Elizabeth",
+                            "lastName": "Dolan",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Dolan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144241870"
+                        ],
+                        "name": "J. J. Mor\u00e9",
+                        "slug": "J.-J.-Mor\u00e9",
+                        "structuredName": {
+                            "firstName": "Jorge",
+                            "lastName": "Mor\u00e9",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. J. Mor\u00e9"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 55758,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "54a20dbd409436be4f188dfa9a78949a1cac230d",
+            "isKey": false,
+            "numCitedBy": 3281,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract.We propose performance profiles \u2014 distribution functions for a performance metric \u2014 as a tool for benchmarking and comparing optimization software. We show that performance profiles combine the best features of other tools for performance evaluation."
+            },
+            "slug": "Benchmarking-optimization-software-with-performance-Dolan-Mor\u00e9",
+            "title": {
+                "fragments": [],
+                "text": "Benchmarking optimization software with performance profiles"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 66,
+                "text": "It is shown that performance profiles combine the best features of other tools for performance evaluation to create a single tool for benchmarking and comparing optimization software."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Math. Program."
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47633347"
+                        ],
+                        "name": "W. Deming",
+                        "slug": "W.-Deming",
+                        "structuredName": {
+                            "firstName": "William",
+                            "lastName": "Deming",
+                            "middleNames": [
+                                "Edwards"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Deming"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49815048"
+                        ],
+                        "name": "F. F. Stephan",
+                        "slug": "F.-F.-Stephan",
+                        "structuredName": {
+                            "firstName": "Frederick",
+                            "lastName": "Stephan",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. F. Stephan"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "An extension of Iterative Proportional Fitting ( Deming and Stephan, 1940 ), GIS scales the probability distribution q(k) by a factor proportional to the ratio of E p[ f ] to Eq(k)[ f ], with the restriction that \u2211 j f j(x) = C for each event x in the training data (a condition which can be easily satisfied by the addition of a correction feature)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 16
+                            }
+                        ],
+                        "text": "An extension of Iterative Proportional Fitting (Deming and Stephan, 1940), GIS scales the probability distribution q(k) by a factor proportional to the\nratio of Ep[ f ] to Eq(k) [ f ], with the restriction that \u2211 j f j(x) = C for each eventx in the training data (a condition which can be easily satisfied by the addition of a correction feature)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 48
+                            }
+                        ],
+                        "text": "An extension of Iterative Proportional Fitting (Deming and Stephan, 1940), GIS scales the probability distribution q(k) by a factor proportional to the\nratio of Ep[ f ] to Eq(k) [ f ], with the restriction that \u2211 j f j(x) = C for each eventx in the training data (a condition which can be easily\u2026"
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 121777010,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "0d3385999a7a2d905027ea9e71702e02e856196f",
+            "isKey": true,
+            "numCitedBy": 1466,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "On-a-Least-Squares-Adjustment-of-a-Sampled-Table-Deming-Stephan",
+            "title": {
+                "fragments": [],
+                "text": "On a Least Squares Adjustment of a Sampled Frequency Table When the Expected Marginal Totals are Known"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1940
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145179124"
+                        ],
+                        "name": "I. Good",
+                        "slug": "I.-Good",
+                        "structuredName": {
+                            "firstName": "I.",
+                            "lastName": "Good",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Good"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 158,
+                                "start": 148
+                            }
+                        ],
+                        "text": "\u2026q\u03b8(x|w)\nor, equivalently, which maximize the log likelihood:\nL(\u03b8) = \u2211 w,x p(w,x) logq\u03b8(x|w) (2)\nThe gradient of the log likelihood function, or the vector of its first derivatives with respect to the parameter\u03b8 is:\nG(\u03b8) = Ep[ f ]\u2212Eq\u03b8 [ f ] (3)\nSince the likelihood function (2) is concave over\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 123298174,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "602084417015618f112c796828786a6af72bf7d9",
+            "isKey": false,
+            "numCitedBy": 412,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Maximum-Entropy-for-Hypothesis-Formulation,-for-Good",
+            "title": {
+                "fragments": [],
+                "text": "Maximum Entropy for Hypothesis Formulation, Especially for Multidimensional Contingency Tables"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1963
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49223598"
+                        ],
+                        "name": "J. Darroch",
+                        "slug": "J.-Darroch",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Darroch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Darroch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "12360582"
+                        ],
+                        "name": "D. Ratcliff",
+                        "slug": "D.-Ratcliff",
+                        "structuredName": {
+                            "firstName": "D.",
+                            "lastName": "Ratcliff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Ratcliff"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 120862597,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "37c931cbaa9217b829596dd196520a838562a109",
+            "isKey": false,
+            "numCitedBy": 1329,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Generalized-Iterative-Scaling-for-Log-Linear-Models-Darroch-Ratcliff",
+            "title": {
+                "fragments": [],
+                "text": "Generalized Iterative Scaling for Log-Linear Models"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1972
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144806321"
+                        ],
+                        "name": "L. Campbell",
+                        "slug": "L.-Campbell",
+                        "structuredName": {
+                            "firstName": "L.",
+                            "lastName": "Campbell",
+                            "middleNames": [
+                                "Lorne"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Campbell"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 119621194,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3e98c5445b70c2631fc46b5499c07225f0d1f9e5",
+            "isKey": false,
+            "numCitedBy": 49,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Equivalence-of-Gauss's-Principle-and-Minimum-of-Campbell",
+            "title": {
+                "fragments": [],
+                "text": "Equivalence of Gauss's Principle and Minimum Discrimination Information Estimation of Probabilities"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1970
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1678809"
+                        ],
+                        "name": "A. Iserles",
+                        "slug": "A.-Iserles",
+                        "structuredName": {
+                            "firstName": "Arieh",
+                            "lastName": "Iserles",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Iserles"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2294095"
+                        ],
+                        "name": "M. Powell",
+                        "slug": "M.-Powell",
+                        "structuredName": {
+                            "firstName": "M.",
+                            "lastName": "Powell",
+                            "middleNames": [
+                                "J.",
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Powell"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 109,
+                                "start": 95
+                            }
+                        ],
+                        "text": "For algorithmic details and theoretical analysis of first and second order methods, see, e.g., Nocedal (1997) or Nocedal and Wright (1999).\ndoes not reflect the actual behavior on actual problems."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 208030616,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b5aa37683a0c9a66c9e41b5f9e98695a820d237d",
+            "isKey": false,
+            "numCitedBy": 29,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "on-The-state-of-the-art-in-numerical-analysis-Iserles-Powell",
+            "title": {
+                "fragments": [],
+                "text": "on The state of the art in numerical analysis"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1987
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "97306284"
+                        ],
+                        "name": "K. Fu",
+                        "slug": "K.-Fu",
+                        "structuredName": {
+                            "firstName": "King-Sun",
+                            "lastName": "Fu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Fu"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 78
+                            }
+                        ],
+                        "text": "To avoid this slowed convergence and the need for a correction feature, Della Pietra et al. (1997) propose anImproved Iterative Scaling(IIS) algorithm, whose update rule is the solution to the equation:\nEp[ f ] = \u2211 w,x p(w)q(k)(x|w) f (x)exp(M(x)\u03b4(k))\nwhereM(x) is the sum of the feature values for\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 72
+                            }
+                        ],
+                        "text": "To avoid this slowed convergence and the need for a correction feature, Della Pietra et al. (1997) propose anImproved Iterative Scaling(IIS) algorithm, whose update rule is the solution to the equation:\nEp[ f ] = \u2211 w,x p(w)q(k)(x|w) f (x)exp(M(x)\u03b4(k))\nwhereM(x) is the sum of the feature values for an eventx in the training data."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 60977545,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bb66ae5f36bc84243979c522d8e3f93539cb6a9f",
+            "isKey": false,
+            "numCitedBy": 3689,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "IEEE-Transactions-on-Pattern-Analysis-and-Machine-Fu",
+            "title": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52626911"
+                        ],
+                        "name": "T. Minka",
+                        "slug": "T.-Minka",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Minka",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Minka"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 12,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Minka (2001) offers a comparison of iterative scaling with other algorithms for parameter estimation in logistic regression, a problem similar to the one considered here, but it is difficult to transfer Minka\u2019s results to ME models."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 118158295,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f90e71df8f88a278b22920e2e976947e637efad8",
+            "isKey": false,
+            "numCitedBy": 107,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Algorithms-for-maximum-likelihood-logistic-Minka",
+            "title": {
+                "fragments": [],
+                "text": "Algorithms for maximum-likelihood logistic regression"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2003
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 223,
+                                "start": 148
+                            }
+                        ],
+                        "text": "Finally, it should be noted that in the current implementation, we have not applied any of the possible optimizations that appear in the literature ( Lafferty and Suhm, 1996 ; Wu and Khudanpur, 2000 ; Lafferty et al., 2001) to speed up normalization of the probability distributionq."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 196,
+                                "start": 174
+                            }
+                        ],
+                        "text": "Finally, it should be noted that in the current implementation, we have not applied any of the possible optimizations that appear in the literature (Lafferty and Suhm, 1996; Wu and Khudanpur, 2000; Lafferty et al., 2001) to speed up normalization of the probability distributionq."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Efficient training methods for methods maximum entropy language modelling"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of IC- SLP2000"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Probability models for complex"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1998
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 117
+                            }
+                        ],
+                        "text": "And, more specifically, for the NLP classification tasks considered, the limited memory variable metric algorithm of Benson and Mor\u0301e (2001) outperforms the other choices by a substantial margin."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A limited memory variable metric method for bound constrained minimization"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "A limited memory variable metric method for bound constrained minimization"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Equivalence of Gauss\u2019s"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1970
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "PETSc users"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 256,
+                                "start": 238
+                            }
+                        ],
+                        "text": "As a basis for the implementation, we have used PETSc (the \u201cPortable, Extensible Toolkit for Scientific Computation\u201d), a software library designed to ease development of programs which solve large systems of partial differential equations (Balay et al., 2001; Balay et al., 1997; Balay et al., 2002)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "PETSc home"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 276,
+                                "start": 258
+                            }
+                        ],
+                        "text": "As a basis for the implementation, we have used PETSc (the \u201cPortable, Extensible Toolkit for Scientific Computation\u201d), a software library designed to ease development of programs which solve large systems of partial differential equations (Balay et al., 2001; Balay et al., 1997; Balay et al., 2002)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Efficienct management of parallelism in object oriented nu"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1997
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 256,
+                                "start": 238
+                            }
+                        ],
+                        "text": "As a basis for the implementation, we have used PETSc (the \u201cPortable, Extensible Toolkit for Scientific Computation\u201d), a software library designed to ease development of programs which solve large systems of partial differential equations (Balay et al., 2001; Balay et al., 1997; Balay et al., 2002)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "PETSc home page"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PETSc home page"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Information theory and statistical mechanics.Physical Review"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1957
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A limited memory variable metric method for bound constrained minimization"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 117
+                            }
+                        ],
+                        "text": "And, more specifically, for the NLP classification tasks considered, the limited memory variable metric algorithm of Benson and Mor\u0301e (2001) outperforms the other choices by a substantial margin."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A limited memory variable metric method for bound constrained minimization Argonne National Lab- oratory"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "A limited memory variable metric method for bound constrained minimization Argonne National Lab- oratory"
+            },
+            "year": 2001
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 11,
+            "methodology": 17
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 39,
+        "totalPages": 4
+    },
+    "page_url": "https://www.semanticscholar.org/paper/A-Comparison-of-Algorithms-for-Maximum-Entropy-Malouf/878783964ab23c97052ea82685368099d85c500d?sort=total-citations"
+}

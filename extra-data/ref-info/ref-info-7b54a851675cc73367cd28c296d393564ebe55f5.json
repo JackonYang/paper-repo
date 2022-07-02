@@ -1,0 +1,2713 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1711979"
+                        ],
+                        "name": "Marco Cuturi",
+                        "slug": "Marco-Cuturi",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Cuturi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marco Cuturi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701800"
+                        ],
+                        "name": "A. Doucet",
+                        "slug": "A.-Doucet",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Doucet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Doucet"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 16786361,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c697fd0b73ec7aaeb2e75cb89cf4b8b020dd9556",
+            "isKey": false,
+            "numCitedBy": 515,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present new algorithms to compute the mean of a set of empirical probability measures under the optimal transport metric. This mean, known as the Wasserstein barycenter, is the measure that minimizes the sum of its Wasserstein distances to each element in that set. We propose two original algorithms to compute Wasserstein barycenters that build upon the subgradient method. A direct implementation of these algorithms is, however, too costly because it would require the repeated resolution of large primal and dual optimal transport problems to compute subgradients. Extending the work of Cuturi (2013), we propose to smooth the Wasserstein distance used in the definition of Wasserstein barycenters with an entropic regularizer and recover in doing so a strictly convex objective whose gradients can be computed for a considerably cheaper computational cost using matrix scaling algorithms. We use these algorithms to visualize a large family of images and to solve a constrained clustering problem."
+            },
+            "slug": "Fast-Computation-of-Wasserstein-Barycenters-Cuturi-Doucet",
+            "title": {
+                "fragments": [],
+                "text": "Fast Computation of Wasserstein Barycenters"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "The Wasserstein distance is proposed to be smoothed with an entropic regularizer and recover in doing so a strictly convex objective whose gradients can be computed for a considerably cheaper computational cost using matrix scaling algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3403009"
+                        ],
+                        "name": "Aude Genevay",
+                        "slug": "Aude-Genevay",
+                        "structuredName": {
+                            "firstName": "Aude",
+                            "lastName": "Genevay",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aude Genevay"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145481009"
+                        ],
+                        "name": "G. Peyr\u00e9",
+                        "slug": "G.-Peyr\u00e9",
+                        "structuredName": {
+                            "firstName": "Gabriel",
+                            "lastName": "Peyr\u00e9",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Peyr\u00e9"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1711979"
+                        ],
+                        "name": "Marco Cuturi",
+                        "slug": "Marco-Cuturi",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Cuturi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marco Cuturi"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 125154984,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "eafc69e017378cfebc3c5a1238410361f615533a",
+            "isKey": false,
+            "numCitedBy": 49,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The ability to compare two degenerate probability distributions (i.e. two probability distributions supported on two distinct low-dimensional manifolds living in a much higher-dimensional space) is a crucial problem arising in the estimation of generative models for high-dimensional observations such as those arising in computer vision or natural language. It is known that optimal transport metrics can represent a cure for this problem, since they were specifically designed as an alternative to information divergences to handle such problematic scenarios. Unfortunately, training generative machines using OT raises formidable computational and statistical challenges, because of (i) the computational burden of evaluating OT losses, (ii) the instability and lack of smoothness of these losses, (iii) the difficulty to estimate robustly these losses and their gradients in high dimension. This paper presents the first tractable computational method to train large scale generative models using an optimal transport loss, and tackles both these issues by relying on two key ideas: (a) entropic smoothing, which turns the original OT loss into one that can be computed using Sinkhorn fixed point iterations; (b) algorithmic (automatic) differentiation of these iterations. These two approximations result in a robust and differentiable approximation of the OT loss with streamlined GPU execution. The resulting computational architecture complements nicely standard deep network generative models by a stack of extra layers implementing the loss function."
+            },
+            "slug": "Sinkhorn-AutoDiff:-Tractable-Wasserstein-Learning-Genevay-Peyr\u00e9",
+            "title": {
+                "fragments": [],
+                "text": "Sinkhorn-AutoDiff: Tractable Wasserstein Learning of Generative Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper presents the first tractable computational method to train large scale generative models using an optimal transport loss, and relies on two key ideas: entropic smoothing, which turns the original OT loss into one that can be computed using Sinkhorn fixed point iterations; and algorithmic (automatic) differentiation of these iterations, which result in a robust and differentiable approximation of the OT loss."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51129938"
+                        ],
+                        "name": "Espen Bernton",
+                        "slug": "Espen-Bernton",
+                        "structuredName": {
+                            "firstName": "Espen",
+                            "lastName": "Bernton",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Espen Bernton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32746783"
+                        ],
+                        "name": "P. Jacob",
+                        "slug": "P.-Jacob",
+                        "structuredName": {
+                            "firstName": "Pierre",
+                            "lastName": "Jacob",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Jacob"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1830618"
+                        ],
+                        "name": "Mathieu Gerber",
+                        "slug": "Mathieu-Gerber",
+                        "structuredName": {
+                            "firstName": "Mathieu",
+                            "lastName": "Gerber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mathieu Gerber"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145155783"
+                        ],
+                        "name": "C. Robert",
+                        "slug": "C.-Robert",
+                        "structuredName": {
+                            "firstName": "Christian",
+                            "lastName": "Robert",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Robert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 88520948,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "11fadfe035f08b786279014e82203d0270443165",
+            "isKey": false,
+            "numCitedBy": 66,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In purely generative models, one can simulate data given parameters but not necessarily evaluate the likelihood. We use Wasserstein distances between empirical distributions of observed data and empirical distributions of synthetic data drawn from such models to estimate their parameters. Previous interest in the Wasserstein distance for statistical inference has been mainly theoretical, due to computational limitations. Thanks to recent advances in numerical transport, the computation of these distances has become feasible, up to controllable approximation errors. We leverage these advances to propose point estimators and quasi-Bayesian distributions for parameter inference, first for independent data. For dependent data, we extend the approach by using delay reconstruction and residual reconstruction techniques. For large data sets, we propose an alternative distance using the Hilbert space-filling curve, which computation scales as nlogn where n is the size of the data. We provide a theoretical study of the proposed estimators, and adaptive Monte Carlo algorithms to approximate them. The approach is illustrated on four examples: a quantile g-and-k distribution, a toggle switch model from systems biology, a Lotka-Volterra model for plankton population sizes and a L\\'evy-driven stochastic volatility model."
+            },
+            "slug": "Inference-in-generative-models-using-the-distance-Bernton-Jacob",
+            "title": {
+                "fragments": [],
+                "text": "Inference in generative models using the Wasserstein distance"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 59,
+                "text": "This work uses Wasserstein distances between empirical distributions of observed data and empirical distribution of synthetic data drawn from such models to estimate their parameters, and proposes an alternative distance using the Hilbert space-filling curve."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1960016"
+                        ],
+                        "name": "J. Benamou",
+                        "slug": "J.-Benamou",
+                        "structuredName": {
+                            "firstName": "Jean-David",
+                            "lastName": "Benamou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Benamou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2006888"
+                        ],
+                        "name": "G. Carlier",
+                        "slug": "G.-Carlier",
+                        "structuredName": {
+                            "firstName": "Guillaume",
+                            "lastName": "Carlier",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Carlier"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1711979"
+                        ],
+                        "name": "Marco Cuturi",
+                        "slug": "Marco-Cuturi",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Cuturi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marco Cuturi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1969058"
+                        ],
+                        "name": "Luca Nenna",
+                        "slug": "Luca-Nenna",
+                        "structuredName": {
+                            "firstName": "Luca",
+                            "lastName": "Nenna",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Luca Nenna"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145481009"
+                        ],
+                        "name": "G. Peyr\u00e9",
+                        "slug": "G.-Peyr\u00e9",
+                        "structuredName": {
+                            "firstName": "Gabriel",
+                            "lastName": "Peyr\u00e9",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Peyr\u00e9"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 12631372,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "d3831561301ef27a6ba0d3c68d30bdf0f27eef63",
+            "isKey": false,
+            "numCitedBy": 544,
+            "numCiting": 88,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article details a general numerical framework to approximate so-lutions to linear programs related to optimal transport. The general idea is to introduce an entropic regularization of the initial linear program. This regularized problem corresponds to a Kullback-Leibler Bregman di-vergence projection of a vector (representing some initial joint distribu-tion) on the polytope of constraints. We show that for many problems related to optimal transport, the set of linear constraints can be split in an intersection of a few simple constraints, for which the projections can be computed in closed form. This allows us to make use of iterative Bregman projections (when there are only equality constraints) or more generally Bregman-Dykstra iterations (when inequality constraints are in-volved). We illustrate the usefulness of this approach to several variational problems related to optimal transport: barycenters for the optimal trans-port metric, tomographic reconstruction, multi-marginal optimal trans-port and in particular its application to Brenier's relaxed solutions of in-compressible Euler equations, partial un-balanced optimal transport and optimal transport with capacity constraints."
+            },
+            "slug": "Iterative-Bregman-Projections-for-Regularized-Benamou-Carlier",
+            "title": {
+                "fragments": [],
+                "text": "Iterative Bregman Projections for Regularized Transportation Problems"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "It is shown that for many problems related to optimal transport, the set of linear constraints can be split in an intersection of a few simple constraints, for which the projections can be computed in closed form."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIAM J. Sci. Comput."
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1711979"
+                        ],
+                        "name": "Marco Cuturi",
+                        "slug": "Marco-Cuturi",
+                        "structuredName": {
+                            "firstName": "Marco",
+                            "lastName": "Cuturi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marco Cuturi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15966283,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0080118b0eb02af581ff32b85a1bb6aed7081f45",
+            "isKey": false,
+            "numCitedBy": 1873,
+            "numCiting": 50,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Optimal transport distances are a fundamental family of distances for probability measures and histograms of features. Despite their appealing theoretical properties, excellent performance in retrieval tasks and intuitive formulation, their computation involves the resolution of a linear program whose cost can quickly become prohibitive whenever the size of the support of these measures or the histograms' dimension exceeds a few hundred. We propose in this work a new family of optimal transport distances that look at transport problems from a maximum-entropy perspective. We smooth the classic optimal transport problem with an entropic regularization term, and show that the resulting optimum is also a distance which can be computed through Sinkhorn's matrix scaling algorithm at a speed that is several orders of magnitude faster than that of transport solvers. We also show that this regularized distance improves upon classic optimal transport distances on the MNIST classification problem."
+            },
+            "slug": "Sinkhorn-Distances:-Lightspeed-Computation-of-Cuturi",
+            "title": {
+                "fragments": [],
+                "text": "Sinkhorn Distances: Lightspeed Computation of Optimal Transport"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work smooths the classic optimal transport problem with an entropic regularization term, and shows that the resulting optimum is also a distance which can be computed through Sinkhorn's matrix scaling algorithm at a speed that is several orders of magnitude faster than that of transport solvers."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2092372"
+                        ],
+                        "name": "Bernhard Schmitzer",
+                        "slug": "Bernhard-Schmitzer",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Schmitzer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bernhard Schmitzer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 966825,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "37006a42f65ca91a8119697a831b4f4c48ed3ec8",
+            "isKey": false,
+            "numCitedBy": 122,
+            "numCiting": 66,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Scaling algorithms for entropic transport-type problems have become a very popular numerical method, encompassing Wasserstein barycenters, multi-marginal problems, gradient flows and unbalanced transport. However, a standard implementation of the scaling algorithm has several numerical limitations: the scaling factors diverge and convergence becomes impractically slow as the entropy regularization approaches zero. Moreover, handling the dense kernel matrix becomes unfeasible for large problems. To address this, we combine several modifications: A log-domain stabilized formulation, the well-known epsilon-scaling heuristic, an adaptive truncation of the kernel and a coarse-to-fine scheme. This permits the solution of larger problems with smaller regularization and negligible truncation error. A new convergence analysis of the Sinkhorn algorithm is developed, working towards a better understanding of epsilon-scaling. Numerical examples illustrate efficiency and versatility of the modified algorithm."
+            },
+            "slug": "Stabilized-Sparse-Scaling-Algorithms-for-Entropy-Schmitzer",
+            "title": {
+                "fragments": [],
+                "text": "Stabilized Sparse Scaling Algorithms for Entropy Regularized Transport Problems"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A log-domain stabilized formulation, the well-known epsilon-scaling heuristic, an adaptive truncation of the kernel and a coarse-to-fine scheme are combined, allowing the solution of larger problems with smaller regularization and negligible truncation error."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIAM J. Sci. Comput."
+            },
+            "year": 2019
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7555981"
+                        ],
+                        "name": "L\u00e9na\u00efc Chizat",
+                        "slug": "L\u00e9na\u00efc-Chizat",
+                        "structuredName": {
+                            "firstName": "L\u00e9na\u00efc",
+                            "lastName": "Chizat",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L\u00e9na\u00efc Chizat"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2075301023"
+                        ],
+                        "name": "G. Peyr'e",
+                        "slug": "G.-Peyr'e",
+                        "structuredName": {
+                            "firstName": "Gabriel",
+                            "lastName": "Peyr'e",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Peyr'e"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2092372"
+                        ],
+                        "name": "Bernhard Schmitzer",
+                        "slug": "Bernhard-Schmitzer",
+                        "structuredName": {
+                            "firstName": "Bernhard",
+                            "lastName": "Schmitzer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bernhard Schmitzer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32403897"
+                        ],
+                        "name": "Franccois-Xavier Vialard",
+                        "slug": "Franccois-Xavier-Vialard",
+                        "structuredName": {
+                            "firstName": "Franccois-Xavier",
+                            "lastName": "Vialard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Franccois-Xavier Vialard"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 119312616,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "874167051b11c07821220730d8b749d05d4908da",
+            "isKey": false,
+            "numCitedBy": 106,
+            "numCiting": 77,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article introduces a new class of fast algorithms to approx-imate variational problems involving unbalanced optimal transport. While classical optimal transport considers only normalized probability distributions, it is important for many applications to be able to compute some sort of re-laxed transportation between arbitrary positive measures. A generic class of such \u201cunbalanced\u201d optimal transport problems has been recently proposed by several authors. In this paper, we show how to extend the, now classical, entropic regularization scheme to these unbalanced problems. This gives rise to fast, highly parallelizable algorithms that operate by performing only diagonal scaling (i.e. pointwise multiplications) of the transportation couplings. They are generalizations of the celebrated Sinkhorn algorithm. We show how these methods can be used to solve unbalanced transport, unbalanced gradient flows, and to compute unbalanced barycenters. We showcase applications to 2-D shape modification, color transfer, and growth models."
+            },
+            "slug": "Scaling-Algorithms-for-Unbalanced-Transport-Chizat-Peyr'e",
+            "title": {
+                "fragments": [],
+                "text": "Scaling Algorithms for Unbalanced Transport Problems"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "This article introduces a new class of fast algorithms to approx-imate variational problems involving unbalanced optimal transport, and shows how these methods can be used to solve unbalanced transport, unbalanced gradient flows, and to compute unbalanced barycenters."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145529194"
+                        ],
+                        "name": "Manuel Mart\u00ednez",
+                        "slug": "Manuel-Mart\u00ednez",
+                        "structuredName": {
+                            "firstName": "Manuel",
+                            "lastName": "Mart\u00ednez",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Manuel Mart\u00ednez"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "67310661"
+                        ],
+                        "name": "Monica Haurilet",
+                        "slug": "Monica-Haurilet",
+                        "structuredName": {
+                            "firstName": "Monica",
+                            "lastName": "Haurilet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Monica Haurilet"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1390024605"
+                        ],
+                        "name": "Ziad Al-Halah",
+                        "slug": "Ziad-Al-Halah",
+                        "structuredName": {
+                            "firstName": "Ziad",
+                            "lastName": "Al-Halah",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ziad Al-Halah"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2103464"
+                        ],
+                        "name": "Makarand Tapaswi",
+                        "slug": "Makarand-Tapaswi",
+                        "structuredName": {
+                            "firstName": "Makarand",
+                            "lastName": "Tapaswi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Makarand Tapaswi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1742325"
+                        ],
+                        "name": "R. Stiefelhagen",
+                        "slug": "R.-Stiefelhagen",
+                        "structuredName": {
+                            "firstName": "Rainer",
+                            "lastName": "Stiefelhagen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Stiefelhagen"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2759250,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bb6b560727096b47a34e61304de4c476dc303d69",
+            "isKey": false,
+            "numCitedBy": 6,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The Earth Mover's Distance (EMD) computes the optimal cost of transforming one distribution into another, given a known transport metric between them. In deep learning, the EMD loss allows us to embed information during training about the output space structure like hierarchical or semantic relations. This helps in achieving better output smoothness and generalization. However EMD is computationally expensive.Moreover, solving EMD optimization problems usually require complex techniques like lasso. These properties limit the applicability of EMD-based approaches in large scale machine learning. \nWe address in this work the difficulties facing incorporation of EMD-based loss in deep learning frameworks. Additionally, we provide insight and novel solutions on how to integrate such loss function in training deep neural networks. Specifically, we make three main contributions: (i) we provide an in-depth analysis of the fastest state-of-the-art EMD algorithm (Sinkhorn Distance) and discuss its limitations in deep learning scenarios. (ii) we derive fast and numerically stable closed-form solutions for the EMD gradient in output spaces with chain- and tree- connectivity; and (iii) we propose a relaxed form of the EMD gradient with equivalent computational complexity but faster convergence rate. We support our claims with experiments on real datasets. In a restricted data setting on the ImageNet dataset, we train a model to classify 1000 categories using 50K images, and demonstrate that our relaxed EMD loss achieves better Top-1 accuracy than the cross entropy loss. Overall, we show that our relaxed EMD loss criterion is a powerful asset for deep learning in the small data regime."
+            },
+            "slug": "Relaxed-Earth-Mover's-Distances-for-Chain-and-and-a-Mart\u00ednez-Haurilet",
+            "title": {
+                "fragments": [],
+                "text": "Relaxed Earth Mover's Distances for Chain- and Tree-connected Spaces and their use as a Loss Function in Deep Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This work provides an in-depth analysis of the fastest state-of-the-art EMD algorithm (Sinkhorn Distance) and discusses its limitations in deep learning scenarios, and derives fast and numerically stable closed-form solutions for the EMD gradient in output spaces with chain- and tree- connectivity."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2016
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34869369"
+                        ],
+                        "name": "Julien Rabin",
+                        "slug": "Julien-Rabin",
+                        "structuredName": {
+                            "firstName": "Julien",
+                            "lastName": "Rabin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Julien Rabin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145481009"
+                        ],
+                        "name": "G. Peyr\u00e9",
+                        "slug": "G.-Peyr\u00e9",
+                        "structuredName": {
+                            "firstName": "Gabriel",
+                            "lastName": "Peyr\u00e9",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Peyr\u00e9"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2816842"
+                        ],
+                        "name": "J. Delon",
+                        "slug": "J.-Delon",
+                        "structuredName": {
+                            "firstName": "Julie",
+                            "lastName": "Delon",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Delon"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38171505"
+                        ],
+                        "name": "M. Bernot",
+                        "slug": "M.-Bernot",
+                        "structuredName": {
+                            "firstName": "Marc",
+                            "lastName": "Bernot",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Bernot"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 3571438,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9b208891d1287ebb5b84ac801b41c3313d7e3303",
+            "isKey": false,
+            "numCitedBy": 437,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper proposes a new definition of the averaging of discrete probability distributions as a barycenter over the Monge-Kantorovich optimal transport space. To overcome the time complexity involved by the numerical solving of such problem, the original Wasserstein metric is replaced by a sliced approximation over 1D distributions. This enables us to introduce a new fast gradient descent algorithm to compute Wasserstein barycenters of point clouds. \n \nThis new notion of barycenter of probabilities is likely to find applications in computer vision where one wants to average features defined as distributions. We show an application to texture synthesis and mixing, where a texture is characterized by the distribution of the response to a multi-scale oriented filter bank. This leads to a simple way to navigate over a convex domain of color textures."
+            },
+            "slug": "Wasserstein-Barycenter-and-Its-Application-to-Rabin-Peyr\u00e9",
+            "title": {
+                "fragments": [],
+                "text": "Wasserstein Barycenter and Its Application to Texture Mixing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "A new definition of the averaging of discrete probability distributions as a barycenter over the Monge-Kantorovich optimal transport space is proposed and a new fast gradient descent algorithm is introduced to compute Wasserstein barycenters of point clouds."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SSVM"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1734000"
+                        ],
+                        "name": "Anthony Man-Cho So",
+                        "slug": "Anthony-Man-Cho-So",
+                        "structuredName": {
+                            "firstName": "Anthony",
+                            "lastName": "So",
+                            "middleNames": [
+                                "Man-Cho"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anthony Man-Cho So"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2610961"
+                        ],
+                        "name": "Zirui Zhou",
+                        "slug": "Zirui-Zhou",
+                        "structuredName": {
+                            "firstName": "Zirui",
+                            "lastName": "Zhou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zirui Zhou"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 13303671,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8176710bacf6061e2f4d586199ba5baf717a5e5e",
+            "isKey": false,
+            "numCitedBy": 35,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Many recent applications in machine learning and data fitting call for the algorithmic solution of structured smooth convex optimization problems. Although the gradient descent method is a natural choice for this task, it requires exact gradient computations and hence can be inefficient when the problem size is large or the gradient is difficult to evaluate. Therefore, there has been much interest in inexact gradient methods (IGMs), in which an efficiently computable approximate gradient is used to perform the update in each iteration. Currently, non-asymptotic linear convergence results for IGMs are typically established under the assumption that the objective function is strongly convex, which is not satisfied in many applications of interest; while linear convergence results that do not require the strong convexity assumption are usually asymptotic in nature. In this paper, we combine the best of these two types of results by developing a framework for analysing the non-asymptotic convergence rates of IGMs when they are applied to a class of structured convex optimization problems that includes least squares regression and logistic regression. We then demonstrate the power of our framework by proving, in a unified manner, new linear convergence results for three recently proposed algorithms\u2014the incremental gradient method with increasing sample size [R.H. Byrd, G.M. Chin, J. Nocedal, and Y. Wu, Sample size selection in optimization methods for machine learning, Math. Program. Ser. B 134 (2012), pp. 127\u2013155; M.P. Friedlander and M. Schmidt, Hybrid deterministic\u2013stochastic methods for data fitting, SIAM J. Sci. Comput. 34 (2012), pp. A1380\u2013A1405], the stochastic variance-reduced gradient (SVRG) method [R. Johnson and T. Zhang, Accelerating stochastic gradient descent using predictive variance reduction, Advances in Neural Information Processing Systems 26: Proceedings of the 2013 Conference, 2013, pp. 315\u2013323], and the incremental aggregated gradient (IAG) method [D. Blatt, A.O. Hero, and H. Gauchman, A convergent incremental gradient method with a constant step size, SIAM J. Optim. 18 (2007), pp. 29\u201351]. We believe that our techniques will find further applications in the non-asymptotic convergence analysis of other first-order methods."
+            },
+            "slug": "Non-asymptotic-convergence-analysis-of-inexact-for-So-Zhou",
+            "title": {
+                "fragments": [],
+                "text": "Non-asymptotic convergence analysis of inexact gradient methods for machine learning without strong convexity"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This paper develops a framework for analysing the non-asymptotic convergence rates of IGMs when they are applied to a class of structured convex optimization problems that includes least squares regression and logistic regression and demonstrates the power of the framework by proving new linear convergence results for three recently proposed algorithms."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Optim. Methods Softw."
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1772065"
+                        ],
+                        "name": "M. Solodov",
+                        "slug": "M.-Solodov",
+                        "structuredName": {
+                            "firstName": "Mikhail",
+                            "lastName": "Solodov",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Solodov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3164227"
+                        ],
+                        "name": "B. Svaiter",
+                        "slug": "B.-Svaiter",
+                        "structuredName": {
+                            "firstName": "Benar",
+                            "lastName": "Svaiter",
+                            "middleNames": [
+                                "Fux"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Svaiter"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 58945680,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "38fb8d64a2f191d98de1d44bacf758ba53624aff",
+            "isKey": false,
+            "numCitedBy": 97,
+            "numCiting": 47,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a unified framework for the design and convergence analysis of a class of algorithms based on approximate solution of proximal point subproblems. Our development further enhances the constructive approximation approach of the recently proposed hybrid projection\u2013proximal and extragradient\u2013proximal methods. Specifically, we introduce an even more flexible error tolerance criterion, as well as provide a unified view of these two algorithms. Our general method possesses global convergence and local (super)linear rate of convergence under standard assumptions, while using a constructive approximation criterion suitable for a number of specific implementations. For example, we show that close to a regular solution of a monotone system of semismooth equations, two Newton iterations are sufficient to solve the proximal subproblem within the required error tolerance. Such systems of equations arise naturally when reformulating the nonlinear complementarity problem. *Research of the first author is suppo..."
+            },
+            "slug": "A-UNIFIED-FRAMEWORK-FOR-SOME-INEXACT-PROXIMAL-POINT-Solodov-Svaiter",
+            "title": {
+                "fragments": [],
+                "text": "A UNIFIED FRAMEWORK FOR SOME INEXACT PROXIMAL POINT ALGORITHMS"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "It is shown that close to a regular solution of a monotone system of semismooth equations, two Newton iterations are sufficient to solve the proximal subproblem within the required error tolerance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153440022"
+                        ],
+                        "name": "Ian J. Goodfellow",
+                        "slug": "Ian-J.-Goodfellow",
+                        "structuredName": {
+                            "firstName": "Ian",
+                            "lastName": "Goodfellow",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ian J. Goodfellow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1403025868"
+                        ],
+                        "name": "Jean Pouget-Abadie",
+                        "slug": "Jean-Pouget-Abadie",
+                        "structuredName": {
+                            "firstName": "Jean",
+                            "lastName": "Pouget-Abadie",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jean Pouget-Abadie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153583218"
+                        ],
+                        "name": "Mehdi Mirza",
+                        "slug": "Mehdi-Mirza",
+                        "structuredName": {
+                            "firstName": "Mehdi",
+                            "lastName": "Mirza",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mehdi Mirza"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2113742925"
+                        ],
+                        "name": "Bing Xu",
+                        "slug": "Bing-Xu",
+                        "structuredName": {
+                            "firstName": "Bing",
+                            "lastName": "Xu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bing Xu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1393680089"
+                        ],
+                        "name": "David Warde-Farley",
+                        "slug": "David-Warde-Farley",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Warde-Farley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David Warde-Farley"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1955694"
+                        ],
+                        "name": "Sherjil Ozair",
+                        "slug": "Sherjil-Ozair",
+                        "structuredName": {
+                            "firstName": "Sherjil",
+                            "lastName": "Ozair",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sherjil Ozair"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1760871"
+                        ],
+                        "name": "Aaron C. Courville",
+                        "slug": "Aaron-C.-Courville",
+                        "structuredName": {
+                            "firstName": "Aaron",
+                            "lastName": "Courville",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aaron C. Courville"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1033682,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "54e325aee6b2d476bbbb88615ac15e251c6e8214",
+            "isKey": false,
+            "numCitedBy": 29656,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a new framework for estimating generative models via an adversarial process, in which we simultaneously train two models: a generative model G that captures the data distribution, and a discriminative model D that estimates the probability that a sample came from the training data rather than G. The training procedure for G is to maximize the probability of D making a mistake. This framework corresponds to a minimax two-player game. In the space of arbitrary functions G and D, a unique solution exists, with G recovering the training data distribution and D equal to \u00bd everywhere. In the case where G and D are defined by multilayer perceptrons, the entire system can be trained with backpropagation. There is no need for any Markov chains or unrolled approximate inference networks during either training or generation of samples. Experiments demonstrate the potential of the framework through qualitative and quantitative evaluation of the generated samples."
+            },
+            "slug": "Generative-Adversarial-Nets-Goodfellow-Pouget-Abadie",
+            "title": {
+                "fragments": [],
+                "text": "Generative Adversarial Nets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 93,
+                "text": "A new framework for estimating generative models via an adversarial process, in which two models are simultaneously train: a generative model G that captures the data distribution and a discriminative model D that estimates the probability that a sample came from the training data rather than G."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145610994"
+                        ],
+                        "name": "Mark W. Schmidt",
+                        "slug": "Mark-W.-Schmidt",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Schmidt",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark W. Schmidt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7245737"
+                        ],
+                        "name": "Nicolas Le Roux",
+                        "slug": "Nicolas-Le-Roux",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Le Roux",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nicolas Le Roux"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144570279"
+                        ],
+                        "name": "F. Bach",
+                        "slug": "F.-Bach",
+                        "structuredName": {
+                            "firstName": "Francis",
+                            "lastName": "Bach",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Bach"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11262278,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ec6b358348f7a1e75131bf5de7f1161f930e0437",
+            "isKey": false,
+            "numCitedBy": 481,
+            "numCiting": 45,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We consider the problem of optimizing the sum of a smooth convex function and a non-smooth convex function using proximal-gradient methods, where an error is present in the calculation of the gradient of the smooth term or in the proximity operator with respect to the non-smooth term. We show that both the basic proximal-gradient method and the accelerated proximal-gradient method achieve the same convergence rate as in the error-free case, provided that the errors decrease at appropriate rates. Using these rates, we perform as well as or better than a carefully chosen fixed error level on a set of structured sparsity problems."
+            },
+            "slug": "Convergence-Rates-of-Inexact-Proximal-Gradient-for-Schmidt-Roux",
+            "title": {
+                "fragments": [],
+                "text": "Convergence Rates of Inexact Proximal-Gradient Methods for Convex Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work shows that both the basic proximal-gradient method and the accelerated proximal - gradient method achieve the same convergence rate as in the error-free case, provided that the errors decrease at appropriate rates."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1727609"
+                        ],
+                        "name": "M. Teboulle",
+                        "slug": "M.-Teboulle",
+                        "structuredName": {
+                            "firstName": "Marc",
+                            "lastName": "Teboulle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Teboulle"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 46226417,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "b3b1a40d8b15332a08de9d9baa7ee5ce6055fd3b",
+            "isKey": false,
+            "numCitedBy": 243,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a family of new transforms based on imitating the proximal mapping of Moreau and the associated Moreau-Yosida proximal approximation of a function. The transforms are constructed in terms of the A\u008f\u00c2\u2020-divergence functional a generalization of the relative entropy and of Bregman's measure of distance. An analogue of Moreau's theorem associated with these entropy-like distances is proved. We show that the resulting Entropic Proximal Maps share properties similar to the proximal mapping and provide a fairly general framework for constructing approximation and smoothing schemes for optimization problems. Applications of the results to the construction of generalized augmented Lagrangians for nonlinear programs and the minimax problem are presented."
+            },
+            "slug": "Entropic-Proximal-Mappings-with-Applications-to-Teboulle",
+            "title": {
+                "fragments": [],
+                "text": "Entropic Proximal Mappings with Applications to Nonlinear Programming"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "A family of new transforms based on imitating the proximal mapping of Moreau and the associated Moreau-Yosida proximal approximation of a function are introduced, providing a fairly general framework for constructing approximation and smoothing schemes for optimization problems."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Math. Oper. Res."
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3407979"
+                        ],
+                        "name": "Jason M. Altschuler",
+                        "slug": "Jason-M.-Altschuler",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Altschuler",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jason M. Altschuler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51071691"
+                        ],
+                        "name": "J. Weed",
+                        "slug": "J.-Weed",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Weed",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weed"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2352281"
+                        ],
+                        "name": "P. Rigollet",
+                        "slug": "P.-Rigollet",
+                        "structuredName": {
+                            "firstName": "Philippe",
+                            "lastName": "Rigollet",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Rigollet"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 274657,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "33e1bbb2c76b69f7a2d64d0cf754d1cddc056be1",
+            "isKey": false,
+            "numCitedBy": 356,
+            "numCiting": 48,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Computing optimal transport distances such as the earth mover's distance is a fundamental problem in machine learning, statistics, and computer vision. Despite the recent introduction of several algorithms with good empirical performance, it is unknown whether general optimal transport distances can be approximated in near-linear time. This paper demonstrates that this ambitious goal is in fact achieved by Cuturi's Sinkhorn Distances. This result relies on a new analysis of Sinkhorn iteration, which also directly suggests a new greedy coordinate descent algorithm, Greenkhorn, with the same theoretical guarantees. Numerical simulations illustrate that Greenkhorn significantly outperforms the classical Sinkhorn algorithm in practice."
+            },
+            "slug": "Near-linear-time-approximation-algorithms-for-via-Altschuler-Weed",
+            "title": {
+                "fragments": [],
+                "text": "Near-linear time approximation algorithms for optimal transport via Sinkhorn iteration"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "This paper demonstrates that general optimal transport distances can be approximated in near-linear time by Cuturi's Sinkhorn Distances, and directly suggests a new greedy coordinate descent algorithm, Greenkhorn, with the same theoretical guarantees."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2877311"
+                        ],
+                        "name": "Mart\u00edn Arjovsky",
+                        "slug": "Mart\u00edn-Arjovsky",
+                        "structuredName": {
+                            "firstName": "Mart\u00edn",
+                            "lastName": "Arjovsky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mart\u00edn Arjovsky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2127604"
+                        ],
+                        "name": "Soumith Chintala",
+                        "slug": "Soumith-Chintala",
+                        "structuredName": {
+                            "firstName": "Soumith",
+                            "lastName": "Chintala",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Soumith Chintala"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2057420,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "acd87843a451d18b4dc6474ddce1ae946429eaf1",
+            "isKey": false,
+            "numCitedBy": 3930,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a new algorithm named WGAN, an alternative to traditional GAN training. In this new model, we show that we can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches. Furthermore, we show that the corresponding optimization problem is sound, and provide extensive theoretical work highlighting the deep connections to different distances between distributions."
+            },
+            "slug": "Wasserstein-Generative-Adversarial-Networks-Arjovsky-Chintala",
+            "title": {
+                "fragments": [],
+                "text": "Wasserstein Generative Adversarial Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 90,
+                "text": "This work introduces a new algorithm named WGAN, an alternative to traditional GAN training that can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2017
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34869369"
+                        ],
+                        "name": "Julien Rabin",
+                        "slug": "Julien-Rabin",
+                        "structuredName": {
+                            "firstName": "Julien",
+                            "lastName": "Rabin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Julien Rabin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3252664"
+                        ],
+                        "name": "Sira Ferradans",
+                        "slug": "Sira-Ferradans",
+                        "structuredName": {
+                            "firstName": "Sira",
+                            "lastName": "Ferradans",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sira Ferradans"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144517111"
+                        ],
+                        "name": "N. Papadakis",
+                        "slug": "N.-Papadakis",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Papadakis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Papadakis"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 3931481,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "56ac5f8edad60dce55bd1365e2530c586bcbcb39",
+            "isKey": false,
+            "numCitedBy": 73,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper studies the problem of color transfer between images using optimal transport techniques. While being a generic framework to handle statistics properly, it is also known to be sensitive to noise and outliers, and is not suitable for direct application to images without additional postprocessing regularization to remove artifacts. To tackle these issues, we propose to directly deal with the regularity of the transport map and the spatial consistency of the reconstruction. Our approach is based on the relaxed and regularized discrete optimal transport method of [1]. We extend this work by (i) modeling the spatial distribution of colors within the image domain and (ii) tuning automatically the relaxation parameters. Experiments on real images demonstrate the capacity of our model to adapt itself to the considered data."
+            },
+            "slug": "Adaptive-color-transfer-with-relaxed-optimal-Rabin-Ferradans",
+            "title": {
+                "fragments": [],
+                "text": "Adaptive color transfer with relaxed optimal transport"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work extends the work of [1] by modeling the spatial distribution of colors within the image domain and tuning automatically the relaxation parameters and demonstrates the capacity of the model to adapt itself to the considered data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 IEEE International Conference on Image Processing (ICIP)"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2587310"
+                        ],
+                        "name": "R. Rockafellar",
+                        "slug": "R.-Rockafellar",
+                        "structuredName": {
+                            "firstName": "R.",
+                            "lastName": "Rockafellar",
+                            "middleNames": [
+                                "Tyrrell"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Rockafellar"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14937242,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "240c2cb549d0ad3ca8e6d5d17ca61e95831bbe6d",
+            "isKey": false,
+            "numCitedBy": 3328,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "For the problem of minimizing a lower semicontinuous proper convex function f on a Hilbert space, the proximal point algorithm in exact form generates a sequence $\\{ z^k \\} $ by taking $z^{k + 1} $ to be the minimizes of $f(z) + ({1 / {2c_k }})\\| {z - z^k } \\|^2 $, where $c_k > 0$. This algorithm is of interest for several reasons, but especially because of its role in certain computational methods based on duality, such as the Hestenes-Powell method of multipliers in nonlinear programming. It is investigated here in a more general form where the requirement for exact minimization at each iteration is weakened, and the subdifferential $\\partial f$ is replaced by an arbitrary maximal monotone operator T. Convergence is established under several criteria amenable to implementation. The rate of convergence is shown to be \u201ctypically\u201d linear with an arbitrarily good modulus if $c_k $ stays large enough, in fact superlinear if $c_k \\to \\infty $. The case of $T = \\partial f$ is treated in extra detail. Applicati..."
+            },
+            "slug": "Monotone-Operators-and-the-Proximal-Point-Algorithm-Rockafellar",
+            "title": {
+                "fragments": [],
+                "text": "Monotone Operators and the Proximal Point Algorithm"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1976
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3809476"
+                        ],
+                        "name": "Jonathan Eckstein",
+                        "slug": "Jonathan-Eckstein",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Eckstein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jonathan Eckstein"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 6739859,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "e283f447382b6aa6f3cc532df2eed3f3293f2408",
+            "isKey": false,
+            "numCitedBy": 167,
+            "numCiting": 44,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper establishes convergence of generalized Bregman-function-based proximal point algorithms when the iterates are computed only approximately. The problem being solved is modeled as a general maximal monotone operator, and need not reduce to minimization of a function. The accuracy conditions on the iterates resemble those required for the classical \u201clinear\u201d proximal point algorithm, but are slightly stronger; they should be easier to verify or enforce in practice than conditions given in earlier analyses of approximate generalized proximal methods. Subjects to these practically enforceable accuracy restrictions, convergence is obtained under the same conditions currently established for exact Bregman-function-based proximal methods."
+            },
+            "slug": "Approximate-iterations-in-Bregman-function-based-Eckstein",
+            "title": {
+                "fragments": [],
+                "text": "Approximate iterations in Bregman-function-based proximal algorithms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "This paper establishes convergence of generalized Bregman-function-based proximal point algorithms when the iterates are computed only approximately, and the accuracy conditions on the iterate resemble those required for the classical \u201clinear\u201d proximal Point algorithm, but are slightly stronger."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Math. Program."
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2960542"
+                        ],
+                        "name": "P. Dvurechensky",
+                        "slug": "P.-Dvurechensky",
+                        "structuredName": {
+                            "firstName": "Pavel",
+                            "lastName": "Dvurechensky",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Dvurechensky"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2663409"
+                        ],
+                        "name": "A. Gasnikov",
+                        "slug": "A.-Gasnikov",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Gasnikov",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Gasnikov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1964165494"
+                        ],
+                        "name": "S. Omelchenko",
+                        "slug": "S.-Omelchenko",
+                        "structuredName": {
+                            "firstName": "Sergey",
+                            "lastName": "Omelchenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Omelchenko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50062718"
+                        ],
+                        "name": "A. Tiurin",
+                        "slug": "A.-Tiurin",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Tiurin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Tiurin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 119130657,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "b1bd391adc99d0c16f2f3f6ad675d5551e3d638f",
+            "isKey": false,
+            "numCitedBy": 28,
+            "numCiting": 70,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we are motivated by two important applications: entropy-regularized optimal transport problem and road or IP traffic demand matrix estimation by entropy model. Both of them include solving a special type of optimization problem with linear equality constraints and objective given as a sum of an entropy regularizer and a linear function. It is known that the state-of-the-art solvers for this problem, which are based on Sinkhorn's method (also known as RSA or balancing method), can fail to work, when the entropy-regularization parameter is small. We consider the above optimization problem as a particular instance of a general strongly convex optimization problem with linear constraints. We propose a new algorithm to solve this general class of problems. Our approach is based on the transition to the dual problem. First, we introduce a new accelerated gradient method with adaptive choice of gradient's Lipschitz constant. Then, we apply this method to the dual problem and show, how to reconstruct an approximate solution to the primal problem with provable convergence rate. We prove the rate $O(1/k^2)$, $k$ being the iteration counter, both for the absolute value of the primal objective residual and constraints infeasibility. Our method has similar to Sinkhorn's method complexity of each iteration, but is faster and more stable numerically, when the regularization parameter is small. We illustrate the advantage of our method by numerical experiments for the two mentioned applications. We show that there exists a threshold, such that, when the regularization parameter is smaller than this threshold, our method outperforms the Sinkhorn's method in terms of computation time."
+            },
+            "slug": "A-Stable-Alternative-to-Sinkhorn's-Algorithm-for-Dvurechensky-Gasnikov",
+            "title": {
+                "fragments": [],
+                "text": "A Stable Alternative to Sinkhorn's Algorithm for Regularized Optimal Transport"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "It is shown that there exists a threshold, such that, when the regularization parameter is smaller than this threshold, the proposed method outperforms the Sinkhorn's method in terms of computation time."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "MOTOR"
+            },
+            "year": 2020
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3809476"
+                        ],
+                        "name": "Jonathan Eckstein",
+                        "slug": "Jonathan-Eckstein",
+                        "structuredName": {
+                            "firstName": "Jonathan",
+                            "lastName": "Eckstein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jonathan Eckstein"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 41310876,
+            "fieldsOfStudy": [
+                "Mathematics",
+                "Computer Science"
+            ],
+            "id": "4190a80c83dd5027f3be2261ca1bb61e6ccf2967",
+            "isKey": false,
+            "numCitedBy": 330,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A Bregman function is a strictly convex, differentiable function that induces a well-behaved distance measure or D-function on Euclidean space. This paper shows that, for every Bregman function, there exists a \"nonlinear\" version of the proximal point algorithm, and presents an accompanying convergence theory. Applying this generalization of the proximal point algorithm to convex programming, one obtains the D-function proximal minimization algorithm of Censor and Zenios, and a wide variety of new multiplier methods. These multiplier methods are different from those studied by Kort and Bertsekas, and include nonquadratic variations on the proximal method of multipliers."
+            },
+            "slug": "Nonlinear-Proximal-Point-Algorithms-Using-Bregman-Eckstein",
+            "title": {
+                "fragments": [],
+                "text": "Nonlinear Proximal Point Algorithms Using Bregman Functions, with Applications to Convex Programming"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "Applying this generalization of the proximal point algorithm to convex programming, one obtains the D-function proximal minimization algorithm of Censor and Zenios, and a wide variety of new multiplier methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Math. Oper. Res."
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1829696"
+                        ],
+                        "name": "Y. Rubner",
+                        "slug": "Y.-Rubner",
+                        "structuredName": {
+                            "firstName": "Yossi",
+                            "lastName": "Rubner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Rubner"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145086151"
+                        ],
+                        "name": "Carlo Tomasi",
+                        "slug": "Carlo-Tomasi",
+                        "structuredName": {
+                            "firstName": "Carlo",
+                            "lastName": "Tomasi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Carlo Tomasi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1744254"
+                        ],
+                        "name": "L. Guibas",
+                        "slug": "L.-Guibas",
+                        "structuredName": {
+                            "firstName": "Leonidas",
+                            "lastName": "Guibas",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Guibas"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 18648233,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "b7934a6f3a23940b7562df4cf58366b1adce55a3",
+            "isKey": false,
+            "numCitedBy": 1779,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a new distance between two distributions that we call the Earth Mover's Distance (EMD), which reflects the minimal amount of work that must be performed to transform one distribution into the other by moving \"distribution mass\" around. This is a special case of the transportation problem from linear optimization, for which efficient algorithms are available. The EMD also allows for partial matching. When used to compare distributions that have the same overall mass, the EMD is a true metric, and has easy-to-compute lower bounds. In this paper we focus on applications to image databases, especially color and texture. We use the EMD to exhibit the structure of color-distribution and texture spaces by means of Multi-Dimensional Scaling displays. We also propose a novel approach to the problem of navigating through a collection of color images, which leads to a new paradigm for image database search."
+            },
+            "slug": "A-metric-for-distributions-with-applications-to-Rubner-Tomasi",
+            "title": {
+                "fragments": [],
+                "text": "A metric for distributions with applications to image databases"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This paper uses the Earth Mover's Distance to exhibit the structure of color-distribution and texture spaces by means of Multi-Dimensional Scaling displays, and proposes a novel approach to the problem of navigating through a collection of color images, which leads to a new paradigm for image database search."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Sixth International Conference on Computer Vision (IEEE Cat. No.98CH36271)"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2587310"
+                        ],
+                        "name": "R. Rockafellar",
+                        "slug": "R.-Rockafellar",
+                        "structuredName": {
+                            "firstName": "R.",
+                            "lastName": "Rockafellar",
+                            "middleNames": [
+                                "Tyrrell"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Rockafellar"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 40365955,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "652b71deed20052d0bd2ef0bb848c74edc1a072e",
+            "isKey": false,
+            "numCitedBy": 1135,
+            "numCiting": 17,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The theory of the proximal point algorithm for maximal monotone operators is applied to three algorithms for solving convex programs, one of which has not previously been formulated. Rate-of-convergence results for the \u201cmethod of multipliers,\u201d of the strong sort already known, are derived in a generalized form relevant also to problems beyond the compass of the standard second-order conditions for oplimality. The new algorithm, the \u201cproximal method of multipliers,\u201d is shown to have much the same convergence properties, but with some potential advantages."
+            },
+            "slug": "Augmented-Lagrangians-and-Applications-of-the-Point-Rockafellar",
+            "title": {
+                "fragments": [],
+                "text": "Augmented Lagrangians and Applications of the Proximal Point Algorithm in Convex Programming"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 81,
+                "text": "The theory of the proximal point algorithm for maximal monotone operators is applied to three algorithms for solving convex programs, one of which has not previously been formulated and is shown to have much the same convergence properties, but with some potential advantages."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Math. Oper. Res."
+            },
+            "year": 1976
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2075277508"
+                        ],
+                        "name": "Alexis Thibault",
+                        "slug": "Alexis-Thibault",
+                        "structuredName": {
+                            "firstName": "Alexis",
+                            "lastName": "Thibault",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexis Thibault"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7555981"
+                        ],
+                        "name": "L\u00e9na\u00efc Chizat",
+                        "slug": "L\u00e9na\u00efc-Chizat",
+                        "structuredName": {
+                            "firstName": "L\u00e9na\u00efc",
+                            "lastName": "Chizat",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L\u00e9na\u00efc Chizat"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2219084"
+                        ],
+                        "name": "C. Dossal",
+                        "slug": "C.-Dossal",
+                        "structuredName": {
+                            "firstName": "Charles",
+                            "lastName": "Dossal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Dossal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144517111"
+                        ],
+                        "name": "N. Papadakis",
+                        "slug": "N.-Papadakis",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Papadakis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Papadakis"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 53997178,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Mathematics"
+            ],
+            "id": "0af9c97e85913dfb252ae14634d6ea3880e0a333",
+            "isKey": false,
+            "numCitedBy": 26,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article describes a set of methods for quickly computing the solution to the regularized optimal transport problem. It generalizes and improves upon the widely used iterative Bregman projections algorithm (or Sinkhorn\u2013Knopp algorithm). We first proposed to rely on regularized nonlinear acceleration schemes. In practice, such approaches lead to fast algorithms, but their global convergence is not ensured. Hence, we next proposed a new algorithm with convergence guarantees. The idea is to overrelax the Bregman projection operators, allowing for faster convergence. We proposed a simple method for establishing global convergence by ensuring the decrease of a Lyapunov function at each step. An adaptive choice of the overrelaxation parameter based on the Lyapunov function was constructed. We also suggested a heuristic to choose a suitable asymptotic overrelaxation parameter, based on a local convergence analysis. Our numerical experiments showed a gain in convergence speed by an order of magnitude in certain regimes."
+            },
+            "slug": "Overrelaxed-Sinkhorn-Knopp-Algorithm-for-Optimal-Thibault-Chizat",
+            "title": {
+                "fragments": [],
+                "text": "Overrelaxed Sinkhorn-Knopp Algorithm for Regularized Optimal Transport"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 99,
+                "text": "This article describes a set of methods for quickly computing the solution to the regularized optimal transport problem that generalizes and improves upon the widely used iterative Bregman projections algorithm (or Sinkhorn\u2013Knopp algorithm)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Algorithms"
+            },
+            "year": 2021
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1744311"
+                        ],
+                        "name": "E. Chong",
+                        "slug": "E.-Chong",
+                        "structuredName": {
+                            "firstName": "Edwin",
+                            "lastName": "Chong",
+                            "middleNames": [
+                                "K.",
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Chong"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1716232"
+                        ],
+                        "name": "S. \u017bak",
+                        "slug": "S.-\u017bak",
+                        "structuredName": {
+                            "firstName": "Stanis\u0142aw",
+                            "lastName": "\u017bak",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. \u017bak"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 6047364,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9b61735315618a8c2dfafc41eb3c774371adacd3",
+            "isKey": false,
+            "numCitedBy": 3651,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A modern, up-to-date introduction to optimization theory and methods This authoritative book serves as an introductory text to optimization at the senior undergraduate and beginning graduate levels. With consistently accessible and elementary treatment of all topics, An Introduction to Optimization, Second Edition helps students build a solid working knowledge of the field, including unconstrained optimization, linear programming, and constrained optimization. Supplemented with more than one hundred tables and illustrations, an extensive bibliography, and numerous worked examples to illustrate both theory and algorithms, this book also provides: * A review of the required mathematical background material * A mathematical discussion at a level accessible to MBA and business students * A treatment of both linear and nonlinear programming * An introduction to recent developments, including neural networks, genetic algorithms, and interior-point methods * A chapter on the use of descent algorithms for the training of feedforward neural networks * Exercise problems after every chapter, many new to this edition * MATLAB(r) exercises and examples * Accompanying Instructor's Solutions Manual available on request An Introduction to Optimization, Second Edition helps students prepare for the advanced topics and technological developments that lie ahead. It is also a useful book for researchers and professionals in mathematics, electrical engineering, economics, statistics, and business."
+            },
+            "slug": "An-Introduction-to-Optimization-Chong-\u017bak",
+            "title": {
+                "fragments": [],
+                "text": "An Introduction to Optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "An Introduction to Optimization, Second Edition helps students build a solid working knowledge of the field, including unconstrained optimization, linear programming, and constrained optimization."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Antennas and Propagation Magazine"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2394652"
+                        ],
+                        "name": "Xuezhong Xiao",
+                        "slug": "Xuezhong-Xiao",
+                        "structuredName": {
+                            "firstName": "Xuezhong",
+                            "lastName": "Xiao",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xuezhong Xiao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "8452947"
+                        ],
+                        "name": "Lizhuang Ma",
+                        "slug": "Lizhuang-Ma",
+                        "structuredName": {
+                            "firstName": "Lizhuang",
+                            "lastName": "Ma",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lizhuang Ma"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 18729276,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7e8f44a0298ebfe8020e385a8f3f5d1a239cffdd",
+            "isKey": false,
+            "numCitedBy": 173,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we present a process called color transfer which can borrow one image's color characteristics from another. Recently Reinhard and his colleagues reported a pioneering work of color transfer. Their technology can produce very believable results, but has to transform pixel values from RGB to l\u03b1\u03b2. Inspired by their work, we advise an approach which can directly deal with the color transfer in any 3D space.From the view of statistics, we consider pixel's value as a three-dimension stochastic variable and an image as a set of samples, so the correlations between three components can be measured by covariance. Our method imports covariance between three components of pixel values while calculate the mean along each of the three axes. Then we decompose the covariance matrix using SVD algorithm and get a rotation matrix. Finally we can scale, rotate and shift pixel data of target image to fit data points' cluster of source image in the current color space and get resultant image which takes on source image's look and feel. Besides the global processing, a swatch-based method is introduced in order to manipulate images' color more elaborately. Experimental results confirm the validity and usefulness of our method."
+            },
+            "slug": "Color-transfer-in-correlated-color-space-Xiao-Ma",
+            "title": {
+                "fragments": [],
+                "text": "Color transfer in correlated color space"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 59,
+                "text": "A swatch-based method which can borrow one image's color characteristics from another and get resultant image which takes on source image's look and feel is presented."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "VRCIA '06"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2582552"
+                        ],
+                        "name": "Ofir Pele",
+                        "slug": "Ofir-Pele",
+                        "structuredName": {
+                            "firstName": "Ofir",
+                            "lastName": "Pele",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ofir Pele"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "27379268"
+                        ],
+                        "name": "M. Werman",
+                        "slug": "M.-Werman",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Werman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Werman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 2158933,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8ab6d616f812a3108ae85b4ab130b62b650c5677",
+            "isKey": false,
+            "numCitedBy": 741,
+            "numCiting": 55,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new algorithm for a robust family of Earth Mover's Distances - EMDs with thresholded ground distances. The algorithm transforms the flow-network of the EMD so that the number of edges is reduced by an order of magnitude. As a result, we compute the EMD by an order of magnitude faster than the original algorithm, which makes it possible to compute the EMD on large histograms and databases. In addition, we show that EMDs with thresholded ground distances have many desirable properties. First, they correspond to the way humans perceive distances. Second, they are robust to outlier noise and quantization effects. Third, they are metrics. Finally, experimental results on image retrieval show that thresholding the ground distance of the EMD improves both accuracy and speed."
+            },
+            "slug": "Fast-and-robust-Earth-Mover's-Distances-Pele-Werman",
+            "title": {
+                "fragments": [],
+                "text": "Fast and robust Earth Mover's Distances"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 72,
+                "text": "A new algorithm is presented for a robust family of Earth Mover's Distances - EMDs with thresholded ground distances so that the number of edges is reduced by an order of magnitude, which makes it possible to compute the EMD on large histograms and databases."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE 12th International Conference on Computer Vision"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144330879"
+                        ],
+                        "name": "J. Franklin",
+                        "slug": "J.-Franklin",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Franklin",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Franklin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "37585247"
+                        ],
+                        "name": "J. Lorenz",
+                        "slug": "J.-Lorenz",
+                        "structuredName": {
+                            "firstName": "Jens",
+                            "lastName": "Lorenz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Lorenz"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 121653440,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "65f992668b359540dd565e905a52109a5d3024cc",
+            "isKey": false,
+            "numCitedBy": 175,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "On-the-scaling-of-multidimensional-matrices-Franklin-Lorenz",
+            "title": {
+                "fragments": [],
+                "text": "On the scaling of multidimensional matrices"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145020548"
+                        ],
+                        "name": "E. Reinhard",
+                        "slug": "E.-Reinhard",
+                        "structuredName": {
+                            "firstName": "Erik",
+                            "lastName": "Reinhard",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Reinhard"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2821129"
+                        ],
+                        "name": "M. Ashikhmin",
+                        "slug": "M.-Ashikhmin",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Ashikhmin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Ashikhmin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "88303012"
+                        ],
+                        "name": "B. Gooch",
+                        "slug": "B.-Gooch",
+                        "structuredName": {
+                            "firstName": "Bruce",
+                            "lastName": "Gooch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Gooch"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144033462"
+                        ],
+                        "name": "P. Shirley",
+                        "slug": "P.-Shirley",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Shirley",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Shirley"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 14088925,
+            "fieldsOfStudy": [
+                "Art"
+            ],
+            "id": "f3a11158e9d8bdfdf07dca756335c084fce0123e",
+            "isKey": false,
+            "numCitedBy": 2244,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We use a simple statistical analysis to impose one image's color characteristics on another. We can achieve color correction by choosing an appropriate source image and apply its characteristic to another image."
+            },
+            "slug": "Color-Transfer-between-Images-Reinhard-Ashikhmin",
+            "title": {
+                "fragments": [],
+                "text": "Color Transfer between Images"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 82,
+                "text": "This work uses a simple statistical analysis to impose one image's color characteristics on another by choosing an appropriate source image and applying its characteristic to another image."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Computer Graphics and Applications"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "71600448"
+                        ],
+                        "name": "S. Afriat",
+                        "slug": "S.-Afriat",
+                        "structuredName": {
+                            "firstName": "Sydney",
+                            "lastName": "Afriat",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Afriat"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 121647477,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "d7354c4abadc028233758e0b7427c5337a9dadc8",
+            "isKey": false,
+            "numCitedBy": 54,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Theory-of-Maxima-and-the-Method-of-Lagrange-Afriat",
+            "title": {
+                "fragments": [],
+                "text": "Theory of Maxima and the Method of Lagrange"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1971
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Slep\u010dev. A transportation L distance for signal analysis"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Journal of Mathematical Imaging and Vision,"
+            },
+            "year": 2017
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "On mass transfer problem"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Dokl. Acad. Nauk SSSR37,"
+            },
+            "year": 1942
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {},
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 32,
+        "totalPages": 4
+    },
+    "page_url": "https://www.semanticscholar.org/paper/A-Fast-Proximal-Point-Method-for-Wasserstein-Xie-Wang/7b54a851675cc73367cd28c296d393564ebe55f5?sort=total-citations"
+}

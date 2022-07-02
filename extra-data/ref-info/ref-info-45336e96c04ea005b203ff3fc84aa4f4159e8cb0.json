@@ -1,0 +1,820 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2403569"
+                        ],
+                        "name": "R. Rimey",
+                        "slug": "R.-Rimey",
+                        "structuredName": {
+                            "firstName": "Raymond",
+                            "lastName": "Rimey",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Rimey"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48726084"
+                        ],
+                        "name": "Christopher M. Brown",
+                        "slug": "Christopher-M.-Brown",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Brown",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher M. Brown"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 41566005,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "716aac1c98acc87756875f232f2c02d0232056f0",
+            "isKey": false,
+            "numCitedBy": 61,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Selective attention, or the intelligent application of limited visual resources, continues to be an important theme in computer vision. We assume a spatially variant sensor with a fovea and periphery, and study foveal sequencing, or the problem of where next to con\u00ad centrate high-resolution vision. In most treatments of this subject, the sequence of eye movements emerges as a result of sequential cognitive effort and image analysis, and is not explicitly represented. We augment the usual paradigm with a new explicit represen\u00ad tation of probabilistic but task-dependent attentional sequencing. Explicit sequences are something like motor skills; they efficiently capture the effect of much cognitive activity and feedback-mediated behavior, and allow it to be generated quickly with low cognitive overhead. The explicit representation is an augmented hidden Markov model (AHMM). A simple hidden Markov model can learn an emergent behavior and re-generate it as an explicit data\u00ad oblivious sequence. An AHMM can use visual feedback from peripheral and foveal cues to modify its oblivious sequences. Examples of useful cues are domain-independent salience measures built from low-level vision operators, or domainand task-dependent cues. An AHMM can relearn or constantly modify its own (feedback modified) explicit behavior, thus adapting to varying conditions. Three AHMM models are presented. The first uses visual feedback to bias its output probabilities. In the second, feedback modifies the internal parameters of the AHMM. These AHMMs were designed to model a sequence of where to place the fovea, but they can also model a sequence of what objects to look at. The final AHMM combines both a what and a where part with a symmetric feedback scheme. This material is based on work supported by the NSF under grant CDA-8822724, and by U.S. Air Force research grant no. AFOSR-89-0222. The government has certain rights in this material. 1 Motivation and Overview A system using real-world visual input for decision making must ignore the irrelevant, attend to the salient, and place reliable priorities on tasks and resources. Complexity analysis of the problem of matching visual images to models reveals that pure parallelism is not enough to overcome the visual computational burden,but that structure, in the. form of a hierarchy of spatial resolutions and of abstractions, can render this visual task tractable [Tsotsos, 1987]. We call the process of concentrating visual processing preferentially within a scene selec\u00ad tive attention, leaving open just which resources are being managed. It is hard to imagine a vision system that does not need to manage resources efficiently in order to perform. Current systems map the visual attention problem onto other resource allocation problems such as where to point a camera and where to allocate processing within a single image from that camera. Future systems will have better sensors or better computation, but there will always be the question of how to deploy them. The control of visual attention has greatest immediacy in applications involving high autonomy and dynamic or complex environments. We are pursuing a long-range program of research into the selective attention prob\u00ad lem that ultimately will encompass and integrate a range of processes and resources, from high-level cognitive processes (e.g. planning and decision making) through applications al\u00ad gorithms down to low-level (preattentive) image processing and even operating systems Issues. Here we investigate the problem of controlling a spatially variant sensor. Specifically, we present a novel approach to learning, representing, and generating explicit attentional sequences that direct a camera sequentially to view specific areas of a scene. The capability we describe is only one of many that an attentive vision system should have. It emphasizes the efficient acquisition and use of relevant behavior for a repetitively-occurring, slowly\u00ad varying situation, with the capability of adapting both to individual variations between problem instances and to slow variations in the expected situation. The selective attention capability is not limited to hardware control, but we have applied it to a motor controlled camera. The control can vary the camera's coordinate system (its six dimensional pose). Other controllable resources might have included sensor intrinsic pa\u00ad rameters (focus, aperture, focal length). We have implemented (in hardware and software) a spatially variant image processor with a peripheral visual field of low resolution but wide angle, and a high-resolution fovea centered in the visual field. The fovea/periphery distinction is quite dramatic in the human visual system, but usu\u00ad ally humans are not consciously aware of it. All of our high-resolution vision is performed by a fovea whose field is only 0.5 degrees of visual arc (about the extent of a quarter coin held at arms' length). Hardware and software versions of spatially variant sensors are be\u00ad ing increasingly investigated as a potential partial solution for the ever-present problem of limited computational and sensing resources. For this paper the selective attention problem then takes the following form: how to move a 'camera in order to apply its fovea selectively and intelligently to a scene. One purpose of moving the fovea around is to obtain foveal (and peripheral) image data for reasoning modules in order to solve a specific task: we are addressing the task dependent aspects"
+            },
+            "slug": "Selective-Attention-as-Sequential-Behavior:-Eye-an-Rimey-Brown",
+            "title": {
+                "fragments": [],
+                "text": "Selective Attention as Sequential Behavior: Modeling Eye Movements with an Augmented Hidden Markov Model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "This work presents a novel approach to learning, representing, and generating explicit attentional sequences that direct a camera sequentially to view specific areas of a scene in a spatially variant sensor."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "71999784"
+                        ],
+                        "name": "W. Mao",
+                        "slug": "W.-Mao",
+                        "structuredName": {
+                            "firstName": "W.",
+                            "lastName": "Mao",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. Mao"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144410963"
+                        ],
+                        "name": "S. Kung",
+                        "slug": "S.-Kung",
+                        "structuredName": {
+                            "firstName": "S.",
+                            "lastName": "Kung",
+                            "middleNames": [
+                                "Y."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Kung"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 61205568,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "23c24b66df9a12754f24345cda2a0afcc4882224",
+            "isKey": false,
+            "numCitedBy": 9,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The authors present a system for 2D shape recognition using hidden Markov model (HMM) knowledge sources. The shape is represented by a sequence of curvature values. A ring hidden Markov model (RHMM), which incorporates a ring structure and local connectivity, is proposed. The approach solves both the context sensitivity problem and the pattern instantiation problem. Simulation results on aircraft indicate that the proposed system can achieve almost 100% recognition accuracy at a very fast learning speed. It is shown that the RHMM system can be efficiently implemented in a systolic array, permitting real-time processing.<<ETX>>"
+            },
+            "slug": "An-object-recognition-system-using-stochastic-and-Mao-Kung",
+            "title": {
+                "fragments": [],
+                "text": "An object recognition system using stochastic knowledge source and VLSI parallel architecture"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A ring hidden Markov model (RHMM), which incorporates a ring structure and local connectivity, is proposed, which solves both the context sensitivity problem and the pattern instantiation problem for 2D shape recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "[1990] Proceedings. 10th International Conference on Pattern Recognition"
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39838876"
+                        ],
+                        "name": "Yang He",
+                        "slug": "Yang-He",
+                        "structuredName": {
+                            "firstName": "Yang",
+                            "lastName": "He",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yang He"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34320269"
+                        ],
+                        "name": "A. Kundu",
+                        "slug": "A.-Kundu",
+                        "structuredName": {
+                            "firstName": "Amlan",
+                            "lastName": "Kundu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Kundu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 46097020,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3533cf2ae0b3dd9c7b167033bbc577f784b37c8b",
+            "isKey": false,
+            "numCitedBy": 11,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A planar shape-recognition approach is presented which is based on hidden Markov models and autoregressive parameters. This approach segments closed shapes into segments and explores the characteristic relations between consecutive segments to make classification at a finer level. The algorithm can tolerate much shape contour perturbation, and a moderate amount of occlusion. The overall classification scheme is independent of shape orientation. Excellent recognition results have been reported. A distinct advantage of the approach is that the classifier does not have to be trained all over again when a new class of shapes is added.<<ETX>>"
+            },
+            "slug": "Planar-shape-classification-using-hidden-Markov-He-Kundu",
+            "title": {
+                "fragments": [],
+                "text": "Planar shape classification using hidden Markov model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 78,
+                "text": "A planar shape-recognition approach is presented which is based on hidden Markov models and autoregressive parameters and explores the characteristic relations between consecutive segments to make classification at a finer level."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings. 1991 IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2052391642"
+                        ],
+                        "name": "J. O'Rourke",
+                        "slug": "J.-O'Rourke",
+                        "structuredName": {
+                            "firstName": "Joseph",
+                            "lastName": "O'Rourke",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. O'Rourke"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699200"
+                        ],
+                        "name": "N. Badler",
+                        "slug": "N.-Badler",
+                        "structuredName": {
+                            "firstName": "Norman",
+                            "lastName": "Badler",
+                            "middleNames": [
+                                "I."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Badler"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Most systems based on the top-down approach employ a geometrical model of the human body; human body parts are described as cylinders[3], super quadrics[l], and so on. Using spatio-temporal analysis[l6], constraint propagations[ 7 ] or modal analysis[l], model parameters are determined from images."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15680007,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9df0428c30b8aab4f7e6f367e70126efdfb8fc45",
+            "isKey": false,
+            "numCitedBy": 516,
+            "numCiting": 112,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A system capable of analyzing image sequences of human motion is described. The system is structured as a feedback loop between high and low levels: predictions are made at the semantic level and verifications are sought at the image level. The domain of human motion lends itself to a model-driven analysis, and the system includes a detailed model of the human body. All information extracted from the image is interpreted through a constraint network based on the structure of the human model. A constraint propagation operator is defined and its theoretical properties outlined. An implementation of this operator is described, and results of the analysis system for short image sequences are presented."
+            },
+            "slug": "Model-based-image-analysis-of-human-motion-using-O'Rourke-Badler",
+            "title": {
+                "fragments": [],
+                "text": "Model-based image analysis of human motion using constraint propagation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 94,
+                "text": "A system capable of analyzing image sequences of human motion is described, structured as a feedback loop between high and low levels: predictions are made at the semantic level and verifications are sought at the image level."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+            },
+            "year": 1980
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1712517"
+                        ],
+                        "name": "L. Rabiner",
+                        "slug": "L.-Rabiner",
+                        "structuredName": {
+                            "firstName": "Lawrence",
+                            "lastName": "Rabiner",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Rabiner"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145778742"
+                        ],
+                        "name": "B. Juang",
+                        "slug": "B.-Juang",
+                        "structuredName": {
+                            "firstName": "B.",
+                            "lastName": "Juang",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Juang"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "HMMs, which have recently been applied with particular success to speech recognition, are a kind of stochastic state transit model[ 9 ]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11358505,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "9d076613d7c36dbda4a6ff42fbdd076604b96630",
+            "isKey": false,
+            "numCitedBy": 2944,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The basic theory of Markov chains has been known to mathematicians and engineers for close to 80 years, but it is only in the past decade that it has been applied explicitly to problems in speech processing. One of the major reasons why speech models, based on Markov chains, have not been developed until recently was the lack of a method for optimizing the parameters of the Markov model to match observed signal patterns. Such a method was proposed in the late 1960's and was immediately applied to speech processing in several research institutions. Continued refinements in the theory and implementation of Markov modelling techniques have greatly enhanced the method, leading to a wide range of applications of these models. It is the purpose of this tutorial paper to give an introduction to the theory of Markov models, and to illustrate how they have been applied to problems in speech recognition."
+            },
+            "slug": "An-introduction-to-hidden-Markov-models-Rabiner-Juang",
+            "title": {
+                "fragments": [],
+                "text": "An introduction to hidden Markov models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "The purpose of this tutorial paper is to give an introduction to the theory of Markov models, and to illustrate how they have been applied to problems in speech recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE ASSP Magazine"
+            },
+            "year": 1986
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1967104"
+                        ],
+                        "name": "David C. Hogg",
+                        "slug": "David-C.-Hogg",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Hogg",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "David C. Hogg"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Most systems based on the top-down approach employ a geometrical model of the human body; human body parts are described as cylinders[ 3 ], super quadrics[l], and so on. Using spatio-temporal analysis[l6], constraint propagations[7] or modal analysis[l], model parameters are determined from images."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 34873540,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "92f98b189cec1220d479e3079b942e71b244aa65",
+            "isKey": false,
+            "numCitedBy": 597,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Model-based-vision:-a-program-to-see-a-walking-Hogg",
+            "title": {
+                "fragments": [],
+                "text": "Model-based vision: a program to see a walking person"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Image Vis. Comput."
+            },
+            "year": 1983
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1697493"
+                        ],
+                        "name": "Y. Aloimonos",
+                        "slug": "Y.-Aloimonos",
+                        "structuredName": {
+                            "firstName": "Yiannis",
+                            "lastName": "Aloimonos",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Aloimonos"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "However, as the qualitative vision paradigm[ 5 ] points out, is reconstruction really necessary for human action recognition? Our purpose is to recognize human action from time-sequential images, not obtaining geometric representations of human bodies."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 54154592,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4c0979c590670afe4741749f44b318c62ca7b6e8",
+            "isKey": false,
+            "numCitedBy": 383,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The traditional view of the problem of computer vision as a recovery problem is questioned, and the paradigm of purposive-qualitative vision is offered as an alternative. This paradigm considers vision as a general recognition problem (recognition of objects, patterns or situations). To demonstrate the usefulness of the framework, the design of the Medusa of CVL is described. It is noted that this machine can perform complex visual tasks without reconstructing the world. If it is provided with intentions, knowledge of the environment, and planning capabilities, it can perform highly sophisticated navigational tasks. It is explained why the traditional structure from motion problem cannot be solved in some cases and why there is reason to be pessimistic about the optimal performance of a structure from motion module. New directions for future research on this problem in the recovery paradigm, e.g., research on stability or robustness, are suggested.<<ETX>>"
+            },
+            "slug": "Purposive-and-qualitative-active-vision-Aloimonos",
+            "title": {
+                "fragments": [],
+                "text": "Purposive and qualitative active vision"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 86,
+                "text": "The traditional view of the problem of computer vision as a recovery problem is questioned, and the paradigm of purposive-qualitative vision is offered as an alternative and the design of the Medusa of CVL is described."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "[1990] Proceedings. 10th International Conference on Pattern Recognition"
+            },
+            "year": 1990
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47579815"
+                        ],
+                        "name": "Masanobu Yamamoto",
+                        "slug": "Masanobu-Yamamoto",
+                        "structuredName": {
+                            "firstName": "Masanobu",
+                            "lastName": "Yamamoto",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Masanobu Yamamoto"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2638101"
+                        ],
+                        "name": "K. Koshikawa",
+                        "slug": "K.-Koshikawa",
+                        "structuredName": {
+                            "firstName": "Kazutada",
+                            "lastName": "Koshikawa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Koshikawa"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 35103895,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "4ff071ca1e5207975ca8cd146f5c33eddfdb2d98",
+            "isKey": false,
+            "numCitedBy": 131,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A model-based method for analyzing a human body motion is presented. The method is based on a robot arm model which represents a human body motion. Combining the model and the gradient scheme, the movement of the configuration of the model (Human) can be directly estimated from an image sequence.<<ETX>>"
+            },
+            "slug": "Human-motion-analysis-based-on-a-robot-arm-model-Yamamoto-Koshikawa",
+            "title": {
+                "fragments": [],
+                "text": "Human motion analysis based on a robot arm model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 61,
+                "text": "A model-based method based on a robot arm model which represents a human body motion and the movement of the configuration of the model can be directly estimated from an image sequence."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings. 1991 IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144152544"
+                        ],
+                        "name": "B. Horowitz",
+                        "slug": "B.-Horowitz",
+                        "structuredName": {
+                            "firstName": "Bradley",
+                            "lastName": "Horowitz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Horowitz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144994682"
+                        ],
+                        "name": "A. Pentland",
+                        "slug": "A.-Pentland",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Pentland",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Pentland"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5863271,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "f244c6d0f9abe7564a48653eb6726c814bb5fd27",
+            "isKey": false,
+            "numCitedBy": 187,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The elastic properties of real materials provide constraint on the types of non-rigid motion that can occur, and thus allow overconstrained estimates of 3-D non-rigid motion from optical flow data. It is shown that by modeling and simulating the physics of non-rigid motion it is possible to obtain good estimates of both object shape and velocity. Examples using grey-scale and X-ray imagery are presented, including an example of tracking a complex articulated figure.<<ETX>>"
+            },
+            "slug": "Recovery-of-non-rigid-motion-and-structure-Horowitz-Pentland",
+            "title": {
+                "fragments": [],
+                "text": "Recovery of non-rigid motion and structure"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "It is shown that by modeling and simulating the physics of non-rigid motion it is possible to obtain good estimates of both object shape and velocity."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings. 1991 IEEE Computer Society Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2317245"
+                        ],
+                        "name": "B. Hwang",
+                        "slug": "B.-Hwang",
+                        "structuredName": {
+                            "firstName": "Byong-Won",
+                            "lastName": "Hwang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Hwang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "31759967"
+                        ],
+                        "name": "S. Takaba",
+                        "slug": "S.-Takaba",
+                        "structuredName": {
+                            "firstName": "Sadao",
+                            "lastName": "Takaba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Takaba"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 193470448,
+            "fieldsOfStudy": [
+                "Art"
+            ],
+            "id": "c30463afffcbc4f5eefb525b7f38973b738e5046",
+            "isKey": false,
+            "numCitedBy": 9,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "On developpe la mesure automatique en temps reel de l'ecoulement des pietons basee sur l'information de brillance des images en vue de controler l'ecoulement des pietons sur des routes ou dans des constructions urbaines, en extrayant relativement peu de points d'echantillonnage a partir d'une image ITV mobile"
+            },
+            "slug": "Real-time-measurement-of-pedestrian-flow-using-of-Hwang-Takaba",
+            "title": {
+                "fragments": [],
+                "text": "Real-time measurement of pedestrian flow using processing of ITV images"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1983
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3331301"
+                        ],
+                        "name": "M. Umeda",
+                        "slug": "M.-Umeda",
+                        "structuredName": {
+                            "firstName": "Michio",
+                            "lastName": "Umeda",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Umeda"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 63282336,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1a2c1f0f5c3f788a92754b29ad1bfdd4d1c37ab5",
+            "isKey": false,
+            "numCitedBy": 35,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Recognition-of-Multi-Font-Printed-Chinese-Umeda",
+            "title": {
+                "fragments": [],
+                "text": "Recognition of Multi-Font Printed Chinese Characters"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1982
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 206421674,
+            "fieldsOfStudy": [],
+            "id": "ba5bb09a21f3a1f52f6e993f175a17ec7fb2a4dd",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Dynamic 3D Models with Local and Global Deformations: Deformable Superquadrics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Pattern Anal. Mach. Intell."
+            },
+            "year": 1991
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 2,
+            "methodology": 2
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 12,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Recognizing-human-action-in-time-sequential-images-Yamato-Ohya/45336e96c04ea005b203ff3fc84aa4f4159e8cb0?sort=total-citations"
+}

@@ -1,0 +1,3429 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2827616"
+                        ],
+                        "name": "Quoc V. Le",
+                        "slug": "Quoc-V.-Le",
+                        "structuredName": {
+                            "firstName": "Quoc",
+                            "lastName": "Le",
+                            "middleNames": [
+                                "V."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Quoc V. Le"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 127,
+                                "start": 105
+                            }
+                        ],
+                        "text": "In addition, we investigate two strategies to modify the input which boost performance:\n\u2022 inverting input (Sutskever et al., 2014)\n\u2022 doubling input\nBoth strategies are described in Section 3.1."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 58
+                            }
+                        ],
+                        "text": "We show that, in many cases, reversing the input sequence (Sutskever et al., 2014) and replicating the input sequence improves the LSTM\u2019s performance on a memorization task (Section 3."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 195,
+                                "start": 173
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al., 2013; Zaremba et al., 2014b), and many more.\nar X\niv :1\n41 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 72
+                            }
+                        ],
+                        "text": "This strategy was first introduced for LSTMs for machine translation by Sutskever et al. (2014)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 81,
+                                "start": 59
+                            }
+                        ],
+                        "text": "We show that, in many cases, reversing the input sequence (Sutskever et al., 2014) and replicating the input sequence improves the LSTM\u2019s performance on a memorization task (Section 3.1)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 29
+                            }
+                        ],
+                        "text": ", 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 113,
+                                "start": 90
+                            }
+                        ],
+                        "text": "We present and explore two simple performance enhancing techniques: input reversing (from Sutskever et al. (2014)) and input doubling."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7961699,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cea967b59209c6be22829699f05b8b1ac4dc092d",
+            "isKey": false,
+            "numCitedBy": 14881,
+            "numCiting": 55,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Deep Neural Networks (DNNs) are powerful models that have achieved excellent performance on difficult learning tasks. Although DNNs work well whenever large labeled training sets are available, they cannot be used to map sequences to sequences. In this paper, we present a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure. Our method uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. Our main result is that on an English to French translation task from the WMT-14 dataset, the translations produced by the LSTM achieve a BLEU score of 34.8 on the entire test set, where the LSTM's BLEU score was penalized on out-of-vocabulary words. Additionally, the LSTM did not have difficulty on long sentences. For comparison, a phrase-based SMT system achieves a BLEU score of 33.3 on the same dataset. When we used the LSTM to rerank the 1000 hypotheses produced by the aforementioned SMT system, its BLEU score increases to 36.5, which is close to the previous state of the art. The LSTM also learned sensible phrase and sentence representations that are sensitive to word order and are relatively invariant to the active and the passive voice. Finally, we found that reversing the order of the words in all source sentences (but not target sentences) improved the LSTM's performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier."
+            },
+            "slug": "Sequence-to-Sequence-Learning-with-Neural-Networks-Sutskever-Vinyals",
+            "title": {
+                "fragments": [],
+                "text": "Sequence to Sequence Learning with Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper presents a general end-to-end approach to sequence learning that makes minimal assumptions on the sequence structure, and finds that reversing the order of the words in all source sentences improved the LSTM's performance markedly, because doing so introduced many short term dependencies between the source and the target sentence which made the optimization problem easier."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "rom a methodological perspective, we formulate the program evaluation task as a sequenceto-sequence learning problem with a recurrent neural network (Sutskever et al., 2014) (see also (Mikolov, 2012; Sutskever, 2013; Pascanu et al., 2013)). Other interesting applications of recurrent neural networks include speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al., 2014; Su"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 61713861,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f34607a6aa2d984e34a5ce7f0bdac4a860fa98a4",
+            "isKey": false,
+            "numCitedBy": 288,
+            "numCiting": 94,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recurrent Neural Networks (RNNs) are powerful sequence models that were believed to be difficult to train, and as a result they were rarely used in machine learning applications. This thesis presents methods that overcome the difficulty of training RNNs, and applications of RNNs to challenging problems. \nWe first describe a new probabilistic sequence model that combines Restricted Boltzmann Machines and RNNs. The new model is more powerful than similar models while being less difficult to train. \nNext, we present a new variant of the Hessian-free (HF) optimizer and show that it can train RNNs on tasks that have extreme long-range temporal dependencies, which were previously considered to be impossibly hard. We then apply HF to character-level language modelling and get excellent results. \nWe also apply HF to optimal control and obtain RNN control laws that can successfully operate under conditions of delayed feedback and unknown disturbances. \nFinally, we describe a random parameter initialization scheme that allows gradient descent with momentum to train RNNs on problems with long-term dependencies. This directly contradicts widespread beliefs about the inability of first-order methods to do so, and suggests that previous attempts at training RNNs failed partly due to flaws in the random initialization."
+            },
+            "slug": "Training-recurrent-neural-networks-Hinton-Sutskever",
+            "title": {
+                "fragments": [],
+                "text": "Training recurrent neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "A new probabilistic sequence model that combines Restricted Boltzmann Machines and RNNs is described, more powerful than similar models while being less difficult to train, and a random parameter initialization scheme is described that allows gradient descent with momentum to train Rnns on problems with long-term dependencies."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753223"
+                        ],
+                        "name": "A. Graves",
+                        "slug": "A.-Graves",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Graves",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Graves"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "40360972"
+                        ],
+                        "name": "Abdel-rahman Mohamed",
+                        "slug": "Abdel-rahman-Mohamed",
+                        "structuredName": {
+                            "firstName": "Abdel-rahman",
+                            "lastName": "Mohamed",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Abdel-rahman Mohamed"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 59
+                            }
+                        ],
+                        "text": "We used an LSTM described by the following equations (from Graves et al. (2013)):\nLSTM : hl\u22121t , h l t\u22121, c l t\u22121 \u2192 hlt, clt\ni f o g  =  sigm sigm sigm tanh T2n,4n(hl\u22121thlt\u22121 )\nclt = f clt\u22121 + i g hlt = o tanh(clt)\nIn these equations, the nonlinear functions sigm and tanh are applied elementwise."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 131,
+                                "start": 112
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al., 2013; Zaremba et al., 2014b), and many more.\nar X\niv :1\n41 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 132,
+                                "start": 88
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206741496,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4177ec52d1b80ed57f2e72b0f9a42365f1a8598d",
+            "isKey": false,
+            "numCitedBy": 6900,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recurrent neural networks (RNNs) are a powerful model for sequential data. End-to-end training methods such as Connectionist Temporal Classification make it possible to train RNNs for sequence labelling problems where the input-output alignment is unknown. The combination of these methods with the Long Short-term Memory RNN architecture has proved particularly fruitful, delivering state-of-the-art results in cursive handwriting recognition. However RNN performance in speech recognition has so far been disappointing, with better results returned by deep feedforward networks. This paper investigates deep recurrent neural networks, which combine the multiple levels of representation that have proved so effective in deep networks with the flexible use of long range context that empowers RNNs. When trained end-to-end with suitable regularisation, we find that deep Long Short-term Memory RNNs achieve a test set error of 17.7% on the TIMIT phoneme recognition benchmark, which to our knowledge is the best recorded score."
+            },
+            "slug": "Speech-recognition-with-deep-recurrent-neural-Graves-Mohamed",
+            "title": {
+                "fragments": [],
+                "text": "Speech recognition with deep recurrent neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper investigates deep recurrent neural networks, which combine the multiple levels of representation that have proved so effective in deep networks with the flexible use of long range context that empowers RNNs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE International Conference on Acoustics, Speech and Signal Processing"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2865775"
+                        ],
+                        "name": "J. Koutn\u00edk",
+                        "slug": "J.-Koutn\u00edk",
+                        "structuredName": {
+                            "firstName": "Jan",
+                            "lastName": "Koutn\u00edk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Koutn\u00edk"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3035541"
+                        ],
+                        "name": "Klaus Greff",
+                        "slug": "Klaus-Greff",
+                        "structuredName": {
+                            "firstName": "Klaus",
+                            "lastName": "Greff",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Klaus Greff"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145842938"
+                        ],
+                        "name": "Faustino J. Gomez",
+                        "slug": "Faustino-J.-Gomez",
+                        "structuredName": {
+                            "firstName": "Faustino",
+                            "lastName": "Gomez",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Faustino J. Gomez"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 311,
+                                "start": 213
+                            }
+                        ],
+                        "text": "Thus we chose to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 259,
+                                "start": 240
+                            }
+                        ],
+                        "text": "\u2026to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14936429,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5522764282c85aea422f1c4dc92ff7e0ca6987bc",
+            "isKey": false,
+            "numCitedBy": 376,
+            "numCiting": 47,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Sequence prediction and classification are ubiquitous and challenging problems in machine learning that can require identifying complex dependencies between temporally distant inputs. Recurrent Neural Networks (RNNs) have the ability, in theory, to cope with these temporal dependencies by virtue of the short-term memory implemented by their recurrent (feedback) connections. However, in practice they are difficult to train successfully when long-term memory is required. This paper introduces a simple, yet powerful modification to the simple RNN (SRN) architecture, the Clockwork RNN (CW-RNN), in which the hidden layer is partitioned into separate modules, each processing inputs at its own temporal granularity, making computations only at its prescribed clock rate. Rather than making the standard RNN models more complex, CW-RNN reduces the number of SRN parameters, improves the performance significantly in the tasks tested, and speeds up the network evaluation. The network is demonstrated in preliminary experiments involving three tasks: audio signal generation, TIMIT spoken word classification, where it outperforms both SRN and LSTM networks, and online handwriting recognition, where it outperforms SRNs."
+            },
+            "slug": "A-Clockwork-RNN-Koutn\u00edk-Greff",
+            "title": {
+                "fragments": [],
+                "text": "A Clockwork RNN"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This paper introduces a simple, yet powerful modification to the simple RNN architecture, the Clockwork RNN (CW-RNN), in which the hidden layer is partitioned into separate modules, each processing inputs at its own temporal granularity, making computations only at its prescribed clock rate."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1996134"
+                        ],
+                        "name": "Razvan Pascanu",
+                        "slug": "Razvan-Pascanu",
+                        "structuredName": {
+                            "firstName": "Razvan",
+                            "lastName": "Pascanu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Razvan Pascanu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1854385"
+                        ],
+                        "name": "\u00c7aglar G\u00fcl\u00e7ehre",
+                        "slug": "\u00c7aglar-G\u00fcl\u00e7ehre",
+                        "structuredName": {
+                            "firstName": "\u00c7aglar",
+                            "lastName": "G\u00fcl\u00e7ehre",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "\u00c7aglar G\u00fcl\u00e7ehre"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1979489"
+                        ],
+                        "name": "Kyunghyun Cho",
+                        "slug": "Kyunghyun-Cho",
+                        "structuredName": {
+                            "firstName": "Kyunghyun",
+                            "lastName": "Cho",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kyunghyun Cho"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 174,
+                                "start": 154
+                            }
+                        ],
+                        "text": "From a methodological perspective, we formulate the program evaluation task as a language modeling problem on a sequence (Mikolov, 2012; Sutskever, 2013; Pascanu et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1870512,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "533ee188324b833e059cb59b654e6160776d5812",
+            "isKey": false,
+            "numCitedBy": 792,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we explore different ways to extend a recurrent neural network (RNN) to a \\textit{deep} RNN. We start by arguing that the concept of depth in an RNN is not as clear as it is in feedforward neural networks. By carefully analyzing and understanding the architecture of an RNN, however, we find three points of an RNN which may be made deeper; (1) input-to-hidden function, (2) hidden-to-hidden transition and (3) hidden-to-output function. Based on this observation, we propose two novel architectures of a deep RNN which are orthogonal to an earlier attempt of stacking multiple recurrent layers to build a deep RNN (Schmidhuber, 1992; El Hihi and Bengio, 1996). We provide an alternative interpretation of these deep RNNs using a novel framework based on neural operators. The proposed deep RNNs are empirically evaluated on the tasks of polyphonic music prediction and language modeling. The experimental result supports our claim that the proposed deep RNNs benefit from the depth and outperform the conventional, shallow RNNs."
+            },
+            "slug": "How-to-Construct-Deep-Recurrent-Neural-Networks-Pascanu-G\u00fcl\u00e7ehre",
+            "title": {
+                "fragments": [],
+                "text": "How to Construct Deep Recurrent Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Two novel architectures of a deep RNN are proposed which are orthogonal to an earlier attempt of stacking multiple recurrent layers to build aDeep RNN, and an alternative interpretation is provided using a novel framework based on neural operators."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3308557"
+                        ],
+                        "name": "S. Hochreiter",
+                        "slug": "S.-Hochreiter",
+                        "structuredName": {
+                            "firstName": "Sepp",
+                            "lastName": "Hochreiter",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Hochreiter"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145341374"
+                        ],
+                        "name": "J. Schmidhuber",
+                        "slug": "J.-Schmidhuber",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Schmidhuber",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Schmidhuber"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 112,
+                                "start": 82
+                            }
+                        ],
+                        "text": "Thus we chose to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1915014,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "44d2abe2175df8153f465f6c39b68b76a0d40ab9",
+            "isKey": false,
+            "numCitedBy": 51704,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Learning to store information over extended time intervals by recurrent backpropagation takes a very long time, mostly because of insufficient, decaying error backflow. We briefly review Hochreiter's (1991) analysis of this problem, then address it by introducing a novel, efficient, gradient based method called long short-term memory (LSTM). Truncating the gradient where this does not do harm, LSTM can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units. Multiplicative gate units learn to open and close access to the constant error flow. LSTM is local in space and time; its computational complexity per time step and weight is O. 1. Our experiments with artificial data involve local, distributed, real-valued, and noisy pattern representations. In comparisons with real-time recurrent learning, back propagation through time, recurrent cascade correlation, Elman nets, and neural sequence chunking, LSTM leads to many more successful runs, and learns much faster. LSTM also solves complex, artificial long-time-lag tasks that have never been solved by previous recurrent network algorithms."
+            },
+            "slug": "Long-Short-Term-Memory-Hochreiter-Schmidhuber",
+            "title": {
+                "fragments": [],
+                "text": "Long Short-Term Memory"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A novel, efficient, gradient based method called long short-term memory (LSTM) is introduced, which can learn to bridge minimal time lags in excess of 1000 discrete-time steps by enforcing constant error flow through constant error carousels within special units."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1395619597"
+                        ],
+                        "name": "Nicolas Boulanger-Lewandowski",
+                        "slug": "Nicolas-Boulanger-Lewandowski",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Boulanger-Lewandowski",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Nicolas Boulanger-Lewandowski"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1996134"
+                        ],
+                        "name": "Razvan Pascanu",
+                        "slug": "Razvan-Pascanu",
+                        "structuredName": {
+                            "firstName": "Razvan",
+                            "lastName": "Pascanu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Razvan Pascanu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 311,
+                                "start": 213
+                            }
+                        ],
+                        "text": "Thus we chose to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 295,
+                                "start": 276
+                            }
+                        ],
+                        "text": "\u2026to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12485056,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ded103d0613e1a8f51f586cc1678aee3ff26e811",
+            "isKey": false,
+            "numCitedBy": 443,
+            "numCiting": 53,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "After a more than decade-long period of relatively little research activity in the area of recurrent neural networks, several new developments will be reviewed here that have allowed substantial progress both in understanding and in technical solutions towards more efficient training of recurrent networks. These advances have been motivated by and related to the optimization issues surrounding deep learning. Although recurrent networks are extremely powerful in what they can in principle represent in terms of modeling sequences, their training is plagued by two aspects of the same issue regarding the learning of long-term dependencies. Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment. The experiments are performed on text and music data and show off the combined effects of these techniques in generally improving both training and test error."
+            },
+            "slug": "Advances-in-optimizing-recurrent-networks-Bengio-Boulanger-Lewandowski",
+            "title": {
+                "fragments": [],
+                "text": "Advances in optimizing recurrent networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "Experiments reported here evaluate the use of clipping gradients, spanning longer time ranges with leaky integration, advanced momentum techniques, using more powerful output probability models, and encouraging sparser gradients to help symmetry breaking and credit assignment."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2013 IEEE International Conference on Acoustics, Speech and Signal Processing"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2047446108"
+                        ],
+                        "name": "Tomas Mikolov",
+                        "slug": "Tomas-Mikolov",
+                        "structuredName": {
+                            "firstName": "Tomas",
+                            "lastName": "Mikolov",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tomas Mikolov"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2245567"
+                        ],
+                        "name": "M. Karafi\u00e1t",
+                        "slug": "M.-Karafi\u00e1t",
+                        "structuredName": {
+                            "firstName": "Martin",
+                            "lastName": "Karafi\u00e1t",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Karafi\u00e1t"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1816892"
+                        ],
+                        "name": "L. Burget",
+                        "slug": "L.-Burget",
+                        "structuredName": {
+                            "firstName": "Luk\u00e1\u0161",
+                            "lastName": "Burget",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Burget"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1899242"
+                        ],
+                        "name": "J. Cernock\u00fd",
+                        "slug": "J.-Cernock\u00fd",
+                        "structuredName": {
+                            "firstName": "Jan",
+                            "lastName": "Cernock\u00fd",
+                            "middleNames": [
+                                "Honza"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Cernock\u00fd"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2803071"
+                        ],
+                        "name": "S. Khudanpur",
+                        "slug": "S.-Khudanpur",
+                        "structuredName": {
+                            "firstName": "Sanjeev",
+                            "lastName": "Khudanpur",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Khudanpur"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 91,
+                                "start": 71
+                            }
+                        ],
+                        "text": "We clip the norm of the gradients (normalized by minibatch\nsize) at 5 (Mikolov et al., 2010)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 70
+                            }
+                        ],
+                        "text": "We clip the norm of the gradients (normalized by minibatch size) at 5 (Mikolov et al., 2010)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 17048224,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9819b600a828a57e1cde047bbe710d3446b30da5",
+            "isKey": false,
+            "numCitedBy": 4902,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A new recurrent neural network based language model (RNN LM) with applications to speech recognition is presented. Results indicate that it is possible to obtain around 50% reduction of perplexity by using mixture of several RNN LMs, compared to a state of the art backoff language model. Speech recognition experiments show around 18% reduction of word error rate on the Wall Street Journal task when comparing models trained on the same amount of data, and around 5% on the much harder NIST RT05 task, even when the backoff model is trained on much more data than the RNN LM. We provide ample empirical evidence to suggest that connectionist language models are superior to standard n-gram techniques, except their high computational (training) complexity. Index Terms: language modeling, recurrent neural networks, speech recognition"
+            },
+            "slug": "Recurrent-neural-network-based-language-model-Mikolov-Karafi\u00e1t",
+            "title": {
+                "fragments": [],
+                "text": "Recurrent neural network based language model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "Results indicate that it is possible to obtain around 50% reduction of perplexity by using mixture of several RNN LMs, compared to a state of the art backoff language model."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "INTERSPEECH"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2373952"
+                        ],
+                        "name": "J. Louradour",
+                        "slug": "J.-Louradour",
+                        "structuredName": {
+                            "firstName": "J\u00e9r\u00f4me",
+                            "lastName": "Louradour",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Louradour"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2939803"
+                        ],
+                        "name": "Ronan Collobert",
+                        "slug": "Ronan-Collobert",
+                        "structuredName": {
+                            "firstName": "Ronan",
+                            "lastName": "Collobert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronan Collobert"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145183709"
+                        ],
+                        "name": "J. Weston",
+                        "slug": "J.-Weston",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Weston",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Weston"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 76
+                            }
+                        ],
+                        "text": "This strategy is has been examined in previous work on curriculum learning (Bengio et al., 2009)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 179,
+                                "start": 160
+                            }
+                        ],
+                        "text": "We design a curriculum procedure which outperforms both conventional training that uses no curriculum learning (baseline) as well as naive curriculum learning (Bengio et al., 2009) (Section 4)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 78,
+                                "start": 59
+                            }
+                        ],
+                        "text": "This approach can be implemented with curriculum learning (Bengio et al., 2009; Kumar et al., 2010; Lee & Grauman, 2011), which prescribes gradually increasing the \u201cdifficulty level\u201d of the examples presented to the LSTM, and is partially motivated by fact that humans and animals learn much faster\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 120,
+                                "start": 58
+                            }
+                        ],
+                        "text": "This approach can be implemented with curriculum learning (Bengio et al., 2009; Kumar et al., 2010; Lee & Grauman, 2011), which prescribes gradually increasing the \u201cdifficulty level\u201d of the examples presented to the LSTM, and is partially motivated by fact that humans and animals learn much faster when their instruction provides them with hard but manageable exercises."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 86,
+                                "start": 66
+                            }
+                        ],
+                        "text": "Unfortunately, we found the naive curriculum learning strategy of Bengio et al. (2009) to be generally ineffective and occasionally harmful."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 95,
+                                "start": 76
+                            }
+                        ],
+                        "text": "This explanation has been proposed in previous work on curriculum learning (Bengio et al., 2009)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 873046,
+            "fieldsOfStudy": [
+                "Education"
+            ],
+            "id": "8de174ab5419b9d3127695405efd079808e956e8",
+            "isKey": true,
+            "numCitedBy": 3193,
+            "numCiting": 42,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Humans and animals learn much better when the examples are not randomly presented but organized in a meaningful order which illustrates gradually more concepts, and gradually more complex ones. Here, we formalize such training strategies in the context of machine learning, and call them \"curriculum learning\". In the context of recent research studying the difficulty of training in the presence of non-convex training criteria (for deep deterministic and stochastic neural networks), we explore curriculum learning in various set-ups. The experiments show that significant improvements in generalization can be achieved. We hypothesize that curriculum learning has both an effect on the speed of convergence of the training process to a minimum and, in the case of non-convex criteria, on the quality of the local minima obtained: curriculum learning can be seen as a particular form of continuation method (a general strategy for global optimization of non-convex functions)."
+            },
+            "slug": "Curriculum-learning-Bengio-Louradour",
+            "title": {
+                "fragments": [],
+                "text": "Curriculum learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "It is hypothesized that curriculum learning has both an effect on the speed of convergence of the training process to a minimum and on the quality of the local minima obtained: curriculum learning can be seen as a particular form of continuation method (a general strategy for global optimization of non-convex functions)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML '09"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50506272"
+                        ],
+                        "name": "Vu Pham",
+                        "slug": "Vu-Pham",
+                        "structuredName": {
+                            "firstName": "Vu",
+                            "lastName": "Pham",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Vu Pham"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2156685"
+                        ],
+                        "name": "Christopher Kermorvant",
+                        "slug": "Christopher-Kermorvant",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Kermorvant",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher Kermorvant"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2373952"
+                        ],
+                        "name": "J. Louradour",
+                        "slug": "J.-Louradour",
+                        "structuredName": {
+                            "firstName": "J\u00e9r\u00f4me",
+                            "lastName": "Louradour",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Louradour"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 240,
+                                "start": 223
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al., 2013; Zaremba et al., 2014b), and many more.\nar X\niv :1\n41 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 33
+                            }
+                        ],
+                        "text": ", 2014), handwriting recognition (Pham et al., 2013; Zaremba et al., 2014b), and many more."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9919769,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c0b624c46b51920dfec5aa02cc86323c0beb0df5",
+            "isKey": false,
+            "numCitedBy": 466,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recurrent neural networks (RNNs) with Long Short-Term memory cells currently hold the best known results in unconstrained handwriting recognition. We show that their performance can be greatly improved using dropout - a recently proposed regularization method for deep architectures. While previous works showed that dropout gave superior performance in the context of convolutional networks, it had never been applied to RNNs. In our approach, dropout is carefully used in the network so that it does not affect the recurrent connections, hence the power of RNNs in modeling sequences is preserved. Extensive experiments on a broad range of handwritten databases confirm the effectiveness of dropout on deep architectures even when the network mainly consists of recurrent and shared connections."
+            },
+            "slug": "Dropout-Improves-Recurrent-Neural-Networks-for-Pham-Kermorvant",
+            "title": {
+                "fragments": [],
+                "text": "Dropout Improves Recurrent Neural Networks for Handwriting Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "It is shown that RNNs with Long Short-Term memory cells can be greatly improved using dropout - a recently proposed regularization method for deep architectures, even when the network mainly consists of recurrent and shared connections."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2014 14th International Conference on Frontiers in Handwriting Recognition"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2563432"
+                        ],
+                        "name": "Wojciech Zaremba",
+                        "slug": "Wojciech-Zaremba",
+                        "structuredName": {
+                            "firstName": "Wojciech",
+                            "lastName": "Zaremba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wojciech Zaremba"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1689108"
+                        ],
+                        "name": "Oriol Vinyals",
+                        "slug": "Oriol-Vinyals",
+                        "structuredName": {
+                            "firstName": "Oriol",
+                            "lastName": "Vinyals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Oriol Vinyals"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 263,
+                                "start": 242
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al., 2013; Zaremba et al., 2014b), and many more.\nar X\niv :1\n41 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 60
+                            }
+                        ],
+                        "text": "Figure 3 shows the LSTM equations (the figure is taken from Zaremba et al. (2014b))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 198,
+                                "start": 177
+                            }
+                        ],
+                        "text": "There has been related research that used Tree Neural Network (sometimes known as Recursive Neural Networks) to evaluate symbolic mathematical expressions and logical formulas (Zaremba et al., 2014a; Bowman et al., 2014; Bowman, 2013), which is close in spirit to our work."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17719760,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f264e8b33c0d49a692a6ce2c4bcb28588aeb7d97",
+            "isKey": false,
+            "numCitedBy": 1970,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a simple regularization technique for Recurrent Neural Networks (RNNs) with Long Short-Term Memory (LSTM) units. Dropout, the most successful technique for regularizing neural networks, does not work well with RNNs and LSTMs. In this paper, we show how to correctly apply dropout to LSTMs, and show that it substantially reduces overfitting on a variety of tasks. These tasks include language modeling, speech recognition, image caption generation, and machine translation."
+            },
+            "slug": "Recurrent-Neural-Network-Regularization-Zaremba-Sutskever",
+            "title": {
+                "fragments": [],
+                "text": "Recurrent Neural Network Regularization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 34,
+                "text": "This paper shows how to correctly apply dropout to LSTMs, and shows that it substantially reduces overfitting on a variety of tasks."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1753223"
+                        ],
+                        "name": "A. Graves",
+                        "slug": "A.-Graves",
+                        "structuredName": {
+                            "firstName": "Alex",
+                            "lastName": "Graves",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Graves"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1697424,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "89b1f4740ae37fd04f6ac007577bdd34621f0861",
+            "isKey": false,
+            "numCitedBy": 3153,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper shows how Long Short-term Memory recurrent neural networks can be used to generate complex sequences with long-range structure, simply by predicting one data point at a time. The approach is demonstrated for text (where the data are discrete) and online handwriting (where the data are real-valued). It is then extended to handwriting synthesis by allowing the network to condition its predictions on a text sequence. The resulting system is able to generate highly realistic cursive handwriting in a wide variety of styles."
+            },
+            "slug": "Generating-Sequences-With-Recurrent-Neural-Networks-Graves",
+            "title": {
+                "fragments": [],
+                "text": "Generating Sequences With Recurrent Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "This paper shows how Long Short-term Memory recurrent neural networks can be used to generate complex sequences with long-range structure, simply by predicting one data point at a time."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2013
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [],
+                        "name": "Hao Peng",
+                        "slug": "Hao-Peng",
+                        "structuredName": {
+                            "firstName": "Hao",
+                            "lastName": "Peng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hao Peng"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38956216"
+                        ],
+                        "name": "Lili Mou",
+                        "slug": "Lili-Mou",
+                        "structuredName": {
+                            "firstName": "Lili",
+                            "lastName": "Mou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lili Mou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1410115257"
+                        ],
+                        "name": "Ge Li",
+                        "slug": "Ge-Li",
+                        "structuredName": {
+                            "firstName": "Ge",
+                            "lastName": "Li",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ge Li"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2108135725"
+                        ],
+                        "name": "Yuxuan Liu",
+                        "slug": "Yuxuan-Liu",
+                        "structuredName": {
+                            "firstName": "Yuxuan",
+                            "lastName": "Liu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yuxuan Liu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2156144568"
+                        ],
+                        "name": "Lu Zhang",
+                        "slug": "Lu-Zhang",
+                        "structuredName": {
+                            "firstName": "Lu",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lu Zhang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700880"
+                        ],
+                        "name": "Zhi Jin",
+                        "slug": "Zhi-Jin",
+                        "structuredName": {
+                            "firstName": "Zhi",
+                            "lastName": "Jin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhi Jin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 94
+                            }
+                        ],
+                        "text": "N\nE ]\n1 7\nO ct\n2 01\n4\n(Maddison & Tarlow, 2014) learned a language model on parse trees, and (Mou et al., 2014) predicted whether two programs are equivalent or not."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 89,
+                                "start": 71
+                            }
+                        ],
+                        "text": "(Maddison & Tarlow, 2014) learned a language model on parse trees, and (Mou et al., 2014) predicted whether two programs are equivalent or not."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13898232,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "47225c992d7086cf5d113942212edb4a57401130",
+            "isKey": false,
+            "numCitedBy": 111,
+            "numCiting": 56,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Deep learning has made significant breakthroughs in various fields of artificial intelligence. However, it is still virtually impossible to use deep learning to analyze programs since deep architectures cannot be trained effectively with pure back propagation. In this pioneering paper, we propose the \"coding criterion\" to build program vector representations, which are the premise of deep learning for program analysis. We evaluate the learned vector representations both qualitatively and quantitatively. We conclude, based on the experiments, the coding criterion is successful in building program representations. To evaluate whether deep learning is beneficial for program analysis, we feed the representations to deep neural networks, and achieve higher accuracy in the program classification task than \"shallow\" methods. This result confirms the feasibility of deep learning to analyze programs."
+            },
+            "slug": "Building-Program-Vector-Representations-for-Deep-Peng-Mou",
+            "title": {
+                "fragments": [],
+                "text": "Building Program Vector Representations for Deep Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "This pioneering paper proposes the \"coding criterion\" to build program vector representations, which are the premise of deep learning for program analysis, and evaluates the learned vector representations both qualitatively and quantitatively."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "KSEM"
+            },
+            "year": 2015
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3644767"
+                        ],
+                        "name": "Samuel R. Bowman",
+                        "slug": "Samuel-R.-Bowman",
+                        "structuredName": {
+                            "firstName": "Samuel",
+                            "lastName": "Bowman",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samuel R. Bowman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144922861"
+                        ],
+                        "name": "Christopher Potts",
+                        "slug": "Christopher-Potts",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Potts",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher Potts"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 219,
+                                "start": 200
+                            }
+                        ],
+                        "text": "There has been related research that used Tree Neural Network (sometimes known as Recursive Neural Networks) to evaluate symbolic mathematical expressions and logical formulas (Zaremba et al., 2014a; Bowman et al., 2014; Bowman, 2013), which is close in spirit to our work."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15618372,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7c05a4ffee7e159e34b2efea7e44d994333ec628",
+            "isKey": false,
+            "numCitedBy": 123,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Tree-structured recursive neural networks (TreeRNNs) for sentence meaning have been successful for many applications, but it remains an open question whether the fixed-length representations that they learn can support tasks as demanding as logical deduction. We pursue this question by evaluating whether two such models---plain TreeRNNs and tree-structured neural tensor networks (TreeRNTNs)---can correctly learn to identify logical relationships such as entailment and contradiction using these representations. In our first set of experiments, we generate artificial data from a logical grammar and use it to evaluate the models' ability to learn to handle basic relational reasoning, recursive structures, and quantification. We then evaluate the models on the more natural SICK challenge data. Both models perform competitively on the SICK data and generalize well in all three experiments on simulated data, suggesting that they can learn suitable representations for logical inference in natural language."
+            },
+            "slug": "Recursive-Neural-Networks-Can-Learn-Logical-Bowman-Potts",
+            "title": {
+                "fragments": [],
+                "text": "Recursive Neural Networks Can Learn Logical Semantics"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This work generates artificial data from a logical grammar and uses it to evaluate the models' ability to learn to handle basic relational reasoning, recursive structures, and quantification, suggesting that they can learn suitable representations for logical inference in natural language."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "70910366"
+                        ],
+                        "name": "Vysok\u00e9 U\u010den\u00ed",
+                        "slug": "Vysok\u00e9-U\u010den\u00ed",
+                        "structuredName": {
+                            "firstName": "Vysok\u00e9",
+                            "lastName": "U\u010den\u00ed",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Vysok\u00e9 U\u010den\u00ed"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "70952562"
+                        ],
+                        "name": "Technick\u00e9 V Brn\u011b",
+                        "slug": "Technick\u00e9-V-Brn\u011b",
+                        "structuredName": {
+                            "firstName": "Technick\u00e9",
+                            "lastName": "Brn\u011b",
+                            "middleNames": [
+                                "V"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Technick\u00e9 V Brn\u011b"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "74555031"
+                        ],
+                        "name": "Grafiky A Multim\u00e9di\u00ed",
+                        "slug": "Grafiky-A-Multim\u00e9di\u00ed",
+                        "structuredName": {
+                            "firstName": "Grafiky",
+                            "lastName": "Multim\u00e9di\u00ed",
+                            "middleNames": [
+                                "A"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Grafiky A Multim\u00e9di\u00ed"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "74393604"
+                        ],
+                        "name": "Diserta\u010dn\u00ed Pr\u00e1ce",
+                        "slug": "Diserta\u010dn\u00ed-Pr\u00e1ce",
+                        "structuredName": {
+                            "firstName": "Diserta\u010dn\u00ed",
+                            "lastName": "Pr\u00e1ce",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Diserta\u010dn\u00ed Pr\u00e1ce"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 68116583,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "96364af2d208ea75ca3aeb71892d2f7ce7326b55",
+            "isKey": false,
+            "numCitedBy": 575,
+            "numCiting": 88,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Statistical language models are crucial part of many successful applications, such as automatic speech recognition and statistical machine translation (for example well-known Google Translate). Traditional techniques for estimating these models are based on N gram counts. Despite known weaknesses of N -grams and huge efforts of research communities across many fields (speech recognition, machine translation, neuroscience, artificial intelligence, natural language processing, data compression, psychology etc.), N -grams remained basically the state-of-the-art. The goal of this thesis is to present various architectures of language models that are based on artificial neural networks. Although these models are computationally more expensive than N -gram models, with the presented techniques it is possible to apply them to state-of-the-art systems efficiently. Achieved reductions of word error rate of speech recognition systems are up to 20%, against stateof-the-art N -gram model. The presented recurrent neural network based model achieves the best published performance on well-known Penn Treebank setup. K\u013a\u0131\u010dov\u00e1 slova jazykov\u00fd model, neuronov\u00e1 \u015b\u0131t\u2019, rekurent\u0144\u0131, maxim\u00e1l\u0144\u0131 entropie, rozpozn\u00e1v\u00e1\u0144\u0131 \u0159e\u010di, komprese dat, um\u011bl\u00e1 inteligence"
+            },
+            "slug": "Statistical-Language-Models-Based-on-Neural-U\u010den\u00ed-Brn\u011b",
+            "title": {
+                "fragments": [],
+                "text": "Statistical Language Models Based on Neural Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "Although these models are computationally more expensive than N -gram models, with the presented techniques it is possible to apply them to state-of-the-art systems efficiently and achieves the best published performance on well-known Penn Treebank setup."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2012
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3644767"
+                        ],
+                        "name": "Samuel R. Bowman",
+                        "slug": "Samuel-R.-Bowman",
+                        "structuredName": {
+                            "firstName": "Samuel",
+                            "lastName": "Bowman",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samuel R. Bowman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144922861"
+                        ],
+                        "name": "Christopher Potts",
+                        "slug": "Christopher-Potts",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Potts",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher Potts"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15770688,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4ea80c206b8ad73a6d320c9d8ed0321d84fe6d85",
+            "isKey": false,
+            "numCitedBy": 32,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Supervised recursive neural network models (RNNs) for sentence meaning have been successful in an array of sophisticated language tasks, but it remains an open question whether they can learn compositional semantic grammars that support logical deduction. We address this question directly by for the first time evaluating whether each of two classes of neural model \u2014 plain RNNs and recursive neural tensor networks (RNTNs) \u2014 can correctly learn relationships such as entailment and contradiction between pairs of sentences, where we have generated controlled data sets of sentences from a logical grammar. Our first experiment evaluates whether these models can learn the basic algebra of logical relations involved. Our second and third experiments extend this evaluation to complex recursive structures and sentences involving quantification. We find that the plain RNN achieves only mixed results on all three experiments, whereas the stronger RNTN model generalizes well in every setting and appears capable of learning suitable representations for natural language logical inference."
+            },
+            "slug": "Recursive-Neural-Networks-for-Learning-Logical-Bowman-Potts",
+            "title": {
+                "fragments": [],
+                "text": "Recursive Neural Networks for Learning Logical Semantics"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "This work evaluates whether each of two classes of neural model can correctly learn relationships such as entailment and contradiction between pairs of sentences, and finds that the plain RNN achieves only mixed results on all three experiments, whereas the stronger RNTN model generalizes well in every setting and appears capable of learning suitable representations for natural language logical inference."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ArXiv"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3717791"
+                        ],
+                        "name": "M. P. Kumar",
+                        "slug": "M.-P.-Kumar",
+                        "structuredName": {
+                            "firstName": "M.",
+                            "lastName": "Kumar",
+                            "middleNames": [
+                                "Pawan"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. P. Kumar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1409971380"
+                        ],
+                        "name": "Ben Packer",
+                        "slug": "Ben-Packer",
+                        "structuredName": {
+                            "firstName": "Ben",
+                            "lastName": "Packer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ben Packer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1736370"
+                        ],
+                        "name": "D. Koller",
+                        "slug": "D.-Koller",
+                        "structuredName": {
+                            "firstName": "Daphne",
+                            "lastName": "Koller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Koller"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 120,
+                                "start": 58
+                            }
+                        ],
+                        "text": "This approach can be implemented with curriculum learning (Bengio et al., 2009; Kumar et al., 2010; Lee & Grauman, 2011), which prescribes gradually increasing the \u201cdifficulty level\u201d of the examples presented to the LSTM, and is partially motivated by fact that humans and animals learn much faster when their instruction provides them with hard but manageable exercises."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 80
+                            }
+                        ],
+                        "text": "This approach can be implemented with curriculum learning (Bengio et al., 2009; Kumar et al., 2010; Lee & Grauman, 2011), which prescribes gradually increasing the \u201cdifficulty level\u201d of the examples presented to the LSTM, and is partially motivated by fact that humans and animals learn much faster\u2026"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1977996,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a049555721f17ed79a97fd492c8fc9a3f8f8aa17",
+            "isKey": false,
+            "numCitedBy": 937,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Latent variable models are a powerful tool for addressing several tasks in machine learning. However, the algorithms for learning the parameters of latent variable models are prone to getting stuck in a bad local optimum. To alleviate this problem, we build on the intuition that, rather than considering all samples simultaneously, the algorithm should be presented with the training data in a meaningful order that facilitates learning. The order of the samples is determined by how easy they are. The main challenge is that often we are not provided with a readily computable measure of the easiness of samples. We address this issue by proposing a novel, iterative self-paced learning algorithm where each iteration simultaneously selects easy samples and learns a new parameter vector. The number of samples selected is governed by a weight that is annealed until the entire training data has been considered. We empirically demonstrate that the self-paced learning algorithm outperforms the state of the art method for learning a latent structural SVM on four applications: object localization, noun phrase coreference, motif finding and handwritten digit recognition."
+            },
+            "slug": "Self-Paced-Learning-for-Latent-Variable-Models-Kumar-Packer",
+            "title": {
+                "fragments": [],
+                "text": "Self-Paced Learning for Latent Variable Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "A novel, iterative self-paced learning algorithm where each iteration simultaneously selects easy samples and learns a new parameter vector that outperforms the state of the art method for learning a latent structural SVM on four applications."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1979489"
+                        ],
+                        "name": "Kyunghyun Cho",
+                        "slug": "Kyunghyun-Cho",
+                        "structuredName": {
+                            "firstName": "Kyunghyun",
+                            "lastName": "Cho",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kyunghyun Cho"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3158246"
+                        ],
+                        "name": "Bart van Merrienboer",
+                        "slug": "Bart-van-Merrienboer",
+                        "structuredName": {
+                            "firstName": "Bart",
+                            "lastName": "Merrienboer",
+                            "middleNames": [
+                                "van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Bart van Merrienboer"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1854385"
+                        ],
+                        "name": "\u00c7aglar G\u00fcl\u00e7ehre",
+                        "slug": "\u00c7aglar-G\u00fcl\u00e7ehre",
+                        "structuredName": {
+                            "firstName": "\u00c7aglar",
+                            "lastName": "G\u00fcl\u00e7ehre",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "\u00c7aglar G\u00fcl\u00e7ehre"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3335364"
+                        ],
+                        "name": "Dzmitry Bahdanau",
+                        "slug": "Dzmitry-Bahdanau",
+                        "structuredName": {
+                            "firstName": "Dzmitry",
+                            "lastName": "Bahdanau",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dzmitry Bahdanau"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2076086"
+                        ],
+                        "name": "Fethi Bougares",
+                        "slug": "Fethi-Bougares",
+                        "structuredName": {
+                            "firstName": "Fethi",
+                            "lastName": "Bougares",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fethi Bougares"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144518416"
+                        ],
+                        "name": "Holger Schwenk",
+                        "slug": "Holger-Schwenk",
+                        "structuredName": {
+                            "firstName": "Holger",
+                            "lastName": "Schwenk",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Holger Schwenk"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 311,
+                                "start": 213
+                            }
+                        ],
+                        "text": "Thus we chose to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 171,
+                                "start": 155
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al., 2013; Zaremba et al., 2014b), and many more.\nar X\niv :1\n41 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 217,
+                                "start": 201
+                            }
+                        ],
+                        "text": "\u2026to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 29
+                            }
+                        ],
+                        "text": ", 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5590763,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0b544dfe355a5070b60986319a3f51fb45d1348e",
+            "isKey": true,
+            "numCitedBy": 15052,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we propose a novel neural network model called RNN Encoder\u2010 Decoder that consists of two recurrent neural networks (RNN). One RNN encodes a sequence of symbols into a fixedlength vector representation, and the other decodes the representation into another sequence of symbols. The encoder and decoder of the proposed model are jointly trained to maximize the conditional probability of a target sequence given a source sequence. The performance of a statistical machine translation system is empirically found to improve by using the conditional probabilities of phrase pairs computed by the RNN Encoder\u2010Decoder as an additional feature in the existing log-linear model. Qualitatively, we show that the proposed model learns a semantically and syntactically meaningful representation of linguistic phrases."
+            },
+            "slug": "Learning-Phrase-Representations-using-RNN-for-Cho-Merrienboer",
+            "title": {
+                "fragments": [],
+                "text": "Learning Phrase Representations using RNN Encoder\u2013Decoder for Statistical Machine Translation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "Qualitatively, the proposed RNN Encoder\u2010Decoder model learns a semantically and syntactically meaningful representation of linguistic phrases."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3644767"
+                        ],
+                        "name": "Samuel R. Bowman",
+                        "slug": "Samuel-R.-Bowman",
+                        "structuredName": {
+                            "firstName": "Samuel",
+                            "lastName": "Bowman",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Samuel R. Bowman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15075376,
+            "fieldsOfStudy": [
+                "Biology",
+                "Computer Science"
+            ],
+            "id": "08caf0d048cfbe528f8d9db7005d040f76b55c24",
+            "isKey": false,
+            "numCitedBy": 39,
+            "numCiting": 37,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recursive neural network models and their accompanying vector representations for words have seen success in an array of increasingly semantically sophisticated tasks, but almost nothing is known about their ability to accurately capture the aspects of linguistic meaning that are necessary for interpretation or reasoning. To evaluate this, I train a recursive model on a new corpus of constructed examples of logical reasoning in short sentences, like the inference of \"some animal walks\" from \"some dog walks\" or \"some cat walks,\" given that dogs and cats are animals. This model learns representations that generalize well to new types of reasoning pattern in all but a few cases, a result which is promising for the ability of learned representation models to capture logical reasoning."
+            },
+            "slug": "Can-recursive-neural-tensor-networks-learn-logical-Bowman",
+            "title": {
+                "fragments": [],
+                "text": "Can recursive neural tensor networks learn logical reasoning?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "A recursive model is trained on a new corpus of constructed examples of logical reasoning in short sentences that learns representations that generalize well to new types of reasoning pattern in all but a few cases, a result which is promising for the ability of learned representation models to capture logical reasoning."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICLR"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "5631525"
+                        ],
+                        "name": "H. Jaeger",
+                        "slug": "H.-Jaeger",
+                        "structuredName": {
+                            "firstName": "Herbert",
+                            "lastName": "Jaeger",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Jaeger"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2759349"
+                        ],
+                        "name": "M. Luko\u0161evi\u010dius",
+                        "slug": "M.-Luko\u0161evi\u010dius",
+                        "structuredName": {
+                            "firstName": "Mantas",
+                            "lastName": "Luko\u0161evi\u010dius",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Luko\u0161evi\u010dius"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32384143"
+                        ],
+                        "name": "D. Popovici",
+                        "slug": "D.-Popovici",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Popovici",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Popovici"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "10707214"
+                        ],
+                        "name": "U. Siewert",
+                        "slug": "U.-Siewert",
+                        "structuredName": {
+                            "firstName": "Udo",
+                            "lastName": "Siewert",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "U. Siewert"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 311,
+                                "start": 213
+                            }
+                        ],
+                        "text": "Thus we chose to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 238,
+                                "start": 219
+                            }
+                        ],
+                        "text": "\u2026to use Recurrent Neural Networks with Long Short Term Memory units (Hochreiter & Schmidhuber, 1997), although there are many other RNN variants that perform well on tasks with long term dependencies (Cho et al., 2014; Jaeger et al., 2007; Koutn\u0131\u0301k et al., 2014; Martens, 2010; Bengio et al., 2013)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17795421,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a10ec7cc6c42c7780ef631c038b16c49ed865038",
+            "isKey": false,
+            "numCitedBy": 647,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Optimization-and-applications-of-echo-state-with-Jaeger-Luko\u0161evi\u010dius",
+            "title": {
+                "fragments": [],
+                "text": "Optimization and applications of echo state networks with leaky- integrator neurons"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Networks"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2563432"
+                        ],
+                        "name": "Wojciech Zaremba",
+                        "slug": "Wojciech-Zaremba",
+                        "structuredName": {
+                            "firstName": "Wojciech",
+                            "lastName": "Zaremba",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Wojciech Zaremba"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2006889"
+                        ],
+                        "name": "Karol Kurach",
+                        "slug": "Karol-Kurach",
+                        "structuredName": {
+                            "firstName": "Karol",
+                            "lastName": "Kurach",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Karol Kurach"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2276554"
+                        ],
+                        "name": "R. Fergus",
+                        "slug": "R.-Fergus",
+                        "structuredName": {
+                            "firstName": "Rob",
+                            "lastName": "Fergus",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fergus"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 263,
+                                "start": 242
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al., 2013; Zaremba et al., 2014b), and many more.\nar X\niv :1\n41 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 60
+                            }
+                        ],
+                        "text": "Figure 3 shows the LSTM equations (the figure is taken from Zaremba et al. (2014b))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 198,
+                                "start": 177
+                            }
+                        ],
+                        "text": "There has been related research that used Tree Neural Network (sometimes known as Recursive Neural Networks) to evaluate symbolic mathematical expressions and logical formulas (Zaremba et al., 2014a; Bowman et al., 2014; Bowman, 2013), which is close in spirit to our work."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 218698613,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "389db5f0fa62e68649bfb44b3a6e6eeb664482b7",
+            "isKey": false,
+            "numCitedBy": 47,
+            "numCiting": 95,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we explore how machine learning techniques can be applied to the discovery of efficient mathematical identities. We introduce an attribute grammar framework for representing symbolic expressions. Given a grammar of math operators, we build trees that combine them in different ways, looking for compositions that are analytically equivalent to a target expression but of lower computational complexity. However, as the space of trees grows exponentially with the complexity of the target expression, brute force search is impractical for all but the simplest of expressions. Consequently, we introduce two novel learning approaches that are able to learn from simpler expressions to guide the tree search. The first of these is a simple n-gram model, the other being a recursive neural-network. We show how these approaches enable us to derive complex identities, beyond reach of brute-force search, or human derivation."
+            },
+            "slug": "Learning-to-Discover-Efficient-Mathematical-Zaremba-Kurach",
+            "title": {
+                "fragments": [],
+                "text": "Learning to Discover Efficient Mathematical Identities"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "This paper introduces an attribute grammar framework for representing symbolic expressions, including a simple n-gram model, and shows how these approaches enable us to derive complex identities, beyond reach of brute-force search, or human derivation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144711425"
+                        ],
+                        "name": "T. Robinson",
+                        "slug": "T.-Robinson",
+                        "structuredName": {
+                            "firstName": "Tony",
+                            "lastName": "Robinson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Robinson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39213695"
+                        ],
+                        "name": "M. Hochberg",
+                        "slug": "M.-Hochberg",
+                        "structuredName": {
+                            "firstName": "Mike",
+                            "lastName": "Hochberg",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Hochberg"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145086187"
+                        ],
+                        "name": "S. Renals",
+                        "slug": "S.-Renals",
+                        "structuredName": {
+                            "firstName": "Steve",
+                            "lastName": "Renals",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Renals"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 110,
+                                "start": 89
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al., 2014; Sutskever et al., 2014), handwriting recognition (Pham et al., 2013; Zaremba et al., 2014b), and many more.\nar X\niv :1\n41 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 132,
+                                "start": 88
+                            }
+                        ],
+                        "text": "Other interesting applications of recurrent neural networks includes speech recognition (Robinson et al., 1996; Graves et al., 2013), machine translation (Cho et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8375725,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "03bc854feaee144b54924b440eff02ed9082cc6b",
+            "isKey": false,
+            "numCitedBy": 129,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This chapter describes a use of recurrent neural networks (i.e., feedback is incorporated in the computation) as an acoustic model for continuous speech recognition. The form of the recurrent neural network is described along with an appropriate parameter estimation procedure. For each frame of acoustic data, the recurrent network generates an estimate of the posterior probability of of the possible phones given the observed acoustic signal. The posteriors are then converted into scaled likelihoods and used as the observation probabilities within a conventional decoding paradigm (e.g., Viterbi decoding). The advantages of using recurrent networks are that they require a small number of parameters and provide a fast decoding capability (relative to conventional, large-vocabulary, HMM systems)3."
+            },
+            "slug": "THE-USE-OF-RECURRENT-NEURAL-NETWORKS-IN-CONTINUOUS-Robinson-Hochberg",
+            "title": {
+                "fragments": [],
+                "text": "THE USE OF RECURRENT NEURAL NETWORKS IN CONTINUOUS SPEECH RECOGNITION"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 83,
+                "text": "This chapter describes a use of recurrent neural networks (i.e., feedback is incorporated in the computation) as an acoustic model for continuous speech recognition as well as an appropriate parameter estimation procedure."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145704247"
+                        ],
+                        "name": "James Martens",
+                        "slug": "James-Martens",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Martens",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "James Martens"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11154521,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4c46347fbc272b21468efe3d9af34b4b2bad6684",
+            "isKey": false,
+            "numCitedBy": 845,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We develop a 2nd-order optimization method based on the \"Hessian-free\" approach, and apply it to training deep auto-encoders. Without using pre-training, we obtain results superior to those reported by Hinton & Salakhutdinov (2006) on the same tasks they considered. Our method is practical, easy to use, scales nicely to very large datasets, and isn't limited in applicability to auto-encoders, or any specific model class. We also discuss the issue of \"pathological curvature\" as a possible explanation for the difficulty of deep-learning and how 2nd-order optimization, and our method in particular, effectively deals with it."
+            },
+            "slug": "Deep-learning-via-Hessian-free-optimization-Martens",
+            "title": {
+                "fragments": [],
+                "text": "Deep learning via Hessian-free optimization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 77,
+                "text": "A 2nd-order optimization method based on the \"Hessian-free\" approach is developed, and applied to training deep auto-encoders, and results superior to those reported by Hinton & Salakhutdinov (2006) are obtained."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2772217"
+                        ],
+                        "name": "Chris J. Maddison",
+                        "slug": "Chris-J.-Maddison",
+                        "structuredName": {
+                            "firstName": "Chris",
+                            "lastName": "Maddison",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chris J. Maddison"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1725299"
+                        ],
+                        "name": "Daniel Tarlow",
+                        "slug": "Daniel-Tarlow",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Tarlow",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Daniel Tarlow"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5737841,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "215999a0e155a21255e4655d4eac312858058a84",
+            "isKey": false,
+            "numCitedBy": 148,
+            "numCiting": 36,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We study the problem of building generative models of natural source code (NSC); that is, source code written and understood by humans. Our primary contribution is to describe a family of generative models for NSC that have three key properties: First, they incorporate both sequential and hierarchical structure. Second, we learn a distributed representation of source code elements. Finally, they integrate closely with a compiler, which allows leveraging compiler logic and abstractions when building structure into the model. We also develop an extension that includes more complex structure, refining how the model generates identifier tokens based on what variables are currently in scope. Our models can be learned efficiently, and we show empirically that including appropriate structure greatly improves the models, measured by the probability of generating test programs."
+            },
+            "slug": "Structured-Generative-Models-of-Natural-Source-Code-Maddison-Tarlow",
+            "title": {
+                "fragments": [],
+                "text": "Structured Generative Models of Natural Source Code"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "A family of generative models for NSC that have three key properties: first, they incorporate both sequential and hierarchical structure, second, they learn a distributed representation of source code elements, and third, they integrate closely with a compiler."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2014
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "9283686"
+                        ],
+                        "name": "Mounir Ben Nasr",
+                        "slug": "Mounir-Ben-Nasr",
+                        "structuredName": {
+                            "firstName": "Mounir",
+                            "lastName": "Ben Nasr",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mounir Ben Nasr"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144907147"
+                        ],
+                        "name": "M. Chtourou",
+                        "slug": "M.-Chtourou",
+                        "structuredName": {
+                            "firstName": "Mohamed",
+                            "lastName": "Chtourou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Chtourou"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 35253869,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "52121b38358023f1aa3c010434f605e69b612043",
+            "isKey": false,
+            "numCitedBy": 207,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper proposes a new approach which combines unsupervised and supervised learning for training recurrent neural networks (RNNs). In this approach, the weights between input and hidden layers were determined according to an unsupervised procedure relying on the Kohonen algorithm and the weights between hidden and output layers were updated according to a supervised procedure based on dynamic gradient descent method. The simulation results show that the proposed method performs well in comparison with the back propagation through time algorithm."
+            },
+            "slug": "On-the-training-of-recurrent-neural-networks-Nasr-Chtourou",
+            "title": {
+                "fragments": [],
+                "text": "On the training of recurrent neural networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "This paper proposes a new approach which combines unsupervised and supervised learning for training recurrent neural networks (RNNs) and results show that the proposed method performs well in comparison with the back propagation through time algorithm."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Eighth International Multi-Conference on Systems, Signals & Devices"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144756076"
+                        ],
+                        "name": "Yong Jae Lee",
+                        "slug": "Yong-Jae-Lee",
+                        "structuredName": {
+                            "firstName": "Yong",
+                            "lastName": "Lee",
+                            "middleNames": [
+                                "Jae"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yong Jae Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1794409"
+                        ],
+                        "name": "K. Grauman",
+                        "slug": "K.-Grauman",
+                        "structuredName": {
+                            "firstName": "Kristen",
+                            "lastName": "Grauman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Grauman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 15615355,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8a1440354e299d5cac6f80f1f4102cc6c6546311",
+            "isKey": false,
+            "numCitedBy": 192,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Objects vary in their visual complexity, yet existing discovery methods perform \u201cbatch\u201d clustering, paying equal attention to all instances simultaneously \u2014 regardless of the strength of their appearance or context cues. We propose a self-paced approach that instead focuses on the easiest instances first, and progressively expands its repertoire to include more complex objects. Easier regions are defined as those with both high likelihood of generic objectness and high familiarity of surrounding objects. At each cycle of the discovery process, we re-estimate the easiness of each subwindow in the pool of unlabeled images, and then retrieve a single prominent cluster from among the easiest instances. Critically, as the system gradually accumulates models, each new (more difficult) discovery benefits from the context provided by earlier discoveries. Our experiments demonstrate the clear advantages of self-paced discovery relative to conventional batch approaches, including both more accurate summarization as well as stronger predictive models for novel data."
+            },
+            "slug": "Learning-the-easy-things-first:-Self-paced-visual-Lee-Grauman",
+            "title": {
+                "fragments": [],
+                "text": "Learning the easy things first: Self-paced visual category discovery"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "This work proposes a self-paced approach that focuses on the easiest instances first, and progressively expands its repertoire to include more complex objects, including both more accurate summarization as well as stronger predictive models for novel data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CVPR 2011"
+            },
+            "year": 2011
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3357868"
+                        ],
+                        "name": "T. Hill",
+                        "slug": "T.-Hill",
+                        "structuredName": {
+                            "firstName": "Theodore",
+                            "lastName": "Hill",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Hill"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 1346106,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "bb34958574c3866bc8f096c344b476548c56f5b1",
+            "isKey": false,
+            "numCitedBy": 619,
+            "numCiting": 40,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The history, empirical evidence and classical explanations of the significant-digit (or Benford's) law are reviewed, followed by a sum- mary of recent invariant-measure characterizations. Then a new statisti- cal derivation of the law in the form of a CLT-like theorem for significant digits is presented. If distributions are selected at random (in any \"unbi- ased\" way) and random samples are then taken from each of these dis- tributions, the significant digits of the combined sample will converge to the logarithmic (Benford) distribution. This helps explain and predict the appearance of the significant-digit phenomenon in many different empir- ical contexts and helps justify its recent application to computer design, mathematical modelling and detection of fraud in accounting data."
+            },
+            "slug": "A-Statistical-Derivation-of-the-Significant-Digit-Hill",
+            "title": {
+                "fragments": [],
+                "text": "A Statistical Derivation of the Significant-Digit Law"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "If distributions are selected at random (in any \"unbi- ased\" way) and random samples are then taken from each of these dis- tributions, the significant digits of the combined sample will converge to the logarithmic (Benford) distribution."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Baseline \" prediction: -278797 Naive \" prediction: -241144 Mix \" prediction: -252080 Combined \" prediction: -277882. Input: g=801925; print((58095+(g+(824920 if 842317>176260 else 570318))))"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Baseline \" prediction: -278797 Naive \" prediction: -241144 Mix \" prediction: -252080 Combined \" prediction: -277882. Input: g=801925; print((58095+(g+(824920 if 842317>176260 else 570318))))"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Baseline \" prediction: 136860087 Naive \" prediction: 136883928. \" Mix \" prediction: 136882728. \" Combined \" prediction: 136882728. Input: print"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Baseline \" prediction: 136860087 Naive \" prediction: 136883928. \" Mix \" prediction: 136882728. \" Combined \" prediction: 136882728. Input: print"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Long shortterm memory"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural computation,"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Baseline \" prediction: 24000349 Naive \" prediction: 24018872. \" Mix \" prediction: 23017572"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Baseline \" prediction: 24000349 Naive \" prediction: 24018872. \" Mix \" prediction: 23017572"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Bengio , Yoshua , BoulangerLewandowski , Nicolas , and Pascanu , Razvan . Advances in optimizing recurrent networks"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            }
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 9,
+            "methodology": 14
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 32,
+        "totalPages": 4
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Learning-to-Execute-Zaremba-Sutskever/0d0b3ff23fbf1ec7a0dfebd923a3ef224306491a?sort=total-citations"
+}

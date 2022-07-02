@@ -1,0 +1,648 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2544946"
+                        ],
+                        "name": "K. Seymore",
+                        "slug": "K.-Seymore",
+                        "structuredName": {
+                            "firstName": "Kristie",
+                            "lastName": "Seymore",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Seymore"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145903504"
+                        ],
+                        "name": "Ronald Rosenfeld",
+                        "slug": "Ronald-Rosenfeld",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Rosenfeld",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronald Rosenfeld"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Further analysis, detailed results and ideas for future investigation are presented in [ 5 ]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17225221,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1f232ee6d94752ed423c8c6433953d66032a1f54",
+            "isKey": false,
+            "numCitedBy": 13,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract : When a trigram backoff language model is created from a large body of text, trigrams and bigrams that occur few times in the training text are often excluded from the model in order to decrease the model size. Generally, the elimination of n-grams with very low counts is believed to not significantly affect model performance. This project investigates the degradation of a trigram backoff model's perplexity and word error rates as bigram and trigram cutoffs are increased. The advantage of reduction in model size is compared to the increase in word error rate and perplexity scores. More importantly, this project also investigates alternative ways of excluding bigrams and trigrams from a backoff language model, using criteria other than the number of times an n-gram occurred in the training text. Specifically, a difference method has been investigated where the difference in the logs of the original and backed off trigram and bigram probabilities was used as a basis for n-gram exclusion from the model. We have shown that excluding trigrams and bigrams based on a weighted version of this difference method results in better perplexity and word error rate performance than excluding trigrams and bigrams based on counts alone."
+            },
+            "slug": "Scalable-Trigram-Backoff-Language-Models-Seymore-Rosenfeld",
+            "title": {
+                "fragments": [],
+                "text": "Scalable Trigram Backoff Language Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "Examining alternative ways of excluding bigrams and trigrams from a backoff language model, using criteria other than the number of times an n-gram occurred in the training text shows that excluding trigrams and bigrams based on a weighted version of this difference method results in better perplexity and word error rate performance."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145903504"
+                        ],
+                        "name": "Ronald Rosenfeld",
+                        "slug": "Ronald-Rosenfeld",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Rosenfeld",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronald Rosenfeld"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In previous work ([ 3 ]), we found a similar effect on the OOV rate."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2020143,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e76eda9921f7e163f55bf437bd627f6b8101580c",
+            "isKey": false,
+            "numCitedBy": 93,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "I study the effect of various types and amounts of North American Business language data on the quality of the derived vocabulary, and use my findings to derive an improved ranking of the words, using only 19% of the NAB corpus. I then study the conflicting effects of increased vocabulary size on a speech recognizer\u2019s accuracy, and use the result to pick an optimal vocabulary size. A similar analysis of ngram coverage yields a very different outcome, with the best system being the one based on the most data. 1. Vocabulary Optimization 1.1. OOV curve minimization Since Out-Of-Vocabulary (OOV) rate directly affects Word Error Rate, with every OOV word in the test data resulting in at least one (and often more) recognition errors, I set out to minimize the expected OOV rate of the test data. More generally, my goal was to understand how availability of various types and amounts of training data, from various time periods, affects the quality of the derived vocabulary . Given a collection of training data, I sought to create an ordered word list with the lowest possible OOV curve, such that, for any desired vocabulary size V, a minimum-OOV-rate vocabulary could be derived by taking the first V words in that list. Viewed this way, the problem becomes one of estimating unigram probabilities of the test distribution, and then ordering the words by these estimates. The test set consisted of 1.4M words worth of North American Business news. The training data was the 227M-word NAB corpus (see [Roseneld 95] for details). In all studies, except where otherwise noted, the word list was ordered by decreasing frequency in the appropriate subset of the training data. I first set out to measure the effect on OOV rate of the seasonality of the training data, namely the time of year from which it is drawn. For each month of the year, I created a word list based on some 9MW of training data from that month. The test data was drawn from 4/94, so a seasonal effect might reduce the OOV rate of training data from this or adjacent months. As Figure 1 shows, no such effect was found. Next I measured the correlation of OOV rate with the amount of training data. I added training data in increments of 5MW, and measured the impact on OOV rate. I added data in decreased order of recency, so as not to confound the effect of the amount of data with that of its recency. Figure 2 shows my findings. As expected, more training data results in lower OOV rates. But improvement slows down considerably after 30MW\u201350MW. Next, I studied the effect of 1The vocabulary thus derived is static. It can serve as the initial vocabulary, to be optionally extended at runtime based on the words encountered in the test data. 1 2 3 4 Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec % O O V Month of training data 20KW 40KW 60KW Figure 1: Month from which training data is drawn has no effect on OOV rates (test data is from April). recency of the training data. Figure 3 shows OOV rates based on similar amounts of training data (about 5MW), but from different time periods. Time indeed makes a difference, albeit slowly. Over a period of 2 years, the 20KW (60KW) OOV rate degraded by 5% (15%). Over 4.5 years, it degraded by 11% (24%). The difference that the source of the training data can make is evident in Figure 4. An OOV curve based on the Wall-Street-Journal(1990) part of the data (10MW), is lower than that based on the San-JoseMercury(1991) part (11MW), even though the latter is larger and more recent. Next, I accumulated data starting from the most recent period and going backwards in time. Given the inherent tradeoff between the amount of data and its recency and source, I hypothesized a U-shape OOV curve, which was indeed achieved as can be seen in Figure 5 (the last datapoint is based on the entire 227MW NAB training corpus). The peak was achieved at about 40MW. It is interesting that the best overall coverage was obtained using only 19% of the available training data! If recent data is more useful, can we benefit from emphasizing it? Several such attempts failed. The only one that was mildly successful was based on a \u201cleaky capacitor\u201d model of word probabilities. Discounting the word counts by 1% every week reduced the OOV"
+            },
+            "slug": "Optimizing-lexical-and-N-gram-coverage-via-use-of-Rosenfeld",
+            "title": {
+                "fragments": [],
+                "text": "Optimizing lexical and N-gram coverage via judicious use of linguistic data"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "I study the effect of various types and amounts of North American Business language data on the quality of the derived vocabulary, and use my findings to derive an improved ranking of the words, using only 19% of the NAB corpus."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EUROSPEECH"
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35229948"
+                        ],
+                        "name": "S. Katz",
+                        "slug": "S.-Katz",
+                        "structuredName": {
+                            "firstName": "Slava",
+                            "lastName": "Katz",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Katz"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 52,
+                                "start": 49
+                            }
+                        ],
+                        "text": "The backoff language model was developed by Katz [2] to address the problems associated with sparse training data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 71
+                            }
+                        ],
+                        "text": "THE BACKOFF LANGUAGE MODEL\nThe backoff language model was developed by Katz [2] to address the problems associated with sparse training data."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 9,
+                                "start": 5
+                            }
+                        ],
+                        "text": "S.M. Katz, \u201cEstimation of Probabilities from Sparse Data for the Language Model Component of a Speech Recognizer\u201d, in IEEE Transactions on Acoustics, Speech and Signal Processing, volume ASSP-35, pages 400-401, March 1987."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 6555412,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b0130277677e5b915d5cd86b3afafd77fd08eb2e",
+            "isKey": false,
+            "numCitedBy": 1908,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The description of a novel type of m-gram language model is given. The model offers, via a nonlinear recursive procedure, a computation and space efficient solution to the problem of estimating probabilities from sparse data. This solution compares favorably to other proposed methods. While the method has been developed for and successfully implemented in the IBM Real Time Speech Recognizers, its generality makes it applicable in other areas where the problem of estimating probabilities from sparse data arises."
+            },
+            "slug": "Estimation-of-probabilities-from-sparse-data-for-of-Katz",
+            "title": {
+                "fragments": [],
+                "text": "Estimation of probabilities from sparse data for the language model component of a speech recognizer"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "The model offers, via a nonlinear recursive procedure, a computation and space efficient solution to the problem of estimating probabilities from sparse data, and compares favorably to other proposed methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Acoust. Speech Signal Process."
+            },
+            "year": 1987
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145903504"
+                        ],
+                        "name": "Ronald Rosenfeld",
+                        "slug": "Ronald-Rosenfeld",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Rosenfeld",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ronald Rosenfeld"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 170,
+                                "start": 167
+                            }
+                        ],
+                        "text": "In order to investigate the effects of raising bigram and trigram cutoffs, several models were created using the Carnegie Mellon Statistical Language Modeling Toolkit [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 61832335,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "da0f0015ea687fd7285796f8f806a3c49033163f",
+            "isKey": false,
+            "numCitedBy": 123,
+            "numCiting": 7,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The Carnegie Mellon Statistical Language Modeling (CMU SLM) Toolkit is a set of Unix software tools designed to facilitate language modeling work in the research community. The package, including source code, is freely available for research purposes. As of December 1994, the toolkit is in active use by 23 research groups in 8 countries. It was recently used to process the 2.5 GB NAB corpus for the ARPA CSR community. In this paper, I firstdiscuss the design principles and features of the toolkit. Then, I describe the composition of the NAB corpus, and report on the ngram statistics, standard vocabulary and language models created using the SLM tools."
+            },
+            "slug": "The-CMU-Statistical-Language-Modeling-Toolkit-and-Rosenfeld",
+            "title": {
+                "fragments": [],
+                "text": "The CMU Statistical Language Modeling Toolkit and its use in the 1994 ARPA CSR Evaluation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The design principles and features of the CMU SLM toolkit are discussed, the composition of the NAB corpus is described, and reports are reported on the ngram statistics, standard vocabulary and language models created using the SLM tools."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48892185"
+                        ],
+                        "name": "J. Teahan",
+                        "slug": "J.-Teahan",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Teahan",
+                            "middleNames": [
+                                "K"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Teahan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1752317"
+                        ],
+                        "name": "J. Cleary",
+                        "slug": "J.-Cleary",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Cleary",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Cleary"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 6633939,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d36910319d11359b995ff5413696aa9e9995e163",
+            "isKey": false,
+            "numCitedBy": 369,
+            "numCiting": 10,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "\\A new data structure for cumulative probability tables\". Soft-\\The zero-frequency problem: estimating the probabilities of novel events in adaptive text compression\"."
+            },
+            "slug": "\\self-organized-Language-Modeling-for-Speech-In-Teahan-Cleary",
+            "title": {
+                "fragments": [],
+                "text": "\\self-organized Language Modeling for Speech Recognition\". In"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 61,
+                "text": "The zero-frequency problem: estimating the probabilities of novel events in adaptive text compression and a new data structure for cumulative probability tables are studied."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2472759"
+                        ],
+                        "name": "F. Jelinek",
+                        "slug": "F.-Jelinek",
+                        "structuredName": {
+                            "firstName": "Frederick",
+                            "lastName": "Jelinek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Jelinek"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 59710768,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a6d096d6fa1b39aeeca0a9114b3b3ecdeb960a38",
+            "isKey": false,
+            "numCitedBy": 230,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Self-organizing-language-modeling-for-speech-Jelinek",
+            "title": {
+                "fragments": [],
+                "text": "Self-organizing language modeling for speech recognition"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1985
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 90,
+                                "start": 87
+                            }
+                        ],
+                        "text": "Further analysis, detailed results and ideas for future investigation are presented in [5]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "and R"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Rosenfeld, \u201c Scalable Trigram Backoff Language Models\u201d,  Carnegie Mellon University Tech Report CMUCS-96-139,  May"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 79
+                            }
+                        ],
+                        "text": "Furtheranalysis,detailedresultsandideasfor future investigation arepresentedin [5]."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Rosenfeld,\u201c ScalableTrigramBackoff LanguageModels\u201d,Carnegie"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Mellon University Tech Report CMUCS-96-139,"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Self OrganizedLanguageModeling for Speech Recognition\u201d,in Readings in Speech Recognition, Alex"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1989
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Self OrganizedLanguageModeling for Speech Recognition \u201d"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Readings in Speech Recognition , Alex Waibel andKaiFuLee"
+            },
+            "year": 1989
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 71
+                            }
+                        ],
+                        "text": "THE BACKOFF LANGUAGE MODEL\nThe backoff language model was developed by Katz [2] to address the problems associated with sparse training data."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 43
+                            }
+                        ],
+                        "text": "Thebackof languagemodelwasdevelopedby Katz [2] to address theproblemsassociatedwith sparsetrainingdata."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 9,
+                                "start": 5
+                            }
+                        ],
+                        "text": "S.M. Katz, \u201cEstimation of Probabilities from Sparse Data for the Language Model Component of a Speech Recognizer\u201d, in IEEE Transactions on Acoustics, Speech and Signal Processing, volume ASSP-35, pages 400-401, March 1987."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Estimation of Probabilitiesfrom SparseData for the LanguageModel Componentof a SpeechRecognizer\u201d,in"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Transactions on Acoustics, Speech and Signal Processing,"
+            },
+            "year": 1987
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 4,
+            "methodology": 2
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 11,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Scalable-backoff-language-models-Seymore-Rosenfeld/d2c182f105d8ba97a7f26364055cdc4fb65b5a7f?sort=total-citations"
+}

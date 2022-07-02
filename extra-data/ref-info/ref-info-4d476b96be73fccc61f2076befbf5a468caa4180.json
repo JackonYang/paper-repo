@@ -1,0 +1,4136 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1710604"
+                        ],
+                        "name": "R. Memisevic",
+                        "slug": "R.-Memisevic",
+                        "structuredName": {
+                            "firstName": "Roland",
+                            "lastName": "Memisevic",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Memisevic"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 43,
+                                "start": 39
+                            }
+                        ],
+                        "text": "The gated Restricted Boltzmann Machine [10] differs from other conditional RBM architectures (e."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Sutskever and Hinton [12] proposed a type of temporal RBM for video."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 81,
+                                "start": 77
+                            }
+                        ],
+                        "text": "Our work extends the Gated RBM (GRBM) model proposed by Memisevic and Hinton [10]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 37
+                            }
+                        ],
+                        "text": "the \u201cshifting pixels\u201d experiments of [10])."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[10, 6]) are trained on isolated patches (not convolutionally), and suffer from the same limitations as static methods."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 111,
+                                "start": 83
+                            }
+                        ],
+                        "text": "This has been generally done by composing modules of the same architecture such as Restricted Boltzmann Machines (RBM) [2], autoencoders [3], or various forms of encoder-decoder networks [4, 6, 7] each of which are trained unsupervised and therefore can take advantage of large amounts of unlabeled image data."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 44,
+                                "start": 40
+                            }
+                        ],
+                        "text": "potentially lost in this representation [10]: the transformation encoded by the feature maps can be much richer than what is expressed by optical flow alone."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 48
+                            }
+                        ],
+                        "text": "We first describe a related approach, the gated Restricted Boltzmann Machine, which models image patches but does not scale to realistic-sized images or video."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 0
+                            }
+                        ],
+                        "text": "Memisevic and Hinton have recently proposed a factored form of the GRBM [11] that drastically reduces the number of free parameters by replacing the three-way weight tensor with three low-rank matrices."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 10
+                            }
+                        ],
+                        "text": "The gated Restricted Boltzmann Machine [10] differs from other conditional RBM architectures (e.g. [21, 12]) in that its inputs change the effective weights of the model instead of simply adjusting the effective biases of visible or latent variables (see Figure 1(left))."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 7778133,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2ac91e028cdc602695b46bd1f372c03b4d2776cf",
+            "isKey": true,
+            "numCitedBy": 213,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a probabilistic model for learning rich, distributed representations of image transformations. The basic model is defined as a gated conditional random field that is trained to predict transformations of its inputs using a factorial set of latent variables. Inference in the model consists in extracting the transformation, given a pair of images, and can be performed exactly and efficiently. We show that, when trained on natural videos, the model develops domain specific motion features, in the form of fields of locally transformed edge filters. When trained on affine, or more general, transformations of still images, the model develops codes for these transformations, and can subsequently perform recognition tasks that are invariant under these transformations. It can also fantasize new transformations on previously unseen images. We describe several variations of the basic model and provide experimental results that demonstrate its applicability to a variety of tasks."
+            },
+            "slug": "Unsupervised-Learning-of-Image-Transformations-Memisevic-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "Unsupervised Learning of Image Transformations"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 67,
+                "text": "A probabilistic model for learning rich, distributed representations of image transformations that develops domain specific motion features, in the form of fields of locally transformed edge filters, and can fantasize new transformations on previously unseen images."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2007 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143991676"
+                        ],
+                        "name": "I. Laptev",
+                        "slug": "I.-Laptev",
+                        "structuredName": {
+                            "firstName": "Ivan",
+                            "lastName": "Laptev",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Laptev"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3502855"
+                        ],
+                        "name": "Marcin Marszalek",
+                        "slug": "Marcin-Marszalek",
+                        "structuredName": {
+                            "firstName": "Marcin",
+                            "lastName": "Marszalek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcin Marszalek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3261451"
+                        ],
+                        "name": "Benjamin Rozenfeld",
+                        "slug": "Benjamin-Rozenfeld",
+                        "structuredName": {
+                            "firstName": "Benjamin",
+                            "lastName": "Rozenfeld",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Benjamin Rozenfeld"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 37
+                            }
+                        ],
+                        "text": "The currently best performing method [17] uses the STIP interest-point detector and HOG/HOF or HOF descriptors (91."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 209,
+                                "start": 205
+                            }
+                        ],
+                        "text": "\u2019s spatio-temporal interest points (STIP) [16] used in conjunction with the \u201cHOG/HOF\u201d descriptor that computes histograms of spatial gradients and optic flow accumulated in local space-time neighbourhoods [17]; 2) Dollar et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12365014,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0f86767732f76f478d5845f2e59f99ba106e9265",
+            "isKey": false,
+            "numCitedBy": 3595,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The aim of this paper is to address recognition of natural human actions in diverse and realistic video settings. This challenging but important subject has mostly been ignored in the past due to several problems one of which is the lack of realistic and annotated video datasets. Our first contribution is to address this limitation and to investigate the use of movie scripts for automatic annotation of human actions in videos. We evaluate alternative methods for action retrieval from scripts and show benefits of a text-based classifier. Using the retrieved action samples for visual learning, we next turn to the problem of action classification in video. We present a new method for video classification that builds upon and extends several recent ideas including local space-time features, space-time pyramids and multi-channel non-linear SVMs. The method is shown to improve state-of-the-art results on the standard KTH action dataset by achieving 91.8% accuracy. Given the inherent problem of noisy labels in automatic annotation, we particularly investigate and show high tolerance of our method to annotation errors in the training set. We finally apply the method to learning and classifying challenging action classes in movies and show promising results."
+            },
+            "slug": "Learning-realistic-human-actions-from-movies-Laptev-Marszalek",
+            "title": {
+                "fragments": [],
+                "text": "Learning realistic human actions from movies"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "A new method for video classification that builds upon and extends several recent ideas including local space-time features,space-time pyramids and multi-channel non-linear SVMs is presented and shown to improve state-of-the-art results on the standard KTH action dataset."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2008 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3202046"
+                        ],
+                        "name": "C. Cadieu",
+                        "slug": "C.-Cadieu",
+                        "structuredName": {
+                            "firstName": "Charles",
+                            "lastName": "Cadieu",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Cadieu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1708655"
+                        ],
+                        "name": "B. Olshausen",
+                        "slug": "B.-Olshausen",
+                        "structuredName": {
+                            "firstName": "Bruno",
+                            "lastName": "Olshausen",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Olshausen"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[10, 6]) are trained on isolated patches (not convolutionally), and suffer from the same limitations as static methods."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 129,
+                                "start": 126
+                            }
+                        ],
+                        "text": "Building on the rapidly growing literature on sparse over-complete decompositions of image patches [13], Cadieu and Olshausen [6] have proposed a two-layer probabilistic model that learns complex motion features from video."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 196,
+                                "start": 187
+                            }
+                        ],
+                        "text": "This has been generally done by composing modules of the same architecture such as Restricted Boltzmann Machines (RBM) [2], autoencoders [3], or various forms of encoder-decoder networks [4, 6, 7] each of which are trained unsupervised and therefore can take advantage of large amounts of unlabeled image data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1938307,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "65dbbd5844bc5d3a5cb325fde48e87a688556a33",
+            "isKey": false,
+            "numCitedBy": 78,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a hierarchical, probabilistic model that learns to extract complex motion from movies of the natural environment. The model consists of two hidden layers: the first layer produces a sparse representation of the image that is expressed in terms of local amplitude and phase variables. The second layer learns the higher-order structure among the time-varying phase variables. After training on natural movies, the top layer units discover the structure of phase-shifts within the first layer. We show that the top layer units encode transformational invariants: they are selective for the speed and direction of a moving pattern, but are invariant to its spatial structure (orientation/spatial-frequency). The diversity of units in both the intermediate and top layers of the model provides a set of testable predictions for representations that might be found in VI and MT. In addition, the model demonstrates how feedback from higher levels can influence representations at lower levels as a by-product of inference in a graphical model."
+            },
+            "slug": "Learning-Transformational-Invariants-from-Natural-Cadieu-Olshausen",
+            "title": {
+                "fragments": [],
+                "text": "Learning Transformational Invariants from Natural Movies"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 65,
+                "text": "A hierarchical, probabilistic model that learns to extract complex motion from movies of the natural environment that encoded transformational invariants, which are selective for the speed and direction of a moving pattern, but are invariant to its spatial structure."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1710604"
+                        ],
+                        "name": "R. Memisevic",
+                        "slug": "R.-Memisevic",
+                        "structuredName": {
+                            "firstName": "Roland",
+                            "lastName": "Memisevic",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Memisevic"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 72
+                            }
+                        ],
+                        "text": "Memisevic and Hinton have recently proposed a factored form of the GRBM [11] that drastically reduces the number of free parameters by replacing the three-way weight tensor with three low-rank matrices."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1413690,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0eb2e4a205a628ab059cab41d3b772f614ad29f2",
+            "isKey": false,
+            "numCitedBy": 274,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "To allow the hidden units of a restricted Boltzmann machine to model the transformation between two successive images, Memisevic and Hinton (2007) introduced three-way multiplicative interactions that use the intensity of a pixel in the first image as a multiplicative gain on a learned, symmetric weight between a pixel in the second image and a hidden unit. This creates cubically many parameters, which form a three-dimensional interaction tensor. We describe a low-rank approximation to this interaction tensor that uses a sum of factors, each of which is a three-way outer product. This approximation allows efficient learning of transformations between larger image patches. Since each factor can be viewed as an image filter, the model as a whole learns optimal filter pairs for efficiently representing transformations. We demonstrate the learning of optimal filter pairs from various synthetic and real image sequences. We also show how learning about image transformations allows the model to perform a simple visual analogy task, and we show how a completely unsupervised network trained on transformations perceives multiple motions of transparent dot patterns in the same way as humans."
+            },
+            "slug": "Learning-to-Represent-Spatial-Transformations-with-Memisevic-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "Learning to Represent Spatial Transformations with Factored Higher-Order Boltzmann Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A low-rank approximation to this interaction tensor that uses a sum of factors, each of which is a three-way outer product, which allows efficient learning of transformations between larger image patches and demonstrates the learning of optimal filter pairs from various synthetic and real image sequences."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2010
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1701686"
+                        ],
+                        "name": "Ilya Sutskever",
+                        "slug": "Ilya-Sutskever",
+                        "structuredName": {
+                            "firstName": "Ilya",
+                            "lastName": "Sutskever",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ilya Sutskever"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 70
+                            }
+                        ],
+                        "text": "Our work extends the Gated RBM (GRBM) model proposed by Memisevic and Hinton [10]."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[21, 12]) in that its inputs change the effective weights of the model instead of simply adjusting the effective biases of visible or latent variables (see Figure 1(left))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 25,
+                                "start": 21
+                            }
+                        ],
+                        "text": "Sutskever and Hinton [12] proposed a type of temporal RBM for video."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 20,
+                                "start": 14
+                            }
+                        ],
+                        "text": "Memisevic and Hinton have recently proposed a factored form of the GRBM [11] that drastically reduces the number of free parameters by replacing the three-way weight tensor with three low-rank matrices."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 2837110,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c74e230a5a6fd5e2db6ace765ce38afe65f96214",
+            "isKey": true,
+            "numCitedBy": 242,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a new family of non-linear sequence models that are substantially more powerful than hidden Markov models or linear dynamical systems. Our models have simple approximate inference and learning procedures that work well in practice. Multilevel representations of sequential data can be learned one hidden layer at a time, and adding extra hidden layers improves the resulting generative models. The models can be trained with very high-dimensional, very non-linear data such as raw pixel sequences. Their performance is demonstrated using synthetic video sequences of two balls bouncing in a box."
+            },
+            "slug": "Learning-Multilevel-Distributed-Representations-for-Sutskever-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "Learning Multilevel Distributed Representations for High-Dimensional Sequences"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A new family of non-linear sequence models that are substantially more powerful than hidden Markov models or linear dynamical systems are described, and their performance is demonstrated using synthetic video sequences of two balls bouncing in a box."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AISTATS"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1697141"
+                        ],
+                        "name": "Honglak Lee",
+                        "slug": "Honglak-Lee",
+                        "structuredName": {
+                            "firstName": "Honglak",
+                            "lastName": "Lee",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Honglak Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1785346"
+                        ],
+                        "name": "Roger B. Grosse",
+                        "slug": "Roger-B.-Grosse",
+                        "structuredName": {
+                            "firstName": "Roger",
+                            "lastName": "Grosse",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Roger B. Grosse"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2615814"
+                        ],
+                        "name": "R. Ranganath",
+                        "slug": "R.-Ranganath",
+                        "structuredName": {
+                            "firstName": "Rajesh",
+                            "lastName": "Ranganath",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Ranganath"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 38
+                            }
+                        ],
+                        "text": "Here, we have adopted the notation of [8] where \u03b1 indexes the pooling units and also define a block formally as B\u03b1 tpm,nq : zm,n belongs to the block \u03b1u."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 56
+                            }
+                        ],
+                        "text": "This idea has been recently used in the context of RBMs [8, 9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 59
+                            }
+                        ],
+                        "text": "4 is similar to the energy function of a convolutional RBM [8], except that what was previously a filter weight with 3 indices: r, s, k has been replaced by a conditional filter weight, \u03b3pxqr,s,m,n \u00b0Nx w u,v W k r,s,u,vxm u 1,n v 1, with 5 indices."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[8] thus introduced probabilistic max-pooling in the context of convolutional RBMs."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12008458,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1e80f755bcbf10479afd2338cec05211fdbd325c",
+            "isKey": true,
+            "numCitedBy": 2510,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "There has been much interest in unsupervised learning of hierarchical generative models such as deep belief networks. Scaling such models to full-sized, high-dimensional images remains a difficult problem. To address this problem, we present the convolutional deep belief network, a hierarchical generative model which scales to realistic image sizes. This model is translation-invariant and supports efficient bottom-up and top-down probabilistic inference. Key to our approach is probabilistic max-pooling, a novel technique which shrinks the representations of higher layers in a probabilistically sound way. Our experiments show that the algorithm learns useful high-level visual features, such as object parts, from unlabeled images of objects and natural scenes. We demonstrate excellent performance on several visual recognition tasks and show that our model can perform hierarchical (bottom-up and top-down) inference over full-sized images."
+            },
+            "slug": "Convolutional-deep-belief-networks-for-scalable-of-Lee-Grosse",
+            "title": {
+                "fragments": [],
+                "text": "Convolutional deep belief networks for scalable unsupervised learning of hierarchical representations"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 50,
+                "text": "The convolutional deep belief network is presented, a hierarchical generative model which scales to realistic image sizes and is translation-invariant and supports efficient bottom-up and top-down probabilistic inference."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML '09"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3127283"
+                        ],
+                        "name": "Piotr Doll\u00e1r",
+                        "slug": "Piotr-Doll\u00e1r",
+                        "structuredName": {
+                            "firstName": "Piotr",
+                            "lastName": "Doll\u00e1r",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Piotr Doll\u00e1r"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1762649"
+                        ],
+                        "name": "V. Rabaud",
+                        "slug": "V.-Rabaud",
+                        "structuredName": {
+                            "firstName": "Vincent",
+                            "lastName": "Rabaud",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Rabaud"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "48524603"
+                        ],
+                        "name": "G. Cottrell",
+                        "slug": "G.-Cottrell",
+                        "structuredName": {
+                            "firstName": "Gary",
+                            "lastName": "Cottrell",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Cottrell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50172592"
+                        ],
+                        "name": "Serge J. Belongie",
+                        "slug": "Serge-J.-Belongie",
+                        "structuredName": {
+                            "firstName": "Serge",
+                            "lastName": "Belongie",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Serge J. Belongie"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 22
+                            }
+                        ],
+                        "text": "\u2019s \u201cCuboids\u201d approach [18] used in conjunction with several different descriptor types; and 3) Willems et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1956774,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9f1707caad72573633c2307fa26ec093e8f4bb03",
+            "isKey": false,
+            "numCitedBy": 2717,
+            "numCiting": 35,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A common trend in object recognition is to detect and leverage the use of sparse, informative feature points. The use of such features makes the problem more manageable while providing increased robustness to noise and pose variation. In this work we develop an extension of these ideas to the spatio-temporal case. For this purpose, we show that the direct 3D counterparts to commonly used 2D interest point detectors are inadequate, and we propose an alternative. Anchoring off of these interest points, we devise a recognition algorithm based on spatio-temporally windowed data. We present recognition results on a variety of datasets including both human and rodent behavior."
+            },
+            "slug": "Behavior-recognition-via-sparse-spatio-temporal-Doll\u00e1r-Rabaud",
+            "title": {
+                "fragments": [],
+                "text": "Behavior recognition via sparse spatio-temporal features"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown that the direct 3D counterparts to commonly used 2D interest point detectors are inadequate, and an alternative is proposed, and a recognition algorithm based on spatio-temporally windowed data is devised."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2005 IEEE International Workshop on Visual Surveillance and Performance Evaluation of Tracking and Surveillance"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2712738"
+                        ],
+                        "name": "C. Sch\u00fcldt",
+                        "slug": "C.-Sch\u00fcldt",
+                        "structuredName": {
+                            "firstName": "Christian",
+                            "lastName": "Sch\u00fcldt",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Sch\u00fcldt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143991676"
+                        ],
+                        "name": "I. Laptev",
+                        "slug": "I.-Laptev",
+                        "structuredName": {
+                            "firstName": "Ivan",
+                            "lastName": "Laptev",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Laptev"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3033284"
+                        ],
+                        "name": "B. Caputo",
+                        "slug": "B.-Caputo",
+                        "structuredName": {
+                            "firstName": "Barbara",
+                            "lastName": "Caputo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Caputo"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 28,
+                                "start": 24
+                            }
+                        ],
+                        "text": "The KTH actions dataset [26] is the most commonly used dataset in evaluating human action recognition."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 8777811,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b480f6a3750b4cebaf1db205692c8321d45926a2",
+            "isKey": false,
+            "numCitedBy": 3080,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Local space-time features capture local events in video and can be adapted to the size, the frequency and the velocity of moving patterns. In this paper, we demonstrate how such features can be used for recognizing complex motion patterns. We construct video representations in terms of local space-time features and integrate such representations with SVM classification schemes for recognition. For the purpose of evaluation we introduce a new video database containing 2391 sequences of six human actions performed by 25 people in four different scenarios. The presented results of action recognition justify the proposed method and demonstrate its advantage compared to other relative approaches for action recognition."
+            },
+            "slug": "Recognizing-human-actions:-a-local-SVM-approach-Sch\u00fcldt-Laptev",
+            "title": {
+                "fragments": [],
+                "text": "Recognizing human actions: a local SVM approach"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper construct video representations in terms of local space-time features and integrate such representations with SVM classification schemes for recognition and presents the presented results of action recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 17th International Conference on Pattern Recognition, 2004. ICPR 2004."
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "46506697"
+                        ],
+                        "name": "Heng Wang",
+                        "slug": "Heng-Wang",
+                        "structuredName": {
+                            "firstName": "Heng",
+                            "lastName": "Wang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Heng Wang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35033378"
+                        ],
+                        "name": "M. M. Ullah",
+                        "slug": "M.-M.-Ullah",
+                        "structuredName": {
+                            "firstName": "Muhammad",
+                            "lastName": "Ullah",
+                            "middleNames": [
+                                "Muneeb"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. M. Ullah"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2909350"
+                        ],
+                        "name": "Alexander Kl\u00e4ser",
+                        "slug": "Alexander-Kl\u00e4ser",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Kl\u00e4ser",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexander Kl\u00e4ser"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143991676"
+                        ],
+                        "name": "I. Laptev",
+                        "slug": "I.-Laptev",
+                        "structuredName": {
+                            "firstName": "Ivan",
+                            "lastName": "Laptev",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Laptev"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 24,
+                                "start": 20
+                            }
+                        ],
+                        "text": "Method AP Prior Art [27]: HOG3D+KM+SVM 45."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 108,
+                                "start": 104
+                            }
+                        ],
+                        "text": "Evidence already indicates that dense-sampling outperforms interest-points on more challenging datasets [27]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 14,
+                                "start": 10
+                            }
+                        ],
+                        "text": "Following [27], we downsampled the spatial resolution of every video clip (which varies between clips) by a factor of 2."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 68
+                            }
+                        ],
+                        "text": "4% which uses dense sampling with HOG/HOF features and quantization [27]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6367640,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a39e6968580762ac5ae3cd064e86e1849f3efb7f",
+            "isKey": true,
+            "numCitedBy": 1452,
+            "numCiting": 30,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Local space-time features have recently become a popular video representation for action recognition. Several methods for feature localization and description have been proposed in the literature and promising recognition results were demonstrated for a number of action classes. The comparison of existing methods, however, is often limited given the different experimental settings used. The purpose of this paper is to evaluate and compare previously proposed space-time features in a common experimental setup. In particular, we consider four different feature detectors and six local feature descriptors and use a standard bag-of-features SVM approach for action recognition. We investigate the performance of these methods on a total of 25 action classes distributed over three datasets with varying difficulty. Among interesting conclusions, we demonstrate that regular sampling of space-time features consistently outperforms all tested space-time interest point detectors for human actions in realistic settings. We also demonstrate a consistent ranking for the majority of methods over different datasets and discuss their advantages and limitations."
+            },
+            "slug": "Evaluation-of-Local-Spatio-temporal-Features-for-Wang-Ullah",
+            "title": {
+                "fragments": [],
+                "text": "Evaluation of Local Spatio-temporal Features for Action Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "It is demonstrated that regular sampling of space-time features consistently outperforms all testedspace-time interest point detectors for human actions in realistic settings and is a consistent ranking for the majority of methods over different datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "BMVC"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2072996455"
+                        ],
+                        "name": "G. Willems",
+                        "slug": "G.-Willems",
+                        "structuredName": {
+                            "firstName": "Geert",
+                            "lastName": "Willems",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Willems"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1704728"
+                        ],
+                        "name": "T. Tuytelaars",
+                        "slug": "T.-Tuytelaars",
+                        "structuredName": {
+                            "firstName": "Tinne",
+                            "lastName": "Tuytelaars",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Tuytelaars"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1681236"
+                        ],
+                        "name": "L. Gool",
+                        "slug": "L.-Gool",
+                        "structuredName": {
+                            "firstName": "Luc",
+                            "lastName": "Gool",
+                            "middleNames": [
+                                "Van"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Gool"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 16,
+                                "start": 12
+                            }
+                        ],
+                        "text": "\u2019s approach [19] which uses the determinant of the Hessian as a saliency measure and computes a weighted sum of Haar wavelet responses within local rectangular sub-volumes."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6242337,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "117d576d72515e900e6fc5a4a0e7f1d0142a8924",
+            "isKey": false,
+            "numCitedBy": 1002,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Over the years, several spatio-temporal interest point detectors have been proposed. While some detectors can only extract a sparse set of scale-invariant features, others allow for the detection of a larger amount of features at user-defined scales. This paper presents for the first time spatio-temporal interest points that are at the same time scale-invariant (both spatially and temporally) and densely cover the video content. Moreover, as opposed to earlier work, the features can be computed efficiently. Applying scale-space theory, we show that this can be achieved by using the determinant of the Hessian as the saliency measure. Computations are speeded-up further through the use of approximative box-filter operations on an integral video structure. A quantitative evaluation and experimental results on action recognition show the strengths of the proposed detector in terms of repeatability, accuracy and speed, in comparison with previously proposed detectors."
+            },
+            "slug": "An-Efficient-Dense-and-Scale-Invariant-Interest-Willems-Tuytelaars",
+            "title": {
+                "fragments": [],
+                "text": "An Efficient Dense and Scale-Invariant Spatio-Temporal Interest Point Detector"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 49,
+                "text": "This paper presents for the first time spatio-temporal interest points that are at the same time scale-invariant (both spatially and temporally) and densely cover the video content and can be computed efficiently."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2073603971"
+                        ],
+                        "name": "Vinod Nair",
+                        "slug": "Vinod-Nair",
+                        "structuredName": {
+                            "firstName": "Vinod",
+                            "lastName": "Nair",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Vinod Nair"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 277,
+                                "start": 274
+                            }
+                        ],
+                        "text": "While the dominant methodology for visual recognition from images and video relies on hand-crafted features, there has been a growing interest in methods that learn low-level and mid-level features, either in supervised [1], unsupervised [2\u2013 4], or semi-supervised settings [5]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2416787,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5a2668bf420d8509a4dfa28e1cdcdac14c649975",
+            "isKey": false,
+            "numCitedBy": 356,
+            "numCiting": 22,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We introduce a new type of top-level model for Deep Belief Nets and evaluate it on a 3D object recognition task. The top-level model is a third-order Boltzmann machine, trained using a hybrid algorithm that combines both generative and discriminative gradients. Performance is evaluated on the NORB database (normalized-uniform version), which contains stereo-pair images of objects under different lighting conditions and viewpoints. Our model achieves 6.5% error on the test set, which is close to the best published result for NORB (5.9%) using a convolutional neural net that has built-in knowledge of translation invariance. It substantially outperforms shallow models such as SVMs (11.6%). DBNs are especially suited for semi-supervised learning, and to demonstrate this we consider a modified version of the NORB recognition task in which additional unlabeled images are created by applying small translations to the images in the database. With the extra unlabeled data (and the same amount of labeled data as before), our model achieves 5.2% error."
+            },
+            "slug": "3D-Object-Recognition-with-Deep-Belief-Nets-Nair-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "3D Object Recognition with Deep Belief Nets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 71,
+                "text": "A new type of top-level model for Deep Belief Nets is introduced, a third-order Boltzmann machine, trained using a hybrid algorithm that combines both generative and discriminative gradients that substantially outperforms shallow models such as SVMs."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144739074"
+                        ],
+                        "name": "Mohammad Norouzi",
+                        "slug": "Mohammad-Norouzi",
+                        "structuredName": {
+                            "firstName": "Mohammad",
+                            "lastName": "Norouzi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mohammad Norouzi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2413711"
+                        ],
+                        "name": "M. Ranjbar",
+                        "slug": "M.-Ranjbar",
+                        "structuredName": {
+                            "firstName": "Mani",
+                            "lastName": "Ranjbar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Ranjbar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "10771328"
+                        ],
+                        "name": "Greg Mori",
+                        "slug": "Greg-Mori",
+                        "structuredName": {
+                            "firstName": "Greg",
+                            "lastName": "Mori",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Greg Mori"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 5,
+                                "start": 1
+                            }
+                        ],
+                        "text": "GRBMs represent the input and output as a vector, and thus ignore the pictorial structure of images."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 6
+                            }
+                        ],
+                        "text": "Gated RBMs extract latent representations that are useful for video understanding tasks."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 22
+                            }
+                        ],
+                        "text": "As with convolutional RBMs, we can express both inference (Eq."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 93,
+                                "start": 89
+                            }
+                        ],
+                        "text": "Lee et al. [8] thus introduced probabilistic max-pooling in the context of convolutional RBMs."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 36,
+                                "start": 32
+                            }
+                        ],
+                        "text": "One way to evaluate third-order RBMs is by experimenting in a domain where optical flow is controlled and regular (e.g. the \u201cshifting pixels\u201d experiments of [10])."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 62,
+                                "start": 56
+                            }
+                        ],
+                        "text": "This idea has been recently used in the context of RBMs [8, 9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 154,
+                                "start": 150
+                            }
+                        ],
+                        "text": "Traditional pooling layers, however, are designed for feed-forward architectures like convolutional nets and do not support generative models such as RBMs that include top-down feedback."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 71
+                            }
+                        ],
+                        "text": "To demonstrate the advantage of low-level feature extraction with convGRBMs, we have replaced the first layer with a standard 3D convolutional layer (32F16 16 2CSG\n1 The choice of using online learning here was simply a matter of convenience due to variable sequence lengths."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 7049840,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "19c8a76bc0a1de5e321573405422406bacfe3e2e",
+            "isKey": true,
+            "numCitedBy": 111,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper we present a method for learning class-specific features for recognition. Recently a greedy layer-wise procedure was proposed to initialize weights of deep belief networks, by viewing each layer as a separate restricted Boltzmann machine (RBM). We develop the convolutional RBM (C-RBM), a variant of the RBM model in which weights are shared to respect the spatial structure of images. This framework learns a set of features that can generate the images of a specific object class. Our feature extraction model is a four layer hierarchy of alternating filtering and maximum subsampling. We learn feature parameters of the first and third layers viewing them as separate C-RBMs. The outputs of our feature extraction hierarchy are then fed as input to a discriminative classifier. It is experimentally demonstrated that the extracted features are effective for object detection, using them to obtain performance comparable to the state of the art on handwritten digit recognition and pedestrian detection."
+            },
+            "slug": "Stacks-of-convolutional-Restricted-Boltzmann-for-Norouzi-Ranjbar",
+            "title": {
+                "fragments": [],
+                "text": "Stacks of convolutional Restricted Boltzmann Machines for shift-invariant feature learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "The convolutional RBM (C-RBM), a variant of the RBM model in which weights are shared to respect the spatial structure of images, is developed, which learns a set of features that can generate the images of a specific object class."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143991676"
+                        ],
+                        "name": "I. Laptev",
+                        "slug": "I.-Laptev",
+                        "structuredName": {
+                            "firstName": "Ivan",
+                            "lastName": "Laptev",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Laptev"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3205375"
+                        ],
+                        "name": "T. Lindeberg",
+                        "slug": "T.-Lindeberg",
+                        "structuredName": {
+                            "firstName": "Tony",
+                            "lastName": "Lindeberg",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Lindeberg"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 46,
+                                "start": 42
+                            }
+                        ],
+                        "text": "\u2019s spatio-temporal interest points (STIP) [16] used in conjunction with the \u201cHOG/HOF\u201d descriptor that computes histograms of spatial gradients and optic flow accumulated in local space-time neighbourhoods [17]; 2) Dollar et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 55,
+                                "start": 51
+                            }
+                        ],
+                        "text": "The currently best performing method [17] uses the STIP interest-point detector and HOG/HOF or HOF descriptors (91.8 and 92.1%, respectively)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 93,
+                                "start": 89
+                            }
+                        ],
+                        "text": "Among the best performing methods are 1) Laptev et al.\u2019s spatio-temporal interest points (STIP) [16] used in conjunction with the \u201cHOG/HOF\u201d descriptor that computes histograms of spatial gradients and optic flow accumulated in local space-time neighbourhoods [17]; 2) Dollar et al.\u2019s \u201cCuboids\u201d approach [18] used in conjunction with several different descriptor types; and 3) Willems et al.\u2019s approach [19] which uses the determinant of the Hessian as a saliency measure and computes a weighted sum of Haar wavelet responses within local rectangular sub-volumes."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 2619278,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "f90d79809325d2b78e35a79ecb372407f81b3993",
+            "isKey": true,
+            "numCitedBy": 2381,
+            "numCiting": 54,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Local image features or interest points provide compact and abstract representations of patterns in an image. We propose to extend the notion of spatial interest points into the spatio-temporal domain and show how the resulting features often reflect interesting events that can be used for a compact representation of video data as well as for its interpretation. To detect spatio-temporal events, we build on the idea of the Harris and Forstner interest point operators and detect local structures in space-time where the image values have significant local variations in both space and time. We then estimate the spatio-temporal extents of the detected events and compute their scale-invariant spatio-temporal descriptors. Using such descriptors, we classify events and construct video representation in terms of labeled space-time points. For the problem of human motion analysis, we illustrate how the proposed method allows for detection of walking people in scenes with occlusions and dynamic backgrounds."
+            },
+            "slug": "Space-time-interest-points-Laptev-Lindeberg",
+            "title": {
+                "fragments": [],
+                "text": "Space-time interest points"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "This work builds on the idea of the Harris and Forstner interest point operators and detects local structures in space-time where the image values have significant local variations in both space and time to detect spatio-temporal events."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings Ninth IEEE International Conference on Computer Vision"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "33913193"
+                        ],
+                        "name": "Xuming He",
+                        "slug": "Xuming-He",
+                        "structuredName": {
+                            "firstName": "Xuming",
+                            "lastName": "He",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xuming He"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1804104"
+                        ],
+                        "name": "R. Zemel",
+                        "slug": "R.-Zemel",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Zemel",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Zemel"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1400347470"
+                        ],
+                        "name": "M. A. Carreira-Perpi\u00f1\u00e1n",
+                        "slug": "M.-A.-Carreira-Perpi\u00f1\u00e1n",
+                        "structuredName": {
+                            "firstName": "Miguel",
+                            "lastName": "Carreira-Perpi\u00f1\u00e1n",
+                            "middleNames": [
+                                "\u00c1."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. A. Carreira-Perpi\u00f1\u00e1n"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[21, 12]) in that its inputs change the effective weights of the model instead of simply adjusting the effective biases of visible or latent variables (see Figure 1(left))."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11859305,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "363b56f85e12389017ba8894056a1b309e46a5f7",
+            "isKey": false,
+            "numCitedBy": 933,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose an approach to include contextual features for labeling images, in which each pixel is assigned to one of a finite set of labels. The features are incorporated into a probabilistic framework, which combines the outputs of several components. Components differ in the information they encode. Some focus on the image-label mapping, while others focus solely on patterns within the label field. Components also differ in their scale, as some focus on fine-resolution patterns while others on coarser, more global structure. A supervised version of the contrastive divergence algorithm is applied to learn these features from labeled image data. We demonstrate performance on two real-world image databases and compare it to a classifier and a Markov random field."
+            },
+            "slug": "Multiscale-conditional-random-fields-for-image-He-Zemel",
+            "title": {
+                "fragments": [],
+                "text": "Multiscale conditional random fields for image labeling"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 89,
+                "text": "An approach to include contextual features for labeling images, in which each pixel is assigned to one of a finite set of labels, are incorporated into a probabilistic framework, which combines the outputs of several components."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004."
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1706809"
+                        ],
+                        "name": "Marc'Aurelio Ranzato",
+                        "slug": "Marc'Aurelio-Ranzato",
+                        "structuredName": {
+                            "firstName": "Marc'Aurelio",
+                            "lastName": "Ranzato",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marc'Aurelio Ranzato"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2060013"
+                        ],
+                        "name": "Christopher S. Poultney",
+                        "slug": "Christopher-S.-Poultney",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Poultney",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher S. Poultney"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3295092"
+                        ],
+                        "name": "S. Chopra",
+                        "slug": "S.-Chopra",
+                        "structuredName": {
+                            "firstName": "Sumit",
+                            "lastName": "Chopra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Chopra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 196,
+                                "start": 187
+                            }
+                        ],
+                        "text": "This has been generally done by composing modules of the same architecture such as Restricted Boltzmann Machines (RBM) [2], autoencoders [3], or various forms of encoder-decoder networks [4, 6, 7] each of which are trained unsupervised and therefore can take advantage of large amounts of unlabeled image data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 819006,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "932c2a02d462abd75af018125413b1ceaa1ee3f4",
+            "isKey": false,
+            "numCitedBy": 1182,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We describe a novel unsupervised method for learning sparse, overcomplete features. The model uses a linear encoder, and a linear decoder preceded by a sparsifying non-linearity that turns a code vector into a quasi-binary sparse code vector. Given an input, the optimal code minimizes the distance between the output of the decoder and the input patch while being as similar as possible to the encoder output. Learning proceeds in a two-phase EM-like fashion: (1) compute the minimum-energy code vector, (2) adjust the parameters of the encoder and decoder so as to decrease the energy. The model produces \"stroke detectors\" when trained on handwritten numerals, and Gabor-like filters when trained on natural image patches. Inference and learning are very fast, requiring no preprocessing, and no expensive sampling. Using the proposed unsupervised method to initialize the first layer of a convolutional network, we achieved an error rate slightly lower than the best reported result on the MNIST dataset. Finally, an extension of the method is described to learn topographical filter maps."
+            },
+            "slug": "Efficient-Learning-of-Sparse-Representations-with-Ranzato-Poultney",
+            "title": {
+                "fragments": [],
+                "text": "Efficient Learning of Sparse Representations with an Energy-Based Model"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 89,
+                "text": "A novel unsupervised method for learning sparse, overcomplete features using a linear encoder, and a linear decoder preceded by a sparsifying non-linearity that turns a code vector into a quasi-binary sparse code vector."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2676982"
+                        ],
+                        "name": "Hueihan Jhuang",
+                        "slug": "Hueihan-Jhuang",
+                        "structuredName": {
+                            "firstName": "Hueihan",
+                            "lastName": "Jhuang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hueihan Jhuang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1981539"
+                        ],
+                        "name": "Thomas Serre",
+                        "slug": "Thomas-Serre",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Serre",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Serre"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145128145"
+                        ],
+                        "name": "Lior Wolf",
+                        "slug": "Lior-Wolf",
+                        "structuredName": {
+                            "firstName": "Lior",
+                            "lastName": "Wolf",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Lior Wolf"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685292"
+                        ],
+                        "name": "T. Poggio",
+                        "slug": "T.-Poggio",
+                        "structuredName": {
+                            "firstName": "Tomaso",
+                            "lastName": "Poggio",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Poggio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[20] propose an approach similar in spirit to ours, using multiple levels of feature detectors at increasing spatio-temporal scale."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10087484,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "124d967683544973581f951ee93b3f7c069e3ced",
+            "isKey": false,
+            "numCitedBy": 771,
+            "numCiting": 93,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a biologically-motivated system for the recognition of actions from video sequences. The approach builds on recent work on object recognition based on hierarchical feedforward architectures [25, 16, 20] and extends a neurobiological model of motion processing in the visual cortex [10]. The system consists of a hierarchy of spatio-temporal feature detectors of increasing complexity: an input sequence is first analyzed by an array of motion- direction sensitive units which, through a hierarchy of processing stages, lead to position-invariant spatio-temporal feature detectors. We experiment with different types of motion-direction sensitive units as well as different system architectures. As in [16], we find that sparse features in intermediate stages outperform dense ones and that using a simple feature selection approach leads to an efficient system that performs better with far fewer features. We test the approach on different publicly available action datasets, in all cases achieving the highest results reported to date."
+            },
+            "slug": "A-Biologically-Inspired-System-for-Action-Jhuang-Serre",
+            "title": {
+                "fragments": [],
+                "text": "A Biologically Inspired System for Action Recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 62,
+                "text": "The approach builds on recent work on object recognition based on hierarchical feedforward architectures and extends a neurobiological model of motion processing in the visual cortex and finds that sparse features in intermediate stages outperform dense ones and that using a simple feature selection approach leads to an efficient system that performs better with far fewer features."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2007 IEEE 11th International Conference on Computer Vision"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3502855"
+                        ],
+                        "name": "Marcin Marszalek",
+                        "slug": "Marcin-Marszalek",
+                        "structuredName": {
+                            "firstName": "Marcin",
+                            "lastName": "Marszalek",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marcin Marszalek"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143991676"
+                        ],
+                        "name": "I. Laptev",
+                        "slug": "I.-Laptev",
+                        "structuredName": {
+                            "firstName": "Ivan",
+                            "lastName": "Laptev",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Laptev"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2462253"
+                        ],
+                        "name": "C. Schmid",
+                        "slug": "C.-Schmid",
+                        "structuredName": {
+                            "firstName": "Cordelia",
+                            "lastName": "Schmid",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Schmid"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[25]: by computing the average precision (AP) for each of the action classes and reporting mean AP over all actions."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 78
+                            }
+                        ],
+                        "text": "This is particularly useful in providing context in more challenging datasets [25] and will aid in applying our method to other tasks, such as scene recognition from video."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 25
+                            }
+                        ],
+                        "text": "6 The Hollywood2 dataset [25] consists of a collection of video clips containing 12 classes of human action extracted from 69 movies."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 3155054,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b705317a618911b5f6e611181eeeece0a7079f80",
+            "isKey": true,
+            "numCitedBy": 636,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper exploits the context of natural dynamic scenes for human action recognition in video. Human actions are frequently constrained by the purpose and the physical properties of scenes and demonstrate high correlation with particular scene classes. For example, eating often happens in a kitchen while running is more common outdoors. The contribution of this paper is three-fold: (a) we automatically discover relevant scene classes and their correlation with human actions, (b) we show how to learn selected scene classes from video without manual supervision and (c) we develop a joint framework for action and scene recognition and demonstrate improved recognition of both in natural video. We use movie scripts as a means of automatic supervision for training. For selected action classes we identify correlated scene classes in text and then retrieve video samples of actions and scenes for training using script-to-video alignment. Our visual models for scenes and actions are formulated within the bag-of-features framework and are combined in a joint scene-action SVM-based classifier. We report experimental results and validate the method on a new large dataset with twelve action classes and ten scene classes acquired from 69 movies."
+            },
+            "slug": "Actions-in-context-Marszalek-Laptev",
+            "title": {
+                "fragments": [],
+                "text": "Actions in context"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "This paper automatically discover relevant scene classes and their correlation with human actions, and shows how to learn selected scene classes from video without manual supervision and develops a joint framework for action and scene recognition and demonstrates improved recognition of both in natural video."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE Conference on Computer Vision and Pattern Recognition"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1697141"
+                        ],
+                        "name": "Honglak Lee",
+                        "slug": "Honglak-Lee",
+                        "structuredName": {
+                            "firstName": "Honglak",
+                            "lastName": "Lee",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Honglak Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1779306"
+                        ],
+                        "name": "Chaitanya Ekanadham",
+                        "slug": "Chaitanya-Ekanadham",
+                        "structuredName": {
+                            "firstName": "Chaitanya",
+                            "lastName": "Ekanadham",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Chaitanya Ekanadham"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 150,
+                                "start": 146
+                            }
+                        ],
+                        "text": "The convGRBM was trained for 50 complete passes over all videos in the training dataset and used a sparsity regularization term in the CD updates [28] that encouraged the hidden units to have a mean activation of 0."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 12589862,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "202cbbf671743aefd380d2f23987bd46b9caaf97",
+            "isKey": false,
+            "numCitedBy": 1028,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Motivated in part by the hierarchical organization of the cortex, a number of algorithms have recently been proposed that try to learn hierarchical, or \"deep,\" structure from unlabeled data. While several authors have formally or informally compared their algorithms to computations performed in visual area V1 (and the cochlea), little attempt has been made thus far to evaluate these algorithms in terms of their fidelity for mimicking computations at deeper levels in the cortical hierarchy. This paper presents an unsupervised learning model that faithfully mimics certain properties of visual area V2. Specifically, we develop a sparse variant of the deep belief networks of Hinton et al. (2006). We learn two layers of nodes in the network, and demonstrate that the first layer, similar to prior work on sparse coding and ICA, results in localized, oriented, edge filters, similar to the Gabor functions known to model V1 cell receptive fields. Further, the second layer in our model encodes correlations of the first layer responses in the data. Specifically, it picks up both colinear (\"contour\") features as well as corners and junctions. More interestingly, in a quantitative comparison, the encoding of these more complex \"corner\" features matches well with the results from the Ito & Komatsu's study of biological V2 responses. This suggests that our sparse variant of deep belief networks holds promise for modeling more higher-order features."
+            },
+            "slug": "Sparse-deep-belief-net-model-for-visual-area-V2-Lee-Ekanadham",
+            "title": {
+                "fragments": [],
+                "text": "Sparse deep belief net model for visual area V2"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "An unsupervised learning model is presented that faithfully mimics certain properties of visual area V2 and the encoding of these more complex \"corner\" features matches well with the results from the Ito & Komatsu's study of biological V2 responses, suggesting that this sparse variant of deep belief networks holds promise for modeling more higher-order features."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39971338"
+                        ],
+                        "name": "Thomas L. Dean",
+                        "slug": "Thomas-L.-Dean",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Dean",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas L. Dean"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145489248"
+                        ],
+                        "name": "R. Washington",
+                        "slug": "R.-Washington",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Washington",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Washington"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32131713"
+                        ],
+                        "name": "G. Corrado",
+                        "slug": "G.-Corrado",
+                        "structuredName": {
+                            "firstName": "Gregory",
+                            "lastName": "Corrado",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Corrado"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 4,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[14] have recently proposed learning spatio-temporal"
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 10584662,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6ec0cccf5ce6d3ab6ae79a82abd9161a67ce52ed",
+            "isKey": false,
+            "numCitedBy": 24,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new approach to learning sparse, spatiotemporal codes in which the number of basis vectors, their orientations, velocities and the size of their receptive fields change over the duration of unsupervised training. The algorithm starts with a relatively small, initial basis with minimal temporal extent. This initial basis is obtained through conventional sparse coding techniques and is expanded over time by recursively constructing a new basis consisting of basis vectors with larger temporal extent that proportionally conserve regions of previously trained weights. These proportionally conserved weights are combined with the result of adjusting newly added weights to represent a greater range of primitive motion features. The size of the current basis is determined probabilistically by sampling from existing basis vectors according to their activation on the training set. The resulting algorithm produces bases consisting of filters that are bandpass, spatially oriented and temporally diverse in terms of their transformations and velocities. The basic methodology borrows inspiration from the layer-by-layer learning of multiple-layer restricted Boltzmann machines developed by Geoff Hinton and his students. Indeed, we can learn multiple-layer sparse codes by training a stack of denoising autoencoders, but we have had greater success using L1 regularized regression in a variation on Olshausen and Field\u2019s original SPARSENET. To accelerate learning and focus attention, we apply a space-time interest-point operator that selects for periodic motion. This attentional mechanism enables us to efficiently compute and compactly represent a broad range of interesting motion. We demonstrate the utility of our approach by using it to recognize human activity in video. Our algorithm meets or exceeds the performance of state-of-the-art activity-recognition methods."
+            },
+            "slug": "Recursive-Sparse,-Spatiotemporal-Coding-Dean-Washington",
+            "title": {
+                "fragments": [],
+                "text": "Recursive Sparse, Spatiotemporal Coding"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 82,
+                "text": "The new approach to learning sparse, spatiotemporal codes in which the number of basis vectors, their orientations, velocities and the size of their receptive fields change over the duration of unsupervised training meets or exceeds the performance of state-of-the-art activity-recognition methods."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 11th IEEE International Symposium on Multimedia"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "13919023"
+                        ],
+                        "name": "F. Huang",
+                        "slug": "F.-Huang",
+                        "structuredName": {
+                            "firstName": "Fu",
+                            "lastName": "Huang",
+                            "middleNames": [
+                                "Jie"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Huang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 29,
+                                "start": 25
+                            }
+                        ],
+                        "text": "The \u201cSmall NORB\u201d dataset [23] has 5 object categories (humans, airplanes, cards, trucks, animals), and 5 different object instances for each training and test."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 712708,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f354310098e09c1e1dc88758fca36767fd9d084d",
+            "isKey": false,
+            "numCitedBy": 1306,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We assess the applicability of several popular learning methods for the problem of recognizing generic visual categories with invariance to pose, lighting, and surrounding clutter. A large dataset comprising stereo image pairs of 50 uniform-colored toys under 36 azimuths, 9 elevations, and 6 lighting conditions was collected (for a total of 194,400 individual images). The objects were 10 instances of 5 generic categories: four-legged animals, human figures, airplanes, trucks, and cars. Five instances of each category were used for training, and the other five for testing. Low-resolution grayscale images of the objects with various amounts of variability and surrounding clutter were used for training and testing. Nearest neighbor methods, support vector machines, and convolutional networks, operating on raw pixels or on PCA-derived features were tested. Test error rates for unseen object instances placed on uniform backgrounds were around 13% for SVM and 7% for convolutional nets. On a segmentation/recognition task with highly cluttered images, SVM proved impractical, while convolutional nets yielded 16/7% error. A real-time version of the system was implemented that can detect and classify objects in natural scenes at around 10 frames per second."
+            },
+            "slug": "Learning-methods-for-generic-object-recognition-to-LeCun-Huang",
+            "title": {
+                "fragments": [],
+                "text": "Learning methods for generic object recognition with invariance to pose and lighting"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A real-time version of the system was implemented that can detect and classify objects in natural scenes at around 10 frames per second and proved impractical, while convolutional nets yielded 16/7% error."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004."
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2599292"
+                        ],
+                        "name": "J. Mairal",
+                        "slug": "J.-Mairal",
+                        "structuredName": {
+                            "firstName": "Julien",
+                            "lastName": "Mairal",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Mairal"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144570279"
+                        ],
+                        "name": "F. Bach",
+                        "slug": "F.-Bach",
+                        "structuredName": {
+                            "firstName": "Francis",
+                            "lastName": "Bach",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Bach"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144189388"
+                        ],
+                        "name": "J. Ponce",
+                        "slug": "J.-Ponce",
+                        "structuredName": {
+                            "firstName": "Jean",
+                            "lastName": "Ponce",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Ponce"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1699339"
+                        ],
+                        "name": "G. Sapiro",
+                        "slug": "G.-Sapiro",
+                        "structuredName": {
+                            "firstName": "Guillermo",
+                            "lastName": "Sapiro",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Sapiro"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 37
+                            }
+                        ],
+                        "text": "We then used the method described in [29] to learn a dictionary of 4000 basis vectors, and encode the temporal groups as sparse linear coefficients of the bases."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 7027533,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "cf80cc34528273d8fbe17783efe802a6509e1562",
+            "isKey": false,
+            "numCitedBy": 2095,
+            "numCiting": 46,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Sparse coding---that is, modelling data vectors as sparse linear combinations of basis elements---is widely used in machine learning, neuroscience, signal processing, and statistics. This paper focuses on learning the basis set, also called dictionary, to adapt it to specific data, an approach that has recently proven to be very effective for signal reconstruction and classification in the audio and image processing domains. This paper proposes a new online optimization algorithm for dictionary learning, based on stochastic approximations, which scales up gracefully to large datasets with millions of training samples. A proof of convergence is presented, along with experiments with natural images demonstrating that it leads to faster performance and better dictionaries than classical batch algorithms for both small and large datasets."
+            },
+            "slug": "Online-dictionary-learning-for-sparse-coding-Mairal-Bach",
+            "title": {
+                "fragments": [],
+                "text": "Online dictionary learning for sparse coding"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "A new online optimization algorithm for dictionary learning is proposed, based on stochastic approximations, which scales up gracefully to large datasets with millions of training samples, and leads to faster performance and better dictionaries than classical batch algorithms for both small and large datasets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML '09"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1777528"
+                        ],
+                        "name": "H. Larochelle",
+                        "slug": "H.-Larochelle",
+                        "structuredName": {
+                            "firstName": "H.",
+                            "lastName": "Larochelle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Larochelle"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1761978"
+                        ],
+                        "name": "D. Erhan",
+                        "slug": "D.-Erhan",
+                        "structuredName": {
+                            "firstName": "D.",
+                            "lastName": "Erhan",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Erhan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1760871"
+                        ],
+                        "name": "Aaron C. Courville",
+                        "slug": "Aaron-C.-Courville",
+                        "structuredName": {
+                            "firstName": "Aaron",
+                            "lastName": "Courville",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Aaron C. Courville"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32837403"
+                        ],
+                        "name": "J. Bergstra",
+                        "slug": "J.-Bergstra",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Bergstra",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Bergstra"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 140,
+                                "start": 137
+                            }
+                        ],
+                        "text": "This has been generally done by composing modules of the same architecture such as Restricted Boltzmann Machines (RBM) [2], autoencoders [3], or various forms of encoder-decoder networks [4, 6, 7] each of which are trained unsupervised and therefore can take advantage of large amounts of unlabeled image data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14805281,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b8012351bc5ebce4a4b3039bbbba3ce393bc3315",
+            "isKey": false,
+            "numCitedBy": 973,
+            "numCiting": 14,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Recently, several learning algorithms relying on models with deep architectures have been proposed. Though they have demonstrated impressive performance, to date, they have only been evaluated on relatively simple problems such as digit recognition in a controlled environment, for which many machine learning algorithms already report reasonable results. Here, we present a series of experiments which indicate that these models show promise in solving harder learning problems that exhibit many factors of variation. These models are compared with well-established algorithms such as Support Vector Machines and single hidden-layer feed-forward neural networks."
+            },
+            "slug": "An-empirical-evaluation-of-deep-architectures-on-of-Larochelle-Erhan",
+            "title": {
+                "fragments": [],
+                "text": "An empirical evaluation of deep architectures on problems with many factors of variation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 50,
+                "text": "A series of experiments indicate that these models with deep architectures show promise in solving harder learning problems that exhibit many factors of variation."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML '07"
+            },
+            "year": 2007
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2077257730"
+                        ],
+                        "name": "Kevin Jarrett",
+                        "slug": "Kevin-Jarrett",
+                        "structuredName": {
+                            "firstName": "Kevin",
+                            "lastName": "Jarrett",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kevin Jarrett"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2645384"
+                        ],
+                        "name": "K. Kavukcuoglu",
+                        "slug": "K.-Kavukcuoglu",
+                        "structuredName": {
+                            "firstName": "Koray",
+                            "lastName": "Kavukcuoglu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Kavukcuoglu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1706809"
+                        ],
+                        "name": "Marc'Aurelio Ranzato",
+                        "slug": "Marc'Aurelio-Ranzato",
+                        "structuredName": {
+                            "firstName": "Marc'Aurelio",
+                            "lastName": "Ranzato",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Marc'Aurelio Ranzato"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 3,
+                                "start": 0
+                            }
+                        ],
+                        "text": "[7]: filtering, followed by a tanh nonlinearity, followed by absolute value rectification, followed by a local contrast normalization layer, followed by average pooling and subsampling."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 54
+                            }
+                        ],
+                        "text": "The nonlinearities we used were identical to those in [7] with the exception of extending contrast normalization and downsampling to 3D: LCN was performed using a 9 9 9 smoothing filter, followed by 4 4 4 average downsampling."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 89
+                            }
+                        ],
+                        "text": "We found that it slightly decreased accuracy (by about 1%; less drastic than reported in [7] for static object recognition)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 196,
+                                "start": 187
+                            }
+                        ],
+                        "text": "This has been generally done by composing modules of the same architecture such as Restricted Boltzmann Machines (RBM) [2], autoencoders [3], or various forms of encoder-decoder networks [4, 6, 7] each of which are trained unsupervised and therefore can take advantage of large amounts of unlabeled image data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206769720,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1f88427d7aa8225e47f946ac41a0667d7b69ac52",
+            "isKey": false,
+            "numCitedBy": 2085,
+            "numCiting": 52,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In many recent object recognition systems, feature extraction stages are generally composed of a filter bank, a non-linear transformation, and some sort of feature pooling layer. Most systems use only one stage of feature extraction in which the filters are hard-wired, or two stages where the filters in one or both stages are learned in supervised or unsupervised mode. This paper addresses three questions: 1. How does the non-linearities that follow the filter banks influence the recognition accuracy? 2. does learning the filter banks in an unsupervised or supervised manner improve the performance over random filters or hardwired filters? 3. Is there any advantage to using an architecture with two stages of feature extraction, rather than one? We show that using non-linearities that include rectification and local contrast normalization is the single most important ingredient for good accuracy on object recognition benchmarks. We show that two stages of feature extraction yield better accuracy than one. Most surprisingly, we show that a two-stage system with random filters can yield almost 63% recognition rate on Caltech-101, provided that the proper non-linearities and pooling layers are used. Finally, we show that with supervised refinement, the system achieves state-of-the-art performance on NORB dataset (5.6%) and unsupervised pre-training followed by supervised refinement produces good accuracy on Caltech-101 (\u226b 65%), and the lowest known error rate on the undistorted, unprocessed MNIST dataset (0.53%)."
+            },
+            "slug": "What-is-the-best-multi-stage-architecture-for-Jarrett-Kavukcuoglu",
+            "title": {
+                "fragments": [],
+                "text": "What is the best multi-stage architecture for object recognition?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 46,
+                "text": "It is shown that using non-linearities that include rectification and local contrast normalization is the single most important ingredient for good accuracy on object recognition benchmarks and that two stages of feature extraction yield better accuracy than one."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "2009 IEEE 12th International Conference on Computer Vision"
+            },
+            "year": 2009
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1708655"
+                        ],
+                        "name": "B. Olshausen",
+                        "slug": "B.-Olshausen",
+                        "structuredName": {
+                            "firstName": "Bruno",
+                            "lastName": "Olshausen",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Olshausen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "49649079"
+                        ],
+                        "name": "D. Field",
+                        "slug": "D.-Field",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Field",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Field"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 99
+                            }
+                        ],
+                        "text": "Building on the rapidly growing literature on sparse over-complete decompositions of image patches [13], Cadieu and Olshausen [6] have proposed a two-layer probabilistic model that learns complex motion features from video."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14208692,
+            "fieldsOfStudy": [
+                "Biology"
+            ],
+            "id": "2805537bec87a6177037b18f9a3a9d3f1038867b",
+            "isKey": false,
+            "numCitedBy": 3574,
+            "numCiting": 72,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Sparse-coding-with-an-overcomplete-basis-set:-A-by-Olshausen-Field",
+            "title": {
+                "fragments": [],
+                "text": "Sparse coding with an overcomplete basis set: A strategy employed by V1?"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Vision Research"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1697141"
+                        ],
+                        "name": "Honglak Lee",
+                        "slug": "Honglak-Lee",
+                        "structuredName": {
+                            "firstName": "Honglak",
+                            "lastName": "Lee",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Honglak Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2078284037"
+                        ],
+                        "name": "Alexis Battle",
+                        "slug": "Alexis-Battle",
+                        "structuredName": {
+                            "firstName": "Alexis",
+                            "lastName": "Battle",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alexis Battle"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2979876"
+                        ],
+                        "name": "R. Raina",
+                        "slug": "R.-Raina",
+                        "structuredName": {
+                            "firstName": "Rajat",
+                            "lastName": "Raina",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Raina"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "34699434"
+                        ],
+                        "name": "A. Ng",
+                        "slug": "A.-Ng",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Ng",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Ng"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 81,
+                                "start": 77
+                            }
+                        ],
+                        "text": "descriptors by recursively applying the feature-sign sparse coding algorithm [15] to 3D patches of videos extracted at detected interest points."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 303727,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e64a9960734215e2b1866ea3cb723ffa5585ac14",
+            "isKey": false,
+            "numCitedBy": 2683,
+            "numCiting": 16,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Sparse coding provides a class of algorithms for finding succinct representations of stimuli; given only unlabeled input data, it discovers basis functions that capture higher-level features in the data. However, finding sparse codes remains a very difficult computational problem. In this paper, we present efficient sparse coding algorithms that are based on iteratively solving two convex optimization problems: an L1-regularized least squares problem and an L2-constrained least squares problem. We propose novel algorithms to solve both of these optimization problems. Our algorithms result in a significant speedup for sparse coding, allowing us to learn larger sparse codes than possible with previously described algorithms. We apply these algorithms to natural images and demonstrate that the inferred sparse codes exhibit end-stopping and non-classical receptive field surround suppression and, therefore, may provide a partial explanation for these two phenomena in V1 neurons."
+            },
+            "slug": "Efficient-sparse-coding-algorithms-Lee-Battle",
+            "title": {
+                "fragments": [],
+                "text": "Efficient sparse coding algorithms"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "These algorithms are applied to natural images and it is demonstrated that the inferred sparse codes exhibit end-stopping and non-classical receptive field surround suppression and, therefore, may provide a partial explanation for these two phenomena in V1 neurons."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "30017846"
+                        ],
+                        "name": "N. Pinto",
+                        "slug": "N.-Pinto",
+                        "structuredName": {
+                            "firstName": "Nicolas",
+                            "lastName": "Pinto",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Pinto"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2042941"
+                        ],
+                        "name": "D. Cox",
+                        "slug": "D.-Cox",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Cox",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Cox"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1865831"
+                        ],
+                        "name": "J. DiCarlo",
+                        "slug": "J.-DiCarlo",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "DiCarlo",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. DiCarlo"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 154,
+                                "start": 150
+                            }
+                        ],
+                        "text": "Before generating the videos, we downsampled each image to 32 32 pixels, and preprocessed it using local contrast normalization (LCN) as described in [24]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 79,
+                                "start": 75
+                            }
+                        ],
+                        "text": "All videos then underwent 3D local contrast normalization (an extension of [24])."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 5955557,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "688b6fbc3c5c06e254961f70de9d855d3d008d09",
+            "isKey": false,
+            "numCitedBy": 583,
+            "numCiting": 38,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Progress in understanding the brain mechanisms underlying vision requires the construction of computational models that not only emulate the brain's anatomy and physiology, but ultimately match its performance on visual tasks. In recent years, \u201cnatural\u201d images have become popular in the study of vision and have been used to show apparently impressive progress in building such models. Here, we challenge the use of uncontrolled \u201cnatural\u201d images in guiding that progress. In particular, we show that a simple V1-like model\u2014a neuroscientist's \u201cnull\u201d model, which should perform poorly at real-world visual object recognition tasks\u2014outperforms state-of-the-art object recognition systems (biologically inspired and otherwise) on a standard, ostensibly natural image recognition test. As a counterpoint, we designed a \u201csimpler\u201d recognition test to better span the real-world variation in object pose, position, and scale, and we show that this test correctly exposes the inadequacy of the V1-like model. Taken together, these results demonstrate that tests based on uncontrolled natural images can be seriously misleading, potentially guiding progress in the wrong direction. Instead, we reexamine what it means for images to be natural and argue for a renewed focus on the core problem of object recognition\u2014real-world image variation."
+            },
+            "slug": "Why-is-Real-World-Visual-Object-Recognition-Hard-Pinto-Cox",
+            "title": {
+                "fragments": [],
+                "text": "Why is Real-World Visual Object Recognition Hard?"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "It is shown that a simple V1-like model\u2014a neuroscientist's \u201cnull\u201d model\u2014outperforms state-of-the-art object recognition systems (biologically inspired and otherwise) on a standard, ostensibly natural image recognition test."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "PLoS Comput. Biol."
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2217144"
+                        ],
+                        "name": "Simon Osindero",
+                        "slug": "Simon-Osindero",
+                        "structuredName": {
+                            "firstName": "Simon",
+                            "lastName": "Osindero",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Simon Osindero"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1725303"
+                        ],
+                        "name": "Y. Teh",
+                        "slug": "Y.-Teh",
+                        "structuredName": {
+                            "firstName": "Yee",
+                            "lastName": "Teh",
+                            "middleNames": [
+                                "Whye"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Teh"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 119
+                            }
+                        ],
+                        "text": "This has been generally done by composing modules of the same architecture such as Restricted Boltzmann Machines (RBM) [2], autoencoders [3], or various forms of encoder-decoder networks [4, 6, 7] each of which are trained unsupervised and therefore can take advantage of large amounts of unlabeled image data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 2309950,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8978cf7574ceb35f4c3096be768c7547b28a35d0",
+            "isKey": false,
+            "numCitedBy": 13411,
+            "numCiting": 33,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We show how to use complementary priors to eliminate the explaining-away effects that make inference difficult in densely connected belief nets that have many hidden layers. Using complementary priors, we derive a fast, greedy algorithm that can learn deep, directed belief networks one layer at a time, provided the top two layers form an undirected associative memory. The fast, greedy algorithm is used to initialize a slower learning procedure that fine-tunes the weights using a contrastive version of the wake-sleep algorithm. After fine-tuning, a network with three hidden layers forms a very good generative model of the joint distribution of handwritten digit images and their labels. This generative model gives better digit classification than the best discriminative learning algorithms. The low-dimensional manifolds on which the digits lie are modeled by long ravines in the free-energy landscape of the top-level associative memory, and it is easy to explore these ravines by using the directed connections to display what the associative memory has in mind."
+            },
+            "slug": "A-Fast-Learning-Algorithm-for-Deep-Belief-Nets-Hinton-Osindero",
+            "title": {
+                "fragments": [],
+                "text": "A Fast Learning Algorithm for Deep Belief Nets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 38,
+                "text": "A fast, greedy algorithm is derived that can learn deep, directed belief networks one layer at a time, provided the top two layers form an undirected associative memory."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2006
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1885768"
+                        ],
+                        "name": "M. Chli",
+                        "slug": "M.-Chli",
+                        "structuredName": {
+                            "firstName": "Margarita",
+                            "lastName": "Chli",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Chli"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2052135690"
+                        ],
+                        "name": "A. Davison",
+                        "slug": "A.-Davison",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "Davison",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Davison"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 4518583,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "04554de05a3a9ebb1890d25aaa7e34544a0d32a7",
+            "isKey": false,
+            "numCitedBy": 1119,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the matching tasks which form an integral part of all types of tracking and geometrical vision, there are invariably priors available on the absolute and/or relative image locations of features of interest. Usually, these priors are used post-hoc in the process of resolving feature matches and obtaining final scene estimates, via `first get candidate matches, then resolve' consensus algorithms such as RANSAC. In this paper we show that the dramatically different approach of using priors dynamically to guide a feature by feature matching search can achieve global matching with much fewer image processing operations and lower overall computational cost. Essentially, we put image processing into the loopof the search for global consensus. In particular, our approach is able to cope with significant image ambiguity thanks to a dynamic mixture of Gaussians treatment. In our fully Bayesian algorithm, the choice of the most efficient search action at each step is guided intuitively and rigorously by expected Shannon information gain. We demonstrate the algorithm in feature matching as part of a sequential SLAM system for 3D camera tracking. Robust, real-time matching can be achieved even in the previously unmanageable case of jerky, rapid motion necessitating weak motion modelling and large search regions."
+            },
+            "slug": "Active-Matching-Chli-Davison",
+            "title": {
+                "fragments": [],
+                "text": "Active Matching"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This paper shows that the dramatically different approach of using priors dynamically to guide a feature by feature matching search can achieve global matching with much fewer image processing operations and lower overall computational cost."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ECCV"
+            },
+            "year": 2008
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 139,
+                                "start": 135
+                            }
+                        ],
+                        "text": "Learning, however, still works well if we approximately follow the gradient of another function called the contrastive divergence (CD) [22]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207596505,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9360e5ce9c98166bb179ad479a9d2919ff13d022",
+            "isKey": false,
+            "numCitedBy": 4571,
+            "numCiting": 34,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "It is possible to combine multiple latent-variable models of the same data by multiplying their probability distributions together and then renormalizing. This way of combining individual expert models makes it hard to generate samples from the combined model but easy to infer the values of the latent variables of each expert, because the combination rule ensures that the latent variables of different experts are conditionally independent when given the data. A product of experts (PoE) is therefore an interesting candidate for a perceptual system in which rapid inference is vital and generation is unnecessary. Training a PoE by maximizing the likelihood of the data is difficult because it is hard even to approximate the derivatives of the renormalization term in the combination rule. Fortunately, a PoE can be trained using a different objective function called contrastive divergence whose derivatives with regard to the parameters can be approximated accurately and efficiently. Examples are presented of contrastive divergence learning using several types of expert on several types of data."
+            },
+            "slug": "Training-Products-of-Experts-by-Minimizing-Hinton",
+            "title": {
+                "fragments": [],
+                "text": "Training Products of Experts by Minimizing Contrastive Divergence"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "A product of experts (PoE) is an interesting candidate for a perceptual system in which rapid inference is vital and generation is unnecessary because it is hard even to approximate the derivatives of the renormalization term in the combination rule."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1703537"
+                        ],
+                        "name": "Y. Freund",
+                        "slug": "Y.-Freund",
+                        "structuredName": {
+                            "firstName": "Yoav",
+                            "lastName": "Freund",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Freund"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733689"
+                        ],
+                        "name": "D. Haussler",
+                        "slug": "D.-Haussler",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Haussler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Haussler"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 13456135,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "939d584316be99e2db3fec3fbf7d71f22a477f67",
+            "isKey": false,
+            "numCitedBy": 340,
+            "numCiting": 39,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a distribution model for binary vectors, called the influence combination model and show how this model can be used as the basis for unsupervised learning algorithms for feature selection. The model can be represented by a particular type of Boltzmann machine with a bipartite graph structure that we call the combination machine. This machine is closely related to the Harmonium model defined by Smolensky. In the first part of the paper we analyze properties of this distribution representation scheme. We show that arbitrary distributions of binary vectors can be approximated by the combination model. We show how the weight vectors in the model can be interpreted as high order correlation patterns among the input bits, and how the combination machine can be used as a mechanism for detecting these patterns. We compare the combination model with the mixture model and with principle component analysis. In the second part of the paper we present two algorithms for learning the combination model from examples. The first learning algorithm is the standard gradient ascent heuristic for computing maximum likelihood estimates for the parameters of the model. Here we give a closed form for this gradient that is significantly easier to compute than the corresponding gradient for the general Boltzmann machine. The second learning algorithm is a greedy method that creates the hidden units and computes their weights one at a time. This method is a variant of projection pursuit density estimation. In the third part of the paper we give experimental results for these learning methods on synthetic data and on natural data of handwritten digit images."
+            },
+            "slug": "Unsupervised-Learning-of-Distributions-of-Binary-Freund-Haussler",
+            "title": {
+                "fragments": [],
+                "text": "Unsupervised Learning of Distributions of Binary Vectors Using 2-Layer Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 52,
+                "text": "It is shown that arbitrary distributions of binary vectors can be approximated by the combination model and shown how the weight vectors in the model can be interpreted as high order correlation patterns among the input bits, and how the combination machine can be used as a mechanism for detecting these patterns."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1688882"
+                        ],
+                        "name": "Yann LeCun",
+                        "slug": "Yann-LeCun",
+                        "structuredName": {
+                            "firstName": "Yann",
+                            "lastName": "LeCun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yann LeCun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52184096"
+                        ],
+                        "name": "L. Bottou",
+                        "slug": "L.-Bottou",
+                        "structuredName": {
+                            "firstName": "L\u00e9on",
+                            "lastName": "Bottou",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Bottou"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751762"
+                        ],
+                        "name": "Yoshua Bengio",
+                        "slug": "Yoshua-Bengio",
+                        "structuredName": {
+                            "firstName": "Yoshua",
+                            "lastName": "Bengio",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yoshua Bengio"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1721248"
+                        ],
+                        "name": "P. Haffner",
+                        "slug": "P.-Haffner",
+                        "structuredName": {
+                            "firstName": "Patrick",
+                            "lastName": "Haffner",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Haffner"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 145
+                            }
+                        ],
+                        "text": "Architectural choices were motivated by a desire to extract mid-level spatio-temporal features; the local connectivity used is standard practice [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 223,
+                                "start": 220
+                            }
+                        ],
+                        "text": "While the dominant methodology for visual recognition from images and video relies on hand-crafted features, there has been a growing interest in methods that learn low-level and mid-level features, either in supervised [1], unsupervised [2\u2013 4], or semi-supervised settings [5]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 63,
+                                "start": 60
+                            }
+                        ],
+                        "text": "This can be addressed by using a convolutional architecture [1], which exploits the fact that salient motifs can appear anywhere in the image."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14542261,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+            "isKey": false,
+            "numCitedBy": 35268,
+            "numCiting": 248,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Multilayer neural networks trained with the back-propagation algorithm constitute the best example of a successful gradient based learning technique. Given an appropriate network architecture, gradient-based learning algorithms can be used to synthesize a complex decision surface that can classify high-dimensional patterns, such as handwritten characters, with minimal preprocessing. This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task. Convolutional neural networks, which are specifically designed to deal with the variability of 2D shapes, are shown to outperform all other techniques. Real-life document recognition systems are composed of multiple modules including field extraction, segmentation recognition, and language modeling. A new learning paradigm, called graph transformer networks (GTN), allows such multimodule systems to be trained globally using gradient-based methods so as to minimize an overall performance measure. Two systems for online handwriting recognition are described. Experiments demonstrate the advantage of global training, and the flexibility of graph transformer networks. A graph transformer network for reading a bank cheque is also described. It uses convolutional neural network character recognizers combined with global training techniques to provide record accuracy on business and personal cheques. It is deployed commercially and reads several million cheques per day."
+            },
+            "slug": "Gradient-based-learning-applied-to-document-LeCun-Bottou",
+            "title": {
+                "fragments": [],
+                "text": "Gradient-based learning applied to document recognition"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper reviews various methods applied to handwritten character recognition and compares them on a standard handwritten digit recognition task, and Convolutional neural networks are shown to outperform all other techniques."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proc. IEEE"
+            },
+            "year": 1998
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2145186184"
+                        ],
+                        "name": "Kyong Joon Lee",
+                        "slug": "Kyong-Joon-Lee",
+                        "structuredName": {
+                            "firstName": "Kyong",
+                            "lastName": "Lee",
+                            "middleNames": [
+                                "Joon"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kyong Joon Lee"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2155183212"
+                        ],
+                        "name": "Dong Hwan Kim",
+                        "slug": "Dong-Hwan-Kim",
+                        "structuredName": {
+                            "firstName": "Dong",
+                            "lastName": "Kim",
+                            "middleNames": [
+                                "Hwan"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dong Hwan Kim"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1785795"
+                        ],
+                        "name": "I. Yun",
+                        "slug": "I.-Yun",
+                        "structuredName": {
+                            "firstName": "Il",
+                            "lastName": "Yun",
+                            "middleNames": [
+                                "Dong"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "I. Yun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153310963"
+                        ],
+                        "name": "Sang Uk Lee",
+                        "slug": "Sang-Uk-Lee",
+                        "structuredName": {
+                            "firstName": "Sang",
+                            "lastName": "Lee",
+                            "middleNames": [
+                                "Uk"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Sang Uk Lee"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 28238871,
+            "fieldsOfStudy": [
+                "Art"
+            ],
+            "id": "224d240ac63d0adf4854329cac23c476400aac9a",
+            "isKey": false,
+            "numCitedBy": 13,
+            "numCiting": 28,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present an algorithm to generate a three-dimensional (3-D) oil painting using artistic filters and sample 3-Dstructures. The artistic filter works as a two-dimensional (2-D) rendering technique a for non-photorealistic effect based on the algorithm introduced in [8]. We modified this method to properly work with a 3-Dimage, enhancing the efficiency of the filter as well. The required 3-Dstructure model is obtained from actual brushstroke samples provided by an artist. We employ a photometric stereo technique in constructing a 3-Dmodel for a brushstroke sample, since this method is capable of capturing sophisticated variation details in brushstroke textures. A 3-Doil painting is completed by incorporating the 3-Dmodel to the brushstrokes rendered by the artistic filter. The created image would show a natural illumination change as the position of the light source varies, providing a realistic effect to the image. We can further enhance the study by analyzing a real painting and by directly applying the current algorithm to synthesize a 3-Doil painting in the style of the original real painting."
+            },
+            "slug": "Three-dimensional-oil-painting-reconstruction-with-Lee-Kim",
+            "title": {
+                "fragments": [],
+                "text": "Three-dimensional oil painting reconstruction with stroke based rendering"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 68,
+                "text": "An algorithm to generate a three-dimensional (3-D) oil painting using artistic filters and sample 3-Dstructures is presented, which would show a natural illumination change as the position of the light source varies, providing a realistic effect to the image."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The Visual Computer"
+            },
+            "year": 2007
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 16,
+            "methodology": 19
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 32,
+        "totalPages": 4
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Convolutional-Learning-of-Spatio-temporal-Features-Taylor-Fergus/4d476b96be73fccc61f2076befbf5a468caa4180?sort=total-citations"
+}

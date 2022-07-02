@@ -1,0 +1,1812 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2067516848"
+                        ],
+                        "name": "K. E. Perry",
+                        "slug": "K.-E.-Perry",
+                        "structuredName": {
+                            "firstName": "K.",
+                            "lastName": "Perry",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. E. Perry"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "16593401"
+                        ],
+                        "name": "J. Wozencraft",
+                        "slug": "J.-Wozencraft",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Wozencraft",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Wozencraft"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 104,
+                                "start": 100
+                            }
+                        ],
+                        "text": "An experimental sequential decoder has been built at Lincoln Laboratories, Lexington, Massachusetts [11]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 33560761,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0fe4ddf5d191a6615d130a980833f5bf26f3e4ff",
+            "isKey": false,
+            "numCitedBy": 18,
+            "numCiting": 1,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "SECO is an efficient engineering realization of a coding-decoding scheme designed to use variable redundancy and feedback in a two-way communication system to increase the rate of information transfer between users connected by a channel having a slowly time-varying capacity. The simultaneous achievement of transmission efficiency and extreme reliability is made possible by the use of sequential coding and decoding over a long constraint span. The decoding computer is designed to detect channel errors with very high probability and to correct as many of these as it can, subject to the current channel condition and decoder state. When a detected error cannot be corrected easily, the decoder stops and uses the feedback channel to request retransmission at a lower information rate. If the information rate is correctly matched to the channel noise, then almost all detected errors are corrected and consequently repeats are requested only rarely. If the channel becomes \"too noisy\" for the decoder, then a repeat is requested with higher probability and the rate is decreased until a correct match is achieved. Conversely, if the decoder is decoding \"too easily\", it requests an increase in rate. An appropriate strategy selects the correct rate and determines when to make a repeat request. In this paper we concentrate on a description of the encoding and decoding processes and their implementation in a digital machine. Although SECO is intended for ultimate use over real communication channels, for reasons of simplicity we concentrate here upon its use in connection with the idealized Binary Symmetric Channel (BSC)."
+            },
+            "slug": "SECO:-A-self-regulating-error-correcting-Perry-Wozencraft",
+            "title": {
+                "fragments": [],
+                "text": "SECO: A self-regulating error correcting coder-decoder"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Although SECO is intended for ultimate use over real communication channels, for reasons of simplicity it is concentrated here upon its use in connection with the idealized Binary Symmetric Channel (BSC)."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IRE Trans. Inf. Theory"
+            },
+            "year": 1962
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "16895070"
+                        ],
+                        "name": "B. Reiffen",
+                        "slug": "B.-Reiffen",
+                        "structuredName": {
+                            "firstName": "Barney",
+                            "lastName": "Reiffen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Reiffen"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 311,
+                                "start": 307
+                            }
+                        ],
+                        "text": "4 Comparison with Other Schemes Some other coding and decoding schemes that appear extremely promising for achieving low error probabilities and high data rates at reasonable cost are the following: rst, convolutional codes [3] with sequential decoding as developed by Wozencraft [17], Fano [5], and Rei en [14]; second, convolutional codes with Massey's threshold decoding [10]; and third, the Bose-Chaudhuri codes [2] with the decoding schemes developed by Peterson [12] and Zierler and Gorenstein [18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 34
+                            }
+                        ],
+                        "text": "Fortunately, Elias [3] and Rei en [14] have proved that for a wide variety of channel models, the results of the Noisy Channel Coding theorem can be achieved with little equipment complexity at the encoder by the use of parity-check coding."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 20353637,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2f1968308ead8f5ad659c4d362b3b8cbf25876bd",
+            "isKey": false,
+            "numCitedBy": 16,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A scheme is described which sequentially encodes the output of a discrete letter source into the input symbols of a discrete input memoryless channel, with adjacent channel symbols mutually constrained over a length, n . The encoder permits desired channel input symbol probabilities to be approximated closely. Decoding at the receiver is accomplished with delay n by means of sequential tests on potential transmitted sequences with reject criteria set so that incorrect sequences are likely to be rejected at short lengths and the correct sequence is likely to be accepted. Averaged over a suitably defined ensemble of encoders, the decoding scheme has an average probability of error with an upper limit whose logarithm approaches -nE(R) for large n. E(R) is dependent only on the data rate R . For a channel symmetric at its output with equally likely inputs, the exponent E(R) is optimum for rates greater than a rate called R_{crit} . For such symmetric channels, a computation cutoff rate R_{comp} is defined. For R , the average number of decoding computations does not grow exponentially with n , but algebraically. R_{comp} is also defined for an asymmetric channel. In this case too, the average number of decoding computations grows algebraically with n for R ."
+            },
+            "slug": "Sequential-decoding-for-discrete-input-memoryless-Reiffen",
+            "title": {
+                "fragments": [],
+                "text": "Sequential decoding for discrete input memoryless channels"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 90,
+                "text": "A scheme is described which sequentially encodes the output of a discrete letter source into the input symbols of a continuous channel, with adjacent channel symbols mutually constrained over a length, n, which permits desired channel input symbol probabilities to be approximated closely."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IRE Trans. Inf. Theory"
+            },
+            "year": 1962
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144461837"
+                        ],
+                        "name": "C. Shannon",
+                        "slug": "C.-Shannon",
+                        "structuredName": {
+                            "firstName": "Claude",
+                            "lastName": "Shannon",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Shannon"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Shannon [15, 4] in 1948."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 4951149,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "faeefd748786d4edcb0128d9000e163fc270447b",
+            "isKey": false,
+            "numCitedBy": 194,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Certain-Results-in-Coding-Theory-for-Noisy-Channels-Shannon",
+            "title": {
+                "fragments": [],
+                "text": "Certain Results in Coding Theory for Noisy Channels"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Inf. Control."
+            },
+            "year": 1957
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145429023"
+                        ],
+                        "name": "R. C. Bose",
+                        "slug": "R.-C.-Bose",
+                        "structuredName": {
+                            "firstName": "R.",
+                            "lastName": "Bose",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. C. Bose"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1393850424"
+                        ],
+                        "name": "D. K. Ray-Chaudhuri",
+                        "slug": "D.-K.-Ray-Chaudhuri",
+                        "structuredName": {
+                            "firstName": "Dwijendra",
+                            "lastName": "Ray-Chaudhuri",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. K. Ray-Chaudhuri"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 422,
+                                "start": 419
+                            }
+                        ],
+                        "text": "4 Comparison with Other Schemes Some other coding and decoding schemes that appear extremely promising for achieving low error probabilities and high data rates at reasonable cost are the following: first, convolutional codes [3] with sequential decoding as developed by Wozencraft [17], Fano [5], and Reiffen [14]; second, convolutional codes with Massey\u2019s threshold decoding [10]; and third, the Bose-Chaudhuri codes [2] with the decoding schemes developed by Peterson [12] and Zierler and Gorenstein [18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 39244501,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "00204d2e0af4abadc3c5e4a8ed423d9271e776f4",
+            "isKey": false,
+            "numCitedBy": 1126,
+            "numCiting": 10,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "On-A-Class-of-Error-Correcting-Binary-Group-Codes-Bose-Ray-Chaudhuri",
+            "title": {
+                "fragments": [],
+                "text": "On A Class of Error Correcting Binary Group Codes"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Inf. Control."
+            },
+            "year": 1960
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1398348156"
+                        ],
+                        "name": "Irwin L. Lebrow",
+                        "slug": "Irwin-L.-Lebrow",
+                        "structuredName": {
+                            "firstName": "Irwin",
+                            "lastName": "Lebrow",
+                            "middleNames": [
+                                "L."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Irwin L. Lebrow"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152593039"
+                        ],
+                        "name": "P. McHugh",
+                        "slug": "P.-McHugh",
+                        "structuredName": {
+                            "firstName": "P.G.",
+                            "lastName": "McHugh",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. McHugh"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2053685181"
+                        ],
+                        "name": "A. Parker",
+                        "slug": "A.-Parker",
+                        "structuredName": {
+                            "firstName": "Arthur",
+                            "lastName": "Parker",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Parker"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "73414806"
+                        ],
+                        "name": "P. Rosen",
+                        "slug": "P.-Rosen",
+                        "structuredName": {
+                            "firstName": "P.",
+                            "lastName": "Rosen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Rosen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "16593401"
+                        ],
+                        "name": "J. Wozencraft",
+                        "slug": "J.-Wozencraft",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Wozencraft",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Wozencraft"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 170,
+                                "start": 167
+                            }
+                        ],
+                        "text": "By using this decoder in a system with a feedback link and an appropriately designed modulator and demodulator, reliable transmission has been achieved experimentally [9] over a telephone circuit at about 7500 bits per second rather than the 1200 or 2400 bits per second possible without coding."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206728279,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "9fd80d288f48a4eee0a6b000489bdb13bd78087e",
+            "isKey": false,
+            "numCitedBy": 32,
+            "numCiting": 4,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Application-of-sequential-decoding-to-high-rate-on-Lebrow-McHugh",
+            "title": {
+                "fragments": [],
+                "text": "Application of sequential decoding to high-rate data communication on a telephone line (Corresp.)"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Inf. Theory"
+            },
+            "year": 1963
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2480110"
+                        ],
+                        "name": "D. Slepian",
+                        "slug": "D.-Slepian",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Slepian",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Slepian"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 123274482,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "ff14c5d1dee9e55050e4de232e0562d607687158",
+            "isKey": false,
+            "numCitedBy": 181,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A class of binary signaling alphabets called \u201cgroup alphabets\u201d is described. The alphabets are generalizations of Hamming's error correcting codes and possess the following special features: (1) all letters are treated alike in transmission; (2) the encoding is simple to instrument; (3) maximum likelihood detection is relatively simple to instrument; and (4) in certain practical cases there exist no better alphabets. A compilation is given of group alphabets of length equal to or less than 10 binary digits."
+            },
+            "slug": "A-class-of-binary-signaling-alphabets-Slepian",
+            "title": {
+                "fragments": [],
+                "text": "A class of binary signaling alphabets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 95,
+                "text": "A class of binary signaling alphabets called \u201cgroup alphABets\u201d is described, which are generalizations of Hamming's error correcting codes and possess the following special features: all letters are treated alike in transmission; the encoding is simple to instrument; maximum likelihood detection is relatively simple to Instrument."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1956
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2480110"
+                        ],
+                        "name": "D. Slepian",
+                        "slug": "D.-Slepian",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Slepian",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Slepian"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 5095214,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "964ceacd1326b43f0609bfa660974e3bc8d94d5c",
+            "isKey": false,
+            "numCitedBy": 81,
+            "numCiting": 3,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A generalization of Hamming's single error correcting codes is given along with a simple maximum likelihood detection scheme. For small redundancy these alphabets are unexcelled. The Reed-Muller alphabets are described as parity check alphabets and a new detection scheme is presented for them."
+            },
+            "slug": "A-note-off-two-binary-signaling-alphabets-Slepian",
+            "title": {
+                "fragments": [],
+                "text": "A note off two binary signaling alphabets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 82,
+                "text": "A generalization of Hamming's single error correcting codes is given along with a simple maximum likelihood detection scheme for Reed-Muller alphabets and a new detection scheme is presented for them."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IRE Trans. Inf. Theory"
+            },
+            "year": 1956
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51084093"
+                        ],
+                        "name": "F. Bloom",
+                        "slug": "F.-Bloom",
+                        "structuredName": {
+                            "firstName": "F.",
+                            "lastName": "Bloom",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "F. Bloom"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51079933"
+                        ],
+                        "name": "S. L. L. Chang",
+                        "slug": "S.-L.-L.-Chang",
+                        "structuredName": {
+                            "firstName": "S.",
+                            "lastName": "L. Chang",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. L. L. Chang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2475800"
+                        ],
+                        "name": "B. Harris",
+                        "slug": "B.-Harris",
+                        "structuredName": {
+                            "firstName": "B.",
+                            "lastName": "Harris",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Harris"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "51089691"
+                        ],
+                        "name": "A. Hautptschein",
+                        "slug": "A.-Hautptschein",
+                        "structuredName": {
+                            "firstName": "A.",
+                            "lastName": "Hautptschein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Hautptschein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2108390"
+                        ],
+                        "name": "K. Morgan",
+                        "slug": "K.-Morgan",
+                        "structuredName": {
+                            "firstName": "Kenneth",
+                            "lastName": "Morgan",
+                            "middleNames": [
+                                "C."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Morgan"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 174,
+                                "start": 171
+                            }
+                        ],
+                        "text": "This intermediate decision, however, destroys a considerable amount of information about the transmitted message, as discussed in detail for several channels in Reference [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 51652901,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "7c7cb9bbd3cbbba5f7d11aa2bf54fdef603150cc",
+            "isKey": false,
+            "numCitedBy": 25,
+            "numCiting": 2,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In the customary methods of transmitting binary data the receiver, as a result of the decision process made on each transmitted pulse, prints out one of two symbols. Schemes are considered here in which the receiver prints out one of three symbols (single-null zone reception) or one of four symbols (double-null zone reception). These extra symbols permit the receiver to indicate when the a posteriori probabilities of the two transmitted states are nearly equal. Single-null zone reception is shown to be capable, under optimum conditions, of achieving about one-half of the improvement in information rate theoretically attainable by increasing the number of receiver levels without limit. Double-null reception, which splits the null zone and thereby retains polarity information, offers only a slight additional increase in rate. It affords a significant advantage over single-null reception, though, because it is much less sensitive to variations in null level."
+            },
+            "slug": "Improvement-of-Binary-Transmission-by-Null-Zone-Bloom-Chang",
+            "title": {
+                "fragments": [],
+                "text": "Improvement of Binary Transmission by Null-Zone Reception"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "Single-null zone reception is shown to be capable, under optimum conditions, of achieving about one-half of the improvement in information rate theoretically attainable by increasing the number of receiver levels without limit."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the IRE"
+            },
+            "year": 1957
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "5720459"
+                        ],
+                        "name": "J. Pierce",
+                        "slug": "J.-Pierce",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Pierce",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Pierce"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Pierce [13] shows that z0 and z1 are positive Rayleigh distributed random variables with variance N0 + Ec and N0 depending on whether x0(t) or x1(t) was transmitted, Pr(zi) = zi N0 + Ec exp\u2212 z 2 i 2(N0 + Ec) ; for i = 0 of 1, if xi(t) is transmitted (6."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 51630752,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "61b0e2bfe6665cb943516e6db59f1145830e6897",
+            "isKey": false,
+            "numCitedBy": 146,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Methods of using diversity to improve frequencyshift keyed receptions in the presence of Rayleigh fading are analyzed. In the absence of prior information about signal amplitude and phase, square-law combination is optimum; the error rate for this combination method has been found. If signal amplitude and phase are exactly known prior to reception of the signal, coherent combination and detection are optimum; at low error probability this yields only a 3-db improvement. Nonoptimum switch diversity yields only slightly less diversity gain than square-law combination. For dual diversity, correlation of the fading on the separate antennas does not give a large loss if the correlation coefficient is moderate. Correlated noise yields a similar small loss."
+            },
+            "slug": "Theoretical-Diversity-Improvement-in-Keying-Pierce",
+            "title": {
+                "fragments": [],
+                "text": "Theoretical Diversity Improvement in Frequency-Shift Keying"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the IRE"
+            },
+            "year": 1958
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1737968"
+                        ],
+                        "name": "E. Gilbert",
+                        "slug": "E.-Gilbert",
+                        "structuredName": {
+                            "firstName": "Edgar",
+                            "lastName": "Gilbert",
+                            "middleNames": [
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Gilbert"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 120421020,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5639eaeadadcb52151fea392cb61d3bc38da6872",
+            "isKey": false,
+            "numCitedBy": 447,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Two channels are considered; a discrete channel which can transmit sequences of binary digits, and a continuous channel which can transmit band limited signals. The performance of a large number of simple signalling alphabets is computed and it is concluded that one cannot signal at rates near the channel capacity without using very complicated, alphabets."
+            },
+            "slug": "A-comparison-of-signalling-alphabets-Gilbert",
+            "title": {
+                "fragments": [],
+                "text": "A comparison of signalling alphabets"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 54,
+                "text": "Two channels are considered and it is concluded that one cannot signal at rates near the channel capacity without using very complicated, alphabets."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1952
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3053199"
+                        ],
+                        "name": "C. Helstrom",
+                        "slug": "C.-Helstrom",
+                        "structuredName": {
+                            "firstName": "Carl",
+                            "lastName": "Helstrom",
+                            "middleNames": [
+                                "W."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "C. Helstrom"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 85,
+                                "start": 82
+                            }
+                        ],
+                        "text": "Then the log-likelihood ratio y computed by an ideal receiver can easily be shown [8] to be"
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 51675460,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e6f8ac774ac14d752285f51f793cbcafa6344905",
+            "isKey": false,
+            "numCitedBy": 83,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The resolution of two signals of known shapes F1(t) and F2(t) in white Gaussian noise is treated as a problem in statistical decision theory. The observer must decide which of the signals is present with a minimum probability of error. The optimum system for this decision is specified in terms of filters matched to the two signals, the outputs of which are compared. The error probability is exhibited as a function of the cross-correlation of the two signals and of the signal-to-noise ratio. If the phases of the two signals are unknown, as in radar, and if the signals are of equal strength and equal a priori probability, the optimum system consists of filters matched to each of the signals, each followed by a detector. The observer then bases his decision upon which of the detectors has the larger output. The probability of error is computed for this case also."
+            },
+            "slug": "The-Resolution-of-Signals-in-White,-Gaussian-Noise-Helstrom",
+            "title": {
+                "fragments": [],
+                "text": "The Resolution of Signals in White, Gaussian Noise"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 76,
+                "text": "The resolution of two signals of known shapes F1(t) and F2( t) in white Gaussian noise is treated as a problem in statistical decision theory and the optimum system for this decision is specified in terms of filters matched to the two signals."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of the IRE"
+            },
+            "year": 1955
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "30021514"
+                        ],
+                        "name": "R. Fano",
+                        "slug": "R.-Fano",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Fano",
+                            "middleNames": [
+                                "Mario"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fano"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "It has been shown by Fano [5] that for arbitrary discrete memoryless channels, sequential decoding has a probability of decoding error that is upper bounded by a function of the form e\u2212\u03b1n."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1637717,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "61bbdfd09a650facf0602aeed668632fd5ccdc25",
+            "isKey": false,
+            "numCitedBy": 501,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This is another in a series of invited tutorial, status and survey papers that are being regularly solicited by the PTGIT Committee on Special Papers. We invited Profess01 Fano to commit to paprr his elegant but, unelaborate explanation of the principles of sequential decoding, a scheme which is currently contending for a position as the most practical implementation to dale of Shannon\u2019s theory of noisy communication channels. -&e&l Pcqwrs Committw."
+            },
+            "slug": "A-heuristic-discussion-of-probabilistic-decoding-Fano",
+            "title": {
+                "fragments": [],
+                "text": "A heuristic discussion of probabilistic decoding"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 47,
+                "text": "The invited Profess01 Fano to commit to paprr his elegant but, unelaborate explanation of the principles of sequential decoding, a scheme which is currently contending for a position as the most practical implementation of Shannon\u2019s theory of noisy communication channels."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Inf. Theory"
+            },
+            "year": 1963
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "16593401"
+                        ],
+                        "name": "J. Wozencraft",
+                        "slug": "J.-Wozencraft",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Wozencraft",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Wozencraft"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2352437"
+                        ],
+                        "name": "M. Horstein",
+                        "slug": "M.-Horstein",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Horstein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Horstein"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In such cases it is advantageous to use a combination of error correction and error detection with feedback and retransmission [16]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 11325609,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5d411caf99b38259ebac4c4eb0ff6b11157af07d",
+            "isKey": false,
+            "numCitedBy": 60,
+            "numCiting": 11,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "\"January 3, 1961.\" \"Presented at the fourth London Symposium on Information Theory ... 1960.\""
+            },
+            "slug": "Coding-for-two-way-channels-Wozencraft-Horstein",
+            "title": {
+                "fragments": [],
+                "text": "Coding for two-way channels"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 53,
+                "text": "This paper was presented at the fourth London Symposium on Information Theory in 1960 and presented as a monograph on information theory and its applications to science and technology."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1961
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2016427292"
+                        ],
+                        "name": "Mill Johannes G.A. Van",
+                        "slug": "Mill-Johannes-G.A.-Van",
+                        "structuredName": {
+                            "firstName": "Mill",
+                            "lastName": "Van",
+                            "middleNames": [
+                                "Johannes",
+                                "G.A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mill Johannes G.A. Van"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2022277349"
+                        ],
+                        "name": "Roland G. Whiteing",
+                        "slug": "Roland-G.-Whiteing",
+                        "structuredName": {
+                            "firstName": "Roland",
+                            "lastName": "Whiteing",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Roland G. Whiteing"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 28,
+                                "start": 25
+                            }
+                        ],
+                        "text": "It is shown in Reference [4] that setting ` = (n=k) 0(s) actually minimizes the exponent, thereby yielding the best bound; however, the theorem is true regardless of the minimal character of the exponent."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 92,
+                                "start": 89
+                            }
+                        ],
+                        "text": "Although it is not necessary in the proof, it can be shown, using \\tilted\" probabilities [4] and a central limit theorem [7], that asymptotically for large n,"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 189,
+                                "start": 186
+                            }
+                        ],
+                        "text": "34) This can be done either by straightforward but tedious di erentiation or by recalling that the second derivative of a semi-invariant generating function [ln g(s)] is always positive [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 103,
+                                "start": 100
+                            }
+                        ],
+                        "text": "A lower bound to Pe for the best possible code of rate R can also be derived, and it has been shown [4] that Equations (3."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 93
+                            }
+                        ],
+                        "text": "For the appropriate ensemble of codes, these bounds reduce to the usual random coding bounds [3, 4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 10,
+                                "start": 6
+                            }
+                        ],
+                        "text": "R. M. Fano, \u201cThe Transmission of Information,\u201d The Technology Press, Cambridge, Mass.; 1961."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 41,
+                                "start": 38
+                            }
+                        ],
+                        "text": "52) is the same as that found by Fano [4] except for some small changes in terminology."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 434518,
+            "fieldsOfStudy": [
+                "Physics"
+            ],
+            "id": "5d042e85682d53ddd12a199326acedd25b36e6af",
+            "isKey": true,
+            "numCitedBy": 972,
+            "numCiting": 2,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A warning device associated with a rotatable body comprising means on the rotatable body for creating a magnetic field, a receiving coil on a relatively stationary member arranged such that upon rotation of the rotatable body interaction with the magnetic field causes electrical pulses to be generated in the receiving coil and an electronic switching circuit operated by the pulses such that a warning is given upon occurrence of a predetermined condition, such as pressure of a vehicle wheel deviating outside a predetermined limit."
+            },
+            "slug": "Transmission-Of-Information-Van-Whiteing",
+            "title": {
+                "fragments": [],
+                "text": "Transmission Of Information"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 74,
+                "text": "A warning device associated with arotatable body comprising means on the rotatable body for creating a magnetic field, a receiving coil on a relatively stationary member arranged such that a warning is given upon occurrence of a predetermined condition, such as pressure of a vehicle wheel deviating outside a predetermined limit."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1961
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32549147"
+                        ],
+                        "name": "A. Feinstein",
+                        "slug": "A.-Feinstein",
+                        "structuredName": {
+                            "firstName": "Amiel",
+                            "lastName": "Feinstein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Feinstein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "30021514"
+                        ],
+                        "name": "R. Fano",
+                        "slug": "R.-Fano",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Fano",
+                            "middleNames": [
+                                "Mario"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Fano"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 112676098,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "cfd7ad5e1f48d938c65f807c795e91457210212f",
+            "isKey": false,
+            "numCitedBy": 258,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Transmission-of-Information.-Feinstein-Fano",
+            "title": {
+                "fragments": [],
+                "text": "Transmission of Information."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1962
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 69,
+                                "start": 66
+                            }
+                        ],
+                        "text": "This is essentially the same ensemble as that considered by Elias [3] in his random coding bounds for parity-check codes; the minor di erence is that codes in this ensemble may have a rate slightly higher than R, since the rows of a matrix in this ensemble are not necessarily independent over the modulo 2 eld."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 18,
+                                "start": 15
+                            }
+                        ],
+                        "text": "Also, as Elias [3] has shown, if a typical paritycheck code of long block length is used on a BSC, and if the code rate is between critical rate and channel capacity, then the probability of decoding error will be almost as small as that for the best possible code of that rate and block length."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 227,
+                                "start": 224
+                            }
+                        ],
+                        "text": "4 Comparison with Other Schemes Some other coding and decoding schemes that appear extremely promising for achieving low error probabilities and high data rates at reasonable cost are the following: rst, convolutional codes [3] with sequential decoding as developed by Wozencraft [17], Fano [5], and Rei en [14]; second, convolutional codes with Massey's threshold decoding [10]; and third, the Bose-Chaudhuri codes [2] with the decoding schemes developed by Peterson [12] and Zierler and Gorenstein [18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 8,
+                                "start": 3
+                            }
+                        ],
+                        "text": "P. Elias, \u201cCoding for two noisy channels,\u201d in \u201cInformation Theory,\u201d C. Cherry, Ed., 3rd London Symp., September, 1955: Butterworths Scientific Publications, London, Eng., 1956."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 14,
+                                "start": 9
+                            }
+                        ],
+                        "text": "Also, as Elias [3] has shown, if a typical parity-check code of long block length is used on a binary symmetric channel, and if the code rate is between critical rate and channel capacity, then the probability of decoding error will be almost as small as that for the best possible code of that rate and block length."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 22,
+                                "start": 19
+                            }
+                        ],
+                        "text": "Fortunately, Elias [3] and Rei en [14] have proved that for a wide variety of channel models, the results of the Noisy Channel Coding theorem can be achieved with little equipment complexity at the encoder by the use of parity-check coding."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 99,
+                                "start": 93
+                            }
+                        ],
+                        "text": "For the appropriate ensemble of codes, these bounds reduce to the usual random coding bounds [3, 4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Coding for two noisy channels"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Colin Cherry, editor, Information Theory, Third London Symposium, London, England, September"
+            },
+            "year": 1955
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "89720372"
+                        ],
+                        "name": "B. Gnedenko",
+                        "slug": "B.-Gnedenko",
+                        "structuredName": {
+                            "firstName": "Boris",
+                            "lastName": "Gnedenko",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Gnedenko"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "52447792"
+                        ],
+                        "name": "A. Kolmogorov",
+                        "slug": "A.-Kolmogorov",
+                        "structuredName": {
+                            "firstName": "Academician",
+                            "lastName": "Kolmogorov",
+                            "middleNames": [
+                                "A.",
+                                "N."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Kolmogorov"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Although it is not necessary in the proof, it can be shown, using \u201ctilted\u201d probabilities [4] and a central limit theorem [7], that asymptotically for large n,"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 123723246,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "436c7c20add6962e43e1f7fa32da3e4ced729689",
+            "isKey": false,
+            "numCitedBy": 2056,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Limit-Distributions-for-Sums-of-Independent-Random-Gnedenko-Kolmogorov",
+            "title": {
+                "fragments": [],
+                "text": "Limit Distributions for Sums of Independent Random Variables"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1954
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145573382"
+                        ],
+                        "name": "W. W. Peterson",
+                        "slug": "W.-W.-Peterson",
+                        "structuredName": {
+                            "firstName": "W.",
+                            "lastName": "Peterson",
+                            "middleNames": [
+                                "Wesley"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "W. W. Peterson"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 117897331,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "6ec15073b9e8ac83525484ee357106726d4c8c02",
+            "isKey": false,
+            "numCitedBy": 29,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Error-Correcting-Codes-Peterson",
+            "title": {
+                "fragments": [],
+                "text": "Error-Correcting Codes"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1962
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 378,
+                                "start": 374
+                            }
+                        ],
+                        "text": "4 Comparison with Other Schemes Some other coding and decoding schemes that appear extremely promising for achieving low error probabilities and high data rates at reasonable cost are the following: rst, convolutional codes [3] with sequential decoding as developed by Wozencraft [17], Fano [5], and Rei en [14]; second, convolutional codes with Massey's threshold decoding [10]; and third, the Bose-Chaudhuri codes [2] with the decoding schemes developed by Peterson [12] and Zierler and Gorenstein [18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Threshold Decoding"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The M.I.T. Press, Cambridge, Massachusetts,"
+            },
+            "year": 1963
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Coding for two noisy channels,\u201d in \u201cInformation Theory,"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "3rd London Symp., September,"
+            },
+            "year": 1955
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Coding for two noisy channels Information Theory"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Coding for two noisy channels Information Theory"
+            },
+            "year": 1955
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A class of binary signalling alphabets"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Bell Sys. Tech. J"
+            },
+            "year": 1956
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 504,
+                                "start": 500
+                            }
+                        ],
+                        "text": "4 Comparison with Other Schemes Some other coding and decoding schemes that appear extremely promising for achieving low error probabilities and high data rates at reasonable cost are the following: rst, convolutional codes [3] with sequential decoding as developed by Wozencraft [17], Fano [5], and Rei en [14]; second, convolutional codes with Massey's threshold decoding [10]; and third, the Bose-Chaudhuri codes [2] with the decoding schemes developed by Peterson [12] and Zierler and Gorenstein [18]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A class of cyclic linear error-correcting codes in p symbols"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Group Report 55{19, M.I.T. Lincoln Laboratory, Lexington, Massachusetts, January"
+            },
+            "year": 1960
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "The 'hyperbolic tangent' version of the decoding algorithm"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The 'hyperbolic tangent' version of the decoding algorithm"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 75,
+                                "start": 72
+                            }
+                        ],
+                        "text": "This result is closely related to the Gilbert bound on minimum distance [6]."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A comparison of signaling alphabets"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Bell System Technical Journal, 31:504{522,"
+            },
+            "year": 1952
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 7,
+            "methodology": 9,
+            "result": 1
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 25,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Low-density-parity-check-codes-Gallager/206f827fad201506c315d40c1469b41a45141893?sort=total-citations"
+}

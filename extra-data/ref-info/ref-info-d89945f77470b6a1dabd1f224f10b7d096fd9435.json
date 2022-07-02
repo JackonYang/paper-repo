@@ -1,0 +1,1984 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145501780"
+                        ],
+                        "name": "Matthew F. Hurst",
+                        "slug": "Matthew-F.-Hurst",
+                        "structuredName": {
+                            "firstName": "Matthew",
+                            "lastName": "Hurst",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Matthew F. Hurst"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 7205594,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8f52409df167cfe6bafdebac63dfcf8710a56c92",
+            "isKey": false,
+            "numCitedBy": 90,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this paper, we consider the table understanding task and present a catalogue of particular issues that arise when the tables are those found on the web. In addition, we consider what happens when processes commonly associated with web pages are applied to those bearing tables. 1 Table Understanding and the Web The ubiquity of tables, and their ability to describe relational information in a compact and immediate manner make them attractive targets for automated understanding. Recent research into the automatic location, recognition and understanding of tables has demonstrated the viability of integrating automated table processing systems into larger knowledge management applications ([8]). However, table understanding is still a relatively novel research area, one whose definition and terminology are still not fixed. It is useful to break the task down into some subtasks, and to consider them in turn with respect to the understanding of tables delivered on the web. Generally, table processing can be conceptualized as consisting of table location; table recognition; functional and structural analysis; and finally interpretation the extraction of meaningful and unambiguously structured information ([4]). We concentrate on the first two tasks in the following. location table location is the processes of spotting tables in documents. Traditionally, this task comes in two basic forms document image sourced tables ([7], [3]) and electronic text sourced tables including HTML ([1]). The problem is extended to include the spotting of tables in other document encodings such as postscript, pdf, rtf, word, etc. In general, when considering tables on the web, the appropriate HTML tags are exploited (TABLE, TH, TD, etc.). However, this is where we come to the first two distinguishing points. the presence of the TABLE tag in an HTML document does not necessarily indicate the presence of a table ([1] suggest less than 30 % of HTML TABLEs are real tables in one particular domain). there are many other ways in which tables may be presented in web delivered documents plain text (PRE), images, mixtures of table specific tags (TABLE, etc.) and tags used within the table for their functionality in terms of placing text spatially (PRE, LI, etc.) see Figure 1 for an example of such complexities. The first point requires the creation of accurate classification technology. Given any TABLE node in the HTML, the classifier must accept or reject it. Such a classifier may be built either via hand crafted rules ([1]) or using a machine learning approach. Experiments suggest that a machine learning approach using a naive bayse classifier ([9]) based on a feature set describing the set of tags below the potential TABLE node in the document tree produces adequate results. Locating tables encoded in other formats requires technology from other areas. For example, images of tables may be processed by techniques from the document image field ([2]), pre-formatted tables (using the PRE) tag may be processed using plain text table methods ([5]). However, the classification problem extends to these cases and individual classifiers must be constructed to make decisions about document elements of each type. The remaining outstanding issues relate to the mixture of encoding types (e.g. tables built out of TABLE nodes and pre-formatted elements), as well as the mixture of encoding purposes (e.g. the use of the HTML TABLE to encode surrounding text as well as an embedded table). Figure 1. A web page using a mixture of HTML tables (on the left) and images of tables (on the right). recognition table recognition is the task of segmenting the original description of the table into a relative spatial description. In general this task is required when the input is low-level, such as a document image or an electronic text. Clearly, if such tables are found on a web page, the same process is required. Again, given certain assumptions, we can take the marked up tables in a web page to be the logical spatial table. However, there are certain issues that need to be understood in order to account for certain variations: internal cell structure though tags like TH and TD may be assumed to delimit a single cell in the table, there are cases where other non-table tags are used to provide internal structure in such a way as to associate the cell\u2019s contents with those of other cells. A solution would be required to apply a certain amount of recursive processing working into the structure and building a unified abstract table. split cells in order to gain more control over the distribution of the text in a cell, authors occasionally split the text and place it in two or more adjacent cells. This problem may be accommodated by exploiting linguistic process as described in [6] where the content of the cell can be used to indicate continuity, if any, to other cells. errors spanning errors occur when the COLSPAN or ROWSPAN values are not correctly calculated. There are two cases. In the first the cell spans beyond the border of the intended table giving the cell incorrect coordinates. In the second, the span of the cell does not communicate the correct meaning of the cell. For example, a cell that is intended to span three cells below it spans only one leading to ambiguity. The first type of problem may be repaired by some form of normalization, whereas the second requires intelligent processing in order to distinguish the following two cases:"
+            },
+            "slug": "Layout-and-Language:-Challenges-for-Table-on-the-Hurst",
+            "title": {
+                "fragments": [],
+                "text": "Layout and Language: Challenges for Table Understanding on the Web"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 82,
+                "text": "The table understanding task is considered and a catalogue of particular issues that arise when the tables are those found on the web are presented and what happens when processes commonly associated with web pages are applied to those bearing tables is considered."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "153924342"
+                        ],
+                        "name": "Hsin-Hsi Chen",
+                        "slug": "Hsin-Hsi-Chen",
+                        "structuredName": {
+                            "firstName": "Hsin-Hsi",
+                            "lastName": "Chen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hsin-Hsi Chen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2072526610"
+                        ],
+                        "name": "Shih-Chung Tsai",
+                        "slug": "Shih-Chung-Tsai",
+                        "structuredName": {
+                            "firstName": "Shih-Chung",
+                            "lastName": "Tsai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Shih-Chung Tsai"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2949513"
+                        ],
+                        "name": "Jin-He Tsai",
+                        "slug": "Jin-He-Tsai",
+                        "structuredName": {
+                            "firstName": "Jin-He",
+                            "lastName": "Tsai",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jin-He Tsai"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 56,
+                                "start": 53
+                            }
+                        ],
+                        "text": "Our performance evaluation method is very similar to [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 91,
+                                "start": 88
+                            }
+                        ],
+                        "text": "However, our test database is clearly more general and far larger than the ones used in [1] and [4], while our precision and recall rates are both higher."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 17,
+                                "start": 14
+                            }
+                        ],
+                        "text": "table tags in [1], HTML pages in [2], manually annotated table tags in [4]), or were collected from some specific domains, (e."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 185,
+                                "start": 182
+                            }
+                        ],
+                        "text": "4 Data Collection and Ground Truthing Since there are no publicly available web table ground truth database, researchers tested their algorithms in different data sets in the past ( [1], [2], [4])."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 69
+                            }
+                        ],
+                        "text": "a set of tables selected from airline information pages were used in [1])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 50,
+                                "start": 47
+                            }
+                        ],
+                        "text": "A direct comparison to other previous results ([1], [4]) is not possible currently because of the lack of access to their system."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 145
+                            }
+                        ],
+                        "text": "These previous methods all relied on heuristic rules and were only tested on a database that is either very small [2], or highly domain specific [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 72,
+                                "start": 69
+                            }
+                        ],
+                        "text": "Several researchers have reported their work on web table detection ([1], [2], [3], [4])."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6844025,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "578c63514136ac5b9af0144bcfe06efcfdd3099c",
+            "isKey": true,
+            "numCitedBy": 193,
+            "numCiting": 23,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Table is a very common presentation scheme, but few papers touch on table extraction in text data mining. This paper focuses on mining tables from large-scale HTML texts. Table filtering, recognition, interpretation, and presentation are discussed. Heuristic rules and cell similarities are employed to identify tables. The F-measure of table recognition is 86.50%. We also propose an algorithm to capture attribute-value relationships among table cells. Finally, more structured data is extracted and presented."
+            },
+            "slug": "Mining-Tables-from-Large-Scale-HTML-Texts-Chen-Tsai",
+            "title": {
+                "fragments": [],
+                "text": "Mining Tables from Large Scale HTML Texts"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This paper focuses on mining tables from large-scale HTML texts by using heuristic rules and cell similarities to identify tables and proposes an algorithm to capture attribute-value relationships among table cells."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "COLING"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35729970"
+                        ],
+                        "name": "Yiming Yang",
+                        "slug": "Yiming-Yang",
+                        "structuredName": {
+                            "firstName": "Yiming",
+                            "lastName": "Yang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Yiming Yang"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2120100599"
+                        ],
+                        "name": "Xin Liu",
+                        "slug": "Xin-Liu",
+                        "structuredName": {
+                            "firstName": "Xin",
+                            "lastName": "Liu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Xin Liu"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 123,
+                                "start": 116
+                            }
+                        ],
+                        "text": "Various classi cation schemes have been widely used in document categorization as well as web information retrieval [13, 8]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 167,
+                                "start": 163
+                            }
+                        ],
+                        "text": "We also experimented with Support Vector Machines (SVM), a relatively new learning approach which has achieved one of the best performances in text categorization [13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 149,
+                                "start": 142
+                            }
+                        ],
+                        "text": "We designed the word group feature to incorporate word content for table classi cation based on techniques developed in information retrieval [7, 13]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6465383,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "43015e9790c812bdc25bf0539b2ee4055a1882a7",
+            "isKey": true,
+            "numCitedBy": 2969,
+            "numCiting": 48,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper reports a controlled study with statistical signi cance tests on ve text categorization methods: the Support Vector Machines (SVM), a k-Nearest Neighbor (kNN) classi er, a neural network (NNet) approach, the Linear Leastsquares Fit (LLSF) mapping and a Naive Bayes (NB) classier. We focus on the robustness of these methods in dealing with a skewed category distribution, and their performance as function of the training-set category frequency. Our results show that SVM, kNN and LLSF signi cantly outperform NNet and NB when the number of positive training instances per category are small (less than ten), and that all the methods perform comparably when the categories are su ciently common (over 300 instances)."
+            },
+            "slug": "A-re-examination-of-text-categorization-methods-Yang-Liu",
+            "title": {
+                "fragments": [],
+                "text": "A re-examination of text categorization methods"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "The results show that SVM, kNN and LLSF signi cantly outperform NNet and NB when the number of positive training instances per category are small, and that all the methods perform comparably when the categories are over 300 instances."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "SIGIR '99"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143753639"
+                        ],
+                        "name": "A. McCallum",
+                        "slug": "A.-McCallum",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "McCallum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. McCallum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145172877"
+                        ],
+                        "name": "K. Nigam",
+                        "slug": "K.-Nigam",
+                        "structuredName": {
+                            "firstName": "Kamal",
+                            "lastName": "Nigam",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Nigam"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35211659"
+                        ],
+                        "name": "Jason D. M. Rennie",
+                        "slug": "Jason-D.-M.-Rennie",
+                        "structuredName": {
+                            "firstName": "Jason",
+                            "lastName": "Rennie",
+                            "middleNames": [
+                                "D.",
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jason D. M. Rennie"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2544946"
+                        ],
+                        "name": "K. Seymore",
+                        "slug": "K.-Seymore",
+                        "structuredName": {
+                            "firstName": "Kristie",
+                            "lastName": "Seymore",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Seymore"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 349242,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "04f4085c0126ba29453a582cd1e62e05c8e15c82",
+            "isKey": false,
+            "numCitedBy": 821,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Domain-specific internet portals are growing in popularity because they gather content from the Web and organize it for easy access, retrieval and search. For example, www.campsearch.com allows complex queries by age, location, cost and specialty over summer camps. This functionality is not possible with general, Web-wide search engines. Unfortunately these portals are difficult and time-consuming to maintain. This paper advocates the use of machine learning techniques to greatly automate the creation and maintenance of domain-specific Internet portals. We describe new research in reinforcement learning, information extraction and text classification that enables efficient spidering, the identification of informative text segments, and the population of topic hierarchies. Using these techniques, we have built a demonstration system: a portal for computer science research papers. It already contains over 50,000 papers and is publicly available at www.cora.justresearch.com. These techniques are widely applicable to portal creation in other domains."
+            },
+            "slug": "Automating-the-Construction-of-Internet-Portals-McCallum-Nigam",
+            "title": {
+                "fragments": [],
+                "text": "Automating the Construction of Internet Portals with Machine Learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "New research in reinforcement learning, information extraction and text classification that enables efficient spidering, the identification of informative text segments, and the population of topic hierarchies are described."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Information Retrieval"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47756656"
+                        ],
+                        "name": "Jianying Hu",
+                        "slug": "Jianying-Hu",
+                        "structuredName": {
+                            "firstName": "Jianying",
+                            "lastName": "Hu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jianying Hu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "32225756"
+                        ],
+                        "name": "R. Kashi",
+                        "slug": "R.-Kashi",
+                        "structuredName": {
+                            "firstName": "Ramanujan",
+                            "lastName": "Kashi",
+                            "middleNames": [
+                                "S."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Kashi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1828940"
+                        ],
+                        "name": "D. Lopresti",
+                        "slug": "D.-Lopresti",
+                        "structuredName": {
+                            "firstName": "Daniel",
+                            "lastName": "Lopresti",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Lopresti"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2859740"
+                        ],
+                        "name": "G. Wilfong",
+                        "slug": "G.-Wilfong",
+                        "structuredName": {
+                            "firstName": "Gordon",
+                            "lastName": "Wilfong",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Wilfong"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145916951"
+                        ],
+                        "name": "G. Nagy",
+                        "slug": "G.-Nagy",
+                        "structuredName": {
+                            "firstName": "George",
+                            "lastName": "Nagy",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Nagy"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 16106027,
+            "fieldsOfStudy": [
+                "Computer Science",
+                "Philosophy"
+            ],
+            "id": "9e16dcd290d9ab780107270c666d71c00e569b22",
+            "isKey": false,
+            "numCitedBy": 95,
+            "numCiting": 6,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The principle that for every document analysis task there exists a mechanism for creating well-defined ground-truth is a widely held tenet. Past experience with standard datasets providing ground-truth for character recognition and page segmentation tasks supports this belief. In the process of attempting to evaluate several table recognition algorithms we have been developing, however, we have uncovered a number of serious hurdles connected with the ground-truthing of tables. This problem may, in fact, be much more difficult than it appears. We present a detailed analysis of why table ground-truthing is so hard, including the notions that there may exist more than one acceptable \"truth\" and/or incomplete or partial \"truths\"."
+            },
+            "slug": "Why-table-ground-truthing-is-hard-Hu-Kashi",
+            "title": {
+                "fragments": [],
+                "text": "Why table ground-truthing is hard"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 41,
+                "text": "This work presents a detailed analysis of why table ground-truthing is so hard, including the notions that there may exist more than one acceptable \"truth\" and/or incomplete or partial \"truths\"."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of Sixth International Conference on Document Analysis and Recognition"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145329865"
+                        ],
+                        "name": "Minoru Yoshida",
+                        "slug": "Minoru-Yoshida",
+                        "structuredName": {
+                            "firstName": "Minoru",
+                            "lastName": "Yoshida",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Minoru Yoshida"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1768754"
+                        ],
+                        "name": "Kentaro Torisawa",
+                        "slug": "Kentaro-Torisawa",
+                        "structuredName": {
+                            "firstName": "Kentaro",
+                            "lastName": "Torisawa",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kentaro Torisawa"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1737901"
+                        ],
+                        "name": "Junichi Tsujii",
+                        "slug": "Junichi-Tsujii",
+                        "structuredName": {
+                            "firstName": "Junichi",
+                            "lastName": "Tsujii",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Junichi Tsujii"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 89,
+                                "start": 85
+                            }
+                        ],
+                        "text": ", 918 table tags in [2], 75 HTML pages in [10], 175 manually annotated table tags in [14]), or were collected from some speci c domains (e."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 82,
+                                "start": 68
+                            }
+                        ],
+                        "text": "Several researchers have reported their work on web table detection [2, 10, 6, 14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 100,
+                                "start": 96
+                            }
+                        ],
+                        "text": "However, our test database is clearly more general and far larger than the ones used in [2] and [14], while our precision and recall rates are both higher."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 107,
+                                "start": 103
+                            }
+                        ],
+                        "text": "proposed a method to integrate WWW tables according to the category of objects presented in each table [14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 53,
+                                "start": 46
+                            }
+                        ],
+                        "text": "A direct comparison to other previous results [2, 14] is not possible currently because of the lack of access to their system."
+                    },
+                    "intents": [
+                        {
+                            "id": "result"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 152,
+                                "start": 141
+                            }
+                        ],
+                        "text": "Since there are no publicly available web table ground truth database, researchers tested their algorithms in di erent data sets in the past [2, 10, 14]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15867784,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2985934cf5161c1fb6cecc8728dbd155cb6d278a",
+            "isKey": true,
+            "numCitedBy": 87,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The World Wide Web (WWW) allows a person to access a great amount of data provided by a wide variety of entities. However, the content varies widely in expression. This makes it difficult to browse many pages effectively, even if the contents of the pages are quite similar. This study is the first step toward the reduction of such variety of WWW contents. The method proposed in this paper enables us to easily obtain information about similar objects scattered over the WWW. We focus on the tables contained in the WWW pages and propose a method to integrate them according to the category of objects presented in each table. The table integrated in a uniform format enables us to easily compare the objects of different locations and styles of expressions."
+            },
+            "slug": "A-method-to-integrate-tables-of-the-World-Wide-Web-Yoshida-Torisawa",
+            "title": {
+                "fragments": [],
+                "text": "A method to integrate tables of the World Wide Web"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This study focuses on the tables contained in the WWW pages and proposes a method to integrate them according to the category of objects presented in each table, which enables us to easily compare the objects of different locations and styles of expressions."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144448479"
+                        ],
+                        "name": "Alistair Moffat",
+                        "slug": "Alistair-Moffat",
+                        "structuredName": {
+                            "firstName": "Alistair",
+                            "lastName": "Moffat",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Alistair Moffat"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1751206"
+                        ],
+                        "name": "J. Zobel",
+                        "slug": "J.-Zobel",
+                        "structuredName": {
+                            "firstName": "Justin",
+                            "lastName": "Zobel",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Zobel"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 9851927,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b1b520369089561e9d1785f319e2c3f91ace2a75",
+            "isKey": false,
+            "numCitedBy": 61,
+            "numCiting": 13,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Practical information retrieval systems must manage large volumes of data, often divided into several collections that may be held on separate machines. Techniques for locating matches to queries must therefore consider identification of probable collections as well as identification of documents that are probable answers. Further-more, the large amounts of data involved motivates the use of compression, but in a dynamic environment compression is problematic, because as new text is added the compression model slowly becomes inappropriate. In this paper we describe solutions to both of these problems. We show that use of centralised blocked indexes can reduce overall query processing costs in a multi-collection environment, and that careful application of text compression techniques allow collections to grow by several orders of magnitude without recompression becoming necessary."
+            },
+            "slug": "Information-Retrieval-Systems-for-Large-Document-Moffat-Zobel",
+            "title": {
+                "fragments": [],
+                "text": "Information Retrieval Systems for Large Document Collections"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 42,
+                "text": "It is shown that use of centralised blocked indexes can reduce overall query processing costs in a multi-collection environment, and that careful application of text compression techniques allow collections to grow by several orders of magnitude without recompression becoming necessary."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "TREC"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1680188"
+                        ],
+                        "name": "T. Joachims",
+                        "slug": "T.-Joachims",
+                        "structuredName": {
+                            "firstName": "Thorsten",
+                            "lastName": "Joachims",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "T. Joachims"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 5842708,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "094fc15bc058b0d62a661a1460885a9490bdb1bd",
+            "isKey": false,
+            "numCitedBy": 1533,
+            "numCiting": 32,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract : A probabilistic analysis of the Rocchio relevance feedback algorithm, one of the most popular learning methods from information retrieval, is presented in a text categorization framework. The analysis results in a probabilistic version of the Rocchio classifier and offers an explanation for the TFIDF word weighting heuristic. The Rocchio classifier, its probabilistic variant and a standard naive Bayes classifier are compared on three text categorization tasks. The results suggest that the probabilistic algorithms are preferable to the heuristic Rocchio classifier."
+            },
+            "slug": "A-Probabilistic-Analysis-of-the-Rocchio-Algorithm-Joachims",
+            "title": {
+                "fragments": [],
+                "text": "A Probabilistic Analysis of the Rocchio Algorithm with TFIDF for Text Categorization"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 83,
+                "text": "A Probabilistic analysis of the Rocchio relevance feedback algorithm, one of the most popular learning methods from information retrieval, is presented in a text categorization framework and suggests that the probabilistic algorithms are preferable to the heuristic Rocchio classifier."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144299726"
+                        ],
+                        "name": "Thomas G. Dietterich",
+                        "slug": "Thomas-G.-Dietterich",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Dietterich",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas G. Dietterich"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 193,
+                                "start": 190
+                            }
+                        ],
+                        "text": "Continuousvalued decision attributes can be incorporated by dynamically de ning new discrete-valued attributes that partition the continuous attribute value into a discrete set of intervals [9]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6134427,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "aab43c9c33af00b718cf2ae374b861d49862a563",
+            "isKey": false,
+            "numCitedBy": 15727,
+            "numCiting": 8,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Machine Learning is the study of methods for programming computers to learn. Computers are applied to a wide range of tasks, and for most of these it is relatively easy for programmers to design and implement the necessary software. However, there are many tasks for which this is difficult or impossible. These can be divided into four general categories. First, there are problems for which there exist no human experts. For example, in modern automated manufacturing facilities, there is a need to predict machine failures before they occur by analyzing sensor readings. Because the machines are new, there are no human experts who can be interviewed by a programmer to provide the knowledge necessary to build a computer system. A machine learning system can study recorded data and subsequent machine failures and learn prediction rules. Second, there are problems where human experts exist, but where they are unable to explain their expertise. This is the case in many perceptual tasks, such as speech recognition, hand-writing recognition, and natural language understanding. Virtually all humans exhibit expert-level abilities on these tasks, but none of them can describe the detailed steps that they follow as they perform them. Fortunately, humans can provide machines with examples of the inputs and correct outputs for these tasks, so machine learning algorithms can learn to map the inputs to the outputs. Third, there are problems where phenomena are changing rapidly. In finance, for example, people would like to predict the future behavior of the stock market, of consumer purchases, or of exchange rates. These behaviors change frequently, so that even if a programmer could construct a good predictive computer program, it would need to be rewritten frequently. A learning program can relieve the programmer of this burden by constantly modifying and tuning a set of learned prediction rules. Fourth, there are applications that need to be customized for each computer user separately. Consider, for example, a program to filter unwanted electronic mail messages. Different users will need different filters. It is unreasonable to expect each user to program his or her own rules, and it is infeasible to provide every user with a software engineer to keep the rules up-to-date. A machine learning system can learn which mail messages the user rejects and maintain the filtering rules automatically. Machine learning addresses many of the same research questions as the fields of statistics, data mining, and psychology, but with differences of emphasis. Statistics focuses on understanding the phenomena that have generated the data, often with the goal of testing different hypotheses about those phenomena. Data mining seeks to find patterns in the data that are understandable by people. Psychological studies of human learning aspire to understand the mechanisms underlying the various learning behaviors exhibited by people (concept learning, skill acquisition, strategy change, etc.)."
+            },
+            "slug": "Machine-learning-Dietterich",
+            "title": {
+                "fragments": [],
+                "text": "Machine learning"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "Machine learning addresses many of the same research questions as the fields of statistics, data mining, and psychology, but with differences of emphasis."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "CSUR"
+            },
+            "year": 1996
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145047294"
+                        ],
+                        "name": "Gerald Penn",
+                        "slug": "Gerald-Penn",
+                        "structuredName": {
+                            "firstName": "Gerald",
+                            "lastName": "Penn",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Gerald Penn"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47756656"
+                        ],
+                        "name": "Jianying Hu",
+                        "slug": "Jianying-Hu",
+                        "structuredName": {
+                            "firstName": "Jianying",
+                            "lastName": "Hu",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Jianying Hu"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2110416089"
+                        ],
+                        "name": "Hengbin Luo",
+                        "slug": "Hengbin-Luo",
+                        "structuredName": {
+                            "firstName": "Hengbin",
+                            "lastName": "Luo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Hengbin Luo"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143957226"
+                        ],
+                        "name": "Ryan T. McDonald",
+                        "slug": "Ryan-T.-McDonald",
+                        "structuredName": {
+                            "firstName": "Ryan",
+                            "lastName": "McDonald",
+                            "middleNames": [
+                                "T."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ryan T. McDonald"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "table tags in [1], HTML pages in [ 2 ], manually annotated table tags in [4]), or were collected from some specific domains, (e.g."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Table 4. Performance of a modified version of the rule-based system of [ 2 ]: (a) Contingency table; (b) Performance statistics."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "They tested their table detection algorithm on tables from airline information web pages and achieved an F-measure of . Penn et.al.[ 2 ] proposed a set of rules for identifying genuinely tabular information and news links in HTML documents."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "The average F-measure reported in their paper is . These previous methods all relied on heuristic rules and were only tested on a database that is either very small [ 2 ], or highly domain specific [1]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Experiments on this database using the cross validation method demonstrate a significant performance improvement over a previously developed rule-based system [ 2 ]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Since there are no publicly available web table ground truth database, researchers tested their algorithms in different data sets in the past ( [1], [ 2 ], [4])."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "A   node is said to be a leaf table if and only if there are no  nodes among its children [ 2 ]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Java Swing XML parser with W3C HTML 3.2 DTD [ 2 ]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "For comparison, we tested a previously developed rule-based system [ 2 ] on the same database."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Table 3. Performance of the rule-based system of [ 2 ]: (a) Contingency table; (b) Performance statistics."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Several researchers have reported their work on web table detection ([1], [ 2 ], [3], [4])."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "In this paper, we define genuine tables to be document entities where a two dimensional grid is semantically significant in conveying the logical relations among the cells [ 2 ]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1214535,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "eb72ee8307eeeafeb93031d8625440b9e6415159",
+            "isKey": false,
+            "numCitedBy": 57,
+            "numCiting": 18,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose a set of baseline heuristics for identifying genuinely tabular information and news links in HTML documents. A prototype implementation of these heuristics is described for delivering content from news providers' home pages to a narrow-bandwidth device such as a portable digital assistant or cellular phone display. Its evaluation on 75 Web sites is provided, along with a discussion of topics for future research."
+            },
+            "slug": "Flexible-Web-document-analysis-for-delivery-to-Penn-Hu",
+            "title": {
+                "fragments": [],
+                "text": "Flexible Web document analysis for delivery to narrow-bandwidth devices"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 78,
+                "text": "A prototype implementation of a set of baseline heuristics for identifying genuinely tabular information and news links in HTML documents for delivering content from news providers' home pages to a narrow-bandwidth device such as a portable digital assistant or cellular phone display is described."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Proceedings of Sixth International Conference on Document Analysis and Recognition"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145115014"
+                        ],
+                        "name": "Corinna Cortes",
+                        "slug": "Corinna-Cortes",
+                        "structuredName": {
+                            "firstName": "Corinna",
+                            "lastName": "Cortes",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Corinna Cortes"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50560492"
+                        ],
+                        "name": "V. Vapnik",
+                        "slug": "V.-Vapnik",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Vapnik",
+                            "middleNames": [
+                                "Naumovich"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Vapnik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 333,
+                                "start": 326
+                            }
+                        ],
+                        "text": "The SVM problem in linearly separable cases can be e ciently solved using quadratic programming techniques, while the non-linearly separable cases can be solved by either introducing soft margin hyperplanes, or by mapping the original data vectors to a higher dimensional space where the data points become linearly separable [12, 3]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 52874011,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "52b7bf3ba59b31f362aa07f957f1543a29a4279e",
+            "isKey": false,
+            "numCitedBy": 33431,
+            "numCiting": 26,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "The support-vector network is a new learning machine for two-group classification problems. The machine conceptually implements the following idea: input vectors are non-linearly mapped to a very high-dimension feature space. In this feature space a linear decision surface is constructed. Special properties of the decision surface ensures high generalization ability of the learning machine. The idea behind the support-vector network was previously implemented for the restricted case where the training data can be separated without errors. We here extend this result to non-separable training data.High generalization ability of support-vector networks utilizing polynomial input transformations is demonstrated. We also compare the performance of the support-vector network to various classical learning algorithms that all took part in a benchmark study of Optical Character Recognition."
+            },
+            "slug": "Support-Vector-Networks-Cortes-Vapnik",
+            "title": {
+                "fragments": [],
+                "text": "Support-Vector Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 44,
+                "text": "High generalization ability of support-vector networks utilizing polynomial input transformations is demonstrated and the performance of the support- vector network is compared to various classical learning algorithms that all took part in a benchmark study of Optical Character Recognition."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Machine Learning"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145884505"
+                        ],
+                        "name": "V. Cherkassky",
+                        "slug": "V.-Cherkassky",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Cherkassky",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Cherkassky"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 123,
+                                "start": 119
+                            }
+                        ],
+                        "text": "Support Vector Machines (SVM) are based on the Structural Risk Management principle from computational learning theory [12]."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 333,
+                                "start": 326
+                            }
+                        ],
+                        "text": "The SVM problem in linearly separable cases can be e ciently solved using quadratic programming techniques, while the non-linearly separable cases can be solved by either introducing soft margin hyperplanes, or by mapping the original data vectors to a higher dimensional space where the data points become linearly separable [12, 3]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 206755547,
+            "fieldsOfStudy": [
+                "Education"
+            ],
+            "id": "e64fecbaf4d75e0dd6711f8f335c8a53da9fd360",
+            "isKey": false,
+            "numCitedBy": 3182,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "If you really want to be smarter, reading can be one of the lots ways to evoke and realize. Many people who like reading will have more knowledge and experiences. Reading can be a way to gain information from economics, politics, science, fiction, literature, religion, and many others. As one of the part of book categories, the nature of statistical learning theory always becomes the most wanted book. Many people are absolutely searching for this book. It means that many love to read this kind of book."
+            },
+            "slug": "The-Nature-Of-Statistical-Learning-Theory-Cherkassky",
+            "title": {
+                "fragments": [],
+                "text": "The Nature Of Statistical Learning Theory"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "As one of the part of book categories, the nature of statistical learning theory always becomes the most wanted book."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks"
+            },
+            "year": 1997
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1604429801"
+                        ],
+                        "name": "Robert M. Haralock",
+                        "slug": "Robert-M.-Haralock",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Haralock",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Robert M. Haralock"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1809809"
+                        ],
+                        "name": "L. Shapiro",
+                        "slug": "L.-Shapiro",
+                        "structuredName": {
+                            "firstName": "Linda",
+                            "lastName": "Shapiro",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Shapiro"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "For the table detection task, we decided to use a decision tree classifier [ 5 ] because of the highly non-homogeneous nature of our features."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "Then the combined nine part results are averaged to arrive at the overall performance measures[ 5 ]."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 61087042,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a9eaaecf23f3a4b7822e4bcca924e02cd5b4dc4e",
+            "isKey": false,
+            "numCitedBy": 3343,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From the Publisher: \nThis two-volume set is an authoritative, comprehensive, modern work on computer vision that covers all of the different areas of vision with a balanced and unified approach. The discussion in \"Volume I\" focuses on image in, and image out or feature set out. \"Volume II\" covers the higher level techniques of illumination, perspective projection, analytical photogrammetry, motion, image matching, consistent labeling, model matching, and knowledge-based vision systems."
+            },
+            "slug": "Computer-and-Robot-Vision-Haralock-Shapiro",
+            "title": {
+                "fragments": [],
+                "text": "Computer and Robot Vision"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 89,
+                "text": "This two-volume set is an authoritative, comprehensive, modern work on computer vision that covers all of the different areas of vision with a balanced and unified approach."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "50560492"
+                        ],
+                        "name": "V. Vapnik",
+                        "slug": "V.-Vapnik",
+                        "structuredName": {
+                            "firstName": "Vladimir",
+                            "lastName": "Vapnik",
+                            "middleNames": [
+                                "Naumovich"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "V. Vapnik"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 7138354,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "8213dbed4db44e113af3ed17d6dad57471a0c048",
+            "isKey": false,
+            "numCitedBy": 38755,
+            "numCiting": 72,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Setting of the learning problem consistency of learning processes bounds on the rate of convergence of learning processes controlling the generalization ability of learning processes constructing learning algorithms what is important in learning theory?."
+            },
+            "slug": "The-Nature-of-Statistical-Learning-Theory-Vapnik",
+            "title": {
+                "fragments": [],
+                "text": "The Nature of Statistical Learning Theory"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Statistics for Engineering and Information Science"
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1750195"
+                        ],
+                        "name": "E. Trucco",
+                        "slug": "E.-Trucco",
+                        "structuredName": {
+                            "firstName": "Emanuele",
+                            "lastName": "Trucco",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "E. Trucco"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 60788031,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0ab81a64aa4f5a9099e2099cd3fffbe21e5bcbb1",
+            "isKey": false,
+            "numCitedBy": 1741,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Computer and Robot Vision Vol. 1, by R.M. Haralick and Linda G. Shapiro, Addison-Wesley, 1992, ISBN 0-201-10887-1."
+            },
+            "slug": "Computer-and-Robot-Vision-Trucco",
+            "title": {
+                "fragments": [],
+                "text": "Computer and Robot Vision"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1995
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1710238"
+                        ],
+                        "name": "R. Haralick",
+                        "slug": "R.-Haralick",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Haralick",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Haralick"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1809809"
+                        ],
+                        "name": "L. Shapiro",
+                        "slug": "L.-Shapiro",
+                        "structuredName": {
+                            "firstName": "Linda",
+                            "lastName": "Shapiro",
+                            "middleNames": [
+                                "G."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "L. Shapiro"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 98,
+                                "start": 95
+                            }
+                        ],
+                        "text": "Then the combined nine part results are averaged to arrive at the overall performance measures [4]."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 73,
+                                "start": 70
+                            }
+                        ],
+                        "text": "An implementation of the continuous-valued decision tree described in [4] was used for our experiments."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 59649283,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "eb926c671216af30e8e7ad2db8b60ffed05af30a",
+            "isKey": false,
+            "numCitedBy": 319,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Computer-and-Robot-Vision-(Volume-II)-Haralick-Shapiro",
+            "title": {
+                "fragments": [],
+                "text": "Computer and Robot Vision (Volume II)"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Computer and Robot Vision, v olume 1"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Computer and Robot Vision, v olume 1"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 19,
+                                "start": 15
+                            }
+                        ],
+                        "text": "After morphing [11] and removing the infrequent words, we obtain the set of words found in the training data, W."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "An algorithm for su x stripping"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Program, 14(3):130{137,"
+            },
+            "year": 1980
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Tsujii : A method to integrate tables of the World Wide Web"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Web Document Analysis , Proceedings of the 1 st International Workshop on Web Document Analysis"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "An algorithm for suux stripping"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Program"
+            },
+            "year": 1980
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "The java(tm) tutorial: A short course on the basics (the java(tm) series)"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "The java(tm) tutorial: A short course on the basics (the java(tm) series)"
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Porter : An algorithm for suffix stripping"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1980
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Wilfong : Why Table GroundTruthing is Hard \u2019"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            }
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "McDonald : Flexible Web Document Analysis for Delivery to NarrowBandwidth Devices"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2001
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 7,
+            "methodology": 8,
+            "result": 2
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 24,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/A-machine-learning-based-approach-for-table-on-the-Wang-Hu/d89945f77470b6a1dabd1f224f10b7d096fd9435?sort=total-citations"
+}

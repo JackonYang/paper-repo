@@ -1,0 +1,2465 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143707112"
+                        ],
+                        "name": "M. Collins",
+                        "slug": "M.-Collins",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Collins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Collins"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2060101052"
+                        ],
+                        "name": "Terry Koo",
+                        "slug": "Terry-Koo",
+                        "structuredName": {
+                            "firstName": "Terry",
+                            "lastName": "Koo",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Terry Koo"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 77,
+                                "start": 21
+                            }
+                        ],
+                        "text": "In reranking methods (Johnson et al., 1999; Collins, 2000; Shen et al., 2003), an initial parser is used to generate a number of candidate parses."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 258,
+                                "start": 97
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 71,
+                                "start": 56
+                            }
+                        ],
+                        "text": "Max-margin estimation has been used for parse reranking (Collins, 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 405878,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "844db702be4bc149b06b822b47247e15f5894cc3",
+            "isKey": false,
+            "numCitedBy": 776,
+            "numCiting": 65,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article considers approaches which rerank the output of an existing probabilistic parser. The base parser produces a set of candidate parses for each input sentence, with associated probabilities that define an initial ranking of these parses. A second model then attempts to improve upon this initial ranking, using additional features of the tree as evidence. The strength of our approach is that it allows a tree to be represented as an arbitrary set of features, without concerns about how these features interact or overlap and without the need to define a derivation or a generative model which takes these features into account. We introduce a new method for the reranking task, based on the boosting approach to ranking problems described in Freund et al. (1998). We apply the boosting method to parsing the Wall Street Journal treebank. The method combined the log-likelihood under a baseline model (that of Collins [1999]) with evidence from an additional 500,000 features over parse trees that were not included in the original model. The new model achieved 89.75 F-measure, a 13 relative decrease in F-measure error over the baseline model's score of 88.2. The article also introduces a new algorithm for the boosting approach which takes advantage of the sparsity of the feature space in the parsing data. Experiments show significant efficiency gains for the new algorithm over the obvious implementation of the boosting approach. We argue that the method is an appealing alternative-in terms of both simplicity and efficiency-to work on feature selection methods within log-linear (maximum-entropy) models. Although the experiments in this article are on natural language parsing (NLP), the approach should be applicable to many other NLP problems which are naturally framed as ranking tasks, for example, speech recognition, machine translation, or natural language generation."
+            },
+            "slug": "Discriminative-Reranking-for-Natural-Language-Collins-Koo",
+            "title": {
+                "fragments": [],
+                "text": "Discriminative Reranking for Natural Language Parsing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "The boosting approach to ranking problems described in Freund et al. (1998) is applied to parsing the Wall Street Journal treebank, and it is argued that the method is an appealing alternative-in terms of both simplicity and efficiency-to work on feature selection methods within log-linear (maximum-entropy) models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Computational Linguistics"
+            },
+            "year": 2005
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143707112"
+                        ],
+                        "name": "M. Collins",
+                        "slug": "M.-Collins",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Collins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Collins"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 7901127,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "3fc44ff7f37ec5585310666c183c65e0a0bb2446",
+            "isKey": false,
+            "numCitedBy": 2062,
+            "numCiting": 59,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This article describes three statistical models for natural language parsing. The models extend methods from probabilistic context-free grammars to lexicalized grammars, leading to approaches in which a parse tree is represented as the sequence of decisions corresponding to a head-centered, top-down derivation of the tree. Independence assumptions then lead to parameters that encode the X-bar schema, subcategorization, ordering of complements, placement of adjuncts, bigram lexical dependencies, wh-movement, and preferences for close attachment. All of these preferences are expressed by probabilities conditioned on lexical heads. The models are evaluated on the Penn Wall Street Journal Treebank, showing that their accuracy is competitive with other models in the literature. To gain a better understanding of the models, we also give results on different constituent types, as well as a breakdown of precision/recall results in recovering various types of dependencies. We analyze various characteristics of the models through experiments on parsing accuracy, by collecting frequencies of various structures in the treebank, and through linguistically motivated examples. Finally, we compare the models to others that have been applied to parsing the treebank, aiming to give some explanation of the difference in performance of the various models."
+            },
+            "slug": "Head-Driven-Statistical-Models-for-Natural-Language-Collins",
+            "title": {
+                "fragments": [],
+                "text": "Head-Driven Statistical Models for Natural Language Parsing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 53,
+                "text": "Three statistical models for natural language parsing are described, leading to approaches in which a parse tree is represented as the sequence of decisions corresponding to a head-centered, top-down derivation of the tree."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Computational Linguistics"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1803660"
+                        ],
+                        "name": "R. Kaplan",
+                        "slug": "R.-Kaplan",
+                        "structuredName": {
+                            "firstName": "Ronald",
+                            "lastName": "Kaplan",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Kaplan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3289329"
+                        ],
+                        "name": "S. Riezler",
+                        "slug": "S.-Riezler",
+                        "structuredName": {
+                            "firstName": "Stefan",
+                            "lastName": "Riezler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Riezler"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2142738"
+                        ],
+                        "name": "Tracy Holloway King",
+                        "slug": "Tracy-Holloway-King",
+                        "structuredName": {
+                            "firstName": "Tracy",
+                            "lastName": "King",
+                            "middleNames": [
+                                "Holloway"
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tracy Holloway King"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2265996"
+                        ],
+                        "name": "John T. Maxwell",
+                        "slug": "John-T.-Maxwell",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Maxwell",
+                            "middleNames": [
+                                "T."
+                            ],
+                            "suffix": "III"
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "John T. Maxwell"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "12755257"
+                        ],
+                        "name": "A. Vasserman",
+                        "slug": "A.-Vasserman",
+                        "structuredName": {
+                            "firstName": "Alexander",
+                            "lastName": "Vasserman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Vasserman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2953252"
+                        ],
+                        "name": "Dick Crouch",
+                        "slug": "Dick-Crouch",
+                        "structuredName": {
+                            "firstName": "Dick",
+                            "lastName": "Crouch",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Dick Crouch"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 121,
+                                "start": 102
+                            }
+                        ],
+                        "text": "For example, (Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004) describe approaches based on conditional log-linear (maximum entropy) models, where variants of the inside-outside algorithm can be used to efficiently calculate gradients of\u2026"
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 258,
+                                "start": 97
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 242,
+                                "start": 223
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson,\n2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, (Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004) describe approaches based on conditional log-linear (maximum entropy) models, where variants of the inside-outside algorithm can be used to efficiently calculate gradients of the log-likelihood function, despite the exponential number of trees represented by the parse forest."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6967888,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "29899547c993f30a9afcc3514ef55358d45d6b97",
+            "isKey": true,
+            "numCitedBy": 138,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Abstract : This paper reports some experiments that Compare the accuracy and performance of two stochastic parsing systems. The currently popular Collins parser is a shallow parser whose output contains more detailed semantically relevant information than other such parsers. The XLE parser is a deep-parsing system that couples a Lexical Functional Grammar to a log- linear disambiguation component and provides much richer representations theory. We measured the accuracy of both systems against a gold standard of the PARC 700 dependency bank, and also measured their processing times. We found the deep-parsing system to be more accurate than the Collins parser with only a slight reduction in parsing speed."
+            },
+            "slug": "Speed-and-Accuracy-in-Shallow-and-Deep-Stochastic-Kaplan-Riezler",
+            "title": {
+                "fragments": [],
+                "text": "Speed and Accuracy in Shallow and Deep Stochastic Parsing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 69,
+                "text": "This paper reports some experiments that Compare the accuracy and performance of two stochastic parsing systems and found the deep-parsing system to be more accurate than the Collins parser with only a slight reduction in parsing speed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NAACL"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3259253"
+                        ],
+                        "name": "Kristina Toutanova",
+                        "slug": "Kristina-Toutanova",
+                        "structuredName": {
+                            "firstName": "Kristina",
+                            "lastName": "Toutanova",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Kristina Toutanova"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38666915"
+                        ],
+                        "name": "D. Klein",
+                        "slug": "D.-Klein",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Klein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Klein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1740765"
+                        ],
+                        "name": "Y. Singer",
+                        "slug": "Y.-Singer",
+                        "structuredName": {
+                            "firstName": "Yoram",
+                            "lastName": "Singer",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Singer"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 225,
+                                "start": 203
+                            }
+                        ],
+                        "text": "For sequence tasks like part-of-speech tagging or named-entity extraction, recent top-performing systems have also generally been based on discriminative sequence models, like conditional Markov models (Toutanova et al., 2003) or conditional random fields (Lafferty et al., 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 226,
+                                "start": 202
+                            }
+                        ],
+                        "text": "For sequence tasks like part-of-speech tagging or named-entity extraction, recent top-performing systems have also generally been based on discriminative sequence models, like conditional Markov models (Toutanova et al., 2003) or conditional random fields (Lafferty et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 125,
+                                "start": 102
+                            }
+                        ],
+                        "text": "Tag features on the test sets were taken from a pretagging of the sentence by the tagger described in Toutanova et al. (2003)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14835360,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "eb42a490cf4f186d3383c92963817d100afd81e2",
+            "isKey": false,
+            "numCitedBy": 3438,
+            "numCiting": 43,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new part-of-speech tagger that demonstrates the following ideas: (i) explicit use of both preceding and following tag contexts via a dependency network representation, (ii) broad use of lexical features, including jointly conditioning on multiple consecutive words, (iii) effective use of priors in conditional loglinear models, and (iv) fine-grained modeling of unknown word features. Using these ideas together, the resulting tagger gives a 97.24% accuracy on the Penn Treebank WSJ, an error reduction of 4.4% on the best previous single automatically learned tagging result."
+            },
+            "slug": "Feature-Rich-Part-of-Speech-Tagging-with-a-Cyclic-Toutanova-Klein",
+            "title": {
+                "fragments": [],
+                "text": "Feature-Rich Part-of-Speech Tagging with a Cyclic Dependency Network"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 82,
+                "text": "A new part-of-speech tagger is presented that demonstrates the following ideas: explicit use of both preceding and following tag contexts via a dependency network representation, broad use of lexical features, and effective use of priors in conditional loglinear models."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NAACL"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "38666915"
+                        ],
+                        "name": "D. Klein",
+                        "slug": "D.-Klein",
+                        "structuredName": {
+                            "firstName": "Dan",
+                            "lastName": "Klein",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Klein"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144783904"
+                        ],
+                        "name": "Christopher D. Manning",
+                        "slug": "Christopher-D.-Manning",
+                        "structuredName": {
+                            "firstName": "Christopher",
+                            "lastName": "Manning",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Christopher D. Manning"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 11495042,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a600850ac0120cb09a0b7de7da80bb6a7a76de06",
+            "isKey": false,
+            "numCitedBy": 3370,
+            "numCiting": 29,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We demonstrate that an unlexicalized PCFG can parse much more accurately than previously shown, by making use of simple, linguistically motivated state splits, which break down false independence assumptions latent in a vanilla treebank grammar. Indeed, its performance of 86.36% (LP/LR F1) is better than that of early lexicalized PCFG models, and surprisingly close to the current state-of-the-art. This result has potential uses beyond establishing a strong lower bound on the maximum possible accuracy of unlexicalized models: an unlexicalized PCFG is much more compact, easier to replicate, and easier to interpret than more complex lexical models, and the parsing algorithms are simpler, more widely understood, of lower asymptotic complexity, and easier to optimize."
+            },
+            "slug": "Accurate-Unlexicalized-Parsing-Klein-Manning",
+            "title": {
+                "fragments": [],
+                "text": "Accurate Unlexicalized Parsing"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 98,
+                "text": "It is demonstrated that an unlexicalized PCFG can parse much more accurately than previously shown, by making use of simple, linguistically motivated state splits, which break down false independence assumptions latent in a vanilla treebank grammar."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "145177220"
+                        ],
+                        "name": "Mark Johnson",
+                        "slug": "Mark-Johnson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Johnson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Johnson"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 42
+                            }
+                        ],
+                        "text": "For example, the maximum entropy approach (Johnson, 2001) defines a conditional log-linear model:"
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 258,
+                                "start": 97
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, (Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004) describe approaches based on conditional log-linear (maximum entropy) models, where variants of the inside-outside algorithm can be used to efficiently calculate gradients of the log-likelihood function, despite the exponential number of trees represented by the parse forest."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 739426,
+            "fieldsOfStudy": [
+                "Economics",
+                "Computer Science"
+            ],
+            "id": "435245be302b3dc8ed244b1e6b2dba0b92baacf8",
+            "isKey": false,
+            "numCitedBy": 66,
+            "numCiting": 24,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper compares two different ways of estimating statistical language models. Many statistical NLP tagging and parsing models are estimated by maximizing the (joint) likelihood of the fully-observed training data. However, since these applications only require the conditional probability distributions, these distributions can in principle be learnt by maximizing the conditional likelihood of the training data. Perhaps somewhat surprisingly, models estimated by maximizing the joint were superior to models estimated by maximizing the conditional, even though some of the latter models intuitively had access to \"more information\"."
+            },
+            "slug": "Joint-and-Conditional-Estimation-of-Tagging-and-Johnson",
+            "title": {
+                "fragments": [],
+                "text": "Joint and Conditional Estimation of Tagging and Parsing Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 70,
+                "text": "This paper compares two different ways of estimating statistical language models by maximizing the joint likelihood of the fully-observed training data and finds that some of the latter models intuitively had access to \"more information\" than the former."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143707112"
+                        ],
+                        "name": "M. Collins",
+                        "slug": "M.-Collins",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Collins",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "M. Collins"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 258,
+                                "start": 97
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 10576017,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "1a6cda5c73b3da91ce4260b2b70ca5c226b39edf",
+            "isKey": false,
+            "numCitedBy": 132,
+            "numCiting": 68,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A fundamental problem in statistical parsing is the choice of criteria and algo-algorithms used to estimate the parameters in a model. The predominant approach in computational linguistics has been to use a parametric model with some variant of maximum-likelihood estimation. The assumptions under which maximum-likelihood estimation is justified are arguably quite strong. This chapter discusses the statistical theory underlying various parameter-estimation methods, and gives algorithms which depend on alternatives to (smoothed) maximum-likelihood estimation. We first give an overview of results from statistical learning theory. We then show how important concepts from the classification literature - specifically, generalization results based on margins on training data - can be derived for parsing models. Finally, we describe parameter estimation algorithms which are motivated by these generalization bounds."
+            },
+            "slug": "Parameter-Estimation-for-Statistical-Parsing-Theory-Collins",
+            "title": {
+                "fragments": [],
+                "text": "Parameter Estimation for Statistical Parsing Models: Theory and Practice of"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This chapter discusses the statistical theory underlying various parameter-estimation methods, and gives algorithms which depend on alternatives to maximum-likelihood estimation, and describes parameter estimation algorithms which are motivated by these generalization bounds."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IWPT"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "39839719"
+                        ],
+                        "name": "Libin Shen",
+                        "slug": "Libin-Shen",
+                        "structuredName": {
+                            "firstName": "Libin",
+                            "lastName": "Shen",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Libin Shen"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3028658"
+                        ],
+                        "name": "Anoop Sarkar",
+                        "slug": "Anoop-Sarkar",
+                        "structuredName": {
+                            "firstName": "Anoop",
+                            "lastName": "Sarkar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Anoop Sarkar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1714374"
+                        ],
+                        "name": "A. Joshi",
+                        "slug": "A.-Joshi",
+                        "structuredName": {
+                            "firstName": "Aravind",
+                            "lastName": "Joshi",
+                            "middleNames": [
+                                "K."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Joshi"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 59
+                            }
+                        ],
+                        "text": "In reranking methods (Johnson et al., 1999; Collins, 2000; Shen et al., 2003), an initial parser is used to generate a number of candidate parses."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 1857060,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "a46152d8ad27ae47086334c33c8376185b40340d",
+            "isKey": false,
+            "numCitedBy": 67,
+            "numCiting": 31,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We propose the use of Lexicalized Tree Adjoining Grammar (LTAG) as a source of features that are useful for reranking the output of a statistical parser. In this paper, we extend the notion of a tree kernel over arbitrary sub-trees of the parse to the derivation trees and derived trees provided by the LTAG formalism, and in addition, we extend the original definition of the tree kernel, making it more lexicalized and more compact. We use LTAG based features for the parse reranking task and obtain labeled recall and precision of 89.7%/90.0% on WSJ section 23 of Penn Treebank for sentences of length \u2264 100 words. Our results show that the use of LTAG based tree kernel gives rise to a 17% relative difference in f-score improvement over the use of a linear kernel without LTAG based features."
+            },
+            "slug": "Using-LTAG-Based-Features-in-Parse-Reranking-Shen-Sarkar",
+            "title": {
+                "fragments": [],
+                "text": "Using LTAG Based Features in Parse Reranking"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "This paper extends the notion of a tree kernel over arbitrary sub-trees of the parse to the derivation trees and derived trees provided by the LTAG formalism, and in addition, it extends the original definition of the tree kernel, making it more lexicalized and more compact."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "EMNLP"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144523372"
+                        ],
+                        "name": "S. Clark",
+                        "slug": "S.-Clark",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Clark",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Clark"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1733593"
+                        ],
+                        "name": "J. Curran",
+                        "slug": "J.-Curran",
+                        "structuredName": {
+                            "firstName": "James",
+                            "lastName": "Curran",
+                            "middleNames": [
+                                "R."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Curran"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 258,
+                                "start": 97
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, (Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004) describe approaches based on conditional log-linear (maximum entropy) models, where variants of the inside-outside algorithm can be used to efficiently calculate gradients of the log-likelihood function, despite the exponential number of trees represented by the parse forest."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6802974,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b9eea85e590f6e522e3681b8e45012684c60b0fd",
+            "isKey": false,
+            "numCitedBy": 348,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper describes and evaluates log-linear parsing models for Combinatory Categorial Grammar (CCG). A parallel implementation of the L-BFGS optimisation algorithm is described, which runs on a Beowulf cluster allowing the complete Penn Treebank to be used for estimation. We also develop a new efficient parsing algorithm for CCG which maximises expected recall of dependencies. We compare models which use all CCG derivations, including non-standard derivations, with normal-form models. The performances of the two models are comparable and the results are competitive with existing wide-coverage CCG parsers."
+            },
+            "slug": "Parsing-the-WSJ-Using-CCG-and-Log-Linear-Models-Clark-Curran",
+            "title": {
+                "fragments": [],
+                "text": "Parsing the WSJ Using CCG and Log-Linear Models"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 63,
+                "text": "A parallel implementation of the L-BFGS optimisation algorithm is described, which runs on a Beowulf cluster allowing the complete Penn Treebank to be used for estimation and a new efficient parsing algorithm for CCG which maximises expected recall of dependencies is developed."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685978"
+                        ],
+                        "name": "B. Taskar",
+                        "slug": "B.-Taskar",
+                        "structuredName": {
+                            "firstName": "Ben",
+                            "lastName": "Taskar",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "B. Taskar"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1730156"
+                        ],
+                        "name": "Carlos Guestrin",
+                        "slug": "Carlos-Guestrin",
+                        "structuredName": {
+                            "firstName": "Carlos",
+                            "lastName": "Guestrin",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Carlos Guestrin"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1736370"
+                        ],
+                        "name": "D. Koller",
+                        "slug": "D.-Koller",
+                        "structuredName": {
+                            "firstName": "Daphne",
+                            "lastName": "Koller",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Koller"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 12
+                            }
+                        ],
+                        "text": "As shown in Taskar et al. (2003), the dual in Eq."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 57
+                            }
+                        ],
+                        "text": "Recently, it has also been extended to graphical models (Taskar et al., 2003; Altun et al., 2003) and shown to outperform the standard maxlikelihood methods."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 124,
+                                "start": 104
+                            }
+                        ],
+                        "text": "The idea of this decomposition has previously been used for sequences and other Markov random fields in Taskar et al. (2003), but the present extension to CFGs is novel."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 86
+                            }
+                        ],
+                        "text": "The primary contribution of this paper is the extension of the max-margin approach of Taskar et al. (2003) to context free grammars."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 223,
+                                "start": 203
+                            }
+                        ],
+                        "text": "Hence, in our experiments we use an online coordinate descent method analogous to the sequential minimal optimization (SMO) used for SVMs (Platt, 1999) and adapted to structured max-margin estimation in Taskar et al. (2003)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 220,
+                                "start": 200
+                            }
+                        ],
+                        "text": "The functions we consider take the following linear discriminant form:\nfw(x) = arg max y\u2208G(x) \u3008w,\u03a6(x, y)\u3009,\n1This articulated loss is supported by empirical success and theoretical generalization bound in Taskar et al. (2003)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 45
+                            }
+                        ],
+                        "text": "Our method extends the maxmargin approach of Taskar et al. (2003) to the case of context-free grammars."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 201720,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "0c450531e1121cfb657be5195e310217a4675397",
+            "isKey": false,
+            "numCitedBy": 1477,
+            "numCiting": 41,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In typical classification tasks, we seek a function which assigns a label to a single object. Kernel-based approaches, such as support vector machines (SVMs), which maximize the margin of confidence of the classifier, are the method of choice for many such tasks. Their popularity stems both from the ability to use high-dimensional feature spaces, and from their strong theoretical guarantees. However, many real-world tasks involve sequential, spatial, or structured data, where multiple labels must be assigned. Existing kernel-based methods ignore structure in the problem, assigning labels independently to each object, losing much useful information. Conversely, probabilistic graphical models, such as Markov networks, can represent correlations between labels, by exploiting problem structure, but cannot handle high-dimensional feature spaces, and lack strong theoretical generalization guarantees. In this paper, we present a new framework that combines the advantages of both approaches: Maximum margin Markov (M3) networks incorporate both kernels, which efficiently deal with high-dimensional features, and the ability to capture correlations in structured data. We present an efficient algorithm for learning M3 networks based on a compact quadratic program formulation. We provide a new theoretical bound for generalization in structured domains. Experiments on the task of handwritten character recognition and collective hypertext classification demonstrate very significant gains over previous approaches."
+            },
+            "slug": "Max-Margin-Markov-Networks-Taskar-Guestrin",
+            "title": {
+                "fragments": [],
+                "text": "Max-Margin Markov Networks"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 37,
+                "text": "Maximum margin Markov (M3) networks incorporate both kernels, which efficiently deal with high-dimensional features, and the ability to capture correlations in structured data, and a new theoretical bound for generalization in structured domains is provided."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1786202"
+                        ],
+                        "name": "H. Bunt",
+                        "slug": "H.-Bunt",
+                        "structuredName": {
+                            "firstName": "Harry",
+                            "lastName": "Bunt",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "H. Bunt"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144708726"
+                        ],
+                        "name": "John A. Carroll",
+                        "slug": "John-A.-Carroll",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Carroll",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "John A. Carroll"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152299194"
+                        ],
+                        "name": "G. Satta",
+                        "slug": "G.-Satta",
+                        "structuredName": {
+                            "firstName": "G.",
+                            "lastName": "Satta",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. Satta"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 221252969,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "e70f27fc0f4631b4b10fc0537d54b391afd6ab44",
+            "isKey": false,
+            "numCitedBy": 22,
+            "numCiting": 5,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Preface. 1: Developments in Parsing Technology: From Theory to Application H. Bunt, J. Carroll, G. Satta. 1. Introduction. 2. About this book. 2: Parameter Estimation for Statistical Parsing Models: Theory and Practice of Distribution-Free Methods M. Collins. 1. Introduction. 2. Linear Models. 3. Probabilistic Context-Free Grammars. 4. Statistical Learning Theory. 5. Convergence Bounds for Finite Sets of Hypotheses. 6. Convergence Bounds for Hyperplane Classifiers. 7. Application of Margin Analysis to Parsing. 8. Algorithms. 9. Discussion. 10. Conclusions. 3: High Precision Extraction of Grammatical Relations J. Carroll, T. Briscoe. 1. Introduction. 2. The Analysis System. 3. Empirical Results. 4. Conclusions and Further Work. 4: Automated Extraction of TAGs from the Penn Treebank J. Chen, K.V. Shanker. 1. Introduction. 2. Tree Extraction Procedure. 3. Evaluation. 4. Extended Extracted Grammars. 5. Related Work. 6. Conclusions. 5: Computing the Most Probable Parse for a Discontinuous Phrase-Structure Grammar O. Plaehn. 1. Introduction. 2. Discontinuous Phrase-Structure Grammar. 3. The Parsing Algorithm. 4. Computing the Most Probable Parse. 5. Experiments. 6. Conclusion and Future Work. 6: A Neural Network Parser that Handles Sparse Data J. Henderson. 1. Introduction. 2. Simple Synchrony Networks. 3. A Probabilistic Parser for SSNs. 4. Estimating the Probabilities with a Simple Synchrony Network. 5. Generalizing from Sparse Data. 6. Conclusion. 7: An Efficient LR Parser Generator for Tree-Adjoining Grammars C.A. Prolo. 1. Introduction. 2. TAGS. 3. On Some Degenerate LR Models for TAGS. 4. Proposed Algorithm. 5. Implementation. 6. Example. 7. Some Properties Of the Algorithms. 8. Evaluation. 9. Conclusions. 8: Relating Tabular Parsing Algorithms for LIG and TAG M.A. Alonso, E. de la Clergerie, V.J. Diaz, M. Vilares. 1. Introduction. 2. Tree-Adjoining Grammars. 3. Linear Indexed Grammars. 4. Bottom-upParsing Algorithms. 5. Barley-like Parsing Algorithms. 6. Barley-like Parsing Algorithms Preserving the Correct Prefix Property. 7. Bidirectional Parsing. 8. Specialized TAG parsers. 9. Conclusion. 9: Improved Left-Corner Chart Parsing for Large Context-Free Grammars R.C. Moore. 1. Introduction. 2. Evaluating Parsing Algorithms. 3. Terminology and Notation. 4. Test Grammars. 5. Left-Corner Parsing Algorithms and Refinements. 6. Grammar Transformations. 7. Extracting Parses from the Chart. 8. Comparison to Other Algorithms. 9. Conclusions. 10: On Two Classes of Feature Paths in Large-Scale Unification Grammars L. Ciortuz. 1. Introduction. 2. Compiling the Quick Check Filter. 3. Generalised Rule Reduction. 4. Conclusion. 11: A Context-Free Superset Approximation of Unification-Based Grammars B. Kiefer, H.-U. Krieger. 1. Introduction. 2. Basic Inventory. 3. Approximation as Fixpoint Construction. 4. The Basic Algorithm. 5. Implementation Issues and Optimizations. 6. Revisiting the Fixpoint Construction. 7. Three Grammars. 8. Disambiguation of UBGs via Probabilistic Approximations. 12: A Recognizer for Minimalist Languages H. Harkema. 1. Introduction. 2. Minimalist Grammars. 3. Specification of the Recognizer. 4. Correctness. 5. Complexity Results. 6. Conclusions and Future Work. 13: Range Concatenation Grammars P. Boullier. 1. Introduction. 2. Positive Range Concatenation Grammars. 3. Negative Range Concatenation Grammars. 4. A Parsing Algorithm for RCGs. 5. Closure Properties and Modularity. 6. Conclusion. 14: Grammar Induction by MDL-Based Distributional Classification Yikun Guo, Fuliang Weng, Lide Wu. 1. Introduction. 2. Grammar Induction with the MDL Principle. 3. Induction Strategies. 4. MDL Induction by Dynamic Distributional Classification (DCC). 5. Comparison and Conclusion. Appendix. 15: Optimal Ambiguity Packing in Context-Free Parsers with Interleaved Unification A. Lavie, C. Penstein Rose. 1."
+            },
+            "slug": "New-developments-in-parsing-technology-Bunt-Carroll",
+            "title": {
+                "fragments": [],
+                "text": "New developments in parsing technology"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 54,
+                "text": "This book discusses the development of Parsing Technology from Theory to Application, and concludes that computing the Most Probable Parse for a Discontinuous Phrase-Structure Grammar with a Simple Synchrony Network is feasible."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2004
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "67337974"
+                        ],
+                        "name": "Miyao Yusuke",
+                        "slug": "Miyao-Yusuke",
+                        "structuredName": {
+                            "firstName": "Miyao",
+                            "lastName": "Yusuke",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Miyao Yusuke"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1737901"
+                        ],
+                        "name": "Junichi Tsujii",
+                        "slug": "Junichi-Tsujii",
+                        "structuredName": {
+                            "firstName": "Junichi",
+                            "lastName": "Tsujii",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Junichi Tsujii"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 258,
+                                "start": 97
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, (Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004) describe approaches based on conditional log-linear (maximum entropy) models, where variants of the inside-outside algorithm can be used to efficiently calculate gradients of the log-likelihood function, despite the exponential number of trees represented by the parse forest."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 15084210,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "51836a978517a4fdd6b68f69d3821c0d1a339e09",
+            "isKey": false,
+            "numCitedBy": 124,
+            "numCiting": 12,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "An algorithm is proposed for maximum entropy modeling. It enables probabilistic modeling of complete structures, such as transition sequences in Markov models and parse trees, without dividing them into independent sub-events. A probabilistic event is represented by a feature forest, which is a packed representation of features with ambiguities. The parameters are efficiently estimated by traversing each node in a feature forest by dynamic programming. Experiments showed the algorithm worked efficiently even when ambiguities in a feature forest cause an exponential explosion of unpacked structures."
+            },
+            "slug": "Maximum-entropy-estimation-for-feature-forests-Yusuke-Tsujii",
+            "title": {
+                "fragments": [],
+                "text": "Maximum entropy estimation for feature forests"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 98,
+                "text": "An algorithm is proposed for maximum entropy modeling that enables probabilistic modeling of complete structures, such as transition sequences in Markov models and parse trees, without dividing them into independent sub-events."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1739581"
+                        ],
+                        "name": "J. Lafferty",
+                        "slug": "J.-Lafferty",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Lafferty",
+                            "middleNames": [
+                                "D."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Lafferty"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143753639"
+                        ],
+                        "name": "A. McCallum",
+                        "slug": "A.-McCallum",
+                        "structuredName": {
+                            "firstName": "Andrew",
+                            "lastName": "McCallum",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. McCallum"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "113414328"
+                        ],
+                        "name": "Fernando Pereira",
+                        "slug": "Fernando-Pereira",
+                        "structuredName": {
+                            "firstName": "Fernando",
+                            "lastName": "Pereira",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Fernando Pereira"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 278,
+                                "start": 257
+                            }
+                        ],
+                        "text": "For sequence tasks like part-of-speech tagging or named-entity extraction, recent top-performing systems have also generally been based on discriminative sequence models, like conditional Markov models (Toutanova et al., 2003) or conditional random fields (Lafferty et al., 2001)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 60,
+                                "start": 37
+                            }
+                        ],
+                        "text": ", 2003) or conditional random fields (Lafferty et al., 2001)."
+                    },
+                    "intents": []
+                }
+            ],
+            "corpusId": 219683473,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "f4ba954b0412773d047dc41231c733de0c1f4926",
+            "isKey": false,
+            "numCitedBy": 13410,
+            "numCiting": 75,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present conditional random fields , a framework for building probabilistic models to segment and label sequence data. Conditional random fields offer several advantages over hidden Markov models and stochastic grammars for such tasks, including the ability to relax strong independence assumptions made in those models. Conditional random fields also avoid a fundamental limitation of maximum entropy Markov models (MEMMs) and other discriminative Markov models based on directed graphical models, which can be biased towards states with few successor states. We present iterative parameter estimation algorithms for conditional random fields and compare the performance of the resulting models to HMMs and MEMMs on synthetic and natural-language data."
+            },
+            "slug": "Conditional-Random-Fields:-Probabilistic-Models-for-Lafferty-McCallum",
+            "title": {
+                "fragments": [],
+                "text": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 45,
+                "text": "This work presents iterative parameter estimation algorithms for conditional random fields and compares the performance of the resulting models to HMMs and MEMMs on synthetic and natural-language data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2001
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3194361"
+                        ],
+                        "name": "S. Geman",
+                        "slug": "S.-Geman",
+                        "structuredName": {
+                            "firstName": "Stuart",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Geman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152465203"
+                        ],
+                        "name": "Mark Johnson",
+                        "slug": "Mark-Johnson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Johnson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Johnson"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 258,
+                                "start": 97
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 122,
+                                "start": 13
+                            }
+                        ],
+                        "text": "For example, (Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004) describe approaches based on conditional log-linear (maximum entropy) models, where variants of the inside-outside algorithm can be used to efficiently calculate gradients of the log-likelihood function, despite the exponential number of trees represented by the parse forest."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 13079001,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "2685fc6cc208c67088afa9e8c2743511852fc19c",
+            "isKey": false,
+            "numCitedBy": 75,
+            "numCiting": 10,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Stochastic unification-based grammars (SUBGs) define exponential distributions over the parses generated by a unification-based grammar (UBG). Existing algorithms for parsing and estimation require the enumeration of all of the parses of a string in order to determine the most likely one, or in order to calculate the statistics needed to estimate a grammar from a training corpus. This paper describes a graph-based dynamic programming algorithm for calculating these statistics from the packed UBG parse representations of Maxwell and Kaplan (1995) which does not require enumerating all parses. Like many graphical algorithms, the dynamic programming algorithm's complexity is worst-case exponential, but is often polynomial. The key observation is that by using Maxwell and Kaplan packed representations, the required statistics can be rewritten as either the max or the sum of a product of functions. This is exactly the kind of problem which can be solved by dynamic programming over graphical models."
+            },
+            "slug": "Dynamic-programming-for-parsing-and-estimation-of-Geman-Johnson",
+            "title": {
+                "fragments": [],
+                "text": "Dynamic programming for parsing and estimation of stochastic unification-based grammars"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 40,
+                "text": "A graph-based dynamic programming algorithm for calculating statistics from the packed UBG parse representations of Maxwell and Kaplan (1995) which does not require enumerating all parses."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 2002
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "152465203"
+                        ],
+                        "name": "Mark Johnson",
+                        "slug": "Mark-Johnson",
+                        "structuredName": {
+                            "firstName": "Mark",
+                            "lastName": "Johnson",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Mark Johnson"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3194361"
+                        ],
+                        "name": "S. Geman",
+                        "slug": "S.-Geman",
+                        "structuredName": {
+                            "firstName": "Stuart",
+                            "lastName": "Geman",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Geman"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "47428006"
+                        ],
+                        "name": "S. Canon",
+                        "slug": "S.-Canon",
+                        "structuredName": {
+                            "firstName": "Stephen",
+                            "lastName": "Canon",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Canon"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3140471"
+                        ],
+                        "name": "Zhiyi Chi",
+                        "slug": "Zhiyi-Chi",
+                        "structuredName": {
+                            "firstName": "Zhiyi",
+                            "lastName": "Chi",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zhiyi Chi"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3289329"
+                        ],
+                        "name": "S. Riezler",
+                        "slug": "S.-Riezler",
+                        "structuredName": {
+                            "firstName": "Stefan",
+                            "lastName": "Riezler",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Riezler"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "UNPAYWALL"
+                },
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 42,
+                                "start": 22
+                            }
+                        ],
+                        "text": "In reranking methods (Johnson et al., 1999; Collins, 2000; Shen et al., 2003), an initial parser is used to generate a number of candidate parses."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 258,
+                                "start": 97
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson, 2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 118,
+                                "start": 98
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson,\n2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 17435621,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "463dbd690d912b23d29b7581fb6b253b36f50394",
+            "isKey": false,
+            "numCitedBy": 233,
+            "numCiting": 19,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Log-linear models provide a statistically sound framework for Stochastic \"Unification-Based\" Grammars (SUBGs) and stochastic versions of other kinds of grammars. We describe two computationally-tractable ways of estimating the parameters of such grammars from a training corpus of syntactic analyses, and apply these to estimate a stochastic version of Lexical-Functional Grammar."
+            },
+            "slug": "Estimators-for-Stochastic-\"Unification-Based\"-Johnson-Geman",
+            "title": {
+                "fragments": [],
+                "text": "Estimators for Stochastic \"Unification-Based\" Grammars"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "Two computationally-tractable ways of estimating the parameters of Stochastic \"Unification-Based\" Grammars from a training corpus of syntactic analyses are described and applied to estimate a stochastic version of Lexical-Functional Grammar."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ACL"
+            },
+            "year": 1999
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1783941"
+                        ],
+                        "name": "Y. Altun",
+                        "slug": "Y.-Altun",
+                        "structuredName": {
+                            "firstName": "Yasemin",
+                            "lastName": "Altun",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Y. Altun"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1765700"
+                        ],
+                        "name": "Ioannis Tsochantaridis",
+                        "slug": "Ioannis-Tsochantaridis",
+                        "structuredName": {
+                            "firstName": "Ioannis",
+                            "lastName": "Tsochantaridis",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Ioannis Tsochantaridis"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "143936663"
+                        ],
+                        "name": "Thomas Hofmann",
+                        "slug": "Thomas-Hofmann",
+                        "structuredName": {
+                            "firstName": "Thomas",
+                            "lastName": "Hofmann",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Thomas Hofmann"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 96,
+                                "start": 78
+                            }
+                        ],
+                        "text": "Recently, it has also been extended to graphical models (Taskar et al., 2003; Altun et al., 2003) and shown to outperform the standard maxlikelihood methods."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 9699301,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5fe5ed2a3b50becdbbcd17e7733653d5ef6ac398",
+            "isKey": false,
+            "numCitedBy": 556,
+            "numCiting": 15,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper presents a novel discriminative learning technique for label sequences based on a combination of the two most successful learning algorithms, Support Vector Machines and Hidden Markov Models which we call Hidden Markov Support Vector Machine. The proposed architecture handles dependencies between neighboring labels using Viterbi decoding. In contrast to standard HMM training, the learning procedure is discriminative and is based on a maximum/soft margin criterion. Compared to previous methods like Conditional Random Fields, Maximum Entropy Markov Models and label sequence boosting, HM-SVMs have a number of advantages. Most notably, it is possible to learn non-linear discriminant functions via kernel functions. At the same time, HM-SVMs share the key advantages with other discriminative methods, in particular the capability to deal with overlapping features. We report experimental evaluations on two tasks, named entity recognition and part-of-speech tagging, that demonstrate the competitiveness of the proposed approach."
+            },
+            "slug": "Hidden-Markov-Support-Vector-Machines-Altun-Tsochantaridis",
+            "title": {
+                "fragments": [],
+                "text": "Hidden Markov Support Vector Machines"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 81,
+                "text": "This paper presents a novel discriminative learning technique for label sequences based on a combination of the two most successful learning algorithms, Support Vector Machines and Hidden Markov Models which it is called HM-SVMs and handles dependencies between neighboring labels using Viterbi decoding."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "ICML"
+            },
+            "year": 2003
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1685083"
+                        ],
+                        "name": "N. Cristianini",
+                        "slug": "N.-Cristianini",
+                        "structuredName": {
+                            "firstName": "Nello",
+                            "lastName": "Cristianini",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Cristianini"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1404459229"
+                        ],
+                        "name": "J. Shawe-Taylor",
+                        "slug": "J.-Shawe-Taylor",
+                        "structuredName": {
+                            "firstName": "John",
+                            "lastName": "Shawe-Taylor",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Shawe-Taylor"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 253,
+                                "start": 217
+                            }
+                        ],
+                        "text": "For our problem, just as for SVMs, the dual has important computational advantages, including the \u201ckernel trick,\u201d which allows the efficient use of high-dimensional features spaces endowed with efficient dot products (Cristianini and Shawe-Taylor, 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 14727192,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "5c04f8002e24a8c09bfbfedca3c6c346fe1e5d53",
+            "isKey": false,
+            "numCitedBy": 13352,
+            "numCiting": 27,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "From the publisher: This is the first comprehensive introduction to Support Vector Machines (SVMs), a new generation learning system based on recent advances in statistical learning theory. SVMs deliver state-of-the-art performance in real-world applications such as text categorisation, hand-written character recognition, image classification, biosequences analysis, etc., and are now established as one of the standard tools for machine learning and data mining. Students will find the book both stimulating and accessible, while practitioners will be guided smoothly through the material required for a good grasp of the theory and its applications. The concepts are introduced gradually in accessible and self-contained stages, while the presentation is rigorous and thorough. Pointers to relevant literature and web sites containing software ensure that it forms an ideal starting point for further study. Equally, the book and its associated web site will guide practitioners to updated literature, new applications, and on-line software."
+            },
+            "slug": "An-Introduction-to-Support-Vector-Machines-and-Cristianini-Shawe-Taylor",
+            "title": {
+                "fragments": [],
+                "text": "An Introduction to Support Vector Machines and Other Kernel-based Learning Methods"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 80,
+                "text": "This is the first comprehensive introduction to Support Vector Machines (SVMs), a new generation learning system based on recent advances in statistical learning theory, and will guide practitioners to updated literature, new applications, and on-line software."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 2000
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2146325920"
+                        ],
+                        "name": "Tong Zhang",
+                        "slug": "Tong-Zhang",
+                        "structuredName": {
+                            "firstName": "Tong",
+                            "lastName": "Zhang",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Tong Zhang"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 57,
+                                "start": 44
+                            }
+                        ],
+                        "text": "In reranking methods (Johnson et al., 1999; Collins, 2000; Shen et al., 2003), an initial parser is used to generate a number of candidate parses."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 133,
+                                "start": 120
+                            }
+                        ],
+                        "text": "A number of recent papers have considered discriminative approaches for natural language parsing (Johnson et al., 1999; Collins, 2000; Johnson, 2001; Geman and Johnson,\n2002; Miyao and Tsujii, 2002; Clark and Curran, 2004; Kaplan et al., 2004; Collins, 2004)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 42,
+                                "start": 28
+                            }
+                        ],
+                        "text": "For\nexample, in the work of Collins (2000), 41% of the correct parses were not in the candidate pool of \u223c30-best parses."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 177,
+                                "start": 164
+                            }
+                        ],
+                        "text": "In this paper, we advocate a different estimation criterion, inspired by the max-margin principle of SVMs. Max-margin estimation has been used for parse reranking (Collins, 2000)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 42131894,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "506f516d8b60ba74e5ce811a458ec4fd72d714b2",
+            "isKey": true,
+            "numCitedBy": 916,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This book is an introduction to support vector machines and related kernel methods in supervised learning, whose task is to estimate an input-output functional relationship from a training set of examples. A learning problem is referred to as classification if its output take discrete values in a set of possible categories and regression if it has continuous real-valued output."
+            },
+            "slug": "An-Introduction-to-Support-Vector-Machines-and-Zhang",
+            "title": {
+                "fragments": [],
+                "text": "An Introduction to Support Vector Machines and Other Kernel-Based Learning Methods"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 100,
+                "text": "This book is an introduction to support vector machines and related kernel methods in supervised learning, whose task is to estimate an input-output functional relationship from a training set of examples."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "AI Mag."
+            },
+            "year": 2001
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 105,
+                                "start": 101
+                            }
+                        ],
+                        "text": "In this paper, we advocate a different estimation criterion, inspired by the max-margin principle of SVMs. Max-margin estimation has been used for parse reranking (Collins, 2000)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 7,
+                                "start": 3
+                            }
+                        ],
+                        "text": "In SVMs, the optimization problem is solved by working with the dual of a quadratic program analogous to Eq."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 93,
+                                "start": 89
+                            }
+                        ],
+                        "text": "The empirical utility of models such as logistic regression and support vector machines (SVMs) in flat classification tasks like text categorization, word-sense disambiguation, and relevance routing has been repeatedly demonstrated."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 33,
+                                "start": 29
+                            }
+                        ],
+                        "text": "For our problem, just as for SVMs, the dual has important computational advantages, including the \u201ckernel trick,\u201d which allows the efficient use of high-dimensional features spaces endowed with efficient dot products (Cristianini and Shawe-Taylor, 2000)."
+                    },
+                    "intents": []
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 151,
+                                "start": 138
+                            }
+                        ],
+                        "text": "Hence, in our experiments we use an online coordinate descent method analogous to the sequential minimal optimization (SMO) used for SVMs (Platt, 1999) and adapted to structured max-margin estimation in Taskar et al."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 137,
+                                "start": 133
+                            }
+                        ],
+                        "text": "Hence, in our experiments we use an online coordinate descent method analogous to the sequential minimal optimization (SMO) used for SVMs (Platt, 1999) and adapted to structured max-margin estimation in Taskar et al. (2003)."
+                    },
+                    "intents": []
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Using sparseness and analytic QP to speed training of support vector machines"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS."
+            },
+            "year": 1999
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 32,
+                                "start": 12
+                            }
+                        ],
+                        "text": "As shown in Taskar et al. (2003), the dual in Eq."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 116,
+                                "start": 96
+                            }
+                        ],
+                        "text": "In the discriminative parsing task, we want to learn a function f : X \u2192 Y, where X is a set of sentences, and Y is a set of valid parse trees according to a fixed grammar G."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 76,
+                                "start": 57
+                            }
+                        ],
+                        "text": "Recently, it has also been extended to graphical models (Taskar et al., 2003; Altun et al., 2003) and shown to outperform the standard maxlikelihood methods."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 124,
+                                "start": 104
+                            }
+                        ],
+                        "text": "The idea of this decomposition has previously been used for sequences and other Markov random fields in Taskar et al. (2003), but the present extension to CFGs is novel."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 106,
+                                "start": 86
+                            }
+                        ],
+                        "text": "The primary contribution of this paper is the extension of the max-margin approach of Taskar et al. (2003) to context free grammars."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 223,
+                                "start": 203
+                            }
+                        ],
+                        "text": "Hence, in our experiments we use an online coordinate descent method analogous to the sequential minimal optimization (SMO) used for SVMs (Platt, 1999) and adapted to structured max-margin estimation in Taskar et al. (2003)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [],
+                        "text": "We provide an efficient\nalgorithm for learning such models and show experimen-\ntal evidence of the model\u2019s improved performance over\na natural baseline model and a lexicalized probabilistic\ncontext-free grammar."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 220,
+                                "start": 200
+                            }
+                        ],
+                        "text": "The functions we consider take the following linear discriminant form:\nfw(x) = arg max y\u2208G(x) \u3008w,\u03a6(x, y)\u3009,\n1This articulated loss is supported by empirical success and theoretical generalization bound in Taskar et al. (2003)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 65,
+                                "start": 45
+                            }
+                        ],
+                        "text": "Our method extends the maxmargin approach of Taskar et al. (2003) to the case of context-free grammars."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Max margin Markov networks. In NIPS"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Max margin Markov networks. In NIPS"
+            },
+            "year": 2003
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 13,
+            "methodology": 9
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 20,
+        "totalPages": 2
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Max-Margin-Parsing-Taskar-Klein/1e19a94d547ee023837c14c361139185e2353fc0?sort=total-citations"
+}

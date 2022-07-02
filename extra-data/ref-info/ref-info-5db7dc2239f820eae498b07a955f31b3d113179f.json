@@ -1,0 +1,1336 @@
+{
+    "links": [
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1802785"
+                        ],
+                        "name": "S. Nowlan",
+                        "slug": "S.-Nowlan",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Nowlan",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Nowlan"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 202,
+                                "start": 144
+                            }
+                        ],
+                        "text": "2 Density estimation using EM This section outlines the basic learning algorithm for nding the maximum likelihood parameters of a mixture model (Dempster et al., 1977; Duda and Hart, 1973; Nowlan, 1991)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 60866167,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "59fa47fc237a0781b4bf1c84fedb728d20db26a1",
+            "isKey": false,
+            "numCitedBy": 167,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "In this thesis, we consider learning algorithms for neural networks which are based on fitting a mixture probability density to a set of data. \nWe begin with an unsupervised algorithm which is an alternative to the classical winner-take-all competitive algorithms. Rather than updating only the parameters of the \"winner\" on each case, the parameters of all competitors are updated in proportion to their relative responsibility for the case. Use of such a \"soft\" competitive algorithm is shown to give better performance than the more traditional algorithms, with little additional cost. \nWe then consider a supervised modular architecture in which a number of simple \"expert\" networks compete to solve distinct pieces of a large task. A soft competitive mechanism is used to determine how much an expert learns on a case, based on how well the expert performs relative to the other expert networks. At the same time, a separate gating network learns to weight the output of each expert according to a prediction of its relative performance based on the input to the system. Experiments on a number of tasks illustrate that this architecture is capable of uncovering interesting task decompositions and of generalizing better than a single network with small training sets. \nFinally, we consider learning algorithms in which we assume that the actual output of the network should fall into one of a small number of classes or clusters. The objective of learning is to make the variance of these classes as small as possible. In the classical decision-directed algorithm, we decide that an output belongs to the class it is closest to and minimize the squared distance between the output and the center (mean) of this closest class. In the \"soft\" version of this algorithm, we minimize the squared distance between the actual output and a weighted average of the means of all of the classes. The weighting factors are the relative probability that the output belongs to each class. This idea may also be used to model the weights of a network, to produce networks which generalize better from small training sets."
+            },
+            "slug": "Soft-competitive-adaptation:-neural-network-based-Nowlan",
+            "title": {
+                "fragments": [],
+                "text": "Soft competitive adaptation: neural network learning algorithms based on fitting statistical mixtures"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 43,
+                "text": "An unsupervised algorithm which is an alternative to the classical winner-take-all competitive algorithms and a supervised modular architecture in which a number of simple \"expert\" networks compete to solve distinct pieces of a large task are considered."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1744700"
+                        ],
+                        "name": "Zoubin Ghahramani",
+                        "slug": "Zoubin-Ghahramani",
+                        "structuredName": {
+                            "firstName": "Zoubin",
+                            "lastName": "Ghahramani",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Zoubin Ghahramani"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 8882719,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "56182e7eafe008200b5163dbd0e6f681db74d148",
+            "isKey": false,
+            "numCitedBy": 51,
+            "numCiting": 21,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "This paper proposes density estimation as a feasible approach to the wide class of learning problems where traditional function approximation methods fail. These problems generally involve learning the inverse of causal systems, speciically when the inverse is a non-convex mapping. We demonstrate the approach through three case studies: the inverse kinematics of a three-joint planar arm, the acoustics of a four-tube articulatory model, and the localization of multiple objects from sensor data. The learning algorithm presented diiers from regression-based algorithms in that no distinction is made between input and output variables; the joint density is estimated via the EM algorithm and can be used to represent any input/output map by forming the conditional density of the output given the input. Causality in physical systems induces directionality in the relations between variables measured from them. Thus, one can generally deene a forward and an inverse direction of mapping. The forward direction is the causal direction, for example, from the forces applied to an object to the motion outcome, from the joint angles of an arm to the Cartesian coordinate of the nger, or from the connguration of a vocal tract to the sound frequencies produced. Similarly, the inverse direction is the non-causal direction. If the goal is to control the physical system the the inverse direction of mapping is particularly relevant. Returning to the above examples, this is the mapping from desired motion of an object to the forces required, from desired Cartesian nger coordinates to required joint angles, or from desired sound frequencies to required vocal tract connguration. In general the forward direction will be a function, whereas the inverse direction may be one-to-many and therefore not a function. One-to-many relations are often diicult to learn with function approximation methods. This diiculty arises from the fact that if the image of an input is a non-convex region in the output, then the least-squares solution may fall outside this region (for further discussion of non-convexity see 12]). This paper proposes density estimation as a feasible approach to the wide class of non-convex learning problems where function approximation and non-linear regression methods fail. The learning algorithm presented here diiers from regression-based algorithms in that no distinction is made between input and output variables; the joint density is estimated and this estimate can then be used to form any input/output map. Thus, to estimate the vector function y = f(x) the joint density \u2026"
+            },
+            "slug": "Solving-inverse-problems-using-an-EM-approach-to-Ghahramani",
+            "title": {
+                "fragments": [],
+                "text": "Solving inverse problems using an EM approach to density estimation"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 48,
+                "text": "The proposed density estimation approach is demonstrated through three case studies: the inverse kinematics of a three-joint planar arm, the acoustics of a four-tube articulatory model, and the localization of multiple objects from sensor data."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1993
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "144215175"
+                        ],
+                        "name": "R. Jacobs",
+                        "slug": "R.-Jacobs",
+                        "structuredName": {
+                            "firstName": "Robert",
+                            "lastName": "Jacobs",
+                            "middleNames": [
+                                "A."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Jacobs"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1694621"
+                        ],
+                        "name": "Michael I. Jordan",
+                        "slug": "Michael-I.-Jordan",
+                        "structuredName": {
+                            "firstName": "Michael",
+                            "lastName": "Jordan",
+                            "middleNames": [
+                                "I."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Michael I. Jordan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1802785"
+                        ],
+                        "name": "S. Nowlan",
+                        "slug": "S.-Nowlan",
+                        "structuredName": {
+                            "firstName": "Steven",
+                            "lastName": "Nowlan",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "S. Nowlan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1695689"
+                        ],
+                        "name": "Geoffrey E. Hinton",
+                        "slug": "Geoffrey-E.-Hinton",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "Hinton",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Geoffrey E. Hinton"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 572361,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "c8d90974c3f3b40fa05e322df2905fc16204aa56",
+            "isKey": false,
+            "numCitedBy": 4007,
+            "numCiting": 55,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We present a new supervised learning procedure for systems composed of many separate networks, each of which learns to handle a subset of the complete set of training cases. The new procedure can be viewed either as a modular version of a multilayer supervised network, or as an associative version of competitive learning. It therefore provides a new link between these two apparently different approaches. We demonstrate that the learning procedure divides up a vowel discrimination task into appropriate subtasks, each of which can be solved by a very simple expert network."
+            },
+            "slug": "Adaptive-Mixtures-of-Local-Experts-Jacobs-Jordan",
+            "title": {
+                "fragments": [],
+                "text": "Adaptive Mixtures of Local Experts"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 80,
+                "text": "A new supervised learning procedure for systems composed of many separate networks, each of which learns to handle a subset of the complete set of training cases, which is demonstrated to be able to be solved by a very simple expert network."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2285810"
+                        ],
+                        "name": "D. Specht",
+                        "slug": "D.-Specht",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Specht",
+                            "middleNames": [
+                                "F."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Specht"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 26,
+                                "start": 13
+                            }
+                        ],
+                        "text": "The gureshows classi cation performance 1standard error (n = 5) as a functionof proportion missing features for theEM algorithm and for mean imputa-tion (MI), a commonheuristic where themissing values are replaced with theirunconditional means."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 6266210,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "45f43abc49a8a60e6b43ddbda5af9fc6c88d663d",
+            "isKey": false,
+            "numCitedBy": 3774,
+            "numCiting": 25,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "A memory-based network that provides estimates of continuous variables and converges to the underlying (linear or nonlinear) regression surface is described. The general regression neural network (GRNN) is a one-pass learning algorithm with a highly parallel structure. It is shown that, even with sparse data in a multidimensional measurement space, the algorithm provides smooth transitions from one observed value to another. The algorithmic form can be used for any regression problem in which an assumption of linearity is not justified."
+            },
+            "slug": "A-general-regression-neural-network-Specht",
+            "title": {
+                "fragments": [],
+                "text": "A general regression neural network"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 39,
+                "text": "The general regression neural network (GRNN) is a one-pass learning algorithm with a highly parallel structure that provides smooth transitions from one observed value to another."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1690163"
+                        ],
+                        "name": "G. McLachlan",
+                        "slug": "G.-McLachlan",
+                        "structuredName": {
+                            "firstName": "Geoffrey",
+                            "lastName": "McLachlan",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "G. McLachlan"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2410937"
+                        ],
+                        "name": "K. Basford",
+                        "slug": "K.-Basford",
+                        "structuredName": {
+                            "firstName": "Kaye",
+                            "lastName": "Basford",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "K. Basford"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 119405289,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "034a70c9fbe8e0075f5a5b3a7b06bdf7d3cab4a1",
+            "isKey": false,
+            "numCitedBy": 2073,
+            "numCiting": 1,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "General Introduction Introduction History of Mixture Models Background to the General Classification Problem Mixture Likelihood Approach to Clustering Identifiability Likelihood Estimation for Mixture Models via EM Algorithm Start Values for EMm Algorithm Properties of Likelihood Estimators for Mixture Models Information Matrix for Mixture Models Tests for the Number of Components in a Mixture Partial Classification of the Data Classification Likelihood Approach to Clustering Mixture Models with Normal Components Likelihood Estimation for a Mixture of Normal Distribution Normal Homoscedastic Components Asymptotic Relative Efficiency of the Mixture Likelihood Approach Expected and Observed Information Matrices Assessment of Normality for Component Distributions: Partially Classified Data Assessment of Typicality: Partially Classified Data Assessment of Normality and Typicality: Unclassified Data Robust Estimation for Mixture Models Applications of Mixture Models to Two-Way Data Sets Introduction Clustering of Hemophilia Data Outliers in Darwin's Data Clustering of Rare Events Latent Classes of Teaching Styles Estimation of Mixing Proportions Introduction Likelihood Estimation Discriminant Analysis Estimator Asymptotic Relative Efficiency of Discriminant Analysis Estimator Moment Estimators Minimum Distance Estimators Case Study Homogeneity of Mixing Proportions Assessing the Performance of the Mixture Likelihood Approach to Clustering Introduction Estimators of the Allocation Rates Bias Correction of the Estimated Allocation Rates Estimated Allocation Rates of Hemophilia Data Estimated Allocation Rates for Simulated Data Other Methods of Bias Corrections Bias Correction for Estimated Posterior Probabilities Partitioning of Treatment Means in ANOVA Introduction Clustering of Treatment Means by the Mixture Likelihood Approach Fitting of a Normal Mixture Model to a RCBD with Random Block Effects Some Other Methods of Partitioning Treatment Means Example 1 Example 2 Example 3 Example 4 Mixture Likelihood Approach to the Clustering of Three-Way Data Introduction Fitting a Normal Mixture Model to Three-Way Data Clustering of Soybean Data Multidimensional Scaling Approach to the Analysis of Soybean Data References Appendix"
+            },
+            "slug": "Mixture-models-:-inference-and-applications-to-McLachlan-Basford",
+            "title": {
+                "fragments": [],
+                "text": "Mixture models : inference and applications to clustering"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 51,
+                "text": "The Mixture Likelihood Approach to Clustering and the Case Study Homogeneity of Mixing Proportions Assessing the Performance of the Mixture likelihood approach toClustering."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1988
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35106875"
+                        ],
+                        "name": "R. Duda",
+                        "slug": "R.-Duda",
+                        "structuredName": {
+                            "firstName": "Richard",
+                            "lastName": "Duda",
+                            "middleNames": [
+                                "O."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "R. Duda"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "3108177"
+                        ],
+                        "name": "P. Hart",
+                        "slug": "P.-Hart",
+                        "structuredName": {
+                            "firstName": "Peter",
+                            "lastName": "Hart",
+                            "middleNames": [
+                                "E."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "P. Hart"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 12946615,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "b07ce649d6f6eb636872527104b0209d3edc8188",
+            "isKey": false,
+            "numCitedBy": 16928,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Provides a unified, comprehensive and up-to-date treatment of both statistical and descriptive methods for pattern recognition. The topics treated include Bayesian decision theory, supervised and unsupervised learning, nonparametric techniques, discriminant analysis, clustering, preprosessing of pictorial data, spatial filtering, shape description techniques, perspective transformations, projective invariants, linguistic procedures, and artificial intelligence techniques for scene analysis."
+            },
+            "slug": "Pattern-classification-and-scene-analysis-Duda-Hart",
+            "title": {
+                "fragments": [],
+                "text": "Pattern classification and scene analysis"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 66,
+                "text": "The topics treated include Bayesian decision theory, supervised and unsupervised learning, nonparametric techniques, discriminant analysis, clustering, preprosessing of pictorial data, spatial filtering, shape description techniques, perspective transformations, projective invariants, linguistic procedures, and artificial intelligence techniques for scene analysis."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "A Wiley-Interscience publication"
+            },
+            "year": 1973
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1781982"
+                        ],
+                        "name": "D. Hand",
+                        "slug": "D.-Hand",
+                        "structuredName": {
+                            "firstName": "David",
+                            "lastName": "Hand",
+                            "middleNames": [
+                                "J."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Hand"
+                    }
+                ]
+            ],
+            "badges": [],
+            "citationContexts": [],
+            "corpusId": 125319598,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "4abe363a28858775a12bee526b24c3620961d444",
+            "isKey": false,
+            "numCitedBy": 63,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Mixture Models: Inference and Applications to Clustering. By G. J. McLachlan and K. E. Basford. ISBN 0 8247 7691 7. Dekker, New York, 1988. xii + 254 pp. $83.50."
+            },
+            "slug": "Mixture-Models:-Inference-and-Applications-to-Hand",
+            "title": {
+                "fragments": [],
+                "text": "Mixture Models: Inference and Applications to Clustering"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 95,
+                "text": "Mixture Models: Inference and Applications to Clustering, 1988, by G. McLachlan and K. Basford."
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1989
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "1700754"
+                        ],
+                        "name": "Volker Tresp",
+                        "slug": "Volker-Tresp",
+                        "structuredName": {
+                            "firstName": "Volker",
+                            "lastName": "Tresp",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Volker Tresp"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2648836"
+                        ],
+                        "name": "J. Hollatz",
+                        "slug": "J.-Hollatz",
+                        "structuredName": {
+                            "firstName": "J\u00fcrgen",
+                            "lastName": "Hollatz",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Hollatz"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2109973472"
+                        ],
+                        "name": "Subutai Ahmad",
+                        "slug": "Subutai-Ahmad",
+                        "structuredName": {
+                            "firstName": "Subutai",
+                            "lastName": "Ahmad",
+                            "middleNames": []
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "Subutai Ahmad"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 9586140,
+            "fieldsOfStudy": [
+                "Computer Science"
+            ],
+            "id": "d3fc3bedad659b7a3b45ce9dfa86850d72980af9",
+            "isKey": false,
+            "numCitedBy": 115,
+            "numCiting": 20,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "We demonstrate in this paper how certain forms of rule-based knowledge can be used to prestructure a neural network of normalized basis functions and give a probabilistic interpretation of the network architecture. We describe several ways to assure that rule-based knowledge is preserved during training and present a method for complexity reduction that tries to minimize the number of rules and the number of conjuncts. After training the refined rules are extracted and analyzed."
+            },
+            "slug": "Network-Structuring-and-Training-Using-Rule-Based-Tresp-Hollatz",
+            "title": {
+                "fragments": [],
+                "text": "Network Structuring and Training Using Rule-Based Knowledge"
+            },
+            "tldr": {
+                "abstractSimilarityScore": 97,
+                "text": "It is demonstrated in this paper how certain forms of rule-based knowledge can be used to prestructure a neural network of normalized basis functions and give a probabilistic interpretation of the network architecture."
+            },
+            "venue": {
+                "fragments": [],
+                "text": "NIPS"
+            },
+            "year": 1992
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "35043531"
+                        ],
+                        "name": "A. Dempster",
+                        "slug": "A.-Dempster",
+                        "structuredName": {
+                            "firstName": "Arthur",
+                            "lastName": "Dempster",
+                            "middleNames": [
+                                "P."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "A. Dempster"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "7890796"
+                        ],
+                        "name": "N. Laird",
+                        "slug": "N.-Laird",
+                        "structuredName": {
+                            "firstName": "Nan",
+                            "lastName": "Laird",
+                            "middleNames": [
+                                "M."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "N. Laird"
+                    }
+                ],
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "2235217"
+                        ],
+                        "name": "D. Rubin",
+                        "slug": "D.-Rubin",
+                        "structuredName": {
+                            "firstName": "Donald",
+                            "lastName": "Rubin",
+                            "middleNames": [
+                                "B."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "D. Rubin"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [],
+            "corpusId": 4193919,
+            "fieldsOfStudy": [
+                "Engineering"
+            ],
+            "id": "d36efb9ad91e00faa334b549ce989bfae7e2907a",
+            "isKey": false,
+            "numCitedBy": 48406,
+            "numCiting": 134,
+            "paperAbstract": {
+                "fragments": [],
+                "text": "Vibratory power unit for vibrating conveyers and screens comprising an asynchronous polyphase motor, at least one pair of associated unbalanced masses disposed on the shaft of said motor, with the first mass of a pair of said unbalanced masses being rigidly fastened to said shaft and with said second mass of said pair being movably arranged relative to said first mass, means for controlling and regulating the conveying rate during conveyer operation by varying the rotational speed of said motor between predetermined minimum and maximum values, said second mass being movably outwardly by centrifugal force against the pressure of spring means, said spring means being prestressed in such a manner that said second mass is, at rotational motor speeds lower than said minimum speed, held in its initial position, and at motor speeds between said lower and upper values in positions which are radially offset with respect to the axis of said motor to an extent depending on the value of said rotational motor speed."
+            },
+            "slug": "Maximum-likelihood-from-incomplete-data-via-the-EM-Dempster-Laird",
+            "title": {
+                "fragments": [],
+                "text": "Maximum likelihood from incomplete data via the EM - algorithm plus discussions on the paper"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1977
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 232,
+                                "start": 209
+                            }
+                        ],
+                        "text": "This is because the problem of estimating mixture densities can itself be viewed as a missing data problem (the \"labels\" for the component densities are missing) and an Expectation-Maximization (EM) algorithm (Dempster et al., 1977) can be developed to handle both kinds of missing data."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 125
+                            }
+                        ],
+                        "text": "VVe use mixture models for the density estimates and make two distinct appeals to the ExpectationMaximization (EM) principle (Dempster et al., 1977) in deriving a learning algorithm-EM is used both for the estimation of mixture components and for coping wit."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 148,
+                                "start": 127
+                            }
+                        ],
+                        "text": "We use mixture models for the den-sity estimates and make two distinct appeals to the Expectation-Maximization (EM) principle (Dempster et al., 1977) in derivinga learning algorithm|EM is used both for the estimation of mix-ture components and for coping with missing data."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 174,
+                                "start": 116
+                            }
+                        ],
+                        "text": "This section outlines the basic learning algorithm for finding the maximum likelihood parameters of a mixture model (Dempster et al., 1977; Duda and Hart, 1973; Nowlan, 1991)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": true,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Maximum likelihood fwm incomplete data via the EM algorithm"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J. Royal Statistical Society Series B,"
+            },
+            "year": 1977
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 133,
+                                "start": 86
+                            }
+                        ],
+                        "text": "Another important application of EM is to learning from data sets with missing values (Little and Rubin, 1987; Dempster et al., 1977)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 167798727,
+            "fieldsOfStudy": [],
+            "id": "c5c95938c03caa0b73303bab1e5ceeacb1879177",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Statistical Analysis with Missing Data"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1987
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 111,
+                                "start": 88
+                            }
+                        ],
+                        "text": "Incompleteness can arise ex-trinsically from the data generation process and intrinsically from failures of thesystem's sensors."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 207657152,
+            "fieldsOfStudy": [],
+            "id": "7bcdf9e7c9d072d94be325f8a0d3e7db60ac1b6c",
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Hierarchical Mixtures of Experts and the EM Algorithm"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1994
+        },
+        {
+            "authors": [
+                [
+                    {
+                        "bitmap$0": false,
+                        "ids": [
+                            "69028931"
+                        ],
+                        "name": "J. Freidman",
+                        "slug": "J.-Freidman",
+                        "structuredName": {
+                            "firstName": "J.",
+                            "lastName": "Freidman",
+                            "middleNames": [
+                                "H."
+                            ]
+                        }
+                    },
+                    {
+                        "fragments": [],
+                        "text": "J. Freidman"
+                    }
+                ]
+            ],
+            "badges": [
+                {
+                    "id": "OPEN_ACCESS"
+                }
+            ],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 30,
+                                "start": 14
+                            }
+                        ],
+                        "text": ", 1984), MARS (Friedman, 1991), and mixtures of experts (Jacobs <."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 184,
+                                "start": 146
+                            }
+                        ],
+                        "text": "This architecture is a parametric regression model with a modular structure similar to the nonparametric decision tree and adaptive spline models (Breiman et al., 1984; Friedman, 1991)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "corpusId": 33779230,
+            "fieldsOfStudy": [
+                "Mathematics"
+            ],
+            "id": "9c980c5477c1f1a369a19dd954c936185bbd8b82",
+            "isKey": false,
+            "numCitedBy": 3467,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "Multivariate-adaptive-regression-splines-Freidman",
+            "title": {
+                "fragments": [],
+                "text": "Multivariate adaptive regression splines"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 38,
+                                "start": 25
+                            }
+                        ],
+                        "text": "The gureshows classi cation performance 1standard error (n = 5) as a functionof proportion missing features for theEM algorithm and for mean imputa-tion (MI), a commonheuristic where themissing values are replaced with theirunconditional means."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "A general I'egression neural network"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "IEEE Trans. Neural Networks,"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 133,
+                                "start": 86
+                            }
+                        ],
+                        "text": "Another important application of EM is to learning from data sets with missing values (Little and Rubin, 1987; Dempster et aI., 1977)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Statistical Analysis with Mis.'ling Data"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1987
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 176,
+                                "start": 130
+                            }
+                        ],
+                        "text": "Mixture models have been utilized recently for supervised learning problems in the form of the \\mixtures of experts\" architecture (Jacobs et al., 1991; Jordan and Jacobs, 1994)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                },
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 102,
+                                "start": 56
+                            }
+                        ],
+                        "text": ", 1984), MARS (Friedman, 1991), and mixtures of experts (Jacobs et al., 1991; Jordan and Jacobs, 1994), in that the mixture of Gaussians competitively partitions the input space, and learns a linear regression surface on each partition."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Adaptive mixture"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1991
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Multivariate adaptive regression splines. The Annols of Statistics"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Multivariate adaptive regression splines. The Annols of Statistics"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 152,
+                                "start": 132
+                            }
+                        ],
+                        "text": "For example, an object recognition system must be able to learnto classify images with occlusions, and a robotic controller must be able to integratemultiple sensors even when only a fraction may operate at any given time."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Classiication and Regression Trees"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Classiication and Regression Trees"
+            },
+            "year": 1984
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 176,
+                                "start": 130
+                            }
+                        ],
+                        "text": "Mixture models have been utilized recently for supervised learning problems in the form of the \"mixtures of experts\" architecture (Jacobs et al., 1991; Jordan and Jacobs, 1994)."
+                    },
+                    "intents": [
+                        {
+                            "id": "methodology"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Adaptive mixture of local experts"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation,"
+            },
+            "year": 1991
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Network structuring and training"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1993
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Maximum likelihood fromincomplete data via the EM algorithm"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "J . Royal Statistical Society Series B"
+            },
+            "year": 1977
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [
+                {
+                    "context": {
+                        "fragments": [
+                            {
+                                "end": 109,
+                                "start": 80
+                            }
+                        ],
+                        "text": "This problem, however, can be largely circumvented by the use of mixture models (McLachlan and Basford, 1988)."
+                    },
+                    "intents": [
+                        {
+                            "id": "background"
+                        }
+                    ]
+                }
+            ],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Mixture models: Inference and applications"
+            },
+            "venue": {
+                "fragments": [],
+                "text": ""
+            },
+            "year": 1988
+        },
+        {
+            "authors": [],
+            "badges": [],
+            "citationContexts": [],
+            "fieldsOfStudy": [],
+            "isKey": false,
+            "numCitedBy": 0,
+            "numCiting": 0,
+            "paperAbstract": {
+                "fragments": [],
+                "text": ""
+            },
+            "slug": "+",
+            "title": {
+                "fragments": [],
+                "text": "Adaptive mixture oflocal experts"
+            },
+            "venue": {
+                "fragments": [],
+                "text": "Neural Computation"
+            },
+            "year": 1991
+        }
+    ],
+    "meta_info": {
+        "citationIntent": "all",
+        "citationIntentCount": {
+            "background": 8,
+            "methodology": 7
+        },
+        "citationType": "citedPapers",
+        "pageNumber": 1,
+        "requestedPageSize": 10,
+        "sort": "relevance",
+        "totalCitations": 23,
+        "totalPages": 3
+    },
+    "page_url": "https://www.semanticscholar.org/paper/Supervised-learning-from-incomplete-data-via-an-EM-Ghahramani-Jordan/5db7dc2239f820eae498b07a955f31b3d113179f?sort=total-citations"
+}
