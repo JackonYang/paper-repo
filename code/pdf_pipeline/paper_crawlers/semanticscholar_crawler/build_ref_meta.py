@@ -12,12 +12,17 @@ import copy
 CUR_DIR = os.path.abspath(os.path.dirname(__file__))
 
 title_format_re = re.compile(r'[\W\s]+')
+multi_space_re = re.compile(r' \s+')
 
 
 def clean_title_encoding(title):
     title = title.replace('–', '-')
     title = title.replace('—', '-')
     title = title.replace('’', '\'')
+    title = title.replace('"', '')
+    title = title.replace(':', ' - ')
+
+    title = multi_space_re.sub(' ', title)
     return title
 
 
@@ -102,6 +107,11 @@ def is_drop_by_title(title, meta_key, cited_cnt):
     if not meta_key.isascii():
         # print(cited_cnt, title, meta_key, meta_key.isascii())
         return True
+
+    if not title.isascii():
+        print(title)
+    elif '"' in title:
+        print(title)
 
     return False
 
