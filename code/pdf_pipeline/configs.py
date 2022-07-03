@@ -5,6 +5,8 @@ PROJ_DIR = os.path.abspath(
 
 PDF_DIR = os.path.join(PROJ_DIR, 'pdfs')
 META_DIR = os.path.join(PROJ_DIR, 'metas')
+REF_META_DIR = os.path.join(PROJ_DIR, 'ref-metas')
+
 REFERENCE_INFO_DIR = os.path.join(PROJ_DIR, 'extra-data/ref-info')
 
 MD_NOTES_DIR = os.path.join(PROJ_DIR, '../01-zettelkasten/02-References')
