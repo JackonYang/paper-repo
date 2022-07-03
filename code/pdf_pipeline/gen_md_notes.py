@@ -1,6 +1,7 @@
 import os
 import re
 import yaml
+import copy
 
 from . import meta_io
 from . import markdown_io
@@ -20,6 +21,8 @@ TEMPLATE_NAME = 'md-notes.tmpl'
 
 markdown_link_re = re.compile(r'\[(.*?)\]\((.*?)\)')
 title_escape_re = re.compile(r'\s*(?:[":]+\s*)+')
+
+h1_heading_re = re.compile(r'^# .*$', re.MULTILINE)
 
 default_status = 'todo'
 
@@ -41,7 +44,7 @@ meta_keys_from_yaml = [
 ]
 
 
-def clean_content(content):
+def clean_content(content, drop_h1_heading=False):
     if not content or not isinstance(content, str):
         return ''
 
@@ -50,6 +53,9 @@ def clean_content(content):
     pdf_link, new_content = content.split('\n', 1)
     if markdown_link_re.match(pdf_link):
         content = new_content.lstrip()
+
+    if drop_h1_heading:
+        content = h1_heading_re.sub('', content).lstrip()
 
     return content
 
@@ -199,6 +205,7 @@ def merge_files():
     md_files = get_file_list(MD_NOTES_DIR, '.md')
 
     tasks = meta_io.read_misc_info(meta_key_mapping_filename)
+    existed_cnt = len(tasks)
 
     for md_file in md_files:
         md_data = markdown_io.load_md(md_file)
@@ -214,11 +221,77 @@ def merge_files():
 
             tasks[key_from_filename] = key_from_meta
 
-    print('%s taks to merge' % len(tasks))
+    print('%s new tasks to merge' % (len(tasks) - existed_cnt))
     meta_io.save_misc_info(meta_key_mapping_filename, tasks)
+
+
+def do_merge():
+    tasks = meta_io.read_misc_info(meta_key_mapping_filename)
+    merged = 0
+    for src, tar in tasks.items():
+
+        src_file = os.path.join(MD_NOTES_DIR, '%s.md' % src)
+        tar_file = os.path.join(MD_NOTES_DIR, '%s.md' % tar)
+
+        # already merged
+        if not os.path.exists(src_file):
+            continue
+
+        src_data = markdown_io.load_md_if_exists(src_file)
+        tar_data = markdown_io.load_md_if_exists(tar_file)
+
+        # merge meta
+        tags = []
+
+        merged_meta = {}
+        if 'meta' in src_data:
+            tags.extend(src_data['meta'].get('tags', []))
+            for k, v in src_data['meta'].items():
+                if v != None:
+                    merged_meta[k] = v
+        if 'meta' in tar_data:
+            tags.extend(tar_data['meta'].get('tags', []))
+            for k, v in tar_data['meta'].items():
+                if v != None:
+                    merged_meta[k] = v
+
+        if len(tags) > 0:
+            merged_meta['tags'] = list(set(tags))
+
+        heading_meta = copy.deepcopy(merged_meta)
+        title = heading_meta.pop('title')
+        if 'Alias' in heading_meta:
+            heading_meta.pop('Alias')
+
+        # merge content
+        merged_content = '# %s\n\n' % title
+
+        if 'content' in src_data:
+            merged_content += clean_content(src_data['content'], drop_h1_heading=True)
+
+        merged_content = merged_content.rstrip() + '\n\n'
+        if 'content' in tar_data:
+            merged_content += clean_content(tar_data['content'], drop_h1_heading=True)
+
+        # merged data
+        merged_data = {
+            'meta': merged_meta,
+            'meta_str': yaml.dump(heading_meta).strip(),
+            'content': merged_content,
+            'common_path': MD_NOTES_PDF_REL_ROOT,
+            'notes_common_path': '.',  # current dir
+        }
+
+        markdown_io.render_md(TEMPLATE_DIR, TEMPLATE_NAME, merged_data, tar_file)
+        os.remove(src_file)
+
+        merged += 1
+
+    print('%s taks merged' % merged)
 
 
 def main():
     # gen_from_pdf_yaml()
     # gen_from_ref_yaml()
     merge_files()
+    do_merge()
