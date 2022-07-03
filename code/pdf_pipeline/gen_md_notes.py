@@ -102,12 +102,16 @@ def add_missing_tag_map(tag_list):
 
 def gen_from_pdf_yaml():
     meta_list = meta_io.get_meta_list()
+    mapping_tasks = meta_io.read_misc_info(meta_key_mapping_filename)
 
     tag_list = []
 
     for meta in meta_list:
 
         meta_key = meta['meta_key']
+        if meta_key in mapping_tasks:
+            continue
+
         out_filename = os.path.join(MD_NOTES_DIR, '%s.md' % meta_key)
 
         heading_meta = {k: meta[k] for k in meta_keys_from_yaml if meta.get(k) is not None}
@@ -147,6 +151,7 @@ def gen_from_pdf_yaml():
 
 def gen_from_ref_yaml():
     meta_list = meta_io.get_meta_list(REF_META_DIR)
+    mapping_tasks = meta_io.read_misc_info(meta_key_mapping_filename)
 
     tag_list = []
 
@@ -156,6 +161,9 @@ def gen_from_ref_yaml():
             continue
 
         meta_key = meta['meta_key']
+        if meta_key in mapping_tasks:
+            continue
+
         out_filename = os.path.join(MD_NOTES_DIR, '%s.md' % meta_key)
 
         if 'tags' not in meta:
@@ -291,7 +299,7 @@ def do_merge():
 
 
 def main():
-    # gen_from_pdf_yaml()
-    # gen_from_ref_yaml()
+    gen_from_pdf_yaml()
+    gen_from_ref_yaml()
     merge_files()
     do_merge()
