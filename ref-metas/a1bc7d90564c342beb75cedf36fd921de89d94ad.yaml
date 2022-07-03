@@ -1,0 +1,267 @@
+authors:
+- Aude Genevay
+- "G. Peyr\xE9"
+- Marco Cuturi
+badges:
+- id: OPEN_ACCESS
+corpusId: 4879286
+fieldsOfStudy:
+- Computer Science
+meta_key: learning-generative-models-with-sinkhorn-divergences
+numCitedBy: 393
+numCiting: 37
+paperAbstract: 'The ability to compare two degenerate probability distributions (i.e.
+  two probability distributions supported on two distinct low-dimensional manifolds
+  living in a much higher-dimensional space) is a crucial problem arising in the estimation
+  of generative models for high-dimensional observations such as those arising in
+  computer vision or natural language. It is known that optimal transport metrics
+  can represent a cure for this problem, since they were specifically designed as
+  an alternative to information divergences to handle such problematic scenarios.
+  Unfortunately, training generative machines using OT raises formidable computational
+  and statistical challenges, because of (i) the computational burden of evaluating
+  OT losses, (ii) the instability and lack of smoothness of these losses, (iii) the
+  difficulty to estimate robustly these losses and their gradients in high dimension.
+  This paper presents the first tractable computational method to train large scale
+  generative models using an optimal transport loss, and tackles these three issues
+  by relying on two key ideas: (a) entropic smoothing, which turns the original OT
+  loss into one that can be computed using Sinkhorn fixed point iterations; (b) algorithmic
+  (automatic) differentiation of these iterations. These two approximations result
+  in a robust and differentiable approximation of the OT loss with streamlined GPU
+  execution. Entropic smoothing generates a family of losses interpolating between
+  Wasserstein (OT) and Maximum Mean Discrepancy (MMD), thus allowing to find a sweet
+  spot leveraging the geometry of OT and the favorable high-dimensional sample complexity
+  of MMD which comes with unbiased gradient estimates. The resulting computational
+  architecture complements nicely standard deep network generative models by a stack
+  of extra layers implementing the loss function.'
+ref_count: 37
+references:
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 300
+  pid: 6f840ce7c8373c11f89ea1693d0cab170627d31f
+  show_ref_link: false
+  title: Stochastic Optimization for Large-scale Optimal Transport
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 117
+  pid: 0a2605ca2c38fe45ac87b1d196a322857d8cb912
+  show_ref_link: false
+  title: 'From optimal transport to generative modeling: the VEGAN cookbook'
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  - Mathematics
+  numCitedBy: 66
+  pid: 11fadfe035f08b786279014e82203d0270443165
+  show_ref_link: false
+  title: Inference in generative models using the Wasserstein distance
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 29656
+  pid: 54e325aee6b2d476bbbb88615ac15e251c6e8214
+  show_ref_link: true
+  title: Generative Adversarial Nets
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 248
+  pid: cfcf66e4b22dc7671a5941e94e9d4afae75ba2f8
+  show_ref_link: false
+  title: The Cramer Distance as a Solution to Biased Wasserstein Gradients
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 117
+  pid: e7d468e3e848d9c49c2c9bfaf847ffc98e81b627
+  show_ref_link: false
+  title: Fast Dictionary Learning with a Smoothed Wasserstein Loss
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 657
+  pid: c8b509be29721ee6b12c880b4d97ed6b60bad217
+  show_ref_link: false
+  title: Generative Moment Matching Networks
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 84
+  pid: e5abcd3dcc1dad7354c2fa85d7142294860bd83e
+  show_ref_link: false
+  title: Wasserstein Training of Restricted Boltzmann Machines
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 390
+  pid: ae23eda2faddd824480de2d90638795f797cc66e
+  show_ref_link: false
+  title: Learning with a Wasserstein Loss
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  - Mathematics
+  numCitedBy: 396
+  pid: 4e2f6b4bc889eed1afe5833d5190f6f02e501061
+  show_ref_link: false
+  title: Training generative neural networks via Maximum Mean Discrepancy optimization
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 90063
+  pid: a6cb366736791bcccc5c8639de5a8f9636bf87e8
+  show_ref_link: true
+  title: 'Adam: A Method for Stochastic Optimization'
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 5550
+  pid: 571b0750085ae3d939525e62af510ee2cee9d5ea
+  show_ref_link: true
+  title: Improved Techniques for Training GANs
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 5699
+  pid: edf73ab12595c6709f646f542a0d2b33eb20a3f4
+  show_ref_link: false
+  title: Improved Training of Wasserstein GANs
+  year: 2017
+- fieldsOfStudy:
+  - Mathematics
+  numCitedBy: 231
+  pid: 0fa622b2ee89456ff75235fa0bcc642c09076ebd
+  show_ref_link: false
+  title: On Wasserstein Two-Sample Testing and Related Families of Nonparametric Tests
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1873
+  pid: 0080118b0eb02af581ff32b85a1bb6aed7081f45
+  show_ref_link: true
+  title: 'Sinkhorn Distances: Lightspeed Computation of Optimal Transport'
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 490
+  pid: cd1758d3b86c4f1caf01ec222b45daf15888d1a8
+  show_ref_link: false
+  title: 'MMD GAN: Towards Deeper Understanding of Moment Matching Network'
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 207
+  pid: 69902406e7d08f8865f02185699978db499d25e7
+  show_ref_link: true
+  title: Improving GANs Using Optimal Transport
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 71
+  pid: 86ea0c2feaf4284de694afe07ff6dd323b77ae63
+  show_ref_link: false
+  title: Learning Probability Measures with respect to Optimal Transport Metrics
+  year: 2012
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 133
+  pid: b52af7de13716ff28a4be0771dafa3fb158ec3f9
+  show_ref_link: false
+  title: Domain Adaptation with Regularized Optimal Transport
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 12433
+  pid: b71ac1e9fb49420d13e084ac67254a0bbd40f83f
+  show_ref_link: true
+  title: Understanding the difficulty of training deep feedforward neural networks
+  year: 2010
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1438
+  pid: e8b8a7778ace2a02f8db6fe321a54520c6b283ca
+  show_ref_link: false
+  title: Autoencoding beyond pixels using a learned similarity metric
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 116
+  pid: 0ea842f015af02a06ae47a7db60804b400e9b7b4
+  show_ref_link: false
+  title: Convergence of Entropic Schemes for Optimal Transport and Gradient Flows
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 126
+  pid: a896b4fd83aeb55a58b2a7313ee6e10576dbf28a
+  show_ref_link: false
+  title: Supervised Word Mover's Distance
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 515
+  pid: c697fd0b73ec7aaeb2e75cb89cf4b8b020dd9556
+  show_ref_link: false
+  title: Fast Computation of Wasserstein Barycenters
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1516
+  pid: 66021a920001bc3e6258bffe7076d647614147b7
+  show_ref_link: false
+  title: From Word Embeddings To Document Distances
+  year: 2015
+- fieldsOfStudy:
+  - Mathematics
+  numCitedBy: 229
+  pid: ad5e91905a85d6f671c04a67779fd1377e86d199
+  show_ref_link: false
+  title: TESTING FOR EQUAL DISTRIBUTIONS IN HIGH DIMENSION
+  year: 2004
+- fieldsOfStudy:
+  - Mathematics
+  - Computer Science
+  numCitedBy: 265
+  pid: 1fc6290fa3e6784501ca67cbef33a6a8edcbdb9e
+  show_ref_link: false
+  title: Sharp asymptotic and finite-sample rates of convergence of empirical measures
+    in Wasserstein distance
+  year: 2019
+- fieldsOfStudy:
+  - Mathematics
+  - Computer Science
+  numCitedBy: 1547
+  pid: 9bca4d7b932e0854c3325f1578cfd17341dd8ea8
+  show_ref_link: false
+  title: A Kernel Method for the Two-Sample-Problem
+  year: 2006
+- fieldsOfStudy:
+  - Mathematics
+  numCitedBy: 71
+  pid: 59350bfcaafb7e2f943db50558965e7df62a3ba8
+  show_ref_link: false
+  title: On minimum Kantorovich distance estimators
+  year: 2006
+- fieldsOfStudy:
+  - Mathematics
+  - Computer Science
+  numCitedBy: 217
+  pid: 7a9b9857eab95db5818889e857e356379bc9f603
+  show_ref_link: false
+  title: On the empirical estimation of integral probability metrics
+  year: 2012
+- fieldsOfStudy:
+  - Mathematics
+  numCitedBy: 829
+  pid: 441f33fab0614fa0696be54a046cbc692b7e70a2
+  show_ref_link: false
+  title: A Relationship Between Arbitrary Positive Matrices and Doubly Stochastic
+    Matrices
+  year: 1964
+slug: "Learning-Generative-Models-with-Sinkhorn-Genevay-Peyr\xE9"
+title: Learning Generative Models with Sinkhorn Divergences
+url: "https://www.semanticscholar.org/paper/Learning-Generative-Models-with-Sinkhorn-Genevay-Peyr\xE9\
+  /a1bc7d90564c342beb75cedf36fd921de89d94ad?sort=total-citations"
+venue: AISTATS
+year: 2018

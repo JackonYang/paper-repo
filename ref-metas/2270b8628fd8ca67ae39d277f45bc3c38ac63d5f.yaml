@@ -1,0 +1,234 @@
+authors:
+- Noam M. Shazeer
+- Youlong Cheng
+- Niki Parmar
+- Dustin Tran
+- Ashish Vaswani
+- Penporn Koanantakool
+- Peter Hawkins
+- HyoukJoong Lee
+- Mingsheng Hong
+- C. Young
+- Ryan Sepassi
+- Blake A. Hechtman
+badges:
+- id: OPEN_ACCESS
+corpusId: 53236433
+fieldsOfStudy:
+- Computer Science
+meta_key: mesh-tensorflow-deep-learning-for-supercomputers
+numCitedBy: 209
+numCiting: 53
+paperAbstract: Batch-splitting (data-parallelism) is the dominant distributed Deep
+  Neural Network (DNN) training strategy, due to its universal applicability and its
+  amenability to Single-Program-Multiple-Data (SPMD) programming. However, batch-splitting
+  suffers from problems including the inability to train very large models (due to
+  memory constraints), high latency, and inefficiency at small batch sizes. All of
+  these can be solved by more general distribution strategies (model-parallelism).
+  Unfortunately, efficient model-parallel algorithms tend to be complicated to discover,
+  describe, and to implement, particularly on large clusters. We introduce Mesh-TensorFlow,
+  a language for specifying a general class of distributed tensor computations. Where
+  data-parallelism can be viewed as splitting tensors and operations along the "batch"
+  dimension, in Mesh-TensorFlow, the user can specify any tensor-dimensions to be
+  split across any dimensions of a multi-dimensional mesh of processors. A Mesh-TensorFlow
+  graph compiles into a SPMD program consisting of parallel operations coupled with
+  collective communication primitives such as Allreduce. We use Mesh-TensorFlow to
+  implement an efficient data-parallel, model-parallel version of the Transformer
+  sequence-to-sequence model. Using TPU meshes of up to 512 cores, we train Transformer
+  models with up to 5 billion parameters, surpassing state of the art results on WMT'14
+  English-to-French translation task and the one-billion-word language modeling benchmark.
+  Mesh-Tensorflow is available at this https URL .
+ref_count: 53
+references:
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 60
+  pid: 9654d0807b807ec7c0a78f717b0dc3d4dcb1ad7c
+  show_ref_link: false
+  title: Integrated Model, Batch, and Domain Parallelism in Training Neural Networks
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 230
+  pid: f971658ab845d7573c4bbb760d5e7e5332025254
+  show_ref_link: false
+  title: Beyond Data and Model Parallelism for Deep Neural Networks
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 7
+  pid: 2f541c71646b330cb52f9b60957c950dcb75fcaf
+  show_ref_link: false
+  title: Integrated Model and Data Parallelism in Training Neural Networks
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 67
+  pid: 3ea088eae8637530d1108065acab244f3b6c280d
+  show_ref_link: false
+  title: Exploring Hidden Dimensions in Parallelizing Convolutional Neural Networks
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  - Chemistry
+  numCitedBy: 138
+  pid: f20340ebc8f466fc10b46015ccfc6dfaa61ea40f
+  show_ref_link: false
+  title: A massively parallel tensor contraction framework for coupled-cluster computations
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 3026
+  pid: 3127190433230b3dc1abd0680bb58dced4bcd90e
+  show_ref_link: true
+  title: Large Scale Distributed Deep Networks
+  year: 2012
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 862
+  pid: 510e26733aaff585d65701b9f1be7ca9d5afc586
+  show_ref_link: true
+  title: 'Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts
+    Layer'
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 26
+  pid: 132540b32d857d1841b028184036ff24c496a31b
+  show_ref_link: false
+  title: Scalable task-based algorithm for multiplication of block-rank-sparse matrices
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 10
+  pid: 16b0e58f16e3336311fdb4a40ffb4755edca31ca
+  show_ref_link: false
+  title: Communication-Avoiding Optimization Methods for Distributed Massive-Scale
+    Sparse Inverse Covariance Estimation
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 80950
+  pid: abd1c342495432171beb7ca8fd9551ef13cbd0ff
+  show_ref_link: true
+  title: ImageNet classification with deep convolutional neural networks
+  year: 2012
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 230
+  pid: f2905b93d056f3c71a4ac92b737a4c77680ce28e
+  show_ref_link: false
+  title: Minimizing Communication in Numerical Linear Algebra
+  year: 2011
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 35176
+  pid: 204e3073870fae3d05bcbc2f6a8e263d9b72e776
+  show_ref_link: true
+  title: Attention is All you Need
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 24
+  pid: 3492a16bccda6e64cd9eee62aabcab304c16ce7e
+  show_ref_link: false
+  title: Optimal bucket algorithms for large MPI collectives on torus interconnects
+  year: 2010
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 7
+  pid: c39c1e0eec76c3bad44d088aad0d9cfb8e95f2e2
+  show_ref_link: false
+  title: Spatially Parallel Convolutions
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 19
+  pid: abd8cf4e6a1f3a4c61ac46a58bfa86c904d8d546
+  show_ref_link: false
+  title: Communication-Optimal Convolutional Neural Nets
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 951
+  pid: 2f2d8f8072e5cc9b296fad551f65f183bdbff7aa
+  show_ref_link: true
+  title: Exploring the Limits of Language Modeling
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 101
+  pid: b8106b64eebf3b7dab5ddbc2226fc3c5f000176f
+  show_ref_link: false
+  title: Communication-Optimal Parallel Recursive Rectangular Matrix Multiplication
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 37
+  pid: a845b1493914f7ea7fcb45cd140d38515a95b556
+  show_ref_link: false
+  title: Communication-Avoiding Parallel Sparse-Dense Matrix-Matrix Multiplication
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 204
+  pid: 3ffae44b736b6dbd6d715977bb6381297dd94304
+  show_ref_link: false
+  title: Communication-Optimal Parallel 2.5D Matrix Multiplication and LU Factorization
+    Algorithms
+  year: 2011
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 58
+  pid: fdf57b4bca2ccf01ae5a00a8b3e761270bdf32ea
+  show_ref_link: false
+  title: Communication lower bounds and optimal algorithms for programs that reference
+    arrays - Part 1
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 226
+  pid: fd6d2cf4ec3d765ecd084a747ab4c1d71d8609e0
+  show_ref_link: false
+  title: Communication lower bounds for distributed-memory matrix multiplication
+  year: 2004
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 455
+  pid: 831cc6d9b7a333b38d34d923b52aed438e90ee1e
+  show_ref_link: false
+  title: More iteration space tiling
+  year: 1989
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 91
+  pid: ce1109de9fd72ad10da896211ca50a0ff0f292ed
+  show_ref_link: false
+  title: Communication optimal parallel multiplication of sparse random matrices
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 220
+  pid: 6f4e48c2a5de9337d147ebbb7d0ff0e555adceca
+  show_ref_link: false
+  title: Bandwidth optimal all-reduce algorithms for clusters of workstations
+  year: 2009
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 47
+  pid: b582d4a005c3288858eb3910e9233edb35323f49
+  show_ref_link: false
+  title: Communication efficient matrix multiplication on hypercubes
+  year: 1994
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 260
+  pid: 34d51059c4b97a888970354be43603fa4fa86c84
+  show_ref_link: false
+  title: Communication Complexity of PRAMs
+  year: 1990
+slug: Mesh-TensorFlow:-Deep-Learning-for-Supercomputers-Shazeer-Cheng
+title: 'Mesh-TensorFlow: Deep Learning for Supercomputers'
+url: https://www.semanticscholar.org/paper/Mesh-TensorFlow:-Deep-Learning-for-Supercomputers-Shazeer-Cheng/2270b8628fd8ca67ae39d277f45bc3c38ac63d5f?sort=total-citations
+venue: NeurIPS
+year: 2018

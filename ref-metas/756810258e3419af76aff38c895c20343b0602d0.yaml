@@ -1,0 +1,399 @@
+authors:
+- Kevin Clark
+- Minh-Thang Luong
+- Quoc V. Le
+- Christopher D. Manning
+badges:
+- id: OPEN_ACCESS
+corpusId: 213152193
+fieldsOfStudy:
+- Computer Science
+meta_key: electra-pre-training-text-encoders-as-discriminators-rather-than-generators
+numCitedBy: 1191
+numCiting: 55
+paperAbstract: While masked language modeling (MLM) pre-training methods such as BERT
+  produce excellent results on downstream NLP tasks, they require large amounts of
+  compute to be effective. These approaches corrupt the input by replacing some tokens
+  with [MASK] and then train a model to reconstruct the original tokens. As an alternative,
+  we propose a more sample-efficient pre-training task called replaced token detection.
+  Instead of masking the input, our approach corrupts it by replacing some input tokens
+  with plausible alternatives sampled from a small generator network. Then, instead
+  of training a model that predicts the original identities of the corrupted tokens,
+  we train a discriminative model that predicts whether each token in the corrupted
+  input was replaced by a generator sample or not. Thorough experiments demonstrate
+  this new pre-training task is more efficient than MLM because the model learns from
+  all input tokens rather than just the small subset that was masked out. As a result,
+  the contextual representations learned by our approach substantially outperform
+  the ones learned by methods such as BERT and XLNet given the same model size, data,
+  and compute. The gains are particularly strong for small models; for example, we
+  train a model on one GPU for 4 days that outperforms GPT (trained using 30x more
+  compute) on the GLUE natural language understanding benchmark. Our approach also
+  works well at scale, where we match the performance of RoBERTa, the current state-of-the-art
+  pre-trained transformer, while using less than 1/4 of the compute.
+ref_count: 55
+references:
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 352
+  pid: 7f4afc1bf3272ae6ec00b46e27efc4a4f6b0826d
+  show_ref_link: false
+  title: 'MaskGAN: Better Text Generation via Filling in the ______'
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 622
+  pid: 0cbf97173391b0430140117027edcaf1a37968c7
+  show_ref_link: false
+  title: 'TinyBERT: Distilling BERT for Natural Language Understanding'
+  year: 2020
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 599
+  pid: 145b8b5d99a2beba6029418ca043585b90138d12
+  show_ref_link: true
+  title: 'MASS: Masked Sequence to Sequence Pre-training for Language Generation'
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 3535
+  pid: cd18800a0fe0b668a1cc19f2ec95b5003d0a5035
+  show_ref_link: true
+  title: Improving Language Understanding by Generative Pre-Training
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 264
+  pid: b47381e04739ea3f392ba6c8faaf64105493c196
+  show_ref_link: true
+  title: 'Sentence Encoders on STILTs: Supplementary Training on Intermediate Labeled-data
+    Tasks'
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 33768
+  pid: df2b0e26d0599ce3e70df8a9da02e51594e0e992
+  show_ref_link: true
+  title: 'BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 129
+  pid: a9b80b3cffb758bea670220fa6762eb343865419
+  show_ref_link: false
+  title: Language GANs Falling Short
+  year: 2020
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 4228
+  pid: e0c6abdbdecf04ffac65c440da77fb9d66bb474c
+  show_ref_link: true
+  title: 'XLNet: Generalized Autoregressive Pretraining for Language Understanding'
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2708
+  pid: 7a064df1aeada7e69e5173f7d4c8606f4470365b
+  show_ref_link: true
+  title: 'ALBERT: A Lite BERT for Self-supervised Learning of Language Representations'
+  year: 2020
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 732
+  pid: 1c71771c701aadfd72c5866170a9f5d71464bb88
+  show_ref_link: true
+  title: Unified Language Model Pre-training for Natural Language Understanding and
+    Generation
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 35164
+  pid: 204e3073870fae3d05bcbc2f6a8e263d9b72e776
+  show_ref_link: true
+  title: Attention is All you Need
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2251
+  pid: 1e077413b25c4d34945cc2707e17e46ed4fe784a
+  show_ref_link: true
+  title: Universal Language Model Fine-tuning for Text Classification
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 879
+  pid: 81f5810fbbab9b7203b9556f4ce3c741875407bc
+  show_ref_link: true
+  title: 'SpanBERT: Improving Pre-training by Representing and Predicting Spans'
+  year: 2020
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1620
+  pid: 2966ecd82505ecd55ead0e6a327a304c8f9868e3
+  show_ref_link: false
+  title: 'SeqGAN: Sequence Generative Adversarial Nets with Policy Gradient'
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 881
+  pid: 4aa9f5150b46320f534de4747a2dd0cd7f3fe292
+  show_ref_link: false
+  title: Semi-supervised Sequence Learning
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 29658
+  pid: 54e325aee6b2d476bbbb88615ac15e251c6e8214
+  show_ref_link: true
+  title: Generative Adversarial Nets
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 366
+  pid: 9452e711ce2e7e0d4e35aaeb5ab8731de62a5809
+  show_ref_link: false
+  title: 'Contrastive Estimation: Training Log-Linear Models on Unlabeled Data'
+  year: 2005
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2636
+  pid: 93b8da28d006415866bf48f9a6e06b5242129195
+  show_ref_link: true
+  title: 'GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language
+    Understanding'
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 333
+  pid: 403227333329b36183004f04db72362b604adef3
+  show_ref_link: false
+  title: A Theoretical Analysis of Contrastive Unsupervised Representation Learning
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 6658
+  pid: bc1022b031dc6c7019696492e8116598097a8c12
+  show_ref_link: true
+  title: Natural Language Processing (Almost) from Scratch
+  year: 2011
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 29
+  pid: 2c253dc6d35df2bc5932fecdfa9169a8e663dc31
+  show_ref_link: false
+  title: Evaluating Text GANs as Language Models
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 7268
+  pid: 077f8329a7b6fa3b7c877a57b81eb6c18b5f87de
+  show_ref_link: true
+  title: 'RoBERTa: A Robustly Optimized BERT Pretraining Approach'
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 251
+  pid: 0d16298285eb347bf951b302e6f2c8e4dc472253
+  show_ref_link: false
+  title: Adversarial Feature Matching for Text Generation
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 5367
+  pid: 687bac2d3320083eb4530bf18bb8f8f721477600
+  show_ref_link: true
+  title: Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 7987
+  pid: 3febb2bed8865945e7fddc99efd791887bb7e14f
+  show_ref_link: true
+  title: Deep Contextualized Word Representations
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 5470
+  pid: 843959ffdccf31c6694d135fad07425924f785b1
+  show_ref_link: true
+  title: Extracting and composing robust features with denoising autoencoders
+  year: 2008
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2037
+  pid: 5ded2b8c64491b4a67f6d39ce473d4b9347a672e
+  show_ref_link: true
+  title: A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 3080
+  pid: b227f3e4c0dc96e5ac5426b85485a70f2175a205
+  show_ref_link: false
+  title: Representation Learning with Contrastive Predictive Coding
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 22537
+  pid: f37e1b62a767a307c046404ca96bc140b3e68cb5
+  show_ref_link: true
+  title: 'GloVe: Global Vectors for Word Representation'
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 41
+  pid: eaaf7b9166934e379f10a038ac5610d3360c12b3
+  show_ref_link: false
+  title: Adversarial Contrastive Estimation
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 139
+  pid: ef6948edae12eba6f1d486b8600108b9762f36ab
+  show_ref_link: true
+  title: BAM! Born-Again Multi-Task Networks for Natural Language Understanding
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 100
+  pid: 3c6dca9041f54583aeab60587c9e6e9272104dc1
+  show_ref_link: false
+  title: Reducing BERT Pre-Training Time from 3 Days to 76 Minutes
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2747
+  pid: 22aab110058ebbd198edb1f1e7b4f69fb13c0613
+  show_ref_link: false
+  title: Large Scale GAN Training for High Fidelity Natural Image Synthesis
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 90076
+  pid: a6cb366736791bcccc5c8639de5a8f9636bf87e8
+  show_ref_link: true
+  title: 'Adam: A Method for Stochastic Optimization'
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1360
+  pid: 1db6e3078597386ac4222ba6c3f4f61b61f53539
+  show_ref_link: false
+  title: Adversarial Feature Learning
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 3911
+  pid: 2582ab7c70c9e7fcb84545944eba8f3a7f253248
+  show_ref_link: false
+  title: Translating Embeddings for Modeling Multi-relational Data
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  - Psychology
+  numCitedBy: 935
+  pid: a23fa96e7217ba0e9405d9e1fe3cdedd57b6e096
+  show_ref_link: true
+  title: 'SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Crosslingual
+    Focused Evaluation'
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 4265
+  pid: 05dd7254b632376973f3a1b4d39485da17814df5
+  show_ref_link: true
+  title: 'SQuAD: 100,000+ Questions for Machine Comprehension of Text'
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 434
+  pid: 2adae2da173b9dd720c8bcac0250a90a7f1ec697
+  show_ref_link: false
+  title: 'Time-Contrastive Networks: Self-Supervised Learning from Video'
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 9853
+  pid: 8388f1be26329fa45e5807e968a641ce170ea078
+  show_ref_link: true
+  title: Unsupervised Representation Learning with Deep Convolutional Generative Adversarial
+    Networks
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  - Linguistics
+  numCitedBy: 546
+  pid: cb0f3ee1e98faf92429d601cdcd76c69c1e484eb
+  show_ref_link: true
+  title: Neural Network Acceptability Judgments
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 834
+  pid: 475354f10798f110d34792b6d88f31d6d5cb099e
+  show_ref_link: false
+  title: Automatically Constructing a Corpus of Sentential Paraphrases
+  year: 2005
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 21886
+  pid: 330da625c15427c6e42ccfa3b747fb29e5835bf0
+  show_ref_link: true
+  title: Efficient Estimation of Word Representations in Vector Space
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1419
+  pid: 0e6824e137847be0599bb0032e37042ed2ef5045
+  show_ref_link: true
+  title: 'Aligning Books and Movies: Towards Story-Like Visual Explanations by Watching
+    Movies and Reading Books'
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 389
+  pid: 031e4e43aaffd7a479738dcea69a2d5be7957aa3
+  show_ref_link: false
+  title: 'ERNIE: Enhanced Representation through Knowledge Integration'
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2899
+  pid: cfaae9b6857b834043606df3342d8dc97524aa9d
+  show_ref_link: false
+  title: Learning a similarity metric discriminatively, with application to face verification
+  year: 2005
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1227
+  pid: e3ce36b9deb47aa6bb2aa19c4bfa71283b505025
+  show_ref_link: false
+  title: 'Noise-contrastive estimation: A new estimation principle for unnormalized
+    statistical models'
+  year: 2010
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 5181
+  pid: 4c915c1eecb217c123a36dc6d3ce52d12c742614
+  show_ref_link: true
+  title: Simple statistical gradient-following algorithms for connectionist reinforcement
+    learning
+  year: 2004
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 628
+  pid: 6c11626ae08706e6185fceff0a6d05e4bfd6bd06
+  show_ref_link: false
+  title: Unsupervised Learning of Visual Representations using Videos
+  year: 2015
+- fieldsOfStudy:
+  - Philosophy
+  numCitedBy: 474
+  pid: b2815bc4c9e4260227cd7ca0c9d68d41c4c2f58b
+  show_ref_link: false
+  title: The Third PASCAL Recognizing Textual Entailment Challenge
+  year: 2007
+slug: ELECTRA:-Pre-training-Text-Encoders-as-Rather-Than-Clark-Luong
+title: 'ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators'
+url: https://www.semanticscholar.org/paper/ELECTRA:-Pre-training-Text-Encoders-as-Rather-Than-Clark-Luong/756810258e3419af76aff38c895c20343b0602d0?sort=total-citations
+venue: ICLR
+year: 2020

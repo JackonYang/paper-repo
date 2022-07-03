@@ -1,0 +1,681 @@
+authors:
+- Zhedong Zheng
+- Liang Zheng
+- Michael Garrett
+- Yi Yang
+- Mingliang Xu
+- Yi-Dong Shen
+badges:
+- id: OPEN_ACCESS
+corpusId: 49867191
+fieldsOfStudy:
+- Computer Science
+meta_key: dual-path-convolutional-image-text-embeddings-with-instance-loss
+numCitedBy: 147
+numCiting: 112
+paperAbstract: Matching images and sentences demands a fine understanding of both
+  modalities. In this article, we propose a new system to discriminatively embed the
+  image and text to a shared visual-textual space. In this field, most existing works
+  apply the ranking loss to pull the positive image/text pairs close and push the
+  negative pairs apart from each other. However, directly deploying the ranking loss
+  on heterogeneous features (i.e., text and image features) is less effective, because
+  it is hard to find appropriate triplets at the beginning. So the naive way of using
+  the ranking loss may compromise the network from learning inter-modal relationship.
+  To address this problem, we propose the instance loss, which explicitly considers
+  the intra-modal data distribution. It is based on an unsupervised assumption that
+  each image/text group can be viewed as a class. So the network can learn the fine
+  granularity from every image/text group. The experiment shows that the instance
+  loss offers better weight initialization for the ranking loss, so that more discriminative
+  embeddings can be learned. Besides, existing works usually apply the off-the-shelf
+  features, i.e., word2vec and fixed visual feature. So in a minor contribution, this
+  article constructs an end-to-end dual-path convolutional network to learn the image
+  and text representations. End-to-end learning allows the system to directly learn
+  from the data and fully utilize the supervision. On two generic retrieval datasets
+  (Flickr30k and MSCOCO), experiments demonstrate that our method yields competitive
+  accuracy compared to state-of-the-art methods. Moreover, in language-based person
+  retrieval, we improve the state of the art by a large margin. The code has been
+  made publicly available.
+ref_count: 92
+references:
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 15
+  pid: 70e80065c4db089c3792245535ecacdca3770577
+  show_ref_link: false
+  title: Modality-Invariant Image-Text Embedding for Image-Sentence Matching
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 283
+  pid: f865268b81eeb29d94775f22c6bc24dcc5e1b2e9
+  show_ref_link: true
+  title: Learning Two-Branch Neural Networks for Image-Text Matching Tasks
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 582
+  pid: b27e791e843c924ef052981b79490ab59fc0433d
+  show_ref_link: true
+  title: Learning Deep Structure-Preserving Image-Text Embeddings
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 133
+  pid: f222282574666658dc0408176805cbe21348477d
+  show_ref_link: false
+  title: Identity-Aware Textual-Visual Matching with Latent Co-attention
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 481
+  pid: 45dd2a3cd7c27f2e9509b023d702408f5ac11c9d
+  show_ref_link: true
+  title: Stacked Cross Attention for Image-Text Matching
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 139
+  pid: 030b67c850dde82ba96514744afd890f0833c01c
+  show_ref_link: false
+  title: Effective Multi-Modal Retrieval based on Stacked Auto-Encoders
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 621
+  pid: 193089d56758ab88391d846edd08d359b1f9a863
+  show_ref_link: false
+  title: A Discriminatively Learned CNN Embedding for Person Reidentification
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 113
+  pid: ad5dc94b28bee087a34f52114c52bd09d2acd8cb
+  show_ref_link: true
+  title: Hierarchical Multimodal LSTM for Dense Visual-Semantic Embedding
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 71
+  pid: 0fe69c9ebf4ede1eb8e2ec233b632031173dd8cb
+  show_ref_link: false
+  title: Image Captioning with Deep Bidirectional LSTMs and Multi-Task Learning
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 602
+  pid: 90368e1751b34f22492ed18cc3b1ab19ae546afa
+  show_ref_link: false
+  title: Learning Deep Representations of Fine-Grained Visual Descriptions
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 83
+  pid: 2e926267b1419cc4a9a656493310122a2d5e7162
+  show_ref_link: false
+  title: Cross-Modal Retrieval via Deep and Bidirectional Representation Learning
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1950
+  pid: 4aa4069693bee00d1b0759ca3df35e59284e9845
+  show_ref_link: true
+  title: 'DeViSE: A Deep Visual-Semantic Embedding Model'
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 150
+  pid: faa093a53b83f0e9c35a0bfbcacee0a16f8eb6d1
+  show_ref_link: true
+  title: 'VSE++: Improved Visual-Semantic Embeddings'
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 88
+  pid: 90208e8cbda1f39f3d06e41d97898408b13192a7
+  show_ref_link: false
+  title: Learning a Recurrent Residual Fusion Network for Multimodal Matching
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 159
+  pid: e1b6735f6ecb09e1d83b0aa9d2cde42993ee2eb0
+  show_ref_link: true
+  title: Instance-Aware Image and Sentence Matching with Selective Multimodal LSTM
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 167
+  pid: f322eef6a4c965910e03f6997b1bc2acd413e273
+  show_ref_link: true
+  title: Learning Semantic Concepts and Order for Image and Sentence Matching
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 924
+  pid: 9814df8bd00ba999c4d1e305a7e9bca579dc7c75
+  show_ref_link: false
+  title: 'Framing Image Description as a Ranking Task: Data, Models and Evaluation
+    Metrics (Extended Abstract)'
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 61
+  pid: 4327934807725afb7592eb77c264acefc49c9347
+  show_ref_link: false
+  title: Person Reidentification via Structural Deep Metric Learning
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 72
+  pid: 11b9c878142f97897686aa15eb5f497883c9dd11
+  show_ref_link: false
+  title: Modality-Dependent Cross-Media Retrieval
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 251
+  pid: 51239b320c73f3f2219286bf62f24d6763379328
+  show_ref_link: false
+  title: Associating neural word embeddings with deep image representations using
+    Fisher Vectors
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 220
+  pid: 724b253a55e86ad230ba05c7eb78f249e09258d9
+  show_ref_link: true
+  title: 'Look, Imagine and Match: Improving Textual-Visual Cross-Modal Retrieval
+    with Generative Models'
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 257
+  pid: ce3c5b0691d9e05061adc0a6fed8acb2607b1423
+  show_ref_link: false
+  title: 'Cross-Modal Retrieval With CNN Visual Features: A New Baseline'
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 44
+  pid: 390d0bb977b7473b8b76d045875c767d743de943
+  show_ref_link: false
+  title: Image Caption Generation with Part of Speech Guidance
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 135
+  pid: 2616e0fbce43362a338acedcbb5cd80db7bbb7e5
+  show_ref_link: true
+  title: Linking Image and Text with 2-Way Nets
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 740
+  pid: 7f1b111f0bb703b0bd97aba505728a9b0d9b2a54
+  show_ref_link: false
+  title: Deep Fragment Embeddings for Bidirectional Image Sentence Mapping
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 621
+  pid: 62f74d3aaf9e86633e4d88b04a6d04ca93e8b81e
+  show_ref_link: true
+  title: 'Show and Tell: Lessons Learned from the 2015 MSCOCO Image Captioning Challenge'
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 4510
+  pid: d4dc1012d780e8e2547237eb5a6dc7b1bf47d2f0
+  show_ref_link: true
+  title: 'Show and tell: A neural image caption generator'
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 283
+  pid: 153d6feb7149e063b33e8ee437b74e4a2def8057
+  show_ref_link: false
+  title: Multimodal Convolutional Neural Networks for Matching Image and Sentence
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1008
+  pid: 54b2b6f35f1b5704dddfaa3a137a2f4ad3dfe745
+  show_ref_link: true
+  title: Deep Captioning with Multimodal Recurrent Neural Networks (m-RNN)
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 9408
+  pid: cab372bc3824780cce20d9dd1c22d4df39ed081a
+  show_ref_link: true
+  title: 'DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous
+    Convolution, and Fully Connected CRFs'
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 112
+  pid: 7f0315566092526b00e4b790f902dab0f3d91404
+  show_ref_link: false
+  title: Large-Scale Cross-Modality Search via Collective Matrix Factorization Hashing
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 78
+  pid: 2f77e464414dae330df16a51971ec296ad76467e
+  show_ref_link: false
+  title: Cross-media semantic representation via bi-directional learning to rank
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 48
+  pid: bd7f187eb807dce5e8ac4e3ef55c19eb91eb6389
+  show_ref_link: false
+  title: Cross-Modal Subspace Learning via Pairwise Constraints
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 27
+  pid: 4c527e4b1c68e69ab6c6e2839d0b141962456358
+  show_ref_link: false
+  title: Correspondence Autoencoders for Cross-Modal Retrieval
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 336
+  pid: efb0e69bc640171d1f115bb286d865bec6f21a7f
+  show_ref_link: false
+  title: Deep correlation for matching images and text
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 36
+  pid: e60416112ce2a4a5ca7826f1636206f80dbd390b
+  show_ref_link: false
+  title: Discriminative Bimodal Networks for Visual Localization and Detection with
+    Natural Language Queries
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1041
+  pid: 6e8c107f5f852640daaf324111fc9cf35b5e4acc
+  show_ref_link: false
+  title: A new approach to cross-modal multimedia retrieval
+  year: 2010
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1856
+  pid: 6bd36e9fd0ef20a3074e1430a6cc601e6d407fc3
+  show_ref_link: false
+  title: 'DeepReID: Deep Filter Pairing Neural Network for Person Re-identification'
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 65
+  pid: c94217efec8773ef947df2772f92df8c5726f855
+  show_ref_link: false
+  title: Leveraging Visual Question Answering for Image-Caption Ranking
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 469
+  pid: f651593fa6c83d717fc961482696a53b6fca5ab5
+  show_ref_link: true
+  title: Dual Attention Networks for Multimodal Reasoning and Matching
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 124
+  pid: 6347c4e71a249785a833c110b90ec01f3533ca64
+  show_ref_link: false
+  title: Image Classification by Cross-Media Active Learning With Privileged Information
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 50
+  pid: f3ccdf54a3384e601fa36969e7b3f657e2516a3b
+  show_ref_link: false
+  title: Paying More Attention to Saliency
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 265
+  pid: 31da1da2d4e7254dd8f2a4578d887c57e0678438
+  show_ref_link: false
+  title: Unsupervised Person Re-identification
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 62220
+  pid: eb42cf88027de515750f230b23b1a057dc782108
+  show_ref_link: true
+  title: Very Deep Convolutional Networks for Large-Scale Image Recognition
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 788
+  pid: 367008b91eb57c5ea64ef7520dfcabc0c5c85532
+  show_ref_link: false
+  title: 'Person Re-identification: Past, Present and Future'
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 13
+  pid: 9b7c6ef333c6e64f2dfa97a1a3614d0775d81a8a
+  show_ref_link: false
+  title: A New Evaluation Protocol and Benchmarking Results for Extendable Cross-media
+    Retrieval
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 177
+  pid: 01381e2faeb26489ae9c24c84c42df33901cfe61
+  show_ref_link: false
+  title: Multi-scale Deep Learning Architectures for Person Re-identification
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 925
+  pid: 98bb60748eb8ef7a671cdd22faa87e377fd13060
+  show_ref_link: false
+  title: Part-Based R-CNNs for Fine-Grained Category Detection
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 100
+  pid: b90e58d0549d8c27b3e9059c70eac85fb2de037e
+  show_ref_link: false
+  title: Unsupervised Semantic-Preserving Adversarial Hashing for Image Search
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 95314
+  pid: 2c03df8b48bf3fa39054345bafabfeff15bfd11d
+  show_ref_link: true
+  title: Deep Residual Learning for Image Recognition
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 77
+  pid: 2496c312cb5453724755ebe338f9e1decbf83f1c
+  show_ref_link: false
+  title: Discriminative Dictionary Learning With Common Label Alignment for Cross-Modal
+    Retrieval
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 104
+  pid: 29f53b4daeec2db56b9909662f81db3fe7b4044d
+  show_ref_link: false
+  title: Shared Predictive Cross-Modal Deep Quantization
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 43
+  pid: 5b1d78b160560db5f581e65289ce5e2f99eb9b1f
+  show_ref_link: false
+  title: 'Twitter100k: A Real-World Dataset for Weakly Supervised Cross-Media Retrieval'
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 214
+  pid: 501d004186c1ebe7da5e3a0631624e0b55ebeabb
+  show_ref_link: false
+  title: Learning Coupled Feature Spaces for Cross-Modal Matching
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 140
+  pid: 828ac57f755db989e2886042a85278ae4823297c
+  show_ref_link: false
+  title: Uncovering the Temporal Context for Video Question Answering
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  - Psychology
+  numCitedBy: 132
+  pid: 3f176860d2552a4d6a413d815622dfe2e5923780
+  show_ref_link: false
+  title: Learning Aligned Cross-Modal Representations from Weakly Aligned Data
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 133
+  pid: cb0a43e76521c57caad5b6e9b1cce6ce0e81824e
+  show_ref_link: false
+  title: Progressive Learning for Person Re-Identification With One Example
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 535
+  pid: 7f23a4bb0c777dd72cca7665a5f370ac7980217e
+  show_ref_link: false
+  title: Improving Person Re-identification by Attribute and Identity Learning
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 19778
+  pid: 71b7178df5d2b112d07e45038cb5637208659ff7
+  show_ref_link: true
+  title: 'Microsoft COCO: Common Objects in Context'
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 180
+  pid: 28870e4de79d5086864a9f2c6df632b606ac3347
+  show_ref_link: false
+  title: Person Search with Natural Language Description
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 65
+  pid: ad0226d57f4fa6a99b947caa1df47defe095685c
+  show_ref_link: false
+  title: Multimodal Discriminative Binary Embedding for Large-Scale Cross-Modal Retrieval
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 461
+  pid: 98a6b07d51261df9418981c1dddf09ad4a9c48e4
+  show_ref_link: false
+  title: Event Extraction via Dynamic Multi-Pooling Convolutional Neural Networks
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 729
+  pid: f797fd44b9ddd5845611eb7a705ca9464a8819d1
+  show_ref_link: true
+  title: Very Deep Convolutional Networks for Text Classification
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 546
+  pid: bf60322f83714523e2d7c1d39983151fe9db7146
+  show_ref_link: false
+  title: Collecting Image Annotations Using Amazon's Mechanical Turk
+  year: 2010
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1104
+  pid: 9f08b01251cb99f4ffae8c7b3e4468d3af9c98d3
+  show_ref_link: true
+  title: Convolutional Neural Network Architectures for Matching Natural Language
+    Sentences
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 81
+  pid: c73d507abd4f4f917e1e020df6ff0750eb5be6d8
+  show_ref_link: false
+  title: Do Convolutional Networks need to be Deep for Text Classification ?
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 80944
+  pid: abd1c342495432171beb7ca8fd9551ef13cbd0ff
+  show_ref_link: true
+  title: ImageNet classification with deep convolutional neural networks
+  year: 2012
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 388
+  pid: 9b505dd5459fb28f0136d3c63793b600042e6a94
+  show_ref_link: false
+  title: A Multimedia Retrieval Framework Based on Semi-Supervised Ranking and Relevance
+    Feedback
+  year: 2012
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 61
+  pid: d7fa08772a2ef51e344fa0d22e01b94be310699e
+  show_ref_link: false
+  title: Query-Adaptive Hash Code Ranking for Large-Scale Multi-View Visual Search
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 644
+  pid: 591e53602b390746851040047dfd1e499144ef64
+  show_ref_link: false
+  title: 'Generalized Multiview Analysis: A discriminative latent space'
+  year: 2012
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 19
+  pid: 868de519de2adeae9a0ec909d12a79e5cecaa05c
+  show_ref_link: false
+  title: Learning Label Preserving Binary Codes for Multimedia Retrieval
+  year: 2018
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 25491
+  pid: e74f9b7f8eec6ba4704c206b93bc8079af3da4bd
+  show_ref_link: true
+  title: ImageNet Large Scale Visual Recognition Challenge
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 3477
+  pid: 51a55df1f023571a7e07e338ee45a3e3d66ef73e
+  show_ref_link: true
+  title: Character-level Convolutional Networks for Text Classification
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 120
+  pid: 04b8a1d2498a7c8bd90a5465a02b2e8e178177c5
+  show_ref_link: true
+  title: RNN Fisher Vectors for Action Recognition and Image Annotation
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2422
+  pid: 43428880d75b3a14257c3ee9bda054e61eb869c0
+  show_ref_link: true
+  title: Convolutional Sequence to Sequence Learning
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 72
+  pid: 2411ffaba12b52d912199f102640aaaae108d26f
+  show_ref_link: false
+  title: Flexible Multi-View Dimensionality Co-Reduction
+  year: 2017
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1183
+  pid: 2b669398c4cf2ebe04375c8b1beae20f4ac802fa
+  show_ref_link: true
+  title: Improving Word Representations via Global Context and Multiple Word Prototypes
+  year: 2012
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 4645
+  pid: dbde7dfa6cae81df8ac19ef500c42db96c3d1edd
+  show_ref_link: true
+  title: 'Google''s Neural Machine Translation System: Bridging the Gap between Human
+    and Machine Translation'
+  year: 2016
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 10064
+  pid: 1f6ba0782862ec12a5ec6d7fb608523d55b0c6ba
+  show_ref_link: true
+  title: Convolutional Neural Networks for Sentence Classification
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 12432
+  pid: b71ac1e9fb49420d13e084ac67254a0bbd40f83f
+  show_ref_link: true
+  title: Understanding the difficulty of training deep feedforward neural networks
+  year: 2010
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1323
+  pid: 44040913380206991b1991daf1192942e038fe31
+  show_ref_link: true
+  title: 'From image descriptions to visual denotations: New similarity metrics for
+    semantic inference over event descriptions'
+  year: 2014
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2670
+  pid: a6b5b20151c752beb74508f813699fa5216dedfa
+  show_ref_link: false
+  title: 'Canonical Correlation Analysis: An Overview with Application to Learning
+    Methods'
+  year: 2004
+- fieldsOfStudy:
+  - Biology
+  numCitedBy: 53
+  pid: 802e85172bb1418bdfb8211062aa3049e9bd765d
+  show_ref_link: false
+  title: Framing image description as a ranking task
+  year: 2013
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 2774
+  pid: 0bde8d9367d1004c7396dd69cb27ed97dc2f8d77
+  show_ref_link: true
+  title: 'MatConvNet: Convolutional Neural Networks for MATLAB'
+  year: 2015
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 51691
+  pid: 44d2abe2175df8153f465f6c39b68b76a0d40ab9
+  show_ref_link: true
+  title: Long Short-Term Memory
+  year: 1997
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 1055
+  pid: 7847b1fbccadb780b655e72c66d3f9e93ddb880c
+  show_ref_link: false
+  title: Evaluating Appearance Models for Recognition, Reacquisition, and Tracking
+  year: 2007
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 21881
+  pid: 330da625c15427c6e42ccfa3b747fb29e5835bf0
+  show_ref_link: true
+  title: Efficient Estimation of Word Representations in Vector Space
+  year: 2013
+- fieldsOfStudy:
+  - Psychology
+  - Computer Science
+  numCitedBy: 6
+  pid: 4a019870874ac1304b1fb9d90f97c57348d2f27e
+  show_ref_link: false
+  title: Alone versus In-a-group
+  year: 2019
+- fieldsOfStudy:
+  - Computer Science
+  numCitedBy: 4900
+  pid: 9819b600a828a57e1cde047bbe710d3446b30da5
+  show_ref_link: true
+  title: Recurrent neural network based language model
+  year: 2010
+slug: Dual-path-Convolutional-Image-Text-Embeddings-with-Zheng-Zheng
+title: Dual-path Convolutional Image-Text Embeddings with Instance Loss
+url: https://www.semanticscholar.org/paper/Dual-path-Convolutional-Image-Text-Embeddings-with-Zheng-Zheng/58555c7d168d1f50422ed9435d31ecd28d66eaa8?sort=total-citations
+venue: ACM Trans. Multim. Comput. Commun. Appl.
+year: 2020
