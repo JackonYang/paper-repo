@@ -68,20 +68,20 @@ def clean_dict(old_ref):
 
 
 ref_cnt_thre = [
-    (2010, 100),
-    (2000, 300),
-    (1990, 1000),
-    (1900, 3000),
-    (-999, 300),
+    (2015, 100),
+    (2010, 1000),
+    (2000, 3000),
+    (1990, 10000),
+    (1950, 30000),
 ]
 
 
 def is_drop_by_cited_cnt(cited_cnt, year):
     for y, thre in ref_cnt_thre:
-        if year > y and cited_cnt < thre:
-            return True
+        if year > y:
+            return cited_cnt < thre
 
-    return False
+    return True
 
 
 def add_info_by_ref(ref_info, new_info):
@@ -128,6 +128,8 @@ def main():
     paper_info = {}
     paper_ref_map = {}
 
+    # year_info = []
+
     for cur_pid, data in raw_paper_info.items():
 
         if 'page_url' not in data:
@@ -150,6 +152,7 @@ def main():
             ref = clean_ref(ref)
 
             if show_ref_link and pid not in paper_info:
+                # year_info.append([year, cited_cnt, ref['title']])
                 new_info = get_info_from_raw(raw_paper_info[pid])
                 if new_info:
                     paper_info[pid] = new_info
@@ -169,6 +172,9 @@ def main():
 
     print('final paper cnt: %s, raw paper cnt: %s' % (
         len(paper_info), len(raw_paper_info)))
+    # with open('year-info.txt', 'w') as fw:
+    #     for raw in sorted(year_info, reverse=True):
+    #         fw.write('%4d, %s, %s\n' % tuple(raw))
     save_yaml(paper_info, REF_META_DIR)
 
 
