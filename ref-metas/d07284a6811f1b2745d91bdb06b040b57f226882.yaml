@@ -1,0 +1,55 @@
+authors:
+- I. Loshchilov
+- F. Hutter
+badges: []
+corpusId: 53592270
+fieldsOfStudy:
+- Computer Science
+numCitedBy: 3476
+numCiting: 33
+paperAbstract: L$_2$ regularization and weight decay regularization are equivalent
+  for standard stochastic gradient descent (when rescaled by the learning rate), but
+  as we demonstrate this is \emph{not} the case for adaptive gradient algorithms,
+  such as Adam. While common implementations of these algorithms employ L$_2$ regularization
+  (often calling it "weight decay" in what may be misleading due to the inequivalence
+  we expose), we propose a simple modification to recover the original formulation
+  of weight decay regularization by \emph{decoupling} the weight decay from the optimization
+  steps taken w.r.t. the loss function. We provide empirical evidence that our proposed
+  modification (i) decouples the optimal choice of weight decay factor from the setting
+  of the learning rate for both standard SGD and Adam and (ii) substantially improves
+  Adam's generalization performance, allowing it to compete with SGD with momentum
+  on image classification datasets (on which it was previously typically outperformed
+  by the latter). Our proposed decoupled weight decay has already been adopted by
+  many researchers, and the community has implemented it in TensorFlow and PyTorch;
+  the complete source code for our experiments is available at this https URL
+ref_count: 33
+references:
+- pid: a6cb366736791bcccc5c8639de5a8f9636bf87e8
+  title: 'Adam: A Method for Stochastic Optimization'
+- pid: 3d2c6941a9b4608ba52b328369a3352db2092ae0
+  title: 'Weight Normalization: A Simple Reparameterization to Accelerate Training
+    of Deep Neural Networks'
+- pid: 413c1142de9d91804d6d11c67ff3fed59c9fc279
+  title: Adaptive Subgradient Methods for Online Learning and Stochastic Optimization
+- pid: b022f2a277a4bf5f42382e86e4380b96340b9e86
+  title: 'SGDR: Stochastic Gradient Descent with Warm Restarts'
+- pid: 204e3073870fae3d05bcbc2f6a8e263d9b72e776
+  title: Attention is All you Need
+- pid: 5694e46284460a648fe29117cbc55f6c9be3fa3c
+  title: Densely Connected Convolutional Networks
+- pid: 5d90f06bb70a0a3dced62413346235c02b1aa086
+  title: Learning Multiple Layers of Features from Tiny Images
+- pid: 8388f1be26329fa45e5807e968a641ce170ea078
+  title: Unsupervised Representation Learning with Deep Convolutional Generative Adversarial
+    Networks
+- pid: 4d8f2d14af5991d4f0d050d22216825cac3157bd
+  title: 'Show, Attend and Tell: Neural Image Caption Generation with Visual Attention'
+- pid: a2785f66c20fbdf30ec26c0931584c6d6a0f4fca
+  title: 'DRAW: A Recurrent Neural Network For Image Generation'
+- pid: 52d7eb0fbc3522434c13cc247549f74bb9609c5d
+  title: 'WIDER FACE: A Face Detection Benchmark'
+slug: Decoupled-Weight-Decay-Regularization-Loshchilov-Hutter
+title: Decoupled Weight Decay Regularization
+url: https://www.semanticscholar.org/paper/Decoupled-Weight-Decay-Regularization-Loshchilov-Hutter/d07284a6811f1b2745d91bdb06b040b57f226882?sort=total-citations
+venue: ICLR
+year: 2019

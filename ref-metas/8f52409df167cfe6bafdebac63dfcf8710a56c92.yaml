@@ -1,0 +1,95 @@
+authors:
+- Matthew F. Hurst
+badges:
+- id: OPEN_ACCESS
+corpusId: 7205594
+fieldsOfStudy:
+- Computer Science
+numCitedBy: 90
+numCiting: 13
+paperAbstract: "In this paper, we consider the table understanding task and present\
+  \ a catalogue of particular issues that arise when the tables are those found on\
+  \ the web. In addition, we consider what happens when processes commonly associated\
+  \ with web pages are applied to those bearing tables. 1 Table Understanding and\
+  \ the Web The ubiquity of tables, and their ability to describe relational information\
+  \ in a compact and immediate manner make them attractive targets for automated understanding.\
+  \ Recent research into the automatic location, recognition and understanding of\
+  \ tables has demonstrated the viability of integrating automated table processing\
+  \ systems into larger knowledge management applications ([8]). However, table understanding\
+  \ is still a relatively novel research area, one whose definition and terminology\
+  \ are still not fixed. It is useful to break the task down into some subtasks, and\
+  \ to consider them in turn with respect to the understanding of tables delivered\
+  \ on the web. Generally, table processing can be conceptualized as consisting of\
+  \ table location; table recognition; functional and structural analysis; and finally\
+  \ interpretation the extraction of meaningful and unambiguously structured information\
+  \ ([4]). We concentrate on the first two tasks in the following. location table\
+  \ location is the processes of spotting tables in documents. Traditionally, this\
+  \ task comes in two basic forms document image sourced tables ([7], [3]) and electronic\
+  \ text sourced tables including HTML ([1]). The problem is extended to include the\
+  \ spotting of tables in other document encodings such as postscript, pdf, rtf, word,\
+  \ etc. In general, when considering tables on the web, the appropriate HTML tags\
+  \ are exploited (TABLE, TH, TD, etc.). However, this is where we come to the first\
+  \ two distinguishing points. the presence of the TABLE tag in an HTML document does\
+  \ not necessarily indicate the presence of a table ([1] suggest less than 30 % of\
+  \ HTML TABLEs are real tables in one particular domain). there are many other ways\
+  \ in which tables may be presented in web delivered documents plain text (PRE),\
+  \ images, mixtures of table specific tags (TABLE, etc.) and tags used within the\
+  \ table for their functionality in terms of placing text spatially (PRE, LI, etc.)\
+  \ see Figure 1 for an example of such complexities. The first point requires the\
+  \ creation of accurate classification technology. Given any TABLE node in the HTML,\
+  \ the classifier must accept or reject it. Such a classifier may be built either\
+  \ via hand crafted rules ([1]) or using a machine learning approach. Experiments\
+  \ suggest that a machine learning approach using a naive bayse classifier ([9])\
+  \ based on a feature set describing the set of tags below the potential TABLE node\
+  \ in the document tree produces adequate results. Locating tables encoded in other\
+  \ formats requires technology from other areas. For example, images of tables may\
+  \ be processed by techniques from the document image field ([2]), pre-formatted\
+  \ tables (using the PRE) tag may be processed using plain text table methods ([5]).\
+  \ However, the classification problem extends to these cases and individual classifiers\
+  \ must be constructed to make decisions about document elements of each type. The\
+  \ remaining outstanding issues relate to the mixture of encoding types (e.g. tables\
+  \ built out of TABLE nodes and pre-formatted elements), as well as the mixture of\
+  \ encoding purposes (e.g. the use of the HTML TABLE to encode surrounding text as\
+  \ well as an embedded table). Figure 1. A web page using a mixture of HTML tables\
+  \ (on the left) and images of tables (on the right). recognition table recognition\
+  \ is the task of segmenting the original description of the table into a relative\
+  \ spatial description. In general this task is required when the input is low-level,\
+  \ such as a document image or an electronic text. Clearly, if such tables are found\
+  \ on a web page, the same process is required. Again, given certain assumptions,\
+  \ we can take the marked up tables in a web page to be the logical spatial table.\
+  \ However, there are certain issues that need to be understood in order to account\
+  \ for certain variations: internal cell structure though tags like TH and TD may\
+  \ be assumed to delimit a single cell in the table, there are cases where other\
+  \ non-table tags are used to provide internal structure in such a way as to associate\
+  \ the cell\u2019s contents with those of other cells. A solution would be required\
+  \ to apply a certain amount of recursive processing working into the structure and\
+  \ building a unified abstract table. split cells in order to gain more control over\
+  \ the distribution of the text in a cell, authors occasionally split the text and\
+  \ place it in two or more adjacent cells. This problem may be accommodated by exploiting\
+  \ linguistic process as described in [6] where the content of the cell can be used\
+  \ to indicate continuity, if any, to other cells. errors spanning errors occur when\
+  \ the COLSPAN or ROWSPAN values are not correctly calculated. There are two cases.\
+  \ In the first the cell spans beyond the border of the intended table giving the\
+  \ cell incorrect coordinates. In the second, the span of the cell does not communicate\
+  \ the correct meaning of the cell. For example, a cell that is intended to span\
+  \ three cells below it spans only one leading to ambiguity. The first type of problem\
+  \ may be repaired by some form of normalization, whereas the second requires intelligent\
+  \ processing in order to distinguish the following two cases:"
+ref_count: 13
+references:
+- pid: 7ba28bb5c79f9115b3f3b62593feedf1d73b3027
+  title: The interpretation of tables in texts
+- pid: 1b186f9e467e2ce797edffb85ca30bca34fa4952
+  title: 'Layout and Language: Integrating Spatial and Linguistic Knowledge for Layout
+    Understanding Tasks'
+- pid: edbd577d793a083de4f337acac992ec7837609e0
+  title: Medium-independent table detection
+- pid: 578c63514136ac5b9af0144bcfe06efcfdd3099c
+  title: Mining Tables from Large Scale HTML Texts
+- pid: aab43c9c33af00b718cf2ae374b861d49862a563
+  title: Machine learning
+slug: Layout-and-Language:-Challenges-for-Table-on-the-Hurst
+title: 'Layout and Language: Challenges for Table Understanding on the Web'
+url: https://www.semanticscholar.org/paper/Layout-and-Language:-Challenges-for-Table-on-the-Hurst/8f52409df167cfe6bafdebac63dfcf8710a56c92?sort=total-citations
+venue: ''
+year: 2001

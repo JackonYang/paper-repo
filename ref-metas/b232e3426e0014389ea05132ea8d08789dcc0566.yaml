@@ -1,0 +1,77 @@
+authors:
+- I. Cox
+- S. L. Hingorani
+- Satish Rao
+- B. Maggs
+badges: []
+corpusId: 16802006
+fieldsOfStudy:
+- Computer Science
+numCitedBy: 555
+numCiting: 32
+paperAbstract: "A stereo algorithm is presented that optimizes a maximum likelihood\
+  \ cost function. The maximum likelihood cost function assumes that corresponding\
+  \ features in the left and right images are normally distributed about a common\
+  \ true value and consists of a weighted squared error term if two features are matched\
+  \ or a (fixed) cost if a feature is determined to be occluded. The stereo algorithm\
+  \ finds the set of correspondences that maximize the cost function subject to ordering\
+  \ and uniqueness constraints. The stereo algorithm is independent of the matching\
+  \ primitives. However, for the experiments described in this paper, matching is\
+  \ performed on the $cf4$individual pixel intensities.$cf3$ Contrary to popular belief,\
+  \ the pixel-based stereo appears to be robust for a variety of images. It also has\
+  \ the advantages of (i) providing adensedisparity map, (ii) requiringnofeature extraction,\
+  \ and (iii)avoidingthe adaptive windowing problem of area-based correlation methods.\
+  \ Because feature extraction and windowing are unnecessary, a very fast implementation\
+  \ is possible. Experimental results reveal that good stereo correspondences can\
+  \ be found using only ordering and uniqueness constraints, i.e., withoutlocalsmoothness\
+  \ constraints. However, it is shown that the original maximum likelihood stereo\
+  \ algorithm exhibits multiple global minima. The dynamic programming algorithm is\
+  \ guaranteed to find one, but not necessarily the same one for each epipolar scanline,\
+  \ causing erroneous correspondences which are visible as small local differences\
+  \ between neighboring scanlines. Traditionally, regularization, which modifies the\
+  \ original cost function, has been applied to the problem of multiple global minima.\
+  \ We developed several variants of the algorithm that avoid classical regularization\
+  \ while imposing several global cohesiveness constraints. We believe this is a novel\
+  \ approach that has the advantage of guaranteeing that solutions minimize the original\
+  \ cost function and preserve discontinuities. The constraints are based on minimizing\
+  \ the total number of horizontal and/or vertical discontinuities along and/or between\
+  \ adjacent epipolar lines, and local smoothing is avoided. Experiments reveal that\
+  \ minimizing the sum of the horizontal and vertical discontinuities provides the\
+  \ most accurate results. A high percentage of correct matches and very little smearing\
+  \ of depth discontinuities are obtained. An alternative to imposing cohesiveness\
+  \ constraints to reduce the correspondence ambiguities is to use more than two cameras.\
+  \ We therefore extend the two camera maximum likelihood toNcameras. TheN-camera\
+  \ stereo algorithm determines the \u201Cbest\u201D set of correspondences between\
+  \ a given pair of cameras, referred to as the principal cameras. Knowledge of the\
+  \ relative positions of the cameras allows the 3D point hypothesized by an assumed\
+  \ correspondence of two features in the principal pair to be projected onto the\
+  \ image plane of the remainingN? 2 cameras. TheseN? 2 points are then used to verify\
+  \ proposed matches. Not only does the algorithm explicitly model occlusion between\
+  \ features of the principal pair, but the possibility of occlusions in theN? 2 additional\
+  \ views is also modeled. Previous work did not model this occlusion process, the\
+  \ benefits and importance of which are experimentally verified. Like other multiframe\
+  \ stereo algorithms, the computational and memory costs of this approach increase\
+  \ linearly with each additional view. Experimental results are shown for two outdoor\
+  \ scenes. It is clearly demonstrated that the number of correspondence errors is\
+  \ significantly reduced as the number of views/cameras is increased."
+ref_count: 32
+references:
+- pid: 11996252bec281d26e7b9c9b0eb3a834d194ad9d
+  title: 'PMF: A Stereo Correspondence Algorithm Using a Disparity Gradient Limit'
+- pid: ffacc9e5144f0efed41fd49b2a388939afff5db9
+  title: Stereo by Intra- and Inter-Scanline Search Using Dynamic Programming
+- pid: 278618251450aaeb334227ec82bacabfc1c266de
+  title: Depth from Edge and Intensity Based Stereo
+- pid: 4c6bd3b8d35c4fc14360160efc9c66727abac9df
+  title: Computational vision and regularization theory
+- pid: 6bb6eba248b6ef8d228dc33e6113c3e12dd48fee
+  title: Cooperative computation of stereo disparity.
+- pid: 3e5ad6a48fe0b8e97825e9ec1e831d18eeb5605a
+  title: Robot vision
+- pid: df65c38f24b8010ddb030d4d88ec4d7bbe8d36cd
+  title: Combinatorial Optimization
+slug: A-Maximum-Likelihood-Stereo-Algorithm-Cox-Hingorani
+title: A Maximum Likelihood Stereo Algorithm
+url: https://www.semanticscholar.org/paper/A-Maximum-Likelihood-Stereo-Algorithm-Cox-Hingorani/b232e3426e0014389ea05132ea8d08789dcc0566?sort=total-citations
+venue: Comput. Vis. Image Underst.
+year: 1996

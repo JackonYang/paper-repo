@@ -1,0 +1,48 @@
+authors:
+- C. Bron
+- J. Kerbosch
+badges:
+- id: OPEN_ACCESS
+corpusId: 13886709
+fieldsOfStudy:
+- Computer Science
+numCitedBy: 2177
+numCiting: 6
+paperAbstract: 'Description bttroductian. A maximal complete subgraph (clique) is
+  a complete subgraph that is not contained in any other complete subgraph. A recent
+  paper [1] describes a number of techniques to find maximal complete subgraphs of
+  a given undirected graph. In this paper, we present two backtracking algorithms,
+  using a branchand-bound technique [4] to cut off branches that cannot lead to a
+  clique. The first version is a straightforward implementation of the basic algorithm.
+  It is mainly presented to illustrate the method used. This version generates cliques
+  in alphabetic (lexicographic) order. The second version is derived from the first
+  and generates cliques in a rather unpredictable order in an attempt to minimize
+  the number of branches to be traversed. This version tends to produce the larger
+  cliques first and to generate sequentially cliques having a large common intersection.
+  The detailed algorithm for version 2 is presented here. Description o f the algorithm--Version
+  1. Three sets play an important role in the algorithm. (1) The set compsub is the
+  set to be extended by a new point or shrunk by one point on traveling along a branch
+  of the backtracking tree. The points that are eligible to extend compsub, i.e. that
+  are connected to all points in compsub, are collected recursively in the remaining
+  two sets. (2) The set candidates is the set of all points that will in due time
+  serve as an extension to the present configuration of compsub. (3) The set not is
+  the set of all points that have at an earlier stage already served as an extension
+  of the present configuration of compsub and are now explicitly excluded. The reason
+  for maintaining this set trot will soon be made clear. The core of the algorithm
+  consists of a recursively defined extension operator that will be applied to the
+  three sets Just described. It has the duty to generate all extensions of the given
+  configuration of compsub that it can make with the given set of candidates and that
+  do not contain any of the points in not. To put it differently: all extensions of
+  compsub containing any point in not have already been generated. The basic mechanism
+  now consists of the following five steps:'
+ref_count: 6
+references:
+- pid: 2db3ea7a1b1871514545e829c3e1586d4d72e4e2
+  title: An Analysis of Some Graph Theoretical Cluster Techniques
+- pid: 1211ace7fbfc56016cbc42cd38034f263cdac350
+  title: Corrections to Bierstone's Algorithm for Generating Cliques
+slug: Algorithm-457:-finding-all-cliques-of-an-undirected-Bron-Kerbosch
+title: 'Algorithm 457: finding all cliques of an undirected graph'
+url: https://www.semanticscholar.org/paper/Algorithm-457:-finding-all-cliques-of-an-undirected-Bron-Kerbosch/0e8e7455ce92703e4dd5413f68582a70be49b91b?sort=total-citations
+venue: CACM
+year: 1973

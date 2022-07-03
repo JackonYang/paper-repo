@@ -1,0 +1,132 @@
+authors:
+- S. Clark
+- J. Curran
+badges:
+- id: UNPAYWALL
+- id: OPEN_ACCESS
+corpusId: 8701528
+fieldsOfStudy:
+- Computer Science
+numCitedBy: 456
+numCiting: 117
+paperAbstract: This article describes a number of log-linear parsing models for an
+  automatically extracted lexicalized grammar. The models are full parsing models
+  in the sense that probabilities are defined for complete parses, rather than for
+  independent events derived by decomposing the parse tree. Discriminative training
+  is used to estimate the models, which requires incorrect parses for each sentence
+  in the training data as well as the correct parse. The lexicalized grammar formalism
+  used is Combinatory Categorial Grammar (CCG), and the grammar is automatically extracted
+  from CCGbank, a CCG version of the Penn Treebank. The combination of discriminative
+  training and an automatically extracted grammar leads to a significant memory requirement
+  (up to 25 GB), which is satisfied using a parallel implementation of the BFGS optimization
+  algorithm running on a Beowulf cluster. Dynamic programming over a packed chart,
+  in combination with the parallel implementation, allows us to solve one of the largest-scale
+  estimation problems in the statistical parsing literature in under three hours.
+  A key component of the parsing system, for both training and testing, is a Maximum
+  Entropy supertagger which assigns CCG lexical categories to words in a sentence.
+  The supertagger makes the discriminative training feasible, and also leads to a
+  highly efficient parser. Surprisingly, given CCG's spurious ambiguity, the parsing
+  speeds are significantly higher than those reported for comparable parsers in the
+  literature. We also extend the existing parsing techniques for CCG by developing
+  a new model and efficient parsing algorithm which exploits all derivations, including
+  CCG's nonstandard derivations. This model and parsing algorithm, when combined with
+  normal-form constraints, give state-of-the-art accuracy for the recovery of predicate-argument
+  dependencies from CCGbank. The parser is also evaluated on DepBank and compared
+  against the RASP parser, outperforming RASP overall and on the majority of relation
+  types. The evaluation on DepBank raises a number of issues regarding parser evaluation.
+  This article provides a comprehensive blueprint for building a wide-coverage CCG
+  parser. We demonstrate that both accurate and highly efficient parsing is possible
+  with CCG.
+ref_count: 117
+references:
+- pid: 19da3a7bc4fd32b697bab29fdbc6fe27bf3b33fb
+  title: Log-Linear Models for Wide-Coverage CCG Parsing
+- pid: 2685fc6cc208c67088afa9e8c2743511852fc19c
+  title: Dynamic programming for parsing and estimation of stochastic unification-based
+    grammars
+- pid: 3fc44ff7f37ec5585310666c183c65e0a0bb2446
+  title: Head-Driven Statistical Models for Natural Language Parsing
+- pid: 7f8f8f33187e20768ae0177780ac5ef78b77feca
+  title: Parsing the Wall Street Journal using a Lexical-Functional Grammar and Discriminative
+    Estimation Techniques
+- pid: 976c95f69e8ee160868b1d54d477f56212ee794b
+  title: Generative Models for Statistical Parsing with Combinatory Categorial Grammar
+- pid: 844db702be4bc149b06b822b47247e15f5894cc3
+  title: Discriminative Reranking for Natural Language Parsing
+- pid: 2a5e619f2c5f4220438b1357e596db5b1578398d
+  title: Statistical Parsing with a Context-Free Grammar and Word Statistics
+- pid: 6c9f553e723a40a6713453b734b552c1928bf52b
+  title: PCFG Models of Linguistic Tree Representations
+- pid: 3764baa7465201f054083d02b58fa75f883c4461
+  title: A New Statistical Parser Based on Bigram Lexical Dependencies
+- pid: e6140a793a4554806eb39d15c018d8f782d2ac1e
+  title: Learning to Parse Natural Language with Maximum Entropy Models
+- pid: 76d5e3fa888bee872b7adb7fa810089aa8ab1d58
+  title: A Maximum-Entropy-Inspired Parser
+- pid: ee7e21dd09949a5a53b39c13fca9cd3d55e2bc50
+  title: Corpus Variation and Parser Performance
+- pid: 9ba08e0a53bfdcbe0b70a4761c3e2b62f150fc74
+  title: Applications of stochastic context-free grammars using the Inside-Outside
+    algorithm
+- pid: 30da8ecce8b3ebc3e9344a79e5c2f8dc4c423bd2
+  title: Recognition and Parsing of Context-Free Languages in Time n^3
+- pid: 1e19a94d547ee023837c14c361139185e2353fc0
+  title: Max-Margin Parsing
+- pid: 897249c93f55ef1c0d2aa1e799eb67b414c6d4a6
+  title: Shallow Parsing with Conditional Random Fields
+- pid: 74fe7ec751cd50295b15cfd46389a8fefb37c414
+  title: 'Learning to Map Sentences to Logical Form: Structured Classification with
+    Probabilistic Categorial Grammars'
+- pid: b49db3ac26d96b6c5c081dc6c2cc24da93e633f1
+  title: Maximum entropy models for natural language ambiguity resolution
+- pid: 41828fc3dab24784f95e6976e8aaa73f68e1840e
+  title: Incremental Parsing with the Perceptron Algorithm
+- pid: d8fe99b6dc76dc342fe9fb47740fee40381fa13d
+  title: Robust Accurate Statistical Annotation of General Text
+- pid: af66165c454a0e94afbab36271fe3deaae0b421a
+  title: An Efficient Recognition and Syntax-Analysis Algorithm for Context-Free Languages
+- pid: ded3f3aaaef970030dffd2326be77024b48bac77
+  title: Surface structure and interpretation
+- pid: 99d2dcdcf4cf05facaa101a48c7e31d140b4736d
+  title: 'The Proposition Bank: An Annotated Corpus of Semantic Roles'
+- pid: 2588593c42126e059fb8aad7673fa1736755f1e1
+  title: Probabilistic Feature Grammars
+- pid: 61dffff2116f3543e71d536a18308fa4fc5e53c3
+  title: Stochastic Attribute-Value Grammars
+- pid: 463dbd690d912b23d29b7581fb6b253b36f50394
+  title: Estimators for Stochastic "Unification-Based" Grammars
+- pid: 1c7a1d0b183d0db47a438299d023684491461eac
+  title: Wide-Coverage Semantic Representations from a CCG Parser
+- pid: 0b44fcbeea9415d400c5f5789d6b892b6f98daff
+  title: 'Building a Large Annotated Corpus of English: The Penn Treebank'
+- pid: b951b9f78b98a186ba259027996a48e4189d37e5
+  title: Inducing Features of Random Fields
+- pid: 51836a978517a4fdd6b68f69d3821c0d1a339e09
+  title: Maximum entropy estimation for feature forests
+- pid: ce8cca19455e8d3055c57a9bafe882984c95a201
+  title: Syntactic Process
+- pid: f4ba954b0412773d047dc41231c733de0c1f4926
+  title: 'Conditional Random Fields: Probabilistic Models for Segmenting and Labeling
+    Sequence Data'
+- pid: bc9e5bf851dc95369e26f1869c2637b1d8919e6c
+  title: Prepositional Phrase Attachment through a Backed-off Model
+- pid: 878783964ab23c97052ea82685368099d85c500d
+  title: A Comparison of Algorithms for Maximum Entropy Parameter Estimation
+- pid: 1504a9d5829033a8cb4cf37b8bb13dfd4baddc7b
+  title: Enriching the Knowledge Sources Used in a Maximum Entropy Part-of-Speech
+    Tagger
+- pid: 0043ccb045bc7d07ea6c9b719a72a6a01df1ab0a
+  title: A Gaussian Prior for Smoothing Maximum Entropy Models
+- pid: 149f5137d1c7e34764e1f4d4d7b97b8e6bdeda2a
+  title: A Maximum Entropy Approach to Named Entity Recognition
+- pid: bf86896c23300a46b7fc76298e365984c0b05105
+  title: Numerical Optimization
+- pid: 37c931cbaa9217b829596dd196520a838562a109
+  title: Generalized Iterative Scaling for Log-Linear Models
+- pid: f374db77b414bfdd142616434162a0aa88d5a551
+  title: A maximum entropy model for parsing
+slug: Wide-Coverage-Efficient-Statistical-Parsing-with-Clark-Curran
+title: Wide-Coverage Efficient Statistical Parsing with CCG and Log-Linear Models
+url: https://www.semanticscholar.org/paper/Wide-Coverage-Efficient-Statistical-Parsing-with-Clark-Curran/2d45f21c9deb17987a6be71b3c9a2758791540a2?sort=total-citations
+venue: Computational Linguistics
+year: 2007
