@@ -4,11 +4,21 @@ from configs import (
 )
 import json
 import os
+import re
 import yaml
 import copy
 
 
 CUR_DIR = os.path.abspath(os.path.dirname(__file__))
+
+title_format_re = re.compile(r'[\W\s]+')
+
+
+def clean_title_encoding(title):
+    title = title.replace('–', '-')
+    title = title.replace('—', '-')
+    title = title.replace('’', '\'')
+    return title
 
 
 def init_paper_dict(dirpath):
@@ -84,6 +94,22 @@ def is_drop_by_cited_cnt(cited_cnt, year):
     return True
 
 
+def is_drop_by_title(title, meta_key, cited_cnt):
+    if len(meta_key) < 10:
+        # print(title)
+        return True
+
+    if not meta_key.isascii():
+        # print(cited_cnt, title, meta_key, meta_key.isascii())
+        return True
+
+    return False
+
+
+def title2meta_key(title):
+    return title_format_re.sub('-', title.lower()).strip(' -')
+
+
 def add_info_by_ref(ref_info, new_info):
     ignore_fields = [
         'isKey',
@@ -150,6 +176,11 @@ def main():
             )
 
             ref = clean_ref(ref)
+            ref['title'] = clean_title_encoding(ref['title'])
+            ref['meta_key'] = title2meta_key(ref['title'])
+
+            if show_ref_link and is_drop_by_title(ref['title'], ref['meta_key'], cited_cnt):
+                show_ref_link = False
 
             if show_ref_link and pid not in paper_info:
                 # year_info.append([year, cited_cnt, ref['title']])
