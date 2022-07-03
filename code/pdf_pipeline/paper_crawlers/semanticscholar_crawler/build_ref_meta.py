@@ -108,6 +108,9 @@ def main():
                     paper_refs.append({
                         'pid': pid,
                         'title': ref['title'],
+                        'numCitedBy': ref.get('numCitedBy', -1),
+                        'fieldsOfStudy': ref.get('fieldsOfStudy', []),
+                        'year': ref.get('year', -1),
                     })
                     ref.pop('isKey')
                     if 'citationContexts' in ref:
