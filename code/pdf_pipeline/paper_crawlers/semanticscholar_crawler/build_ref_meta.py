@@ -1,12 +1,12 @@
-import os
-import yaml
-import json
-from turtle import title
-
 from configs import (
     REFERENCE_INFO_DIR,
     REF_META_DIR,
 )
+import json
+import os
+import yaml
+import copy
+
 
 CUR_DIR = os.path.abspath(os.path.dirname(__file__))
 
@@ -35,6 +35,38 @@ def save_yaml(paper_info, paper_cnt, dirpath):
     for pid, info in paper_info.items():
         with open(os.path.join(dirpath, '%s.yaml' % pid), 'w') as f:
             yaml.safe_dump(info, f)
+
+
+def clean_ref(old_ref):
+    if isinstance(old_ref, str):
+        return old_ref
+
+    if 'fragments' in old_ref:
+        return old_ref['text']
+
+    if isinstance(old_ref, dict):
+        return clean_dict(old_ref)
+
+    if isinstance(old_ref, list):
+        return [clean_ref(x) for x in old_ref]
+
+    print("error. unknown: %s" % old_ref)
+
+
+def clean_dict(old_ref):
+
+    ref = copy.deepcopy(old_ref)
+    for k, v in ref.items():
+        if k == 'authors':
+            ref[k] = [i[-1]['text'] for i in v]
+        elif isinstance(v, dict) and 'fragments' in v:
+            ref[k] = v['text']
+        elif isinstance(v, list):
+            ref[k] = [clean_ref(x) for x in v]
+        else:
+            ref[k] = v
+
+    return ref
 
 
 def main():
@@ -70,6 +102,8 @@ def main():
                     # if paper_cnt[pid] > 1:
                     #    continue
 
+                    ref = clean_ref(ref)
+
                     pid = ref.pop('id')
                     paper_refs.append({
                         'pid': pid,
@@ -80,10 +114,6 @@ def main():
                         ref.pop('citationContexts')
                     if 'tldr' in ref:
                         ref.pop('tldr')
-
-                    for k, v in ref.items():
-                        if isinstance(v, dict) and 'fragments' in v:
-                            ref[k] = v['text']
 
                     paper_info[pid].update(ref)
             paper_info[cur_pid]['references'] = paper_refs
