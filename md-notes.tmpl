@@ -1,8 +1,8 @@
 ---
 {%- if 'Alias' in meta %}
-Alias: {{ meta['Alias'] }}
+Alias: '{{ meta['Alias'] }}'
 {%- endif %}
-title: {{ meta['title'] }}
+title: '{{ meta['title'] }}'
 {{ meta_str }}
 ---
 
@@ -18,6 +18,10 @@ title: {{ meta['title'] }}
 ## References
 
 {% for ref in meta['references'] %}
-- [{{ref['title']}}]({{ notes_common_path }}/{{ ref['meta_key'].md }})
+{%- if ref.show_ref_link %}
+- [{{ref['title']}}]({{ notes_common_path }}/{{ ref['meta_key'] }}.md)
+{%- else %}
+- {{ ref['title'] }}
+{%- endif %}
 {% endfor %}
 {% endif %}

@@ -196,6 +196,7 @@ def main():
                 'numCitedBy': ref.get('numCitedBy', -1),
                 'fieldsOfStudy': ref.get('fieldsOfStudy', []),
                 'year': ref.get('year', -1),
+                'meta_key': ref['meta_key'],
             })
 
     for pid, info in paper_info.items():

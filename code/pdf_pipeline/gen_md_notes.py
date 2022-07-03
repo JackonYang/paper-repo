@@ -18,7 +18,6 @@ TEMPLATE_DIR = os.path.join(PROJ_DIR)
 TEMPLATE_NAME = 'md-notes.tmpl'
 
 markdown_link_re = re.compile(r'\[(.*?)\]\((.*?)\)')
-title_format_re = re.compile(r'[\W\s]+')
 title_escape_re = re.compile(r'\s*(?:[":]+\s*)+')
 
 default_status = 'todo'
@@ -130,10 +129,6 @@ def gen_from_pdf_yaml():
     print('success! %s notes udpated. notes_dir: %s' % (len(meta_list), MD_NOTES_DIR))
 
 
-def title2meta_key(title):
-    return title_format_re.sub('-', title.lower()).strip(' -')
-
-
 def gen_from_ref_yaml():
     meta_list = meta_io.get_meta_list(REF_META_DIR)
 
@@ -144,20 +139,13 @@ def gen_from_ref_yaml():
             print(meta)
             continue
 
-        meta['title'] = title_escape_re.sub(' - ', meta['title']).strip(' -')
-        meta_key = title2meta_key(meta['title'])
-        meta['meta_key'] = meta_key
+        meta_key = meta['meta_key']
         out_filename = os.path.join(MD_NOTES_DIR, '%s.md' % meta_key)
 
         if 'tags' not in meta:
             meta['tags'] = [ref_default_tag, TYPE_DEFAULT_TAG]
         elif ref_default_tag not in meta['tags']:
             meta['tags'].append(ref_default_tag)
-
-        if 'references' in meta:
-            for ref in meta['references']:
-                ref['title'] = title_escape_re.sub(' - ', ref['title']).strip(' -')
-                ref['meta_key'] = title2meta_key(ref['title'])
 
         heading_meta = {k: meta[k] for k in meta_keys_from_yaml}
 
