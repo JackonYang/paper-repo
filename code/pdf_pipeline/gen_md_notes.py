@@ -11,14 +11,19 @@ from .configs import (
     MD_NOTES_DIR,
     TAG_MAP_DIR,
     TYPE_DEFAULT_TAG,
+    REF_META_DIR,
 )
 
 TEMPLATE_DIR = os.path.join(PROJ_DIR)
 TEMPLATE_NAME = 'md-notes.tmpl'
 
 markdown_link_re = re.compile(r'\[(.*?)\]\((.*?)\)')
+title_format_re = re.compile(r'[\W\s]+')
+title_escape_re = re.compile(r'\s*(?:[":]+\s*)+')
 
 default_status = 'todo'
+
+ref_default_tag = os.environ.get('REF_DEFAULT_TAG', 'gen-from-ref')
 
 
 meta_keys_from_yaml = [
@@ -125,10 +130,73 @@ def gen_from_pdf_yaml():
     print('success! %s notes udpated. notes_dir: %s' % (len(meta_list), MD_NOTES_DIR))
 
 
+def title2meta_key(title):
+    return title_format_re.sub('-', title.lower()).strip(' -')
+
+
 def gen_from_ref_yaml():
-    pass
+    meta_list = meta_io.get_meta_list(REF_META_DIR)
+
+    tag_list = []
+
+    for meta in meta_list:
+        if 'title' not in meta:
+            print(meta)
+            continue
+
+        meta['title'] = title_escape_re.sub(' - ', meta['title']).strip(' -')
+        meta_key = title2meta_key(meta['title'])
+        meta['meta_key'] = meta_key
+        out_filename = os.path.join(MD_NOTES_DIR, '%s.md' % meta_key)
+
+        if 'tags' not in meta:
+            meta['tags'] = [ref_default_tag, TYPE_DEFAULT_TAG]
+        elif ref_default_tag not in meta['tags']:
+            meta['tags'].append(ref_default_tag)
+
+        if 'references' in meta:
+            for ref in meta['references']:
+                ref['title'] = title_escape_re.sub(' - ', ref['title']).strip(' -')
+                ref['meta_key'] = title2meta_key(ref['title'])
+
+        heading_meta = {k: meta[k] for k in meta_keys_from_yaml}
+
+        data = markdown_io.load_md_if_exists(out_filename)
+        if 'meta' not in data:
+            data['meta'] = {}
+
+        heading_meta.update(data['meta'])
+        data['meta'].update(meta)
+
+        # ad-hoc changes for data migration
+        # heading_meta['tags'].append('paper')
+
+        for t in heading_meta['tags']:
+            if t not in tag_list:
+                tag_list.append(t)
+
+        data['common_path'] = MD_NOTES_PDF_REL_ROOT
+        data['notes_common_path'] = '.'  # current dir
+
+        # ad-hoc fields fix for rendering template
+        data['meta'].update(heading_meta)
+        heading_meta.pop('title')
+        if 'Alias' in heading_meta:
+            heading_meta.pop('Alias')
+        heading_meta.setdefault('status', default_status)
+
+        data['meta_str'] = yaml.dump(heading_meta).strip()
+        data['content'] = clean_content(data['content'])
+
+        data['render_ref_list'] = 'references' not in data['content'].lower()
+
+        markdown_io.render_md(TEMPLATE_DIR, TEMPLATE_NAME, data, out_filename)
+
+    add_missing_tag_map(tag_list)
+
+    print('success! %s notes udpated. notes_dir: %s' % (len(meta_list), MD_NOTES_DIR))
 
 
 def main():
-    gen_from_pdf_yaml()
+    # gen_from_pdf_yaml()
     gen_from_ref_yaml()

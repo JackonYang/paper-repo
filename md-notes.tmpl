@@ -6,9 +6,18 @@ title: {{ meta['title'] }}
 {{ meta_str }}
 ---
 
+{% if meta.pdf_relpath %}
 [local pdf]({{ common_path }}/{{ meta.pdf_relpath|safe }})
+{% endif %}
 {% if content %}
 {{ content }}
 {% else %}
 # {{ meta.title }}
 {% endif -%}
+{% if render_ref_list %}
+## References
+
+{% for ref in meta['references'] %}
+- [{{ref['title']}}]({{ notes_common_path }}/{{ ref['meta_key'].md }})
+{% endfor %}
+{% endif %}
