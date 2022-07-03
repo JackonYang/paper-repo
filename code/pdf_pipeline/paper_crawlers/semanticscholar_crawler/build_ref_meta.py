@@ -18,17 +18,15 @@ def init_paper_dict(dirpath):
             continue
 
         pid = file_path.split('-')[-1].split('.')[0]
-        paper_info[pid] = {}
+        with open(os.path.join(REFERENCE_INFO_DIR, file_path), 'r') as f:
+            data = json.load(f)
+
+        paper_info[pid] = data
 
     return paper_info
 
 
-def save_yaml(paper_info, paper_cnt, dirpath):
-    # for pid, cnt in paper_cnt.items():
-    #     if cnt < 2:
-    #         print(pid)
-    #         print(paper_info[pid])
-
+def save_yaml(paper_info, dirpath):
     if not os.path.exists(dirpath):
         os.makedirs(dirpath)
 
@@ -69,59 +67,109 @@ def clean_dict(old_ref):
     return ref
 
 
+ref_cnt_thre = [
+    (2010, 100),
+    (2000, 300),
+    (1990, 1000),
+    (1900, 3000),
+    (-999, 300),
+]
+
+
+def is_drop_by_cited_cnt(cited_cnt, year):
+    for y, thre in ref_cnt_thre:
+        if year > y and cited_cnt < thre:
+            return True
+
+    return False
+
+
+def add_info_by_ref(ref_info, new_info):
+    ignore_fields = [
+        'isKey',
+        'citationContexts',
+        'tldr',
+    ]
+
+    for k, v in ref_info.items():
+        if k in ignore_fields:
+            continue
+        new_info[k] = v
+
+
+def get_info_from_raw(data):
+    if 'meta_info' not in data:
+        print(data)
+        return
+
+    if data['meta_info'].get('responseType') == 'CANONICAL':
+        return
+
+    if 'totalCitations' in data['meta_info']:
+        ref_cnt = data['meta_info']['totalCitations']
+    else:
+        print('no totalCitations: %s' % data)
+        ref_cnt = -1
+
+    if 'page_url' not in data:
+        print('no page_url: %s' % data)
+        url = ''
+    else:
+        url = data['page_url']
+
+    return {
+        'url': url,
+        'ref_count': ref_cnt,
+    }
+
+
 def main():
-    paper_info = init_paper_dict(REFERENCE_INFO_DIR)
+    raw_paper_info = init_paper_dict(REFERENCE_INFO_DIR)
+    paper_info = {}
+    paper_ref_map = {}
 
-    paper_cnt = {p: 0 for p in paper_info}
+    for cur_pid, data in raw_paper_info.items():
 
-    for file_path in os.listdir(REFERENCE_INFO_DIR):
-        if not file_path.endswith('.json'):
+        if 'page_url' not in data:
             continue
 
-        cur_pid = file_path.split('-')[-1].split('.')[0]
-        with open(os.path.join(REFERENCE_INFO_DIR, file_path), 'r') as f:
-            data = json.load(f)
-
-            if 'page_url' not in data:
+        paper_ref_map[cur_pid] = []
+        paper_refs = paper_ref_map[cur_pid]
+        # update info 2
+        for ref in data['links']:
+            if 'id' not in ref:
                 continue
+            pid = ref.pop('id')
+            cited_cnt = ref.get('numCitedBy', -1)
+            year = ref.get('year', -1)
 
-            # update info 1
-            paper_info[cur_pid].update({
-                'url': data['page_url'],
-                'ref_count': data['meta_info']['totalCitations'],
+            show_ref_link = (
+                pid in raw_paper_info and not is_drop_by_cited_cnt(cited_cnt, year)
+            )
+
+            ref = clean_ref(ref)
+
+            if show_ref_link and pid not in paper_info:
+                new_info = get_info_from_raw(raw_paper_info[pid])
+                if new_info:
+                    paper_info[pid] = new_info
+                    add_info_by_ref(ref, paper_info[pid])
+
+            paper_refs.append({
+                'pid': pid,
+                'title': ref['title'],
+                'show_ref_link': show_ref_link,
+                'numCitedBy': ref.get('numCitedBy', -1),
+                'fieldsOfStudy': ref.get('fieldsOfStudy', []),
+                'year': ref.get('year', -1),
             })
 
-            paper_refs = []
-            # update info 2
-            for ref in data['links']:
-                if 'id' not in ref:
-                    continue
-                pid = ref['id']
-                if pid in paper_info:
-                    paper_cnt[pid] += 1
-                    # if paper_cnt[pid] > 1:
-                    #    continue
+    for pid, info in paper_info.items():
+        info['references'] = paper_ref_map[pid]
 
-                    ref = clean_ref(ref)
-
-                    pid = ref.pop('id')
-                    paper_refs.append({
-                        'pid': pid,
-                        'title': ref['title'],
-                        'numCitedBy': ref.get('numCitedBy', -1),
-                        'fieldsOfStudy': ref.get('fieldsOfStudy', []),
-                        'year': ref.get('year', -1),
-                    })
-                    ref.pop('isKey')
-                    if 'citationContexts' in ref:
-                        ref.pop('citationContexts')
-                    if 'tldr' in ref:
-                        ref.pop('tldr')
-
-                    paper_info[pid].update(ref)
-            paper_info[cur_pid]['references'] = paper_refs
-
-    save_yaml(paper_info, paper_cnt, REF_META_DIR)
+    print('final paper cnt: %s, raw paper cnt: %s' % (
+        len(paper_info), len(raw_paper_info)))
+    save_yaml(paper_info, REF_META_DIR)
 
 
 if __name__ == '__main__':

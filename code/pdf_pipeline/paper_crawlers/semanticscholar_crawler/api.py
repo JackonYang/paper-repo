@@ -18,7 +18,7 @@ def send_request(url):
             "Referer": "https://www.google.com.hk/",
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36",
             "Accept-Encoding": "gzip",
-            "Cookie": "s2Hist=2022-06-26T00%3A00%3A00.000Z%7C1; tid=rBIABmK3zsyfvgAIDNZrAg==; s2Exp=pdp_promo_banner_multi_arm_v2%3D-control%26external_content_display%3D-hidden%26abstract_highlighter_v2%3D-highlighted_abstract_default_toggle_off%26alerts_two_types_relevance_v2%3Drelevance_author%26new_ab_framework_aa%3Dcontrol%26new_ab_framework_mock_ab%3Dcontrol",
+            # "Cookie": "s2Hist=2022-06-26T00%3A00%3A00.000Z%7C1; tid=rBIABmK3zsyfvgAIDNZrAg==; s2Exp=pdp_promo_banner_multi_arm_v2%3D-control%26external_content_display%3D-hidden%26abstract_highlighter_v2%3D-highlighted_abstract_default_toggle_off%26alerts_two_types_relevance_v2%3Drelevance_author%26new_ab_framework_aa%3Dcontrol%26new_ab_framework_mock_ab%3Dcontrol",  # noqa
         },
     )
     return response.text
