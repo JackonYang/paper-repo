@@ -1,3 +1,7 @@
-cd ../.. && python3 -m paper_crawlers.semanticscholar_crawler.main
+pushd ../.. > /dev/null
 
-cd ../.. && python3 -m paper_crawlers.semanticscholar_crawler.build_ref_meta
+python3 -m paper_crawlers.semanticscholar_crawler.main
+
+python3 -m paper_crawlers.semanticscholar_crawler.build_ref_meta
+
+popd > /dev/null
