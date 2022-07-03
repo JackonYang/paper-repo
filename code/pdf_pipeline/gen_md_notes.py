@@ -111,6 +111,8 @@ def main():
         # ad-hoc fields fix for rendering template
         data['meta'].update(heading_meta)
         heading_meta.pop('title')
+        if 'Alias' in heading_meta:
+            heading_meta.pop('Alias')
         heading_meta.setdefault('status', default_status)
 
         data['meta_str'] = yaml.dump(heading_meta).strip()
