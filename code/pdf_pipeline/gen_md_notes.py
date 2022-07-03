@@ -29,6 +29,13 @@ meta_keys_from_yaml = [
     'title',
     'tags',
     'pdf_relpath',
+    'authors',
+    'fieldsOfStudy',
+    'meta_key',
+    'numCitedBy',
+    'ref_count',
+    'venue',
+    'year',
 ]
 
 
@@ -95,7 +102,7 @@ def gen_from_pdf_yaml():
         meta_key = meta['meta_key']
         out_filename = os.path.join(MD_NOTES_DIR, '%s.md' % meta_key)
 
-        heading_meta = {k: meta.get(k) for k in meta_keys_from_yaml}
+        heading_meta = {k: meta[k] for k in meta_keys_from_yaml if k in meta}
 
         data = markdown_io.load_md_if_exists(out_filename)
         if 'meta' not in data:
@@ -148,7 +155,7 @@ def gen_from_ref_yaml():
         elif ref_default_tag not in meta['tags']:
             meta['tags'].append(ref_default_tag)
 
-        heading_meta = {k: meta.get(k) for k in meta_keys_from_yaml}
+        heading_meta = {k: meta[k] for k in meta_keys_from_yaml if k in meta}
 
         data = markdown_io.load_md_if_exists(out_filename)
         if 'meta' not in data:
