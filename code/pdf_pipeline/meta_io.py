@@ -5,6 +5,7 @@ from .utils import get_file_list
 
 from .configs import (
     META_DIR,
+    MISC_INFO_DIR,
 )
 
 
@@ -26,8 +27,26 @@ def read_meta(meta_key):
     return meta
 
 
+def read_misc_info(filename):
+    meta_path = os.path.join(MISC_INFO_DIR, filename)
+    if not os.path.exists(meta_path):
+        return {}
+
+    with open(meta_path, 'r') as f:
+        meta = yaml.safe_load(f)
+    return meta
+
+
 def save_meta(meta_key, content):
     meta_path = key2meta_path(meta_key)
+    with open(meta_path, 'w') as fw:
+        yaml.dump(content, fw)
+
+
+def save_misc_info(filename, content):
+    if not os.path.exists(MISC_INFO_DIR):
+        os.makedirs(MISC_INFO_DIR)
+    meta_path = os.path.join(MISC_INFO_DIR, filename)
     with open(meta_path, 'w') as fw:
         yaml.dump(content, fw)
 

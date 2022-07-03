@@ -4,6 +4,7 @@ import yaml
 
 from . import meta_io
 from . import markdown_io
+from .utils import get_file_list
 
 from .configs import (
     MD_NOTES_PDF_REL_ROOT,
@@ -23,6 +24,7 @@ title_escape_re = re.compile(r'\s*(?:[":]+\s*)+')
 default_status = 'todo'
 
 ref_default_tag = os.environ.get('REF_DEFAULT_TAG', 'gen-from-ref')
+meta_key_mapping_filename = 'meta_key_mapping.yaml'
 
 
 meta_keys_from_yaml = [
@@ -102,7 +104,7 @@ def gen_from_pdf_yaml():
         meta_key = meta['meta_key']
         out_filename = os.path.join(MD_NOTES_DIR, '%s.md' % meta_key)
 
-        heading_meta = {k: meta[k] for k in meta_keys_from_yaml if k in meta}
+        heading_meta = {k: meta[k] for k in meta_keys_from_yaml if meta.get(k) is not None}
 
         data = markdown_io.load_md_if_exists(out_filename)
         if 'meta' not in data:
@@ -155,7 +157,7 @@ def gen_from_ref_yaml():
         elif ref_default_tag not in meta['tags']:
             meta['tags'].append(ref_default_tag)
 
-        heading_meta = {k: meta[k] for k in meta_keys_from_yaml if k in meta}
+        heading_meta = {k: meta[k] for k in meta_keys_from_yaml if meta.get(k) is not None}
 
         data = markdown_io.load_md_if_exists(out_filename)
         if 'meta' not in data:
@@ -193,6 +195,30 @@ def gen_from_ref_yaml():
     print('success! %s notes udpated. notes_dir: %s' % (len(meta_list), MD_NOTES_DIR))
 
 
+def merge_files():
+    md_files = get_file_list(MD_NOTES_DIR, '.md')
+
+    tasks = meta_io.read_misc_info(meta_key_mapping_filename)
+
+    for md_file in md_files:
+        md_data = markdown_io.load_md(md_file)
+
+        if 'meta' not in md_data or 'meta_key' not in md_data['meta']:
+            continue
+        key_from_meta = md_data['meta']['meta_key']
+
+        key_from_filename = os.path.basename(md_file).replace('.md', '')
+        if key_from_filename != key_from_meta:
+            if key_from_filename in tasks and tasks[key_from_filename] != key_from_meta:
+                print("conflict: %s" % key_from_filename)
+
+            tasks[key_from_filename] = key_from_meta
+
+    print('%s taks to merge' % len(tasks))
+    meta_io.save_misc_info(meta_key_mapping_filename, tasks)
+
+
 def main():
-    gen_from_pdf_yaml()
-    gen_from_ref_yaml()
+    # gen_from_pdf_yaml()
+    # gen_from_ref_yaml()
+    merge_files()
