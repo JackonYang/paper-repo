@@ -80,7 +80,7 @@ def add_missing_tag_map(tag_list):
         markdown_io.render_md(TEMPLATE_DIR, 'tag-map.tmpl', data, map_file)
 
 
-def main():
+def gen_from_pdf_yaml():
     meta_list = meta_io.get_meta_list()
 
     tag_list = []
@@ -123,3 +123,12 @@ def main():
     add_missing_tag_map(tag_list)
 
     print('success! %s notes udpated. notes_dir: %s' % (len(meta_list), MD_NOTES_DIR))
+
+
+def gen_from_ref_yaml():
+    pass
+
+
+def main():
+    gen_from_pdf_yaml()
+    gen_from_ref_yaml()
