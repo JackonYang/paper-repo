@@ -20,9 +20,7 @@ gen-notes-md:
 	cd code && python manage.py gen-notes-md
 
 dvc-add:
-	dvc add pdfs/*.pdf
-	make gen-meta
-	make check-dup
+	git status -s | rev | awk '{print $1}' | rev | xargs -I{} dvc add {}
 
 push-all:
 	make flake8
