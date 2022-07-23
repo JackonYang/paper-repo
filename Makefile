@@ -20,7 +20,7 @@ gen-notes-md:
 	cd code && python manage.py gen-notes-md
 
 dvc-add:
-	git status -s | rev | awk '{print $1}' | rev | xargs -I{} dvc add {}
+	git status -s | grep '??' | rev | awk '{print $$1}' | rev | xargs -I{} dvc add {}
 
 push-all:
 	make flake8
