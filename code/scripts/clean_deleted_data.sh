@@ -6,7 +6,7 @@ paper_reading_root=$(realpath $PROJ_ROOT/../)
 pushd $paper_reading_root >> /dev/null
 
 # list deleted files
-meta_keys=$(git status -s 01-zettelkasten/02-References | grep 'D' | awk '{print $2}' | awk -F'/' '{print $3}' | awk -F'.' '{print $1}')
+meta_keys=$(git status -s 01-zettelkasten/paper-notes | grep 'D' | awk '{print $2}' | awk -F'/' '{print $3}' | awk -F'.' '{print $1}')
 
 popd >> /dev/null
 
